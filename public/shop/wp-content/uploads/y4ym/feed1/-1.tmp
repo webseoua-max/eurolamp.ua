@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2026-03-17T18:26">
+<shop>
+<name>EuroLamp</name>
+<url>https://eurolamp.ua/shop/</url>
+<platform>WordPress - YML for Yandex Market</platform>
+<version>6.8.2</version>
+<currencies>
+<currency id="UAH" rate="1"/>
+</currencies>
+<categories>
+<category id="11614" parentId="7940">Pouch-елементи (Li-ion / NMC / LFP)</category>
+<category id="10891">LED лампа со встроенным аккумулятором Днепр</category>
+<category id="10539">Новинки</category>
+<category id="10887">LED лампа со встроенным аккумулятором Харьков</category>
+<category id="10541">Топ продажів</category>
+<category id="15">LED лампи</category>
+<category id="10344" parentId="15">led лампи Запоріжжя</category>
+<category id="10338" parentId="15">LED лампи Львів</category>
+<category id="10348" parentId="15">led лампи Миколаїв</category>
+<category id="10340" parentId="15">LED лампи Одеса</category>
+<category id="10336" parentId="15">led лампи Харків</category>
+<category id="10346" parentId="15">Лед лампи Вінниця</category>
+<category id="10342" parentId="15">Світлодіодні лампи Дніпро</category>
+<category id="34" parentId="15">LED лампи класичні</category>
+<category id="36" parentId="15">LED лампи точкові</category>
+<category id="37" parentId="15">LED лампи капсульні</category>
+<category id="1203" parentId="15">LED лампи низьковольтні</category>
+<category id="8338" parentId="15">LED лампи з датчиком руху</category>
+<category id="35" parentId="15">LED лампи декоративні</category>
+<category id="39" parentId="15">LED лампи лінійні Т8</category>
+<category id="40" parentId="15">LED лампи високопотужні</category>
+<category id="251" parentId="15">ПРОМО-НАБОРИ</category>
+<category id="10851">LED светильники напольные Винница</category>
+<category id="10853">LED светильники напольные Запорожье</category>
+<category id="10855">LED светильники напольные Кривой Рог</category>
+<category id="10893">Аварийный LED светильник с аккумулятором Харьков</category>
+<category id="10935">Датчик движения Днепр</category>
+<category id="10939">Датчик движения Одесса</category>
+<category id="10821">Садовые светильники Одесса</category>
+<category id="10819">Садовые светильники харьков</category>
+<category id="10561">Новинки</category>
+<category id="1724">LED лампы</category>
+<category id="10827" parentId="1724">LED лампа Кривой Рог</category>
+<category id="10831" parentId="1724">LED лампа Полтава</category>
+<category id="10833" parentId="1724">LED лампа Черкассы</category>
+<category id="10869" parentId="1724">LED лампы с аккумулятором Днепр</category>
+<category id="10867" parentId="1724">LED лампы с аккумулятором Одесса</category>
+<category id="10865" parentId="1724">LED лампы с аккумулятором Харьков</category>
+<category id="10302" parentId="1724">LED лампы Запорожье</category>
+<category id="10306" parentId="1724">LED лампы Николаев</category>
+<category id="10298" parentId="1724">LED лампы Одесса</category>
+<category id="10304" parentId="1724">Лед лампы Винница</category>
+<category id="10300" parentId="1724">Светодиодные лампы Днепр</category>
+<category id="10296" parentId="1724">LED лампы Львов</category>
+<category id="10277" parentId="1724">LED лампы Харьков</category>
+<category id="1726" parentId="1724">LED лампы классические</category>
+<category id="2750" parentId="1724">LED лампы точечные</category>
+<category id="1728" parentId="1724">LED лампы декоративные</category>
+<category id="2752" parentId="1724">LED лампы капсульные</category>
+<category id="2754" parentId="1724">LED лампы низковольтные</category>
+<category id="8340" parentId="1724">LED лампы с датчиком движения</category>
+<category id="2760" parentId="1724">LED лампы линейные Т8</category>
+<category id="2758" parentId="1724">LED лампы высокомощные</category>
+<category id="2762" parentId="1724">ПРОМО-НАБОРЫ</category>
+<category id="29">LED світильники</category>
+<category id="62" parentId="29">LED світильники врізні</category>
+<category id="63" parentId="29">LED світильники накладні</category>
+<category id="1579" parentId="29">Світильники точкові накладні</category>
+<category id="11351" parentId="29">Світильники підвісні</category>
+<category id="1611" parentId="29">Трекові системи</category>
+<category id="3605" parentId="29">Споти під лампу</category>
+<category id="60" parentId="29">LED світильники з пультом керування</category>
+<category id="61" parentId="29">LED люстри</category>
+<category id="65" parentId="29">LED світильники настільні</category>
+<category id="1571" parentId="29">LED торшери</category>
+<category id="64" parentId="29">LED світильники настінні (Бра)</category>
+<category id="9546" parentId="29">LED світильники-нічники</category>
+<category id="10848" parentId="29">LED светильники напольные Одесса</category>
+<category id="1532">LED стрічки та комплектуючі</category>
+<category id="1682" parentId="1532">LED стрічки COB</category>
+<category id="1680" parentId="1532">LED стрічки SMD</category>
+<category id="1674" parentId="1532">Готові набори LED стрічок</category>
+<category id="1676" parentId="1532">Блоки живлення для LED стрічки</category>
+<category id="1678" parentId="1532">Контролер RGB для LED стрічки</category>
+<category id="9071" parentId="1532">Конектори для LED стрічки</category>
+<category id="2764">LED светильники</category>
+<category id="11065" parentId="2764">LED люстры Харьков</category>
+<category id="10975" parentId="2764">LED светильники Винница</category>
+<category id="10977" parentId="2764">LED светильники Днепр</category>
+<category id="10979" parentId="2764">LED светильники Запорожье</category>
+<category id="10857" parentId="2764">LED светильники напольные Днепр</category>
+<category id="10859" parentId="2764">LED светильники напольные Львов</category>
+<category id="10846" parentId="2764">LED светильники напольные Харьков</category>
+<category id="10861" parentId="2764">LED светильники настенные (Бра) Харьков</category>
+<category id="10863" parentId="2764">LED светильники настольные (Бра) Харьков</category>
+<category id="10971" parentId="2764">LED светильники Одесса</category>
+<category id="10973" parentId="2764">LED светильники Харьков</category>
+<category id="11069" parentId="2764">Светодиодные люстры Днепр</category>
+<category id="11071" parentId="2764">Светодиодные люстры Запорожье</category>
+<category id="11067" parentId="2764">Светодиодные люстры Кривой Рог</category>
+<category id="11073" parentId="2764">Светодиодные люстры Одесса</category>
+<category id="10838" parentId="2764">Спот светильник Одесса</category>
+<category id="10836" parentId="2764">Спот светильник Харьков</category>
+<category id="10842" parentId="2764">Трековые светильники Днепр</category>
+<category id="10844" parentId="2764">Трековые светильники Одесса</category>
+<category id="10840" parentId="2764">Трековые светильники Харьков</category>
+<category id="2787" parentId="2764">LED светильники врезые</category>
+<category id="2809" parentId="2764">LED светильники накладные</category>
+<category id="2789" parentId="2764">Светильники точечные накладные</category>
+<category id="11353" parentId="2764">Светильники подвесные</category>
+<category id="2793" parentId="2764">Трековые системы</category>
+<category id="6688" parentId="2764">Споты под лампу</category>
+<category id="2795" parentId="2764">LED светильники с пультом управления</category>
+<category id="2801" parentId="2764">LED люстры</category>
+<category id="2797" parentId="2764">LED светильники настольные</category>
+<category id="2799" parentId="2764">LED торшеры напольные</category>
+<category id="2803" parentId="2764">LED светильники настенные (Бра)</category>
+<category id="9548" parentId="2764">LED светильники-ночники</category>
+<category id="8019">LED гірлянди</category>
+<category id="8074" parentId="8019">LED гірлянди вуличні</category>
+<category id="8247" parentId="8019">LED гірлянди лінійні</category>
+<category id="8078" parentId="8019">LED гірлянди штори</category>
+<category id="8319" parentId="8019">Гірлянди вуличні Е27</category>
+<category id="30">Адміністративне освітлення</category>
+<category id="8756" parentId="30">Знищувачі комах</category>
+<category id="1575" parentId="30">LED світильники вбудовані</category>
+<category id="243" parentId="30">LED світильники лінійні</category>
+<category id="242" parentId="30">LED панелі 600*600</category>
+<category id="241" parentId="30">LED ЖКГ світильники</category>
+<category id="9681">Вуличне освітлення</category>
+<category id="9685" parentId="9681">Садові світильники</category>
+<category id="9774" parentId="9681">Фасадні світильники</category>
+<category id="247" parentId="9681">LED ліхтарі вуличні консольні</category>
+<category id="1573">Промислове освітлення</category>
+<category id="248" parentId="1573">LED прожектори класичні</category>
+<category id="1055" parentId="1573">LED прожектори з датчиком руху</category>
+<category id="249" parentId="1573">LED прожектори модульні</category>
+<category id="1577" parentId="1573">LED світильники лінійні вологозахисні IP65</category>
+<category id="250" parentId="1573">LED світильники для високих прольотів</category>
+<category id="984">Автономне освітлення</category>
+<category id="1156" parentId="984">LED ліхтарі портативні</category>
+<category id="1106" parentId="984">LED лампи з акумулятором</category>
+<category id="985" parentId="984">LED ліхтарі налобні</category>
+<category id="986" parentId="984">LED ліхтарі ручні</category>
+<category id="987" parentId="984">LED світильники аварійні</category>
+<category id="8913">Спеціальне освітлення</category>
+<category id="66" parentId="8913">Бактерицидні лампи</category>
+<category id="1122" parentId="8913">LED світильники антимоскітні</category>
+<category id="10222" parentId="8913">Світильники для рослин</category>
+<category id="10735" parentId="8913">Освітлення особливого призначення</category>
+<category id="1730">LED ленты и комплектующие</category>
+<category id="10871" parentId="1730">Блоки питания для LED ленты Одесса</category>
+<category id="10873" parentId="1730">Блоки питания для LED ленты Харьков</category>
+<category id="2770" parentId="1730">LED ленты COB</category>
+<category id="2772" parentId="1730">LED ленты SMD</category>
+<category id="2783" parentId="1730">Блоки питания для LED ленты</category>
+<category id="2774" parentId="1730">Готовые наборы LED ленты</category>
+<category id="2785" parentId="1730">Контроллер RGB для LED ленты</category>
+<category id="9079" parentId="1730">Коннекторы для LED ленты</category>
+<category id="7940">Акумулятори та інвертори</category>
+<category id="11266" parentId="7940">Акумуляторні батареї LiFePo4</category>
+<category id="11260" parentId="7940">Готові Автономні Системи</category>
+<category id="7791" parentId="7940">Акумуляторні елементи 21700 Li-ion</category>
+<category id="8848" parentId="7940">Акумулятори гелеві</category>
+<category id="8863" parentId="7940">Акумулятори літій-залізо-фосфатні</category>
+<category id="9328" parentId="7940">Акумулятори свинцево-кислотні</category>
+<category id="9475" parentId="7940">Акумулятори автомобільні</category>
+<category id="8782" parentId="7940">Інвертори</category>
+<category id="8518" parentId="7940">Акумуляторні збірки</category>
+<category id="8053" parentId="7940">Акумуляторні збірки</category>
+<category id="10170" parentId="7940">Акумулятори для електротранспорту</category>
+<category id="8532" parentId="7940">Сонячні панелі</category>
+<category id="8027">LED гирлянды</category>
+<category id="8255" parentId="8027">LED гирлянды линейные</category>
+<category id="8076" parentId="8027">LED гирлянды уличные</category>
+<category id="8080" parentId="8027">LED гирлянды шторы</category>
+<category id="8321" parentId="8027">Гирлянды уличные Е27</category>
+<category id="31">Елементи живлення (Батарейки)</category>
+<category id="1558" parentId="31">Батарейкі лужні AG13 LR44</category>
+<category id="1551" parentId="31">Батарейки лужні D LR20</category>
+<category id="1541" parentId="31">Батарейки лужні LR14</category>
+<category id="172" parentId="31">Батарейки лужні AA</category>
+<category id="173" parentId="31">Батарейки лужні ААА</category>
+<category id="174" parentId="31">Батарейки літієві CR123A</category>
+<category id="175" parentId="31">Батарейки літієві CR2032</category>
+<category id="176" parentId="31">Батарейки сольові</category>
+<category id="2805">Административное освещение</category>
+<category id="8754" parentId="2805">Уничтожители насекомых</category>
+<category id="2813" parentId="2805">LED панели 600*600</category>
+<category id="2807" parentId="2805">LED светильники встраиваемые</category>
+<category id="2811" parentId="2805">LED светильники линейные</category>
+<category id="2831" parentId="2805">LED ЖКХ светильники</category>
+<category id="9683">Уличное освещение</category>
+<category id="9687" parentId="9683">Садовые светильники</category>
+<category id="9776" parentId="9683">Фасадные светильники</category>
+<category id="2827" parentId="9683">LED фонари уличные консольные</category>
+<category id="32">Електрофурнітура</category>
+<category id="252" parentId="32">Мережеві двійники/трійники</category>
+<category id="9976" parentId="32">Зарядні пристрої та кабелі</category>
+<category id="253" parentId="32">Мережеві фільтри-подовжувачі</category>
+<category id="1113" parentId="32">Реле напруги</category>
+<category id="2817">Промышленное освещение</category>
+<category id="10883" parentId="2817">LED прожектор Запорожье</category>
+<category id="10881" parentId="2817">LED прожектор Кривой Рог</category>
+<category id="10879" parentId="2817">LED прожектор Одесса</category>
+<category id="10877" parentId="2817">LED прожектор Харьков</category>
+<category id="10875" parentId="2817">LED светильники промышленные Харьков</category>
+<category id="10885" parentId="2817">Прожекторы с датчиком движения Харьков</category>
+<category id="2819" parentId="2817">LED прожекторы классические</category>
+<category id="2823" parentId="2817">LED прожекторы модульные</category>
+<category id="2821" parentId="2817">LED прожекторы с датчиком движения</category>
+<category id="2825" parentId="2817">LED светильники линейные влагозащитные IP65</category>
+<category id="2829" parentId="2817">LED светильники для высоких пролетов</category>
+<category id="246">Датчики руху</category>
+<category id="10817">Власне виробництво</category>
+<category id="11077">Матеріали та комплектуючі</category>
+<category id="11189">Аксесуари для кухні</category>
+<category id="254">АКЦІЇ/РОЗПРОДАЖ</category>
+<category id="2833">Автономное освещение</category>
+<category id="10889" parentId="2833">LED лампа со встроенным аккумулятором Одесса</category>
+<category id="10897" parentId="2833">Светодиодный фонарь налобный Днепр</category>
+<category id="10899" parentId="2833">Светодиодный фонарь налобный Запорожье</category>
+<category id="10903" parentId="2833">Светодиодный фонарь налобный Кривой Рог</category>
+<category id="10901" parentId="2833">Светодиодный фонарь налобный Одесса</category>
+<category id="10895" parentId="2833">Светодиодный фонарь налобный Харьков</category>
+<category id="10905" parentId="2833">Фонарик светодиодный ручной Днепр</category>
+<category id="10907" parentId="2833">Фонарик светодиодный ручной Одесса</category>
+<category id="10909" parentId="2833">Фонарик светодиодный ручной Харьков</category>
+<category id="2835" parentId="2833">LED фонари портативные</category>
+<category id="2839" parentId="2833">LED лампы с аккумулятором</category>
+<category id="2841" parentId="2833">LED фонари налобные</category>
+<category id="2837" parentId="2833">LED фонари ручные</category>
+<category id="2843" parentId="2833">LED светильники аварийные</category>
+<category id="8915">Специальное освещение</category>
+<category id="2815" parentId="8915">Бактерицидные лампы</category>
+<category id="2845" parentId="8915">LED светильники антимоскитные</category>
+<category id="10224" parentId="8915">Светильники для растений</category>
+<category id="10740" parentId="8915">Освещение особого назначения</category>
+<category id="7942">Аккумуляторы и инверторы</category>
+<category id="11268" parentId="7942">Акумуляторные батареи LiFePo4</category>
+<category id="11262" parentId="7942">Готовые автономные системы</category>
+<category id="10825" parentId="7942">Аккумуляторные батарейки Одесса</category>
+<category id="10823" parentId="7942">Аккумуляторные батарейки Харьков</category>
+<category id="7810" parentId="7942">Аккумуляторные батареи</category>
+<category id="8850" parentId="7942">Аккумуляторы гелиевые</category>
+<category id="8865" parentId="7942">Аккумуляторы литий-железо-фосфатные</category>
+<category id="9330" parentId="7942">Аккумуляторы свинцово-кислотные</category>
+<category id="9477" parentId="7942">Аккумуляторы автомобильные</category>
+<category id="8786" parentId="7942">Инверторы</category>
+<category id="8520" parentId="7942">Аккумуляторные сборки</category>
+<category id="8062" parentId="7942">Аккумуляторные сборки</category>
+<category id="10172" parentId="7942">Аккумуляторы для электротранспорта</category>
+<category id="8534" parentId="7942">Солнечные панели</category>
+<category id="2847">Элементы питания (Батарейки)</category>
+<category id="10915" parentId="2847">Батарейки Днепр</category>
+<category id="10917" parentId="2847">Батарейки Запорожье</category>
+<category id="10919" parentId="2847">Батарейки Кривой Рог</category>
+<category id="10925" parentId="2847">Батарейки литиевые CR123A Днепр</category>
+<category id="10923" parentId="2847">Батарейки литиевые CR123A Одесса</category>
+<category id="10921" parentId="2847">Батарейки литиевые CR123A Харьков</category>
+<category id="10931" parentId="2847">Батарейки литиевые CR2032 Днепр</category>
+<category id="10929" parentId="2847">Батарейки литиевые CR2032 Одесса</category>
+<category id="10927" parentId="2847">Батарейки литиевые CR2032 Харьков</category>
+<category id="10913" parentId="2847">Батарейки Одесса</category>
+<category id="10911" parentId="2847">Батарейки Харьков</category>
+<category id="2861" parentId="2847">Батарейки литиевые CR123A</category>
+<category id="2867" parentId="2847">Батарейки литиевые CR2032</category>
+<category id="2869" parentId="2847">Батарейки солевые</category>
+<category id="2857" parentId="2847">Батарейки щелочные AA</category>
+<category id="2849" parentId="2847">Батарейки щелочные AG13 LR44</category>
+<category id="2851" parentId="2847">Батарейки щелочные D LR20</category>
+<category id="2853" parentId="2847">Батарейки щелочные LR14</category>
+<category id="2859" parentId="2847">Батарейки щелочные ААА</category>
+<category id="2768">Электрофурнитура</category>
+<category id="10947" parentId="2768">Реле напряжения Винница</category>
+<category id="10945" parentId="2768">Реле напряжения Днепр</category>
+<category id="10949" parentId="2768">Реле напряжения Запорожье</category>
+<category id="10951" parentId="2768">Реле напряжения Кременчуг</category>
+<category id="10953" parentId="2768">Реле напряжения Кривой Рог</category>
+<category id="10955" parentId="2768">Реле напряжения Одесса</category>
+<category id="10957" parentId="2768">Реле напряжения Полтава</category>
+<category id="10959" parentId="2768">Реле напряжения Сумы</category>
+<category id="10943" parentId="2768">Реле напряжения Харьков</category>
+<category id="10961" parentId="2768">Реле напряжения Черкассы</category>
+<category id="10969" parentId="2768">Сетевой фильтр Днепр</category>
+<category id="10965" parentId="2768">Сетевой фильтр Николаев</category>
+<category id="10967" parentId="2768">Сетевой фильтр Одесса</category>
+<category id="10963" parentId="2768">Сетевой фильтр Харьков</category>
+<category id="2873" parentId="2768">Сетевые двойники/тройники</category>
+<category id="9978" parentId="2768">Зарядные устройства и кабели</category>
+<category id="2865" parentId="2768">Реле напряжения</category>
+<category id="2875" parentId="2768">Сетевые фильтры-удлинители</category>
+<category id="2877">Датчики движения</category>
+<category id="10937" parentId="2877">Датчик движения Запорожье</category>
+<category id="10941" parentId="2877">Датчик движения Кривой Рог</category>
+<category id="10933" parentId="2877">Датчик движения Харьков</category>
+<category id="11126">Собственное производство</category>
+<category id="11079">Материалы и комплектующие</category>
+<category id="10737">Освещение особого назначения</category>
+<category id="11241">Аксессуары для кухни</category>
+<category id="2766">АКЦИИ/РАСПРОДАЖА</category>
+</categories>
+<offers>

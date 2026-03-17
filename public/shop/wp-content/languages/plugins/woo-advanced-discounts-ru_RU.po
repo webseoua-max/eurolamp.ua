@@ -1,0 +1,819 @@
+# Translation of Plugins - Conditional Discounts for WooCommerce &#8211; A simple yet complete woocommerce dynamic pricing plugin - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Conditional Discounts for WooCommerce &#8211; A simple yet complete woocommerce dynamic pricing plugin - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-05-02 10:30:06+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Conditional Discounts for WooCommerce &#8211; A simple yet complete woocommerce dynamic pricing plugin - Stable (latest release)\n"
+
+#. Author URI of the plugin
+#: wad.php
+msgid "https://www.orionorigin.com/?utm_source=Installed+free+plugin&utm_medium=Author+URI&utm_campaign=WAD"
+msgstr "https://www.orionorigin.com/?utm_source=Installed+free+plugin&utm_medium=Author+URI&utm_campaign=WAD"
+
+#. Plugin URI of the plugin
+#: wad.php
+msgid "https://www.orionorigin.com/product/conditional-discounts-for-woocommerce/?utm_source=Installed+free+plugin&utm_medium=Plugin+URI&utm_campaign=WAD"
+msgstr "https://www.orionorigin.com/product/conditional-discounts-for-woocommerce/?utm_source=Installed+free+plugin&utm_medium=Plugin+URI&utm_campaign=WAD"
+
+#: includes/class-wad-discount.php:1049
+msgid "Enable/Disable this feature. %1sShortcode  %2s[wad_product_pricing_table product_id=\""
+msgstr "Включить/отключить эту функцию. <br>Шорткод <strong>[wad_product_pricing_table product_id=\""
+
+#: includes/class-wad-discount.php:158
+msgid "Date when the discount ends.  Not mandatory. %sLocal time: "
+msgstr "Дата окончания действия скидки. Не обязательно. </br></br>Местное время:"
+
+#: includes/class-wad-discount.php:148
+msgid "Date from which the discount is applied. Not mandatory. %sLocal time: "
+msgstr "Дата, с которой применяется скидка. Не обязательно. </br></br>Местное время:"
+
+#: includes/class-wad-discount.php:137
+msgctxt "timezone date format"
+msgid "Y-m-d H:i:s"
+msgstr "d.m.Y H:i:s"
+
+#: admin/class-wad-admin.php:439
+msgid "<strong>Woocommerce All Discounts</strong>: Thank you for subscribing! "
+msgstr "<strong>Все скидки на Woocommerce</strong>: Спасибо за подписку!"
+
+#: admin/class-wad-admin.php:429
+msgid "Subscribe"
+msgstr "Подписывайся"
+
+#: admin/class-wad-admin.php:421
+msgid "<strong>Conditional Discounts for WooCommerce</strong>: Sign up now to receive new releases notices and important bugs fixes directly into your inbox! "
+msgstr "<strong>Условные скидки для WooCommerce</strong>: зарегистрируйтесь сейчас, чтобы получать уведомления о новых выпусках и важных исправлениях ошибок прямо на ваш почтовый ящик!"
+
+#: admin/class-wad-admin.php:288 admin/class-wad-admin.php:430
+msgid "Not now"
+msgstr "Не сейчас"
+
+#: admin/class-wad-admin.php:287
+msgid "Submit a review"
+msgstr "Отправить отзыв"
+
+#: admin/class-wad-admin.php:278
+msgid ""
+"Hello,\n"
+"                        You've been using our discount plugin for a bit now. Do you mind please leaving us a review?\n"
+"                        This means the WORLD to us and help us reach new users. "
+msgstr ""
+"Привет,\n"
+"                         Вы уже некоторое время используете наш плагин для скидок. Пожалуйста, оставьте нам отзыв.\n"
+"                        Это многое значит для нас и поможет нам привлечь новых пользователей."
+
+#: admin/class-wad-admin.php:274
+msgid "Conditional Discounts for WooCommerce"
+msgstr "Условные скидки для WooCommerce"
+
+#: admin/class-wad-admin.php:108
+msgid "Submit a ticket"
+msgstr "Отправить сообщение об ошибке"
+
+#: admin/class-wad-admin.php:107
+msgid "User Manual"
+msgstr "Руководство пользователя"
+
+#: includes/class-wad-products-list.php:560
+#: includes/class-wad-products-list.php:565
+msgid " result(s) found"
+msgstr "Результат найден"
+
+#: includes/class-wad-products-list.php:437
+msgid "Evaluate"
+msgstr "Оценивать"
+
+#: admin/class-wad-admin.php:221
+msgid "Bulk discounts per user role"
+msgstr "Массовые скидки на роль пользователя"
+
+#: admin/class-wad-admin.php:221
+msgid "Create a quantity based pricing per customer role by setting the quantities intervals (minimum and maximum quantities) and apply a percentage or fixed amount discount off each product price."
+msgstr "Создайте ценообразование на основе количества для каждой роли клиента, задав интервалы количества (минимальное и максимальное количество) и применив процентную или фиксированную скидку к цене каждого продукта."
+
+#: admin/class-wad-admin.php:222
+msgid "Increase your chances to convert a first time visitor to a customer by automatically applying a discount to his first order."
+msgstr "Увеличьте свои шансы превратить первого посетителя в покупателя, автоматически применяя скидку к его первому заказу."
+
+#: admin/class-wad-admin.php:222
+msgid "First time order discounts"
+msgstr "Скидки на первый заказ"
+
+#: admin/class-wad-admin.php:223
+msgid "N-th order discount"
+msgstr "Скидка на N-й заказ"
+
+#: admin/class-wad-admin.php:220
+msgid "Create a quantity based pricing per product category by setting the quantities intervals (minimum and maximum quantities) and apply a percentage or fixed amount discount off each product price."
+msgstr "Создайте цену на основе количества для каждой категории продуктов, задав интервалы количества (минимальное и максимальное количество) и применив процентную или фиксированную скидку к цене каждого продукта."
+
+#: admin/class-wad-admin.php:220
+msgid "Bulk discounts per category"
+msgstr "Массовые скидки по категориям"
+
+#: admin/class-wad-admin.php:219
+msgid "Do you feel the plugin is a bit slow? Upgrade to make it faster in order to handle up to thousand of products."
+msgstr "Вам не кажется, что плагин работает немного медленно? Обновите, чтобы сделать его быстрее, чтобы обрабатывать до тысячи продуктов."
+
+#: admin/class-wad-admin.php:219
+msgid "Improved Speed"
+msgstr "Улучшенная скорость"
+
+#: admin/class-wad-admin.php:147
+msgid "Conditional Discounts for WooCommerce Settings"
+msgstr "Условные скидки для настроек WooCommerce"
+
+#. Author of the plugin
+#: wad.php
+msgid "ORION"
+msgstr "ORION"
+
+#: admin/class-wad-admin.php:104
+msgid "Products Lists"
+msgstr "Список товаров"
+
+#: admin/class-wad-admin.php:106
+msgid "Pro features"
+msgstr "Возможности Pro-версии"
+
+#. Description of the plugin
+#: wad.php
+msgid "Manage your shop discounts like a pro."
+msgstr "Управляйте скидками в магазине как профессионал."
+
+#: includes/class-wad-products-list.php:411
+msgid "Filter by taxonomies (Categories, Tags, Attributes)"
+msgstr "Фильтр по таксономии (категории, теги, атрибуты)"
+
+#: includes/class-wad-products-list.php:410
+msgid "Taxonomies"
+msgstr "Таксономии"
+
+#: includes/class-wad-products-list.php:383
+msgid "Taxonomy"
+msgstr "Классификация"
+
+#: includes/class-wad-products-list.php:370
+msgid "Taxonomies relationship"
+msgstr "Взаимосвязь таксономий"
+
+#: includes/class-wad-products-list.php:361
+msgid "Filter by metas"
+msgstr "Фильтровать по мета"
+
+#: includes/class-wad-products-list.php:360
+msgid "Metas"
+msgstr "Мета"
+
+#: includes/class-wad-products-list.php:304
+msgid "If the operator  is 'IN', 'NOT IN', 'BETWEEN', or 'NOT BETWEEN', make sure the different values are separated by a comma"
+msgstr "Если используется оператор «В», «НЕ В», «МЕЖДУ» или «НЕ МЕЖДУ», убедитесь, что разные значения разделены запятой."
+
+#: includes/class-wad-products-list.php:303
+#: includes/class-wad-products-list.php:391
+msgid "Operator"
+msgstr "Оператор"
+
+#: includes/class-wad-products-list.php:283
+msgid "Metas relationship"
+msgstr "Отношения меты"
+
+#: includes/class-wad-products-list.php:274
+msgid "Excludes the following elements IDs from the results (values separated by commas)"
+msgstr "Исключает следующие идентификаторы элементов из результатов (значения, разделенные запятыми)"
+
+#: includes/class-wad-products-list.php:273
+msgid "Exclude"
+msgstr "Исключить"
+
+#: includes/class-wad-products-list.php:263
+msgid "Retrieves only the elements created by the specified authors"
+msgstr "Извлекает только элементы, созданные указанными авторами"
+
+#: includes/class-wad-products-list.php:253
+msgid "Values separated by commas"
+msgstr "Значения, разделенные запятыми"
+
+#: includes/class-wad-products-list.php:252
+msgid "Products IDs"
+msgstr "Идентификаторы товаров"
+
+#: includes/class-wad-products-list.php:236
+msgid "Dynamic request"
+msgstr "Динамический запрос"
+
+#: includes/class-wad-products-list.php:235
+msgid "By ID"
+msgstr "По ID"
+
+#: includes/class-wad-products-list.php:233
+msgid "How would you like to specify which products you want to include in the list?"
+msgstr "Как бы вы хотели указать, какие продукты вы хотите включить в список?"
+
+#: includes/class-wad-products-list.php:228
+msgid "Extraction type"
+msgstr "Тип извлечения"
+
+#: includes/class-wad-products-list.php:207
+msgid "List settings"
+msgstr "Настройки списка"
+
+#: includes/class-wad-products-list.php:174
+msgid "Lists"
+msgstr "Списки"
+
+#: includes/class-wad-products-list.php:173
+msgid "No list in the trash"
+msgstr "Нет списка в корзине"
+
+#: includes/class-wad-products-list.php:172
+msgid "No list found"
+msgstr "Список не найден"
+
+#: includes/class-wad-products-list.php:171
+msgid "View list"
+msgstr "Посмотреть список"
+
+#: includes/class-wad-products-list.php:169
+msgid "Edit list"
+msgstr "Редактировать список"
+
+#: includes/class-wad-products-list.php:167
+#: includes/class-wad-products-list.php:168
+#: includes/class-wad-products-list.php:170
+msgid "New list"
+msgstr "Новый список"
+
+#: includes/functions.php:137
+msgid "Not logged in"
+msgstr "Не авторизован"
+
+#: includes/class-wad-discount.php:1260
+msgid "And more."
+msgstr "И многое другое."
+
+#: includes/class-wad-discount.php:1207 includes/class-wad-discount.php:1242
+msgid "Unit Price"
+msgstr "Цена за единицу"
+
+#: includes/class-wad-discount.php:1206
+msgid "Every multiple of"
+msgstr "Каждое кратное"
+
+#: includes/class-wad-discount.php:1165
+msgid "Quantity based pricing table"
+msgstr "Оптовые цены"
+
+#: includes/class-wad-discount.php:1117
+msgid "If quantity ordered is a multiple of the step, then the discount specified will be applied."
+msgstr "Если заказанное количество кратно шагу, то будет применена указанная скидка."
+
+#: includes/class-wad-discount.php:1116
+msgid "Steps Rules"
+msgstr "Правила шагов"
+
+#: includes/class-wad-discount.php:1109
+msgid "Every X items"
+msgstr "Каждые X элементов"
+
+#: includes/class-wad-discount.php:1101
+msgid "If quantity ordered between Min and Max, then the discount specified will be applied. %sLeave Min or Max empty for any value (joker)."
+msgstr "Если заказанное количество находится между Min и Max, то будет применяться указанная скидка. <br>Оставьте минимальное или максимальное значение пустым для любого значения (Джокер)."
+
+#: includes/class-wad-discount.php:1100
+msgid "Intervals rules"
+msgstr "Правила интервалов"
+
+#: includes/class-wad-discount.php:1085 includes/class-wad-discount.php:1241
+msgid "Max"
+msgstr "Макс."
+
+#: includes/class-wad-discount.php:1078 includes/class-wad-discount.php:1240
+msgid "Min"
+msgstr "Мин."
+
+#: includes/class-wad-discount.php:1074
+msgid "If Intervals, the intervals rules will be used.%sIf Steps, the steps rules will be used."
+msgstr "Если выбран интервал, будут использоваться правила интервалов.<br>Если выбран шаг, будут использоваться правила шагов."
+
+#: includes/class-wad-discount.php:1071
+msgid "Steps"
+msgstr "Шаги"
+
+#: includes/class-wad-discount.php:1070
+msgid "Intervals"
+msgstr "Интервалы"
+
+#: includes/class-wad-discount.php:1066
+msgid "Rules type"
+msgstr "Тип правил"
+
+#: includes/class-wad-discount.php:1062
+msgid "Apply a percentage or a fixed amount discount"
+msgstr "Применение процентной или фиксированной скидки"
+
+#: includes/class-wad-discount.php:1030
+msgid "Quantity Based Pricing"
+msgstr "Ценообразование на основе количества"
+
+#: includes/class-wad-discount.php:794
+msgid "Free gift (Pro feature)"
+msgstr "Бесплатный подарок (функция Pro)"
+
+#: includes/class-wad-discount.php:793
+msgid "Fixed shipping fees (Pro feature)"
+msgstr "Фиксированная стоимость доставки (функция Pro)"
+
+#: includes/class-wad-discount.php:792
+msgid "Fixed amount off shipping fees (Pro feature)"
+msgstr "Фиксированная сумма скидки на доставку (функция Pro)"
+
+#: includes/class-wad-discount.php:791
+msgid "Percentage off shipping fees (Pro feature)"
+msgstr "Процент от стоимости доставки (функция Pro)"
+
+#: includes/class-wad-discount.php:790
+msgid "Fixed amount off order subtotal (inc. taxes) (Pro feature)"
+msgstr "Фиксированная сумма от суммы заказа (включая налоги) (функция Pro)"
+
+#: includes/class-wad-discount.php:789
+msgid "Percentage off order subtotal (inc. taxes) (Pro feature)"
+msgstr "Процент от промежуточной суммы заказа (включая налоги) (функция Pro)"
+
+#: includes/class-wad-discount.php:788
+msgid "Fixed amount off product with lowest subtotal in cart (Pro feature)"
+msgstr "Фиксированная сумма скидки на продукт с наименьшим промежуточным итогом в корзине (функция Pro)"
+
+#: includes/class-wad-discount.php:787
+msgid "Percentage off product with lowest subtotal in cart (Pro feature)"
+msgstr "Процентная скидка на продукт с наименьшей промежуточной суммой в корзине (функция Pro)"
+
+#: includes/class-wad-discount.php:786
+msgid "Fixed amount off cheapest product price in cart (Pro feature)"
+msgstr "Фиксированная сумма от самой низкой цены товара в корзине (функция Pro)"
+
+#: includes/class-wad-discount.php:785
+msgid "Percentage off cheapest product price in cart (Pro feature)"
+msgstr "Процент от самой низкой цены товара в корзине (функция Pro)"
+
+#: includes/class-wad-discount.php:784
+msgid "Fixed product price (Pro feature)"
+msgstr "Фиксированная цена продукта (функция Pro)"
+
+#: includes/class-wad-discount.php:783
+msgid "Fixed amount off order subtotal"
+msgstr "Фиксированная сумма от суммы заказа"
+
+#: includes/class-wad-discount.php:782
+msgid "Percentage off order subtotal"
+msgstr "Процент от суммы заказа"
+
+#: includes/class-wad-discount.php:781 includes/class-wad-discount.php:1059
+msgid "Fixed amount off product price"
+msgstr "Фиксированная сумма от цены продукта"
+
+#: includes/class-wad-discount.php:780 includes/class-wad-discount.php:1058
+msgid "Percentage off product price"
+msgstr "Процент от цены товара"
+
+#: includes/class-wad-discount.php:773
+msgid "If Order items count"
+msgstr "Если позиции заказа учитываются"
+
+#: includes/class-wad-discount.php:772
+msgid "If Order subtotal"
+msgstr "Если промежуточный итог заказа"
+
+#: includes/class-wad-discount.php:771
+msgid "If Customer"
+msgstr "Если клиент"
+
+#: includes/class-wad-discount.php:770
+msgid "If Customer role"
+msgstr "Если роль клиента"
+
+#: includes/class-wad-discount.php:666
+msgid " requires at least one parameter selected in the values"
+msgstr "требуется хотя бы один параметр, выбранный в значениях"
+
+#: includes/class-wad-discount.php:666
+msgid "Rule "
+msgstr "Правило"
+
+#: includes/class-wad-discount.php:595
+msgid "Reductions on cart"
+msgstr "Скидки на корзину"
+
+#: includes/class-wad-discount.php:477
+msgid "Add rules group"
+msgstr "Добавить группу правил"
+
+#: includes/class-wad-discount.php:396
+msgid "is a multiple of"
+msgstr "является кратным"
+
+#: includes/class-wad-discount.php:395
+msgid "is more or equal to"
+msgstr "больше или равно"
+
+#: includes/class-wad-discount.php:394
+msgid "is more than"
+msgstr "больше чем"
+
+#: includes/class-wad-discount.php:393
+msgid "equals"
+msgstr "равно"
+
+#: includes/class-wad-discount.php:392
+msgid "is less or equal to"
+msgstr "меньше или равно"
+
+#: includes/class-wad-discount.php:391
+msgid "is less than"
+msgstr "меньше чем"
+
+#: includes/class-wad-discount.php:386
+msgid "NOT IN"
+msgstr "НЕ В"
+
+#: includes/class-wad-discount.php:385
+msgid "IN"
+msgstr "В"
+
+#: includes/class-wad-discount.php:324
+msgid "If shop currency (Pro feature)"
+msgstr "Если валюта магазина (функция Pro)"
+
+#: includes/class-wad-discount.php:323
+msgid "If Customer belongs to specified groups (Pro feature)"
+msgstr "Если Клиент принадлежит к указанным группам (функция Pro)"
+
+#: includes/class-wad-discount.php:322
+msgid "If Customer is following an affiliation link (Pro feature)"
+msgstr "Если Клиент переходит по партнерской ссылке (функция Pro)"
+
+#: includes/class-wad-discount.php:321
+msgid "If Customer subscribed to a NewsletterPlugin list (Pro feature)"
+msgstr "Если Клиент подписался на список плагинов для рассылки новостей (функция Pro)"
+
+#: includes/class-wad-discount.php:320
+msgid "If Customer subscribed to a Sendinblue list (Pro feature)"
+msgstr "Если Клиент подписался на список Sendinblue (функция Pro)"
+
+#: includes/class-wad-discount.php:319
+msgid "If Customer subscribed to Mailchimp list (Pro feature)"
+msgstr "Если Клиент подписался на список Mailchimp (функция Pro)"
+
+#: includes/class-wad-discount.php:318
+msgid "If Shipping method (Pro feature)"
+msgstr "Если способ доставки (функция Pro)"
+
+#: includes/class-wad-discount.php:317
+msgid "If Shipping state (Pro feature)"
+msgstr "Если состояние доставки (функция Pro)"
+
+#: includes/class-wad-discount.php:316
+msgid "If Shipping country (Pro feature)"
+msgstr "Если страна доставки (Pro функция)"
+
+#: includes/class-wad-discount.php:315
+msgid "If Billing state (Pro feature)"
+msgstr "Если состояние выставления счета (функция Pro)"
+
+#: includes/class-wad-discount.php:314
+msgid "If Customer billing country (Pro feature)"
+msgstr "Если страна выставления счета клиента (функция Pro)"
+
+#: includes/class-wad-discount.php:313
+msgid "If Payment gateway (Pro feature)"
+msgstr "Если платежный шлюз (функция Pro)"
+
+#: includes/class-wad-discount.php:312
+msgid "If Customer reviewed any product (Pro feature)"
+msgstr "Если Клиент просмотрел какой-либо продукт (функция Pro)"
+
+#: includes/class-wad-discount.php:311
+msgid "If Order products (Pro feature)"
+msgstr "Если заказать продукты (функция Pro)"
+
+#: includes/class-wad-discount.php:310
+msgid "If Different Order items count (Pro feature)"
+msgstr "Если учитываются разные позиции заказа (функция Pro)"
+
+#: includes/class-wad-discount.php:309
+msgid "If Order subtotal (inc. taxes) (Pro feature)"
+msgstr "Если промежуточная сумма заказа (включая налоги) (функция Pro)"
+
+#: includes/class-wad-discount.php:308
+msgid "If Previously ordered products (Pro feature)"
+msgstr "Если ранее заказанные продукты (функция Pro)"
+
+#: includes/class-wad-discount.php:307
+msgid "If Previously ordered products count (Pro feature)"
+msgstr "Если учитываются ранее заказанные товары (функция Pro)"
+
+#: includes/class-wad-discount.php:306
+msgid "If Total spent in shop (Pro feature)"
+msgstr "Если Всего потрачено в магазине (функция Pro)"
+
+#: includes/class-wad-discount.php:305
+msgid "If Previous orders count (Pro feature)"
+msgstr "Если учитываются предыдущие заказы (функция Pro)"
+
+#: includes/class-wad-discount.php:304
+msgid "If Customer email domain name (Pro feature)"
+msgstr "Если имя домена электронной почты клиента (функция Pro)"
+
+#: includes/class-wad-discount.php:249
+msgid "Allows you to define which rules should be checked in order to apply the discount. Not mandatory."
+msgstr "Позволяет определить, какие правила следует проверить, чтобы применить скидку. Не обязательно."
+
+#: includes/class-wad-discount.php:248
+msgid "Rules"
+msgstr "Правила"
+
+#: includes/class-wad-discount.php:239
+msgid "OR: AT least one group rules must be verified to have the discount action applied."
+msgstr "ИЛИ: Для применения действия скидки необходимо проверить хотя бы одно групповое правило."
+
+#: includes/class-wad-discount.php:239
+msgid "AND: All groups rules must be verified to have the discount action applied."
+msgstr "И: все правила групп должны быть проверены, чтобы применить действие скидки."
+
+#: includes/class-wad-discount.php:236
+msgid "Rules groups relationship"
+msgstr "Отношения групп правил"
+
+#: includes/class-wad-discount.php:230
+msgid "Percentage or fixed amount to apply."
+msgstr "Процент или фиксированная сумма для применения."
+
+#: includes/class-wad-discount.php:224
+msgid "Percentage / Fixed amount"
+msgstr "Процент / Фиксированная сумма"
+
+#: includes/class-wad-discount.php:215
+msgid "Disables the display of discounted prices on all pages except cart and checkout"
+msgstr "Отключает отображение цен со скидкой на всех страницах, кроме корзины и оформления заказа."
+
+#: includes/class-wad-discount.php:210
+msgid "Disable on products and shop pages"
+msgstr "Отключить на страницах товаров и магазинов"
+
+#: includes/class-wad-discount.php:201
+msgid "Run the calculations of each product in the list independantly."
+msgstr "Запуск расчетов каждого продукта в списке независимо."
+
+#: includes/class-wad-discount.php:197
+msgid "Evaluate per product"
+msgstr "Оценить по продукту"
+
+#: includes/class-wad-discount.php:190
+msgid "List of products the selected action applies on"
+msgstr "Список продуктов, к которым применяется выбранное действие"
+
+#: includes/class-wad-discount.php:176
+msgid "Type of discount to apply."
+msgstr "Тип применяемой скидки."
+
+#: includes/class-wad-discount.php:153
+msgid "End date"
+msgstr "Дата окончания"
+
+#: includes/class-wad-discount.php:143
+msgid "Start date"
+msgstr "Дата начала"
+
+#: includes/class-wad-discount.php:104
+msgid "Discount settings"
+msgstr "Настройки скидки"
+
+#: includes/class-wad-discount.php:70
+msgid "Discounts"
+msgstr "Скидки"
+
+#: includes/class-wad-discount.php:69
+msgid "No discount in the trash"
+msgstr "В корзине скидок не найдено"
+
+#: includes/class-wad-discount.php:68
+msgid "No discount found"
+msgstr "Скидок не найдено"
+
+#: includes/class-wad-discount.php:66
+msgid "View discount"
+msgstr "Посмотреть скидку"
+
+#: includes/class-wad-discount.php:64
+msgid "Edit discount"
+msgstr "Изменить скидку"
+
+#: includes/class-wad-discount.php:62 includes/class-wad-discount.php:63
+#: includes/class-wad-discount.php:65
+msgid "New discount"
+msgstr "Новая скидка"
+
+#: admin/class-wad-admin.php:238
+msgid "ability to disable coupons when a dynamic discount is applied."
+msgstr "возможность отключения купонов при применении динамической скидки."
+
+#: admin/class-wad-admin.php:238
+msgid "Coupons deactivation"
+msgstr "Деактивация купонов"
+
+#: admin/class-wad-admin.php:237
+msgid "ability to define a discount based on previously purchased products."
+msgstr "возможность определения скидки на основе ранее приобретенных товаров."
+
+#: admin/class-wad-admin.php:237
+msgid "Previous purchases discounts"
+msgstr "Скидки за предыдущие покупки"
+
+#: admin/class-wad-admin.php:236
+msgid "apply discounts depending on the customer selected currency (useful for currency switchers)."
+msgstr "применять скидки в зависимости от выбранной клиентом валюты (полезно для переключателей валюты)."
+
+#: admin/class-wad-admin.php:236
+msgid "Currency based discounts"
+msgstr "Скидки в зависимости от валюты"
+
+#: admin/class-wad-admin.php:235
+msgid "apply discounts for specific(s) customer(s)."
+msgstr "применить скидки для конкретного(ых) клиента(ов)."
+
+#: admin/class-wad-admin.php:235
+msgid "Specific users discounts"
+msgstr "Скидки для конкретных пользователей"
+
+#: admin/class-wad-admin.php:234
+msgid "apply discounts on subtotal with or without the taxes."
+msgstr "применять скидки на промежуточный итог с налогами или без них."
+
+#: admin/class-wad-admin.php:234
+msgid "Taxes inclusion"
+msgstr "Включение налогов"
+
+#: admin/class-wad-admin.php:233
+msgid "offer a discount if the customer subscribed to your newsletters."
+msgstr "предложите скидку, если клиент подписался на ваши информационные бюллетени."
+
+#: admin/class-wad-admin.php:233
+msgid "Newsletters based discounts"
+msgstr "Скидки на основе информационных бюллетеней"
+
+#: admin/class-wad-admin.php:232
+msgid "apply a discount is the customer belong to a specific group."
+msgstr "применить скидку, если клиент принадлежит к определенной группе."
+
+#: admin/class-wad-admin.php:232
+msgid "Groups based discounts"
+msgstr "Скидки для групп"
+
+#: admin/class-wad-admin.php:231
+msgid "automatically enable a discount periodically."
+msgstr "периодически автоматически включать скидку."
+
+#: admin/class-wad-admin.php:231
+msgid "Periodic discounts"
+msgstr "Периодические скидки"
+
+#: admin/class-wad-admin.php:230
+msgid "limits the number of customers who can use a discount."
+msgstr "ограничивает количество клиентов, которые могут воспользоваться скидкой."
+
+#: admin/class-wad-admin.php:230
+msgid "Usage limit"
+msgstr "Лимит использования"
+
+#: admin/class-wad-admin.php:229
+msgid "Apply discount on shipping fees"
+msgstr "Применить скидку на стоимость доставки"
+
+#: admin/class-wad-admin.php:229
+msgid "Discount on shipping fees"
+msgstr "Скидка на стоимость доставки"
+
+#: admin/class-wad-admin.php:228
+msgid "apply a discount if the customers checks out with a specific payment gateway."
+msgstr "применять скидку, если клиенты расплачиваются с помощью определенного платежного шлюза."
+
+#: admin/class-wad-admin.php:228
+msgid "Payment gateways"
+msgstr "Платежные шлюзы"
+
+#: admin/class-wad-admin.php:227
+msgid "apply a discount based on the billing country."
+msgstr "применить скидку в зависимости от страны выставления счета."
+
+#: admin/class-wad-admin.php:227
+msgid "Billing Country"
+msgstr "Страной плательщика"
+
+#: admin/class-wad-admin.php:226
+msgid "apply a discount based on the shipping country."
+msgstr "применить скидку в зависимости от страны доставки."
+
+#: admin/class-wad-admin.php:226
+msgid "Shipping Country"
+msgstr "Страна доставки"
+
+#: admin/class-wad-admin.php:225
+msgid "create a \"Buy one, get one for free\" kind of discount"
+msgstr "создать скидку типа \"Купи одну, получи другую бесплатно\""
+
+#: admin/class-wad-admin.php:225
+msgid "Free gifts"
+msgstr "Бесплатные подарки"
+
+#: admin/class-wad-admin.php:224
+msgid "Offer any type of discount to any customer who registers using an email address based on a specific domain name."
+msgstr "Предложите любой тип скидки любому клиенту, который регистрируется с использованием адреса электронной почты на основе определенного доменного имени."
+
+#: admin/class-wad-admin.php:224
+msgid "Discounts based on the customer email domain"
+msgstr "Скидки в зависимости от домена электронной почты клиента"
+
+#: admin/class-wad-admin.php:223
+msgid "Reward and reinforce your customers loyalty by assigning a dynamic discount to those who purchased from your store a certain number of times."
+msgstr "Поощряйте и укрепляйте лояльность ваших клиентов, назначая динамическую скидку тем, кто совершил покупку в вашем магазине определенное количество раз."
+
+#: includes/class-wad-discount.php:172
+msgid "Action"
+msgstr "Действие"
+
+#: includes/class-wad-discount.php:976
+msgid "Active"
+msgstr "Активно"
+
+#: includes/utils.php:566
+msgid "Add"
+msgstr "Добавить"
+
+#: includes/class-wad-products-list.php:290
+msgid "AND"
+msgstr "И"
+
+#: includes/class-wad-discount.php:334
+msgid "and"
+msgstr "и"
+
+#: includes/class-wad-products-list.php:262
+msgid "Author"
+msgstr "Автор"
+
+#: includes/class-wad-discount.php:60 includes/class-wad-discount.php:61
+#: includes/class-wad-discount.php:666 includes/class-wad-discount.php:1092
+msgid "Discount"
+msgstr "Скидка"
+
+#: includes/class-wad-discount.php:1054
+msgid "Discount type"
+msgstr "Тип скидки"
+
+#: includes/class-wad-discount.php:1045
+msgid "Enabled"
+msgstr "Включить"
+
+#: includes/class-wad-discount.php:975
+msgid "End Date"
+msgstr "Дата окончания"
+
+#: includes/class-wad-products-list.php:296
+msgid "Key"
+msgstr "Ключ"
+
+#: includes/class-wad-products-list.php:165
+#: includes/class-wad-products-list.php:166
+msgid "List"
+msgstr "Список"
+
+#: includes/class-wad-products-list.php:291
+msgid "OR"
+msgstr "ИЛИ"
+
+#: includes/class-wad-discount.php:185
+msgid "Products list"
+msgstr "Список товаров"
+
+#: admin/class-wad-admin.php:175
+msgid "Save"
+msgstr "Сохранить"
+
+#: includes/class-wad-discount.php:974
+msgid "Start Date"
+msgstr "Дата начала"
+
+#: includes/class-wad-products-list.php:335
+msgid "Type"
+msgstr "Тип"
+
+#: includes/class-wad-products-list.php:328
+#: includes/class-wad-products-list.php:402
+msgid "Value"
+msgstr "Значение"

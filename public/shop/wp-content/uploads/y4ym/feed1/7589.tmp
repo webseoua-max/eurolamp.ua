@@ -1,0 +1,36 @@
+<offer id="7589" available="true">
+<currencyId>UAH</currencyId>
+<price>1690</price>
+<oldprice>1990.02</oldprice>
+<name>Аккумуляторная сборка 6S1P на элементах Molicel P42A, 22,2V</name>
+<description><![CDATA[<p data-start="94" data-end="251">Аккумуляторная сборка 6S1P-P42A выполнена на основе высокотоковых элементов Molicel P42A и собрана по схеме 6S1P (6 элементов последовательно).</p>
+🔑 Характеристики:
+
+
+<p data-start="284" data-end="320">Номинальное напряжение: 21.6 В</p>
+<br/>
+
+<p data-start="323" data-end="375">Максимальное напряжение (полный заряд): 25.2 В</p>
+<br/>
+
+<p data-start="378" data-end="402">Ёмкость: 4200 мА·ч</p>
+<br/>
+
+<p data-start="405" data-end="428">Энергия: ~90 Вт·ч</p>
+<br/>
+
+<p data-start="431" data-end="481">Максимальный постоянный ток разряда: до 45 А</p>
+<br/>
+
+<p data-start="484" data-end="513">Пиковый ток: до 55–60 А</p>
+<br/>
+
+<p data-start="516" data-end="594">Тип ячеек: Molicel P42A – одни из лучших по балансу ёмкости и токоотдачи</p>
+<br/>
+]]></description>
+<picture>https://eurolamp.ua/shop/wp-content/uploads/ee-aps-10-2m_2.jpg</picture>
+<url>https://eurolamp.ua/shop/ru/product/akkumuliator-dlia-dronov-fpv-6s1p-p42a/</url>
+<store>true</store>
+<delivery>false</delivery>
+<categoryId>7942</categoryId>
+</offer>

@@ -1,0 +1,1768 @@
+# Translation of Plugins - Really Simple Security &#8211; Simple and Performant Security (formerly Really Simple SSL) - Stable (latest release) in Ukrainian
+# This file is distributed under the same license as the Plugins - Really Simple Security &#8211; Simple and Performant Security (formerly Really Simple SSL) - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-01-11 09:09:59+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: uk_UA\n"
+"Project-Id-Version: Plugins - Really Simple Security &#8211; Simple and Performant Security (formerly Really Simple SSL) - Stable (latest release)\n"
+
+#: settings/config/fields/firewall.php:167 settings/config/menu.php:569
+msgid "Deleted"
+msgstr "Видалено"
+
+#: settings/config/fields/two-fa.php:52 settings/config/fields/two-fa.php:53
+#: settings/config/fields/two-fa.php:54
+msgid "%s days"
+msgstr "%s дні"
+
+#: settings/config/fields/two-fa.php:80 settings/config/fields/two-fa.php:102
+msgid "Enable for:"
+msgstr "Увімкнути для:"
+
+#. translators: Login screen title. 1: Login screen name, 2: Network or site
+#. name.
+#: security/wordpress/two-fa/function-login-header.php:56
+msgid "%1$s &lsaquo; %2$s &#8212; WordPress"
+msgstr "%1$s &lsaquo; %2$s &#8212; WordPress"
+
+#. translators: %s: Site title.
+#: security/wordpress/two-fa/function-login-footer.php:31
+msgctxt "site"
+msgid "&larr; Go to %s"
+msgstr "&larr; Назад до %s"
+
+#: security/wordpress/two-fa/class-rsssl-two-factor.php:1085
+#: security/wordpress/two-fa/class-rsssl-two-factor.php:1322
+msgid "Cheatin&#8217; uh?"
+msgstr "Махлюєш?"
+
+#: security/wordpress/two-fa/function-login-header.php:136
+msgid "Powered by WordPress"
+msgstr "Працює на WordPress"
+
+#. translators: %s: Login screen title.
+#: security/wordpress/two-fa/function-login-header.php:60
+msgid "Recovery Mode &#8212; %s"
+msgstr "Режим відновлення &#8212; %s"
+
+#: security/wordpress/two-fa/class-rsssl-two-factor.php:1257
+msgid "You have logged in successfully."
+msgstr "Ви увійшли успішно."
+
+#: security/wordpress/two-fa/function-login-header.php:107
+msgid "https://wordpress.org/"
+msgstr "https://uk.wordpress.org/"
+
+#: security/wordpress/two-fa/class-rsssl-two-factor.php:1595
+msgid "Password Reset"
+msgstr "Скинути пароль"
+
+#: security/wordpress/two-fa/class-rsssl-two-factor-totp.php:722
+msgid "Authenticate"
+msgstr "Аутентифікувати"
+
+#: security/wordpress/two-fa/class-rsssl-two-factor-email.php:532
+#: security/wordpress/two-fa/class-rsssl-two-factor-totp.php:864
+msgid "Enabled"
+msgstr "Увімкнено"
+
+#: security/wordpress/two-fa/class-rsssl-two-factor.php:794
+#: security/wordpress/two-fa/class-rsssl-two-factor.php:1118
+#: security/wordpress/two-fa/class-rsssl-two-factor.php:1156
+#: security/wordpress/two-fa/class-rsssl-two-factor.php:1201
+#: security/wordpress/two-fa/class-rsssl-two-factor.php:1361
+#: security/wordpress/two-fa/class-rsssl-two-factor.php:1402
+#: security/wordpress/two-fa/class-rsssl-two-factor.php:1456
+msgid "Failed to create a login nonce."
+msgstr "Не вдалося створити ідентифікатор."
+
+#: security/wordpress/two-fa/class-rsssl-two-factor-email.php:323
+msgid "Hi"
+msgstr "Привіт"
+
+#: security/wordpress/two-fa/class-rsssl-two-factor-email.php:351
+msgid "Log In"
+msgstr "Увійти"
+
+#: security/wordpress/two-fa/class-rsssl-two-factor-email.php:92
+msgctxt "Provider Label"
+msgid "Email"
+msgstr "Email"
+
+#: assets/templates/two_fa/onboarding.php:157
+#: security/wordpress/two-fa/class-rsssl-two-factor-email.php:254
+msgid "Continue"
+msgstr "Продовжити"
+
+#: assets/templates/two_fa/onboarding.php:115
+#: assets/templates/two_fa/profile-settings.php:129
+#: security/wordpress/two-fa/class-rsssl-two-factor-email.php:354
+msgid "Resend Code"
+msgstr "Надіслати код ще раз"
+
+#: assets/templates/two_fa/onboarding.php:142
+msgid "day"
+msgstr "день"
+
+#: assets/templates/two_fa/onboarding.php:142
+msgid "days"
+msgstr "дні"
+
+#: assets/templates/two_fa/totp-config.php:54
+#: security/wordpress/two-fa/class-rsssl-two-factor-backup-codes.php:359
+#: security/wordpress/two-fa/class-rsssl-two-factor-totp.php:380
+msgid "Submit"
+msgstr "Відправити"
+
+#: settings/config/fields/firewall.php:131
+msgid "1 day"
+msgstr "1 день"
+
+#: settings/config/menu.php:659
+msgid "Logs"
+msgstr "Журнали"
+
+#: settings/config/menu.php:527
+msgid "Rules"
+msgstr "Правила"
+
+#: settings/config/fields/firewall.php:128
+msgid "30 minutes"
+msgstr "30 хвилин"
+
+#: lets-encrypt/class-letsencrypt-handler.php:611
+msgid "%d seconds"
+msgstr "%d секунди"
+
+#: settings/config/fields/firewall.php:100
+msgid "Threshold"
+msgstr "Порогове значення"
+
+#: settings/config/fields/firewall.php:36
+#: settings/config/fields/firewall.php:76
+#: settings/config/fields/firewall.php:187
+msgid "Note"
+msgstr "Нотатка"
+
+#: settings/config/menu.php:41 settings/config/menu.php:44
+msgid "Captcha"
+msgstr "Captcha"
+
+#: settings/config/fields/limit-login-attempts.php:84
+msgid "%s month"
+msgstr "%s місяць"
+
+#: settings/config/fields/limit-login-attempts.php:85
+msgid "%s months"
+msgstr "%s місяці"
+
+#: settings/config/fields/limit-login-attempts.php:83
+msgid "%s week"
+msgstr "%s тиждень"
+
+#: settings/config/fields/general.php:112
+msgid "hCaptcha"
+msgstr "hCaptcha"
+
+#: settings/config/menu.php:431 settings/config/menu.php:451
+msgid "IP Addresses"
+msgstr "IP адреси"
+
+#: settings/config/menu.php:473 settings/config/menu.php:683
+msgid "Warnings"
+msgstr "Попередження"
+
+#: settings/config/menu.php:245
+msgid "Advanced"
+msgstr "Розширене"
+
+#: settings/config/menu.php:239
+msgid "Basic"
+msgstr "Базовий"
+
+#: settings/config/fields/limit-login-attempts.php:58
+#: settings/config/fields/limit-login-attempts.php:82
+#: settings/config/fields/two-fa.php:51
+msgid "%s day"
+msgstr "%s день"
+
+#: settings/config/fields/limit-login-attempts.php:56
+#: settings/config/fields/limit-login-attempts.php:80
+msgid "%s hour"
+msgstr "%s година"
+
+#: settings/config/fields/limit-login-attempts.php:57
+#: settings/config/fields/limit-login-attempts.php:81
+msgid "%s hours"
+msgstr "%s години"
+
+#: settings/config/fields/limit-login-attempts.php:54
+#: settings/config/fields/limit-login-attempts.php:55
+#: settings/config/fields/limit-login-attempts.php:78
+#: settings/config/fields/limit-login-attempts.php:79
+msgid "%s minutes"
+msgstr "%s хвилини"
+
+#: settings/config/fields/access-control.php:60
+msgid "1 year"
+msgstr "1 рік"
+
+#: settings/config/fields/limit-login-attempts.php:298
+msgid "User"
+msgstr "Користувач"
+
+#: settings/config/fields/firewall.php:299
+#: settings/config/fields/limit-login-attempts.php:314
+msgid "Event"
+msgstr "Подія"
+
+#: settings/config/fields/firewall.php:234
+#: settings/config/fields/firewall.php:279
+#: settings/config/fields/limit-login-attempts.php:234
+#: settings/config/fields/limit-login-attempts.php:286
+msgid "Country"
+msgstr "Країна"
+
+#: settings/config/fields/limit-login-attempts.php:52
+msgid "Interval"
+msgstr "Інтервал"
+
+#: settings/config/fields/firewall.php:29
+#: settings/config/fields/firewall.php:69
+#: settings/config/fields/firewall.php:285
+#: settings/config/fields/limit-login-attempts.php:182
+#: settings/config/fields/limit-login-attempts.php:306
+#: settings/build/288.6791823778f8b8c60d18.js:1
+#: settings/src/Settings/GeoBlockList/TrustIpAddressModal.js:89
+#: settings/src/Settings/LimitLoginAttempts/AddIpAddressModal.js:81
+msgid "IP Address"
+msgstr "IP адреси"
+
+#: settings/config/fields/two-fa.php:122 settings/config/menu.php:322
+#: settings/config/menu.php:396 settings/config/menu.php:416
+msgid "Users"
+msgstr "Користувача"
+
+#: settings/config/fields/firewall.php:129
+msgid "1 hour"
+msgstr "1 година"
+
+#: settings/config/fields/firewall.php:42
+#: settings/config/fields/firewall.php:293
+#: settings/config/fields/limit-login-attempts.php:149
+#: settings/config/fields/limit-login-attempts.php:195
+#: settings/config/fields/limit-login-attempts.php:292
+#: settings/config/fields/vulnerability-detection.php:165
+msgid "Date"
+msgstr "Дата"
+
+#: security/wordpress/two-fa/class-rsssl-two-factor-email.php:534
+#: security/wordpress/two-fa/class-rsssl-two-factor-settings.php:579
+#: settings/config/fields/vulnerability-detection.php:108
+#: settings/config/menu.php:35
+msgid "Email"
+msgstr "Email"
+
+#: security/wordpress/two-fa/class-rsssl-two-factor-settings.php:583
+#: security/wordpress/two-fa/class-rsssl-two-factor-settings.php:600
+#: settings/config/fields/vulnerability-detection.php:58
+#: settings/config/fields/vulnerability-detection.php:80
+#: settings/config/fields/vulnerability-detection.php:102
+#: settings/config/fields/vulnerability-detection.php:193
+msgid "None"
+msgstr "Немає"
+
+#: settings/config/fields/vulnerability-detection.php:62
+#: settings/config/fields/vulnerability-detection.php:84
+#: settings/config/fields/vulnerability-detection.php:197
+msgid "Critical"
+msgstr "Критично"
+
+#: settings/config/fields/vulnerability-detection.php:157
+msgid "Component"
+msgstr "Компонент"
+
+#: assets/templates/two_fa/onboarding.php:126
+#: settings/build/288.6791823778f8b8c60d18.js:1
+#: settings/build/814.8dbd4ded982949363a3e.js:1
+#: settings/src/Onboarding/OnboardingControls.js:201
+msgid "Skip"
+msgstr "Пропустити"
+
+#: security/wordpress/two-fa/class-rsssl-two-factor-email.php:532
+#: security/wordpress/two-fa/class-rsssl-two-factor-totp.php:867
+#: settings/config/fields/firewall.php:101
+#: settings/config/fields/firewall.php:106
+#: settings/config/fields/security-headers.php:14
+#: settings/build/288.6791823778f8b8c60d18.js:1
+#: settings/src/Settings/DataTable/DataTableWrapper.js:167
+#: settings/src/Settings/DynamicDataTable/DynamicDataTable.js:168
+#: settings/src/Settings/EventLog/EventLogDataTable.js:232
+#: settings/src/Settings/firewall/UserAgentTable.js:273
+#: settings/src/Settings/GeoBlockList/BlockListDatatable.js:362
+#: settings/src/Settings/GeoBlockList/GeoDatatable.js:520
+#: settings/src/Settings/GeoBlockList/WhiteListDatatable.js:415
+#: settings/src/Settings/LearningMode/LearningMode.js:386
+#: settings/src/Settings/LimitLoginAttempts/CountryDatatable.js:454
+#: settings/src/Settings/LimitLoginAttempts/IpAddressDatatable.js:319
+#: settings/src/Settings/LimitLoginAttempts/UserDatatable.js:281
+#: settings/src/Settings/PermissionsPolicy.js:205
+#: settings/src/Settings/RiskConfiguration/VulnerabilitiesOverview.js:134
+#: settings/src/Settings/RolesDropDown.js:94
+#: settings/src/Settings/TwoFA/TwoFaDataTable.js:315
+#: settings/src/Settings/TwoFA/TwoFaEnabledDropDown.js:133
+msgid "Disabled"
+msgstr "Вимкнено"
+
+#: mailer/class-mail.php:212 upgrade/upgrade-to-pro.php:338
+#: upgrade/upgrade-to-pro.php:339
+msgid "An error occurred:"
+msgstr "Сталася помилка:"
+
+#: mailer/class-mail.php:210
+msgid "Email could not be sent."
+msgstr "Не вдалося відправити e-mail."
+
+#: lets-encrypt/config/fields.php:111 onboarding/class-onboarding.php:316
+msgid "Terms & Conditions"
+msgstr "Правила та умови"
+
+#: settings/config/menu.php:330 settings/config/menu.php:477
+#: settings/config/menu.php:642 settings/config/menu.php:679
+#: settings/build/288.6791823778f8b8c60d18.js:1
+#: settings/src/Settings/DataTable/DataTableWrapper.js:151
+#: settings/src/Settings/EventLog/EventLogDataTable.js:213
+#: settings/src/Settings/firewall/UserAgentTable.js:257
+#: settings/src/Settings/GeoBlockList/BlockListDatatable.js:345
+#: settings/src/Settings/GeoBlockList/GeoDatatable.js:502
+#: settings/src/Settings/GeoBlockList/WhiteListDatatable.js:398
+#: settings/src/Settings/LearningMode/LearningMode.js:147
+#: settings/src/Settings/LearningMode/LearningMode.js:320
+#: settings/src/Settings/LimitLoginAttempts/CountryDatatable.js:435
+#: settings/src/Settings/LimitLoginAttempts/IpAddressDatatable.js:298
+msgid "All"
+msgstr "Всі"
+
+#: class-admin.php:638 settings/build/43.0e3a76e200aea03c4a34.js:1
+#: settings/build/288.6791823778f8b8c60d18.js:1
+#: settings/build/814.8dbd4ded982949363a3e.js:1
+#: settings/src/Dashboard/TaskElement.js:72
+#: settings/src/Dashboard/TaskElement.js:76
+#: settings/src/Settings/MixedContentScan/MixedContentScan.js:80
+msgid "View"
+msgstr "Перегляд"
+
+#: settings/config/fields/general.php:88
+#: settings/build/288.6791823778f8b8c60d18.js:1
+#: settings/src/Settings/Support.js:45
+msgid "Send"
+msgstr "Надіслати"
+
+#: settings/config/menu.php:505 settings/config/menu.php:599
+#: settings/build/288.6791823778f8b8c60d18.js:1
+#: settings/src/Settings/LearningMode/LearningMode.js:148
+msgid "Allowed"
+msgstr "Дозволено"
+
+#: settings/config/fields/encryption.php:101
+#: settings/config/fields/vulnerability-detection.php:221
+msgid "Description"
+msgstr "Опис"
+
+#: settings/config/fields/security-headers.php:214
+#: settings/build/288.6791823778f8b8c60d18.js:1
+#: settings/src/Settings/LearningMode/LearningMode.js:335
+#: settings/src/Settings/LearningMode/LearningMode.js:343
+#: settings/src/Settings/PermissionsPolicy.js:200
+msgid "Disable"
+msgstr "Вимкнути"
+
+#: settings/config/fields/security-headers.php:225
+msgid "Feature"
+msgstr "Особливість"
+
+#: settings/config/fields/encryption.php:107
+#: settings/config/fields/security-headers.php:386
+msgid "Location"
+msgstr "Розміщення"
+
+#: settings/config/fields/security-headers.php:44
+#: settings/config/fields/security-headers.php:59
+#: settings/config/fields/security-headers.php:162
+#: settings/config/fields/security-headers.php:184
+#: settings/config/fields/security-headers.php:199
+msgid "Off"
+msgstr "Вимкнути"
+
+#: settings/config/fields/security-headers.php:400
+msgid "Source"
+msgstr "Джерело"
+
+#: settings/config/fields/firewall.php:248
+#: settings/config/fields/limit-login-attempts.php:143
+#: settings/config/fields/limit-login-attempts.php:189
+#: settings/config/fields/limit-login-attempts.php:249
+#: settings/config/fields/two-fa.php:158
+#: settings/build/43.0e3a76e200aea03c4a34.js:1
+#: settings/src/Dashboard/SslLabs/SslLabsHeader.js:5
+msgid "Status"
+msgstr "Статус"
+
+#: settings/config/fields/encryption.php:94
+msgid "Type"
+msgstr "Тип"
+
+#: settings/config/fields/hardening-xml.php:61
+msgid "Count"
+msgstr "Кількість"
+
+#: settings/config/fields/vulnerability-detection.php:209
+msgid "Action"
+msgstr "Дія"
+
+#: settings/config/fields/security-headers.php:214
+#: settings/build/288.6791823778f8b8c60d18.js:1
+#: settings/src/Settings/GeoBlockList/GeoDatatable.js:278
+#: settings/src/Settings/GeoBlockList/GeoDatatable.js:295
+#: settings/src/Settings/GeoBlockList/GeoDatatable.js:473
+#: settings/src/Settings/GeoBlockList/GeoDatatable.js:484
+#: settings/src/Settings/LearningMode/ChangeStatus.js:7
+#: settings/src/Settings/LearningMode/LearningMode.js:276
+#: settings/src/Settings/LimitLoginAttempts/CountryDatatable.js:310
+#: settings/src/Settings/LimitLoginAttempts/CountryDatatable.js:321
+#: settings/src/Settings/LimitLoginAttempts/CountryDatatable.js:330
+#: settings/src/Settings/LimitLoginAttempts/CountryDatatable.js:401
+#: settings/src/Settings/LimitLoginAttempts/CountryDatatable.js:412
+msgid "Allow"
+msgstr "Дозволити"
+
+#: settings/config/fields/hardening-xml.php:48
+#: settings/config/fields/two-fa.php:150
+msgid "Method"
+msgstr "Метод"
+
+#: lets-encrypt/config/fields.php:8 settings/config/fields/general.php:61
+#: settings/config/menu.php:708
+msgid "System status"
+msgstr "Стан системи"
+
+#: settings/config/fields/security-headers.php:60
+msgid "recommended"
+msgstr "рекомендовано"
+
+#. translators: Accessibility text.
+#: class-site-health.php:197 class-site-health.php:227
+#: class-site-health.php:257
+msgid "(opens in a new tab)"
+msgstr "(відкривається у новій вкладці)"
+
+#: onboarding/class-onboarding.php:204 settings/config/menu.php:746
+#: settings/build/43.0e3a76e200aea03c4a34.js:1
+#: settings/build/288.6791823778f8b8c60d18.js:1
+#: settings/build/814.8dbd4ded982949363a3e.js:1
+#: settings/src/Dashboard/OtherPlugins/OtherPluginsData.js:74
+#: settings/src/Onboarding/OnboardingControls.js:192
+#: settings/src/Settings/License/License.js:49
+msgid "Activate"
+msgstr "Активувати"
+
+#: settings/config/menu.php:11
+msgid "Dashboard"
+msgstr "Майстерня"
+
+#: lets-encrypt/config/fields.php:12 settings/config/menu.php:716
+msgid "General Settings"
+msgstr "Загальні налаштування"
+
+#: onboarding/class-onboarding.php:383 onboarding/class-onboarding.php:424
+#: security/firewall-manager.php:626 security/firewall-manager.php:632
+#: security/firewall-manager.php:648 settings/config/menu.php:520
+#: settings/config/menu.php:538 modal/build/index.d4bca8705bbc6e3e5777.js:1
+#: modal/src/components/DeactivationModal/DeactivationModal.js:71
+#: settings/build/43.0e3a76e200aea03c4a34.js:1
+#: settings/src/Dashboard/Progress/ProgressFooter.js:44
+#: settings/src/Dashboard/Progress/ProgressFooter.js:48
+msgid "Firewall"
+msgstr "Брандмауер"
+
+#: placeholders/class-placeholder.php:331
+#: placeholders/class-placeholder.php:348
+#: placeholders/class-placeholder.php:372
+#: placeholders/class-placeholder.php:389
+#: placeholders/class-placeholder.php:415
+#: placeholders/class-placeholder.php:440
+#: settings/build/43.0e3a76e200aea03c4a34.js:1
+#: settings/build/288.6791823778f8b8c60d18.js:1
+#: settings/build/814.8dbd4ded982949363a3e.js:1
+#: settings/src/Settings/MixedContentScan/MixedContentScan.js:90
+#: settings/src/Settings/RiskConfiguration/RiskData.js:115
+msgid "Details"
+msgstr "Деталі"
+
+#: lets-encrypt/class-le-restapi.php:235
+msgid "Test not found."
+msgstr "Тест не знайдено."
+
+#: security/notices.php:93 settings/config/fields/limit-login-attempts.php:136
+#: settings/config/fields/two-fa.php:134
+#: settings/build/288.6791823778f8b8c60d18.js:1
+#: settings/src/Settings/LimitLoginAttempts/AddUserModal.js:60
+msgid "Username"
+msgstr "Ім'я користувача"
+
+#: settings/config/menu.php:264
+msgid "XML-RPC"
+msgstr "XML-RPC"
+
+#: placeholders/class-placeholder.php:431
+msgid "Widget area"
+msgstr "Область віджетів"
+
+#: class-admin.php:1892 settings/build/43.0e3a76e200aea03c4a34.js:1
+#: settings/src/Dashboard/OtherPlugins/OtherPlugins.js:21
+msgid "Upgrade"
+msgstr "Оновлення"
+
+#: upgrade/upgrade-to-pro.php:554
+msgid "Your license key has reached its activation limit."
+msgstr "Термін дії вашого ключа добігає кінця."
+
+#: upgrade/upgrade-to-pro.php:551
+msgid "This appears to be an invalid license key for this plugin."
+msgstr "Схоже що цей ліцензійний ключ не дійсний для даного плагіну."
+
+#: upgrade/upgrade-to-pro.php:548
+msgid "Your license is not active for this URL."
+msgstr "Ваша ліцензія не активна для цього URL."
+
+#: upgrade/upgrade-to-pro.php:545
+msgid "Invalid license."
+msgstr "Ліцензія не дійсна."
+
+#: upgrade/upgrade-to-pro.php:542
+msgid "Missing license."
+msgstr "Ліцензія відсутня."
+
+#: upgrade/upgrade-to-pro.php:539
+msgid "Your license key has been disabled."
+msgstr "Ваш ліцензійний ключ було вимкнено."
+
+#: upgrade/upgrade-to-pro.php:533
+msgid "Your license key expired on %s."
+msgstr "Термін дії вашого ліцензійного ключа завершився %s."
+
+#: upgrade/upgrade-to-pro.php:525 upgrade/upgrade-to-pro.php:557
+msgid "An error occurred, please try again."
+msgstr "Виникла помилка, спробуйте знову."
+
+#: upgrade/upgrade-to-pro.php:339
+msgid "Check your %slicense%s."
+msgstr "Перевірте вашу %sліцензію%s."
+
+#: upgrade/upgrade-to-pro.php:338
+msgid "Install %sManually%s."
+msgstr "Встановити %sвручну%s."
+
+#: upgrade/upgrade-to-pro.php:333
+msgid "Visit Dashboard"
+msgstr "Перейти до контрольної панелі"
+
+#: upgrade/upgrade-to-pro.php:297
+msgid "Recommended by Really Simple Plugins"
+msgstr "Really Simple Plugins рекомендує"
+
+#: upgrade/upgrade-to-pro.php:199
+msgid "Installation finished"
+msgstr "Встановлення завершено"
+
+#: upgrade/upgrade-to-pro.php:143
+msgid "One click SSL optimization"
+msgstr "Оптимізація SSL в один клік"
+
+#: upgrade/upgrade-to-pro.php:130
+msgid "GDPR/CCPA Privacy Suite"
+msgstr "Пакет конфіденційності GDPR/CCPA"
+
+#: upgrade/upgrade-to-pro.php:107
+msgid "Failed to activate plugin"
+msgstr "Не вдалось активувати плагін"
+
+#: upgrade/upgrade-to-pro.php:106
+msgid "Plugin activated"
+msgstr "Плагін активовано"
+
+#: upgrade/upgrade-to-pro.php:105
+msgid "Activating plugin..."
+msgstr "Активуємо плагін..."
+
+#: upgrade/upgrade-to-pro.php:100
+msgid "Failed to install plugin"
+msgstr "Не вдалося встановити плагін"
+
+#: upgrade/upgrade-to-pro.php:99
+msgid "Plugin installed"
+msgstr "Плагін встановлено"
+
+#: upgrade/upgrade-to-pro.php:98
+msgid "Installing plugin..."
+msgstr "Встановлюємо плагін..."
+
+#: upgrade/upgrade-to-pro.php:93
+msgid "Failed to gather package information"
+msgstr "Не вдалось зібрати інформацію про пакет"
+
+#: upgrade/upgrade-to-pro.php:92
+msgid "Package information retrieved"
+msgstr "Інформацію про пакет отримано"
+
+#: upgrade/upgrade-to-pro.php:91
+msgid "Retrieving package information..."
+msgstr "Отримуємо інформацію про пакет..."
+
+#: upgrade/upgrade-to-pro.php:86
+msgid "License invalid"
+msgstr "Ліцензія не дійсна"
+
+#: upgrade/upgrade-to-pro.php:84
+msgid "Validating license..."
+msgstr "Перевіряємо ліцензію..."
+
+#: upgrade/upgrade-to-pro.php:79
+msgid "Destination folder already exists"
+msgstr "Цільова папка вже існує"
+
+#: upgrade/upgrade-to-pro.php:78
+msgid "Able to create destination folder"
+msgstr "Цільову папку можливо створити"
+
+#: upgrade/upgrade-to-pro.php:77
+msgid "Checking if plugin folder exists..."
+msgstr "Перевірка наявності папки плагіну..."
+
+#: upgrade/upgrade-to-pro.php:322
+msgid "Installing"
+msgstr "Встановлення"
+
+#: upgrade/upgrade-to-pro.php:85
+msgid "License valid"
+msgstr "Ліцензія дійсна"
+
+#: class-admin.php:2064
+msgid "Check manually"
+msgstr "Перевірити вручну"
+
+#: class-admin.php:2059 onboarding/class-onboarding.php:288
+msgid "Could not test certificate"
+msgstr "Неможливо перевірити сертифікат"
+
+#: class-admin.php:2060 onboarding/class-onboarding.php:288
+msgid "Automatic certificate detection is not possible on your server."
+msgstr "Автоматичне виявлення сертифікату неможливе на вашому сервері."
+
+#: lets-encrypt/config/fields.php:422
+msgid "Checking host..."
+msgstr "Перевірка хосту..."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1190
+msgid "We have not detected any known hosting limitations."
+msgstr "Ми не виявили жодних відомих обмежень хостингу."
+
+#: class-admin.php:2044
+msgid "The wp-config.php file is not writable, and needs to be edited. Please set this file to writable."
+msgstr "Файл wp-config.php недоступний для запису та потребує внесення змін. Будь ласка, дозвольте зміну цього файлу."
+
+#: class-multisite.php:239 class-multisite.php:240 class-site-health.php:100
+#: class-site-health.php:131 class-site-health.php:162
+#: class-site-health.php:184 class-site-health.php:214
+#: class-site-health.php:244 class-site-health.php:275
+#: class-site-health.php:315 security/wordpress/vulnerabilities.php:297
+#: security/wordpress/vulnerabilities.php:317 settings/settings.php:192
+#: settings/settings.php:193 settings/settings.php:225
+msgid "Security"
+msgstr "Безпека"
+
+#: class-admin.php:2219
+msgid "Recommended security headers enabled."
+msgstr "Рекомендовані заголовки безпеки ввімкнено."
+
+#: lets-encrypt/config/fields.php:124
+msgid "OCSP stapling is configured as enabled by default. You can disable this option if this is not supported by your hosting provider."
+msgstr "Прив'язка OCSP має бути ввімкнена за замовчуванням. Ви можете її вимкнути, якщо вона не підтримується вашим провайдером хостингу."
+
+#: lets-encrypt/functions.php:12
+msgid "For more information, please read this %sarticle%s"
+msgstr "За більш детальною інформацією, будь ласка зверніться до цієї %sстатті%s"
+
+#: lets-encrypt/config/fields.php:506
+msgid "Checking if Terms & Conditions are accepted..."
+msgstr "Перевіряємо чи прийняті Визначення та Умови..."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1045
+msgid "The Terms & Conditions were not accepted. Please accept in the general settings."
+msgstr "Визначення та Умови не прийняті. Будь ласка прийміть їх у загальних налаштуваннях."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1041
+msgid "Terms & Conditions are accepted."
+msgstr "Визначення та Умови прийнято."
+
+#. translators: %s is replaced with the plugin name.
+#: class-admin.php:2266
+msgid "We have detected the %s plugin on your website."
+msgstr "Ми виявили плагін %s на вашому вебсайті."
+
+#: onboarding/class-onboarding.php:294
+msgid "No SSL certificate has been detected."
+msgstr "SSL сертифікат не виявлено."
+
+#: onboarding/class-onboarding.php:294
+msgid "Please refresh the SSL status if a certificate has been installed recently."
+msgstr "Будь ласка, оновіть детекцію якщо сертифікат було встановлено нещодавно."
+
+#: lets-encrypt/config/notices.php:128
+msgid "Your server provides shell functionality, which offers additional methods to install SSL. If installing SSL using the default methods is not possible, you can install the shell add on."
+msgstr "Ваш сервер надає функціонал оболонки, котрий пропонує додаткові засоби встановлення SSL. Якщо встановлення SSL звичними засобами не можливе, ви можете встановити додаток для оболонки."
+
+#: lets-encrypt/class-letsencrypt-handler.php:478
+msgid "If you entered your DNS records before, they need to be changed."
+msgstr "Якщо ви раніше вводили записи DNS - їх необхідно змінити."
+
+#: lets-encrypt/class-letsencrypt-handler.php:475
+msgid "Order ID mismatch, regenerate order."
+msgstr "Порядок ID неправильний, створіть його заново."
+
+#: settings/config/fields/general.php:60
+#: settings/build/288.6791823778f8b8c60d18.js:1
+#: settings/src/LetsEncrypt/Installation.js:95
+#: settings/src/LetsEncrypt/Installation.js:100
+#: settings/src/LetsEncrypt/Installation.js:104
+msgid "Download"
+msgstr "Завантажити"
+
+#: settings/config/menu.php:213 settings/build/543.721a210f848801df2d70.js:1
+#: settings/src/Settings/Settings.js:164
+msgid "Notifications"
+msgstr "Нагадування"
+
+#: lets-encrypt/config/notices.php:28
+msgid "Your Key and Certificate directories are not properly protected."
+msgstr "Ваші директорії Ключа та Сертифікату не захищені належним чином."
+
+#: lets-encrypt/config/notices.php:111
+msgid "Your certificate will be renewed and installed automatically."
+msgstr "Ваш сертифікат буде оновлено та встановлено автоматично."
+
+#: lets-encrypt/config/notices.php:97
+msgid "The SSL certificate has been renewed, and requires manual %sinstallation%s in your hosting dashboard."
+msgstr "SSL сертифікат було оновлено та необхідне ручне %sвстановлення%s у панелі керування вашого хостингу."
+
+#: lets-encrypt/config/notices.php:90
+msgid "The automatic installation of your certificate has failed. Please check your credentials, and retry the %sinstallation%s."
+msgstr "Не вдалося автоматично встановити ваш сертифікат.Будь ласка, перевірте ваші облікові дані та спробуйте %sвстановити%s знову."
+
+#: lets-encrypt/config/notices.php:75
+msgid "Your certificate will expire on %s. You can renew it %shere%s."
+msgstr "Термін дії вашого сертифікату спливає %s. Ви можете оновити його %sтут%s."
+
+#: lets-encrypt/config/notices.php:71
+msgid "Your certificate is valid until: %s"
+msgstr "Ваш сертифікат дійсний до: %s"
+
+#: lets-encrypt/config/notices.php:43
+msgid "The www version of your site does not point to this website. This is recommended, as it will allow you to add it to the certificate as well."
+msgstr "www версія вашого сайту не вказує на цей веб-сайт. Це рекомендується, бо дозволить вам додати його до сертифікату."
+
+#: lets-encrypt/config/notices.php:41
+msgid "The non-www version of your site does not point to this website. This is recommended, as it will allow you to add it to the certificate as well."
+msgstr "Не-www версія вашого сайту не вказує на цей веб-сайт. Це рекомендується, бо дозволить вам додати його до сертифікату."
+
+#: lets-encrypt/config/fields.php:532
+msgid "Searching for link to SSL installation page on your server..."
+msgstr "Пошук посилань на сторінку встановлення SSL на вашому сервері..."
+
+#: lets-encrypt/config/fields.php:29 settings/config/menu.php:741
+msgid "Installation"
+msgstr "Встановлення"
+
+#: lets-encrypt/config/fields.php:25 settings/config/menu.php:736
+msgid "Generation"
+msgstr "Створення"
+
+#: lets-encrypt/config/fields.php:480
+msgid "Retrieving DNS verification token..."
+msgstr "Отримання жетону DNS верифікації"
+
+#: lets-encrypt/config/fields.php:474 lets-encrypt/config/fields.php:512
+msgid "Creating account..."
+msgstr "Створюється обліковий запис..."
+
+#: lets-encrypt/config/fields.php:453
+msgid "Checking challenge directory reachable over http..."
+msgstr "Перевірка доступності директорії викликів через http..."
+
+#: lets-encrypt/config/fields.php:446
+msgid "Checking permissions..."
+msgstr "Перевірка доступу..."
+
+#: lets-encrypt/config/fields.php:440
+msgid "Checking certs directory..."
+msgstr "Перевірка директорії certs..."
+
+#: lets-encrypt/config/fields.php:434
+msgid "Checking key directory..."
+msgstr "Перевірка директорії key..."
+
+#: lets-encrypt/config/fields.php:428
+msgid "Checking challenge directory..."
+msgstr "Перевірка директорії викликів..."
+
+#: lets-encrypt/config/fields.php:17 settings/config/menu.php:726
+msgid "Directories"
+msgstr "Директорії"
+
+#: lets-encrypt/config/notices.php:104
+msgid "Automatic renewal of your certificate was not possible. The SSL certificate should be %srenewed%s manually."
+msgstr "Автоматичне оновлення вашого сертифікату було неможливе. SSL сертифікат потрібно %sоновити%s вручну."
+
+#: settings/config/menu.php:720
+msgid "Hosting"
+msgstr "Хостинг"
+
+#: settings/config/menu.php:709
+msgid "Letʼs Encrypt is a free, automated and open certificate authority brought to you by the nonprofit Internet Security Research Group (ISRG)."
+msgstr "Letʼs Encrypt є безкоштовною, автоматизованою та з відкритим центром сертифікації, наданим неприбутковою організацією Internet Security Research Group (ISRG)."
+
+#: settings/config/menu.php:701
+msgid " Please note that you can always save and finish the wizard later, use our %sdocumentation%s for additional information or log a %ssupport ticket%s if you need our assistance."
+msgstr "Зауважте, що ви завжди можете зберегти все на даному етапі та завершити роботу з майстром пізніше. За додатковою інформацією зверніться до нашої %sдокументації%s або залиште заявку до %sслужби підтримки%s, якщо вам потрібна допомога."
+
+#: settings/config/menu.php:699
+msgid "We have tried to make our Wizard as simple and fast as possible. Although these questions are all necessary, if there’s any way you think we can improve the plugin, please let us %sknow%s!"
+msgstr "Ми намагалися зробити Майстра максимально простим і швидким. Також всі ці питання дуже важливі. Якщо є хоч якась можливість покращити наш плагін, будь ласка, %sповідомте%s нам!"
+
+#: lets-encrypt/config/fields.php:76
+msgid "Checking for website configuration..."
+msgstr "Перевірка конфігурації веб-сайту..."
+
+#: lets-encrypt/config/fields.php:70
+msgid "Checking alias domain..."
+msgstr "Перевірка псевдоніму домену..."
+
+#: lets-encrypt/config/fields.php:64
+msgid "Checking server software..."
+msgstr "Перевірка програмного забезпечення сервера..."
+
+#: lets-encrypt/config/fields.php:58
+msgid "Checking if CURL is available..."
+msgstr "Перевірка доступності CURL..."
+
+#: lets-encrypt/config/fields.php:52
+msgid "Checking SSL certificate..."
+msgstr "Перевірка SSL сертифікату..."
+
+#: lets-encrypt/config/fields.php:47
+msgid "Detected status of your setup."
+msgstr "Виявлено статус вашої інсталяції."
+
+#: lets-encrypt/config/fields.php:400
+msgid "Store for renewal purposes. If not stored, renewal may need to be done manually."
+msgstr "Зберігати для оновлень. Якщо не зберігається, оновлення можливо доведеться робити вручну."
+
+#: lets-encrypt/config/fields.php:377
+msgid "Plesk password"
+msgstr "Пароль Plesk"
+
+#: lets-encrypt/config/fields.php:357
+msgid "You can find your Plesk username and password in %s"
+msgstr "Ви можете знайти ваші ім'я користувача та пароль Plesk у %s"
+
+#: lets-encrypt/config/fields.php:353
+msgid "Plesk username"
+msgstr "Ім'я користувача Plesk"
+
+#: lets-encrypt/config/fields.php:333
+msgid "The URL you use to access your Plesk dashboard. Ends on :8443."
+msgstr "URL для доступу до вашої панелі керування Plesk. Закінчується у :8443."
+
+#: lets-encrypt/config/fields.php:329
+msgid "Plesk host"
+msgstr "Хост Plesk"
+
+#: lets-encrypt/config/fields.php:313
+msgid "You can find your api key %shere%s (make sure you're logged in with your main account)."
+msgstr "Ви можете знайти свій api ключ %sтут%s (переконайтесь, що ви увійшли з вашого головного облікового запису)."
+
+#: lets-encrypt/config/fields.php:291
+msgid "CloudWays user email"
+msgstr "Email користувача CloudWays"
+
+#: lets-encrypt/config/fields.php:271
+msgid "DirectAdmin password"
+msgstr "Пароль DirectAdmin"
+
+#: lets-encrypt/config/fields.php:252
+msgid "DirectAdmin username"
+msgstr "Ім'я користувача DirectAdmin"
+
+#: lets-encrypt/config/fields.php:232
+msgid "The URL you use to access your DirectAdmin dashboard. Ends on :2222."
+msgstr "URL для доступу до вашої панелі керування DirectAdmin. Закінчується у :2222."
+
+#: lets-encrypt/config/fields.php:228
+msgid "DirectAdmin host"
+msgstr "Хост DirectAdmin"
+
+#: lets-encrypt/config/fields.php:209
+msgid "CPanel password"
+msgstr "Пароль CPanel"
+
+#: lets-encrypt/config/fields.php:190
+msgid "CPanel username"
+msgstr "Ім'я користувача CPanel"
+
+#: lets-encrypt/config/fields.php:170
+msgid "The URL you use to access your cPanel dashboard. Ends on :2083."
+msgstr "URL для доступу до вашої панелі керування cPanel. Закінчується у :2083."
+
+#: lets-encrypt/config/fields.php:166 lets-encrypt/config/fields.php:169
+msgid "CPanel host"
+msgstr "Хост CPanel"
+
+#: settings/config/fields/general.php:32
+msgid "Hosting provider"
+msgstr "Хостингова компанія"
+
+#: lets-encrypt/config/fields.php:150
+msgid "You should have the www domain pointed to the same website as the non-www domain."
+msgstr "Ваш www домен має вказувати на той самий веб-сайт, що й не-www домен."
+
+#: lets-encrypt/config/fields.php:149
+msgid "This will include both the www. and non-www. version of your domain."
+msgstr "Це включатиме обидва www. та не-www. версії вашого домену."
+
+#: lets-encrypt/config/fields.php:134 lets-encrypt/config/notices.php:51
+#: settings/build/288.6791823778f8b8c60d18.js:1
+#: settings/src/LetsEncrypt/DnsVerification.js:62
+msgid "Domain"
+msgstr "Домен"
+
+#: settings/settings.php:591
+msgid "Terms and Conditions"
+msgstr "Визначення та Положення"
+
+#: lets-encrypt/config/fields.php:98
+msgid "This email address is used to create a Let's Encrypt account. This is also where you will receive renewal notifications."
+msgstr "Цю email адресу буде використано для створення облікового запису Let's Encrypt. Туди ж надходитимуть нагадування про оновлення."
+
+#: lets-encrypt/config/class-hosts.php:603
+msgid "I don't know, or not listed, proceed with installation"
+msgstr "Я не знаю, чи немає у списку, перейти до встановлення"
+
+#: lets-encrypt/config/fields.php:94 lets-encrypt/config/fields.php:97
+#: settings/config/fields/general.php:78
+msgid "Email address"
+msgstr "Email-адреса"
+
+#: lets-encrypt/config/fields.php:550
+msgid "Checking for subdomain setup..."
+msgstr "Перевірка на встановлення піддоменів..."
+
+#: lets-encrypt/config/fields.php:518
+msgid "Generating SSL certificate..."
+msgstr "Створюється SSL сертифікат..."
+
+#: lets-encrypt/integrations/plesk/plesk.php:90
+msgid "Successfully installed SSL"
+msgstr "Вдало встановлено SSL"
+
+#: lets-encrypt/integrations/plesk/functions.php:33
+msgid "Installing SSL certificate using PLESK API..."
+msgstr "Встановлення SSL сертифікату за допомогою PLESK API..."
+
+#: lets-encrypt/integrations/cpanel/functions.php:107
+#: lets-encrypt/integrations/directadmin/functions.php:35
+msgid "Attempting to install certificate..."
+msgstr "Спроба встановлення сертифікату..."
+
+#: lets-encrypt/integrations/cpanel/functions.php:100
+msgid "Attempting to set DNS txt record..."
+msgstr "Спроба встановити DNS txt запис..."
+
+#: lets-encrypt/integrations/cpanel/functions.php:91
+msgid "Attempting to install certificate using AutoSSL..."
+msgstr "Спроба встановлення сертифікату використовуючи AutoSSL..."
+
+#: lets-encrypt/integrations/cpanel/functions.php:63
+msgid "The system is not ready for the DNS verification yet. Please run the wizard again."
+msgstr "Система ще не готова до DNS верифікації. Будь ласка, запустіть майстра повторно."
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:310
+#: lets-encrypt/integrations/cpanel/cpanel.php:329
+msgid "Could not automatically add TXT record. Please proceed manually, following the steps below."
+msgstr "Неможливо автоматично додати запис ТХТ. Будь ласка, зробіть це вручну, керуючись наступними кроками."
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:306
+#: lets-encrypt/integrations/cpanel/cpanel.php:325
+msgid "Successfully added TXT record."
+msgstr "Вдало додано ТХТ запис."
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:298
+msgid "Login credentials incorrect"
+msgstr "Невірні облікові дані для входу"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:294
+msgid "Unable to connect to cPanel"
+msgstr "Неможливо з'єднатися з cPanel"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:128
+#: lets-encrypt/integrations/cpanel/cpanel.php:207
+msgid "Errors were reported during installation."
+msgstr "Були виявлені помилки під час встановлення."
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:123
+#: lets-encrypt/integrations/directadmin/directadmin.php:124
+msgid "SSL successfully installed on %s"
+msgstr "SSL вдало встановлено на %s"
+
+#: lets-encrypt/integrations/cpanel/cpanel.php:66
+#: lets-encrypt/integrations/directadmin/directadmin.php:66
+msgid "No valid list of domains."
+msgstr "Дійсні списки доменів не виявлені."
+
+#: lets-encrypt/integrations/cloudways/functions.php:49
+msgid "Enabling auto renew..."
+msgstr "Вмикається автоматичне оновлення..."
+
+#: lets-encrypt/integrations/cloudways/functions.php:43
+msgid "Installing SSL certificate..."
+msgstr "Встановлення SSL сертифікату..."
+
+#: lets-encrypt/integrations/cloudways/functions.php:37
+msgid "Retrieving Cloudways server data..."
+msgstr "Отримання даних з серверу Cloudways..."
+
+#: lets-encrypt/integrations/cloudways/cloudways.php:252
+msgid "Could not retrieve server list"
+msgstr "Неможливо отримати список серверів"
+
+#: lets-encrypt/integrations/cloudways/cloudways.php:212
+#: lets-encrypt/integrations/cloudways/cloudways.php:245
+msgid "Successfully retrieved server id and app id"
+msgstr "Вдало отримано server id та app id"
+
+#: lets-encrypt/integrations/cloudways/cloudways.php:196
+msgid "Error enabling auto renew for Let's Encrypt"
+msgstr "Помилка запуску автоматичного оновлення для Let's Encrypt"
+
+#: lets-encrypt/integrations/cloudways/cloudways.php:181
+#: lets-encrypt/integrations/cloudways/cloudways.php:187
+msgid "Successfully installed Let's Encrypt"
+msgstr "Вдало встановлено Let's Encrypt"
+
+#: lets-encrypt/integrations/cloudways/cloudways.php:161
+msgid "Failed retrieving access token"
+msgstr "Не вдалося отримати жетон доступу"
+
+#: lets-encrypt/functions.php:406
+msgid "You can follow these %sinstructions%s."
+msgstr "Ви можете керуватися цими %sінструкціями%s."
+
+#: lets-encrypt/functions.php:404
+msgid "Your hosting environment does not allow automatic SSL installation."
+msgstr "Ваше хостингове оточення не дозволяє завтоматичне встановлення SSL."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1197
+#: lets-encrypt/functions.php:401
+msgid "According to our information, your hosting provider does not allow any kind of SSL installation, other then their own paid certificate. For an alternative hosting provider with SSL, see this %sarticle%s."
+msgstr "Згідно з нашою інформацією, ваша хостингова компанія не дозволяє встановлювати жоден варіант SSL, окрім їх власного платного сертифікату. Альтернативну хостингову компанію з підтримкою SSL ви можете знайти за допомогою цієї %sстатті%s."
+
+#: lets-encrypt/functions.php:395
+msgid "You already have free SSL on your hosting environment."
+msgstr "У вас вже є безкоштовний SSL на вашому хостинговому обладнанні."
+
+#: lets-encrypt/functions.php:393 lets-encrypt/functions.php:397
+#: lets-encrypt/functions.php:407
+msgid "After completing the installation, you can continue to the next step to complete your configuration."
+msgstr "Після завершення встановлення ви зможете перейти на наступний етап, щоб завершити налаштування."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1204
+#: lets-encrypt/functions.php:391
+msgid "According to our information, your hosting provider supplies your account with an SSL certificate by default. Please contact your %shosting support%s if this is not the case."
+msgstr "Згідно з нашою інформацією, ваша хостингова компанія підтримує ваш обліковий запис із встановленим SSL сертифікатом за замовчуванням. Якщо це не так - будь ласка зв'яжіться зі %sслужбою підтримки%s вашого хостингу."
+
+#: lets-encrypt/functions.php:386
+msgid "Go to installation"
+msgstr "Перейти до встановлення"
+
+#: lets-encrypt/functions.php:385
+msgid "Go to activation"
+msgstr "Перейти до активації"
+
+#: lets-encrypt/functions.php:384
+msgid "Please activate it on your dashboard %smanually%s"
+msgstr "Будь ласка, активуйте це у вашій панелі керування %sвручну%s"
+
+#: lets-encrypt/functions.php:383
+msgid "Please complete %smanually%s"
+msgstr "Будь ласка, завершіть %sвручну%s"
+
+#: lets-encrypt/functions.php:381
+msgid "Please activate it manually on your hosting dashboard."
+msgstr "Будь ласка, активуйте це вручну з панелі керування вашого хостингу."
+
+#: lets-encrypt/functions.php:380
+msgid "Please complete manually in your hosting dashboard."
+msgstr "Будь ласка, завершіть вручну у панелі керування вашого хостингу."
+
+#: lets-encrypt/download.php:49
+msgid "File missing. Please retry the previous steps."
+msgstr "Файл не знайдено. Будь ласка, повторіть попередні кроки."
+
+#: security/cron.php:90
+msgid "Once every 5 minutes"
+msgstr "Один раз кожні 5 хвилин"
+
+#: security/cron.php:94
+msgid "Once every day"
+msgstr "Один раз щодня"
+
+#: security/cron.php:102
+msgid "Once every week"
+msgstr "Один раз кожного тижня"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1851
+#: lets-encrypt/integrations/cloudways/functions.php:22
+#: lets-encrypt/integrations/cpanel/functions.php:17
+#: lets-encrypt/integrations/cpanel/functions.php:35
+#: lets-encrypt/integrations/directadmin/functions.php:16
+#: lets-encrypt/integrations/plesk/functions.php:16
+msgid "The system is not ready for the installation yet. Please run the wizard again."
+msgstr "Система ще не готова для встановлення. Будь ласка, запустіть майстра повторно."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1846
+msgid "Installation failed."
+msgstr "Встановлення не вдалося."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1841
+msgid "Not recognized server."
+msgstr "Невідомий сервер."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1811
+msgid "The certificate installation was rate limited. Please try again later."
+msgstr "Встановлення сертифікату було обмежене по швидкості. Спробуйте пізніше."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1349
+#: lets-encrypt/class-letsencrypt-handler.php:1353
+#: lets-encrypt/class-letsencrypt-handler.php:1732
+msgid "Error code %s"
+msgstr "Код помилки %s"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1715
+msgid "Please create a folder 'rsssl' in the uploads directory, with 644 permissions."
+msgstr "Створіть, будь ласка, папку 'rsssl' у вашій директорії uploads з праваму доступу 644."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1714
+msgid "Could not create test folder and file."
+msgstr "Неможливо створити тестову папку та файл."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1685
+msgid "Could not verify alias domain."
+msgstr "Неможливо підтвердити псевдонім домену."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1683
+msgid "Please check if the www version of your site also points to this website."
+msgstr "Будь ласка, перевірте чи ваша www версія сайту також вказує на цей веб-сайт."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1681
+msgid "Please check if the non www version of your site also points to this website."
+msgstr "Будь ласка, перевірте чи ваша не www версія сайту також вказує на цей веб-сайт."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1662
+msgid "Alias domain check is not relevant for a subdomain"
+msgstr "Перевірка псевдоніма домена не важлива для піддомена"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1632
+msgid "No subdomain setup detected."
+msgstr "Встановлень піддомену не виявлено."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1360
+#: lets-encrypt/class-letsencrypt-handler.php:1692
+#: lets-encrypt/class-letsencrypt-handler.php:1743
+msgid "Successfully verified alias domain."
+msgstr "Вдало підтверджено псевдонім домену."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1335
+msgid "Challenge directory not writable."
+msgstr "Директорія викликів недоступна для запису."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1329
+msgid "Could not reach challenge directory over %s."
+msgstr "Неможливо дістатися директорії викликів через %s."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1325
+#: lets-encrypt/class-letsencrypt-handler.php:1669
+msgid "no response"
+msgstr "немає відповіді"
+
+#: lets-encrypt/class-letsencrypt-handler.php:1267
+msgid "The certs directory was successfully created."
+msgstr "Директорію certs успішно створено."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1263
+msgid "The certs directory is not created yet."
+msgstr "Директорія certs ще не була створена."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1249
+msgid "The key directory was successfully created."
+msgstr "Директорію key успішно створено."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1241
+msgid "Trying to create directory in root of website."
+msgstr "Спроба створити директорію у корені веб-сайту."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1237
+msgid "The key directory is not created yet."
+msgstr "Директорію key ще не створено."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1224
+msgid "The challenge directory was successfully created."
+msgstr "Директорію викликів успішно створено."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1220
+msgid "The challenge directory is not created yet."
+msgstr "Директорія викликів ще не була створена."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1177
+msgid "The required directories have the necessary writing permissions."
+msgstr "Необхідні директорії мають необхідні дозволи на запис."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1170
+msgid "Set permissions to 644 to enable SSL generation."
+msgstr "Встановіть права доступу 644, щоб увімкнути створення SSL."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1170
+msgid "The following directories do not have the necessary writing permissions."
+msgstr "Наступні директорії не мають необхідних дозволів на запис."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1154
+msgid "Please complete the following step(s) first: %s"
+msgstr "Будь ласка, спершу завершіть наступні кроки: %s"
+
+#: lets-encrypt/class-letsencrypt-handler.php:894
+msgid "Order successfully retrieved."
+msgstr "Запит вдало отримано."
+
+#: lets-encrypt/class-letsencrypt-handler.php:878
+msgid "Order successfully created."
+msgstr "Запит вдало створено."
+
+#: lets-encrypt/class-letsencrypt-handler.php:788
+msgid "Bundle not available yet..."
+msgstr "Пакет ще не доступний..."
+
+#: lets-encrypt/class-letsencrypt-handler.php:704
+#: lets-encrypt/class-letsencrypt-handler.php:780
+msgid "Files not created yet..."
+msgstr "Файли ще не створено..."
+
+#: lets-encrypt/class-letsencrypt-handler.php:774
+msgid "Successfully generated certificate."
+msgstr "Сертифікат вдало створено."
+
+#: lets-encrypt/class-letsencrypt-handler.php:760
+msgid "OCSP not supported, the certificate will be generated without OCSP."
+msgstr "OCSP не підтримується, сертифікат буде створено без нього."
+
+#: lets-encrypt/class-letsencrypt-handler.php:752
+msgid "As your order will be regenerated, you'll need to update your DNS text records."
+msgstr "Коли ваш запит буде повторно створено, потрібно буде оновити ваші текстові записи DNS."
+
+#: lets-encrypt/class-letsencrypt-handler.php:471
+#: lets-encrypt/class-letsencrypt-handler.php:749
+msgid "The order is invalid, possibly due to too many failed authorization attempts. Please start at the previous step."
+msgstr "Запит не дійсний, можливо через велику кількість невдалих спроб авторизації. Будь ласка, почніть з попереднього кроку."
+
+#: lets-encrypt/class-letsencrypt-handler.php:728
+msgid "Authorization not completed yet."
+msgstr "Авторизацію ще не завершено."
+
+#: lets-encrypt/class-letsencrypt-handler.php:698
+msgid "Certificate already generated. It was renewed if required."
+msgstr "Сертифікат вже створено і, якщо було необхідно - оновлено."
+
+#: lets-encrypt/class-letsencrypt-handler.php:659
+msgid "DNS records were not verified yet. Please complete the previous step."
+msgstr "Записи DNS ще не були верифіковані. Будь ласка, завершіть попередній крок."
+
+#: lets-encrypt/class-letsencrypt-handler.php:645
+msgid "Please double check your DNS txt record."
+msgstr "Двічі перевірте ваші txt записи DNS."
+
+#: lets-encrypt/class-letsencrypt-handler.php:643
+msgid "The certificate generation was rate limited for 5 minutes because the authorization failed."
+msgstr "Швидкість генерації сертифіката була обмежена на 5 хвилин, оскільки авторизація не вдалася."
+
+#: lets-encrypt/class-letsencrypt-handler.php:582
+msgid "Could not verify TXT record for domain %s"
+msgstr "Неможливо підтвердити ТХТ запис для домену %s"
+
+#: lets-encrypt/class-letsencrypt-handler.php:572
+msgid "The DNS response for %s was %s, while it should be %s."
+msgstr "Відповідь DNS для %s була %s, коли має бути %s."
+
+#: lets-encrypt/class-letsencrypt-handler.php:562
+msgid "Successfully verified DNS records"
+msgstr "Вдало підтверджено записи DNS"
+
+#: lets-encrypt/class-letsencrypt-handler.php:548
+#: lets-encrypt/integrations/cpanel/functions.php:47
+msgid "Token not generated. Please complete the previous step."
+msgstr "Жетон не створено. Будь ласка, завершіть попередній крок."
+
+#: lets-encrypt/class-letsencrypt-handler.php:506
+msgid "Configured for HTTP challenge"
+msgstr "Налаштовано для HTTP викликів"
+
+#: lets-encrypt/class-letsencrypt-handler.php:403
+msgid "The email address was not set. Please set the email address"
+msgstr "Адресу email ще не встановлено. Будь ласка, встановіть її"
+
+#: lets-encrypt/class-letsencrypt-handler.php:395
+msgid "Please change your email address %shere%s and try again."
+msgstr "Будь ласка, змініть вашу адресу email %sтут%s та спробуйте ще раз."
+
+#: lets-encrypt/class-letsencrypt-handler.php:394
+msgid "The used domain for your email address is not allowed."
+msgstr "Використаний домен для вашої email адреси не дозволений."
+
+#: lets-encrypt/class-letsencrypt-handler.php:387
+msgid "Successfully retrieved account"
+msgstr "Вдало отримано обліковий запис"
+
+#: lets-encrypt/class-letsencrypt-handler.php:367
+msgid "The PHP function CURL has successfully been detected."
+msgstr "PHP функцію CURL вдало виявлено."
+
+#: lets-encrypt/class-letsencrypt-handler.php:363
+msgid "The PHP function CURL is not available on your server, which is required. Please contact your hosting provider."
+msgstr "Необхідна функція РНР CURL недоступна на вашому сервері. Будь ласка, зв'яжіться з вашою хостинговою компанією."
+
+#: lets-encrypt/class-letsencrypt-handler.php:347
+msgid "DirectAdmin recognized. Possibly the certificate can be installed automatically."
+msgstr "Виявлено DirectAdmin. Можливо доступне автоматичне встановлення сертифікату."
+
+#: lets-encrypt/class-letsencrypt-handler.php:344
+msgid "Plesk recognized. Possibly the certificate can be installed automatically."
+msgstr "Виявлено Plesk. Можливо доступне автоматичне встановлення сертифікату."
+
+#: lets-encrypt/class-letsencrypt-handler.php:341
+msgid "CPanel recognized. Possibly the certificate can be installed automatically."
+msgstr "CPanel розпізнано. Можливо доступне автоматичне встановлення сертифікату."
+
+#: lets-encrypt/class-letsencrypt-handler.php:337
+msgid "The Hosting Panel software was not recognized. Depending on your hosting provider, the generated certificate may need to be installed manually."
+msgstr "Програмне забезпечення панелі керування вебхостингу не розпізнано. Залежно від вашої хостингової компанії, створений сертифікат можливо буде потрібно встановлювати вручну."
+
+#: lets-encrypt/class-letsencrypt-handler.php:1685
+msgid "If this is not the case, don't add this alias to your certificate."
+msgstr "Якщо це не ваш випадок - не додавайте цей варіант до вашого сертифікату."
+
+#: lets-encrypt/class-letsencrypt-handler.php:456
+msgid "Token not received yet."
+msgstr "Жетон ще не отримано."
+
+#: lets-encrypt/class-letsencrypt-handler.php:306
+msgid "SSL certificate should be generated and installed."
+msgstr "SSL сертифікат має бути створено та встановлено."
+
+#: lets-encrypt/class-letsencrypt-handler.php:300
+msgid "You already have a valid SSL certificate."
+msgstr "У вас вже є дійсний SSL сертифікат."
+
+#: lets-encrypt/class-letsencrypt-handler.php:296
+msgid "Continue to renew."
+msgstr "Продовжити оновлення."
+
+#: lets-encrypt/class-letsencrypt-handler.php:296
+msgid "Your certificate will expire on %s."
+msgstr "Термін дії вашого сертифікату спливає %s."
+
+#: class-admin.php:1948 lets-encrypt/class-letsencrypt-handler.php:290
+msgid "(unknown)"
+msgstr "(невідомо)"
+
+#: lets-encrypt/class-letsencrypt-handler.php:226
+msgid "Your domain meets the requirements for Let's Encrypt."
+msgstr "Ваш домен задовольнив усі вимоги Let's Encrypt."
+
+#: lets-encrypt/class-letsencrypt-handler.php:208
+msgid "It is not possible to install Let's Encrypt on a localhost environment."
+msgstr "Неможливо встановити Let's Encrypt у оточенні localhost."
+
+#: lets-encrypt/class-letsencrypt-handler.php:218
+msgid "It is not possible to install Let's Encrypt on a subfolder configuration."
+msgstr "Неможливо встановити Let's Encrypt у налаштуваннях підпапок."
+
+#: lets-encrypt/class-letsencrypt-handler.php:213
+msgid "It is not possible to install Let's Encrypt on a subsite. Please go to the main site of your website."
+msgstr "Неможливо встановити Let's Encrypt на підсайт. Будь ласка, перейдіть до головного сайту вашого веб-сайту."
+
+#: class-admin.php:2079 settings/build/43.0e3a76e200aea03c4a34.js:1
+#: settings/build/288.6791823778f8b8c60d18.js:1
+#: settings/build/814.8dbd4ded982949363a3e.js:1
+#: settings/src/Dashboard/TaskElement.js:66
+msgid "Re-check"
+msgstr "Перевірити знову"
+
+#. translators: %s is replaced with date.
+#: class-admin.php:2072
+msgid "SSL certificate will expire on %s."
+msgstr "SSL сертифікат спливає %s."
+
+#: class-admin.php:2069
+msgid "Your SSL certificate will expire soon."
+msgstr "Ваш SSL сертифікат скоро закінчиться."
+
+#: class-admin.php:2049
+msgid "No SSL detected. Use the retry button to check again."
+msgstr "SSL не виявлено. Натисніть кнопку повторення, щоб спробувати знову."
+
+#: class-admin.php:2053 class-admin.php:2063 class-admin.php:2078
+msgid "Install SSL certificate"
+msgstr "Встановити SSL сертифікат"
+
+#: class-admin.php:2054
+msgid "Retry"
+msgstr "Повторити"
+
+#: onboarding/class-onboarding.php:282
+msgid "An SSL certificate has been detected"
+msgstr "Виявлено SSL сертифікат"
+
+#: class-site-health.php:31
+msgid "SSL Status Test"
+msgstr "Тестування статусу SSL"
+
+#: class-site-health.php:36
+msgid "Security Headers Test"
+msgstr "Тестування заголовків безпеки"
+
+#: class-admin.php:2048 class-site-health.php:344
+msgid "No SSL detected"
+msgstr "SSL не виявлено"
+
+#: class-site-health.php:329
+msgid "SSL is not enabled."
+msgstr "SSL не ввімкнено."
+
+#: class-site-health.php:353
+msgid "No 301 redirect to SSL enabled."
+msgstr "Жодних переадресувань 301 до SSL не увімкнено."
+
+#: class-site-health.php:356
+msgid "To ensure all traffic passes through SSL, please enable a 301 redirect."
+msgstr "Щоб впевнитись, що весь трафік проходить через SSL, будь ласка, увімкніть переадресування 301."
+
+#: class-site-health.php:361
+msgid "Enable 301 redirect"
+msgstr "Увімкнути переадресування 301"
+
+#: class-admin.php:2156
+msgid "WordPress 301 redirect enabled. We recommend to enable a 301 .htaccess redirect."
+msgstr "Переадресування WordPress 301 ввімкнено. Ми рекомендуємо увімкнути переадресування 301 .htaccess."
+
+#: class-admin.php:2170
+msgid "The .htaccess redirect rules selected by this plugin failed in the test. Set manually or dismiss to leave on PHP redirect."
+msgstr "Правила переадресування .htaccess, обрані цим плагіном не пройшли тестування. Встановіть вручну чи проігноруйте, щоб залишит переадресування WordPress."
+
+#: class-admin.php:2185
+msgid "Your site uses Elementor. This can require some additional steps before getting the secure lock."
+msgstr "Ваш сайт використовує Elementor. Можуть знадобитись додаткові кроки перед отриманням замка безпеки."
+
+#: class-admin.php:2199
+msgid "Your site uses Divi. This can require some additional steps before getting the secure lock."
+msgstr "Ваш сайт використовує Divi. Можуть знадобитись додаткові кроки перед отриманням замка безпеки."
+
+#: onboarding/class-onboarding.php:212 onboarding/class-onboarding.php:219
+#: upgrade/upgrade-to-pro.php:132 upgrade/upgrade-to-pro.php:145
+#: settings/build/43.0e3a76e200aea03c4a34.js:1
+#: settings/src/Dashboard/OtherPlugins/OtherPluginsData.js:73
+msgid "Install"
+msgstr "Встановити"
+
+#: upgrade/upgrade-to-pro.php:156 settings/build/43.0e3a76e200aea03c4a34.js:1
+#: settings/src/Dashboard/OtherPlugins/OtherPlugins.js:24
+msgid "Installed"
+msgstr "Встановлено"
+
+#: class-admin.php:1890 settings/build/288.6791823778f8b8c60d18.js:1
+#: settings/src/Settings/MixedContentScan/MixedContentScan.js:58
+msgid "Warning"
+msgstr "Попередження"
+
+#: class-admin.php:1891
+msgid "Open"
+msgstr "Відкрити"
+
+#: class-admin.php:1889
+msgid "Completed"
+msgstr "Виконано"
+
+#: settings/config/menu.php:23 settings/config/menu.php:29
+#: settings/config/menu.php:377
+msgid "General"
+msgstr "Загальне"
+
+#: class-admin.php:163 settings/build/index.38319d4b5de7d912e699.js:1
+#: settings/src/Header.js:45
+msgid "Support"
+msgstr "Підтримка"
+
+#: class-admin.php:1933
+msgid "No recommended redirect rules detected."
+msgstr "Не знайдено рекомендованих правил переадресувань."
+
+#: class-admin.php:2027
+msgid "SSL is not enabled yet."
+msgstr "SSL ще не ввімкнено."
+
+#: class-admin.php:2099
+msgid "The mixed content fixer is active, but was not detected on the frontpage."
+msgstr "Функція виправлення змішаного вмісту активна, але не виявлена на титульній сторінці."
+
+#: class-admin.php:2110
+msgid "Mixed content fixer not enabled. Enable the option to fix mixed content on your site."
+msgstr "Функцію виправлення змішаного вмісту не ввімкнено. Увімкніть її, щоб виправити змішаний вміст на вашому сайті."
+
+#: progress/class-progress.php:93
+msgid "SSL is not yet enabled on this site."
+msgstr "SSL ще не ввімкнено на цьому сайті."
+
+#: class-multisite.php:79
+msgid "SSL is enabled networkwide."
+msgstr "SSL увімкнено на всю мережу."
+
+#: class-site-health.php:340 settings/build/43.0e3a76e200aea03c4a34.js:1
+#: settings/build/288.6791823778f8b8c60d18.js:1
+#: settings/build/814.8dbd4ded982949363a3e.js:1
+#: settings/src/Dashboard/Progress/ProgressFooter.js:24
+#: settings/src/Onboarding/OnboardingControls.js:168
+msgid "Activate SSL"
+msgstr "Активувати SSL"
+
+#: settings/config/menu.php:82
+msgid "Mixed content"
+msgstr "Змішаний вміст"
+
+#: class-site-health.php:107 class-site-health.php:138
+#: class-site-health.php:169 class-site-health.php:255
+#: class-site-health.php:297
+#: settings/config/fields/vulnerability-detection.php:234
+#: settings/build/43.0e3a76e200aea03c4a34.js:1
+#: settings/build/288.6791823778f8b8c60d18.js:1
+#: settings/src/Dashboard/SslLabs/SslLabs.js:320
+#: settings/src/LetsEncrypt/DnsVerification.js:57
+msgid "Read more"
+msgstr "Читати далі"
+
+#: class-admin.php:1751
+msgid "Don't show again"
+msgstr "Не показувати знову"
+
+#. translators: %s is replaced with the error description.
+#: class-admin.php:2117
+msgid "The mixed content fixer could not be detected due to a cURL error: %s. cURL errors are often caused by an outdated version of PHP or cURL and don't affect the front-end of your site. Contact your hosting provider for a fix."
+msgstr "Функцію виправлення змішаного вмісту неможливо знайти через помилку cURL: %s. Помилки cURL часто викликані застарілою версією PHP чи cURL та не впливають на front-end вашого сайту. Зв'яжіться з провайдером вашого хостингу, щоб це виправити."
+
+#: class-admin.php:2104
+msgid "Error occurred when retrieving the webpage."
+msgstr "Виникла помилка при отриманні веб-сторінки."
+
+#: class-site-health.php:365
+msgid "301 .htaccess redirect is not enabled."
+msgstr "301 .htaccess переадресація не увімкнена."
+
+#: class-site-health.php:320
+msgid "You have set a 301 redirect to SSL. This is important for SEO purposes"
+msgstr "Ви встановили переадресацію 301 на SSL. Це важливо для цілей SEO"
+
+#: class-site-health.php:312
+msgid "301 SSL redirect enabled"
+msgstr "Увімкнено переадресацію SSL 301"
+
+#: onboarding/class-onboarding.php:195
+#: settings/build/43.0e3a76e200aea03c4a34.js:1
+#: settings/src/Dashboard/Vulnerabilities/Vulnerabilities.js:116
+msgid "Enable"
+msgstr "Увімкнути"
+
+#: class-site-health.php:368
+msgid "The 301 .htaccess redirect is the fastest and most reliable redirect option."
+msgstr "Переадресування 301 .htaccess найшвидша і найнадійніша опція переадресування."
+
+#: class-admin.php:635
+msgid "Dismiss"
+msgstr "Відхилити"
+
+#: class-admin.php:1994
+msgid "The 'force-deactivate.php' file has to be renamed to .txt. Otherwise your ssl can be deactivated by anyone on the internet."
+msgstr "Файл 'force-deactivate.php' було перейменовано в .txt. Інакше ваш ssl може бути деактивований будь-ким в Інтернеті."
+
+#: class-admin.php:1748
+msgid "Maybe later"
+msgstr "Можливо пізніше"
+
+#: class-admin.php:1743
+msgid "Leave a review"
+msgstr "Залишити відгук"
+
+#: security/cron.php:106
+msgid "Once every month"
+msgstr "Раз на місяць"
+
+#: class-multisite.php:127
+msgid "This leads to issues when activating SSL networkwide since subdomains will be forced over SSL as well while they don't have a valid certificate."
+msgstr "Це може призвести до помилок при активації SSL для усієї мережі, оскільки піддомени будуть примусово направлені через SSL, доки в них не буде діючого сертификату. "
+
+#: class-multisite.php:126
+msgid "You run a Multisite installation with subdomains, but your site doesn't have a wildcard certificate."
+msgstr "Ви використовуєте встановлений Мультисайт з піддоменами, але ваш сайт не має підстановочного сертификату. "
+
+#: class-multisite.php:128
+msgid "Activate SSL per site or install a wildcard certificate to fix this."
+msgstr "Активуйте SSL для сайту або встановіть підстановочний сертифікат, щоб виправити це."
+
+#: upgrade/upgrade-to-pro.php:336 modal/build/433.ef6236b038b45328e4c7.js:1
+#: modal/src/components/Modal/RssslModal.js:68
+#: settings/build/288.6791823778f8b8c60d18.js:1
+#: settings/build/814.8dbd4ded982949363a3e.js:1
+#: settings/src/Settings/firewall/UserAgentModal.js:151
+#: settings/src/Settings/GeoBlockList/TrustIpAddressModal.js:140
+#: settings/src/Settings/LearningMode/ManualCspAdditionModal.js:190
+#: settings/src/Settings/LimitLoginAttempts/AddIpAddressModal.js:110
+#: settings/src/Settings/LimitLoginAttempts/AddUserModal.js:90
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: class-admin.php:638 settings/build/43.0e3a76e200aea03c4a34.js:1
+#: settings/build/288.6791823778f8b8c60d18.js:1
+#: settings/build/543.721a210f848801df2d70.js:1
+#: settings/build/814.8dbd4ded982949363a3e.js:1
+#: settings/src/Dashboard/TaskElement.js:65 settings/src/Settings/Help.js:24
+msgid "More info"
+msgstr "Детальніше"
+
+#. Author URI of the plugin
+#: rlrsssl-really-simple-ssl.php
+msgid "https://really-simple-plugins.com"
+msgstr "https://really-simple-plugins.com"
+
+#: mailer/class-mail.php:33 mailer/class-mail.php:37
+#: settings/build/43.0e3a76e200aea03c4a34.js:1
+#: settings/src/Dashboard/Vulnerabilities/Vulnerabilities.js:192
+msgid "Learn more"
+msgstr "Дізнатись більше"
+
+#: settings/config/fields/encryption.php:59
+msgid "If this option is set to true, the mixed content fixer will fire on the init hook instead of the template_redirect hook. Only use this option when you experience problems with the mixed content fixer."
+msgstr "Якщо цій опції встановлено значення true, функція виправлення змішаного вмісту буде запущена під час init замість template_redirect. Використовуйте цю опцію лише в разі виникнення проблем з функцією виправлення змішаного вмісту."
+
+#: class-site-health.php:373
+msgid "Enable 301 .htaccess redirect"
+msgstr "Увімкнути переадресування 301 .htaccess "
+
+#: class-admin.php:2134
+msgid "No 301 redirect is set. Enable the WordPress 301 redirect in the settings to get a 301 permanent redirect."
+msgstr "Переадресування 301 не встановлено. Увімкніть переадресування WordPress 301 в налаштуваннях для отримання постійної 301 переадресації. "
+
+#: class-admin.php:2163
+msgid "Enable a .htaccess redirect or PHP redirect in the settings to create a 301 redirect."
+msgstr "Увімкніть переадресування .htaccess або переадресування WordPress у налаштуваннях, щоб створити 301 переадресування. "
+
+#: class-admin.php:2168
+msgid ".htaccess redirect."
+msgstr "Переадресування .htaccess"
+
+#: class-admin.php:2130
+msgid "301 redirect to https set."
+msgstr "Переадресування 301 до https налаштовано"
+
+#: class-multisite.php:112
+msgid "View settings page"
+msgstr "Перегляд сторінки налаштувань"
+
+#: settings/config/fields/general.php:210 settings/config/menu.php:51
+msgid "Premium Support"
+msgstr "Преміум підтримка"
+
+#: lets-encrypt/functions.php:376 lets-encrypt/functions.php:377
+#: settings/build/543.721a210f848801df2d70.js:1
+#: settings/src/Settings/SettingsGroup.js:100
+msgid "Instructions"
+msgstr "Інструкції"
+
+#: class-admin.php:2023
+msgid "SSL is enabled on your site."
+msgstr "SSL увімкнено на вашому сайті. "
+
+#: class-admin.php:1957
+msgid "Your wp-config.php has to be edited, but is not writable."
+msgstr "Схоже ваш wp-config.php було змінено, але він недоступний для запису. "
+
+#: class-admin.php:1979
+msgid "A definition of a site url or home url was detected in your wp-config.php, but the file is not writable."
+msgstr "Визначення siteurl або homeurl було виявлено у вашому wp-config.php, але файл недоступний для запису. "
+
+#: onboarding/class-onboarding.php:15 security/hardening.php:9
+msgid "%s is a singleton class and you cannot create a second instance."
+msgstr "%s це одиночний класс і ви не можете створити другий запис."
+
+#: class-admin.php:1958 class-admin.php:1979
+msgid "Set your wp-config.php to writable and reload this page."
+msgstr "Зробіть ваш wp-config.php доступним для запису та перезавантажте цю сторінку."
+
+#. Plugin URI of the plugin
+#: rlrsssl-really-simple-ssl.php
+msgid "https://really-simple-ssl.com"
+msgstr "https://really-simple-ssl.com"
+
+#: settings/config/fields/general.php:220
+msgid "Stop editing the .htaccess file"
+msgstr "Припинити редагування файлу .htaccess"
+
+#: class-admin.php:156 class-admin.php:158 settings/config/menu.php:17
+#: settings/config/menu.php:385 settings/build/43.0e3a76e200aea03c4a34.js:1
+#: settings/src/Dashboard/Vulnerabilities/Vulnerabilities.js:237
+#: settings/src/Dashboard/Vulnerabilities/VulnerabilitiesFooter.js:24
+msgid "Settings"
+msgstr "Налаштування"
+
+#: settings/config/menu.php:208
+msgid "Configuration"
+msgstr "Конфігурація "
+
+#: settings/config/fields/encryption.php:46
+msgid "Mixed content fixer"
+msgstr "Функція виправлення змішаного вмісту"
+
+#: class-admin.php:1995 settings/build/288.6791823778f8b8c60d18.js:1
+#: settings/build/814.8dbd4ded982949363a3e.js:1
+#: settings/src/Onboarding/Items/ListItem.js:46
+msgid "Check again"
+msgstr "Перевірити ще раз"
+
+#: class-multisite.php:96
+msgid "You run a Multisite installation with subfolders, which prevents this plugin from fixing your missing server variable in the wp-config.php."
+msgstr "У вас працює установка Мультисайту з підпапками, котра заважає цьому плагіну виправити відсутні серверні змінні в wp-config.php."
+
+#: class-multisite.php:97
+msgid "Because the $_SERVER[\"HTTPS\"] variable is not set, your website may experience redirect loops."
+msgstr "Оскільки змінну $_SERVER[\"HTTPS\"] не встановлено, ваш веб-сайт може зіткнутися з петлями переадресувань."
+
+#: class-multisite.php:98
+msgid "Activate networkwide to fix this."
+msgstr "Активуйте на всю мережу, щоб виправити це."

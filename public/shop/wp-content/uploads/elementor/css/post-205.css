@@ -1,0 +1,36 @@
+.elementor-205 .elementor-element.elementor-element-15fe273 .woocommerce-breadcrumb{font-family:"Adrianna Light", Sans-serif;font-size:12px;}.woocommerce .elementor-205 .elementor-element.elementor-element-8546504 .flex-control-thumbs img{border-style:solid;border-width:1px 1px 1px 1px;}.woocommerce .elementor-205 .elementor-element.elementor-element-8546504 .flex-control-thumbs li{padding-right:calc(10px / 2);padding-left:calc(10px / 2);padding-bottom:10px;}.woocommerce .elementor-205 .elementor-element.elementor-element-8546504 .flex-control-thumbs{margin-right:calc(-10px / 2);margin-left:calc(-10px / 2);}.elementor-205 .elementor-element.elementor-element-633ec3e > .elementor-element-populated{padding:0px 20px 0px 20px;}.elementor-205 .elementor-element.elementor-element-8bf4a99 .elementor-heading-title{font-family:"Adrianna Regular", Sans-serif;font-size:35px;}.woocommerce .elementor-205 .elementor-element.elementor-element-aa4a309 .price{font-family:"Adrianna Bold", Sans-serif;font-size:25px;}.woocommerce .elementor-205 .elementor-element.elementor-element-aa4a309 .price ins{color:var( --e-global-color-accent );font-family:"Adrianna Bold", Sans-serif;font-size:40px;text-decoration:none;}body:not(.rtl) .elementor-205 .elementor-element.elementor-element-aa4a309:not(.elementor-product-price-block-yes) del{margin-right:5px;}body.rtl .elementor-205 .elementor-element.elementor-element-aa4a309:not(.elementor-product-price-block-yes) del{margin-left:5px;}.elementor-205 .elementor-element.elementor-element-aa4a309.elementor-product-price-block-yes del{margin-bottom:5px;}.elementor-205 .elementor-element.elementor-element-b24b164 .cart button, .elementor-205 .elementor-element.elementor-element-b24b164 .cart .button{font-family:"Adrianna Bold", Sans-serif;font-size:14px;padding:6px 23px 6px 23px;background-color:var( --e-global-color-secondary );transition:all 0.2s;}.elementor-205 .elementor-element.elementor-element-b24b164 .quantity .qty{transition:all 0.2s;}.elementor-205 .elementor-element.elementor-element-1fcd4c5{--spacer-size:20px;}.elementor-205 .elementor-element.elementor-element-fdb88bb:not(.elementor-woo-meta--view-inline) .product_meta .detail-container:not(:last-child){padding-bottom:calc(0px/2);}.elementor-205 .elementor-element.elementor-element-fdb88bb:not(.elementor-woo-meta--view-inline) .product_meta .detail-container:not(:first-child){margin-top:calc(0px/2);}.elementor-205 .elementor-element.elementor-element-fdb88bb.elementor-woo-meta--view-inline .product_meta .detail-container{margin-right:calc(0px/2);margin-left:calc(0px/2);}.elementor-205 .elementor-element.elementor-element-fdb88bb.elementor-woo-meta--view-inline .product_meta{margin-right:calc(-0px/2);margin-left:calc(-0px/2);}body:not(.rtl) .elementor-205 .elementor-element.elementor-element-fdb88bb.elementor-woo-meta--view-inline .detail-container:after{right:calc( (-0px/2) + (-1px/2) );}body:not.rtl .elementor-205 .elementor-element.elementor-element-fdb88bb.elementor-woo-meta--view-inline .detail-container:after{left:calc( (-0px/2) - (1px/2) );}.elementor-205 .elementor-element.elementor-element-fdb88bb{font-size:14px;}.woocommerce .elementor-205 .elementor-element.elementor-element-185b504 .woocommerce-tabs ul.wc-tabs li a{font-family:"Adrianna Bold", Sans-serif;}.elementor-205 .elementor-element.elementor-element-4f3e9f5.elementor-wc-products  ul.products{grid-column-gap:20px;grid-row-gap:40px;}.elementor-205 .elementor-element.elementor-element-4f3e9f5.elementor-wc-products ul.products li.product span.onsale{display:block;}@media(min-width:768px){.elementor-205 .elementor-element.elementor-element-68ea981{width:30%;}.elementor-205 .elementor-element.elementor-element-633ec3e{width:40%;}.elementor-205 .elementor-element.elementor-element-a724353{width:29.333%;}.elementor-205 .elementor-element.elementor-element-d07b814{width:50%;}.elementor-205 .elementor-element.elementor-element-70f8aba{width:49.333%;}}@media(max-width:1024px){.elementor-205 .elementor-element.elementor-element-4f3e9f5.elementor-wc-products  ul.products{grid-column-gap:20px;grid-row-gap:40px;}}@media(max-width:767px){.elementor-205 .elementor-element.elementor-element-4f3e9f5.elementor-wc-products  ul.products{grid-column-gap:20px;grid-row-gap:40px;}}/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Adrianna Light';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://eurolamp.seo-moon.com/wp-content/uploads/adrianna-light.eot');
+	src: url('https://eurolamp.seo-moon.com/wp-content/uploads/adrianna-light.eot?#iefix') format('embedded-opentype'),
+		url('https://eurolamp.seo-moon.com/wp-content/uploads/adrianna-light.woff2') format('woff2'),
+		url('https://eurolamp.seo-moon.com/wp-content/uploads/adrianna-light.woff') format('woff'),
+		url('https://eurolamp.seo-moon.com/wp-content/uploads/adrianna-light.ttf') format('truetype');
+}
+/* End Custom Fonts CSS */
+/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Adrianna Regular';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://eurolamp.seo-moon.com/wp-content/uploads/adrianna-regular.eot');
+	src: url('https://eurolamp.seo-moon.com/wp-content/uploads/adrianna-regular.eot?#iefix') format('embedded-opentype'),
+		url('https://eurolamp.seo-moon.com/wp-content/uploads/adrianna-regular.woff2') format('woff2'),
+		url('https://eurolamp.seo-moon.com/wp-content/uploads/adrianna-regular.woff') format('woff'),
+		url('https://eurolamp.seo-moon.com/wp-content/uploads/adrianna-regular.ttf') format('truetype');
+}
+/* End Custom Fonts CSS */
+/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Adrianna Bold';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://eurolamp.seo-moon.com/wp-content/uploads/adrianna-bold.eot');
+	src: url('https://eurolamp.seo-moon.com/wp-content/uploads/adrianna-bold.eot?#iefix') format('embedded-opentype'),
+		url('https://eurolamp.seo-moon.com/wp-content/uploads/adrianna-bold.woff2') format('woff2'),
+		url('https://eurolamp.seo-moon.com/wp-content/uploads/adrianna-bold.woff') format('woff'),
+		url('https://eurolamp.seo-moon.com/wp-content/uploads/adrianna-bold.ttf') format('truetype');
+}
+/* End Custom Fonts CSS */

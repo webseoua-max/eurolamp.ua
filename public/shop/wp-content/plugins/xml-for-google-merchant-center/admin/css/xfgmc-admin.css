@@ -1,0 +1,124 @@
+/**
+ * All of the CSS for your admin-specific functionality should be included in this file.
+ */
+.xfgmc_bold {
+    font-weight: 700;
+}
+
+#xfgmc_wrap .xfgmc-postbox a,
+#xfgmc_wrap .xfgmc-postbox a:visited {
+    color: #ff5301;
+    text-decoration: underline
+}
+
+#xfgmc_wrap .xfgmc-postbox a:hover {
+    color: #cd4200;
+    text-decoration: none
+}
+
+#xfgmc_wrap th,
+#xfgmc_wrap td {
+    vertical-align: top;
+    padding: 20px 10px 20px 10px;
+}
+
+.xfgmc_label {
+    padding: 26px 10px 8px 0 !important;
+    display: inline-block;
+    color: #23282d;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+
+}
+
+/* Нечетные строки */
+#xfgmc_wrap table tbody tr:nth-child(odd) {
+    background: auto;
+}
+
+/* Четные строки */
+#xfgmc_wrap table tbody tr:nth-child(even) {
+    background: rgba(220, 220, 222, .3);
+}
+
+.xfgmc_th label {
+    color: #23282d;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.xfgmc_th p,
+.xfgmc_td p {
+    font-weight: 600;
+    margin: 2px 0 5px;
+    color: #646970;
+}
+
+.xfgmc_select {
+    width: 100%;
+    align-items: center;
+    background: #fdfdff;
+    border: 1px solid #c2c2c5 !important;
+    border-radius: 4px;
+    height: 36px;
+    position: relative;
+    font-size: 25px;
+}
+
+.xfgmc_input {
+    width: 100%;
+    align-items: center;
+    background: #fdfdff;
+    border: 1px solid #c2c2c5;
+    border-radius: 4px;
+    height: 36px;
+    position: relative;
+    padding: 0 8px;
+}
+
+.xfgmc_textarea {
+    width: 100%;
+    align-items: center;
+    background: #fdfdff;
+    border: 1px solid #c2c2c5;
+    border-radius: 4px;
+    min-height: 72px;
+    position: relative;
+    padding: 5px 8px;
+}
+
+.xfgmc_input::placeholder,
+.xfgmc_textarea::placeholder {
+    color: #ccc;
+    font-style: italic;
+}
+
+#xfgmc_wrap .meta-box-sortables input[type="number"] {
+    width: 100% !important;
+}
+
+#xfgmc_wrap .woocommerce table.form-table input[type="text"],
+#xfgmc_wrap .woocommerce table.form-table input[type="number"] {
+    max-width: 100% !important;
+}
+
+.xfgmc_notice {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.xfgmc_uppercase {
+    text-transform: uppercase;
+}
+
+input.pw {
+    -webkit-text-security: disc;
+}
+
+.xfgmc_banner {
+    max-width: 100%;
+}

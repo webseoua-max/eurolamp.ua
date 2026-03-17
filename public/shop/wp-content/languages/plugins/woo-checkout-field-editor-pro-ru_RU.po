@@ -1,0 +1,775 @@
+# Translation of Plugins - Checkout Field Editor (Checkout Manager) for WooCommerce - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Checkout Field Editor (Checkout Manager) for WooCommerce - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-10-01 09:52:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Checkout Field Editor (Checkout Manager) for WooCommerce - Stable (latest release)\n"
+
+#: admin/thwcfd-landing-page.php:54
+msgid "Read More!"
+msgstr "Читайте далее!"
+
+#. translators: %s Field label.
+#: block/class-thwcfd-block.php:84 block/class-thwcfd-block.php:184
+msgid "%s (optional)"
+msgstr "%s (необязательно)"
+
+#: admin/class-thwcfd-admin.php:141
+msgid ""
+"Our Checkout Field Editor now supports WooCommerce Checkout Blocks! Currently, a few field types are available, and more will be added soon. \n"
+"\t\t\t\t\t\t\tIf you're using Block Checkout, make sure to switch to the Block Checkout Fields tab, otherwise, your changes won’t be reflected. Have questions or need help? \n"
+"\t\t\t\t\t\t\tReach out to our  %s ."
+msgstr ""
+"Наш редактор полей оформления заказа теперь поддерживает блоки оформления заказа в WooCommerce! В настоящее время доступно несколько типов полей, и скоро будут добавлены другие. \n"
+"\t\t\t\t\t\t\tЕсли вы используете блок оформления заказа, обязательно перейдите на вкладку \"Блок полей оформления заказа\", иначе изменения не будут отражены. Если у вас есть вопросы или вам нужна помощь... \n"
+"\t\t\t\t\t\t\tСвяжитесь с нашей %s."
+
+#: admin/class-thwcfd-admin.php:144
+msgid " Support team"
+msgstr " командой поддержки"
+
+#: block/class-thwcfd-block-order-data.php:414
+#: block/class-thwcfd-block-order-data.php:542
+msgid "No"
+msgstr "Нет"
+
+#: includes/utils/class-thwcfd-utils-block.php:32
+#: includes/utils/class-thwcfd-utils-block.php:312
+msgid "Email address"
+msgstr "Email-адрес"
+
+#: includes/utils/class-thwcfd-utils-block.php:99
+#: includes/utils/class-thwcfd-utils-block.php:372
+msgid "Address"
+msgstr "Адрес"
+
+#: includes/utils/class-thwcfd-utils-block.php:123
+#: includes/utils/class-thwcfd-utils-block.php:396
+msgid "City"
+msgstr "Город"
+
+#: admin/class-thwcfd-admin-settings-block-fields.php:103
+msgid "Actions"
+msgstr "Действия"
+
+#: includes/utils/class-thwcfd-utils-block.php:100
+#: includes/utils/class-thwcfd-utils-block.php:373
+msgid "Address (optional)"
+msgstr "Адрес (необязательно)"
+
+#: includes/utils/class-thwcfd-utils-block.php:111
+#: includes/utils/class-thwcfd-utils-block.php:384
+msgid "Apartment, suite, etc."
+msgstr "Крыло, этаж и т.д."
+
+#: includes/utils/class-thwcfd-utils-block.php:124
+#: includes/utils/class-thwcfd-utils-block.php:397
+msgid "City (optional)"
+msgstr "Город (необязательно)"
+
+#: includes/utils/class-thwcfd-utils-block.php:87
+#: includes/utils/class-thwcfd-utils-block.php:360
+msgid "Company"
+msgstr "Компания"
+
+#: includes/utils/class-thwcfd-utils-block.php:88
+#: includes/utils/class-thwcfd-utils-block.php:361
+msgid "Company (optional)"
+msgstr "Компания (необязательно)"
+
+#: includes/utils/class-thwcfd-utils-block.php:49
+#: includes/utils/class-thwcfd-utils-block.php:325
+msgid "Country/Region"
+msgstr "Страна/регион"
+
+#: includes/utils/class-thwcfd-utils-block.php:50
+#: includes/utils/class-thwcfd-utils-block.php:326
+msgid "Country/Region (optional)"
+msgstr "Страна/регион (необязательно)"
+
+#: admin/class-thwcfd-admin-settings-block-fields.php:222
+msgid "Duplicate Field"
+msgstr "Дублировать поле"
+
+#: admin/class-thwcfd-admin-settings-block-fields.php:592
+msgid "Edit Section"
+msgstr "Изменить раздел"
+
+#: includes/utils/class-thwcfd-utils-block.php:33
+#: includes/utils/class-thwcfd-utils-block.php:313
+msgid "Email address (optional)"
+msgstr "Email (опционально)"
+
+#: includes/utils/class-thwcfd-utils-block.php:63
+#: includes/utils/class-thwcfd-utils-block.php:337
+msgid "First name (optional)"
+msgstr "Имя (необязательно)"
+
+#: includes/utils/class-thwcfd-utils-block.php:74
+#: includes/utils/class-thwcfd-utils-block.php:348
+msgid "Last name"
+msgstr "Фамилия"
+
+#: includes/utils/class-thwcfd-utils-block.php:75
+#: includes/utils/class-thwcfd-utils-block.php:349
+msgid "Last name (optional)"
+msgstr "Фамилия (необязательно)"
+
+#: includes/utils/class-thwcfd-utils-block.php:149
+#: includes/utils/class-thwcfd-utils-block.php:433
+msgid "Phone (optional)"
+msgstr "Телефон (дополнительно)"
+
+#: includes/utils/class-thwcfd-utils-block.php:161
+#: includes/utils/class-thwcfd-utils-block.php:420
+msgid "Postal code"
+msgstr "Почтовый индекс"
+
+#: includes/utils/class-thwcfd-utils-block.php:162
+#: includes/utils/class-thwcfd-utils-block.php:421
+msgid "Postal code (optional)"
+msgstr "Почтовый индекс (необязательно)"
+
+#: includes/utils/class-thwcfd-utils-block.php:135
+#: includes/utils/class-thwcfd-utils-block.php:408
+msgid "State/County"
+msgstr "Область/район"
+
+#: includes/utils/class-thwcfd-utils-block.php:136
+#: includes/utils/class-thwcfd-utils-block.php:409
+msgid "State/County (optional)"
+msgstr "Штат/графство (необязательно)"
+
+#: admin/class-thwcfd-admin-form-block-field.php:382
+msgid "Value"
+msgstr "Стоимость"
+
+#: admin/class-thwcfd-admin-settings-block-fields.php:80
+msgid "Are you sure you want to reset to the default fields? All your changes will be deleted, and all sections will be restored to their default fields."
+msgstr "Уверены, что нужно вернуть поля по умолчанию? Все внесенные изменения будут удалены, а для всех разделов будут восстановлены поля по умолчанию."
+
+#: admin/class-thwcfd-admin-settings-block-fields.php:233
+msgid "No checkout fields found. Click on Add Field button to create new fields."
+msgstr "Поля оформления заказа не найдены. Нажимайте на кнопку добавления поля, чтобы создать новые поля."
+
+#. Translators: %s is the section ID.
+#: block/class-thwcfd-block-extend-store-endpoint.php:80
+msgid "Additional checkout fields for section %s"
+msgstr "Дополнительные поля оформления заказа в разделе %s"
+
+#: block/class-thwcfd-block.php:258
+msgid "The provided %s is not a valid email address."
+msgstr "%s не является действительным адресом электронной почты."
+
+#: block/class-thwcfd-block.php:271
+msgid "The provided %s is not a valid phone number."
+msgstr "%s не является действительным номером телефона."
+
+#: block/class-thwcfd-block.php:284
+msgid "The provided %s is not a valid postcode."
+msgstr "%s не является действительным почтовым индексом."
+
+#: includes/utils/class-thwcfd-utils-block.php:62
+#: includes/utils/class-thwcfd-utils-block.php:336
+msgid "First name"
+msgstr "Имя"
+
+#: includes/utils/class-thwcfd-utils-block.php:112
+#: includes/utils/class-thwcfd-utils-block.php:385
+msgid "Apartment, suite, etc. (optional)"
+msgstr "Крыло, этаж и т.д. (необязательно)"
+
+#: admin/class-thwcfd-admin.php:88
+msgid "Review us"
+msgstr "Оцените нас"
+
+#: admin/class-thwcfd-admin.php:87
+msgid "Join Community"
+msgstr "Присоединиться к сообществу"
+
+#: admin/class-thwcfd-admin-settings-block-fields.php:186
+#: block/class-thwcfd-block-order-data.php:414
+#: block/class-thwcfd-block-order-data.php:542
+#: admin/assets/js/thwcfd-admin.js:1281
+msgid "Yes"
+msgstr "Да"
+
+#: admin/class-thwcfd-admin-form-field.php:189
+msgid "Next"
+msgstr "Далее"
+
+#: admin/class-thwcfd-admin-settings-block-fields.php:215
+#: admin/assets/js/thwcfd-admin.js:607
+msgid "Edit Field"
+msgstr "Изменить поле"
+
+#: admin/class-thwcfd-admin-settings-themehigh-plugins.php:246
+msgid "Activate"
+msgstr "Активировать"
+
+#: admin/class-thwcfd-admin-settings-themehigh-plugins.php:233
+msgid "Activated"
+msgstr "Активирован"
+
+#: admin/class-thwcfd-admin-settings-general.php:34
+#: admin/class-thwcfd-admin-settings.php:27
+msgid "Advanced Settings"
+msgstr "Расширенные настройки"
+
+#: admin/class-thwcfd-admin-form-field.php:95
+msgid "Default Value"
+msgstr "Значение по-умолчанию"
+
+#: admin/class-thwcfd-admin-form-field.php:220
+msgid "Display Settings"
+msgstr "Настройки отображения"
+
+#: admin/class-thwcfd-admin-form-field.php:76
+msgid "Full width"
+msgstr "Во всю ширину"
+
+#: admin/class-thwcfd-admin-settings-themehigh-plugins.php:184
+msgid "Other Plugins"
+msgstr "Другие плагины"
+
+#: admin/class-thwcfd-admin-settings-general.php:35
+#: admin/class-thwcfd-admin-settings.php:28
+msgid "Premium Features"
+msgstr "Премиум возможности"
+
+#: admin/class-thwcfd-admin-form-field.php:686
+#: admin/assets/js/thwcfd-admin.js:960
+msgid "Add new option"
+msgstr "Добавлены новые опции"
+
+#: admin/class-thwcfd-admin-settings-general.php:41
+msgid "Additional Fields"
+msgstr "Дополнительные поля"
+
+#: admin/class-thwcfd-admin-form-field.php:192
+msgid "Back"
+msgstr "Назад"
+
+#: admin/class-thwcfd-admin-settings-themehigh-plugins.php:267
+msgid "Install now"
+msgstr "Установить сейчас"
+
+#: admin/class-thwcfd-admin-form-field.php:686
+#: admin/assets/js/thwcfd-admin.js:961
+msgid "Remove option"
+msgstr "Удалить параметр"
+
+#: admin/class-thwcfd-admin-form-field.php:186
+msgid "Save & Close"
+msgstr "Сохранить и закрыть"
+
+#: admin/class-thwcfd-admin-form-field.php:151
+msgid "Save Field"
+msgstr "Сохранить поле"
+
+#: admin/class-thwcfd-admin-form-field.php:99
+msgid "Validation"
+msgstr "Валидность"
+
+#: admin/class-thwcfd-admin-form-field.php:206
+msgid "Basic Details"
+msgstr "Основные сведения"
+
+#: admin/class-thwcfd-admin-form-field.php:154
+msgid "Basic Info"
+msgstr "Основная информация"
+
+#: admin/class-thwcfd-admin-settings-general.php:39
+msgid "Billing Fields"
+msgstr "Поля платежного адреса"
+
+#: admin/class-thwcfd-admin-settings-block-fields.php:373
+#: admin/class-thwcfd-admin-settings-general.php:77
+msgid "Checkout fields successfully reset"
+msgstr "Поля на странице оформления заказа сброшены"
+
+#: admin/class-thwcfd-admin-settings-themehigh-plugins.php:146
+msgid "Compatible Plugins"
+msgstr "Несовместимые плагины"
+
+#: admin/class-thwcfd-admin.php:72
+msgid "Get Pro"
+msgstr "Получить Про"
+
+#: admin/class-thwcfd-admin.php:56
+msgid "WooCommerce Checkout Field Editor"
+msgstr "Редактор полей на странице оформления заказа WooCommerce"
+
+#: admin/class-thwcfd-admin-form-field.php:55
+msgid "Time"
+msgstr "Время"
+
+#: admin/class-thwcfd-admin-form-field.php:58
+#: admin/class-thwcfd-admin-form-field.php:72
+msgid "URL"
+msgstr "URL"
+
+#: admin/class-thwcfd-admin-form-field.php:42
+msgid "Hidden"
+msgstr "Скрытый"
+
+#: admin/class-thwcfd-admin-form-field.php:49
+msgid "Multiselect"
+msgstr "Множественный выбор"
+
+#: admin/class-thwcfd-admin-form-field.php:50
+msgid "Checkbox"
+msgstr "Чекбокс"
+
+#: admin/class-thwcfd-admin-form-field.php:52
+msgid "Heading"
+msgstr "Заголовок"
+
+#: admin/class-thwcfd-admin-form-field.php:54
+msgid "Date"
+msgstr "Дата"
+
+#: admin/class-thwcfd-admin-form-field.php:56
+msgid "Month"
+msgstr "Месяц"
+
+#: admin/class-thwcfd-admin-form-field.php:57
+msgid "Week"
+msgstr "Неделя"
+
+#: admin/class-thwcfd-admin-form-field.php:59
+msgid "Paragraph"
+msgstr "Абзац"
+
+#: admin/class-thwcfd-admin-form-field.php:683
+#: admin/assets/js/thwcfd-admin.js:957
+msgid "Option Value"
+msgstr "Значение параметра"
+
+#: admin/class-thwcfd-admin-form-field.php:684
+#: admin/assets/js/thwcfd-admin.js:958
+msgid "Option Text"
+msgstr "Текст параметра"
+
+#: admin/class-thwcfd-admin-settings-advanced.php:99
+msgid "Settings successfully reset."
+msgstr "Настройки успешно сброшены."
+
+#: admin/class-thwcfd-admin-settings-general.php:40
+msgid "Shipping Fields"
+msgstr "Поля доставки"
+
+#: includes/class-thwcfd.php:148
+msgid "Quick Feedback"
+msgstr "Быстрый отзыв"
+
+#: includes/class-thwcfd.php:153 includes/class-thwcfd.php:184
+msgid "Get Support"
+msgstr "Получить поддержку"
+
+#: includes/class-thwcfd.php:176
+msgid "Privacy Policy"
+msgstr "Политика конфиденциальности"
+
+#: includes/class-thwcfd.php:180
+msgid "Skip & Deactivate"
+msgstr "Пропустить и деактивировать"
+
+#: includes/class-thwcfd.php:186
+msgid "Submit and Deactivate"
+msgstr "Отправить и деактивировать"
+
+#: includes/class-thwcfd.php:187
+msgid "Cancel"
+msgstr "Отмена"
+
+#: includes/class-thwcfd.php:410
+msgid "leave a review"
+msgstr "Оставить отзыв"
+
+#: includes/class-thwcfd.php:512
+msgid "I found a better Plugin"
+msgstr "Я нашел плагин лучше"
+
+#: includes/class-thwcfd.php:414
+msgid "Upgraded"
+msgstr "Обновлено"
+
+#: includes/class-thwcfd.php:484
+msgid "Upgraded to premium."
+msgstr "Повышен до премиум."
+
+#: admin/class-thwcfd-admin-settings-advanced.php:296
+msgid "Your Settings Updated."
+msgstr "Обновлены настройки."
+
+#: admin/class-thwcfd-admin-form-field.php:51
+msgid "Checkbox Group"
+msgstr "Группа флажков"
+
+#: admin/class-thwcfd-admin-form-field.php:53
+msgid "Datetime local"
+msgstr "Дата и время местное"
+
+#: admin/class-thwcfd-admin-settings-advanced.php:67
+msgid "Enable placeholder override for address fields."
+msgstr "Включить переопределение заполнителя для полей адреса."
+
+#: admin/class-thwcfd-admin-form-field.php:77
+msgid "Half width left"
+msgstr "Половина ширины слева"
+
+#: admin/class-thwcfd-admin-form-field.php:78
+msgid "Half width right"
+msgstr "Половина ширины справа"
+
+#: admin/class-thwcfd-admin-form-field.php:105
+msgid " Checked by default"
+msgstr " По умолчанию отмечено"
+
+#: admin/class-thwcfd-admin-settings-advanced.php:64
+msgid "Enable label override for address fields."
+msgstr "Включить переопределение этикеток для полей адреса."
+
+#: admin/class-thwcfd-admin-settings-advanced.php:70
+msgid "Enable class override for address fields."
+msgstr "Включить переопределение класса для полей адреса."
+
+#: admin/class-thwcfd-admin-settings-advanced.php:73
+msgid "Enable priority override for address fields."
+msgstr "Включить приоритетное переопределение для полей адреса."
+
+#: admin/class-thwcfd-admin-settings-advanced.php:76
+msgid "Enable required validation override for address fields."
+msgstr "Включите необходимую переопределение проверки для полей адреса."
+
+#: admin/class-thwcfd-admin-settings-advanced.php:170
+msgid "Are you sure you want to reset to default settings? all your changes will be deleted."
+msgstr "Вы уверены, что хотите сбросить настройки на значения по умолчанию? Все ваши изменения будут удалены."
+
+#: admin/class-thwcfd-admin-settings-advanced.php:222
+msgid "Plugin Settings Data"
+msgstr "Данные настроек плагина"
+
+#: admin/class-thwcfd-admin-settings-advanced.php:223
+msgid "You can transfer the saved settings data between different installs by copying the text inside the text box. To import data from another install, replace the data in the text box with the one from another install and click \"Import Settings\"."
+msgstr "Вы можете передавать сохраненные данные настроек между разными установками, скопировав текст внутри текстового поля. Чтобы импортировать данные из другой установки, замените данные в текстовом поле на данные из другой установки и щёлкните \"Импортировать настройки\"."
+
+#: admin/class-thwcfd-admin-settings-advanced.php:265
+msgid "The entered import settings data is invalid. Please try again with valid data."
+msgstr "Введенные данные настроек импорта недействительны. Пожалуйста, попробуйте снова с действительными данными."
+
+#: admin/class-thwcfd-admin-settings-advanced.php:240
+msgid "Import Settings"
+msgstr "Настройки импорта"
+
+#: admin/class-thwcfd-admin-form-field.php:41
+#: admin/class-thwcfd-admin-form-field.php:71
+msgid "Number"
+msgstr "Число"
+
+#: admin/class-thwcfd-admin-settings-general.php:36
+#: admin/class-thwcfd-admin-settings.php:29
+msgid "Other Free Plugins"
+msgstr "Другие бесплатные плагины"
+
+#: admin/class-thwcfd-admin-settings-general.php:113
+msgid "Are you sure you want to reset to default fields? all your changes will be deleted."
+msgstr "Вы уверены, что хотите сбросить настройки на стандартные поля? Все ваши изменения будут удалены."
+
+#: includes/class-thwcfd.php:157
+msgid "If you have a moment, please let us know why you want to deactivate this plugin"
+msgstr "Если у вас есть минутка, пожалуйста, дайте нам знать, почему вы хотите деактивировать этот плагин"
+
+#: includes/class-thwcfd.php:176
+msgid "This form is only for getting your valuable feedback. We do not collect your personal data. To know more read our "
+msgstr "Эта форма предназначена только для получения ваших ценных отзывов. Мы не собираем ваши личные данные. Чтобы узнать больше, читайте нашу "
+
+#: includes/class-thwcfd.php:408
+msgid "Deactivate and "
+msgstr "Деактивировать и "
+
+#: includes/class-thwcfd.php:491
+msgid "A specific feature is missing"
+msgstr "Отсутствует определенная функция"
+
+#: includes/class-thwcfd.php:498
+msgid "Found an error in the plugin/ Plugin was not working"
+msgstr "Обнаружена ошибка в плагине/ Плагин не работал"
+
+#: includes/class-thwcfd.php:500
+msgid "Specify the issue"
+msgstr "Укажите проблему"
+
+#: includes/class-thwcfd.php:505
+msgid "It was hard to use"
+msgstr "Было трудно использовать"
+
+#: includes/class-thwcfd.php:507
+msgid "How can we improve your experience?"
+msgstr "Как мы можем улучшить ваши впечатления?"
+
+#: includes/class-thwcfd.php:514 includes/class-thwcfd.php:528
+msgid "Could you please mention the plugin?"
+msgstr "Можете ли вы, пожалуйста, упомянуть плагин?"
+
+#: includes/class-thwcfd.php:526
+msgid "It’s a temporary deactivation - I’m troubleshooting an issue"
+msgstr "Это временное отключение - я устраняю проблему"
+
+#: includes/class-thwcfd.php:533
+msgid "Not mentioned here"
+msgstr "Не упоминается здесь"
+
+#: includes/class-thwcfd.php:535
+msgid "Kindly tell us your reason, so that we can improve"
+msgstr "Пожалуйста, сообщите нам причину, чтобы мы могли улучшить ситуацию"
+
+#: public/class-thwcfd-public-checkout.php:543
+msgid "<strong>%s</strong> is not a valid number."
+msgstr "<strong>%s</strong> не является допустимым числом."
+
+#: public/class-thwcfd-public-checkout.php:547
+msgid "<strong>%s</strong> is not a valid url."
+msgstr "<strong>%s</strong> не является допустимым URL-адресом."
+
+#: public/class-thwcfd-public-checkout.php:764
+msgid "required"
+msgstr "обязательно"
+
+#: public/class-thwcfd-public-checkout.php:767
+msgid "optional"
+msgstr "необязательно"
+
+#: admin/class-thwcfd-admin-settings-advanced.php:220
+msgid "Backup and Import Settings"
+msgstr "Настройки резервного копирования и импорта"
+
+#: includes/class-thwcfd.php:493
+msgid "Type in the feature"
+msgstr "Введите функцию"
+
+#: admin/class-thwcfd-admin-form-field.php:43
+msgid "Password"
+msgstr "Пароль"
+
+#. Author of the plugin
+#: checkout-form-designer.php
+msgid "ThemeHigh"
+msgstr "ThemeHigh"
+
+#: admin/class-thwcfd-admin-form-field.php:47
+msgid "Radio"
+msgstr "Переключатель"
+
+#: admin/class-thwcfd-admin-form-field.php:46
+msgid "Textarea"
+msgstr "Многострочное текстовое поле"
+
+#: admin/class-thwcfd-admin-settings-general.php:264
+#: admin/class-thwcfd-admin-settings-general.php:326
+msgid "Your changes were not saved due to an error."
+msgstr "Ваши изменения не были сохранены из-за ошибки."
+
+#: admin/class-thwcfd-admin-settings-block-fields.php:322
+#: admin/class-thwcfd-admin-settings-general.php:279
+msgid "Your changes were not saved due to no fields found."
+msgstr "Ваши изменения не были сохранены из-за отсутствия найденных полей."
+
+#: admin/class-thwcfd-admin.php:70
+msgid "Settings"
+msgstr "Настройки"
+
+#: admin/class-thwcfd-admin-form-field.php:91
+#: admin/class-thwcfd-admin-settings-block-fields.php:59
+#: admin/class-thwcfd-admin-settings-block-fields.php:97
+#: admin/class-thwcfd-admin-settings-general.php:92
+msgid "Type"
+msgstr "Тип"
+
+#: admin/class-thwcfd-admin.php:64
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: admin/class-thwcfd-admin-form-field.php:45
+#: admin/class-thwcfd-admin-form-field.php:68
+#: includes/utils/class-thwcfd-utils-block.php:148
+#: includes/utils/class-thwcfd-utils-block.php:432
+msgid "Phone"
+msgstr "Телефон"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: checkout-form-designer.php
+msgid "https://www.themehigh.com"
+msgstr "https://www.themehigh.com"
+
+#: admin/class-thwcfd-admin-form-field.php:44
+#: admin/class-thwcfd-admin-form-field.php:67
+msgid "Email"
+msgstr "Email"
+
+#: admin/class-thwcfd-admin-settings-block-fields.php:65
+#: admin/class-thwcfd-admin-settings-general.php:98
+#: admin/class-thwcfd-admin-settings-general.php:194
+msgid "Edit"
+msgstr "Изменить"
+
+#: admin/class-thwcfd-admin-settings-block-fields.php:72
+#: admin/class-thwcfd-admin-settings-general.php:105
+msgid "Add field"
+msgstr "Добавить поле"
+
+#: admin/class-thwcfd-admin-settings-block-fields.php:73
+#: admin/class-thwcfd-admin-settings-general.php:106
+msgid "Remove"
+msgstr "Удалить"
+
+#: admin/class-thwcfd-admin-settings-block-fields.php:78
+#: admin/class-thwcfd-admin-settings-general.php:111
+msgid "Save changes"
+msgstr "Сохранить изменения"
+
+#: admin/class-thwcfd-admin-form-field.php:104
+#: admin/class-thwcfd-admin-settings-block-fields.php:63
+#: admin/class-thwcfd-admin-settings-block-fields.php:101
+#: admin/class-thwcfd-admin-settings-general.php:96
+msgid "Required"
+msgstr "Обязательное"
+
+#: admin/class-thwcfd-admin-form-field.php:107
+#: admin/class-thwcfd-admin-settings-block-fields.php:64
+#: admin/class-thwcfd-admin-settings-block-fields.php:102
+#: admin/class-thwcfd-admin-settings-general.php:97
+msgid "Enabled"
+msgstr "Включено"
+
+#: admin/class-thwcfd-admin-settings-block-fields.php:74
+#: admin/class-thwcfd-admin-settings-general.php:107
+msgid "Enable"
+msgstr "Включить"
+
+#: admin/class-thwcfd-admin-settings-block-fields.php:75
+#: admin/class-thwcfd-admin-settings-general.php:108
+msgid "Disable"
+msgstr "Выключить"
+
+#: admin/class-thwcfd-admin.php:56 admin/class-thwcfd-admin.php:96
+msgid "Checkout Form"
+msgstr "Форма оформления заказа"
+
+#. Description of the plugin
+#: checkout-form-designer.php
+msgid "Customize WooCommerce checkout fields(Add, Edit, Delete and re-arrange fields)."
+msgstr "Настройка полей на странице оформления заказа WooCommerce (добавление, изменение, удаление и сортировка полей)."
+
+#: admin/class-thwcfd-admin-form-field.php:40
+msgid "Text"
+msgstr "Текстовое"
+
+#: admin/class-thwcfd-admin-settings-block-fields.php:79
+#: admin/class-thwcfd-admin-settings-general.php:112
+msgid "Reset to default fields"
+msgstr "Восстановить поля по умолчанию"
+
+#: includes/utils/class-thwcfd-utils.php:155
+msgctxt "placeholder"
+msgid "Notes about your order, e.g. special notes for delivery."
+msgstr "Примечания к вашему заказу, например особые пожелания для службы доставки."
+
+#: admin/class-thwcfd-admin-form-block-field.php:471
+#: admin/class-thwcfd-admin-form-field.php:675
+msgid "Options"
+msgstr "Параметры"
+
+#: admin/class-thwcfd-admin-form-field.php:48
+msgid "Select"
+msgstr "Выпадающий список"
+
+#: admin/class-thwcfd-admin-form-field.php:96
+#: admin/class-thwcfd-admin-settings-block-fields.php:61
+#: admin/class-thwcfd-admin-settings-block-fields.php:99
+#: admin/class-thwcfd-admin-settings-general.php:94
+msgid "Placeholder"
+msgstr "Подсказка"
+
+#: includes/utils/class-thwcfd-utils.php:154
+msgid "Order Notes"
+msgstr "Примечания к заказу"
+
+#: admin/class-thwcfd-admin-form-field.php:93
+#: admin/class-thwcfd-admin-settings-block-fields.php:58
+#: admin/class-thwcfd-admin-settings-block-fields.php:96
+#: admin/class-thwcfd-admin-settings-general.php:91
+msgid "Name"
+msgstr "Название"
+
+#: admin/class-thwcfd-admin-settings-block-fields.php:62
+#: admin/class-thwcfd-admin-settings-block-fields.php:100
+#: admin/class-thwcfd-admin-settings-general.php:95
+msgid "Validations"
+msgstr "Проверка"
+
+#. Plugin Name of the plugin
+#: checkout-form-designer.php
+msgid "Checkout Field Editor for WooCommerce"
+msgstr "Checkout Field Editor for WooCommerce"
+
+#: admin/class-thwcfd-admin-settings-advanced.php:137
+#: admin/class-thwcfd-admin-settings-advanced.php:299
+#: admin/class-thwcfd-admin-settings-general.php:261
+#: admin/class-thwcfd-admin-settings-general.php:323
+msgid "Your changes were not saved due to an error (or you made none!)."
+msgstr "Ваши изменения не были сохранены из-за ошибки (или вы их не внесли!)."
+
+#: admin/class-thwcfd-admin-settings-advanced.php:135
+#: admin/class-thwcfd-admin-settings-general.php:259
+#: admin/class-thwcfd-admin-settings-general.php:321
+msgid "Your changes were saved."
+msgstr "Ваши изменения сохранены."
+
+#: admin/class-thwcfd-admin-form-field.php:98
+msgid "Class"
+msgstr "Класс"
+
+#: admin/class-thwcfd-admin-form-field.php:69
+msgid "Postcode"
+msgstr "Почтовый индекс"
+
+#: admin/class-thwcfd-admin-form-field.php:70
+msgid "State"
+msgstr "Округ/Область"
+
+#: admin/class-thwcfd-admin-settings-general.php:32
+#: admin/class-thwcfd-admin-settings.php:25
+msgid "Checkout Fields"
+msgstr "Поля оформления заказа"
+
+#: admin/class-thwcfd-admin-form-field.php:109
+msgid "Display in Emails"
+msgstr "Отображать в электронных письмах"
+
+#: admin/class-thwcfd-admin-form-field.php:94
+#: admin/class-thwcfd-admin-settings-block-fields.php:60
+#: admin/class-thwcfd-admin-settings-block-fields.php:98
+#: admin/class-thwcfd-admin-settings-general.php:93
+msgid "Label"
+msgstr "Этикетка"
+
+#: admin/class-thwcfd-admin-form-field.php:110
+msgid "Display in Order Detail Pages"
+msgstr "Отображать на странице заказа"
+
+#: admin/class-thwcfd-admin-form-field.php:98
+msgid "Separate classes with comma"
+msgstr "Разделяйте классы запятой"
+
+#: admin/class-thwcfd-admin-form-field.php:99
+msgid "Select validations"
+msgstr "Выберите валидацию"

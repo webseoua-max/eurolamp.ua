@@ -1,0 +1,51 @@
+<item>
+<g:id>7593</g:id>
+<g:title>Акумуляторна збірка 6S2P Molicel</g:title>
+<g:description><![CDATA[<div class="flex-shrink-0 flex flex-col relative items-end">
+<div class="pt-0">
+<div class="gizmo-bot-avatar flex h-8 w-8 items-center justify-center overflow-hidden rounded-full">
+<div class="relative p-1 rounded-sm flex items-center justify-center bg-token-main-surface-primary text-token-text-primary h-8 w-8">
+<p data-start="100" data-end="313">Акумуляторна збірка <strong data-start="120" data-end="136">6S2P Molicel</strong> – це високопродуктивний літій-іонний акумуляторний блок, що складається з <strong data-start="211" data-end="227">12 елементів</strong>, з’єднаних за схемою <strong data-start="249" data-end="280">6 послідовно × 2 паралельно</strong>. Така конфігурація забезпечує:</p>
+<ul data-start="315" data-end="704">
+<li data-start="315" data-end="349">
+<p data-start="317" data-end="349"><strong data-start="317" data-end="340">Номінальна напруга:</strong> 22.2 В</p>
+</li>
+<li data-start="350" data-end="395">
+<p data-start="352" data-end="395"><strong data-start="352" data-end="386">Максимальна заряджена напруга:</strong> 25.2 В</p>
+</li>
+<li data-start="396" data-end="536">
+<p data-start="398" data-end="536"><strong data-start="398" data-end="410">Ємність:</strong> подвоєна за рахунок паралельного з’єднання (наприклад, при використанні комірок 2800 мА·год – загальна ємність 5600 мА·год)</p>
+</li>
+<li data-start="537" data-end="610">
+<p data-start="539" data-end="610"><strong data-start="539" data-end="559">Розрядний струм:</strong> залежно від моделі Molicel, до 40A без перегріву</p>
+</li>
+<li data-start="611" data-end="704">
+<p data-start="613" data-end="704"><strong data-start="613" data-end="624">Захист:</strong> можливість оснащення BMS для контролю заряду, розряду та балансування комірок</p>
+</li>
+</ul>
+<p data-start="706" data-end="724"><strong data-start="709" data-end="722">    Переваги:</strong></p>
+<ul data-start="725" data-end="970">
+<li data-start="725" data-end="777">
+<p data-start="727" data-end="777">Висока щільність енергії при компактних розмірах</p>
+</li>
+<li data-start="778" data-end="838">
+<p data-start="780" data-end="838">Надійність і стабільна робота навіть при високих струмах</p>
+</li>
+<li data-start="839" data-end="887">
+<p data-start="841" data-end="887">Тривалий термін служби та збереження ємності</p>
+</li>
+<li data-start="888" data-end="970">
+<p data-start="890" data-end="970">Ідеально підходить для електровелосипедів, дронів, інструментів і DIY-проектів</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>]]></g:description>
+<g:link>https://eurolamp.ua/shop/product/akumuliator-dlia-droniv-fpv-6s2p-p42a/</g:link>
+<g:image_link>https://eurolamp.ua/shop/wp-content/uploads/ee-aps-6-2-p42a_2.jpg</g:image_link>
+<g:availability>in_stock</g:availability>
+<g:identifier_exists>no</g:identifier_exists>
+<g:condition>new</g:condition>
+<g:price>3571.98 UAH</g:price>
+</item>

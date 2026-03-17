@@ -1,0 +1,2255 @@
+# Translation of Plugins - Limit Login Attempts Reloaded &#8211; Login Security, Brute Force Protection, Firewall - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Limit Login Attempts Reloaded &#8211; Login Security, Brute Force Protection, Firewall - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-11-26 16:30:34+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Limit Login Attempts Reloaded &#8211; Login Security, Brute Force Protection, Firewall - Stable (latest release)\n"
+
+#: views/tab-help.php:31
+msgid "2.5 Million Active<br>Installs"
+msgstr "2,5 миллиона активных<br>установок"
+
+#: views/tab-help.php:37
+msgid "4.9 Rating On WordPress.org<br>(1,400 reviews)"
+msgstr "4.9 Рейтинг на WordPress.org<br>(1,400 отзывов)"
+
+#: views/options-page.php:131
+msgid "Customer ID:"
+msgstr "ID клиента:"
+
+#: views/onboarding-popup.php:105
+msgid "97% of brute force attacks blocked before they begin"
+msgstr "97% атак грубой силы блокируются до их начала"
+
+#: core/LimitLoginAttempts.php:2505
+msgid "<strong>Error</strong>: Registration is currently disabled."
+msgstr "<strong>Ошибка</strong>: Регистрация в настоящее время отключена."
+
+#: views/options-page.php:121
+msgid "Account Login"
+msgstr "Вход в учетную запись"
+
+#: core/Ajax.php:558
+msgid "Country: "
+msgstr "Страна: "
+
+#: core/Ajax.php:576
+msgid "City: "
+msgstr "Город: "
+
+#: resources/continent.php:3
+msgid "Asia"
+msgstr "Азия"
+
+#: resources/continent.php:5
+msgid "Africa"
+msgstr "Африка"
+
+#: views/app-widgets/login-attempts.php:52
+msgid "Role"
+msgstr "Роль"
+
+#: views/tab-dashboard.php:193
+msgid "Enable Email Notifications"
+msgstr "Включить уведомления по email"
+
+#: resources/continent.php:6
+msgid "Europe"
+msgstr "Европа"
+
+#: core/Ajax.php:564
+msgid "State/Province: "
+msgstr "Штат/Провинция: "
+
+#: resources/continent.php:7
+msgid "North America"
+msgstr "Северная Америка"
+
+#: resources/continent.php:8
+msgid "Oceania"
+msgstr "Океания"
+
+#: resources/continent.php:9
+msgid "South America"
+msgstr "Южная Америка"
+
+#: views/app-widgets/login-attempts.php:28
+msgid " View more"
+msgstr " Смотреть больше"
+
+#: views/tab-dashboard.php:263
+msgid "<a class=\"link__style_unlink llar_turquoise\" href=\"%s\" target=\"_blank\">Upgrade to our premium</a> version for advanced protection."
+msgstr "<a class=\"link__style_unlink llar_turquoise\" href=\"%s\" target=\"_blank\">Перейдите на нашу премиум-версию</a> для расширенной защиты."
+
+#: resources/countries.php:253
+msgid "South Sudan"
+msgstr "Южный Судан"
+
+#: resources/countries.php:177
+msgid "Angola"
+msgstr "Ангола"
+
+#: resources/countries.php:232
+msgid "Pitcairn Islands"
+msgstr "Острова Питкэрн"
+
+#: resources/countries.php:178
+msgid "Namibia"
+msgstr "Намибия"
+
+#: resources/countries.php:233
+msgid "Kiribati"
+msgstr "Кирибати"
+
+#: resources/countries.php:179
+msgid "Saint Helena"
+msgstr "Остров Святой Елены"
+
+#: resources/countries.php:234
+msgid "Tokelau"
+msgstr "Токелау"
+
+#: resources/countries.php:180
+msgid "Bouvet Island"
+msgstr "Буве, о-в"
+
+#: resources/countries.php:235
+msgid "Tonga"
+msgstr "Tonga"
+
+#: resources/countries.php:181
+msgid "Barbados"
+msgstr "Барбадос"
+
+#: resources/countries.php:236
+msgid "Wallis and Futuna"
+msgstr "Уоллис и Футуна"
+
+#: resources/countries.php:137
+msgid "Gambia"
+msgstr "Гамбия"
+
+#: resources/countries.php:182
+msgid "Cabo Verde"
+msgstr "Кабо-Верде"
+
+#: resources/countries.php:138
+msgid "Guinea"
+msgstr "Гвинея"
+
+#: resources/countries.php:237
+msgid "Samoa"
+msgstr "Самоа"
+
+#: resources/countries.php:183
+msgid "Guyana"
+msgstr "Гайана"
+
+#: resources/countries.php:139
+msgid "Chad"
+msgstr "Чад"
+
+#: resources/countries.php:238
+msgid "Niue"
+msgstr "Ниуэ"
+
+#: resources/countries.php:184
+msgid "French Guiana"
+msgstr "Французская Гвиана"
+
+#: resources/countries.php:140
+msgid "Niger"
+msgstr "Нигер"
+
+#: resources/countries.php:239
+msgid "Northern Mariana Islands"
+msgstr "Марианские острова"
+
+#: resources/countries.php:141
+msgid "Mali"
+msgstr "Мали"
+
+#: resources/countries.php:185
+msgid "Suriname"
+msgstr "Суринам"
+
+#: resources/countries.php:240
+msgid "Guam"
+msgstr "Гуам"
+
+#: resources/countries.php:186
+msgid "Saint Pierre and Miquelon"
+msgstr "Сен-Пьер и Микелон"
+
+#: resources/countries.php:142
+msgid "Western Sahara"
+msgstr "Западная Сахара"
+
+#: resources/countries.php:241
+msgid "Puerto Rico"
+msgstr "Пуэрто-Рико"
+
+#: resources/countries.php:187
+msgid "Greenland"
+msgstr "Гренландия"
+
+#: resources/countries.php:143
+msgid "Tunisia"
+msgstr "Тунис"
+
+#: resources/countries.php:188
+msgid "Paraguay"
+msgstr "Парагвай"
+
+#: resources/countries.php:242
+msgid "U.S. Virgin Islands"
+msgstr "Виргинские острова США"
+
+#: resources/countries.php:144
+msgid "Spain"
+msgstr "Испания"
+
+#: resources/countries.php:189
+msgid "Uruguay"
+msgstr "Уругвай"
+
+#: resources/countries.php:243
+msgid "U.S. Minor Outlying Islands"
+msgstr "Малые отдаленные острова США"
+
+#: resources/countries.php:145
+msgid "Morocco"
+msgstr "Марокко"
+
+#: resources/countries.php:190
+msgid "Brazil"
+msgstr "Бразилия"
+
+#: resources/countries.php:244
+msgid "American Samoa"
+msgstr "Американское Самоа"
+
+#: resources/countries.php:146
+msgid "Malta"
+msgstr "Мальта"
+
+#: resources/countries.php:191
+msgid "Falkland Islands"
+msgstr "Фолклендские острова"
+
+#: resources/countries.php:147
+msgid "Algeria"
+msgstr "Алжир"
+
+#: resources/countries.php:245
+msgid "Canada"
+msgstr "Канада"
+
+#: resources/countries.php:192
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "Южная Георгия и Южные Сандвичевы острова"
+
+#: resources/countries.php:148
+msgid "Faroe Islands"
+msgstr "Фарерские острова"
+
+#: resources/countries.php:246
+msgid "United States"
+msgstr "Соединенные Штаты"
+
+#: resources/countries.php:149
+msgid "Denmark"
+msgstr "Дания"
+
+#: resources/countries.php:193
+msgid "Jamaica"
+msgstr "Ямайка"
+
+#: resources/countries.php:247
+msgid "Palestine"
+msgstr "Палестина"
+
+#: resources/countries.php:150
+msgid "Iceland"
+msgstr "Исландия"
+
+#: resources/countries.php:194
+msgid "Dominican Republic"
+msgstr "Доминиканская Республика"
+
+#: resources/countries.php:248
+msgid "Serbia"
+msgstr "Сербия"
+
+#: resources/countries.php:151
+msgid "United Kingdom"
+msgstr "Соединенное Королевство"
+
+#: resources/countries.php:195
+msgid "Cuba"
+msgstr "Куба"
+
+#: resources/continent.php:4 resources/countries.php:249
+msgid "Antarctica"
+msgstr "Антарктика"
+
+#: resources/countries.php:152
+msgid "Switzerland"
+msgstr "Швейцария"
+
+#: resources/countries.php:196
+msgid "Martinique"
+msgstr "Мартиника"
+
+#: resources/countries.php:153
+msgid "Sweden"
+msgstr "Швеция"
+
+#: resources/countries.php:197
+msgid "Bahamas"
+msgstr "Багамы"
+
+#: resources/countries.php:250
+msgid "Sint Maarten"
+msgstr "Синт-Мартен"
+
+#: resources/countries.php:154
+msgid "Netherlands"
+msgstr "Нидерланды"
+
+#: resources/countries.php:198
+msgid "Bermuda"
+msgstr "Бермуды"
+
+#: resources/countries.php:251
+msgid "Curaçao"
+msgstr "Кюрасао"
+
+#: resources/countries.php:155
+msgid "Austria"
+msgstr "Австрия"
+
+#: resources/countries.php:199
+msgid "Anguilla"
+msgstr "Ангилья"
+
+#: resources/continent.php:11 resources/countries.php:3
+msgid "Unknown"
+msgstr "Неизвестно"
+
+#: resources/countries.php:156
+msgid "Belgium"
+msgstr "Бельгия"
+
+#: resources/countries.php:200
+msgid "Trinidad and Tobago"
+msgstr "Тринидад и Тобаго"
+
+#: resources/countries.php:4
+msgid "Rwanda"
+msgstr "Руанда"
+
+#: resources/countries.php:157
+msgid "Germany"
+msgstr "Германия"
+
+#: resources/countries.php:201
+msgid "St Kitts and Nevis"
+msgstr "Сент-Китс и Невис"
+
+#: resources/countries.php:5
+msgid "Somalia"
+msgstr "Сомали"
+
+#: resources/countries.php:158
+msgid "Luxembourg"
+msgstr "Люксембург"
+
+#: resources/countries.php:202
+msgid "Dominica"
+msgstr "Доминика"
+
+#: resources/countries.php:6
+msgid "Yemen"
+msgstr "Йемен"
+
+#: resources/countries.php:159
+msgid "Ireland"
+msgstr "Ирландия"
+
+#: resources/countries.php:203
+msgid "Antigua and Barbuda"
+msgstr "Антигуа и Барбуда"
+
+#: resources/countries.php:160
+msgid "Monaco"
+msgstr "Монако"
+
+#: resources/countries.php:7
+msgid "Iraq"
+msgstr "Ирак"
+
+#: resources/countries.php:204
+msgid "Saint Lucia"
+msgstr "Санкт-Люсия"
+
+#: resources/countries.php:161
+msgid "France"
+msgstr "Франция"
+
+#: resources/countries.php:205
+msgid "Turks and Caicos Islands"
+msgstr "Теркс и Кайкос"
+
+#: resources/countries.php:8
+msgid "Saudi Arabia"
+msgstr "Саудовская Аравия"
+
+#: resources/countries.php:162
+msgid "Andorra"
+msgstr "Андорра"
+
+#: resources/countries.php:206
+msgid "Aruba"
+msgstr "Аруба"
+
+#: resources/countries.php:9
+msgid "Iran"
+msgstr "Иран"
+
+#: resources/countries.php:163
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+#: resources/countries.php:207
+msgid "British Virgin Islands"
+msgstr "Британские Виргинские острова"
+
+#: resources/countries.php:10
+msgid "Cyprus"
+msgstr "Кипр"
+
+#: resources/countries.php:164
+msgid "Jersey"
+msgstr "Джерси"
+
+#: resources/countries.php:208
+msgid "Saint Vincent and the Grenadines"
+msgstr "Сент-Винсент и Гренадины"
+
+#: resources/countries.php:11
+msgid "Tanzania"
+msgstr "Танзания"
+
+#: resources/countries.php:165
+msgid "Isle of Man"
+msgstr "Мэн, о-в"
+
+#: resources/countries.php:166
+msgid "Guernsey"
+msgstr "Гернси"
+
+#: resources/countries.php:209
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: resources/countries.php:12
+msgid "Syria"
+msgstr "Сирия"
+
+#: resources/countries.php:210
+msgid "Saint Martin"
+msgstr "Сен-Мартен"
+
+#: resources/countries.php:167
+msgid "Slovakia"
+msgstr "Словакия"
+
+#: resources/countries.php:13
+msgid "Armenia"
+msgstr "Армения"
+
+#: resources/countries.php:211
+msgid "Saint Barthélemy"
+msgstr "Сен-Бартельми"
+
+#: resources/countries.php:169
+msgid "Norway"
+msgstr "Норвегия"
+
+#: resources/countries.php:14
+msgid "Kenya"
+msgstr "Кения"
+
+#: resources/countries.php:212
+msgid "Guadeloupe"
+msgstr "Гваделупа"
+
+#: resources/countries.php:170
+msgid "Vatican City"
+msgstr "Ватикан, город"
+
+#: resources/countries.php:16
+msgid "Djibouti"
+msgstr "Джибути"
+
+#: resources/countries.php:171
+msgid "San Marino"
+msgstr "Сан-Марино"
+
+#: resources/countries.php:213
+msgid "Grenada"
+msgstr "Гренада"
+
+#: resources/countries.php:17
+msgid "Uganda"
+msgstr "Уганда"
+
+#: resources/countries.php:172
+msgid "Italy"
+msgstr "Италия"
+
+#: resources/countries.php:214
+msgid "Cayman Islands"
+msgstr "Каймановы острова"
+
+#: resources/countries.php:18
+msgid "Central African Republic"
+msgstr "Центральноафриканская Республика"
+
+#: resources/countries.php:173
+msgid "Slovenia"
+msgstr "Словения"
+
+#: resources/countries.php:215
+msgid "Belize"
+msgstr "Белиз"
+
+#: resources/countries.php:174
+msgid "Montenegro"
+msgstr "Черногория"
+
+#: resources/countries.php:19
+msgid "Seychelles"
+msgstr "Сейшелы"
+
+#: resources/countries.php:216
+msgid "El Salvador"
+msgstr "Сальвадор"
+
+#: resources/countries.php:175
+msgid "Croatia"
+msgstr "Хорватия"
+
+#: resources/countries.php:217
+msgid "Guatemala"
+msgstr "Гватемала"
+
+#: resources/countries.php:20
+msgid "Jordan"
+msgstr "Иордания"
+
+#: resources/countries.php:176
+msgid "Bosnia and Herzegovina"
+msgstr "Босния и Герцеговина"
+
+#: resources/countries.php:218
+msgid "Honduras"
+msgstr "Гондурас"
+
+#: resources/countries.php:21
+msgid "Lebanon"
+msgstr "Ливан"
+
+#: resources/countries.php:219
+msgid "Nicaragua"
+msgstr "Никарагуа"
+
+#: resources/countries.php:22
+msgid "Kuwait"
+msgstr "Кувейт"
+
+#: resources/countries.php:220
+msgid "Costa Rica"
+msgstr "Коста-Рика"
+
+#: resources/countries.php:23
+msgid "Oman"
+msgstr "Оман"
+
+#: resources/countries.php:221
+msgid "Venezuela"
+msgstr "Венесуэла"
+
+#: resources/countries.php:24
+msgid "Qatar"
+msgstr "Катар"
+
+#: resources/countries.php:222
+msgid "Ecuador"
+msgstr "Эквадор"
+
+#: resources/countries.php:25
+msgid "Bahrain"
+msgstr "Бахрейн"
+
+#: resources/countries.php:223
+msgid "Colombia"
+msgstr "Колумбия"
+
+#: resources/countries.php:26
+msgid "United Arab Emirates"
+msgstr "Объединённые Арабские Эмираты"
+
+#: resources/countries.php:224
+msgid "Panama"
+msgstr "Панама"
+
+#: resources/countries.php:27
+msgid "Israel"
+msgstr "Израиль"
+
+#: resources/countries.php:225
+msgid "Haiti"
+msgstr "Гаити"
+
+#: resources/countries.php:28
+msgid "Turkey"
+msgstr "Турция"
+
+#: resources/countries.php:226
+msgid "Argentina"
+msgstr "Аргентина"
+
+#: resources/countries.php:29
+msgid "Ethiopia"
+msgstr "Эфиопия"
+
+#: resources/countries.php:227
+msgid "Chile"
+msgstr "Чили"
+
+#: resources/countries.php:30
+msgid "Eritrea"
+msgstr "Эритрея"
+
+#: resources/countries.php:228
+msgid "Bolivia"
+msgstr "Боливия"
+
+#: resources/countries.php:31
+msgid "Egypt"
+msgstr "Египет"
+
+#: resources/countries.php:229
+msgid "Peru"
+msgstr "Перу"
+
+#: resources/countries.php:32
+msgid "Sudan"
+msgstr "Судан"
+
+#: resources/countries.php:230
+msgid "Mexico"
+msgstr "Мексика"
+
+#: resources/countries.php:231
+msgid "French Polynesia"
+msgstr "Французская Полинезия"
+
+#: resources/countries.php:33
+msgid "Greece"
+msgstr "Греция"
+
+#: resources/countries.php:34
+msgid "Burundi"
+msgstr "Бурунди"
+
+#: resources/countries.php:35
+msgid "Estonia"
+msgstr "Эстония"
+
+#: resources/countries.php:36
+msgid "Latvia"
+msgstr "Латвия"
+
+#: resources/countries.php:37
+msgid "Azerbaijan"
+msgstr "Азербайджан"
+
+#: resources/countries.php:38
+msgid "Lithuania"
+msgstr "Литва"
+
+#: resources/countries.php:39
+msgid "Svalbard and Jan Mayen"
+msgstr "Шпицберген и Ян-Майен"
+
+#: resources/countries.php:40
+msgid "Georgia"
+msgstr "Грузия"
+
+#: resources/countries.php:41
+msgid "Moldova"
+msgstr "Молдова"
+
+#: resources/countries.php:42
+msgid "Belarus"
+msgstr "Беларусь"
+
+#: resources/countries.php:43
+msgid "Finland"
+msgstr "Финляндия"
+
+#: resources/countries.php:45
+msgid "Ukraine"
+msgstr "Украина"
+
+#: resources/countries.php:46
+msgid "North Macedonia"
+msgstr "Северная Македония"
+
+#: resources/countries.php:47
+msgid "Hungary"
+msgstr "Венгрия"
+
+#: resources/countries.php:48
+msgid "Bulgaria"
+msgstr "Болгария"
+
+#: resources/countries.php:49
+msgid "Albania"
+msgstr "Албания"
+
+#: resources/countries.php:50
+msgid "Poland"
+msgstr "Польша"
+
+#: resources/countries.php:51
+msgid "Romania"
+msgstr "Румыния"
+
+#: resources/countries.php:52
+msgid "Kosovo"
+msgstr "Косово"
+
+#: resources/countries.php:53
+msgid "Zimbabwe"
+msgstr "Зимбабве"
+
+#: resources/countries.php:54
+msgid "Zambia"
+msgstr "Замбия"
+
+#: resources/countries.php:55
+msgid "Comoros"
+msgstr "Коморы"
+
+#: resources/countries.php:56
+msgid "Malawi"
+msgstr "Малави"
+
+#: resources/countries.php:57
+msgid "Lesotho"
+msgstr "Лесото"
+
+#: resources/countries.php:58
+msgid "Botswana"
+msgstr "Ботсвана"
+
+#: resources/countries.php:59
+msgid "Mauritius"
+msgstr "Маврикий"
+
+#: resources/countries.php:60
+msgid "Eswatini"
+msgstr "Eswatini"
+
+#: resources/countries.php:61
+msgid "Réunion"
+msgstr "Реюньон"
+
+#: resources/countries.php:62
+msgid "South Africa"
+msgstr "ЮАР"
+
+#: resources/countries.php:63
+msgid "Mayotte"
+msgstr "Майотта"
+
+#: resources/countries.php:64
+msgid "Mozambique"
+msgstr "Мозамбик"
+
+#: resources/countries.php:65
+msgid "Madagascar"
+msgstr "Мадагаскар"
+
+#: resources/countries.php:66
+msgid "Afghanistan"
+msgstr "Афганистан"
+
+#: resources/countries.php:67
+msgid "Pakistan"
+msgstr "Пакистан"
+
+#: resources/countries.php:68
+msgid "Bangladesh"
+msgstr "Бангладеш"
+
+#: resources/countries.php:69
+msgid "Turkmenistan"
+msgstr "Туркменистан"
+
+#: resources/countries.php:70
+msgid "Tajikistan"
+msgstr "Таджикистан"
+
+#: resources/countries.php:71
+msgid "Sri Lanka"
+msgstr "Шри-Ланка"
+
+#: resources/countries.php:72
+msgid "Bhutan"
+msgstr "Бутан"
+
+#: resources/countries.php:73
+msgid "India"
+msgstr "Индия"
+
+#: resources/countries.php:74
+msgid "Maldives"
+msgstr "Мальдивские Острова"
+
+#: resources/countries.php:75
+msgid "British Indian Ocean Territory"
+msgstr "Британская территория в Индийском океане"
+
+#: resources/countries.php:76
+msgid "Nepal"
+msgstr "Непал"
+
+#: resources/countries.php:77
+msgid "Myanmar"
+msgstr "Мьянма"
+
+#: resources/countries.php:78
+msgid "Uzbekistan"
+msgstr "Узбекистан"
+
+#: resources/countries.php:79
+msgid "Kazakhstan"
+msgstr "Казахстан"
+
+#: resources/countries.php:80
+msgid "Kyrgyzstan"
+msgstr "Кыргызстан"
+
+#: resources/countries.php:81
+msgid "French Southern Territories"
+msgstr "Французские южные территории"
+
+#: resources/countries.php:82
+msgid "Heard Island and McDonald Islands"
+msgstr "Остров Херд и острова Макдональд"
+
+#: resources/countries.php:83
+msgid "Cocos [Keeling] Islands"
+msgstr "Кокосовые острова [Килинг]"
+
+#: resources/countries.php:84
+msgid "Palau"
+msgstr "Palau"
+
+#: resources/countries.php:85
+msgid "Vietnam"
+msgstr "Вьетнам"
+
+#: resources/countries.php:86
+msgid "Thailand"
+msgstr "Thailand"
+
+#: resources/countries.php:87
+msgid "Indonesia"
+msgstr "Индонезия"
+
+#: resources/countries.php:88
+msgid "Laos"
+msgstr "Лаос"
+
+#: resources/countries.php:89
+msgid "Taiwan"
+msgstr "Тайвань"
+
+#: resources/countries.php:90
+msgid "Philippines"
+msgstr "Филиппины"
+
+#: resources/countries.php:91
+msgid "Malaysia"
+msgstr "Малайзия"
+
+#: resources/countries.php:92
+msgid "China"
+msgstr "Китай"
+
+#: resources/countries.php:93
+msgid "Hong Kong"
+msgstr "Гонконг"
+
+#: resources/countries.php:94
+msgid "Brunei"
+msgstr "Бруней"
+
+#: resources/countries.php:95
+msgid "Macao"
+msgstr "Макао"
+
+#: resources/countries.php:96
+msgid "Cambodia"
+msgstr "Камбоджа"
+
+#: resources/countries.php:97
+msgid "South Korea"
+msgstr "Южная Корея"
+
+#: resources/countries.php:98
+msgid "Japan"
+msgstr "Япония"
+
+#: resources/countries.php:99
+msgid "North Korea"
+msgstr "КНДР"
+
+#: resources/countries.php:100
+msgid "Singapore"
+msgstr "Сингапур"
+
+#: resources/countries.php:101
+msgid "Cook Islands"
+msgstr "Острова Кука"
+
+#: resources/countries.php:103
+msgid "Russia"
+msgstr "Россия"
+
+#: resources/countries.php:104
+msgid "Mongolia"
+msgstr "Монголия"
+
+#: resources/countries.php:105
+msgid "Australia"
+msgstr "Австралия"
+
+#: resources/countries.php:106
+msgid "Christmas Island"
+msgstr "Остров Рождества"
+
+#: resources/countries.php:107
+msgid "Marshall Islands"
+msgstr "Маршалловы острова"
+
+#: resources/countries.php:108
+msgid "Federated States of Micronesia"
+msgstr "Федеративные Штаты Микронезии"
+
+#: resources/countries.php:109
+msgid "Papua New Guinea"
+msgstr "Папуа-Новая Гвинея"
+
+#: resources/countries.php:110
+msgid "Solomon Islands"
+msgstr "Соломоновы острова"
+
+#: resources/countries.php:111
+msgid "Tuvalu"
+msgstr "Тувалу"
+
+#: resources/countries.php:112
+msgid "Nauru"
+msgstr "Науру"
+
+#: resources/countries.php:113
+msgid "Vanuatu"
+msgstr "Вануату"
+
+#: resources/countries.php:114
+msgid "New Caledonia"
+msgstr "Новая Каледония"
+
+#: resources/countries.php:115
+msgid "Norfolk Island"
+msgstr "Остров Норфолк"
+
+#: resources/countries.php:116
+msgid "New Zealand"
+msgstr "Новая Зеландия"
+
+#: resources/countries.php:117
+msgid "Fiji"
+msgstr "Фиджи"
+
+#: resources/countries.php:118
+msgid "Libya"
+msgstr "Ливия"
+
+#: resources/countries.php:119
+msgid "Cameroon"
+msgstr "Камерун"
+
+#: resources/countries.php:120
+msgid "Senegal"
+msgstr "Сенегал"
+
+#: resources/countries.php:122
+msgid "Portugal"
+msgstr "Португалия"
+
+#: resources/countries.php:123
+msgid "Liberia"
+msgstr "Либерия"
+
+#: resources/countries.php:124
+msgid "Ivory Coast"
+msgstr "Кот-д'Ивуар"
+
+#: resources/countries.php:125
+msgid "Ghana"
+msgstr "Гана"
+
+#: resources/countries.php:126
+msgid "Equatorial Guinea"
+msgstr "Экваториальная Гвинея"
+
+#: resources/countries.php:127
+msgid "Nigeria"
+msgstr "Нигерия"
+
+#: resources/countries.php:128
+msgid "Burkina Faso"
+msgstr "Буркина-Фасо"
+
+#: resources/countries.php:129
+msgid "Togo"
+msgstr "Того"
+
+#: resources/countries.php:130
+msgid "Guinea-Bissau"
+msgstr "Гвинея-Бисау"
+
+#: resources/countries.php:131
+msgid "Mauritania"
+msgstr "Мавритания"
+
+#: resources/countries.php:132
+msgid "Benin"
+msgstr "Бенин"
+
+#: resources/countries.php:133
+msgid "Gabon"
+msgstr "Габон"
+
+#: resources/countries.php:134
+msgid "Sierra Leone"
+msgstr "Сьерра-Леоне"
+
+#: resources/countries.php:135
+msgid "São Tomé and Príncipe"
+msgstr "Сан-Томе и Принсипи"
+
+#: resources/countries.php:136
+msgid "Gibraltar"
+msgstr "Гибралтар"
+
+#: resources/countries.php:15
+msgid "DR Congo"
+msgstr "ДР Конго"
+
+#: resources/countries.php:44
+msgid "Åland"
+msgstr "Аланд"
+
+#: resources/countries.php:102
+msgid "East Timor"
+msgstr "Восточный Тимор"
+
+#: resources/countries.php:168
+msgid "Czechia"
+msgstr "Чехия"
+
+#: views/tab-dashboard.php:71 views/tab-settings.php:100
+#: views/tab-settings.php:311 views/tab-settings.php:418
+msgid "Get Started"
+msgstr "Начать"
+
+#: views/tab-debug.php:58
+msgid "Reset"
+msgstr "Сбросить"
+
+#: views/tab-help.php:233
+msgid "Contact Support"
+msgstr "Связаться со службой поддержки"
+
+#: views/tab-debug.php:45
+msgid "Start Over"
+msgstr "Начать сначала"
+
+#: views/tab-dashboard.php:246
+msgid "<a class=\"link__style_unlink llar_turquoise\" href=\"#llar_auto_update_choice\">Enable automatic updates</a> to ensure that the plugin stays current with the latest software patches and features."
+msgstr "<a class=\"link__style_unlink llar_turquoise\" href=\"#llar_auto_update_choice\">Включите автоматические обновления</a>, чтобы убедиться, что плагин поддерживает последние исправления и возможности программного обеспечения."
+
+#: views/tab-dashboard.php:232
+msgid "<a class=\"link__style_unlink llar_turquoise\" href=\"%s\" target=\"_blank\">Allow or Deny countries</a> to ensure only legitimate users login."
+msgstr "<a class=\"link__style_unlink llar_turquoise\" href=\"%s\" target=\"_blank\">Разрешите или запретите страны</a>, чтобы убедиться, что только легитимные пользователи входят в систему."
+
+#: views/tab-dashboard.php:210
+msgid "<a class=\"link__style_unlink llar_turquoise\" href=\"%s\" target=\"_blank\">Read our guide</a> on implementing and enforcing strong password policies in your organization."
+msgstr "<a class=\"link__style_unlink llar_turquoise\" href=\"%s\" target=\"_blank\">Прочитайте наше руководство</a> по внедрению и обеспечению соблюдения политики надежных паролей в Вашей организации."
+
+#: views/tab-dashboard.php:197
+msgid "<a class=\"link__style_unlink llar_turquoise\" href=\"%s\">Enable email notifications</a> to receive timely alerts and updates via email."
+msgstr "<a class=\"link__style_unlink llar_turquoise\" href=\"%s\">Включите уведомления по электронной почте</a>, чтобы получать своевременные предупреждения и обновления по электронной почте."
+
+#: views/tab-logs-local.php:206
+msgid "<a href=\"%s\" class=\"unlink link__style_unlink\" target=\"_blank\">Upgrade today</a> to optimize or unload your DB by moving logs to the cloud."
+msgstr "<a href=\"%s\" class=\"unlink link__style_unlink\" target=\"_blank\">Обновитесь сегодня</a>, чтобы оптимизировать или разгрузить свою БД, переместив журналы в облако."
+
+#: views/tab-logs-local.php:167
+msgid "Access Active Databases Of Malicious IPs To Bolster Defenses"
+msgstr "Доступ к активным базам данных вредоносных IP-адресов для усиления защиты"
+
+#: views/micro-cloud-modal.php:53 views/onboarding-popup.php:147
+#: views/tab-settings.php:570 views/tab-settings.php:594
+msgid "Your email"
+msgstr "Ваш email"
+
+#: views/onboarding-popup.php:37 views/onboarding-popup.php:62
+msgid "Welcome"
+msgstr "Добро пожаловать"
+
+#: views/onboarding-popup.php:75
+msgid "Activate"
+msgstr "Активировать"
+
+#: views/onboarding-popup.php:166
+msgid "Skip"
+msgstr "Пропустить"
+
+#: core/LimitLoginAttempts.php:452 core/LimitLoginAttempts.php:874
+msgid "Free Upgrade"
+msgstr "Бесплатное обновление"
+
+#: views/micro-cloud-modal.php:94 views/onboarding-popup.php:240
+msgid "Go To Dashboard"
+msgstr "Перейти к панели управления"
+
+#: views/onboarding-popup.php:55
+msgid "Completion"
+msgstr "Завершение"
+
+#: views/onboarding-popup.php:142
+msgid "Notification Settings"
+msgstr "Настройки уведомлений"
+
+#: views/emails/failed-login.php:299
+msgid "<b>Experiencing frequent attacks or degraded performance?</b> You can now receive premium protection for FREE with "
+msgstr "<b>Ощущаете частые атаки или снижение производительности? </b> Теперь Вы можете получить защиту премиум-класса БЕСПЛАТНО с "
+
+#: views/chart-failed-attempts.php:152
+msgid "A request is utilized when the cloud validates whether an IP address is allowed to attempt a login, which also includes denied logins."
+msgstr "Запрос используется, когда облако проверяет, разрешено ли IP-адресу попытаться войти в систему, что также включает в себя отказ во входе."
+
+#: views/tab-settings.php:636
+msgid "The LLAR plugin displays its item on the left navigation menu, which provides a shortcut to the plugin."
+msgstr "Плагин LLAR отображает свой пункт в левом навигационном меню, который служит ярлыком для перехода к плагину."
+
+#: views/tab-settings.php:631
+msgid "Display left menu item"
+msgstr "Отображение левого пункта меню"
+
+#: views/tab-settings.php:626 views/tab-settings.php:643
+#: views/tab-settings.php:674
+msgid "(Save and reload this page to see the changes)"
+msgstr "(Сохраните и перезагрузите эту страницу, чтобы увидеть изменения)"
+
+#: views/tab-settings.php:619
+msgid "The LLAR plugin displays its item on the top navigation menu, which provides a shortcut to the plugin."
+msgstr "Плагин LLAR отображает свой пункт в верхнем навигационном меню, которое предоставляет ярлык для перехода к плагину."
+
+#: views/tab-settings.php:614
+msgid "Display top menu item"
+msgstr "Отображение пункта верхнего меню"
+
+#: views/tab-logs-local.php:245
+msgid "Unlocked"
+msgstr "Разблокировано"
+
+#: views/tab-logs-local.php:242
+msgid "Unlock"
+msgstr "Разблокировать"
+
+#: views/tab-logs-local.php:233
+msgid " lockouts"
+msgstr " блокировки"
+
+#: views/tab-logs-local.php:226
+msgid "F d, Y H:i"
+msgstr "F d, Y H:i"
+
+#: core/LimitLoginAttempts.php:957
+msgid "LLAR"
+msgstr "LLAR"
+
+#: views/tab-settings.php:803
+msgid "Test email has been sent!"
+msgstr "Тестовое письмо отправлено!"
+
+#: views/tab-logs-local.php:111
+msgid "Denylist"
+msgstr "Запрещающий список"
+
+#: views/tab-settings.php:180
+msgid "Lockout time in minutes."
+msgstr "Время блокировки в минутах."
+
+#: views/tab-settings.php:329
+msgid "This is the code you receive via email once you subscribe to the LLAR premium cloud app. (example xxxxxxxxxxxxx=yek?putes/1v/moc.stpmettanigoltimil.ipa)"
+msgstr "Это код, который вы получаете по электронной почте после подписки на облачное приложение LLAR premium. (пример xxxxxxxxxxxx=yek?putes/1v/moc.stpmettanigoltimil.ipa)"
+
+#: views/tab-settings.php:215
+msgid "After a specific IP address fails to log in <b>%1$s</b> times, a lockout lasting <b>%2$s</b> minutes is activated. If additional failed attempts occur within <b>%3$s</b> hours and lead to another lockout, once their combined total hits <b>%4$s</b>, the <b>%2$s</b> minutes duration is extended to <b>%5$s</b> hours. The lockout will be lifted once <b>%3$s</b> hours have passed since the last lockout incident."
+msgstr "После того как определенный IP-адрес не смог войти в систему <b>%1$s</b> раз, включается блокировка продолжительностью <b>%2$s</b> минут. Если в течение нескольких часов произойдут дополнительные неудачные попытки <b>%3$s</b> в течение нескольких часов и приводят к еще одной блокировке, то, как только их суммарное количество достигнет <b>%4$s</b>то <b>%2$s</b> минут продолжительность блокировки увеличивается до <b>%5$s</b> часов. Блокировка будет снята по истечении <b>%3$s</b> часов, прошедших с момента последнего случая блокировки."
+
+#: views/tab-settings.php:209
+msgid "Time in hours before blocks are removed."
+msgstr "Время в часах до удаления блоков."
+
+#: views/tab-settings.php:196
+msgid "After the specified number of lockouts the lockout time will increase by specified hours."
+msgstr "После указанного количества блокировок время блокировки увеличивается на указанное количество часов."
+
+#: views/tab-settings.php:167
+msgid "Number of failed attempts allowed before locking out."
+msgstr "Количество неудачных попыток, допустимых для блокировки."
+
+#: views/tab-settings.php:153
+msgid "Set lockout limits based on failed attempts."
+msgstr "Установите ограничения блокировки на основе неудачных попыток."
+
+#: views/tab-settings.php:113
+msgid "Switches from free version (local) to premium (cloud)."
+msgstr "Переход с бесплатной версии (локальной) на премиум (облачную)."
+
+#: views/tab-settings.php:667
+msgid "The warning badge is a red bubble icon displayed next to the LLAR logo on the main vertical navigation menu. It displays a warning if there were more than 100 attempts for a day."
+msgstr "Значок предупреждения представляет собой красный пузырь, отображаемый рядом с логотипом LLAR в главном вертикальном навигационном меню. Он отображает предупреждение, если за день было совершено более 100 попыток."
+
+#: views/tab-settings.php:652
+msgid "The LLAR dashboard widget provides a quick glance of your daily failed login activity on the main WordPress dashboard. You may hide this widget by checking this box."
+msgstr "Виджет приборной панели LLAR позволяет быстро просмотреть ежедневную активность неудачных входов в систему на главной приборной панели WordPress. Вы можете скрыть этот виджет, установив флажок."
+
+#: views/tab-settings.php:599
+msgid "Test Email Notifications"
+msgstr "Тест Email уведомления"
+
+#: views/tab-settings.php:584
+msgid "Email address to which lockout notifications will be sent."
+msgstr "Адрес электронной почты, на который будут отправляться уведомления о блокировке."
+
+#: views/tab-settings.php:538
+msgid "This message will appear at the bottom of the login page."
+msgstr "Это сообщение появится в нижней части страницы входа в систему."
+
+#: views/tab-settings.php:231
+msgid "Server variables containing IP addresses."
+msgstr "Переменные сервера, содержащие IP-адреса."
+
+#: core/LimitLoginAttempts.php:851 resources/compare-plans-data.php:72
+#: views/options-page.php:158
+msgid "Login Firewall"
+msgstr "Брандмауэр входа в систему"
+
+#: core/Ajax.php:1134
+msgid "Wrong email format."
+msgstr "Неправильный формат письма."
+
+#: views/chart-circle-failed-attempts-today.php:120
+msgid "Cloud protection enabled"
+msgstr "Обеспечена защита в облаке"
+
+#: views/emails/failed-login.php:244
+msgid "Hello,"
+msgstr "Привет,"
+
+#: views/emails/failed-login.php:283
+msgid "Go to Dashboard"
+msgstr "Перейти в Консоль"
+
+#: views/emails/failed-login.php:243
+msgid "Hello {name},"
+msgstr "Привет {name},"
+
+#: views/emails/failed-login.php:314
+msgid "What is a failed login attempt?"
+msgstr "Что такое неудачная попытка входа?"
+
+#: views/emails/failed-login.php:317
+msgid "Why am I getting these emails?"
+msgstr "Почему я получаю эти письма?"
+
+#: views/emails/failed-login.php:324
+msgid " for more information on our premium services, which can automatically block and detect malicious IP addresses."
+msgstr " для получения дополнительной информации о наших услугах премиум-класса, которые могут автоматически блокировать и обнаруживать вредоносные IP-адреса."
+
+#: views/emails/failed-login.php:312
+msgid "Frequently Asked Questions"
+msgstr "Часто задаваемые вопросы"
+
+#: views/emails/failed-login.php:355
+msgid "from these notifications."
+msgstr "из этих уведомлений."
+
+#: views/emails/failed-login.php:320
+msgid "How dangerous is this failed login attempt?"
+msgstr "Насколько опасна эта неудачная попытка авторизации?"
+
+#: views/emails/failed-login.php:262
+msgid "IP was blocked for {blocked_duration}"
+msgstr "IP был заблокирован на {blocked_duration}"
+
+#: views/emails/failed-login.php:260
+msgid "Last user attempted: <b>{username}</b>"
+msgstr "Последний пользователь пытался: <b>{username}</b>"
+
+#: views/emails/failed-login.php:354
+msgid "Unsubscribe"
+msgstr "Отписаться"
+
+#: views/emails/failed-login.php:250
+msgid "The failed login details include:"
+msgstr "Детали неудачного входа включают:"
+
+#: views/emails/failed-login.php:248
+msgid "This is installed on your <b>{domain}</b> WordPress site."
+msgstr "Он установлен на вашем сайте <b>{domain}</b> WordPress."
+
+#: views/emails/failed-login.php:315
+msgid "A failed login attempt is when an IP address uses incorrect credentials to log into your website. The IP address could be a human operator, or a program designed to guess your password."
+msgstr "Неудачная попытка входа — это когда IP-адрес использует неверные учетные данные для входа на ваш сайт. IP-адрес может быть человеком-оператором или программой, предназначенной для угадывания вашего пароля."
+
+#: views/emails/failed-login.php:318
+msgid "You are receiving this email because there was a failed login attempt on your website {domain}. If you'd like to opt out of these notifications, please click the “Unsubscribe” link below."
+msgstr "Вы получили это письмо, потому что на вашем веб-сайте {domain} произошла неудачная попытка входа в систему. Если вы хотите отказаться от этих уведомлений, нажмите ссылку «Отписаться» ниже."
+
+#: views/emails/failed-login.php:269
+msgid "Please visit your WordPress dashboard for additional details, investigation options, and help articles."
+msgstr "Посетите консоль WordPress для получения дополнительных сведений, вариантов расследования и справочных статей."
+
+#: views/emails/failed-login.php:324
+msgid "Limit Login Attempts Reloaded website"
+msgstr "Ограничение попыток входа в систему Перезагрузка веб-сайта"
+
+#: views/emails/failed-login.php:321
+msgid "Unfortunately, we cannot determine the severity of the IP address with the free version of the plugin. If the IP continues to make attempts and is not recognized by your organization, then it's likely to have malicious intent. Depending on how frequent the attacks are, you may experience performance issues. In the plugin dashboard, you can investigate the frequency of the failed login attempts in the logs and take additional steps to protect your website (i.e. adding them to the block list). You can visit the "
+msgstr "К сожалению, мы не можем определить серьезность IP-адреса с помощью бесплатной версии плагина. Если IP-адрес продолжает предпринимать попытки и не распознается вашей организацией, скорее всего, он имеет злонамеренные намерения. В зависимости от частоты атак могут возникнуть проблемы с производительностью. На панели инструментов плагина вы можете исследовать частоту неудачных попыток входа в журналы и предпринять дополнительные шаги для защиты вашего веб-сайта (например, добавить их в черный список). Вы можете посетить "
+
+#: views/chart-circle-failed-attempts-today.php:46
+#: views/chart-circle-failed-attempts-today.php:80
+msgid "(past 24 hrs)"
+msgstr "(последние 24 часа)"
+
+#: views/chart-circle-failed-attempts-today.php:40
+#: views/chart-circle-failed-attempts-today.php:75
+msgid "Hooray! Zero failed login attempts (past 24 hrs)"
+msgstr "Ура! Ноль неудачных попыток входа в систему (за последние 24 часа)"
+
+#: views/chart-circle-failed-attempts-today.php:51
+msgid "Warning: Your site has experienced over 100 failed login attempts in the past 24 hours"
+msgstr "Предупреждение: за последние 24 часа на вашем сайте было совершено более 100 неудачных попыток входа в систему."
+
+#: views/tab-settings.php:296 views/tab-settings.php:462
+msgid "No contract - cancel anytime"
+msgstr "Без контракта - можно отменить в любое время"
+
+#: core/LimitLoginAttempts.php:2007
+msgid "The %s IP range is invalid"
+msgstr "Диапазон IP-адресов %s недействителен"
+
+#: resources/compare-plans-data.php:137
+msgid "Lockouts & safelists/blocklists can be shared between multiple domains to enhance protection."
+msgstr "Блокировки и безопасные/черные списки могут быть доступны между несколькими доменами для усиления защиты."
+
+#: resources/compare-plans-data.php:136
+msgid "Synchronize Lockouts & Safelists/Blocklists"
+msgstr "Синхронизация блокировок и надежных/черных списков"
+
+#: resources/compare-plans-data.php:129
+msgid "Use active IP database via the cloud to automatically block users before they are able to make a failed login."
+msgstr "Используйте активную базу данных IP-адресов через облако, чтобы автоматически блокировать пользователей, прежде чем они смогут совершить неудачный вход в систему."
+
+#: resources/compare-plans-data.php:128
+msgid "Intelligent IP Blocking"
+msgstr "Интеллектуальная блокировка IP-адресов"
+
+#: resources/compare-plans-data.php:121
+msgid "Use system wide data from over 10,000 WordPress websites to identify and block malicious IPs. This is an active list in real-time."
+msgstr "Используйте общесистемные данные с более чем 10 000 веб-сайтов WordPress для выявления и блокировки вредоносных IP-адресов. Это активный список в режиме реального времени."
+
+#: resources/compare-plans-data.php:120
+msgid "Access Active Cloud Blocklist"
+msgstr "Доступ к черному списку Active Cloud"
+
+#: resources/compare-plans-data.php:113
+msgid "Automatically add malicious IPs to your blocklist when triggered by the system."
+msgstr "Автоматически добавляйте вредоносные IP-адреса в черный список при срабатывании системы."
+
+#: resources/compare-plans-data.php:105
+msgid "Add another layer of protection from brute force bots by accessing a global database of known IPs with malicious activity."
+msgstr "Добавьте еще один уровень защиты от брутфорс ботов, получив доступ к глобальной базе данных известных IP-адресов с вредоносной активностью."
+
+#: resources/compare-plans-data.php:112
+msgid "Auto IP Blocklist"
+msgstr "Автоматический черный список IP-адресов"
+
+#: resources/compare-plans-data.php:104
+msgid "Access Blocklist of Malicious IPs"
+msgstr "Доступ к черному списку вредоносных IP-адресов"
+
+#: resources/compare-plans-data.php:97
+msgid "Disable IPs from any region to disable logins."
+msgstr "Отключите IP-адреса из любого региона, чтобы отключить вход в систему."
+
+#: resources/compare-plans-data.php:96
+msgid "Block By Country"
+msgstr "Блокировать по стране"
+
+#: resources/compare-plans-data.php:86
+msgid "300k requests per month"
+msgstr "300 тысяч запросов в месяц"
+
+#: resources/compare-plans-data.php:84
+msgid "100k requests per month"
+msgstr "100 тысяч запросов в месяц"
+
+#: resources/compare-plans-data.php:85
+msgid "200k requests per month"
+msgstr "200 тысяч запросов в месяц"
+
+#: resources/compare-plans-data.php:81
+msgid "Absorb failed login attempts from brute force bots in the cloud to keep your website at its optimal performance."
+msgstr "Используйте ресурсы обкла чтобы поглотить неудачные попытки входа в систему ботов грубой силы, чтобы поддерживать оптимальную производительность вашего веб-сайта."
+
+#: resources/compare-plans-data.php:65
+msgid "Configurable Lockout Timing"
+msgstr "Настраиваемое время блокировки"
+
+#: resources/compare-plans-data.php:58
+msgid "Limit Number of Retry Attempts"
+msgstr "Ограничить количество повторных попыток"
+
+#: resources/compare-plans-data.php:27
+msgid "Installed"
+msgstr "Установлен"
+
+#: core/LimitLoginAttempts.php:874
+msgid "Premium"
+msgstr "Премиум"
+
+#: views/tab-premium.php:114
+msgid "Features comparison"
+msgstr "Сравнение фич"
+
+#: views/tab-premium.php:104
+msgid "Why Should I Consider Premium?"
+msgstr "Почему я должен рассматривать Премиум?"
+
+#: views/tab-premium.php:87
+msgid "You are currently using the free version of <strong>Limit Login Attempts Reloaded</strong>."
+msgstr "В настоящее время вы используете бесплатную версию <strong>Limit Login Attempts Reloaded</strong>."
+
+#: views/tab-premium.php:80
+msgid "Get It Here"
+msgstr "Получите его здесь"
+
+#: views/tab-premium.php:70
+msgid "Support"
+msgstr "Поддержка"
+
+#: views/tab-premium.php:65
+msgid "Ask a pre-sales question"
+msgstr "Задайте предпродажный вопрос"
+
+#: views/tab-premium.php:60
+msgid "Pre-sales FAQs"
+msgstr "Часто задаваемые вопросы перед продажей"
+
+#: views/tab-premium.php:55
+msgid "Full feature list"
+msgstr "Полный список функций"
+
+#: views/tab-premium.php:49
+msgid "Limit Login Attempts Reloaded <strong>Premium</strong>"
+msgstr "Limit Login Attempts Reloaded <strong>Примиум</strong>"
+
+#: views/tab-help.php:213
+msgid "What URLs are being attacked and protected?"
+msgstr "Какие URL-адреса попадают под атаку и защищаются?"
+
+#: views/tab-help.php:207
+msgid "I just installed LLAR and I'm already getting several failed login attempts"
+msgstr "Я только что установил LLAR, и у меня уже есть несколько неудачных попыток входа в систему."
+
+#: views/tab-help.php:201
+msgid "What do I do if all users get blocked?"
+msgstr "Что делать, если все пользователи заблокированы?"
+
+#: views/tab-help.php:195
+msgid "What happens if my site exceeds the request limits in the plan?"
+msgstr "Что произойдет, если мой сайт превысит лимит запросов в плане?"
+
+#: views/tab-help.php:183
+msgid "Could these failed login attempts be fake?"
+msgstr "Могут ли эти неудачные попытки входа быть фальшивыми?"
+
+#: views/tab-help.php:177
+msgid "Why am I still seeing login attempts even after the IP got blocked?"
+msgstr "Почему я все еще вижу попытки входа в систему даже после того, как IP-адрес был заблокирован?"
+
+#: views/tab-help.php:171
+msgid "What do I do if the admin gets blocked?"
+msgstr "Что делать, если администратор заблокирован?"
+
+#: views/tab-help.php:165
+msgid "How can I tell that the premium plugin is working?"
+msgstr "Как я могу узнать, что плагин премиум-класса работает?"
+
+#: views/tab-help.php:159
+msgid "How do I know if I'm under attack?"
+msgstr "Как я узнаю, что на меня напали?"
+
+#: views/tab-help.php:153
+msgid "Top Topics and Questions"
+msgstr "Основные темы и вопросы"
+
+#: views/tab-help.php:145
+msgid "Questions regarding premium software sales."
+msgstr "Вопросы по продаже премиум-программ."
+
+#: views/tab-help.php:143
+msgid "Pre-sales Questions"
+msgstr "Предпродажные вопросы"
+
+#: views/tab-help.php:137
+msgid "Questions regarding updating billing info, cancellation, and expiration."
+msgstr "Вопросы, касающиеся обновления платежной информации, отмены и истечения срока действия."
+
+#: views/tab-help.php:135
+msgid "Accounts & Billing"
+msgstr "Аккаунты и выставление счетов"
+
+#: views/tab-help.php:130
+msgid "Popular technical questions about the service including admin blocking, definitions, and email notifications."
+msgstr "Популярные технические вопросы о службе, включая блокировку администратора, определения и уведомления по электронной почте."
+
+#: views/tab-help.php:128
+msgid "Technical Questions"
+msgstr "Технические вопросы"
+
+#: views/tab-help.php:122
+msgid "Questions regarding the cloud service including how to activate, logs and storage, and compliance."
+msgstr "Вопросы, касающиеся облачной службы, включая способы активации, журналы и хранилище, а также соответствие требованиям."
+
+#: views/tab-help.php:120
+msgid "Cloud Service & Security"
+msgstr "Облачный сервис и безопасность"
+
+#: views/tab-help.php:114
+msgid "All Documentation"
+msgstr "Вся документация"
+
+#: views/tab-help.php:103
+msgid "GDPR Information"
+msgstr "Информация о GDPR"
+
+#: views/tab-help.php:94
+msgid "Go To Support Forums"
+msgstr "Перейти на форумы поддержки"
+
+#: views/tab-help.php:86
+msgid "Free Support"
+msgstr "Бесплатная поддержка"
+
+#: views/tab-help.php:228
+msgid "Our technical support team is available by email to help with any questions."
+msgstr "Наша команда технической поддержки доступна по электронной почте, чтобы помочь с любыми вопросами."
+
+#: views/tab-help.php:70
+msgid "Upgrade Now to Access Premium Support"
+msgstr "Обновите сейчас, чтобы получить доступ к премиум-поддержке"
+
+#: views/tab-debug.php:38
+msgid "Version"
+msgstr "Версия"
+
+#: views/chart-failed-attempts.php:227
+msgid "Attempts"
+msgstr "Попытки"
+
+#: views/options-page.php:178
+msgid "Premium / Extensions"
+msgstr "Премиум / Расширения"
+
+#: views/options-page.php:90
+msgid "Yes, enable auto-update"
+msgstr "Да, включить автообновление"
+
+#: views/options-page.php:88
+msgid "Do you want Limit Login Attempts Reloaded to provide the latest version automatically?"
+msgstr "Вы хотите, чтобы функция Limit Login Attempts Reloaded автоматически предоставляла последнюю версию?"
+
+#: views/app-widgets/event-log.php:61
+msgid "Loading older events, skipping ACL events. <a href=\"%s\" target=\"_blank\">Full logs</a>"
+msgstr "Загрузка старых событий, пропуск событий ACL. <a href=\"%s\" target=\"_blank\">Полные журналы</a>"
+
+#: views/app-widgets/event-log.php:54 views/app-widgets/login-attempts.php:62
+msgid "Load older events"
+msgstr "Загрузить старые события"
+
+#: views/chart-circle-failed-attempts-today.php:47
+#: views/chart-circle-failed-attempts-today.php:81
+msgid "Your site is currently at a low risk for brute force activity"
+msgstr "Ваш сайт в настоящее время подвергается низкому риску атаки подбора пароля."
+
+#: views/tab-settings.php:346
+msgid "Add this code to all websites in your network to sync protection (payment required for additional domains unless it's with an Agency plan's first tier)."
+msgstr "Добавьте этот код ко всем сайтам в Вашей сети, чтобы синхронизировать защиту (требуется оплата за дополнительные домены, если только они не входят в первый уровень тарифного плана Агентства)."
+
+#: core/LimitLoginAttempts.php:1429
+msgid "Failed login by IP %s %s"
+msgstr "Неудачный вход по IP %s %s"
+
+#: views/micro-cloud-modal.php:68 views/onboarding-popup.php:163
+msgid "Continue"
+msgstr "Продолжать"
+
+#: views/options-page.php:94
+msgid "No thanks"
+msgstr "Нет, спасибо"
+
+#: views/tab-help.php:80
+msgid "Upgrade To Premium"
+msgstr "Обновить до Премиум"
+
+#: views/tab-logs-custom.php:36
+msgid "Or"
+msgstr "Или"
+
+#: views/onboarding-popup.php:210
+msgid "No"
+msgstr "Нет"
+
+#: views/onboarding-popup.php:207
+msgid "Yes"
+msgstr "Да"
+
+#: views/app-widgets/active-lockouts.php:13
+msgid "Reload"
+msgstr "Перезагрузить"
+
+#: views/emails/failed-login.php:334
+msgid "This alert was sent by your website where Limit Login Attempts Reloaded free version is installed and you are listed as the admin. If you are a GoDaddy customer, the plugin is installed into a must-use (MU) folder."
+msgstr ""
+"Это оповещение было отправлено вашим веб-сайтом, на котором установлена бесплатная версия Limit Login Attempts Reloaded, и вы указаны в качестве администратора. Если вы являетесь клиентом GoDaddy, плагин установлен\n"
+"в обязательную (MU) папку."
+
+#: views/tab-settings.php:307 views/tab-settings.php:414
+msgid "Upgrade"
+msgstr "Обновление"
+
+#: views/app-widgets/acl-rules.php:14 views/app-widgets/acl-rules.php:63
+msgid "Documentation"
+msgstr "Документация"
+
+#. Description of the plugin
+#: limit-login-attempts-reloaded.php
+msgid "Block excessive login attempts and protect your site against brute force attacks. Simple, yet powerful tools to improve site performance."
+msgstr "Блокируйте чрезмерные попытки входа в систему и защитите свой сайт от атак грубой силы. Простые, но мощные инструменты для повышения производительности сайта."
+
+#: views/tab-settings.php:647
+msgid "Hide Dashboard Widget"
+msgstr "Скрыть виджет панели инструментов"
+
+#: views/app-widgets/event-log.php:19
+msgid "Full Logs"
+msgstr "Полные журналы"
+
+#: views/app-widgets/event-log.php:24
+msgid "All attempts blocked by access rules are hidden by default. You can see the full log at this link."
+msgstr "Все попытки, заблокированные правилами доступа, по умолчанию скрыты. Полный журнал можно посмотреть по этой ссылке."
+
+#: views/tab-settings.php:548
+msgid "You can use a shortcode here to insert links, for example, a link to your Privacy Policy page. <br>The shortcode is: [llar-link url=\"https://example.com\" text=\"Privacy Policy\"]"
+msgstr "Здесь вы можете использовать шорткод для вставки ссылок, например, ссылки на вашу страницу Политики конфиденциальности.<br> Шорткод: [llar-link url=\"https://example.com\" text=\"Политика конфиденциальности\"]"
+
+#: views/app-widgets/country-access-rules.php:14
+msgid "Country Access Rules"
+msgstr "Правила доступа страны"
+
+#: views/app-widgets/country-access-rules.php:22
+msgid "these countries:"
+msgstr "эти страны:"
+
+#: views/tab-settings.php:533
+msgid "GDPR message"
+msgstr "Сообщение GDPR"
+
+#: core/Config.php:96
+msgid "By proceeding you understand and give your consent that your IP address and browser information might be processed by the security plugins installed on this site."
+msgstr "Продолжая, вы понимаете и даете свое согласие на то, что ваш IP-адрес и информация браузера могут обрабатываться подключаемыми модулями безопасности, установленными на этом сайте."
+
+#: views/chart-circle-failed-attempts-today.php:102
+#: views/chart-failed-attempts.php:36 views/chart-failed-attempts.php:121
+#: views/chart-failed-attempts.php:131
+msgid "Failed Login Attempts"
+msgstr "Неудачные попытки входа"
+
+#: views/chart-circle-failed-attempts-today.php:93
+msgid "Failed Login Attempts Today"
+msgstr "Неудачные попытки входа на сегодняшний день"
+
+#: views/tab-dashboard.php:147
+msgid "Many options such as notifications, alerts, premium status, and more."
+msgstr "Множество опций, таких как уведомления, оповещения, премиум-статус и многое другое."
+
+#: views/tab-dashboard.php:143
+msgid "Global Options"
+msgstr "Общие настройки"
+
+#: views/tab-dashboard.php:132
+msgid "Find the documentation and help you need."
+msgstr "Найдите необходимую документацию и помощь."
+
+#: core/LimitLoginAttempts.php:866 views/options-page.php:174
+#: views/tab-dashboard.php:128
+msgid "Help"
+msgstr "Помощь"
+
+#: views/tab-dashboard.php:83
+msgid "Premium Protection Disabled"
+msgstr "Премиум защита отключена"
+
+#: views/onboarding-popup.php:43
+msgid "Notifications"
+msgstr "Уведомления"
+
+#: core/LimitLoginAttempts.php:459 views/tab-dashboard.php:97
+#: views/tab-dashboard.php:253
+msgid "Upgrade to Premium"
+msgstr "Обновиться до Премиум"
+
+#: views/tab-dashboard.php:117
+msgid "View lockouts logs, block or whitelist usernames or IPs, and more."
+msgstr "Просмотр журнала блокировок, блокировка или белый список имен пользователей или IP-адресов, и многое другое."
+
+#: views/tab-dashboard.php:113
+msgid "Tools"
+msgstr "Инструменты"
+
+#: views/tab-dashboard.php:67 views/tab-settings.php:96
+msgid "Learn More"
+msgstr "Узнать больше"
+
+#: views/tab-dashboard.php:87
+msgid "As a free user, your local server is absorbing the traffic brought on by brute force attacks, potentially slowing down your website. Upgrade to Premium today to outsource these attacks through our cloud app, and slow down future attacks with advanced throttling."
+msgstr "Как бесплатный пользователь, ваш локальный сервер поглощает трафик, вызванный атаками грубой силы, что потенциально замедляет работу вашего веб-сайта. Обновитесь до Premium сегодня, чтобы передать эти атаки через наше облачное приложение и замедлить будущие атаки с помощью расширенного регулирования."
+
+#: views/tab-logs-local.php:88
+msgid "Safelist"
+msgstr "Безопасный список"
+
+#: resources/compare-plans-data.php:80
+msgid "Performance Optimizer"
+msgstr "Оптимизатор производительности"
+
+#: resources/compare-plans-data.php:43
+msgid "Upgrade now"
+msgstr "Перейти на платную подписку"
+
+#: views/app-widgets/active-lockouts.php:8
+msgid "Active Lockouts"
+msgstr "Активные блокировки"
+
+#: views/chart-failed-attempts.php:44 views/chart-failed-attempts.php:147
+#: views/chart-failed-attempts.php:244
+msgid "Requests"
+msgstr "Запросы"
+
+#: views/tab-settings.php:319 views/tab-settings.php:324
+msgid "Setup Code"
+msgstr "Код установки"
+
+#: views/chart-circle-failed-attempts-today.php:45
+#: views/chart-circle-failed-attempts-today.php:79
+msgid "%d failed login attempt "
+msgid_plural "%d failed login attempts "
+msgstr[0] "%d неудачная попытка входа "
+msgstr[1] "%d неудачные попытки входа "
+msgstr[2] "%d неудачных попыток входа "
+
+#: core/LimitLoginAttempts.php:2361
+msgid "Don't show this message again"
+msgstr "Больше не показывать это сообщение"
+
+#: core/LimitLoginAttempts.php:2360
+msgid "Remind me a month from now"
+msgstr "Напомните мне через месяц"
+
+#: core/LimitLoginAttempts.php:2359
+msgid "Yes, turn on email notifications"
+msgstr "Да, включить уведомления по электронной почте"
+
+#: core/LimitLoginAttempts.php:2354
+msgid "You have been upgraded to the latest version of <strong>Limit Login Attempts Reloaded</strong>.<br> Due to increased security threats around the holidays, we recommend turning on email notifications when you receive a failed login attempt."
+msgstr "Вы были обновлены до последней версии <strong> Limit Login Attempts Reloaded </strong>. <br> В связи с повышением угроз безопасности в праздничные дни мы рекомендуем включить уведомления по электронной почте при неудачной попытке входа в систему."
+
+#: resources/compare-plans-data.php:144 views/tab-help.php:225
+msgid "Premium Support"
+msgstr "Премиум-поддержка"
+
+#: views/emails/failed-login.php:246
+msgid "This notification was sent automatically via Limit Login Attempts Reloaded Plugin."
+msgstr "Это уведомление было отправлено автоматически через плагин Limit Login Attempts Reloaded."
+
+#: views/app-widgets/event-log.php:42
+msgid "Reason"
+msgstr "Причина"
+
+#: views/app-widgets/acl-rules.php:25 views/app-widgets/acl-rules.php:74
+#: views/app-widgets/event-log.php:41
+msgid "Rule"
+msgstr "Правило"
+
+#: views/app-widgets/active-lockouts.php:23 views/app-widgets/event-log.php:40
+#: views/app-widgets/login-attempts.php:50
+msgid "Login"
+msgstr "Войти"
+
+#: views/app-widgets/active-lockouts.php:22 views/app-widgets/event-log.php:38
+#: views/app-widgets/login-attempts.php:51
+msgid "IP"
+msgstr "IP адрес"
+
+#: views/app-widgets/event-log.php:37 views/app-widgets/login-attempts.php:49
+msgid "Time"
+msgstr "Время"
+
+#: core/Ajax.php:175
+msgid "Please specify the Setup Code"
+msgstr "Укажите код установки"
+
+#: core/CloudApp.php:159
+msgid "The app has been successfully imported."
+msgstr "Приложение было успешно импортировано."
+
+#: core/CloudApp.php:134
+msgid "The endpoint is not responding. Please contact your app provider to settle that."
+msgstr "Конечная точка не отвечает. Обратитесь к поставщику приложения, чтобы решить эту проблему."
+
+#: core/Ajax.php:779
+msgid "No rules yet."
+msgstr "Правил пока нет."
+
+#: views/app-widgets/acl-rules.php:44 views/app-widgets/acl-rules.php:93
+#: views/app-widgets/country-access-rules.php:26
+msgid "Add"
+msgstr "Добавить"
+
+#: views/app-widgets/acl-rules.php:39 views/app-widgets/acl-rules.php:88
+msgid "Pass"
+msgstr "Пропустить"
+
+#: views/app-widgets/acl-rules.php:38 views/app-widgets/acl-rules.php:87
+msgid "Allow"
+msgstr "Разрешить"
+
+#: views/app-widgets/acl-rules.php:37 views/app-widgets/acl-rules.php:86
+#: views/app-widgets/country-access-rules.php:55
+msgid "Deny"
+msgstr "Отклонить"
+
+#: views/app-widgets/acl-rules.php:26 views/app-widgets/acl-rules.php:75
+msgid "Action"
+msgstr "Действие"
+
+#: core/Ajax.php:728
+msgid "Meanwhile, the app falls over to the <a href=\"%s\">default functionality</a>."
+msgstr "Тем временем приложение переходит к <a href=\"%s\"> функциям по умолчанию </a>."
+
+#: views/app-widgets/active-lockouts.php:25
+msgid "Expires in (minutes)"
+msgstr "Срок действия истекает через (минут)"
+
+#: views/app-widgets/active-lockouts.php:24
+msgid "Count"
+msgstr "Подсчёт"
+
+#: core/Ajax.php:359 core/Ajax.php:662
+msgid "No events yet."
+msgstr "Пока событий не было."
+
+#: views/app-widgets/event-log.php:46
+msgid "Actions"
+msgstr "Действия"
+
+#: views/app-widgets/event-log.php:45
+msgid "Lockout Duration"
+msgstr "Длительность блокировки"
+
+#: views/app-widgets/event-log.php:44
+msgid "Attempts Left"
+msgstr "Попыток осталось"
+
+#: views/options-page.php:183
+msgid "Failover"
+msgstr "Отказоустойчивость"
+
+#: core/LimitLoginAttempts.php:856 views/options-page.php:164
+msgid "Logs"
+msgstr "Журналы"
+
+#: views/tab-settings.php:353
+msgid "Configuration"
+msgstr "Настройки"
+
+#: views/tab-settings.php:289 views/tab-settings.php:456
+msgid "Run auto backups of access control lists, lockouts and logs"
+msgstr "Запускать автоматическое резервное копирование списков контроля доступа, блокировок и журналов"
+
+#: views/tab-settings.php:282 views/tab-settings.php:450
+msgid "Get premium support"
+msgstr "Получите премиальную поддержку"
+
+#: views/tab-settings.php:256 views/tab-settings.php:426
+msgid "Absorb site load caused by attacks"
+msgstr "Поглощение нагрузки на сайт, вызванной атаками"
+
+#: views/tab-settings.php:250 views/tab-settings.php:406
+msgid "Why Use Our Premium Cloud App?"
+msgstr "Зачем использовать наше приложение Premium Cloud?"
+
+#: views/tab-settings.php:341
+msgid "Submit"
+msgstr "Отправить"
+
+#: views/tab-settings.php:144
+msgid "Local App"
+msgstr "Локальное приложение"
+
+#: views/tab-settings.php:65
+msgid "App Settings"
+msgstr "Настройки приложения"
+
+#: views/tab-settings.php:108
+msgid "Active App"
+msgstr "Активное приложение"
+
+#: views/app-widgets/acl-rules.php:59
+msgid "IP Access Rules"
+msgstr "Правила IP-доступа"
+
+#: views/app-widgets/acl-rules.php:10
+msgid "Login Access Rules"
+msgstr "Правила доступа для входа"
+
+#: views/app-widgets/event-log.php:14
+msgid "Event Log"
+msgstr "Журнал событий"
+
+#. Author URI of the plugin
+#: limit-login-attempts-reloaded.php
+msgid "https://www.limitloginattempts.com/"
+msgstr "https://www.limitloginattempts.com/"
+
+#: core/Ajax.php:711
+msgid "No lockouts yet."
+msgstr "Блокировок пока нет."
+
+#: views/app-widgets/acl-rules.php:24 views/app-widgets/acl-rules.php:33
+#: views/app-widgets/acl-rules.php:73 views/app-widgets/acl-rules.php:82
+#: views/app-widgets/event-log.php:43
+msgid "Pattern"
+msgstr "Паттерн"
+
+#: views/tab-logs-local.php:142 views/tab-settings.php:475
+#: views/tab-settings.php:816
+msgid "Save Settings"
+msgstr "Сохранить настройки"
+
+#: views/tab-settings.php:481
+msgid "General Settings"
+msgstr "Основные настройки"
+
+#: core/LimitLoginAttempts.php:2034 core/LimitLoginAttempts.php:2108
+msgid "Settings saved."
+msgstr "Настройки сохранены."
+
+#: core/LimitLoginAttempts.php:441 core/LimitLoginAttempts.php:840
+#: views/options-page.php:148
+msgid "Dashboard"
+msgstr "Консоль"
+
+#: views/tab-settings.php:68
+msgid "The app absorbs the main load caused by brute-force attacks, analyzes login attempts, and blocks unwanted visitors. It provides other service functions as well."
+msgstr "Приложение поглощает основную нагрузку, вызванную атаками перебором, анализирует попытки входа в систему и блокирует нежелательных посетителей. Оно также обеспечивает другие сервисные функции."
+
+#: core/LimitLoginAttempts.php:2268
+msgid "Leave a review"
+msgstr "Оставьте отзыв"
+
+#: core/LimitLoginAttempts.php:2267
+msgid "Maybe later"
+msgstr "Возможно позже"
+
+#: core/LimitLoginAttempts.php:2266
+msgid "Don't show again"
+msgstr "Больше не показывать"
+
+#: core/LimitLoginAttempts.php:2261
+msgid "Hey <strong>Limit Login Attempts Reloaded</strong> user!"
+msgstr "Привет, пользователь <strong>Limit Login Attempts Reloaded</strong>!"
+
+#: core/LimitLoginAttempts.php:2263
+msgid "We would really like to hear your feedback about the plugin! Please take a couple minutes to write a few words <a href=\"https://wordpress.org/support/plugin/limit-login-attempts-reloaded/reviews/#new-post\" target=\"_blank\">here</a>. Thank you!"
+msgstr "Нам очень хотелось бы услышать ваш отзыв о плагине! Пожалуйста, уделите пару минут, чтобы написать несколько слов <a href=\"https://wordpress.org/support/plugin/limit-login-attempts-reloaded/reviews/#new-post\" target=\"_blank\">здесь</a>. Спасибо!"
+
+#: core/LimitLoginAttempts.php:2262
+msgid "A <strong>crazy idea</strong> we wanted to share! What if we put an image from YOU on the <a href=\"https://wordpress.org/plugins/limit-login-attempts-reloaded/\" target=\"_blank\">LLAR page</a>?! (<a href=\"https://wordpress.org/plugins/hello-dolly/\" target=\"_blank\">example</a>) A drawing made by you or your child would cheer people up! Send us your drawing by <a href=\"mailto:wpchef.me@gmail.com\" target=\"_blank\">email</a> and we like it, we'll add it in the next release. Let's have some fun!"
+msgstr "У нас есть <strong>сумасшедшая идея</strong>, которой мы хотим поделиться! Что если мы разместим вашу рисунок на странице плагин <a href=\"https://wordpress.org/plugins/limit-login-attempts-reloaded/\" target=\"_blank\">Limit Login Attempts Reloaded</a>?! (<a href=\"https://wordpress.org/plugins/hello-dolly/\" target=\"_blank\">пример</a>). Рисунок, нарисованная вами или вашим ребенком, мог бы порадовать всех пользователей! Отправляйте их на <a href=\"mailto:wpchef.me@gmail.com\" target=\"_blank\">email</a>, и если нам понравится, мы добавим ее в следующий релиз. Давайте повеселимся!"
+
+#: core/LimitLoginAttempts.php:442 core/LimitLoginAttempts.php:845
+#: views/options-page.php:152
+msgid "Settings"
+msgstr "Настройки"
+
+#: core/LimitLoginAttempts.php:861 views/options-page.php:170
+msgid "Debug"
+msgstr "Отладка"
+
+#: views/tab-debug.php:26
+msgid "Debug Info"
+msgstr "Отладочная информация"
+
+#: views/tab-settings.php:226
+msgid "Trusted IP Origins"
+msgstr "Надежные IP Origins"
+
+#: views/tab-settings.php:241
+msgid "Specify the origins you trust in order of priority, separated by commas. We strongly recommend that you <b>do not</b> use anything other than REMOTE_ADDR since other origins can be easily faked. Examples: HTTP_X_FORWARDED_FOR, HTTP_CF_CONNECTING_IP, HTTP_X_SUCURI_CLIENTIP"
+msgstr "Укажите источники, которым вы доверяете, в порядке приоритета, разделенные запятыми. Мы настоятельно рекомендуем вам <b>не использовать</b> ничего кроме REMOTE_ADDR поскольку другие источники могут быть легко подделаны. Примеры: HTTP_X_FORWARDED_FOR, HTTP_CF_CONNECTING_IP, HTTP_X_SUCURI_CLIENTIP"
+
+#: views/tab-settings.php:594
+msgid "after"
+msgstr "после"
+
+#: views/tab-settings.php:567 views/tab-settings.php:591
+msgid "Email to"
+msgstr "Отправить по email"
+
+#: core/LimitLoginAttempts.php:1737
+msgid "<strong>ERROR</strong>: Incorrect email address or password."
+msgstr "<strong>ОШИБКА</strong> : Неверный адрес электронной почты или пароль."
+
+#: views/tab-settings.php:522
+msgid "GDPR compliance"
+msgstr "GDPR совместимость"
+
+#: views/tab-logs-local.php:93 views/tab-logs-local.php:116
+msgid "One IP or IP range (1.2.3.4-5.6.7.8) per line"
+msgstr "Один IP или IP диапазон (1.2.3.4-5.6.7.8) в строку"
+
+#. Plugin Name of the plugin
+#. Author of the plugin
+#: limit-login-attempts-reloaded.php core/LimitLoginAttempts.php:194
+msgid "Limit Login Attempts Reloaded"
+msgstr "Limit Login Attempts Reloaded"
+
+#: views/app-widgets/event-log.php:39 views/tab-logs-local.php:220
+msgid "Gateway"
+msgstr "Шлюз"
+
+#: views/tab-logs-local.php:218
+msgctxt "Internet address"
+msgid "IP"
+msgstr "IP"
+
+#: views/tab-logs-local.php:217
+msgid "Date"
+msgstr "Дата"
+
+#: views/tab-logs-local.php:202
+msgid "Clear Log"
+msgstr "Очистить журнал"
+
+#: views/tab-settings.php:204
+msgid "hours until retries are reset"
+msgstr "часов до повторных попыток сброса"
+
+#: views/tab-settings.php:191
+msgid "hours"
+msgstr "часов"
+
+#: views/tab-settings.php:187
+msgid "lockouts increase lockout time to"
+msgstr "блокировки увеличивают время блокировки до"
+
+#: views/tab-settings.php:579
+msgid "Notify on lockout"
+msgstr "Уведомление при блокировке"
+
+#: views/tab-logs-local.php:194
+msgid "Lockout log"
+msgstr "Журнал блокировок"
+
+#: views/tab-settings.php:597
+msgid "lockouts"
+msgstr "блокировки"
+
+#: views/tab-settings.php:175
+msgid "minutes lockout"
+msgstr "минуты блокировки"
+
+#: views/tab-settings.php:162
+msgid "allowed retries"
+msgstr "разрешенные попытки"
+
+#: views/tab-settings.php:148
+msgid "Lockout"
+msgstr "Блокировка"
+
+#: views/tab-settings.php:498
+msgid "Use global settings"
+msgstr "Использовать глобальные настройки"
+
+#: views/tab-settings.php:493
+msgid "If disabled, the global settings will be forcibly applied to the entire network."
+msgstr "Если этот отключено, то глобальные настройки будут принудительно применяться ко всей сети."
+
+#: views/tab-settings.php:492
+msgid "Let network sites use their own settings"
+msgstr "Разрешить сайтам сети использовать свои собственные настройки"
+
+#: views/tab-logs-local.php:68
+msgid "Restore Lockouts"
+msgstr "Сбросить блокировки"
+
+#: views/tab-logs-local.php:64
+msgid "Active lockouts"
+msgstr "Активные блокировки"
+
+#: views/tab-logs-local.php:57
+msgid "No lockouts yet"
+msgstr "Блокировок пока нет"
+
+#: views/tab-logs-local.php:50
+msgid "Reset Counter"
+msgstr "Сбросить Счетчик"
+
+#: views/tab-logs-local.php:45
+msgid "Total lockouts"
+msgstr "Всего блокировок"
+
+#: views/tab-logs-local.php:35
+msgid "Statistics"
+msgstr "Статистика"
+
+#: core/LimitLoginAttempts.php:1962
+msgid "Cleared current lockouts"
+msgstr "Очистить текущие блокировки"
+
+#: core/LimitLoginAttempts.php:1955
+msgid "Reset lockout count"
+msgstr "Сбросить счетчик блокировок"
+
+#: core/LimitLoginAttempts.php:1948
+msgid "Cleared IP log"
+msgstr "Очистить журнал IP"
+
+#: core/LimitLoginAttempts.php:1760
+msgid "WC Error"
+msgstr "Ошибки WC"
+
+#: core/LimitLoginAttempts.php:609 core/LimitLoginAttempts.php:1200
+#: core/LimitLoginAttempts.php:1700
+msgid "Please try again in %d minute."
+msgid_plural "Please try again in %d minutes."
+msgstr[0] "Пожалуйста, повторите попытку через %d минуту."
+msgstr[1] "Пожалуйста, повторите попытку через %d минуты."
+msgstr[2] "Пожалуйста, повторите попытку через %d минут."
+
+#: core/LimitLoginAttempts.php:607 core/LimitLoginAttempts.php:1198
+#: core/LimitLoginAttempts.php:1697
+msgid "Please try again in %d hour."
+msgid_plural "Please try again in %d hours."
+msgstr[0] "Пожалуйста, повторите попытку через %d час."
+msgstr[1] "Пожалуйста, повторите попытку через %d часа."
+msgstr[2] "Пожалуйста, повторите попытку через %d часов."
+
+#: core/LimitLoginAttempts.php:1392
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d минута"
+msgstr[1] "%d минуты"
+msgstr[2] "%d минут"
+
+#: core/LimitLoginAttempts.php:1385
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d час"
+msgstr[1] "%d часа"
+msgstr[2] "%d часов"
+
+#: views/tab-logs-local.php:219
+msgid "Tried to log in as"
+msgstr "Попытка входа как"
+
+#: views/tab-logs-local.php:101 views/tab-logs-local.php:124
+msgid "One Username per line"
+msgstr "Одно имя пользователя на строку"
+
+#: core/LimitLoginAttempts.php:1685
+msgid "Please try again later."
+msgstr "Пожалуйста, попробуйте позже."
+
+#: core/LimitLoginAttempts.php:600 core/LimitLoginAttempts.php:655
+#: core/LimitLoginAttempts.php:1191 core/LimitLoginAttempts.php:1618
+#: core/LimitLoginAttempts.php:1677
+msgid "<strong>ERROR</strong>: Too many failed login attempts."
+msgstr "<strong>ВНИМАНИЕ</strong>: Превышен лимит попыток авторизации."
+
+#: core/LimitLoginAttempts.php:1740
+msgid "<strong>ERROR</strong>: Incorrect username or password."
+msgstr "<strong> ОШИБКА </strong>: неверное имя пользователя или пароль."
+
+#: core/Ajax.php:994
+msgid "<strong>%d</strong> attempt remaining."
+msgid_plural "<strong>%d</strong> attempts remaining."
+msgstr[0] "<strong>Осталась %d</strong> попытка."
+msgstr[1] "<strong>%d</strong> оставшиеся попытки."
+msgstr[2] "<strong>%d</strong> оставшихся попыток."
+
+#: views/tab-logs-local.php:71
+msgid "%d IP is currently blocked from trying to log in"
+msgstr "%d IP в настоящее время заблокирован для попытки входа в систему"
+
+#: views/tab-logs-local.php:53
+msgid "%d lockout since last reset"
+msgid_plural "%d lockouts since last reset"
+msgstr[0] "Блокировка %d с момента последнего сброса"
+msgstr[1] "%d блокировки с момента последнего сброса"
+msgstr[2] "%d блокировок с момента последнего сброса"

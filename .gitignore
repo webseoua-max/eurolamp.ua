@@ -1,0 +1,17 @@
+# WordPress uploads та кеш
+public/wp-content/uploads/
+public/wp-content/cache/
+public/wp-content/litespeed/
+public/wp-content/wc-logs/
+
+# Логи та бекапи
+*.log
+*.sql
+*.bak
+*.zip
+*.gz
+
+# Системне
+.DS_Store
+Thumbs.db
+public/shop/

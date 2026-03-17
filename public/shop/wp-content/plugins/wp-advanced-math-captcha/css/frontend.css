@@ -1,0 +1,61 @@
+.math-captcha-form {
+	display:block;
+	float:none;
+	clear:both;
+}
+
+.math-captcha-form  .mathalert{color:#c62828}
+
+.login form .math-captcha-form span {
+	display: inline-block;
+	margin-bottom: 10px; 
+}
+input[type="text"].mc-input {
+	display: inline-block;
+	width: 60px!important;
+	vertical-align: middle;
+	margin-bottom: 0;
+}
+
+
+/* Ensure Formidable Forms captcha styling */
+.frm_forms .math-captcha-form {
+	display: block;
+	float: none;
+	clear: both;
+	margin-bottom: 15px;
+}
+
+.frm_forms .math-captcha-form label{
+	padding-right: 10px;
+}
+
+.frm_forms .math-captcha-form .mathalert {
+	color: #c62828;
+}
+
+.frm_forms .math-captcha-form span {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.frm_forms input[type="text"].mc-input {
+	display: inline-block;
+	width: 60px !important;
+	vertical-align: middle;
+	margin-bottom: 0;
+}
+
+.frm_forms .frm_error {
+	color: #c62828;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.frm_forms .frm_message.math-captcha {
+	background-color: #ffebee;
+	border: 1px solid #ffcdd2;
+	padding: 8px 12px;
+	border-radius: 4px;
+	color: #c62828;
+}

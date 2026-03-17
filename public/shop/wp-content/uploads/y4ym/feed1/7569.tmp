@@ -1,0 +1,35 @@
+<offer id="7569" available="true">
+<currencyId>UAH</currencyId>
+<price>3690</price>
+<oldprice>4459.98</oldprice>
+<name>Аккумуляторная сборка 6S2P на элементах Samsung INR21700-50S, 22,2V</name>
+<description><![CDATA[<p data-start="93" data-end="313">Аккумуляторная сборка 6S2P-50S – это мощный литий-ионный аккумуляторный блок, собранный из высококачественных ячеек Samsung 50S (по 2 элемента параллельно и 6 последовательно). Такая конфигурация обеспечивает:</p>
+
+
+<p data-start="317" data-end="353">Номинальное напряжение: 22.2 В</p>
+<br/>
+
+<p data-start="356" data-end="408">Максимальное напряжение (полный заряд): 25.2 В</p>
+<br/>
+
+<p data-start="411" data-end="473">Ёмкость: 10 000 мА·ч (при использовании ячеек 5000 мА·ч)</p>
+<br/>
+
+<p data-start="476" data-end="549">Максимальный постоянный ток разряда: до 70 А (в зависимости от BMS)</p>
+<br/>
+
+<p data-start="552" data-end="582">Пиковый ток: до 90–100 А</p>
+<br/>
+
+<p data-start="585" data-end="609">Энергия: ~216 Вт·ч</p>
+<br/>
+
+<p data-start="612" data-end="700">Тип ячеек: Samsung 50S – одни из самых мощных и надёжных элементов в своём классе</p>
+<br/>
+]]></description>
+<picture>https://eurolamp.ua/shop/wp-content/uploads/ee-aps-6-3-p42a_2.jpg</picture>
+<url>https://eurolamp.ua/shop/ru/product/akkumuliator-dlia-dronov-fpv-6s2p-50s/</url>
+<store>true</store>
+<delivery>false</delivery>
+<categoryId>7942</categoryId>
+</offer>

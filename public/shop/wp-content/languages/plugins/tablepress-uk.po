@@ -1,0 +1,1165 @@
+# Translation of Plugins - TablePress &#8211; Tables in WordPress made easy - Stable (latest release) in Ukrainian
+# This file is distributed under the same license as the Plugins - TablePress &#8211; Tables in WordPress made easy - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-02-28 16:18:01+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: uk_UA\n"
+"Project-Id-Version: Plugins - TablePress &#8211; Tables in WordPress made easy - Stable (latest release)\n"
+
+#: admin/js/build/export.js:1 admin/js/export/screen.jsx:43
+msgid "— Select —"
+msgstr "— Виберіть —"
+
+#: views/view-options.php:57
+msgid "Premium"
+msgstr "Преміум"
+
+#: views/view-options.php:59
+msgid "Custom Styling"
+msgstr "Власний стиль"
+
+#: views/view-options.php:105
+msgid "Find out more"
+msgstr "Дізнатися більше"
+
+#: views/view-edit.php:131
+msgid "%s pixels"
+msgstr "%s пікселів"
+
+#: classes/class-tablepress.php:863
+msgid "Column Order"
+msgstr "Порядок колонок"
+
+#: classes/class-tablepress.php:1055
+msgid "REST API"
+msgstr "REST API"
+
+#: classes/class-elementor-widget-table.php:162
+#: controllers/controller-admin.php:319
+msgid "Table"
+msgstr "Таблиця"
+
+#: blocks/table/block.json
+msgctxt "block keyword"
+msgid "table"
+msgstr "таблиця"
+
+#: admin/js/build/export.js:1 admin/js/export/screen.jsx:151
+msgctxt "keyboard key"
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: admin/js/build/export.js:1 admin/js/export/screen.jsx:152
+msgctxt "keyboard key"
+msgid "Shift"
+msgstr "Shift"
+
+#: admin/js/build/edit.js:1 admin/js/build/export.js:1
+#: admin/js/build/options.js:1 admin/js/common/keyboard-shortcut.js:25
+#: admin/js/edit/data/contextmenu.js:35 admin/js/export/screen.jsx:151
+msgctxt "keyboard shortcut modifier key on a Mac keyboard"
+msgid "⌘"
+msgstr "⌘"
+
+#: views/view-edit.php:480 views/view-edit.php:499 views/view-import.php:156
+#: views/view-options.php:98
+msgid "Did you know?"
+msgstr "Ви знали?"
+
+#: admin/js/build/import.js:1 admin/js/import/screen.jsx:279
+msgid "— Select or type —"
+msgstr "- Виберіть або введіть -"
+
+#: views/view-list.php:224
+msgid "I hope that everything works and that you are satisfied with the results of managing your %s table."
+msgid_plural "I hope that everything works and that you are satisfied with the results of managing your %s tables."
+msgstr[0] "Сподіваюся, що все працює і ви задоволені результатами керування таблицею %s."
+msgstr[1] "Сподіваюся, що все працює і ви задоволені результатами керування вашими таблицями %s."
+msgstr[2] "Сподіваюся, що все працює і ви задоволені результатами керування вашими таблицями %s."
+
+#: views/view-options.php:211
+msgctxt "keyboard shortcut for Save Changes"
+msgid "%1$sS"
+msgstr "%1$sS"
+
+#: classes/class-view.php:216
+msgid "Error code: %s"
+msgstr "Код помилки: %s"
+
+#: controllers/controller-admin.php:439
+msgid "Go Premium"
+msgstr "До Преміум"
+
+#: views/view-about.php:183
+msgid "Premium Support"
+msgstr "Преміум підтримка"
+
+#: views/class-all-tables-list-table.php:494
+#: views/class-editor-button-thickbox-list-table.php:242
+msgid "%s table"
+msgid_plural "%s tables"
+msgstr[0] "Таблиця %s"
+msgstr[1] "Таблиці %s"
+msgstr[2] "Таблиц %s"
+
+#: views/view-about.php:186
+msgid "<a href=\"%s\">Find out more!</a>"
+msgstr "<a href=\"%s\">Дізнайтеся більше!</a>"
+
+#: classes/class-view.php:418
+msgid "Upgrade to Premium"
+msgstr "Обновиться до Преміум"
+
+#: views/view-edit.php:460
+msgid "To edit the content or modify the structure of this table, use the input fields and buttons below."
+msgstr "Щоб відредагувати вміст або змінити структуру цієї таблиці, скористайтеся полями вводу та кнопками нижче."
+
+#: controllers/controller-admin.php:509 controllers/controller-admin.php:593
+#: controllers/controller-admin.php:865 controllers/controller-admin.php:921
+#: controllers/controller-admin.php:1000 controllers/controller-admin.php:1041
+#: controllers/controller-admin.php:1166 controllers/controller-admin.php:1262
+#: controllers/controller-admin.php:1289 controllers/controller-admin.php:1330
+#: controllers/controller-admin.php:1369 controllers/controller-admin.php:1422
+#: controllers/controller-admin.php:1448
+msgid "Sorry, you are not allowed to access this page."
+msgstr "На жаль, ви не маєте доступу до цієї сторінки."
+
+#: classes/class-tablepress.php:405
+msgid "unknown"
+msgstr "невідомий"
+
+#: views/view-edit.php:432
+msgid "The following error was registered: %s."
+msgstr "Були зареєстровані наступні помилки: %s."
+
+#: classes/class-admin-page-helper.php:124
+msgid "Thank you for using <a href=\"%s\">TablePress</a>."
+msgstr "Дякуємо за використання <a href=\"%s\">TablePress</a>."
+
+#: views/view-about.php:252
+msgid "Allan Jardine for <a href=\"%s\">DataTables</a>,"
+msgstr "Allan Jardine для <a href=\"%s\">DataTables</a>,"
+
+#: views/view-about.php:253
+msgid "the translators in the <a href=\"%s\">Plugin Directory</a>,"
+msgstr "перекладачі у <a href=\"%s\">Директорії  плагіну</a>,"
+
+#: admin/js/build/list.js:1 admin/js/list/screen.jsx:99
+msgid "To embed this table into a post or page, use this Shortcode:"
+msgstr "Щоб вставити цю таблицю у допис чи сторінку, використовуйте цю абревіатуру:"
+
+#: views/view-list.php:214
+msgid "Welcome!"
+msgstr "Ласкаво просимо!"
+
+#: views/view-list.php:196 views/view-list.php:212 views/view-list.php:233
+#: views/view-list.php:247
+msgid "Hide this message"
+msgstr "Заховати це повідомлення"
+
+#: views/view-list.php:220
+msgid "Tobias Bäthge, developer of TablePress"
+msgstr "Тобіас Бетґе, розробник TablePress"
+
+#: views/view-list.php:221
+msgid "Hi, my name is Tobias, I&#8217;m the developer of the TablePress plugin."
+msgstr "Привіт, мене звати Тобіас, я розробник плаґіну TablePress."
+
+#: views/view-list.php:249
+msgid "Thank you for updating to TablePress %s!"
+msgstr "Дякую за оновлення до TablePress %s!"
+
+#: views/view-list.php:255 views/view-list.php:256
+msgid "The table was deleted successfully."
+msgid_plural "The tables were deleted successfully."
+msgstr[0] "Таблицю успішно знищено."
+msgstr[1] "Таблиці успішно знищено."
+msgstr[2] "Таблиць успішно знищено."
+
+#: views/view-list.php:262
+msgid "The copied table has the table ID &#8220;%s&#8221;."
+msgstr "ID скопійованої таблиці &#8220;%s&#8221;."
+
+#: views/view-list.php:266
+msgid "Error: The table could not be copied."
+msgstr "Помилка: не можливо скопіювати таблцю."
+
+#: views/view-list.php:267
+msgid "Error: You did not specify a valid table ID."
+msgstr "Помилка: не вказано прийнятний ID таблиці."
+
+#: views/view-list.php:269
+msgid "Error: This bulk action is invalid!"
+msgstr "Помилка: ця групова дія неможлива!"
+
+#: views/view-list.php:270
+msgid "Error: You did not select any tables!"
+msgstr "Помилка: не вибрано жодної таблиці!"
+
+#: views/view-list.php:271
+msgid "Notice: Not all selected tables could be deleted!"
+msgstr "Примітка: не всі вибрані таблиці можуть бути знищені!"
+
+#: views/view-list.php:279
+msgid "Tables"
+msgstr "Таблиці"
+
+#: views/view-editor_button_thickbox.php:120 views/view-list.php:350
+msgid "This is a list of your tables."
+msgstr "Це список Ваших таблиць."
+
+#: controllers/controller-admin_ajax.php:299 views/view-about.php:115
+#: views/view-list.php:360 views/view-preview_table.php:74
+msgid "Each table has a unique ID that needs to be adjusted in that Shortcode."
+msgstr "Кожна таблиця має унікальний ID, який потрібно підстивляти у шаблон абревіатури."
+
+#: views/class-all-tables-list-table.php:106
+msgid "Author"
+msgstr "Автор"
+
+#: views/class-all-tables-list-table.php:107
+msgid "Last Modified By"
+msgstr "Остання зміна"
+
+#: views/class-all-tables-list-table.php:222
+#: views/class-all-tables-list-table.php:229
+msgid "Edit &#8220;%s&#8221;"
+msgstr "Ретагувати &#8220;%s&#8221;"
+
+#: views/class-all-tables-list-table.php:231
+msgid "Show Shortcode"
+msgstr "Показати абревіатуру"
+
+#: views/class-all-tables-list-table.php:233
+msgid "Copy &#8220;%s&#8221;"
+msgstr "Скопіювати &#8220;%s&#8221;"
+
+#: views/class-all-tables-list-table.php:233 admin/js/build/edit.js:1
+#: admin/js/edit/data/contextmenu.js:85
+msgid "Copy"
+msgstr "Копіювати"
+
+#: views/class-all-tables-list-table.php:236
+msgid "Export &#8220;%s&#8221;"
+msgstr "Експортувати &#8220;%s&#8221;"
+
+#: views/class-all-tables-list-table.php:236
+msgctxt "row action"
+msgid "Export"
+msgstr "Експорт"
+
+#: views/class-all-tables-list-table.php:368
+msgctxt "bulk action"
+msgid "Copy"
+msgstr "Копіювати"
+
+#: views/class-all-tables-list-table.php:374
+msgctxt "bulk action"
+msgid "Delete"
+msgstr "Вилучити"
+
+#: views/class-all-tables-list-table.php:412
+msgid "Bulk Actions"
+msgstr "Групові дії"
+
+#: views/class-all-tables-list-table.php:417
+msgid "Apply"
+msgstr "Застосувати"
+
+#: views/class-all-tables-list-table.php:439
+msgid "You should <a href=\"%s\">add</a> a table to get started!"
+msgstr "Для початку потібно <a href=\"%s\">додати</a> таблицю!"
+
+#: views/class-all-tables-list-table.php:441
+msgid "You should <a href=\"%s\">import</a> a table to get started!"
+msgstr "Для початку <a href=\"%s\">Імпортуйте</a> таблицю!"
+
+#: views/view-options.php:41
+msgid "Options saved successfully."
+msgstr "Опції успішно збережено."
+
+#: views/view-options.php:42
+msgid "Options saved successfully, but &#8220;Custom CSS&#8221; was not saved to file."
+msgstr "Опції успішно збережено, але &#8220;Користувацький CSS&#8221; не був збережений у файл."
+
+#: views/view-options.php:43
+msgid "Error: Options could not be saved."
+msgstr "Помилка: не можливо зберегти опції."
+
+#: views/view-options.php:61
+msgid "User Options"
+msgstr "Опції користувача"
+
+#: views/view-options.php:138
+msgid "&#8220;Custom CSS&#8221; (<a href=\"%s\">Cascading Style Sheets</a>) can be used to change the styling or layout of a table."
+msgstr "&#8220;Користувацькі CSS&#8221; (<a href=\"%s\">Cascading Style Sheets</a>) можна використовувати для зміни стилю чи зовнішнього вигляду таблиці."
+
+#: views/view-options.php:140
+msgid "You can get styling examples from the <a href=\"%s\">FAQ</a>."
+msgstr "Приклади стилів можна глянути у <a href=\"%s\">ЧаПах</a>."
+
+#: views/view-options.php:144
+msgid "Please note that invalid CSS code will be stripped, if it can not be corrected automatically."
+msgstr "Зауважте, що CSS код з помилками буде вилучено, якщо його неможливо виправити автоматично."
+
+#: views/view-options.php:180
+msgid "Top-Level (top)"
+msgstr "Верхній рівень (зверху)"
+
+#: views/view-options.php:181
+msgid "Top-Level (middle)"
+msgstr "Верхній рівень (по середині)"
+
+#: views/view-options.php:182
+msgid "Top-Level (bottom)"
+msgstr "Верхній рівень (знизу)"
+
+#: views/view-options.php:192
+msgid "Admin menu entry"
+msgstr "Пункт меню у майстерні"
+
+#: views/view-options.php:193
+msgid "TablePress shall be shown in this section of my admin menu: %s"
+msgstr "Показувати TablePress у цій секції меню моєї майстерні: %s"
+
+#: views/view-options.php:229
+msgid "Uninstalling <strong>will permanently delete</strong> all TablePress tables and options from the database."
+msgstr "Деінсталяція <strong>повністю знищить</strong> усі таблиці та опції TablePress із бази даних."
+
+#: views/view-options.php:230
+msgid "It is recommended that you create a backup of the tables (by exporting the tables in the JSON format), in case you later change your mind."
+msgstr "Рекомендуємо зробити резервну копію таблиць (експортувавши таблиці у фрматі JSON), на випадок, якщо Ви передумаєте."
+
+#: views/view-options.php:231
+msgid "You will manually need to remove the plugin&#8217;s files from the plugin folder afterwards."
+msgstr "Після цього потрібно буде вручну знищити файли плаґіну із його директорії."
+
+#: views/view-options.php:232
+msgid "Be very careful with this and only click the button if you know what you are doing!"
+msgstr "Будьте дуже обережними і натискайте на кнопку лише, якщо знаєте, що робите!"
+
+#: views/view-options_custom_css.php:43
+msgid "Attention: Further action is required to save the changes to your &#8220;Custom CSS&#8221;!"
+msgstr "Увага: потрібно виконати наступну дію, щоб зберегти Ваш &#8220;Користувацький CSS&#8221;!"
+
+#: views/view-options_custom_css.php:118
+msgid "Due to the configuration of your server, TablePress was not able to automatically save your &#8220;Custom CSS&#8221; to a file."
+msgstr "Через налаштування серверу TablePress не може автоматично зберегти у файл Ваш &#8220;Користувацький CSS&#8221;."
+
+#: views/view-options_custom_css.php:119
+msgid "To try again with the same method that you use for updating plugins or themes, please fill out the &#8220;%s&#8221; form below."
+msgstr "Щоб знову спробувати метод, яким Ви користуєтесь для оновлення плаґінів чи тем, будь ласка, заповніть наступну форму &#8220;%s&#8221;."
+
+#: views/view-options_custom_css.php:119
+msgid "Connection Information"
+msgstr "Інформація про з'єднання"
+
+#: views/view-options_custom_css.php:146
+msgid "Proceed without saving a file"
+msgstr "Продовжити без збереження файлу"
+
+#: views/view-options_custom_css.php:148
+msgid "To proceed without trying to save the &#8220;Custom CSS&#8221; to a file, click the button below."
+msgstr "Щоб продовжити, не пробуючи зберегти &#8220;Користувацький CSS&#8221; у файл, клацніть кнопку нижче."
+
+#: views/view-options_custom_css.php:149
+msgid "Your &#8220;Custom CSS&#8221; will then be loaded inline."
+msgstr "Ваш &#8220;Користувацький CSS&#8221; буде завантажено у текст."
+
+#: views/view-options_custom_css.php:151
+msgid "Proceed without saving &#8220;Custom CSS&#8221; to a file"
+msgstr "Продовжити не зберігаючи у файл &#8220;Користувацький CSS&#8221;"
+
+#. Author of the plugin
+#: tablepress.php
+msgid "Tobias Bäthge"
+msgstr "Тобіас Бетґе"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: tablepress.php
+msgid "https://tablepress.org/"
+msgstr "https://tablepress.org/"
+
+#: views/class-all-tables-list-table.php:410
+msgid "Select Bulk Action"
+msgstr "Оберіть масову дію"
+
+#: views/class-all-tables-list-table.php:371
+msgctxt "bulk action"
+msgid "Export"
+msgstr "Експорт"
+
+#: views/view-options.php:142
+msgid "Information on available CSS selectors can be found in the <a href=\"%s\">Documentation</a>."
+msgstr "Інформацію про доступні селектори CSS можна знайти в <a href=\"%s\">Документації</a>."
+
+#: views/view-options.php:129
+msgid "Load this &#8220;Custom CSS&#8221; code to change the table styling:"
+msgstr "Завантажте цей &#8220; настроюваний CSS &#8221; код, щоб змінити стиль таблиці:"
+
+#: views/view-list.php:231
+msgid "Sincerely, Tobias"
+msgstr "З повагою, Тобіас"
+
+#: views/view-list.php:206
+msgid "If you encounter any questions or problems, please visit the <a href=\"%1$s\">FAQ</a>, the <a href=\"%2$s\">Documentation</a>, and the <a href=\"%3$s\">Support</a> section on the <a href=\"%4$s\">plugin website</a>."
+msgstr "Якщо ви зіткнулися з будь-якими питаннями або проблемами, будь ласка, відвідайте <a href=\"%1$s\">FAQ</a>, <a href=\"%2$s\">документацію</a> та розділ <a href=\"%3$s\">підтримки</a> на <a href=\"%4$s\">веб-сайті плагіна</a>."
+
+#: views/view-list.php:272
+msgid "Notice: Not all selected tables could be copied!"
+msgstr "Примітка: не всі вибрані таблиці можуть бути скопійовані!"
+
+#: views/view-list.php:273
+msgid "The tables were imported successfully."
+msgstr "Таблиці успішно імпортовані."
+
+#: views/view-options.php:79
+msgid "TablePress has some options which affect the plugin&#8217;s behavior in different areas."
+msgstr "TablePress має деякі параметри, які впливають на поведінку плагіна в різних областях."
+
+#: views/view-options.php:128
+msgid "Custom CSS"
+msgstr "Власний CSS"
+
+#: views/view-about.php:97
+msgid "At first, you should add or import a table."
+msgstr "Для початку потрібно додати або імпортувати таблицю."
+
+#: views/view-about.php:98
+msgid "This means that you either let the plugin create an empty table for you or that you load an existing table from either a CSV, HTML, JSON, XLS, or XLSX file."
+msgstr "Це означає, що Ви або даєте плаґіну створити для Вас пусту таблицю, або завантажуєте таблицю із CSV, HTML, JSON, XLS або XLSX файлу."
+
+#: views/view-about.php:102
+msgid "To easily add a link or an image to a cell, use the provided buttons."
+msgstr "Для того, щоб легко додати посилання чи малюнок, скористайтесь спеціальними кнопками."
+
+#: views/view-about.php:120
+msgid "Tables can be styled by changing and adding CSS commands."
+msgstr "Таблиці можна стилізувати змінюючи та додаючи команди CSS."
+
+#: views/view-about.php:121
+msgid "The plugin ships with default CSS stylesheets, which can be customized with own code or replaced with other stylesheets."
+msgstr "Плаґін постачається із типовими стилями CSS, які можна підігнати до власного коду або замінити іншими."
+
+#: views/view-about.php:122
+msgid "For this, each table is given certain CSS classes that can be used as CSS selectors."
+msgstr "Для цього кожній таблиці надаються певні класи CSS, які можна використати як CSS перемикачі."
+
+#: views/view-about.php:157
+msgid "This plugin was written and developed by <a href=\"%s\">Tobias Bäthge</a>."
+msgstr "Цей плаґін розробив і написав <a href=\"%s\">Тобіас Бетґе</a>."
+
+#: views/view-about.php:158
+msgid "It is licensed as Free Software under GNU General Public License 2 (GPL 2)."
+msgstr "Він постачається як вільне програмне забезпечення на основі GNU General Public License 2 (GPL 2)."
+
+#: views/view-about.php:161
+msgid "Please rate and review the plugin in the <a href=\"%s\">WordPress Plugin Directory</a>."
+msgstr "Будь ласка, оцініть плаґін та залишіть відгук про нього у <a href=\"%s\">Директорії Плаґінів WordPress</a>."
+
+#: views/view-about.php:192
+msgid "If you do not find an answer there, please <a href=\"%s\">open a new thread</a> in the WordPress Support Forums."
+msgstr "Якщо Ви не знайшли відповіді там, будьте ласкаві <a href=\"%s\">відкрийте нове обговорення</a> у Форумі Підтримки WordPress."
+
+#: views/view-about.php:209
+msgid "Please provide this information in bug reports and support requests."
+msgstr "Будь ласка, надавайте цю інформацію у повідомленнях про помилки та запитах про підтримку."
+
+#: views/view-about.php:249
+msgid "Special Thanks go to:"
+msgstr "Особлива подяка:"
+
+#: views/view-add.php:41
+msgid "Error: The table could not be added."
+msgstr "Помилка: не можливо додати таблицю."
+
+#: views/view-add.php:61
+msgid "To add a new table, enter its name, a description (optional), and the number of rows and columns into the form below."
+msgstr "Щоб додати нову таблицю, введіть її ім'я, опис (не обов'язково) та кількість рядків і стовпців у наступну форму."
+
+#: views/view-add.php:64
+msgid "You can always change the name, description, and size of your table later."
+msgstr "Ім'я, опис та розмір таблиці завжди можна змінити."
+
+#: views/class-all-tables-list-table.php:104
+#: views/class-editor-button-thickbox-list-table.php:85
+#: admin/js/add/screen.jsx:71 admin/js/build/add.js:1 admin/js/build/edit.js:1
+#: admin/js/edit/table-information.js:138
+msgid "Table Name"
+msgstr "Назва таблиці"
+
+#: views/class-all-tables-list-table.php:105
+#: views/class-editor-button-thickbox-list-table.php:86
+#: admin/js/add/screen.jsx:79 admin/js/build/add.js:1 admin/js/build/edit.js:1
+#: admin/js/edit/table-information.js:150
+msgid "Description"
+msgstr "Опис"
+
+#: admin/js/add/screen.jsx:79 admin/js/build/add.js:1
+msgid "(optional)"
+msgstr "(необов'язково)"
+
+#: admin/js/add/screen.jsx:80 admin/js/build/add.js:1
+msgid "A description of the contents of your table."
+msgstr "Опис вмісту Вашої таблиці."
+
+#: admin/js/add/screen.jsx:95 admin/js/build/add.js:1
+msgid "Number of Rows"
+msgstr "Кількість рядків"
+
+#: admin/js/add/screen.jsx:97 admin/js/add/screen.jsx:114
+#: admin/js/build/add.js:1 admin/js/build/edit.js:1
+#: admin/js/edit/table-manipulation.js:320
+#: admin/js/edit/table-manipulation.js:359
+msgid "This field must contain a positive number."
+msgstr "Це поле повинно містити додатнє число."
+
+#: admin/js/add/screen.jsx:96 admin/js/build/add.js:1
+msgid "The number of rows in your table."
+msgstr "Кількість рядків у Вашій таблиці."
+
+#: admin/js/add/screen.jsx:112 admin/js/build/add.js:1
+msgid "Number of Columns"
+msgstr "Кількість стовпців"
+
+#: admin/js/add/screen.jsx:113 admin/js/build/add.js:1
+msgid "The number of columns in your table."
+msgstr "Кількість стовпців у Вашій таблиці."
+
+#: views/view-edit.php:54
+msgid "The table was added successfully."
+msgstr "Таблицю успішно додано."
+
+#: views/view-edit.php:55 views/view-list.php:258 views/view-list.php:265
+msgid "The table was copied successfully."
+msgid_plural "The tables were copied successfully."
+msgstr[0] "Таблиця успішно скопійована."
+msgstr[1] "Таблиці успішно скопійовані."
+msgstr[2] "Таблиці успішно скопійовані."
+
+#: views/view-edit.php:55
+msgid "You are now seeing the copied table, which has the table ID &#8220;%s&#8221;."
+msgstr "Ви переглядаєте копію таблиці, ID якої &#8220;%s&#8221;."
+
+#: views/view-edit.php:56
+msgid "The table was imported successfully."
+msgstr "Таблицю успішно імпортовано."
+
+#: views/view-edit.php:57 views/view-list.php:257
+msgid "Error: The table could not be deleted."
+msgstr "Помилка: не можливо знищити таблицю."
+
+#: views/view-edit.php:82
+msgid "Table Information"
+msgstr "Інформація про таблицю"
+
+#: views/view-edit.php:83
+msgid "Table Content"
+msgstr "Вміст таблиці"
+
+#: views/view-edit.php:84 admin/js/build/edit.js:1
+#: admin/js/edit/table-manipulation.js:391
+#: admin/js/edit/table-manipulation.js:401
+#: admin/js/edit/table-manipulation.js:408
+msgid "Table Manipulation"
+msgstr "Керування таблицею"
+
+#: views/view-edit.php:85 admin/js/build/edit.js:1
+#: admin/js/edit/datatables-features.js:94 admin/js/edit/editor.js:198
+#: admin/js/edit/editor.js:208
+msgid "Table Options"
+msgstr "Опції таблиці"
+
+#: views/view-edit.php:103
+msgid "Insert into Table"
+msgstr "Вставити до таблиці"
+
+#: views/class-all-tables-list-table.php:108 admin/js/build/edit.js:1
+#: admin/js/edit/table-information.js:162
+msgid "Last Modified"
+msgstr "Остання зміна"
+
+#: views/view-edit.php:372 admin/js/build/edit.js:1
+#: admin/js/edit/data/contextmenu.js:137 admin/js/edit/table-manipulation.js:97
+msgid "Advanced Editor"
+msgstr "Розширений редактор"
+
+#: admin/js/build/edit.js:1 admin/js/common/alert.jsx:73
+#: admin/js/edit/editor.js:521
+msgid "OK"
+msgstr "Гаразд"
+
+#: views/view-edit.php:437
+msgid "Because of this error, the table can not be edited at this time, to prevent possible further data loss."
+msgstr "Через цю помилку, щоб запобігти можливій втраті даних, редагувати таблицю не можна."
+
+#: views/view-edit.php:439
+msgid "Please see the <a href=\"%s\">TablePress FAQ page</a> for further instructions."
+msgstr "З наступними інструкціями, будь ласка, ознайомтеся на <a href=\"%s\">сторінці TablePress FAQ</a>."
+
+#: classes/class-view.php:466 views/view-edit.php:443
+msgid "Back to the List of Tables"
+msgstr "Назад до списку таблиць"
+
+#: views/view-editor_button_thickbox.php:73
+#: views/view-editor_button_thickbox.php:118
+msgid "List of Tables"
+msgstr "Список таблиць"
+
+#: views/view-editor_button_thickbox.php:120
+msgid "You may insert a table into a post or page here."
+msgstr "Тут Ви можете вставити таблицю у допис чи сторінку."
+
+#: views/class-editor-button-thickbox-list-table.php:179
+#: views/view-editor_button_thickbox.php:121
+msgid "Insert Shortcode"
+msgstr "Вставити абревіатуру"
+
+#: views/view-editor_button_thickbox.php:131 views/view-list.php:383
+msgid "Search Tables"
+msgstr "Шукати таблиці"
+
+#: views/class-editor-button-thickbox-list-table.php:87
+msgid "Action"
+msgstr "Дія"
+
+#: views/class-all-tables-list-table.php:258
+#: views/class-editor-button-thickbox-list-table.php:165
+msgid "(no description)"
+msgstr "(немає опису)"
+
+#: views/class-all-tables-list-table.php:428
+#: views/class-editor-button-thickbox-list-table.php:189
+#: views/view-export.php:92
+msgid "No tables found."
+msgstr "Таблиць не знайдено."
+
+#: views/class-editor-button-thickbox-list-table.php:191
+msgid "You should add or import a table on the TablePress screens to get started!"
+msgstr "Для початку потрібно додати або імпортувати таблицю до TablePress!"
+
+#: views/view-export.php:41
+msgid "Error: The export failed."
+msgstr "Помилка: експорт не вдався."
+
+#: views/view-export.php:42 views/view-list.php:268
+msgid "Error: This table could not be loaded!"
+msgstr "Помилка: неможливо завантажити цю таблицю!"
+
+#: views/view-export.php:43
+msgid "Error: The internal data of this table is corrupted!"
+msgstr "Помилка: внутрішні дані таблиці пошкоджені!"
+
+#: views/view-export.php:44
+msgid "Error: The ZIP file could not be created."
+msgstr "Помилка: неможливо створити ZIP архів."
+
+#: views/view-export.php:49 views/view-export.php:52
+msgid "Export Tables"
+msgstr "Експорт таблиць"
+
+#: views/view-export.php:67
+msgid "Exporting a table allows you to use it in other programs, like spreadsheets applications."
+msgstr "Експорт таблиці дозволяє використовувати її у інших програмах таких, як електронні таблиці."
+
+#: views/view-export.php:68
+msgid "Regularly exporting tables is also recommended as a backup of your data."
+msgstr "Рекомендується регулярно експортувати таблиці з метою резервного збереження даних."
+
+#: views/view-export.php:71
+msgid "To export, select the tables and the desired export format."
+msgstr "Виберіть таблиці та бажаний формат експорту."
+
+#: views/view-export.php:72
+msgid "If you choose more than one table, the exported files will automatically be stored in a ZIP archive file."
+msgstr "Якщо вибрано більш як одну таблицю, експортовані фали будуть збережені у ZIP архів."
+
+#: views/view-export.php:74
+msgid "Be aware that for the CSV and HTML formats only the table data, but no table options are exported!"
+msgstr "Майте на увазі, що CSV та HTML лише форматують дані таблиці, та не експортують її властивості!"
+
+#: views/view-export.php:75
+msgid "For the JSON format, the table data and the table options are exported."
+msgstr "У форматі JSON експортуються і дані таблиці, і її властивості."
+
+#: admin/js/build/export.js:1 admin/js/export/screen.jsx:96
+msgid "Tables to Export"
+msgstr "Таблиці для експортування"
+
+#: admin/js/build/export.js:1 admin/js/export/screen.jsx:103
+msgid "Select all"
+msgstr "Вибрати всі"
+
+#: admin/js/build/export.js:1 admin/js/export/screen.jsx:162
+#: admin/js/export/screen.jsx:173
+msgid "Export Format"
+msgstr "Формат експорту"
+
+#: admin/js/build/export.js:1 admin/js/export/screen.jsx:184
+#: admin/js/export/screen.jsx:197
+msgid "CSV Delimiter"
+msgstr "Розділювач CSV"
+
+#: admin/js/build/export.js:1 admin/js/export/screen.jsx:205
+msgid "(Only needed for CSV export.)"
+msgstr "(потрібно лише для CSV експорту)"
+
+#: admin/js/build/export.js:1 admin/js/export/screen.jsx:213
+msgid "ZIP file"
+msgstr "ZIP архів"
+
+#: admin/js/build/export.js:1 admin/js/export/screen.jsx:229
+msgid "(Mandatory if more than one table is selected.)"
+msgstr "(Необхідно, якщо вибрано більш як одну таблицю.)"
+
+#: admin/js/build/export.js:1 admin/js/export/screen.jsx:235
+msgid "Note: Support for ZIP file creation seems not to be available on this server."
+msgstr "Примітка: здається на цьому сервері підтримується створення ZIP архівів."
+
+#: views/view-import.php:52
+msgid "Error: The import failed."
+msgstr "Помилка: не вдалося імпортувати."
+
+#: views/view-import.php:56
+msgid "Import Tables"
+msgstr "Імпорт Таблиць"
+
+#: views/view-import.php:78
+msgid "To import tables, select and enter the import source in the following form."
+msgstr "Щоб імпортувати таблицю, у наступній формі виберіть та введіть джерело імпортування."
+
+#: views/view-import.php:79
+msgid "You can also choose to import it as a new table, to replace an existing table, or to append the rows to an existing table."
+msgstr "Можна вибрати імпорт до нової таблиці або імпорт із заміною чи додаванням рядків до існуючої таблиці."
+
+#: admin/js/build/import.js:1 admin/js/import/screen.jsx:137
+#: admin/js/import/screen.jsx:142
+msgid "Import Source"
+msgstr "Джерело імпорту"
+
+#: admin/js/build/import.js:1 admin/js/import/screen.jsx:30
+msgid "File Upload"
+msgstr "Завантаження файлу"
+
+#: admin/js/build/import.js:1 admin/js/import/screen.jsx:34
+msgid "URL"
+msgstr "URL"
+
+#: admin/js/build/import.js:1 admin/js/import/screen.jsx:38
+msgid "File on server"
+msgstr "Файл на сервері"
+
+#: admin/js/build/import.js:1 admin/js/import/screen.jsx:42
+msgid "Manual Input"
+msgstr "Ввести вручну"
+
+#: admin/js/build/import.js:1 admin/js/import/screen.jsx:31
+msgid "Select files"
+msgstr "Вибрати файл"
+
+#: admin/js/build/import.js:1 admin/js/import/screen.jsx:240
+msgid "You can also import multiple tables by placing them in a ZIP file."
+msgstr "Можна імпортувати кілька таблиць одночасно, помітивши їх у ZIP архів."
+
+#: admin/js/build/import.js:1 admin/js/import/screen.jsx:35
+msgid "File URL"
+msgstr "URL файлу"
+
+#: admin/js/build/import.js:1 admin/js/import/screen.jsx:39
+msgid "Server Path to file"
+msgstr "Шлях до файлу на сервері"
+
+#: admin/js/build/import.js:1 admin/js/import/screen.jsx:43
+msgid "Import data"
+msgstr "Дані для імпорту"
+
+#: admin/js/build/import.js:1 admin/js/import/screen.jsx:248
+msgid "Add, Replace, or Append?"
+msgstr "Додати, замінити чи розширити?"
+
+#: admin/js/build/import.js:1 admin/js/import/screen.jsx:258
+msgid "Add as new table"
+msgstr "Додати у вигляді нової таблиці"
+
+#: admin/js/build/import.js:1 admin/js/import/screen.jsx:259
+msgid "Replace existing table"
+msgstr "Замінити існуючу таблицю"
+
+#: admin/js/build/import.js:1 admin/js/import/screen.jsx:260
+msgid "Append rows to existing table"
+msgstr "Додати рядки до існуючої таблиці"
+
+#: admin/js/build/import.js:1 admin/js/import/screen.jsx:267
+#: admin/js/import/screen.jsx:277
+msgid "Table to replace or append to"
+msgstr "Таблиця, яку потрібно замінити чи розширити"
+
+#: admin/js/build/import.js:1 admin/js/import/screen.jsx:305
+msgctxt "button"
+msgid "Import"
+msgstr "Імпорт"
+
+#: views/view-about.php:254
+msgid "all customers, donors, contributors, supporters, reviewers, and users of the plugin!"
+msgstr "усім спонсорам, помічникам, підтримці, рецензентам та користувачам плагіну!"
+
+#: views/view-edit.php:430
+msgid "The internal data of table &#8220;%1$s&#8221; (ID %2$s) is corrupted."
+msgstr "Внутрішні дані таблиці &#8220;%1$s&#8221 (ID %2$s) пошкоджені."
+
+#: views/class-all-tables-list-table.php:437 views/view-export.php:93
+msgid "You should <a href=\"%1$s\">add</a> or <a href=\"%2$s\">import</a> a table to get started!"
+msgstr "Вам потрібно <a href=\"%1$s\">додати</a> або <a href=\"%2$s\">імпортувати</a> таблицю для початку!"
+
+#: classes/class-elementor-widget-table.php:182 admin/js/build/export.js:1
+#: admin/js/build/import.js:1 admin/js/export/screen.jsx:39
+#: admin/js/import/screen.jsx:62
+msgid "ID %1$s: %2$s"
+msgstr "ID %1$s: %2$s"
+
+#: views/class-all-tables-list-table.php:103
+#: views/class-editor-button-thickbox-list-table.php:84
+msgid "ID"
+msgstr "ID"
+
+#: views/view-edit.php:426 admin/js/build/edit.js:1
+#: admin/js/common/ajax-request.js:159
+msgid "Attention: Unfortunately, an error occurred."
+msgstr "Увага! На жаль, сталася помилка."
+
+#: views/class-all-tables-list-table.php:239 admin/js/build/edit.js:1
+#: admin/js/build/list.js:1 admin/js/edit/other-actions.js:83
+#: admin/js/edit/table-manipulation.js:179
+#: admin/js/edit/table-manipulation.js:204 admin/js/list/screen.jsx:178
+msgid "Delete"
+msgstr "Видалити"
+
+#: views/view-about.php:123
+msgid "Please see the <a href=\"%s\">Documentation</a> for a list of these selectors and for styling examples."
+msgstr "Будь ласка, перегляньте <a href=\"%s\">документацію</a> до списку цих селекторів і для стилізації прикладів."
+
+#: views/view-about.php:103
+msgid "Those will ask you for the necessary information and corresponding HTML code will be added to the cell automatically."
+msgstr "Ті, хто запитає вас про необхідну інформацію і відповідний HTML код будуть автоматично додані до комірки."
+
+#: views/view-about.php:101
+msgid "Then, you can edit your data or change the structure of your table (e.g. by inserting, deleting, moving, or swapping rows or columns or sorting them) and select specific table features like alternating row colors or whether to print the name or description, if you want."
+msgstr "Потім ви можете змінити свої дані або змінити структуру вашої таблиці (наприклад, вставляючи, видаляти, переміщувати або змінювати рядки або стовпці або сортувати їх) і вибрати конкретні функції таблиці, такі як чергування кольорів рядків або роздрукувати ім'я або опис, якщо хочете."
+
+#: admin/js/build/export.js:1 admin/js/export/screen.jsx:222
+msgid "Create a ZIP archive."
+msgstr "Створити ZIP архів."
+
+#: admin/js/add/screen.jsx:72 admin/js/build/add.js:1
+msgid "The name or title of your table."
+msgstr "Ім'я або назва Вашої таблиці."
+
+#: admin/js/build/edit.js:1 admin/js/build/list.js:1
+#: admin/js/edit/editor.js:514 admin/js/edit/other-actions.js:75
+#: admin/js/list/screen.jsx:170
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: views/view-editor_button_thickbox.php:124 views/view-list.php:375
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "Результати за пошуком &#8220;%s&#8221;"
+
+#: admin/js/add/screen.jsx:128 admin/js/build/add.js:1
+msgid "Add Table"
+msgstr "Додати столік"
+
+#: classes/class-export.php:55
+msgid "CSV - Character-Separated Values"
+msgstr "CSV - значення, розділені символом"
+
+#: classes/class-export.php:56
+msgid "HTML - Hypertext Markup Language"
+msgstr "HTML - мова розмітки гіпертекстових документів"
+
+#: classes/class-export.php:57
+msgid "JSON - JavaScript Object Notation"
+msgstr "JSON - об'єктний запис JavaScript"
+
+#: classes/class-export.php:60
+msgid "; (semicolon)"
+msgstr "; (крапка з комою)"
+
+#: classes/class-export.php:61
+msgid ", (comma)"
+msgstr ", (кома)"
+
+#: classes/class-export.php:62
+msgid "\\t (tabulator)"
+msgstr "\\t (табуляція)"
+
+#: classes/class-import-legacy.php:179 classes/class-import-legacy.php:276
+#: libraries/html-parser.class.php:68
+msgid "The imported file contains errors:"
+msgstr "Імпортований файл містить помилки:"
+
+#: classes/class-render.php:359
+msgid "<!-- The table with the ID %s is empty! -->"
+msgstr "<!-- Таблиця з ID %s є пустою! -->"
+
+#: classes/class-render.php:540 views/class-all-tables-list-table.php:229
+msgid "Edit"
+msgstr "Редагувати"
+
+#: classes/class-view.php:112
+msgid "TablePress Help"
+msgstr "Допомога по TablePress"
+
+#: classes/class-view.php:103 views/view-about.php:190
+msgid "<a href=\"%1$s\">Support</a> is provided through the <a href=\"%2$s\">WordPress Support Forums</a>."
+msgstr "<a href=\"%1$s\">Підтримка</a> надається через <a href=\"%2$s\">Форум Підтримки WordPress</a>."
+
+#: classes/class-view.php:105 views/view-about.php:191
+msgid "Before asking for support, please carefully read the <a href=\"%s\">Frequently Asked Questions</a>, where you will find answers to the most common questions, and search through the forums."
+msgstr "Перед тим, як звернутися по допомогу, будь ласка, уважно ознайомтеся із <a href=\"%s\">Поширеними Запитаннями</a>, де ви знайдете відповіді до найбільш загальних питань, а також пошукайте на форумах."
+
+#: admin/js/build/edit.js:1 admin/js/build/list.js:1
+#: admin/js/edit/other-actions.js:67 admin/js/list.js:67
+#: admin/js/list/screen.jsx:162
+msgid "Do you really want to delete this table?"
+msgid_plural "Do you really want to delete these tables?"
+msgstr[0] "Ви дійсно хочете знищити цю таблицю?"
+msgstr[1] "Ви дійсно хочете знищити ці таблиці?"
+msgstr[2] "Ви дійсно хочете знищити ці таблиці?"
+
+#. Plugin Name of the plugin
+#: tablepress.php classes/class-view.php:407
+msgid "TablePress"
+msgstr "TablePress"
+
+#: classes/class-view.php:485 views/view-options.php:211
+#: admin/js/build/edit.js:1 admin/js/edit/buttons.js:235
+msgid "Save Changes"
+msgstr "Зберегти зміни"
+
+#: classes/class-elementor-widget-table.php:197 blocks/table/build/index.js:1
+#: blocks/table/src/edit.js:116
+msgid "Table:"
+msgstr "Таблиця"
+
+#: controllers/controller-admin.php:419
+msgid "Plugin page"
+msgstr "Сторінка плаґіну"
+
+#: controllers/controller-admin.php:436
+msgid "Documentation"
+msgstr "Документація"
+
+#: controllers/controller-admin.php:437
+msgid "Support"
+msgstr "Підтримка"
+
+#: controllers/controller-admin.php:621
+msgctxt "Default CSV delimiter in the translated language (\";\", \",\", or \"tab\")"
+msgid ","
+msgstr ","
+
+#: controllers/controller-admin.php:708 controllers/controller-admin.php:709
+#: controllers/controller-admin.php:710
+msgid "All Tables"
+msgstr "Усі таблиці"
+
+#: controllers/controller-admin.php:715 controllers/controller-admin.php:716
+#: admin/js/add/screen.jsx:58 admin/js/build/add.js:1
+msgid "Add New Table"
+msgstr "Додати нову таблицю"
+
+#: controllers/controller-admin.php:722
+msgid "Edit Table"
+msgstr "Редагувати таблицю"
+
+#: controllers/controller-admin.php:729 controllers/controller-admin.php:730
+msgid "Import a Table"
+msgstr "Імпортувати таблицю"
+
+#: controllers/controller-admin.php:731
+msgctxt "navigation bar"
+msgid "Import"
+msgstr "Імпорт"
+
+#: controllers/controller-admin.php:736 controllers/controller-admin.php:737
+msgid "Export a Table"
+msgstr "Експортувати таблицю"
+
+#: controllers/controller-admin.php:738
+msgctxt "navigation bar"
+msgid "Export"
+msgstr "Експорт"
+
+#: controllers/controller-admin.php:743 controllers/controller-admin.php:744
+#: controllers/controller-admin.php:745
+msgid "Plugin Options"
+msgstr "Опції плаґіну"
+
+#: controllers/controller-admin.php:750 controllers/controller-admin.php:752
+msgid "About"
+msgstr "Про плаґін"
+
+#: controllers/controller-admin.php:751
+msgid "About TablePress"
+msgstr "Про TablePress"
+
+#: classes/class-import.php:177
+msgid "Imported from Manual Input"
+msgstr "Імпортовано з ручного вводу"
+
+#: controllers/controller-admin.php:1365
+#: controllers/controller-admin_ajax.php:304
+msgid "The preview could not be loaded."
+msgstr "Не можливо завантажити попередній перегляд."
+
+#: controllers/controller-admin.php:1365 controllers/controller-admin.php:1375
+#: views/class-all-tables-list-table.php:242 views/view-preview_table.php:58
+#: admin/js/build/edit.js:1 admin/js/edit/buttons.js:213
+msgid "Preview"
+msgstr "Попередній перегляд"
+
+#: controllers/controller-admin.php:1375
+msgid "The table could not be loaded."
+msgstr "Не можливо завантажити таблицю."
+
+#: controllers/controller-admin.php:1464
+msgid "TablePress was uninstalled successfully."
+msgstr "TablePress успішно деінстальовано."
+
+#: controllers/controller-admin.php:1465
+msgid "All tables, data, and options were deleted."
+msgstr "Усі таблиці, дані та опції знищено."
+
+#: controllers/controller-admin.php:1467
+msgid "You may now ask the network admin to delete the plugin&#8217;s folder <code>tablepress</code> from the server, if no other site in the network uses it."
+msgstr "Тепер Ви можете попросити адміністратора витерти на сервері директорію плаґіну <code>tablepress</code>, якщо інші сайт не використовують її."
+
+#: controllers/controller-admin.php:1469
+msgid "You may now manually delete the plugin&#8217;s folder <code>tablepress</code> from the <code>plugins</code> directory on your server or use the &#8220;Delete&#8221; link for TablePress on the WordPress &#8220;Plugins&#8221; page."
+msgstr "Тепер на сервері можна витерти директорію плаґіну <code>tablepress</code> із <code>plugins</code> або скористатись посиланням &#8220;Витерти TablePress&#8221; на сторінці &#8220;Plugins&#8221; у WordPress."
+
+#: controllers/controller-admin.php:1472
+msgid "Your TablePress &#8220;Custom CSS&#8221; files have been deleted automatically."
+msgstr "Ваші &#8220;Користувацькі CSS&#8221; файли у TablePress знищені автоматично."
+
+#: controllers/controller-admin.php:1475
+msgid "Please also ask him to delete your TablePress &#8220;Custom CSS&#8221; files from the server."
+msgstr "Будьте ласкаві, також попросіть його витерти Ваші &#8220;Користувацькі CSS&#8221; файли TablePress на сервері."
+
+#: controllers/controller-admin.php:1477
+msgid "You may now also delete your TablePress &#8220;Custom CSS&#8221; files in the <code>wp-content</code> folder."
+msgstr "Ви можете також витерти Ваші &#8220;Користувацькі CSS&#8221; файли TablePress у директорії <code>wp-content</code>."
+
+#: controllers/controller-admin.php:1482
+msgid "Go to &#8220;Plugins&#8221; page"
+msgstr "Перейти на сторінку &#8220;Плаґіни&#8221;"
+
+#: controllers/controller-admin.php:1486 views/view-options.php:226
+#: views/view-options.php:235
+msgid "Uninstall TablePress"
+msgstr "Деінсталювати TablePress"
+
+#: controllers/controller-admin_ajax.php:289 views/view-preview_table.php:64
+msgid "This is a preview of your table."
+msgstr "Це попередній перегляд Вашої таблиці."
+
+#: controllers/controller-admin_ajax.php:290 views/view-preview_table.php:64
+msgid "Because of CSS styling in your theme, the table might look different on your page!"
+msgstr "Таблиця може виглядати інакше через CSS стилі використані у Вашій темі!"
+
+#: controllers/controller-frontend.php:1002
+#: views/class-all-tables-list-table.php:306
+msgid "%s ago"
+msgstr "%s тому"
+
+#: classes/class-elementor-widget-table.php:180
+#: controllers/controller-admin.php:237 models/model-table.php:411
+#: views/class-all-tables-list-table.php:173
+#: views/class-all-tables-list-table.php:218
+#: views/class-editor-button-thickbox-list-table.php:150
+#: admin/js/build/edit.js:1 admin/js/build/export.js:1
+#: admin/js/build/import.js:1 admin/js/edit/table-preview.js:34
+#: admin/js/export/screen.jsx:37 admin/js/import/screen.jsx:60
+msgid "(no name)"
+msgstr "(без назви)"
+
+#: models/model-table.php:413
+msgid "Copy of %s"
+msgstr "Копія %s"
+
+#: views/view-about.php:47
+msgid "Plugin Purpose"
+msgstr "Призначення плаґіну"
+
+#: views/view-about.php:48
+msgid "Usage"
+msgstr "Використання"
+
+#: views/view-about.php:49
+msgid "More Information and Documentation"
+msgstr "Більше інформації та документація"
+
+#: views/view-about.php:50
+msgid "Help and Support"
+msgstr "Допомога та підтримка"
+
+#: views/view-about.php:51
+msgid "Author and License"
+msgstr "Автор і ліцензія"
+
+#: views/view-about.php:52
+msgid "Credits and Thanks"
+msgstr "Честь і хвала"
+
+#: views/view-about.php:53
+msgid "Debug and Version Information"
+msgstr "Відлагодження та інформація про версію"
+
+#: views/view-about.php:79
+msgid "TablePress allows you to create and manage tables in the admin area of WordPress."
+msgstr "TablePress допомагає створювати таблиці та керувати ними у адміністративній частині WordPress."
+
+#: classes/class-view.php:159 controllers/controller-admin.php:128
+#: views/view-editor_button_thickbox.php:73
+#: views/view-editor_button_thickbox.php:118
+#: views/view-options_custom_css.php:41 views/view-preview_table.php:58
+msgid "%1$s &lsaquo; %2$s"
+msgstr "%1$s &lsaquo; %2$s"
+
+#: controllers/controller-admin.php:435
+msgid "FAQ"
+msgstr "Часті питання"
+
+#: controllers/controller-admin.php:435
+msgid "Frequently Asked Questions"
+msgstr "Часті питання"
+
+#: views/view-about.php:80
+msgid "Tables may contain text, numbers, formulas, and even HTML code (e.g. to include images or links)."
+msgstr "Таблиці можуть містити текст, цифри та навіть HTML (наприклад, для включення зображень або посилань)."
+
+#: classes/class-view.php:99 views/view-about.php:140
+msgid "For technical information, please see the <a href=\"%s\">Documentation</a>."
+msgstr "Для отримання технічної інформації зверніться до <a href=\"%s\">Документації</a>."
+
+#: classes/class-view.php:98 views/view-about.php:139
+msgid "More information about TablePress can be found on the <a href=\"%1$s\">plugin website</a> or on its page in the <a href=\"%2$s\">WordPress Plugin Directory</a>."
+msgstr "Більше інформації про TablePress можна знайти на <a href=\"%1$s\">веб-сайті плагіна</a> або на його сторінці в <a href=\"%2$s\">каталозі плагінів WordPress</a>."
+
+#: classes/class-view.php:117
+msgid "For more information:"
+msgstr "Більше інформації:"
+
+#: controllers/controller-admin.php:1484
+msgid "Go to Dashboard"
+msgstr "Перейти до майстерні"
+
+#: controllers/controller-admin.php:717
+msgid "Add New"
+msgstr "Додати нове"

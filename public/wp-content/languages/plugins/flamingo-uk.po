@@ -1,0 +1,474 @@
+# Translation of Plugins - Flamingo - Stable (latest release) in Ukrainian
+# This file is distributed under the same license as the Plugins - Flamingo - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-10-31 14:00:46+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: uk_UA\n"
+"Project-Id-Version: Plugins - Flamingo - Stable (latest release)\n"
+
+#. Author URI of the plugin
+#: flamingo.php
+msgid "https://ideasilo.wordpress.com/"
+msgstr "https://ideasilo.wordpress.com/"
+
+#: includes/class-contact.php:168 includes/class-inbound-message.php:234
+msgid "Flamingo 2.2"
+msgstr "Flamingo 2.2"
+
+#. translators: 1: Property, 2: Version, 3: Class, 4: Method.
+#: includes/class-contact.php:161 includes/class-inbound-message.php:227
+msgid "The visibility of the %1$s property has been changed in %2$s. Now the property may only be accessed by the %3$s class. You can use the %4$s method instead."
+msgstr "Видимість властивості %1$s була змінена у версії %2$s. Тепер властивість доступна тільки в класі %3$s. Ви можете скористатися методом %4$s."
+
+#. translators: %s: Result of the submission.
+#: admin/includes/meta-boxes.php:154
+msgid "Submission result: %s"
+msgstr "Результат відправки: %s"
+
+#. translators: Publish box time format, see https://www.php.net/date
+#: admin/includes/meta-boxes.php:135
+msgctxt "publish box time format"
+msgid "H:i"
+msgstr "H:i"
+
+#. translators: Publish box date format, see https://www.php.net/date
+#: admin/includes/meta-boxes.php:130
+msgctxt "publish box date format"
+msgid "M j, Y"
+msgstr "d.m.Y"
+
+#. translators: time format, see https://www.php.net/date
+#: admin/includes/class-contacts-list-table.php:353
+#: admin/includes/class-inbound-messages-list-table.php:447
+msgid "g:i a"
+msgstr "H:i"
+
+#. translators: 1: date, 2: time
+#. translators: Publish box date string. 1: Date, 2: Time.
+#: admin/includes/class-contacts-list-table.php:349
+#: admin/includes/class-inbound-messages-list-table.php:443
+#: admin/includes/meta-boxes.php:127
+msgid "%1$s at %2$s"
+msgstr "%1$s о %2$s"
+
+#: includes/csv.php:230
+msgid "https://contactform7.com/heads-up-about-spreadsheet-vulnerabilities"
+msgstr "https://contactform7.com/heads-up-about-spreadsheet-vulnerabilities"
+
+#. translators: %s: URL
+#: includes/csv.php:222
+msgid "(Security Alert: Suspicious content is detected. See %s for details.)"
+msgstr "(Попередження про безпеку: виявлено підозрілий вміст. Більше деталей тут %s.)"
+
+#. translators: %s: WordPress user name
+#: includes/class-inbound-message.php:401
+msgid "%s has marked this message as spam."
+msgstr "%s позначив(ла) це повідомлення як спам."
+
+#: includes/class-inbound-message.php:390
+msgid "Unknown"
+msgstr "Невідомо"
+
+#. translators: %s: reason why this message is regarded as spam
+#: admin/includes/meta-boxes.php:178
+msgid "Spam log: %s"
+msgstr "Журнал спаму: %s"
+
+#: admin/admin.php:642
+msgid "reCAPTCHA"
+msgstr "reCAPTCHA"
+
+#: admin/includes/privacy.php:99
+msgid "Flamingo Inbound Messages: You are not allowed to delete inbound messages."
+msgstr "Вхідні повідомлення Flamingo: Ви не можете видаляти вхідні повідомлення."
+
+#: admin/includes/privacy.php:53
+msgid "Flamingo Address Book: You are not allowed to delete contact data."
+msgstr "Адресна книга Flamingo: Ви не можете видаляти контактні дані."
+
+#: admin/includes/meta-boxes.php:231
+msgid "Update"
+msgstr "Оновити"
+
+#. translators: %s: message submission date
+#: admin/includes/meta-boxes.php:142
+msgid "Submitted on: %s"
+msgstr "Відплавлено: %s"
+
+#: admin/includes/meta-boxes.php:115
+msgid "Inbound message status"
+msgstr "Статус вхідного повідомлення"
+
+#: admin/includes/class-inbound-messages-list-table.php:329
+msgid "View"
+msgstr "Дивитися"
+
+#: admin/admin.php:636
+msgid "Consent"
+msgstr "Згода"
+
+#: admin/admin.php:625
+msgid "Status"
+msgstr "Статус"
+
+#. Description of the plugin
+#: flamingo.php
+msgid "A trustworthy message storage plugin for Contact Form 7."
+msgstr "Надійний плагін для зберігання повідомлень Contact Form 7."
+
+#: admin/admin.php:648
+msgid "Meta"
+msgstr "Мета"
+
+#. Author of the plugin
+#: flamingo.php
+msgid "Takayuki Miyoshi"
+msgstr "Takayuki Miyoshi"
+
+#: includes/class-inbound-message.php:252
+msgid "(No Title)"
+msgstr "(без назви)"
+
+#: includes/class-inbound-message.php:49
+msgid "Flamingo Inbound Message Channel"
+msgstr "Канал вхідних повідомлень Flamingo"
+
+#: includes/class-inbound-message.php:48
+msgid "Flamingo Inbound Message Channels"
+msgstr "Канали вхідних повідомлень Flamingo"
+
+#: includes/class-inbound-message.php:32
+msgid "Flamingo Inbound Message"
+msgstr "Вхідне повідомлення Flamingo"
+
+#: includes/class-contact.php:30
+msgid "Flamingo Contact Tag"
+msgstr "Контактна мітка Flamingo"
+
+#: includes/class-contact.php:29
+msgid "Flamingo Contact Tags"
+msgstr "Контактні мітки Flamingo"
+
+#: includes/class-contact.php:21
+msgid "Flamingo Contact"
+msgstr "Контакт Flamingo"
+
+#: includes/class-contact.php:20
+msgid "Flamingo Contacts"
+msgstr "Контакти Flamingo"
+
+#: admin/includes/meta-boxes.php:84
+msgid "Choose from the most used tags"
+msgstr "Виберіть з-поміж найбільш використовуваних позначок"
+
+#: admin/includes/meta-boxes.php:81
+msgid "Separate tags with commas"
+msgstr "Розділяйте позначки комами"
+
+#: admin/includes/meta-boxes.php:34
+msgid "Add contact"
+msgstr "Додати контакт"
+
+#: admin/includes/meta-boxes.php:32
+msgid "Update contact"
+msgstr "Оновити контакт"
+
+#: admin/includes/meta-boxes.php:26
+msgid ""
+"You are about to delete this contact '%s'\n"
+" 'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"Ви збираєтеся видалити контакт '%s'\n"
+" Натисніть \"Скасувати\" щоб зупинити, \"OK\" щоб видалити."
+
+#: admin/includes/class-inbound-messages-list-table.php:369
+#: admin/includes/meta-boxes.php:116 includes/class-inbound-message.php:39
+msgid "Spam"
+msgstr "Спам"
+
+#: admin/includes/class-inbound-messages-list-table.php:259
+msgid "Empty trash"
+msgstr "Спорожнити кошик"
+
+#: admin/includes/class-inbound-messages-list-table.php:239
+msgid "View all channels"
+msgstr "Переглянути всі канали"
+
+#: admin/includes/class-inbound-messages-list-table.php:202
+msgid "Mark as spam"
+msgstr "Позначити як спам"
+
+#: admin/includes/class-inbound-messages-list-table.php:200
+#: admin/includes/class-inbound-messages-list-table.php:349
+#: admin/includes/meta-boxes.php:117
+msgid "Not spam"
+msgstr "Не спам"
+
+#: admin/includes/class-inbound-messages-list-table.php:196
+#: admin/includes/meta-boxes.php:205
+msgid "Move to trash"
+msgstr "Перемістити в кошик"
+
+#: admin/includes/class-inbound-messages-list-table.php:194
+#: admin/includes/meta-boxes.php:203
+msgid "Delete permanently"
+msgstr "Видалити остаточно"
+
+#: admin/includes/class-inbound-messages-list-table.php:190
+msgid "Restore"
+msgstr "Відновити"
+
+#: admin/includes/class-inbound-messages-list-table.php:155
+msgctxt "posts"
+msgid "Trash <span class=\"count\">(%s)</span>"
+msgid_plural "Trash <span class=\"count\">(%s)</span>"
+msgstr[0] "Видалені <span class=\"count\">(%s)</span>"
+msgstr[1] "Видалені <span class=\"count\">(%s)</span>"
+msgstr[2] "Видалені <span class=\"count\">(%s)</span>"
+
+#: admin/includes/class-inbound-messages-list-table.php:133
+msgctxt "posts"
+msgid "Spam <span class=\"count\">(%s)</span>"
+msgid_plural "Spam <span class=\"count\">(%s)</span>"
+msgstr[0] "Спам <span class=\"count\">(%s)</span>"
+msgstr[1] "Спам <span class=\"count\">(%s)</span>"
+msgstr[2] "Спам <span class=\"count\">(%s)</span>"
+
+#: admin/includes/class-inbound-messages-list-table.php:112
+msgctxt "posts"
+msgid "Inbox <span class=\"count\">(%s)</span>"
+msgid_plural "Inbox <span class=\"count\">(%s)</span>"
+msgstr[0] "Вхідні <span class=\"count\">(%s)</span>"
+msgstr[1] "Вхідні <span class=\"count\">(%s)</span>"
+msgstr[2] "Вхідні <span class=\"count\">(%s)</span>"
+
+#: admin/includes/class-inbound-messages-list-table.php:17
+msgid "Channel"
+msgstr "Канал"
+
+#. translators: date format, see https://www.php.net/date
+#: admin/includes/class-contacts-list-table.php:351
+#: admin/includes/class-inbound-messages-list-table.php:445
+msgid "Y/m/d"
+msgstr "d.m.Y"
+
+#. translators: 1: contact channel name, 2: contact count
+#: admin/includes/class-contacts-list-table.php:313
+msgctxt "contact history"
+msgid "%1$s (%2$d)"
+msgstr "%1$s (%2$d)"
+
+#: admin/includes/class-contacts-list-table.php:278
+msgid "Comment (%d)"
+msgstr "Коментар (%d)"
+
+#: admin/includes/class-contacts-list-table.php:259
+msgid "User"
+msgstr "Користувач"
+
+#: admin/includes/class-contacts-list-table.php:216
+msgid "No tags"
+msgstr "Немає позначок"
+
+#: admin/includes/class-contacts-list-table.php:171
+#: admin/includes/class-inbound-messages-list-table.php:299
+msgid "Edit &#8220;%s&#8221;"
+msgstr "Редагувати &#8220;%s&#8221;"
+
+#: admin/includes/class-contacts-list-table.php:203
+msgid "Edit"
+msgstr "Редагувати"
+
+#: admin/includes/class-contacts-list-table.php:136
+#: admin/includes/class-inbound-messages-list-table.php:252
+msgid "Export"
+msgstr "Експорт"
+
+#: admin/includes/class-contacts-list-table.php:131
+#: admin/includes/class-inbound-messages-list-table.php:248
+msgid "Filter"
+msgstr "Фільтр"
+
+#: admin/includes/class-contacts-list-table.php:123
+msgid "View all tags"
+msgstr "Дивитися усі позначки"
+
+#: admin/includes/class-contacts-list-table.php:95
+#: admin/includes/meta-boxes.php:11
+msgid "Delete"
+msgstr "Видалити"
+
+#: admin/includes/class-contacts-list-table.php:16
+msgid "Last contact"
+msgstr "Останній контакт"
+
+#: admin/includes/class-contacts-list-table.php:15
+msgid "History"
+msgstr "Історія"
+
+#: admin/edit-inbound-form.php:41
+#: admin/includes/class-inbound-messages-list-table.php:16
+msgid "From"
+msgstr "З"
+
+#: admin/edit-inbound-form.php:36
+#: admin/includes/class-inbound-messages-list-table.php:15
+msgid "Subject"
+msgstr "Тема"
+
+#: admin/edit-inbound-form.php:17
+msgid "Inbound Message"
+msgstr "Вхідне повідомлення"
+
+#: admin/edit-contact-form.php:37
+msgid "Enter email here"
+msgstr "Введіть адресу електронної пошти тут"
+
+#: admin/edit-contact-form.php:17
+msgid "Edit Contact"
+msgstr "Редагувати контакт"
+
+#: admin/admin.php:705
+msgid "Search messages"
+msgstr "Пошук повідомлень"
+
+#: admin/admin.php:630
+msgid "Fields"
+msgstr "Поля"
+
+#: admin/includes/class-inbound-messages-list-table.php:18 includes/csv.php:149
+msgid "Date"
+msgstr "Дата"
+
+#: admin/admin.php:573
+msgid "You are not allowed to unspam this item."
+msgstr "Вам не дозволено зняти мітку \"спам\"."
+
+#: admin/admin.php:532
+msgid "You are not allowed to spam this item."
+msgstr "Вам не дозволено додати мітку \"спам\"."
+
+#: admin/admin.php:442
+msgid "Error in restoring from Trash."
+msgstr "Помилка відновлення з кошика."
+
+#: admin/admin.php:438
+msgid "You are not allowed to restore this item from the Trash."
+msgstr "Вам не дозволено відновити цей елемент з кошику."
+
+#: admin/admin.php:399
+msgid "Error in moving to Trash."
+msgstr "Помилка переміщення в кошик."
+
+#: admin/admin.php:395
+msgid "You are not allowed to move this item to the Trash."
+msgstr "Вам не дозволено перемістити цей елемент в кошик."
+
+#: admin/admin.php:308
+msgid "Search contacts"
+msgstr "Пошук контактів"
+
+#: admin/admin.php:297 admin/admin.php:691
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "Результати пошуку для &#8220;%s&#8221;"
+
+#: admin/admin.php:254 admin/includes/class-contacts-list-table.php:13
+msgid "Name"
+msgstr "Ім'я"
+
+#: admin/admin.php:250 admin/includes/class-contacts-list-table.php:14
+msgid "Tags"
+msgstr "Позначки"
+
+#: admin/admin.php:246
+msgid "Save"
+msgstr "Зберегти"
+
+#: admin/includes/meta-boxes.php:257 includes/csv.php:40
+msgid "Last name"
+msgstr "Призвiще"
+
+#: admin/includes/meta-boxes.php:252 includes/csv.php:39
+msgid "First name"
+msgstr "Iм'я"
+
+#: admin/includes/meta-boxes.php:247 includes/csv.php:38
+msgid "Full name"
+msgstr "Повне ім'я"
+
+#: admin/includes/class-contacts-list-table.php:12 includes/csv.php:37
+msgid "Email"
+msgstr "Електронна пошта"
+
+#: admin/admin.php:201 admin/admin.php:494
+msgid "Error in deleting."
+msgstr "Помилка видалення."
+
+#: admin/admin.php:197 admin/admin.php:490
+msgid "You are not allowed to delete this item."
+msgstr "Вам не дозволено видалити цей елемент."
+
+#: admin/admin.php:152 admin/admin.php:243 admin/admin.php:349
+#: admin/admin.php:620
+msgid "You are not allowed to edit this item."
+msgstr "Вам не дозволено редагувати цей елемент."
+
+#: admin/admin.php:119
+msgid "Messages updated."
+msgstr "Повідомлення оновлено."
+
+#: admin/admin.php:129
+msgid "Messages got marked as not spam."
+msgstr "Повідомлення позначено як не спам."
+
+#: admin/admin.php:127
+msgid "Messages got marked as spam."
+msgstr "Повідомлення позначено як спам."
+
+#: admin/admin.php:125
+msgid "Messages deleted."
+msgstr "Повідомлення видалено."
+
+#: admin/admin.php:123
+msgid "Messages restored."
+msgstr "Messages restored."
+
+#: admin/admin.php:121
+msgid "Messages trashed."
+msgstr "Повідомлення в кошику."
+
+#: admin/admin.php:117
+msgid "Contact deleted."
+msgstr "Контакт видалено."
+
+#: admin/admin.php:115
+msgid "Contact updated."
+msgstr "Контакт оновлено."
+
+#: admin/admin.php:37 admin/admin.php:685
+msgid "Inbound Messages"
+msgstr "Вхідні повідомлення"
+
+#: admin/admin.php:36 admin/includes/privacy.php:24
+#: includes/class-inbound-message.php:31
+msgid "Flamingo Inbound Messages"
+msgstr "Вхідні повідомлення Flamingo"
+
+#: admin/admin.php:22
+msgid "Address Book"
+msgstr "Адресна книга"
+
+#. Plugin Name of the plugin
+#: flamingo.php admin/admin.php:11
+msgid "Flamingo"
+msgstr "Flamingo"
+
+#: admin/admin.php:10 admin/admin.php:21 admin/admin.php:291
+#: admin/includes/privacy.php:20
+msgid "Flamingo Address Book"
+msgstr "Адресна книга Flamingo"

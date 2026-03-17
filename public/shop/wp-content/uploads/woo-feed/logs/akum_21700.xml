@@ -1,0 +1,487 @@
+2024-08-20T14:23:12+00:00 DEBUG Getting Data for akum_21700.xml feed.
+
+2024-08-20T14:23:12+00:00 DEBUG Generating Feed VIA Ajax...
+
+2024-08-20T14:23:12+00:00 INFO Feed Config::
+Array
+(
+    [provider] => google
+    [feed_country] => UA
+    [filename] => akum_21700
+    [feedType] => xml
+    [ftpenabled] => false
+    [ftporsftp] => ftp
+    [ftphost] => 
+    [ftpport] => 21
+    [ftpuser] => 
+    [ftppassword] => 
+    [ftppath] => 
+    [ftpmode] => active
+    [is_variations] => y
+    [variable_price] => first
+    [variable_quantity] => first
+    [feedLanguage] => 
+    [feedCurrency] => UAH
+    [itemsWrapper] => products
+    [itemWrapper] => product
+    [delimiter] => ,
+    [enclosure] => double
+    [extraHeader] => 
+    [vendors] => Array
+        (
+        )
+
+    [mattributes] => Array
+        (
+            [0] => id
+            [1] => title
+            [2] => description
+            [3] => item_group_id
+            [4] => link
+            [5] => product_type
+            [6] => current_category
+            [7] => image
+            [8] => condition
+            [9] => availability
+            [10] => price
+            [11] => sale_price
+            [12] => sku
+            [13] => brand
+            [14] => canonical_link
+            [15] => images_1
+            [16] => images_2
+            [17] => images_3
+            [18] => images_4
+            [19] => images_5
+        )
+
+    [prefix] => Array
+        (
+            [0] => 
+            [1] => 
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [11] => 
+            [12] => 
+            [13] => 
+            [14] => 
+            [15] => 
+            [16] => 
+            [17] => 
+            [18] => 
+            [19] => 
+        )
+
+    [type] => Array
+        (
+            [0] => attribute
+            [1] => attribute
+            [2] => attribute
+            [3] => attribute
+            [4] => attribute
+            [5] => attribute
+            [6] => pattern
+            [7] => attribute
+            [8] => pattern
+            [9] => attribute
+            [10] => attribute
+            [11] => attribute
+            [12] => attribute
+            [13] => pattern
+            [14] => attribute
+            [15] => attribute
+            [16] => attribute
+            [17] => attribute
+            [18] => attribute
+            [19] => attribute
+        )
+
+    [attributes] => Array
+        (
+            [0] => id
+            [1] => title
+            [2] => description
+            [3] => item_group_id
+            [4] => link
+            [5] => primary_category_id
+            [6] => 0
+            [7] => image
+            [8] => 0
+            [9] => availability
+            [10] => price
+            [11] => current_price
+            [12] => sku
+            [13] => 0
+            [14] => canonical_link
+            [15] => image_1
+            [16] => image_2
+            [17] => image_3
+            [18] => image_4
+            [19] => image_5
+        )
+
+    [default] => Array
+        (
+            [0] => 
+            [1] => 
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => new
+            [9] => 
+            [10] => 
+            [11] => 
+            [12] => 
+            [13] => Eurolamp
+            [14] => 
+            [15] => 
+            [16] => 
+            [17] => 
+            [18] => 
+            [19] => 
+        )
+
+    [suffix] => Array
+        (
+            [0] => 
+            [1] => 
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 7940
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] =>  UAH
+            [11] =>  UAH
+            [12] => 
+            [13] => 
+            [14] => 
+            [15] => 
+            [16] => 
+            [17] => 
+            [18] => 
+            [19] => 
+        )
+
+    [output_type] => Array
+        (
+            [0] => Array
+                (
+                    [0] => 1
+                )
+
+            [1] => Array
+                (
+                    [0] => 1
+                )
+
+            [2] => Array
+                (
+                    [0] => 11
+                )
+
+            [3] => Array
+                (
+                    [0] => 1
+                )
+
+            [4] => Array
+                (
+                    [0] => 1
+                )
+
+            [5] => Array
+                (
+                    [0] => 1
+                )
+
+            [6] => Array
+                (
+                    [0] => 1
+                )
+
+            [7] => Array
+                (
+                    [0] => 1
+                )
+
+            [8] => Array
+                (
+                    [0] => 1
+                )
+
+            [9] => Array
+                (
+                    [0] => 1
+                )
+
+            [10] => Array
+                (
+                    [0] => 6
+                )
+
+            [11] => Array
+                (
+                    [0] => 6
+                )
+
+            [12] => Array
+                (
+                    [0] => 1
+                )
+
+            [13] => Array
+                (
+                    [0] => 1
+                )
+
+            [14] => Array
+                (
+                    [0] => 1
+                )
+
+            [15] => Array
+                (
+                    [0] => 1
+                )
+
+            [16] => Array
+                (
+                    [0] => 1
+                )
+
+            [17] => Array
+                (
+                    [0] => 1
+                )
+
+            [18] => Array
+                (
+                    [0] => 1
+                )
+
+            [19] => Array
+                (
+                    [0] => 1
+                )
+
+        )
+
+    [limit] => Array
+        (
+            [0] => 
+            [1] => 
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+            [9] => 
+            [10] => 
+            [11] => 
+            [12] => 
+            [13] => 
+            [14] => 
+            [15] => 
+            [16] => 
+            [17] => 
+            [18] => 
+            [19] => 
+        )
+
+    [composite_price] => all_product_price
+    [product_ids] => Array
+        (
+        )
+
+    [categories] => Array
+        (
+        )
+
+    [post_status] => Array
+        (
+            [0] => publish
+        )
+
+    [filter_mode] => Array
+        (
+            [product_ids] => include
+            [categories] => include
+            [post_status] => include
+        )
+
+    [campaign_parameters] => Array
+        (
+            [utm_source] => 
+            [utm_medium] => 
+            [utm_campaign] => 
+            [utm_term] => 
+            [utm_content] => 
+        )
+
+    [is_outOfStock] => 
+    [is_backorder] => 
+    [is_emptyDescription] => 
+    [is_emptyTitle] => 
+    [is_emptyImage] => 
+    [is_emptyPrice] => 
+    [product_visibility] => 
+    [shipping_country] => 
+    [tax_country] => 
+    [outofstock_visibility] => 
+    [ptitle_show] => 
+    [decimal_separator] => 
+    [thousand_separator] => 
+    [decimals] => 
+    [feed_option_name] => 
+    [feed_id] => 
+    [meta-box-order-nonce] => 
+    [str_replace] => Array
+        (
+            [0] => Array
+                (
+                    [subject] => 
+                    [search] => 
+                    [replace] => 
+                )
+
+        )
+
+    [wf_tabs] => true
+)
+
+
+2024-08-20T14:23:13+00:00 DEBUG Total 1038 product found
+
+2024-08-20T14:23:13+00:00 DEBUG Total 1038 batches
+
+2024-08-20T14:23:14+00:00 DEBUG Getting Products Information.
+
+2024-08-20T14:23:14+00:00 DEBUG Validating Product
+
+2024-08-20T14:23:17+00:00 DEBUG Getting Products Information.
+
+2024-08-20T14:23:17+00:00 DEBUG Validating Product
+
+2024-08-20T14:23:22+00:00 DEBUG Getting Products Information.
+
+2024-08-20T14:23:22+00:00 DEBUG Validating Product
+
+2024-08-20T14:23:25+00:00 DEBUG Getting Products Information.
+
+2024-08-20T14:23:25+00:00 DEBUG Validating Product
+
+2024-08-20T14:23:29+00:00 DEBUG Getting Products Information.
+
+2024-08-20T14:23:29+00:00 DEBUG Validating Product
+
+2024-08-20T14:23:32+00:00 DEBUG Getting Products Information.
+
+2024-08-20T14:23:32+00:00 DEBUG Validating Product
+
+2024-08-20T15:07:31+00:00 DEBUG Getting Products Information.
+
+2024-08-20T15:07:31+00:00 DEBUG Validating Product
+
+2024-08-20T16:07:45+00:00 DEBUG Getting Products Information.
+
+2024-08-20T16:07:45+00:00 DEBUG Validating Product
+
+2024-08-20T17:07:51+00:00 DEBUG Getting Products Information.
+
+2024-08-20T17:07:51+00:00 DEBUG Validating Product
+
+2024-08-20T18:07:34+00:00 DEBUG Getting Products Information.
+
+2024-08-20T18:07:34+00:00 DEBUG Validating Product
+
+2024-08-20T19:07:27+00:00 DEBUG Getting Products Information.
+
+2024-08-20T19:07:27+00:00 DEBUG Validating Product
+
+2024-08-20T20:07:54+00:00 DEBUG Getting Products Information.
+
+2024-08-20T20:07:54+00:00 DEBUG Validating Product
+
+2024-08-20T21:07:53+00:00 DEBUG Getting Products Information.
+
+2024-08-20T21:07:53+00:00 DEBUG Validating Product
+
+2024-08-20T22:09:30+00:00 DEBUG Getting Products Information.
+
+2024-08-20T22:09:30+00:00 DEBUG Validating Product
+
+2024-08-20T23:07:51+00:00 DEBUG Getting Products Information.
+
+2024-08-20T23:07:51+00:00 DEBUG Validating Product
+
+2024-08-21T00:07:45+00:00 DEBUG Getting Products Information.
+
+2024-08-21T00:07:45+00:00 DEBUG Validating Product
+
+2024-08-21T01:07:44+00:00 DEBUG Getting Products Information.
+
+2024-08-21T01:07:44+00:00 DEBUG Validating Product
+
+2024-08-21T02:07:50+00:00 DEBUG Getting Products Information.
+
+2024-08-21T02:07:50+00:00 DEBUG Validating Product
+
+2024-08-21T03:07:28+00:00 DEBUG Getting Products Information.
+
+2024-08-21T03:07:28+00:00 DEBUG Validating Product
+
+2024-08-21T04:07:27+00:00 DEBUG Getting Products Information.
+
+2024-08-21T04:07:27+00:00 DEBUG Validating Product
+
+2024-08-21T05:08:30+00:00 DEBUG Getting Products Information.
+
+2024-08-21T05:08:30+00:00 DEBUG Validating Product
+
+2024-08-21T06:07:35+00:00 DEBUG Getting Products Information.
+
+2024-08-21T06:07:35+00:00 DEBUG Validating Product
+
+2024-08-21T07:07:32+00:00 DEBUG Getting Products Information.
+
+2024-08-21T07:07:32+00:00 DEBUG Validating Product
+
+2024-08-21T08:07:40+00:00 DEBUG Getting Products Information.
+
+2024-08-21T08:07:40+00:00 DEBUG Validating Product
+
+2024-08-21T09:07:29+00:00 DEBUG Getting Products Information.
+
+2024-08-21T09:07:29+00:00 DEBUG Validating Product
+
+2024-08-21T10:07:27+00:00 DEBUG Getting Products Information.
+
+2024-08-21T10:07:27+00:00 DEBUG Validating Product
+
+2024-08-21T11:07:32+00:00 DEBUG Getting Products Information.
+
+2024-08-21T11:07:32+00:00 DEBUG Validating Product
+
+2024-08-21T12:07:30+00:00 DEBUG Getting Products Information.
+
+2024-08-21T12:07:30+00:00 DEBUG Validating Product
+
+2024-08-21T13:07:32+00:00 DEBUG Getting Products Information.
+
+2024-08-21T13:07:32+00:00 DEBUG Validating Product
+

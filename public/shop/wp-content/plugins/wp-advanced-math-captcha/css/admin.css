@@ -1,0 +1,300 @@
+/* Math Captcha settings */
+.df-credits { float: right; width: 280px; background: #fff; margin: 20px -300px 20px 20px; position: relative; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05); }
+.df-credits .inner { padding-left: 10px; padding-right: 10px; }
+.df-credits h3 { font-size: 14px; line-height: 1.4; margin: 0;  padding: 8px 12px; border-bottom: 1px solid #eee; }
+.df-credits .df-link { font-family: Georgia, "Times New Roman", "Bitstream Charter", Times, serif; font-style:italic; padding-bottom: 10px; margin: 0; }
+.df-credits .df-link a { vertical-align: middle; padding: 5px 0 0 4px; }
+.math-captcha-settings .df-credits form { min-width: 260px; margin-bottom: 1em; }
+.math-captcha-settings .df-credits form input { margin: 0; padding: 0; }
+.math-captcha-settings { margin-right: 300px; }
+.math-captcha-settings hr, .df-credits hr { border: solid #eee; border-width: 1px 0 0; clear: both; height: 0; }
+.math-captcha-settings form { float: left; min-width: 463px; width: auto; }
+.math-captcha-settings fieldset span.description { margin-bottom: 8px; margin-top: 4px; display: block; }
+.math-captcha-settings .ui-button { margin-bottom: 5px; }
+.math-captcha-settings .description { font-size: 13px; margin-bottom: 8px; }
+
+    
+.hidden{display: none;}
+
+.nav-tab-wrapper a {
+    padding: 10px 15px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+.nav-tab-active, .nav-tab:hover {
+    background-color: #f1f1f1;
+    border-bottom: 3px solid #0073aa;
+}
+.gpd-tab-panel {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background: #fff;
+}
+.button-primary {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#container{width: 75%}
+#settingsform{width:100%}
+
+
+/*
+Buttons
+*/
+.gpd-stats-buttons {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.gpd-stats-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #2271b1; 
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, sans-serif;
+    line-height: 1.5;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.gpd-stats-button:hover,
+.gpd-stats-button:focus {
+    background: #f3f5f6;
+    border-color: #0073aa; 
+    color: #0073aa;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.gpd-stats-button:active {
+    background: #e2e4e7;
+    border-color: #006799;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.gpd-stats-button:focus {
+    box-shadow: 0 0 0 2px #79b8ff;
+}
+
+
+.gpd-stats-button.active {
+    background: #0073aa;
+    border-color: #0073aa;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.gpd-stats-button.active:hover,
+.gpd-stats-button.active:focus {
+    background: #006799;
+    border-color: #006799;
+    color: #ffffff;
+}
+
+
+@media (max-width: 600px) {
+    .gpd-stats-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .gpd-stats-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/*
+Tables
+*/
+.wp-list-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.wp-list-table th,
+.wp-list-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e4e7;
+}
+
+.wp-list-table th {
+    background: #f3f5f6;
+    font-weight: 600;
+    color: #23282d;
+}
+
+.wp-list-table tr:hover {
+    background: #f9f9f9;
+}
+
+.wp-list-table .column-count {
+    text-align: right;
+}
+
+
+@media (max-width: 600px) {
+    .wp-list-table th,
+    .wp-list-table td {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .wp-list-table th {
+        display: none;
+    }
+
+    .wp-list-table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .wp-list-table td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        margin-right: 10px;
+        color: #23282d;
+    }
+}
+
+
+/*
+Messages
+*/
+.gpd-warning-label {
+    display: block; /* Make it a block element for full width */
+    width: 100%; /* Occupy full available width */
+    padding: 8px 12px;
+    background-color: #ffeb3b; /* Bright yellow background, as in hover from previous example */
+    border: 1px solid #ffda00; /* Border matching the background */
+    border-radius: 4px; /* Rounded corners */
+    color: #856404; /* Dark yellow text for warning */
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, sans-serif;
+    line-height: 1.5;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Light shadow */
+    animation: fadeIn 0.3s ease-in; /* Smooth fade-in animation */
+    margin: 10px 0; /* Margin top and bottom */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 480px) {
+    .gpd-warning-label {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+
+
+
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 959px) {
+	.df-credits { width: 100%; float: none; margin: 20px 0; }
+	.math-captcha-settings { margin-right: 0; }
+    #container{width: 100%}
+}
+
+
+.gpd-error-label {
+    width: 100%; /* Occupy full available width */
+    padding: 5px 5px; /* Increased padding for better visibility */
+    background-color: #ffebee; /* Light red background for error */
+    border: 1px solid #ffcdd2; /* Red border matching the background */
+    border-radius: 4px; /* Rounded corners */
+    color: #c62828; /* Dark red text for error emphasis */
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, sans-serif;
+    line-height: 1.5;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Light shadow */
+    animation: fadeIn 0.3s ease-in; /* Smooth fade-in animation */
+    margin: 15px 0; /* Margin for spacing */
+    text-align: left; /* Align text to the left */
+    white-space: nowrap; /* Prevent text wrapping unless necessary */
+    overflow: hidden; /* Handle overflow if text is too long */
+    text-overflow: ellipsis; /* Show ellipsis for overflowed text */
+}
+
+
+/* Responsiveness */
+@media (max-width: 480px) {
+    .gpd-error-label {
+        padding: 8px 12px;
+        font-size: 12px;
+        white-space: normal; /* Allow text wrapping on mobile */
+        overflow: visible; /* Show full text on mobile */
+        text-overflow: clip; /* No ellipsis on mobile */
+    }
+}
+
+.gpd-success-label {
+    width: 100%; /* Occupy full available width */
+    padding: 5px 5px; /* Increased padding for better visibility */
+    background-color: #e8f5e9; /* Light green background for success */
+    border: 1px solid #c8e6c9; /* Green border matching the background */
+    border-radius: 4px; /* Rounded corners */
+    color: #2e7d32; /* Dark green text for success emphasis */
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, sans-serif;
+    line-height: 1.5;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Light shadow */
+    animation: fadeIn 0.3s ease-in; /* Smooth fade-in animation */
+    margin: 15px 0; /* Margin for spacing */
+    text-align: left; /* Align text to the left */
+    white-space: nowrap; /* Prevent text wrapping unless necessary */
+    overflow: hidden; /* Handle overflow if text is too long */
+    text-overflow: ellipsis; /* Show ellipsis for overflowed text */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 480px) {
+    .gpd-success-label {
+        padding: 8px 12px;
+        font-size: 12px;
+        white-space: normal; /* Allow text wrapping on mobile */
+        overflow: visible; /* Show full text on mobile */
+        text-overflow: clip; /* No ellipsis on mobile */
+    }
+}
+
+/* Admin bar icon */
+#wpadminbar #wp-admin-bar-wpmc-toolbar-alerts .ab-icon:before {
+	content: "\f238";
+	top: 2px;
+}
+
+#wpadminbar #wp-admin-bar-wpmc-toolbar-alerts .ab-label {
+	margin-left: 5px;
+}

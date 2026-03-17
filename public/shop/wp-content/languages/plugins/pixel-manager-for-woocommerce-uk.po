@@ -1,0 +1,1001 @@
+# Translation of Plugins - Pixel Tag Manager for WooCommerce &#8211; Google Analytics 4, Google Ads, and More Pixels - Stable (latest release) in Ukrainian
+# This file is distributed under the same license as the Plugins - Pixel Tag Manager for WooCommerce &#8211; Google Analytics 4, Google Ads, and More Pixels - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-02-16 17:02:01+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: uk_UA\n"
+"Project-Id-Version: Plugins - Pixel Tag Manager for WooCommerce &#8211; Google Analytics 4, Google Ads, and More Pixels - Stable (latest release)\n"
+
+#: admin/partials/pages/class-pmw-pixels.php:593
+msgid "Exclude User Roles from Event Tracking"
+msgstr "Виключення ролей користувачів з відстеження подій"
+
+#: admin/partials/pages/class-pmw-pixels.php:600
+msgid "Select user roles to exclude from event tracking."
+msgstr "Виберіть ролі користувачів, які потрібно виключити з відстеження подій."
+
+#: admin/partials/common/class-pmw-footer.php:15
+msgid "Your experience with this tool can elevate our growth. By sharing your insights, you can help Pixel Tag Manager reach new heights. Click here."
+msgstr "Ваш досвід роботи з цим інструментом може сприяти нашому розвитку. Ділячись своїми ідеями, ви можете допомогти Pixel Tag Manager досягти нових висот. Натисніть тут."
+
+#: includes/class-pixel-manager-for-woocommerce.php:141
+msgid "Settings"
+msgstr "Налаштування"
+
+#: admin/partials/pages/class-pmw-pixels.php:621
+msgid "Axeptio"
+msgstr "Axeptio"
+
+#: admin/helper/class-pmw-admin-helper.php:512
+msgid "Limited"
+msgstr "Обмежено"
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:76
+msgid "Your license key is dseactivated."
+msgstr "Ваш ліцензійний ключ дезактивовано."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:73
+msgid "Your license key is activated."
+msgstr "Ваш ліцензійний ключ активовано."
+
+#: admin/partials/pages/class-pmw-pixels.php:674
+msgid "Axeptio setting"
+msgstr "Налаштування Axeptio"
+
+#: admin/partials/pages/class-pmw-pixels.php:667
+msgid "String identifier of the version of Cookie configuration that should be loaded. If this parameter is omitted, then it's the \"pages\" property in the configuration that gets parsed in case of multiple cookies configurations."
+msgstr "Ідентифікатор версії налаштування Cookie, яке має бути завантажене. Якщо цей параметр опущено, тоді аналізується властивість \"pages\" у конфігурації при наявності декількох налаштувань Cookie."
+
+#: admin/partials/pages/class-pmw-pixels.php:664
+msgid "."
+msgstr "."
+
+#: admin/partials/pages/class-pmw-pixels.php:657
+msgid "Cookies Version"
+msgstr "Версія Cookies"
+
+#: admin/partials/pages/class-pmw-pixels.php:656
+msgid "Cookies Version(optional)"
+msgstr "Версія Cookies (необов'язково)"
+
+#: admin/partials/pages/class-pmw-pixels.php:634
+msgid "Enable Google Consent Mode v2 and provide Project ID (Ex.: 65ebb7949d4cb03e6e037a17)."
+msgstr "Увімкніть Google Consent Mode v2 та надайте Project ID (наприклад: 65ebb7949d4cb03e6e037a17)."
+
+#: admin/partials/pages/class-pmw-pixels.php:632
+#: admin/partials/pages/class-pmw-pixels.php:638
+msgid "Project ID"
+msgstr "Project ID"
+
+#: admin/partials/pages/class-pmw-pixels.php:614
+msgid "Cookies Consents Settings"
+msgstr "Налаштування згоди на Cookies"
+
+#: admin/helper/class-pmw-admin-helper.php:491
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:264
+msgid "Google Consent Mode v2 with Axeptio Integration"
+msgstr "Інтеграція Google Consent Mode v2 з Axeptio"
+
+#: admin/partials/pages/class-pmw-pixels-account.php:103
+msgid "Acquire our Pro Plan, download the pro plugin, and on the same page, you'll have the option to add the license key."
+msgstr "Придбайте наш Pro план, завантажте pro плагін, і на тій самій сторінці ви матимете можливість додати ліцензійний ключ."
+
+#: admin/partials/pages/class-pmw-pixels-account.php:72
+msgid "Unlock Enhanced eCommerce tracking and access advanced features by upgrading from the FREE version to the PRO plan, seamlessly integrated using Google Tag Manager."
+msgstr "Розблокуйте розширене відстеження eCommerce та доступ до додаткових функцій, оновившись з безкоштовної версії до PRO плану, інтегрованого через Google Tag Manager."
+
+#: admin/partials/pages/class-pmw-pixels-account.php:71
+msgid "Upgrade to Pro:"
+msgstr "Оновлення до Pro:"
+
+#: admin/partials/pages/class-pmw-pixels-account.php:64
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:37
+msgid "Boost your tracking capabilities by upgrading to our Pro Plan, starting at just $9."
+msgstr "Покращте можливості відстеження, перейшовши на наш Pro план, починаючи лише з $9."
+
+#: admin/helper/class-pmw-setting-helper.php:287
+msgid "Google Consent Mode V2 - Default Granted Consent Settings"
+msgstr "Google Consent Mode V2 - Налаштування згоди за замовчуванням"
+
+#: admin/helper/class-pmw-setting-helper.php:285
+msgid "Axeptio more setting"
+msgstr "Додаткові налаштування Axeptio"
+
+#: admin/helper/class-pmw-setting-helper.php:277
+msgid "Granted Consent Types (comma separated)"
+msgstr "Типи згоди (через кому)"
+
+#: admin/helper/class-pmw-setting-helper.php:274
+msgid "analytics_storage, ad_storage, ad_user_data, ad_personalization"
+msgstr "analytics_storage, ad_storage, ad_user_data, ad_personalization"
+
+#: admin/helper/class-pmw-setting-helper.php:266
+msgid "Granted Consent - Ex. analytics_storage, ad_storage, ad_user_data, ad_personalization"
+msgstr "Згода на приклад: analytics_storage, ad_storage, ad_user_data, ad_personalization"
+
+#: admin/helper/class-pmw-setting-helper.php:140
+msgid "FREE VS PRO comparison"
+msgstr "Порівняння FREE VS PRO"
+
+#: admin/class-pixel-manager-for-woocommerce-admin.php:111
+#: admin/partials/common/class-pmw-header.php:118
+msgid "Documentation"
+msgstr "Документація"
+
+#: admin/partials/pages/class-pmw-pixels.php:647
+msgid "How do I create a Axeptio Project ID?"
+msgstr "Як створити Project ID для Axeptio?"
+
+#: admin/partials/pages/class-pmw-pixels.php:317
+msgid "Ex. Facebook pixel ID(s): 590022289301578,558158472945205"
+msgstr "Приклад ID пікселя Facebook: 590022289301578,558158472945205"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:145
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:231
+msgid "$40"
+msgstr "$40"
+
+#: admin/helper/class-pmw-admin-helper.php:501
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:302
+msgid "Multiple Facebook Pixel ID(s) Tracking"
+msgstr "Відстеження декількох ID пікселів Facebook"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:39
+msgid "Unlock our best savings offer with our annual plan! Get up to a 50% discount on yearly plans!"
+msgstr "Скористайтеся найвигіднішою пропозицією з нашого річного плану! Отримайте до 50% знижки на річні плани!"
+
+#: admin/partials/common/class-pmw-header.php:175
+msgid "50% OFF"
+msgstr "50% ЗНИЖКА"
+
+#: admin/helper/class-pmw-admin-helper.php:535
+msgid "See are plans!"
+msgstr "Дивіться наші плани!"
+
+#: admin/helper/class-pmw-admin-helper.php:527
+msgid "Your plan "
+msgstr "Ваш план "
+
+#: admin/partials/pages/class-pmw-pixels-account.php:125
+msgid "(Just $9)"
+msgstr "(Лише $9)"
+
+#: admin/partials/pages/class-pmw-pixels-account.php:102
+msgid "To activate the License key:"
+msgstr "Щоб активувати ліцензійний ключ:"
+
+#: admin/partials/pages/class-pmw-pixels-account.php:84
+msgid "Activate PRO Account"
+msgstr "Активувати PRO обліковий запис"
+
+#: admin/partials/pages/class-pmw-pixels.php:573
+msgid "Activate this feature to exclude shipping from the order total variable."
+msgstr "Активуйте цю функцію, щоб виключити доставку із загальної суми замовлення."
+
+#: admin/partials/pages/class-pmw-pixels.php:560
+msgid "Activate this feature to exclude tax from the order total variable."
+msgstr "Активуйте цю функцію, щоб виключити податок із загальної суми замовлення."
+
+#: admin/partials/pages/class-pmw-pixels.php:547
+msgid "Activate this feature to send product SKU information for remarketing and eCommerce tracking."
+msgstr "Активуйте цю функцію для надсилання інформації про SKU продукту для ремаркетингу та відстеження eCommerce."
+
+#: admin/partials/pages/class-pmw-pixels.php:541
+msgid "Send Product SKU instead of ID"
+msgstr "Надсилати SKU продукту замість ID"
+
+#: admin/partials/pages/class-pmw-pixels.php:204
+msgid "Specify the form elements you want to track by entering their IDs or classes. You can track multiple forms by separating their selectors with commas. Ex. .user,#registration,.contact_form"
+msgstr "Вкажіть елементи форми, які ви хочете відстежувати, ввівши їхні ID або класи. Ви можете відстежувати декілька форм, розділяючи їх селектори комами. Наприклад, .user,#registration,.contact_form"
+
+#: admin/partials/pages/class-pmw-pixels.php:201
+msgid ".user,#registration,.contact_form"
+msgstr ".user,#registration,.contact_form"
+
+#: admin/partials/pages/class-pmw-pixels.php:194
+msgid "Enter Form IDs or Class - Ex. .user,#registration,.contact_form"
+msgstr "Введіть ID або клас форми - Наприклад .user,#registration,.contact_form"
+
+#: admin/helper/class-pmw-admin-helper.php:493
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:272
+#: admin/partials/pages/class-pmw-pixels.php:193
+msgid "Form Submission Tracking"
+msgstr "Відстеження надсилання форм"
+
+#: admin/partials/pages/class-pmw-pixels-account.php:67
+msgid "Buy Now"
+msgstr "Купити зараз"
+
+#: admin/partials/pages/class-pmw-pixels-account.php:61
+msgid "Super savings!!"
+msgstr "Супер знижки!!"
+
+#: admin/partials/common/class-pmw-header.php:78
+msgid "Download PRO"
+msgstr "Завантажити PRO"
+
+#: admin/partials/common/class-pmw-header.php:75
+msgid "Action Required - The free plugin version does not include the pro-featured code. Please install the PRO plugin version for access to enhanced features."
+msgstr "Потрібна дія - безкоштовна версія плагіна не включає код з PRO функціями. Будь ласка, встановіть версію PRO для доступу до розширених функцій."
+
+#: admin/partials/common/class-pmw-header.php:60
+msgid "Integrate GA4, Google Ads, Facebook, TikTok, and other pixels, including Facebook Conversion API through the utilization of Google Tag Manager."
+msgstr "Інтегруйте GA4, Google Ads, Facebook, TikTok та інші пікселі, включаючи Facebook Conversion API, через використання Google Tag Manager."
+
+#: admin/helper/class-pmw-setting-helper.php:199
+msgid "Purchases"
+msgstr "Покупки"
+
+#: admin/helper/class-pmw-setting-helper.php:194
+msgid "Checkout Steps"
+msgstr "Кроки оформлення замовлення"
+
+#: admin/helper/class-pmw-setting-helper.php:189
+msgid "Remove from Cart"
+msgstr "Видалити з кошика"
+
+#: admin/helper/class-pmw-setting-helper.php:184
+msgid "View Cart"
+msgstr "Переглянути кошик"
+
+#: admin/helper/class-pmw-setting-helper.php:179
+msgid "Add to Cart"
+msgstr "Додати до кошика"
+
+#: admin/helper/class-pmw-setting-helper.php:174
+msgid "Item List Views"
+msgstr "Перегляд списку товарів"
+
+#: admin/helper/class-pmw-setting-helper.php:169
+msgid "Select Item"
+msgstr "Вибрати товар"
+
+#: admin/helper/class-pmw-setting-helper.php:164
+msgid "Item Views"
+msgstr "Перегляди товарів"
+
+#: admin/helper/class-pmw-setting-helper.php:159
+msgid "Page Views"
+msgstr "Перегляди сторінок"
+
+#: admin/helper/class-pmw-setting-helper.php:154
+msgid "All Pixels"
+msgstr "Усі пікселі"
+
+#: admin/helper/class-pmw-setting-helper.php:150
+msgid "PRO"
+msgstr "PRO"
+
+#. Description of the plugin
+#: pixel-manager-for-woocommerce.php
+msgid "Pixel Tag Manager for WooCommerce is a powerful tool designed to monitor essential eCommerce events seamlessly. The Pixel Tag Manager integrates smoothly with various tracking platforms, including Google Analytics 4 (GA4), Google Ads Conversion Tracking, Enhanced Conversion Tracking and Dynamic Remarketing Tracking, Bing Ads, Facebook Pixel, Snapchat Pixel, Pinterest Pixel, TikTok Pixel, and Twitter Pixel. This integration facilitates efficient data collection, offering valuable insights into customer behavior. By leveraging these insights, you can create targeted audiences for advertising campaigns, ensuring their success."
+msgstr "Pixel Tag Manager для WooCommerce - це потужний інструмент, призначений для безперешкодного моніторингу важливих подій eCommerce. Pixel Tag Manager інтегрується з різними платформами відстеження, включаючи Google Analytics 4 (GA4), Google Ads Conversion Tracking, Enhanced Conversion Tracking і Dynamic Remarketing Tracking, Bing Ads, Facebook Pixel, Snapchat Pixel, Pinterest Pixel, TikTok Pixel і Twitter Pixel. Ця інтеграція сприяє ефективному збору даних, надаючи цінні інсайти в поведінку клієнтів. Використовуючи ці інсайти, ви можете створювати цільові аудиторії для рекламних кампаній, забезпечуючи їх успіх."
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:257
+msgid "Complet eCommerce tracking"
+msgstr "Повне відстеження електронної комерції"
+
+#: admin/helper/class-pmw-admin-helper.php:533
+msgid "To unlock complet eCommerce pixels tracking access and enhanced features with using Google Tag Manager"
+msgstr "Щоб розблокувати повний доступ до відстеження пікселів електронної комерції та розширені функції за допомогою Менеджера тегів Google"
+
+#: admin/partials/pages/class-pmw-pixels.php:139
+msgid "Comparison between free and pro events tracking"
+msgstr "Порівняння безкоштовного та професійного відстеження подій"
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:49
+msgid "First save your "
+msgstr "Спершу збережіть ваш "
+
+#: admin/partials/pages/class-pmw-pixels.php:534
+msgid "Advanced Options"
+msgstr "Розширені параметри"
+
+#: admin/partials/pages/class-pmw-pixels.php:366
+msgid "Other Pixels"
+msgstr "Інші пікселі"
+
+#: admin/partials/pages/class-pmw-pixels.php:357
+msgid "How to find Meta (Facebook) Conversion API token?"
+msgstr "Як знайти токен Conversion API для Meta (Facebook)?"
+
+#: admin/partials/pages/class-pmw-pixels.php:348
+msgid "Conversion API token"
+msgstr "Токен Conversion API"
+
+#: admin/partials/pages/class-pmw-pixels.php:344
+msgid "Send events directly from your web server to Facebook through the Conversion API."
+msgstr "Надсилайте події безпосередньо з вашого веб-сервера на Facebook через Conversion API."
+
+#: admin/partials/pages/class-pmw-pixels.php:342
+msgid "Meta (Facebook) Conversion API token"
+msgstr "Токен Conversion API для Meta (Facebook)"
+
+#: admin/partials/pages/class-pmw-pixels.php:304
+msgid "Facebook"
+msgstr "Facebook"
+
+#: admin/helper/class-pmw-admin-helper.php:499
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:294
+msgid "Facebook Conversion API"
+msgstr "Conversion API для Facebook"
+
+#: admin/partials/pages/class-pmw-pixels.php:379
+msgid "Ex. Tiktok pixel ID: CBEE743C77U5BM7P378G"
+msgstr "Приклад ID пікселя TikTok: CBEE743C77U5BM7P378G"
+
+#: admin/partials/pages/class-pmw-pixels.php:297
+msgid "Pixel settings"
+msgstr "Налаштування пікселя"
+
+#: admin/partials/pages/class-pmw-pixels.php:290
+msgid "Enable Google Ads dynamic remarketing tracking."
+msgstr "Увімкніть відстеження динамічного ремаркетингу Google Ads."
+
+#: admin/partials/pages/class-pmw-pixels.php:284
+msgid "Enable Google Ads dynamic remarketing tracking"
+msgstr "Увімкніть відстеження динамічного ремаркетингу Google Ads"
+
+#: admin/partials/pages/class-pmw-pixels.php:274
+msgid "Enable Google Ads Enhanced Conversions tracking."
+msgstr "Увімкніть відстеження розширених конверсій Google Ads."
+
+#: admin/partials/pages/class-pmw-pixels.php:268
+msgid "Enable Google Ads Enhanced Conversions tracking"
+msgstr "Увімкніть відстеження розширених конверсій Google Ads"
+
+#: admin/partials/pages/class-pmw-pixels.php:256
+msgid "How do I create a Google Ads Conversion?"
+msgstr "Як створити конверсію Google Ads?"
+
+#: admin/partials/pages/class-pmw-pixels.php:250
+msgid "Enable Google Ads Conversion tracking"
+msgstr "Увімкніть відстеження конверсій Google Ads"
+
+#: admin/partials/pages/class-pmw-pixels.php:234
+msgid "Ex. Conversion Label: C3znCNLp84gYEKGh7KAp"
+msgstr "Приклад мітки конверсії: C3znCNLp84gYEKGh7KAp"
+
+#: admin/partials/pages/class-pmw-pixels.php:233
+#: admin/partials/pages/class-pmw-pixels.php:238
+msgid "Conversion Label"
+msgstr "Мітка конверсії"
+
+#: admin/partials/pages/class-pmw-pixels.php:229
+msgid "Conversion ID"
+msgstr "ID конверсії"
+
+#: admin/partials/pages/class-pmw-pixels.php:225
+msgid "Ex. Conversion ID: 11074736289"
+msgstr "Приклад ID конверсії: 11074736289"
+
+#: admin/partials/pages/class-pmw-pixels.php:224
+msgid "Google Ads Conversion ID"
+msgstr "ID конверсії Google Ads"
+
+#: admin/partials/pages/class-pmw-pixels.php:211
+msgid "Google Ads"
+msgstr "Google Ads"
+
+#: admin/partials/pages/class-pmw-pixels.php:184
+msgid "How do I create a Google Analytics 4 Measurement ID?"
+msgstr "Як створити ID вимірювання для Google Analytics 4?"
+
+#: admin/partials/pages/class-pmw-pixels.php:175
+msgid "Measurement ID"
+msgstr "ID вимірювання"
+
+#: admin/partials/pages/class-pmw-pixels.php:171
+msgid "Ex. Measurement ID: G-QCX3G9KSPC"
+msgstr "Приклад ID вимірювання: G-QCX3G9KSPC"
+
+#: admin/partials/pages/class-pmw-pixels.php:170
+msgid "GA4- Measurement ID"
+msgstr "ID вимірювання GA4"
+
+#: admin/partials/pages/class-pmw-pixels.php:159
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: admin/partials/pages/class-pmw-pixels.php:152
+msgid "Google settings"
+msgstr "Налаштування Google"
+
+#: admin/partials/pages/class-pmw-pixels.php:118
+msgid "Connect Account"
+msgstr "Підключити обліковий запис"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:330
+msgid "Priority Support (24*5)"
+msgstr "Пріоритетна підтримка (24*5)"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:310
+msgid "Microsoft Ads Pixel Tracking"
+msgstr "Відстеження пікселя Microsoft Ads"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:306
+msgid "TikTok Ads Pixel Tracking"
+msgstr "Відстеження пікселя TikTok Ads"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:253
+msgid "GTM base tracking"
+msgstr "Базове відстеження GTM"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:246
+msgid "Use on website"
+msgstr "Використовувати на веб-сайті"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:205
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:220
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:235
+msgid "billed annually"
+msgstr "виставляється щорічно"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:199
+msgid "Popular"
+msgstr "Популярний"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:174
+msgid "Select your plan"
+msgstr "Виберіть ваш план"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:164
+msgid "You are fully protected by our 100% No-Risk-Double-Guarantee. If you don’t like over the next 15 days, then we will happily refund 100% of your money. No questions asked."
+msgstr "Ви повністю захищені нашою 100% Гарантією Без Ризику. Якщо вам щось не сподобається протягом наступних 15 днів, ми з радістю повернемо 100% ваших коштів. Без питань."
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:163
+msgid "15 Days 100% No-Risk Money Back Guarantee!"
+msgstr "15-денна гарантія повернення коштів без ризику!"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:159
+msgid "Reach out to us for any questions about pricings and support "
+msgstr "Звертайтеся до нас з будь-якими питаннями щодо цін і підтримки"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:129
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:216
+msgid "$25"
+msgstr "$25"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:113
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:201
+msgid "$9"
+msgstr "$9"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:100
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:150
+msgid "Use on 20 Sites"
+msgstr "Використовувати на 20 сайтах"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:95
+msgid "billed annually ($239 per year)"
+msgstr "виставляється щорічно ($239 на рік)"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:94
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:234
+msgid "$19.9"
+msgstr "$19,9"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:92
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:143
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:228
+msgid "ENTERPRISE PLUS"
+msgstr "ENTERPRISE PLUS"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:78
+msgid "billed annually ($149 per year)"
+msgstr "виставляється щорічно ($149 на рік)"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:77
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:219
+msgid "$12.4"
+msgstr "$12,4"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:69
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:86
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:103
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:121
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:137
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:153
+msgid "See all features…"
+msgstr "Переглянути всі функції…"
+
+#: admin/helper/class-pmw-admin-helper.php:496
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:290
+msgid "Google Ads Dynamic Remarketing Tracking"
+msgstr "Відстеження динамічного ремаркетингу Google Ads"
+
+#: admin/helper/class-pmw-admin-helper.php:495
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:283
+msgid "Google Ads Enhanced Conversion Tracking"
+msgstr "Відстеження розширених конверсій Google Ads"
+
+#: admin/helper/class-pmw-admin-helper.php:494
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:279
+msgid "Google Ads Conversion Tracking"
+msgstr "Відстеження конверсій Google Ads"
+
+#: admin/helper/class-pmw-admin-helper.php:492
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:268
+msgid "Google Analytics 4 Tracking"
+msgstr "Відстеження Google Analytics 4"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:61
+msgid "billed annually ($49 per year)"
+msgstr "виставляється щорічно ($49 на рік)"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:60
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:77
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:94
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:113
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:129
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:145
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:201
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:204
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:216
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:219
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:231
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:234
+msgid "month"
+msgstr "місяць"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:60
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:204
+msgid "$4.1"
+msgstr "$4,1"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:45
+msgid "Monthly"
+msgstr "Щомісячно"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:46
+msgid "Yearly"
+msgstr "Щорічно"
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:259
+msgid "Google Conversion Id Required to Enable Google Ads Dynamic Remarketing Tracking."
+msgstr "Необхідний Google Conversion ID для активації відстеження динамічного ремаркетингу Google Ads."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:257
+msgid "Google Conversion Id and Label Required to Enable Google Ads Enhanced Conversion Tracking."
+msgstr "Необхідні Google Conversion ID та Label для активації відстеження розширених конверсій Google Ads."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:255
+msgid "Google Conversion Id and Label Required to Enable Google Ads Conversion Tracking."
+msgstr "Необхідні Google Conversion ID та Label для активації відстеження конверсій Google Ads."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:240
+msgid "Check your Google Conversion label."
+msgstr "Перевірте вашу мітку Google Conversion."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:238
+msgid "Check your Google Conversion ID."
+msgstr "Перевірте ваш Google Conversion ID."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:236
+msgid "Check your Google Analytics 4 Measurement ID."
+msgstr "Перевірте ваш ID вимірювання Google Analytics 4."
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:93
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:144
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:237
+msgid "20 active  websites"
+msgstr "20 активних сайтів"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:96
+msgid "$1.0/month per website"
+msgstr "$1,0/місяць на один сайт"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:79
+msgid "$2.5/month per website"
+msgstr "$2,5/місяць на один сайт"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:146
+msgid "$2/month per website"
+msgstr "$2/місяць на один сайт"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:62
+msgid "$4.1/month per website"
+msgstr "$4,1/місяць на один сайт"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:130
+msgid "$5/month per website"
+msgstr "$5/місяць на один сайт"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:114
+msgid "$9/month per website"
+msgstr "$9/місяць на один сайт"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:83
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:134
+msgid "Use on 5 Sites"
+msgstr "Використовувати на 5 сайтах"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:75
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:127
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:213
+msgid "ENTERPRISE"
+msgstr "ENTERPRISE"
+
+#: admin/helper/class-pmw-admin-helper.php:506
+msgid "Premium Support"
+msgstr "Преміум підтримка"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:58
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:111
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:197
+msgid "BUSINESS"
+msgstr "БІЗНЕС"
+
+#: admin/helper/class-pmw-admin-helper.php:505
+msgid "TikTok Ads Pixel tracking"
+msgstr "Відстеження пікселя TikTok Ads"
+
+#: admin/helper/class-pmw-admin-helper.php:504
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:326
+msgid "Twitter Ads Pixel tracking"
+msgstr "Відстеження пікселя Twitter Ads"
+
+#: admin/helper/class-pmw-admin-helper.php:503
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:322
+msgid "Snapchat Pixel Tracking"
+msgstr "Відстеження пікселя Snapchat"
+
+#: admin/helper/class-pmw-admin-helper.php:502
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:318
+msgid "Pinterest Pixel Tracking"
+msgstr "Відстеження пікселя Pinterest"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:64
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:81
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:98
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:116
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:132
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:148
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:193
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:208
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:209
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:223
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:224
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:238
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:239
+msgid "Get Started"
+msgstr "Почати"
+
+#: admin/helper/class-pmw-admin-helper.php:500
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:298
+msgid "Facebook Pixel Tracking"
+msgstr "Відстеження пікселя Facebook"
+
+#: admin/helper/class-pmw-admin-helper.php:498
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:314
+msgid "Remarketing and Dynamic remarketing tracking for Microsoft Ads"
+msgstr "Відстеження ремаркетингу та динамічного ремаркетингу для Microsoft Ads"
+
+#: admin/helper/class-pmw-admin-helper.php:497
+msgid "Microsoft Ads Pixel (Bing Ads Pixel)"
+msgstr "Піксель Microsoft Ads (піксель Bing Ads)"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:66
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:118
+msgid "Use on 1 Site"
+msgstr "Використовувати на 1 сайті"
+
+#: admin/helper/class-pmw-setting-helper.php:147
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:183
+msgid "FREE"
+msgstr "БЕЗКОШТОВНО"
+
+#: admin/partials/common/class-pmw-header.php:131
+msgid "Free Vs PRO"
+msgstr "Безкоштовно проти PRO"
+
+#: admin/partials/common/class-pmw-header.php:84
+msgid "add your review! "
+msgstr "додайте свій відгук!"
+
+#: admin/class-pixel-manager-for-woocommerce-admin.php:115
+msgid "Free Vs Pro"
+msgstr "Безкоштовно проти Pro"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:76
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:128
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:222
+msgid "5 active  websites"
+msgstr "5 активних сайтів"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:59
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:112
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:192
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:207
+msgid "1 active website"
+msgstr "1 активний сайт"
+
+#: admin/helper/class-pmw-admin-helper.php:532
+msgid "You're using the FREE plan, no license is needed if use only free features. Enjoy! :)"
+msgstr "Ви використовуєте безкоштовний план, ліцензія не потрібна, якщо використовуються тільки безкоштовні функції. Насолоджуйтесь! :)"
+
+#: admin/partials/pages/class-pmw-pixels-account.php:121
+msgid "Plan"
+msgstr "План"
+
+#: admin/partials/pages/class-pmw-pixels-account.php:114
+msgid "Your plan details"
+msgstr "Деталі вашого плану"
+
+#: admin/partials/pages/class-pmw-pixels-account.php:123
+msgid "License Key"
+msgstr "Ліцензійний ключ"
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:271
+msgid "Enter your license key."
+msgstr "Введіть ваш ліцензійний ключ."
+
+#: admin/class-pixel-manager-for-woocommerce-admin.php:114
+#: admin/helper/class-pmw-admin-helper.php:534
+#: admin/partials/common/class-pmw-header.php:63
+#: admin/partials/pages/class-pmw-pixels-account.php:73
+#: admin/partials/pages/class-pmw-pixels-account.php:125
+msgid "Upgrade to Pro"
+msgstr "Оновлення до Pro"
+
+#: admin/class-pixel-manager-for-woocommerce-admin.php:110
+#: admin/partials/common/class-pmw-header.php:113
+msgid "Account"
+msgstr "Обліковий запис"
+
+#: admin/class-pixel-manager-for-woocommerce-admin.php:109
+msgid "Pixel Settings"
+msgstr "Налаштування пікселя"
+
+#: admin/class-pixel-manager-for-woocommerce-admin.php:108
+msgid "Pixel Tag Manager"
+msgstr "Pixel Tag Manager"
+
+#: admin/partials/pages/class-pmw-pixels.php:567
+msgid "Exclude shipping from order revenue"
+msgstr "Виключити доставку з прибутку замовлення"
+
+#: admin/partials/pages/class-pmw-pixels.php:554
+msgid "Exclude tax from order revenue"
+msgstr "Виключити податок з прибутку замовлення"
+
+#: admin/partials/pages/class-pmw-pixels.php:392
+msgid "How do I create a Tiktok pixel id?"
+msgstr "Як створити ID пікселя TikTok?"
+
+#: admin/partials/pages/class-pmw-pixels.php:383
+msgid "Tiktok Pixel ID"
+msgstr "ID пікселя TikTok"
+
+#: admin/partials/pages/class-pmw-pixels.php:377
+msgid "Tiktok pixel ID"
+msgstr "ID пікселя TikTok"
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:252
+msgid "Check your Tiktok pixel ID."
+msgstr "Перевірте ваш ID пікселя TikTok."
+
+#: admin/partials/pages/class-pmw-pixels.php:500
+msgid "How do I create a Twitter pixel id?"
+msgstr "Як створити ID пікселя Twitter?"
+
+#: admin/partials/pages/class-pmw-pixels.php:491
+msgid "Twitter Pixel ID"
+msgstr "ID пікселя Twitter"
+
+#: admin/partials/pages/class-pmw-pixels.php:487
+msgid "Ex. Twitter pixel ID: o9e1c"
+msgstr "Приклад ID пікселя Twitter: o9e1c"
+
+#: admin/partials/pages/class-pmw-pixels.php:485
+msgid "Twitter pixel ID"
+msgstr "ID пікселя Twitter"
+
+#: admin/partials/pages/class-pmw-pixels.php:419
+msgid "How do I create a Bing Ads pixel id (UET tag id)?"
+msgstr "Як створити ID пікселя Bing Ads (UET tag id)?"
+
+#: admin/partials/pages/class-pmw-pixels.php:410
+msgid "Bing Ads Pixel ID (UET tag ID)"
+msgstr "ID пікселя Bing Ads (UET tag ID)"
+
+#: admin/partials/pages/class-pmw-pixels.php:406
+msgid "Ex. Microsoft Ads - The Bing Ads pixel ID (UET tag ID): 136018753"
+msgstr "Приклад Microsoft Ads - ID пікселя Bing Ads (UET tag ID): 136018753"
+
+#: admin/partials/pages/class-pmw-pixels.php:404
+msgid "Bing Ads pixel ID"
+msgstr "ID пікселя Bing Ads"
+
+#: admin/partials/pages/class-pmw-pixels.php:473
+msgid "How do I create a Snapchat pixel id?"
+msgstr "Як створити ID пікселя Snapchat?"
+
+#: admin/partials/pages/class-pmw-pixels.php:446
+msgid "How do I create a Pinterest pixel id?"
+msgstr "Як створити ID пікселя Pinterest?"
+
+#: admin/partials/pages/class-pmw-pixels.php:330
+msgid "How do I create a Facebook pixel id?"
+msgstr "Як створити ID пікселя Facebook?"
+
+#: admin/partials/pages/class-pmw-pixels.php:321
+msgid "Facebook Pixel ID(s)"
+msgstr "ID пікселя Facebook"
+
+#: admin/partials/pages/class-pmw-pixels.php:129
+msgid "Enter Your Email"
+msgstr "Введіть вашу електронну адресу"
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:250
+msgid "Check your Twitter pixel ID."
+msgstr "Перевірте ваш ID пікселя Twitter."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:248
+msgid "Check your Bing pixel ID."
+msgstr "Перевірте ваш ID пікселя Bing."
+
+#. Plugin URI of the plugin
+#: pixel-manager-for-woocommerce.php
+msgid "https://wordpress.org/plugins/pixel-manager-for-woocommerce/"
+msgstr "https://wordpress.org/plugins/pixel-manager-for-woocommerce/"
+
+#: admin/partials/pages/class-pmw-pixels.php:762
+msgid "Title, slug, version, and is active"
+msgstr "Заголовок, slug, версія та активність"
+
+#: admin/partials/pages/class-pmw-pixels.php:761
+msgid "Plugins & Themes"
+msgstr "Плагіни та Теми"
+
+#: admin/partials/pages/class-pmw-pixels.php:755
+msgid "Active, deactivated, or uninstalled, settings"
+msgstr "Активний, деактивований або видалений, налаштування"
+
+#: admin/partials/pages/class-pmw-pixels.php:754
+msgid "Current Plugin Status"
+msgstr "Поточний статус плагіна"
+
+#: admin/partials/pages/class-pmw-pixels.php:748
+msgid "Updates, announcements, marketing, no spam"
+msgstr "Оновлення, оголошення, маркетинг, без спаму"
+
+#: admin/partials/pages/class-pmw-pixels.php:747
+msgid "Admin Notice"
+msgstr "Адміністративне повідомлення"
+
+#: admin/partials/pages/class-pmw-pixels.php:741
+msgid "Site URL, country, currency, WP version, PHP info"
+msgstr "URL сайту, країна, валюта, версія WP, інформація про PHP"
+
+#: admin/partials/pages/class-pmw-pixels.php:740
+msgid "Your Site Overview"
+msgstr "Огляд вашого сайту"
+
+#: admin/partials/pages/class-pmw-pixels.php:734
+msgid "Name and email address"
+msgstr "Ім'я та електронна адреса"
+
+#: admin/partials/pages/class-pmw-pixels.php:733
+msgid "Your Profile Overview"
+msgstr "Огляд вашого профілю"
+
+#: admin/partials/pages/class-pmw-pixels.php:727
+msgid "What Permissions are being Granted?"
+msgstr "Які дозволи надаються?"
+
+#: admin/partials/pages/class-pmw-pixels.php:722
+msgid "Allow & Continue"
+msgstr "Дозволити та продовжити"
+
+#: admin/partials/pages/class-pmw-pixels.php:720
+msgid "Privacy & Terms"
+msgstr "Конфіденційність та умови"
+
+#: admin/partials/pages/class-pmw-pixels.php:719
+msgid "Never miss an important update - opt in to our security and feature updates notifications, and non-sensitive diagnostic tracking with"
+msgstr "Ніколи не пропустіть важливе оновлення - увімкніть оповіщення про оновлення безпеки та функціоналу і несекретне діагностичне відстеження з"
+
+#: admin/partials/pages/class-pmw-pixels.php:460
+msgid "Ex. Snapchat pixel ID: 12e1ec0a-91aa-4267-b1a3-182c355710e7"
+msgstr "Приклад ID пікселя Snapchat: 12e1ec0a-91aa-4267-b1a3-182c355710e7"
+
+#: admin/partials/pages/class-pmw-pixels.php:458
+#: admin/partials/pages/class-pmw-pixels.php:464
+msgid "Snapchat Pixel ID"
+msgstr "ID пікселя Snapchat"
+
+#: admin/partials/pages/class-pmw-pixels.php:433
+msgid "Ex. Pinterest pixel ID: 2613257208392"
+msgstr "Приклад ID пікселя Pinterest: 2613257208392"
+
+#: admin/partials/pages/class-pmw-pixels.php:431
+#: admin/partials/pages/class-pmw-pixels.php:437
+msgid "Pinterest Pixel ID"
+msgstr "ID пікселя Pinterest"
+
+#: admin/helper/class-pmw-admin-helper.php:545
+#: admin/partials/pages/class-pmw-pixels.php:185
+#: admin/partials/pages/class-pmw-pixels.php:257
+#: admin/partials/pages/class-pmw-pixels.php:331
+#: admin/partials/pages/class-pmw-pixels.php:358
+#: admin/partials/pages/class-pmw-pixels.php:393
+#: admin/partials/pages/class-pmw-pixels.php:420
+#: admin/partials/pages/class-pmw-pixels.php:447
+#: admin/partials/pages/class-pmw-pixels.php:474
+#: admin/partials/pages/class-pmw-pixels.php:501
+#: admin/partials/pages/class-pmw-pixels.php:648
+msgid "Installation Manual"
+msgstr "Інструкція з встановлення"
+
+#: admin/partials/pages/class-pmw-pixels.php:315
+msgid "Facebook pixel ID(s)"
+msgstr "ID пікселя Facebook"
+
+#: admin/partials/pages/class-pmw-pixels.php:132
+msgid "Enter your email."
+msgstr "Введіть вашу електронну адресу."
+
+#: admin/partials/pages/class-pmw-pixels.php:125
+msgid "Email ID"
+msgstr "ID електронної адреси"
+
+#: admin/helper/class-pmw-admin-helper.php:546
+msgid "( Need help? Email support@growcommerce.io )"
+msgstr "( Потрібна допомога? Напишіть на support@growcommerce.io )"
+
+#: admin/partials/common/class-pmw-header.php:108
+msgid "Pixels"
+msgstr "Пікселі"
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:246
+msgid "Check your Snapchat pixel ID."
+msgstr "Перевірте ваш ID пікселя Snapchat."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:244
+msgid "Check your Pinterest pixel ID."
+msgstr "Перевірте ваш ID пікселя Pinterest."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:242
+msgid "Check your Facebook pixel ID."
+msgstr "Перевірте ваш ID пікселя Facebook."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:234
+msgid "Check your email ID."
+msgstr "Перевірте ваш ID електронної адреси."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:170
+msgid "Your pixel settings saved."
+msgstr "Ваші налаштування пікселя збережені."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:88
+#: admin/helper/ajax/class-pmw-ajax-helper.php:174
+#: admin/helper/ajax/class-pmw-ajax-helper.php:200
+#: admin/helper/class-pmw-admin-helper.php:381
+msgid "Your admin nonce is not valid."
+msgstr "Ваш адміністративний nonce недійсний."
+
+#: admin/class-pixel-manager-for-woocommerce-admin.php:112
+#: admin/partials/common/class-pmw-header.php:123
+msgid "Support"
+msgstr "Підтримка"
+
+#. Author URI of the plugin
+#: pixel-manager-for-woocommerce.php
+msgid "https://growcommerce.io/"
+msgstr "https://growcommerce.io/"
+
+#. Author of the plugin
+#: pixel-manager-for-woocommerce.php
+msgid "GrowCommerce"
+msgstr "GrowCommerce"
+
+#. Plugin Name of the plugin
+#: pixel-manager-for-woocommerce.php
+msgid "Pixel Tag Manager for WooCommerce"
+msgstr "Pixel Tag Manager для WooCommerce"

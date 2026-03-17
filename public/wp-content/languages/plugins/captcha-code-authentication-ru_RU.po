@@ -1,0 +1,132 @@
+# Translation of Plugins - Captcha Code - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Captcha Code - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-12-22 20:13:39+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.0-alpha.11\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Captcha Code - Stable (latest release)\n"
+
+#: general_options.php:7
+msgid "CAPTCHA"
+msgstr "Код безопасности"
+
+#: general_options.php:13
+msgid "Options saved."
+msgstr "Параметры сохранены"
+
+#: general_options.php:64
+msgid "Select Captcha letters type"
+msgstr "Выберите тип букв"
+
+#: general_options.php:67
+msgid "Capital letters only"
+msgstr "Только заглавные буквы"
+
+#: general_options.php:68
+msgid "Small letters only"
+msgstr "Только маленькие буквы"
+
+#: general_options.php:69
+msgid "Capital & Small letters"
+msgstr "Заглавные и маленькие буквы"
+
+#: general_options.php:74
+msgid "Select a Captcha type"
+msgstr "Выберите тип кода"
+
+#: general_options.php:77
+msgid "Alphanumeric"
+msgstr "Буквы и числа"
+
+#: general_options.php:78
+msgid "Alphabets only"
+msgstr "Только буквы"
+
+#: general_options.php:79
+msgid "Numbers only"
+msgstr "Только числа"
+
+#: general_options.php:84
+msgid "Total number of Captcha Characters"
+msgstr "Общее количество символов"
+
+#: general_options.php:98
+msgid "Captcha display Options"
+msgstr "Опции просмотра кода"
+
+#: general_options.php:101
+msgid "Enable Captcha for Login form"
+msgstr "Код подтверждения в форме: Вход пользователя"
+
+#: general_options.php:104 general_options.php:113 general_options.php:122
+#: general_options.php:131 general_options.php:140
+msgid "Yes"
+msgstr "Да"
+
+#: general_options.php:105 general_options.php:114 general_options.php:123
+#: general_options.php:132 general_options.php:141
+msgid "No"
+msgstr "Нет"
+
+#: general_options.php:110
+msgid "Enable Captcha for Register form"
+msgstr "Код подтверждения в форме: Регистрация"
+
+#: general_options.php:119
+msgid "Enable Captcha for Lost Password form"
+msgstr "Код подтверждения в форме: Забыли Пароль"
+
+#: general_options.php:128
+msgid "Enable Captcha for Comments form"
+msgstr "Код подтверждения для комментариев"
+
+#: general_options.php:137
+msgid "Hide Captcha for logged in users"
+msgstr "Скрыть код подтверждения для авторизированных пользователей"
+
+#: wpCaptcha.php:81 wpCaptcha.php:149 wpCaptcha.php:168 wpCaptcha.php:227
+#: wpCaptcha.php:282
+msgid "Captcha"
+msgstr "Код безопасности"
+
+#: wpCaptcha.php:91 wpCaptcha.php:152 wpCaptcha.php:171 wpCaptcha.php:230
+#: wpCaptcha.php:285
+msgid "Type the text displayed above"
+msgstr "Введите символы отображаемые выше"
+
+#: wpCaptcha.php:104
+msgid "Captcha confirmation error!"
+msgstr "Ошибка в коде подтверждения!"
+
+#: wpCaptcha.php:115
+msgid "Incorrect captcha confirmation!"
+msgstr "Неправильный код подтверждения!"
+
+#: wpCaptcha.php:204
+msgid "CAPTCHA cannot be empty."
+msgstr "Окно защитного кода не может быть пустым."
+
+#: wpCaptcha.php:208 wpCaptcha.php:303
+msgid "Error: Incorrect CAPTCHA. Press your browser's back button and try again."
+msgstr "Ошибка: защитный код введен неверно."
+
+#: wpCaptcha.php:242 wpCaptcha.php:249 wpCaptcha.php:258 wpCaptcha.php:265
+msgid "ERROR"
+msgstr "Ошибка"
+
+#: wpCaptcha.php:242 wpCaptcha.php:258 wpCaptcha.php:296
+msgid "Please complete the CAPTCHA."
+msgstr "Пожалуйста введите код безопасности."
+
+#: wpCaptcha.php:249 wpCaptcha.php:265
+msgid "That CAPTCHA was incorrect."
+msgstr "Код безопасности является неверным."
+
+#. Plugin Name of the plugin
+msgid "Captcha Code"
+msgstr "Капча"

@@ -1,0 +1,1627 @@
+# Translation of Plugins - Limit Login Attempts Reloaded - Stable (latest release) in Ukrainian
+# This file is distributed under the same license as the Plugins - Limit Login Attempts Reloaded - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-02-06 10:07:29+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: uk_UA\n"
+"Project-Id-Version: Plugins - Limit Login Attempts Reloaded - Stable (latest release)\n"
+
+#: views/options-page.php:116
+msgid "Account Login"
+msgstr "Вхід до облікового запису"
+
+#: resources/continent.php:5
+msgid "Africa"
+msgstr "Африка"
+
+#: views/app-widgets/login-attempts.php:52
+msgid "Role"
+msgstr "Роль"
+
+#: resources/continent.php:3
+msgid "Asia"
+msgstr "Азія"
+
+#: resources/continent.php:9
+msgid "South America"
+msgstr "Південна Америка"
+
+#: core/Ajax.php:576
+msgid "City: "
+msgstr "Місто: "
+
+#: core/Ajax.php:558
+msgid "Country: "
+msgstr "Країна: "
+
+#: views/app-widgets/login-attempts.php:28
+msgid " View more"
+msgstr " Переглянути більше"
+
+#: resources/continent.php:6
+msgid "Europe"
+msgstr "Європа"
+
+#: resources/continent.php:7
+msgid "North America"
+msgstr "Північна Америка"
+
+#: resources/continent.php:8
+msgid "Oceania"
+msgstr "Океанія"
+
+#: core/Ajax.php:564
+msgid "State/Province: "
+msgstr "Штат/Провінція: "
+
+#: resources/countries.php:253
+msgid "South Sudan"
+msgstr "Південний Судан"
+
+#: resources/countries.php:252
+msgid "Bonaire, Sint Eustatius, and Saba"
+msgstr "Бонайре, Сент-Естатіус і Саба"
+
+#: resources/countries.php:241
+msgid "Puerto Rico"
+msgstr "Пуерто-Рико"
+
+#: resources/countries.php:24
+msgid "Qatar"
+msgstr "Катар"
+
+#: resources/countries.php:66
+msgid "Afghanistan"
+msgstr "Афганістан"
+
+#: resources/countries.php:61
+msgid "Réunion"
+msgstr "Реюньйон"
+
+#: resources/countries.php:49
+msgid "Albania"
+msgstr "Албанія"
+
+#: resources/countries.php:147
+msgid "Algeria"
+msgstr "Алжир"
+
+#: resources/countries.php:244
+msgid "American Samoa"
+msgstr "Американське Самоа"
+
+#: resources/countries.php:162
+msgid "Andorra"
+msgstr "Андорра"
+
+#: resources/countries.php:51
+msgid "Romania"
+msgstr "Румунія"
+
+#: resources/countries.php:177
+msgid "Angola"
+msgstr "Ангола"
+
+#: resources/countries.php:103
+msgid "Russia"
+msgstr "Росія"
+
+#: resources/countries.php:4
+msgid "Rwanda"
+msgstr "Руанда"
+
+#: resources/countries.php:199
+msgid "Anguilla"
+msgstr "Ангілья"
+
+#: resources/countries.php:211
+msgid "Saint Barthélemy"
+msgstr "Святий Варфоломій"
+
+#: resources/continent.php:4 resources/countries.php:249
+msgid "Antarctica"
+msgstr "Антарктида"
+
+#: resources/countries.php:179
+msgid "Saint Helena"
+msgstr "Святої Єлени, о-в"
+
+#: resources/countries.php:203
+msgid "Antigua and Barbuda"
+msgstr "Антигуа і Барбуда"
+
+#: resources/countries.php:204
+msgid "Saint Lucia"
+msgstr "Сент-Люсія"
+
+#: resources/countries.php:226
+msgid "Argentina"
+msgstr "Аргентина"
+
+#: resources/countries.php:186
+msgid "Saint Pierre and Miquelon"
+msgstr "Сен-П'єр і Мікелон"
+
+#: resources/countries.php:13
+msgid "Armenia"
+msgstr "Вірменія"
+
+#: resources/countries.php:208
+msgid "Saint Vincent and the Grenadines"
+msgstr "Сент-Вінсент і Гренадіни"
+
+#: resources/countries.php:237
+msgid "Samoa"
+msgstr "Самоа"
+
+#: resources/countries.php:206
+msgid "Aruba"
+msgstr "Аруба"
+
+#: resources/countries.php:171
+msgid "San Marino"
+msgstr "Сан-Маріно"
+
+#: resources/countries.php:8
+msgid "Saudi Arabia"
+msgstr "Саудівська Аравія"
+
+#: resources/countries.php:135
+msgid "São Tomé and Príncipe"
+msgstr "Сан-Томе і Прінсіпі"
+
+#: resources/countries.php:120
+msgid "Senegal"
+msgstr "Сенегал"
+
+#: resources/countries.php:248
+msgid "Serbia"
+msgstr "Сербія"
+
+#: resources/countries.php:19
+msgid "Seychelles"
+msgstr "Сейшельські острови"
+
+#: resources/countries.php:105
+msgid "Australia"
+msgstr "Австралія"
+
+#: resources/countries.php:134
+msgid "Sierra Leone"
+msgstr "Сьєрра-Леоне"
+
+#: resources/countries.php:155
+msgid "Austria"
+msgstr "Австрія"
+
+#: resources/countries.php:100
+msgid "Singapore"
+msgstr "Сінгапур"
+
+#: resources/countries.php:37
+msgid "Azerbaijan"
+msgstr "Азербайджан"
+
+#: resources/countries.php:167
+msgid "Slovakia"
+msgstr "Словаччина"
+
+#: resources/countries.php:197
+msgid "Bahamas"
+msgstr "Багамські острови"
+
+#: resources/countries.php:173
+msgid "Slovenia"
+msgstr "Словенія"
+
+#: resources/countries.php:25
+msgid "Bahrain"
+msgstr "Бахрейн"
+
+#: resources/countries.php:110
+msgid "Solomon Islands"
+msgstr "Соломонові острови"
+
+#: resources/countries.php:68
+msgid "Bangladesh"
+msgstr "Бангладеш"
+
+#: resources/countries.php:181
+msgid "Barbados"
+msgstr "Барбадос"
+
+#: resources/countries.php:42
+msgid "Belarus"
+msgstr "Білорусь"
+
+#: resources/countries.php:5
+msgid "Somalia"
+msgstr "Сомалі"
+
+#: resources/countries.php:156
+msgid "Belgium"
+msgstr "Бельгія"
+
+#: resources/countries.php:215
+msgid "Belize"
+msgstr "Беліз"
+
+#: resources/countries.php:132
+msgid "Benin"
+msgstr "Бенин"
+
+#: resources/countries.php:198
+msgid "Bermuda"
+msgstr "Бермудські Острови"
+
+#: resources/countries.php:62
+msgid "South Africa"
+msgstr "Південна Африка"
+
+#: resources/countries.php:192
+msgid "South Georgia and the South Sandwich Islands"
+msgstr "Південна Джорджія та Південні Сандвічеві острови"
+
+#: resources/countries.php:72
+msgid "Bhutan"
+msgstr "Бутан"
+
+#: resources/countries.php:97
+msgid "South Korea"
+msgstr "Південна Корея"
+
+#: resources/countries.php:144
+msgid "Spain"
+msgstr "Іспанія"
+
+#: resources/countries.php:71
+msgid "Sri Lanka"
+msgstr "Шрі Ланка"
+
+#: resources/countries.php:228
+msgid "Bolivia"
+msgstr "Болівія"
+
+#: resources/countries.php:176
+msgid "Bosnia and Herzegovina"
+msgstr "Боснія і Герцеговина"
+
+#: resources/countries.php:58
+msgid "Botswana"
+msgstr "Ботсвана"
+
+#: resources/countries.php:180
+msgid "Bouvet Island"
+msgstr "Острів Буве́"
+
+#: resources/countries.php:32
+msgid "Sudan"
+msgstr "Судан"
+
+#: resources/countries.php:190
+msgid "Brazil"
+msgstr "Бразилія"
+
+#: resources/countries.php:185
+msgid "Suriname"
+msgstr "Сурінам"
+
+#: resources/countries.php:75
+msgid "British Indian Ocean Territory"
+msgstr "Британська територія в Індійському океані"
+
+#: resources/countries.php:39
+msgid "Svalbard and Jan Mayen"
+msgstr "Шпіцберген і Ян-Маєн"
+
+#: resources/countries.php:153
+msgid "Sweden"
+msgstr "Швеція"
+
+#: resources/countries.php:207
+msgid "British Virgin Islands"
+msgstr "Британські Віргінські острови"
+
+#: resources/countries.php:152
+msgid "Switzerland"
+msgstr "Швейцарія"
+
+#: resources/countries.php:12
+msgid "Syria"
+msgstr "Сирія"
+
+#: resources/countries.php:94
+msgid "Brunei"
+msgstr "Бруней"
+
+#: resources/countries.php:89
+msgid "Taiwan"
+msgstr "Тайвань"
+
+#: resources/countries.php:48
+msgid "Bulgaria"
+msgstr "Болгарія"
+
+#: resources/countries.php:70
+msgid "Tajikistan"
+msgstr "Таджикистан"
+
+#: resources/countries.php:11
+msgid "Tanzania"
+msgstr "Танзанія"
+
+#: resources/countries.php:128
+msgid "Burkina Faso"
+msgstr "Буркіна-Фасо"
+
+#: resources/countries.php:86
+msgid "Thailand"
+msgstr "Таїланд"
+
+#: resources/countries.php:34
+msgid "Burundi"
+msgstr "Бурунді"
+
+#: resources/countries.php:129
+msgid "Togo"
+msgstr "Того"
+
+#: resources/countries.php:234
+msgid "Tokelau"
+msgstr "Токелау"
+
+#: resources/countries.php:182
+msgid "Cabo Verde"
+msgstr "Кабо-Верде"
+
+#: resources/countries.php:235
+msgid "Tonga"
+msgstr "Тонга"
+
+#: resources/countries.php:96
+msgid "Cambodia"
+msgstr "Камбоджа"
+
+#: resources/countries.php:200
+msgid "Trinidad and Tobago"
+msgstr "Тринідад і Тобаго"
+
+#: resources/countries.php:143
+msgid "Tunisia"
+msgstr "Туніс"
+
+#: resources/countries.php:119
+msgid "Cameroon"
+msgstr "Камерун"
+
+#: resources/countries.php:28
+msgid "Turkey"
+msgstr "Туреччина"
+
+#: resources/countries.php:69
+msgid "Turkmenistan"
+msgstr "Туркменістан"
+
+#: resources/countries.php:245
+msgid "Canada"
+msgstr "Канада"
+
+#: resources/countries.php:205
+msgid "Turks and Caicos Islands"
+msgstr "Теркс і Кайкос острова"
+
+#: resources/countries.php:111
+msgid "Tuvalu"
+msgstr "Тувалу"
+
+#: resources/countries.php:242
+msgid "U.S. Virgin Islands"
+msgstr "Американські Віргінські Острови"
+
+#: resources/countries.php:17
+msgid "Uganda"
+msgstr "Уганда"
+
+#: resources/countries.php:214
+msgid "Cayman Islands"
+msgstr "Кайманові острови"
+
+#: resources/countries.php:45
+msgid "Ukraine"
+msgstr "Україна"
+
+#: resources/countries.php:18
+msgid "Central African Republic"
+msgstr "Центральноафриканська Республіка"
+
+#: resources/countries.php:26
+msgid "United Arab Emirates"
+msgstr "Обʼєднані Арабські Емірати"
+
+#: resources/countries.php:151
+msgid "United Kingdom"
+msgstr "Велика Британія"
+
+#: resources/countries.php:139
+msgid "Chad"
+msgstr "Чад"
+
+#: resources/countries.php:246
+msgid "United States"
+msgstr "Сполучені Штати"
+
+#: resources/countries.php:227
+msgid "Chile"
+msgstr "Чилі"
+
+#: resources/continent.php:11 resources/countries.php:3
+msgid "Unknown"
+msgstr "Невідомо"
+
+#: resources/countries.php:92
+msgid "China"
+msgstr "Китай"
+
+#: resources/countries.php:106
+msgid "Christmas Island"
+msgstr "Острів Різдва"
+
+#: resources/countries.php:223
+msgid "Colombia"
+msgstr "Колумбія"
+
+#: resources/countries.php:55
+msgid "Comoros"
+msgstr "Коморські острови"
+
+#: resources/countries.php:189
+msgid "Uruguay"
+msgstr "Уругвай"
+
+#: resources/countries.php:78
+msgid "Uzbekistan"
+msgstr "Узбекистан"
+
+#: resources/countries.php:113
+msgid "Vanuatu"
+msgstr "Вануату"
+
+#: resources/countries.php:170
+msgid "Vatican City"
+msgstr "Ватикан"
+
+#: resources/countries.php:221
+msgid "Venezuela"
+msgstr "Венесуела"
+
+#: resources/countries.php:85
+msgid "Vietnam"
+msgstr "В'єтнам"
+
+#: resources/countries.php:101
+msgid "Cook Islands"
+msgstr "Острови Кука"
+
+#: resources/countries.php:236
+msgid "Wallis and Futuna"
+msgstr "Уолліс та Футуна"
+
+#: resources/countries.php:220
+msgid "Costa Rica"
+msgstr "Коста-Ріка"
+
+#: resources/countries.php:142
+msgid "Western Sahara"
+msgstr "Західна Сахара"
+
+#: resources/countries.php:6
+msgid "Yemen"
+msgstr "Ємен"
+
+#: resources/countries.php:175
+msgid "Croatia"
+msgstr "Хорватія"
+
+#: resources/countries.php:54
+msgid "Zambia"
+msgstr "Замбія"
+
+#: resources/countries.php:195
+msgid "Cuba"
+msgstr "Куба"
+
+#: resources/countries.php:53
+msgid "Zimbabwe"
+msgstr "Зімбабве"
+
+#: resources/countries.php:251
+msgid "Curaçao"
+msgstr "Кюрасао"
+
+#: resources/countries.php:10
+msgid "Cyprus"
+msgstr "Кіпр"
+
+#: resources/countries.php:149
+msgid "Denmark"
+msgstr "Данія"
+
+#: resources/countries.php:16
+msgid "Djibouti"
+msgstr "Джибуті"
+
+#: resources/countries.php:202
+msgid "Dominica"
+msgstr "Домініка"
+
+#: resources/countries.php:194
+msgid "Dominican Republic"
+msgstr "Домініканська Республіка"
+
+#: resources/countries.php:102
+msgid "East Timor"
+msgstr "Східний Тимор"
+
+#: resources/countries.php:222
+msgid "Ecuador"
+msgstr "Еквадор"
+
+#: resources/countries.php:31
+msgid "Egypt"
+msgstr "Єгипет"
+
+#: resources/countries.php:216
+msgid "El Salvador"
+msgstr "Сальвадор"
+
+#: resources/countries.php:126
+msgid "Equatorial Guinea"
+msgstr "Екваторіальна Гвінея"
+
+#: resources/countries.php:30
+msgid "Eritrea"
+msgstr "Еритрея"
+
+#: resources/countries.php:35
+msgid "Estonia"
+msgstr "Естонія"
+
+#: resources/countries.php:60
+msgid "Eswatini"
+msgstr "Есватіні"
+
+#: resources/countries.php:29
+msgid "Ethiopia"
+msgstr "Ефіопія"
+
+#: resources/countries.php:191
+msgid "Falkland Islands"
+msgstr "Фолклендські острови"
+
+#: resources/countries.php:148
+msgid "Faroe Islands"
+msgstr "Фарерські острови"
+
+#: resources/countries.php:108
+msgid "Federated States of Micronesia"
+msgstr "Федеративні Штати Мікронезії"
+
+#: resources/countries.php:117
+msgid "Fiji"
+msgstr "Фіджі"
+
+#: resources/countries.php:43
+msgid "Finland"
+msgstr "Фінляндія"
+
+#: resources/countries.php:161
+msgid "France"
+msgstr "Франція"
+
+#: resources/countries.php:184
+msgid "French Guiana"
+msgstr "Французька Гвіана"
+
+#: resources/countries.php:231
+msgid "French Polynesia"
+msgstr "Французька Полінезія"
+
+#: resources/countries.php:81
+msgid "French Southern Territories"
+msgstr "Французькі Південні Території"
+
+#: resources/countries.php:133
+msgid "Gabon"
+msgstr "Габон"
+
+#: resources/countries.php:137
+msgid "Gambia"
+msgstr "Гамбія"
+
+#: resources/countries.php:40
+msgid "Georgia"
+msgstr "Georgia"
+
+#: resources/countries.php:157
+msgid "Germany"
+msgstr "Німеччина"
+
+#: resources/countries.php:125
+msgid "Ghana"
+msgstr "Гана"
+
+#: resources/countries.php:136
+msgid "Gibraltar"
+msgstr "Гібралтар"
+
+#: resources/countries.php:33
+msgid "Greece"
+msgstr "Греція"
+
+#: resources/countries.php:187
+msgid "Greenland"
+msgstr "Гренландія"
+
+#: resources/countries.php:213
+msgid "Grenada"
+msgstr "Гренада"
+
+#: resources/countries.php:212
+msgid "Guadeloupe"
+msgstr "Гваделупа"
+
+#: resources/countries.php:240
+msgid "Guam"
+msgstr "Гуам"
+
+#: resources/countries.php:217
+msgid "Guatemala"
+msgstr "Гватемала"
+
+#: resources/countries.php:166
+msgid "Guernsey"
+msgstr "Гернсі"
+
+#: resources/countries.php:138
+msgid "Guinea"
+msgstr "Гвінея"
+
+#: resources/countries.php:130
+msgid "Guinea-Bissau"
+msgstr "Гвінея-Бісау"
+
+#: resources/countries.php:183
+msgid "Guyana"
+msgstr "Гаяна"
+
+#: resources/countries.php:225
+msgid "Haiti"
+msgstr "Гаїті"
+
+#: resources/countries.php:82
+msgid "Heard Island and McDonald Islands"
+msgstr "Острів Херд і острови Макдональд"
+
+#: resources/countries.php:218
+msgid "Honduras"
+msgstr "Гондурас"
+
+#: resources/countries.php:93
+msgid "Hong Kong"
+msgstr "Гонконг"
+
+#: resources/countries.php:47
+msgid "Hungary"
+msgstr "Угорщина"
+
+#: resources/countries.php:150
+msgid "Iceland"
+msgstr "Ісландія"
+
+#: resources/countries.php:73
+msgid "India"
+msgstr "Індія"
+
+#: resources/countries.php:87
+msgid "Indonesia"
+msgstr "Індонезія"
+
+#: resources/countries.php:9
+msgid "Iran"
+msgstr "Іран"
+
+#: resources/countries.php:7
+msgid "Iraq"
+msgstr "Ірак"
+
+#: resources/countries.php:159
+msgid "Ireland"
+msgstr "Ірландія"
+
+#: resources/countries.php:165
+msgid "Isle of Man"
+msgstr "Острів Мен"
+
+#: resources/countries.php:27
+msgid "Israel"
+msgstr "Ізраїль"
+
+#: resources/countries.php:172
+msgid "Italy"
+msgstr "Італія"
+
+#: resources/countries.php:124
+msgid "Ivory Coast"
+msgstr "Кот-д'Івуар"
+
+#: resources/countries.php:193
+msgid "Jamaica"
+msgstr "Ямайка"
+
+#: resources/countries.php:98
+msgid "Japan"
+msgstr "Японія"
+
+#: resources/countries.php:164
+msgid "Jersey"
+msgstr "Джерсі"
+
+#: resources/countries.php:20
+msgid "Jordan"
+msgstr "Йорданія"
+
+#: resources/countries.php:79
+msgid "Kazakhstan"
+msgstr "Казахстан"
+
+#: resources/countries.php:14
+msgid "Kenya"
+msgstr "Кенія"
+
+#: resources/countries.php:233
+msgid "Kiribati"
+msgstr "Кірібаті"
+
+#: resources/countries.php:52
+msgid "Kosovo"
+msgstr "Косово"
+
+#: resources/countries.php:22
+msgid "Kuwait"
+msgstr "Кувейт"
+
+#: resources/countries.php:80
+msgid "Kyrgyzstan"
+msgstr "Киргизія"
+
+#: resources/countries.php:88
+msgid "Laos"
+msgstr "Лаос"
+
+#: resources/countries.php:36
+msgid "Latvia"
+msgstr "Латвія"
+
+#: resources/countries.php:21
+msgid "Lebanon"
+msgstr "Ліван"
+
+#: resources/countries.php:57
+msgid "Lesotho"
+msgstr "Лесото"
+
+#: resources/countries.php:123
+msgid "Liberia"
+msgstr "Ліберія"
+
+#: resources/countries.php:118
+msgid "Libya"
+msgstr "Лівія"
+
+#: resources/countries.php:163
+msgid "Liechtenstein"
+msgstr "Ліхтенштейн"
+
+#: resources/countries.php:38
+msgid "Lithuania"
+msgstr "Литва"
+
+#: resources/countries.php:158
+msgid "Luxembourg"
+msgstr "Люксембург"
+
+#: resources/countries.php:95
+msgid "Macao"
+msgstr "Макао"
+
+#: resources/countries.php:65
+msgid "Madagascar"
+msgstr "Мадагаскар"
+
+#: resources/countries.php:56
+msgid "Malawi"
+msgstr "Малаві"
+
+#: resources/countries.php:91
+msgid "Malaysia"
+msgstr "Малайзія"
+
+#: resources/countries.php:74
+msgid "Maldives"
+msgstr "Мальдіви"
+
+#: resources/countries.php:141
+msgid "Mali"
+msgstr "Малі"
+
+#: resources/countries.php:146
+msgid "Malta"
+msgstr "Мальта"
+
+#: resources/countries.php:107
+msgid "Marshall Islands"
+msgstr "Маршаллові острови"
+
+#: resources/countries.php:196
+msgid "Martinique"
+msgstr "Мартініка"
+
+#: resources/countries.php:131
+msgid "Mauritania"
+msgstr "Мавританія"
+
+#: resources/countries.php:59
+msgid "Mauritius"
+msgstr "Маврикій"
+
+#: resources/countries.php:63
+msgid "Mayotte"
+msgstr "Майотта"
+
+#: resources/countries.php:230
+msgid "Mexico"
+msgstr "Мексика"
+
+#: resources/countries.php:41
+msgid "Moldova"
+msgstr "Молдова"
+
+#: resources/countries.php:160
+msgid "Monaco"
+msgstr "Монако"
+
+#: resources/countries.php:104
+msgid "Mongolia"
+msgstr "Монголія"
+
+#: resources/countries.php:174
+msgid "Montenegro"
+msgstr "Чорногорія"
+
+#: resources/countries.php:209
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: resources/countries.php:145
+msgid "Morocco"
+msgstr "Марокко"
+
+#: resources/countries.php:64
+msgid "Mozambique"
+msgstr "Мозамбік"
+
+#: resources/countries.php:77
+msgid "Myanmar"
+msgstr "М'янма"
+
+#: resources/countries.php:178
+msgid "Namibia"
+msgstr "Намібія"
+
+#: resources/countries.php:112
+msgid "Nauru"
+msgstr "Науру"
+
+#: resources/countries.php:76
+msgid "Nepal"
+msgstr "Непал"
+
+#: resources/countries.php:154
+msgid "Netherlands"
+msgstr "Нідерланди"
+
+#: resources/countries.php:114
+msgid "New Caledonia"
+msgstr "Нова Каледонія"
+
+#: resources/countries.php:116
+msgid "New Zealand"
+msgstr "Нова Зеландія"
+
+#: resources/countries.php:219
+msgid "Nicaragua"
+msgstr "Нікарагуа"
+
+#: resources/countries.php:140
+msgid "Niger"
+msgstr "Нігер"
+
+#: resources/countries.php:127
+msgid "Nigeria"
+msgstr "Нігерія"
+
+#: resources/countries.php:238
+msgid "Niue"
+msgstr "Ніуе"
+
+#: resources/countries.php:115
+msgid "Norfolk Island"
+msgstr "Норфолк, о-в"
+
+#: resources/countries.php:99
+msgid "North Korea"
+msgstr "Північна Корея"
+
+#: resources/countries.php:46
+msgid "North Macedonia"
+msgstr "Північна Македонія"
+
+#: resources/countries.php:239
+msgid "Northern Mariana Islands"
+msgstr "Північні Маріанські острови"
+
+#: resources/countries.php:169
+msgid "Norway"
+msgstr "Норвегія"
+
+#: resources/countries.php:23
+msgid "Oman"
+msgstr "Оман"
+
+#: resources/countries.php:67
+msgid "Pakistan"
+msgstr "Пакистан"
+
+#: resources/countries.php:84
+msgid "Palau"
+msgstr "Палау"
+
+#: resources/countries.php:224
+msgid "Panama"
+msgstr "Панама"
+
+#: resources/countries.php:109
+msgid "Papua New Guinea"
+msgstr "Папуа Нова Гвінея"
+
+#: resources/countries.php:188
+msgid "Paraguay"
+msgstr "Парагвай"
+
+#: resources/countries.php:229
+msgid "Peru"
+msgstr "Перу"
+
+#: resources/countries.php:90
+msgid "Philippines"
+msgstr "Філіппіни"
+
+#: resources/countries.php:232
+msgid "Pitcairn Islands"
+msgstr "Піткерн, о-ви"
+
+#: resources/countries.php:50
+msgid "Poland"
+msgstr "Польща"
+
+#: resources/countries.php:122
+msgid "Portugal"
+msgstr "Португалія"
+
+#: resources/countries.php:210
+msgid "Saint Martin"
+msgstr "Сен-Мартен"
+
+#: resources/countries.php:247
+msgid "Palestine"
+msgstr "Палестина"
+
+#: resources/countries.php:250
+msgid "Sint Maarten"
+msgstr "Сен-Мартен"
+
+#: resources/countries.php:243
+msgid "U.S. Minor Outlying Islands"
+msgstr "Зовнішні малі острови США"
+
+#: resources/countries.php:201
+msgid "St Kitts and Nevis"
+msgstr "Сент-Кітс і Невіс"
+
+#: resources/countries.php:168
+msgid "Czechia"
+msgstr "Чехія"
+
+#: resources/countries.php:15
+msgid "DR Congo"
+msgstr "ДР Конго"
+
+#: views/tab-debug.php:90
+msgid "Reset"
+msgstr "Скидати"
+
+#: views/onboarding-popup.php:206
+msgid "Sign Me Up"
+msgstr "Підпишіться на мене"
+
+#: views/tab-debug.php:77
+msgid "Start Over"
+msgstr "Почніть спочатку"
+
+#: views/tab-help.php:181
+msgid "Contact Support"
+msgstr "Зв’яжіться з командою підтримки"
+
+#: views/tab-dashboard.php:71 views/tab-settings.php:100
+#: views/tab-settings.php:311 views/tab-settings.php:418
+msgid "Get Started"
+msgstr "Розпочнемо"
+
+#: views/tab-help.php:55
+msgid "Software Documentation"
+msgstr "Документація до програмного забезпечення"
+
+#: views/onboarding-popup.php:70
+msgid "Activate"
+msgstr "Активувати"
+
+#: views/onboarding-popup.php:122 views/onboarding-popup.php:162
+#: views/onboarding-popup.php:227
+msgid "Skip"
+msgstr "Пропустити"
+
+#: views/onboarding-popup.php:35 views/onboarding-popup.php:60
+msgid "Welcome"
+msgstr "Ласкаво просимо"
+
+#: views/micro-cloud-modal.php:53 views/onboarding-popup.php:142
+#: views/onboarding-popup.php:190 views/tab-settings.php:570
+#: views/tab-settings.php:594
+msgid "Your email"
+msgstr "Ваш email"
+
+#: views/onboarding-popup.php:53
+msgid "Completion"
+msgstr "Завершення"
+
+#: views/micro-cloud-modal.php:95 views/onboarding-popup.php:253
+msgid "Go To Dashboard"
+msgstr "Перейти до майстерні"
+
+#: views/onboarding-popup.php:137
+msgid "Notification Settings"
+msgstr "Налаштування сповіщень"
+
+#: views/onboarding-popup.php:97
+msgid "Block IPs by country, premium support, and much more!"
+msgstr "Блокування IP-адрес за країнами, преміум-підтримка та багато іншого!"
+
+#: core/LimitLoginAttempts.php:430 core/LimitLoginAttempts.php:834
+msgid "Free Upgrade"
+msgstr "Безплатне оновлення"
+
+#: views/tab-logs-local.php:240
+msgid "Unlock"
+msgstr "Розблокувати"
+
+#: views/tab-logs-local.php:243
+msgid "Unlocked"
+msgstr "Розблоковано"
+
+#: views/tab-logs-local.php:226
+msgid "F d, Y H:i"
+msgstr "F d, Y H:i"
+
+#: views/tab-settings.php:803
+msgid "Test email has been sent!"
+msgstr "Тестовий лист відправлено!"
+
+#: views/tab-logs-local.php:111
+msgid "Denylist"
+msgstr "Список заборонених"
+
+#: views/emails/failed-login.php:347
+msgid "Unsubscribe"
+msgstr "Скасувати підписку"
+
+#: views/emails/failed-login.php:317
+msgid " for more information on our premium services, which can automatically block and detect malicious IP addresses."
+msgstr " для отримання додаткової інформації про наші преміум-сервіси, які можуть автоматично блокувати та виявляти шкідливі IP-адреси."
+
+#: views/emails/failed-login.php:305
+msgid "Frequently Asked Questions"
+msgstr "Часті питання"
+
+#: views/emails/failed-login.php:276
+msgid "Go to Dashboard"
+msgstr "Перейти до майстерні"
+
+#: views/emails/failed-login.php:244
+msgid "Hello,"
+msgstr "Привіт,"
+
+#: views/chart-circle-failed-attempts-today.php:46
+#: views/chart-circle-failed-attempts-today.php:80
+msgid "(past 24 hrs)"
+msgstr "(за останні 24 години)"
+
+#: core/LimitLoginAttempts.php:834
+msgid "Premium"
+msgstr "Преміум"
+
+#: views/chart-failed-attempts.php:227
+msgid "Attempts"
+msgstr "Спроби"
+
+#: views/tab-premium.php:53
+msgid "Support"
+msgstr "Техпідтримка"
+
+#: views/tab-debug.php:70
+msgid "Version"
+msgstr "Версія"
+
+#: views/tab-help.php:34
+msgid "Free Support"
+msgstr "Безкоштовна підтримка"
+
+#: resources/compare-plans-data.php:27
+msgid "Installed"
+msgstr "Встановлений"
+
+#: views/tab-premium.php:48
+msgid "Ask a pre-sales question"
+msgstr "Задайте питання перед продажем"
+
+#: resources/compare-plans-data.php:78
+msgid "300k requests per month"
+msgstr "300тис. запитів на місяць"
+
+#: resources/compare-plans-data.php:77
+msgid "200k requests per month"
+msgstr "200тис. запитів на місяць"
+
+#: resources/compare-plans-data.php:76
+msgid "100k requests per month"
+msgstr "100тис. запитів на місяць"
+
+#: views/micro-cloud-modal.php:68 views/onboarding-popup.php:158
+#: views/onboarding-popup.php:230
+msgid "Continue"
+msgstr "Продовжити"
+
+#: views/options-page.php:92
+msgid "No thanks"
+msgstr "Ні, дякую"
+
+#: views/tab-logs-custom.php:36
+msgid "Or"
+msgstr "Або"
+
+#: views/tab-help.php:28
+msgid "Upgrade To Premium"
+msgstr "Оновити до преміум"
+
+#: views/app-widgets/active-lockouts.php:13
+msgid "Reload"
+msgstr "Перезавантажити"
+
+#: views/tab-settings.php:307 views/tab-settings.php:414
+msgid "Upgrade"
+msgstr "Оновлення"
+
+#: views/app-widgets/acl-rules.php:14 views/app-widgets/acl-rules.php:63
+msgid "Documentation"
+msgstr "Документація"
+
+#: core/LimitLoginAttempts.php:826 views/options-page.php:155
+#: views/tab-dashboard.php:128
+msgid "Help"
+msgstr "Допомога"
+
+#: views/onboarding-popup.php:41
+msgid "Notifications"
+msgstr "Сповіщення"
+
+#: views/tab-dashboard.php:113
+msgid "Tools"
+msgstr "Інструменти"
+
+#: views/tab-dashboard.php:67 views/tab-settings.php:96
+msgid "Learn More"
+msgstr "Дізнатись більше"
+
+#: views/tab-dashboard.php:143
+msgid "Global Options"
+msgstr "Глобальні параметри"
+
+#: views/tab-dashboard.php:132
+msgid "Find the documentation and help you need."
+msgstr "Знайдіть документацію та потрібну допомогу."
+
+#: core/LimitLoginAttempts.php:437 views/tab-dashboard.php:97
+#: views/tab-dashboard.php:253
+msgid "Upgrade to Premium"
+msgstr "Оновити до преміум"
+
+#: resources/compare-plans-data.php:35
+msgid "Upgrade now"
+msgstr "Оновити зараз"
+
+#: views/chart-failed-attempts.php:44 views/chart-failed-attempts.php:147
+#: views/chart-failed-attempts.php:244
+msgid "Requests"
+msgstr "Запити"
+
+#: views/app-widgets/active-lockouts.php:8
+msgid "Active Lockouts"
+msgstr "Активні блокування"
+
+#: resources/compare-plans-data.php:136 views/tab-help.php:173
+msgid "Premium Support"
+msgstr "Преміум підтримка"
+
+#: views/app-widgets/acl-rules.php:44 views/app-widgets/acl-rules.php:93
+#: views/app-widgets/country-access-rules.php:26
+msgid "Add"
+msgstr "Додати"
+
+#: views/app-widgets/event-log.php:37 views/app-widgets/login-attempts.php:49
+msgid "Time"
+msgstr "Час"
+
+#: views/app-widgets/acl-rules.php:26 views/app-widgets/acl-rules.php:75
+msgid "Action"
+msgstr "Дія"
+
+#: views/app-widgets/active-lockouts.php:22 views/app-widgets/event-log.php:38
+#: views/app-widgets/login-attempts.php:51
+msgid "IP"
+msgstr "IP"
+
+#: views/tab-settings.php:341
+msgid "Submit"
+msgstr "Відправити"
+
+#: views/app-widgets/event-log.php:46
+msgid "Actions"
+msgstr "Дії"
+
+#: views/app-widgets/acl-rules.php:39 views/app-widgets/acl-rules.php:88
+msgid "Pass"
+msgstr "Успіх"
+
+#: views/app-widgets/acl-rules.php:25 views/app-widgets/acl-rules.php:74
+#: views/app-widgets/event-log.php:41
+msgid "Rule"
+msgstr "Правило"
+
+#: views/app-widgets/acl-rules.php:38 views/app-widgets/acl-rules.php:87
+msgid "Allow"
+msgstr "Дозволити"
+
+#: core/LimitLoginAttempts.php:816 views/options-page.php:145
+msgid "Logs"
+msgstr "Журнали"
+
+#: views/app-widgets/event-log.php:42
+msgid "Reason"
+msgstr "Причина"
+
+#: views/tab-settings.php:353
+msgid "Configuration"
+msgstr "Налаштування"
+
+#: views/app-widgets/active-lockouts.php:24
+msgid "Count"
+msgstr "Кількість"
+
+#: views/app-widgets/acl-rules.php:37 views/app-widgets/acl-rules.php:86
+#: views/app-widgets/country-access-rules.php:55
+msgid "Deny"
+msgstr "Відмовити"
+
+#. Author URI of the plugin
+#: limit-login-attempts-reloaded.php
+msgid "https://www.limitloginattempts.com/"
+msgstr "https://www.limitloginattempts.com/"
+
+#: views/app-widgets/active-lockouts.php:23 views/app-widgets/event-log.php:40
+#: views/app-widgets/login-attempts.php:50
+msgid "Login"
+msgstr "Увійти"
+
+#: views/tab-settings.php:108
+msgid "Active App"
+msgstr "Активний додаток"
+
+#: views/tab-settings.php:65
+msgid "App Settings"
+msgstr "Налаштування додатка"
+
+#: views/app-widgets/acl-rules.php:24 views/app-widgets/acl-rules.php:33
+#: views/app-widgets/acl-rules.php:73 views/app-widgets/acl-rules.php:82
+#: views/app-widgets/event-log.php:43
+msgid "Pattern"
+msgstr "Патерн"
+
+#: views/app-widgets/event-log.php:45
+msgid "Lockout Duration"
+msgstr "Тривалість блокування"
+
+#: core/Ajax.php:711
+msgid "No lockouts yet."
+msgstr "Ще немає локаутів."
+
+#: views/app-widgets/event-log.php:14
+msgid "Event Log"
+msgstr "Лог події"
+
+#: core/LimitLoginAttempts.php:419 core/LimitLoginAttempts.php:800
+#: views/options-page.php:129
+msgid "Dashboard"
+msgstr "Майстерня"
+
+#: core/LimitLoginAttempts.php:1957 core/LimitLoginAttempts.php:2031
+msgid "Settings saved."
+msgstr "Налаштування збережені."
+
+#: views/tab-settings.php:481
+msgid "General Settings"
+msgstr "Загальні налаштування"
+
+#: views/tab-logs-local.php:142 views/tab-settings.php:475
+#: views/tab-settings.php:816
+msgid "Save Settings"
+msgstr "Зберегти налаштування"
+
+#: core/LimitLoginAttempts.php:2189
+msgid "Don't show again"
+msgstr "Не показувати знову"
+
+#: core/LimitLoginAttempts.php:2191
+msgid "Leave a review"
+msgstr "Залишити відгук"
+
+#: core/LimitLoginAttempts.php:2190
+msgid "Maybe later"
+msgstr "Можливо пізніше"
+
+#: core/LimitLoginAttempts.php:420 core/LimitLoginAttempts.php:805
+#: views/options-page.php:133
+msgid "Settings"
+msgstr "Налаштування"
+
+#: core/LimitLoginAttempts.php:821 views/options-page.php:151
+msgid "Debug"
+msgstr "Налагодження"
+
+#: views/tab-debug.php:58
+msgid "Debug Info"
+msgstr "Інформація для налагодження"
+
+#: views/tab-settings.php:241
+msgid "Specify the origins you trust in order of priority, separated by commas. We strongly recommend that you <b>do not</b> use anything other than REMOTE_ADDR since other origins can be easily faked. Examples: HTTP_X_FORWARDED_FOR, HTTP_CF_CONNECTING_IP, HTTP_X_SUCURI_CLIENTIP"
+msgstr ""
+"Вкажіть джерела, яким ви довіряєте, в порядку пріоритету, розділені комами. Ми настійно рекомендуємо вам <b>не використовувати</b> нічого крім REMOTE_ADDR \n"
+"оскільки інші джерела можуть бути легко підроблені. Приклади: HTTP_X_FORWARDED_FOR, HTTP_CF_CONNECTING_IP, HTTP_X_SUCURI_CLIENTIP"
+
+#: views/tab-settings.php:226
+msgid "Trusted IP Origins"
+msgstr "Надійні IP Origins"
+
+#: views/tab-settings.php:594
+msgid "after"
+msgstr "після"
+
+#: views/tab-settings.php:567 views/tab-settings.php:591
+msgid "Email to"
+msgstr "Надіслати по email"
+
+#: core/LimitLoginAttempts.php:1661
+msgid "<strong>ERROR</strong>: Incorrect email address or password."
+msgstr "<strong>ПОМИЛКА</strong> : неправильна адреса електронної пошти або пароль."
+
+#: views/tab-settings.php:522
+msgid "GDPR compliance"
+msgstr "Дотримання GDPR"
+
+#: views/tab-logs-local.php:93 views/tab-logs-local.php:116
+msgid "One IP or IP range (1.2.3.4-5.6.7.8) per line"
+msgstr "Один IP або IP діапазон (1.2.3.4-5.6.7.8) на рядок"
+
+#: views/tab-settings.php:175
+msgid "minutes lockout"
+msgstr "хвилини блокування"
+
+#: views/tab-settings.php:162
+msgid "allowed retries"
+msgstr "дозволені спроби"
+
+#: views/app-widgets/event-log.php:39 views/tab-logs-local.php:220
+msgid "Gateway"
+msgstr "Шлюз"
+
+#: views/tab-logs-local.php:218
+msgctxt "Internet address"
+msgid "IP"
+msgstr "IP"
+
+#: views/tab-logs-local.php:217
+msgid "Date"
+msgstr "Дата"
+
+#: views/tab-logs-local.php:202
+msgid "Clear Log"
+msgstr "Очистити журнал"
+
+#: views/tab-settings.php:579
+msgid "Notify on lockout"
+msgstr "Повідомити про блокування"
+
+#: core/LimitLoginAttempts.php:1878
+msgid "Reset lockout count"
+msgstr "Скинути кількість блокувань"
+
+#: views/tab-settings.php:148
+msgid "Lockout"
+msgstr "Блокування"
+
+#: views/tab-logs-local.php:50
+msgid "Reset Counter"
+msgstr "Скинути лічильник"
+
+#: views/tab-logs-local.php:35
+msgid "Statistics"
+msgstr "Статистика"
+
+#: core/LimitLoginAttempts.php:587 core/LimitLoginAttempts.php:1132
+#: core/LimitLoginAttempts.php:1624
+msgid "Please try again in %d minute."
+msgid_plural "Please try again in %d minutes."
+msgstr[0] "Будь ласка, спробуйте ще раз через %d хвилину."
+msgstr[1] "Будь ласка, спробуйте ще раз через %d хвилини."
+msgstr[2] "Будь ласка, спробуйте ще раз через %d хвилин."
+
+#: core/LimitLoginAttempts.php:585 core/LimitLoginAttempts.php:1130
+#: core/LimitLoginAttempts.php:1621
+msgid "Please try again in %d hour."
+msgid_plural "Please try again in %d hours."
+msgstr[0] "Будь ласка, спробуйте ще раз через %d годину."
+msgstr[1] "Будь ласка, спробуйте ще раз через %d години."
+msgstr[2] "Будь ласка, спробуйте ще раз через %d годин."
+
+#: views/tab-logs-local.php:71
+msgid "%d IP is currently blocked from trying to log in"
+msgstr "%d IP наразі заблоковано при спробі входу"
+
+#: views/tab-settings.php:498
+msgid "Use global settings"
+msgstr "Використовувати глобальні налаштування"
+
+#: views/tab-settings.php:493
+msgid "If disabled, the global settings will be forcibly applied to the entire network."
+msgstr "Якщо вимкнено, глобальні налаштування будуть примусово застосовані до всієї мережі."
+
+#: views/tab-settings.php:492
+msgid "Let network sites use their own settings"
+msgstr "Нехай сайти мережі використовують свої власні налаштування"
+
+#: views/tab-logs-local.php:101 views/tab-logs-local.php:124
+msgid "One Username per line"
+msgstr "Одне ім'я користувача на рядок"
+
+#: core/LimitLoginAttempts.php:1684
+msgid "WC Error"
+msgstr "Помилка WC"
+
+#. Plugin Name of the plugin
+#. Author of the plugin
+#: limit-login-attempts-reloaded.php core/LimitLoginAttempts.php:178
+msgid "Limit Login Attempts Reloaded"
+msgstr "Спроби обмеження входу в систему перезавантаження"
+
+#: views/tab-logs-local.php:219
+msgid "Tried to log in as"
+msgstr "Намагалися увійти як"
+
+#: views/tab-logs-local.php:194
+msgid "Lockout log"
+msgstr "Журнал блокування"
+
+#: views/tab-settings.php:204
+msgid "hours until retries are reset"
+msgstr "годин, поки повторні спроби не скинуті"
+
+#: views/tab-settings.php:191
+msgid "hours"
+msgstr "години"
+
+#: views/tab-logs-local.php:68
+msgid "Restore Lockouts"
+msgstr "Відновлення блокування"
+
+#: views/tab-logs-local.php:64
+msgid "Active lockouts"
+msgstr "Активні блокування"
+
+#: core/LimitLoginAttempts.php:1871
+msgid "Cleared IP log"
+msgstr "Очищений журнал IP"
+
+#: core/LimitLoginAttempts.php:1664
+msgid "<strong>ERROR</strong>: Incorrect username or password."
+msgstr "<strong>ПОМИЛКА</strong> : неправильне ім'я користувача або пароль."
+
+#: core/LimitLoginAttempts.php:578 core/LimitLoginAttempts.php:633
+#: core/LimitLoginAttempts.php:1123 core/LimitLoginAttempts.php:1542
+#: core/LimitLoginAttempts.php:1601
+msgid "<strong>ERROR</strong>: Too many failed login attempts."
+msgstr "<strong>ПОМИЛКА</strong> : надто багато невдалих спроб входу."
+
+#: core/LimitLoginAttempts.php:1609
+msgid "Please try again later."
+msgstr "Будь ласка, повторіть спробу пізніше."
+
+#: views/tab-settings.php:597
+msgid "lockouts"
+msgstr "блокування"
+
+#: core/LimitLoginAttempts.php:1324
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d хвилина"
+msgstr[1] "%d хвилини"
+msgstr[2] "%d хвилин"
+
+#: core/LimitLoginAttempts.php:1317
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d година"
+msgstr[1] "%d години"
+msgstr[2] "%d годин"
+
+#: views/tab-logs-local.php:53
+msgid "%d lockout since last reset"
+msgid_plural "%d lockouts since last reset"
+msgstr[0] "%d блокування з моменту останнього скидання"
+msgstr[1] "%d блокування з моменту останнього скидання"
+msgstr[2] "%d блокувань з моменту останнього скидання"
+
+#: views/tab-logs-local.php:57
+msgid "No lockouts yet"
+msgstr "Блокувань поки немає"
+
+#: views/tab-settings.php:187
+msgid "lockouts increase lockout time to"
+msgstr "блокування збільшують час блокування до"
+
+#: core/LimitLoginAttempts.php:1885
+msgid "Cleared current lockouts"
+msgstr "Очистити поточні блокування"
+
+#: views/tab-logs-local.php:45
+msgid "Total lockouts"
+msgstr "Всього блокувань"
+
+#: core/Ajax.php:994
+msgid "<strong>%d</strong> attempt remaining."
+msgid_plural "<strong>%d</strong> attempts remaining."
+msgstr[0] "Залишилося <strong>%d</strong> спроба увійти."
+msgstr[1] "Залишилося <strong>%d</strong> спроби увійти."
+msgstr[2] "Залишилося <strong>%d</strong> спроб увійти."

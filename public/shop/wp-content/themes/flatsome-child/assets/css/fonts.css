@@ -1,0 +1,37 @@
+/*------------------------------------------------------------------------------------------------------- Fonts*/
+@font-face {
+	font-family: 'Adrianna Rg';
+	src: url('/shop/wp-content/themes/flatsome-child/assets/css/Adrianna-Regular.eot');
+	src: local('Adrianna Regular'), local('Adrianna-Regular'),
+			url('/shop/wp-content/themes/flatsome-child/assets/css/Adrianna-Regular.eot?#iefix') format('embedded-opentype'),
+			url('/shop/wp-content/themes/flatsome-child/assets/css/Adrianna-Regular.woff2') format('woff2'),
+			url('/shop/wp-content/themes/flatsome-child/assets/css/Adrianna-Regular.woff') format('woff'),
+			url('/shop/wp-content/themes/flatsome-child/assets/css/Adrianna-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Adrianna Bl';
+	src: url('/shop/wp-content/themes/flatsome-child/assets/css/Adrianna-Demibold.eot');
+	src: local('Adrianna Demibold'), local('Adrianna-Demibold'),
+			url('/shop/wp-content/themes/flatsome-child/assets/css/Adrianna-Demibold.eot?#iefix') format('embedded-opentype'),
+			url('/shop/wp-content/themes/flatsome-child/assets/css/Adrianna-Demibold.woff2') format('woff2'),
+			url('/shop/wp-content/themes/flatsome-child/assets/css/Adrianna-Demibold.woff') format('woff'),
+			url('/shop/wp-content/themes/flatsome-child/assets/css/Adrianna-Demibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Adrianna Lt';
+	src: url('/shop/wp-content/themes/flatsome-child/assets/css/Adrianna-Light.eot');
+	src: local('Adrianna Light'), local('Adrianna-Light'),
+			url('/shop/shop/wp-content/themes/flatsome-child/assets/css/Adrianna-Light.eot?#iefix') format('embedded-opentype'),
+			url('/shop/wp-content/themes/flatsome-child/assets/css/Adrianna-Light.woff2') format('woff2'),
+			url('/shop/wp-content/themes/flatsome-child/assets/css/Adrianna-Light.woff') format('woff'),
+			url('/shop/wp-content/themes/flatsome-child/assets/css/Adrianna-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}

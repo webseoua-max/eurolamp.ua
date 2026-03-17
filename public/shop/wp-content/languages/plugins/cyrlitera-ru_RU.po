@@ -1,0 +1,695 @@
+# Translation of Plugins - Cyrlitera – Transliteration of Links and File Names - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Cyrlitera – Transliteration of Links and File Names - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2026-02-09 22:09:32+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Cyrlitera – Transliteration of Links and File Names - Stable (latest release)\n"
+
+#: libs/factory/templates/pages/templates/impressive/class-pages.php:425
+msgid "Sign me up"
+msgstr "Подписаться"
+
+#: libs/factory/templates/pages/templates/impressive/class-pages.php:423
+msgid "Your email address"
+msgstr "Ваш email-адрес"
+
+#: libs/factory/templates/pages/templates/impressive/class-pages.php:410
+msgid "Stay connected for news & updates!"
+msgstr "Оставайтесь на связи, чтобы получать новости и обновления!"
+
+#: libs/factory/templates/pages/templates/impressive/class-pages.php:368
+msgid "Leave a Review"
+msgstr "Оставить отзыв"
+
+#: libs/factory/templates/pages/templates/impressive/class-pages.php:364
+msgid "Liking the plugin? A quick review would mean a lot and helps us make it even better."
+msgstr "Нравится плагин? Краткий отзыв был бы очень полезен и помог бы нам сделать его еще лучше."
+
+#: libs/factory/templates/pages/templates/impressive/class-pages.php:363
+msgid "Leave a review:"
+msgstr "Оставьте отзыв:"
+
+#: libs/factory/forms/controls/checkbox.php:136
+msgid "Disabled"
+msgstr "Выключено"
+
+#: libs/factory/forms/controls/checkbox.php:133
+msgid "Enabled"
+msgstr "Включено"
+
+#. translators: %1$s is plugin name, %2$s is HTML tag, %3%s is HTML tag, %4$s
+#. is error message, %5$s is error code.
+#: cyrlitera.php:135
+msgid "The %s plugin has stopped. %2$s Error:%3$s %4$s Code: %5$s"
+msgstr "Плагин %s был остановлен. %2$s Ошибка:%3$s %4$s Код: %5$s"
+
+#: admin/pages/class-page-cyrlitera.php:274
+msgid "Rollback URL Conversions"
+msgstr "Откатить преобразования URL"
+
+#: admin/pages/class-page-cyrlitera.php:266
+msgid "Restores URLs to their original state before conversion."
+msgstr "Восстанавливает URL-адреса в их исходное состояние до преобразования."
+
+#: admin/pages/class-page-cyrlitera.php:256
+msgid "Convert Existing Posts and Categories"
+msgstr "Конвертировать существующие записи и категории"
+
+#: admin/pages/class-page-cyrlitera.php:248
+msgid "Converts URLs for posts, pages, tags, and categories created before the plugin was installed to Latin characters. Previously uploaded media files are not affected."
+msgstr "Преобразует URL-адреса записей, страниц, меток и категорий, созданных до установки плагина, в латинские символы. Ранее загруженные медиафайлы не затрагиваются."
+
+#: admin/pages/class-page-cyrlitera.php:183
+msgid "If another plugin affects transliteration of links and file names, enable this option to make %s override those changes."
+msgstr "Если другой плагин влияет на транслитерацию ссылок и имен файлов, включите эту опцию, чтобы %s переопределил эти изменения."
+
+#: admin/pages/class-page-cyrlitera.php:174
+msgid "Temporarily turns off transliteration on the frontend if you experience display or compatibility issues."
+msgstr "Временно отключает транслитерацию в публичной части сайта в случае возникновения проблем с отображением или совместимостью."
+
+#: admin/pages/class-page-cyrlitera.php:166
+msgid "You can add custom transliteration character pairs. Example:"
+msgstr "Вы можете добавить пользовательские пары символов транслитерации. Пример:"
+
+#: admin/pages/class-page-cyrlitera.php:157
+msgid "Automatically redirects visitors from existing non-Latin URLs to their transliterated Latin versions."
+msgstr "Автоматически перенаправляет посетителей с существующих нелатинских URL-адресов на их транслитерированные латинские версии."
+
+#: admin/pages/class-page-cyrlitera.php:147
+msgid "Automatically converts file names of newly uploaded media to lowercase. Example: File_Name.jpg -> file_name.jpg"
+msgstr "Автоматически преобразует имена новых загружаемых медиафайлов в нижний регистр. Пример: File_Name.jpg -> file_name.jpg"
+
+#: admin/pages/class-page-cyrlitera.php:138
+msgid "Automatically converts Cyrillic characters to Latin in file names when new media files are uploaded."
+msgstr "Автоматически преобразует кириллицу в латиницу в именах новых загружаемых медиафайлов."
+
+#: admin/pages/class-page-cyrlitera.php:129
+msgid "Automatically converts URLs for newly created pages, posts, tags, and categories to Latin characters."
+msgstr "Автоматически преобразует URL-адреса для новых создаваемых страниц, записей, меток и категорий в латинские символы."
+
+#: admin/pages/class-page-cyrlitera.php:120
+msgid "Cyrillic to Latin transliteration."
+msgstr "Транслитерация из кириллицы в латиницу."
+
+#: admin/boot.php:225 admin/pages/class-page-cyrlitera.php:181
+msgid "Force transliteration (override other plugins)"
+msgstr "Принудительная транслитерация (переопределение других плагинов)"
+
+#: admin/boot.php:219 admin/pages/class-page-cyrlitera.php:172
+msgid "Disable transliteration on the frontend"
+msgstr "Отключить транслитерацию в публичной части сайта"
+
+#: admin/boot.php:213 admin/pages/class-page-cyrlitera.php:165
+msgid "Custom character mappings"
+msgstr "Пользовательские сопоставления символов"
+
+#: admin/boot.php:207 admin/pages/class-page-cyrlitera.php:155
+msgid "Redirect old URLs to transliterated URLs"
+msgstr "Перенаправлять старые URL-адреса на транслитерированные URL-адреса"
+
+#: admin/boot.php:201 admin/pages/class-page-cyrlitera.php:145
+msgid "Convert file names to lowercase on upload"
+msgstr "Преобразовывать имена файлов в нижний регистр при загрузке"
+
+#: admin/boot.php:195 admin/pages/class-page-cyrlitera.php:136
+msgid "Transliterate file names on upload"
+msgstr "Транслитерировать имена файлов при загрузке"
+
+#: admin/boot.php:189 admin/pages/class-page-cyrlitera.php:127
+msgid "Apply transliteration to new content"
+msgstr "Применять транслитерацию к новому контенту"
+
+#: libs/factory/templates/pages/templates/impressive/class-pages.php:464
+msgid "Enter the option name to search..."
+msgstr "Введите название опции для поиска..."
+
+#: libs/factory/templates/pages/templates/impressive/class-pages.php:462
+msgid "Can't find the settings you need? Use the search by the plugin options:"
+msgstr "Не можете найти нужные настройки? Воспользуйтесь поиском по параметрам плагина:"
+
+#: libs/factory/templates/pages/templates/impressive/class-pages.php:418
+msgid "Thank you for your subscription."
+msgstr "Спасибо за вашу подписку."
+
+#: libs/factory/templates/pages/templates/impressive/class-pages.php:415
+msgid "Thank you, you have successfully subscribed!"
+msgstr "Спасибо, вы успешно подписались!"
+
+#: libs/factory/templates/pages/templates/impressive/class-pages.php:386
+msgid "Donation for plugin development"
+msgstr "Пожертвования на развитие плагина"
+
+#: libs/factory/templates/pages/templates/impressive/class-pages.php:336
+msgid "Upgrade for $%s"
+msgstr "Обновление для $%s"
+
+#: libs/factory/templates/pages/templates/impressive/class-pages.php:303
+msgid "MORE IN CLEARFY <span>BUSINESS</span>"
+msgstr "БОЛЬШЕ В CLEARFY <span>BUSINESS</span>"
+
+#: libs/factory/templates/pages/templates/impressive/class-pages.php:297
+msgid "Perfect support."
+msgstr "Идеальная поддержка."
+
+#: libs/factory/templates/pages/templates/impressive/class-pages.php:296
+msgid "No ads;"
+msgstr "Без рекламы;"
+
+#: libs/factory/templates/pages/templates/impressive/class-pages.php:295
+msgid "Advanced settings;"
+msgstr "Расширенные настройки;"
+
+#: libs/factory/templates/pages/templates/impressive/class-pages.php:294
+msgid "Multisite support;"
+msgstr "Поддержка Multisite;"
+
+#: libs/factory/templates/pages/templates/impressive/class-pages.php:293
+msgid "40 new premium components within a year for the single price;"
+msgstr "40 новых премиум-компонентов в течение года по единой цене;"
+
+#: libs/factory/templates/pages/templates/impressive/class-pages.php:292
+msgid "4 premium components now;"
+msgstr "4 премиум-компонентов сейчас;"
+
+#: libs/factory/templates/pages/templates/impressive/class-page-template-impressive.php:607
+msgid "Page"
+msgstr "Страница"
+
+#: libs/factory/templates/pages/templates/impressive/class-page-template-impressive.php:350
+msgid "It seems that a caching/performance plugin is active on this site. Please manually invalidate that plugin's cache after making any changes to the settings below."
+msgstr "Похоже, что Вы используете плагин кэширования или ускорения блога. Не забудьте после изменения любых настроек, очистить кэш вручную!"
+
+#: libs/factory/templates/pages/templates/impressive/class-page-template-impressive.php:350
+msgid "The settings have been updated successfully!"
+msgstr "Настройки были успешно обновлены!"
+
+#: libs/factory/templates/pages/templates/impressive/class-page-template-impressive.php:132
+msgid "Settings"
+msgstr "Настройки"
+
+#: libs/factory/templates/pages/templates/impressive-lite/class-page-template-impressive-lite.php:264
+#: libs/factory/templates/pages/templates/impressive/class-page-template-impressive.php:616
+msgid "Save"
+msgstr "Сохранить"
+
+#: libs/factory/templates/pages/templates/impressive-lite/class-page-template-impressive-lite.php:222
+#: libs/factory/templates/pages/templates/impressive/class-page-template-impressive.php:717
+msgid "You do not have permission to edit page."
+msgstr "У вас недостаточно прав, для редактирования этой страницы."
+
+#: libs/factory/templates/pages/setup-parts/class-step-custom.php:35
+msgid "Skip"
+msgstr "Пропустить"
+
+#: libs/factory/templates/pages/setup-parts/class-step-custom.php:24
+msgid "Finish"
+msgstr "Завершить"
+
+#: libs/factory/templates/pages/setup-parts/class-step-custom.php:21
+#: libs/factory/templates/pages/setup-parts/class-step-form.php:93
+msgid "Continue"
+msgstr "Продолжить"
+
+#: libs/factory/templates/pages/class-pages-components.php:178
+msgid "These are components of the plugin bundle. When you activate the plugin, all the components turned on by default. If you don’t need some function, you can easily turn it off on this page."
+msgstr "Это компоненты пакета плагинов. При активации плагина все компоненты включены по умолчанию. Если вам не нужны какие-либо функции, вы можете легко отключить их на этой странице."
+
+#: libs/factory/templates/pages/class-pages-components.php:176
+msgid "<strong>Plugin Components</strong>."
+msgstr "<strong>Компоненты плагина</strong>."
+
+#: libs/factory/templates/pages/class-pages-components.php:111
+msgid "An unknown error occurred while updating plugin components. Please contact the plugin support team to resolve this issue."
+msgstr "При обновлении компонентов плагина произошла неизвестная ошибка. Пожалуйста, свяжитесь со службой поддержки плагина, чтобы решить эту проблему."
+
+#: libs/factory/templates/pages/class-pages-components.php:103
+msgid "Activate license"
+msgstr "Активировать лицензию"
+
+#: libs/factory/templates/pages/class-pages-components.php:103
+msgid "To use premium components, you need activate a license!"
+msgstr "Чтобы использовать премиум-компоненты, вам необходимо активировать лицензию!"
+
+#: libs/factory/templates/pages/class-pages-components.php:95
+msgid "Components have been successfully updated to the latest version."
+msgstr "Компоненты успешно обновлены до последней версии."
+
+#: libs/factory/templates/pages/class-pages-components.php:49
+msgid "More features for plugin"
+msgstr "Дополнительные функции для плагина"
+
+#: libs/factory/templates/pages/class-pages-components.php:48
+msgid "Components"
+msgstr "Компоненты"
+
+#: libs/factory/templates/pages/class-page-setup.php:179
+msgid "Not now"
+msgstr "Не сейчас"
+
+#: libs/factory/templates/pages/class-page-setup.php:84
+msgid "Setup"
+msgstr "Настройка"
+
+#: libs/factory/templates/pages/class-page-setup.php:77
+#: libs/factory/templates/pages/class-page-setup.php:78
+msgid "Setup master"
+msgstr "Мастер настройки"
+
+#: libs/factory/templates/pages/class-page-license.php:408
+msgid "Submit Key"
+msgstr "Активировать ключ"
+
+#: libs/factory/templates/pages/class-page-license.php:403
+msgid "Have a key to activate the plugin? Paste it here:"
+msgstr "Есть ключ для активации плагина? Вставьте сюда:"
+
+#: libs/factory/templates/pages/class-page-license.php:401
+msgid "Have a key to activate the premium version? Paste it here:"
+msgstr "У вас есть ключ для активации премиум-версии? Вставьте сюда:"
+
+#: libs/factory/templates/pages/class-page-license.php:390
+msgid "remained"
+msgstr "осталось"
+
+#: libs/factory/templates/pages/class-page-license.php:388
+msgid "day(s)"
+msgstr "дня(-ей)"
+
+#: libs/factory/templates/pages/class-page-license.php:378
+msgid "please update the key"
+msgstr "пожалуйста, обновите ключ"
+
+#: libs/factory/templates/pages/class-page-license.php:377
+msgid "EXPIRED!"
+msgstr "ИСТЕКЛА!"
+
+#: libs/factory/templates/pages/class-page-license.php:367
+msgid "active sites"
+msgstr "активные сайты"
+
+#: libs/factory/templates/pages/class-page-license.php:365
+msgid "of"
+msgstr "из"
+
+#: libs/factory/templates/pages/class-page-license.php:359
+msgid "plan"
+msgstr "тариф"
+
+#: libs/factory/templates/pages/class-page-license.php:355
+msgid "domain"
+msgstr "домен"
+
+#: libs/factory/templates/pages/class-page-license.php:347
+msgid "Your license has expired, please extend the license to get updates and support."
+msgstr "Срок действия вашей лицензии истек, пожалуйста, продлите ее, чтобы получить обновления и поддержку."
+
+#: libs/factory/templates/pages/class-page-license.php:341
+msgid "You use a paid subscription for the plugin updates. In case you don’t want to receive paid updates, please, click <a data-action=\"unsubscribe\" class=\"wcl-control-btn\" href=\"#\">cancel subscription</a>"
+msgstr "Вы используете платную подписку на обновления плагина. Если вы не хотите получать платные обновления, нажмите <a data-action=\"unsubscribe\" class=\"wcl-control-btn\" href=\"#\">отменить подписку</a>"
+
+#: libs/factory/templates/pages/class-page-license.php:337
+msgid "Сommercial license, only to the premium add-on to this free plugin. You cannot distribute or modify the premium add-on. But free plugin is a GPLv3 compatible license allowing you to change and use this version of the plugin for free."
+msgstr "Коммерческая лицензия распространяется только на премиум-дополнения к этому бесплатному плагину. Вы не можете распространять или изменять премиум-версию плагина. Бесплатный же плагин имеет лицензию, совместимую с GPLv3, позволяющую вам изменять и использовать его бесплатно."
+
+#: libs/factory/templates/pages/class-page-license.php:335
+msgid "Public License is a GPLv3 compatible license allowing you to change and use this version of the plugin for free. Please keep in mind this license covers only free edition of the plugin. Premium versions are distributed with other type of a license."
+msgstr "Общественная лицензия - это лицензия, совместимая с GPLv3, которая позволяет вам изменять и использовать эту версию плагина бесплатно. Имейте в виду, что эта лицензия распространяется только на бесплатную версию плагина. Премиум-версии распространяются с другим типом лицензии."
+
+#: libs/factory/templates/pages/class-page-license.php:324
+msgid "Automatic renewal, every %s"
+msgstr "Автоматическое продление каждые %s"
+
+#: libs/factory/templates/pages/class-page-license.php:316
+msgid "Synchronization"
+msgstr "Синхронизация"
+
+#: libs/factory/templates/pages/class-page-license.php:312
+msgid "Delete Key"
+msgstr "Удалить ключ"
+
+#: libs/factory/templates/pages/class-page-license.php:306
+msgid "Your current license for %1$s:"
+msgstr "Ваша текущая лицензия для %1$s:"
+
+#: libs/factory/templates/pages/class-page-license.php:303
+msgid "Upgrade to Premium"
+msgstr "Улучшить до премиум-версии"
+
+#: libs/factory/templates/pages/class-page-license.php:286
+msgid "Activate %s"
+msgstr "Активировать %s"
+
+#: libs/factory/templates/pages/class-page-license.php:272
+msgid "Can’t find your key? Go to <a href=\"%s\" target=\"_blank\" rel=\"noopener\">this page</a> and login using the e-mail address associated with your purchase."
+msgstr "Не можете найти свой ключ? Перейдите на <a href=\"%s\" target=\"_blank\" rel=\"noopener\">эту страницу</a> и войдите, используя адрес электронной почты, связанный с вашей покупкой."
+
+#: libs/factory/templates/pages/class-page-license.php:268
+msgid "<a href=\"%s\" target=\"_blank\" rel=\"noopener\">Lean more</a> about the premium version and get the license key to activate it now!"
+msgstr "<a href=\"%s\" target=\"_blank\" rel=\"noopener\">Узнайте больше</a> о премиум версии и получите лицензионный ключ для ее активации прямо сейчас!"
+
+#: libs/factory/templates/includes/ajax-handlers.php:119
+msgid "Subscription success cancelled"
+msgstr "Подписка отменена"
+
+#: libs/factory/templates/includes/ajax-handlers.php:115
+msgid "The license has been updated"
+msgstr "Лицензия обновлена"
+
+#: libs/factory/templates/includes/ajax-handlers.php:111
+msgid "The license is deactivated"
+msgstr "Лицензия деактивирована"
+
+#: libs/factory/templates/includes/ajax-handlers.php:106
+msgid "Your license has been successfully activated"
+msgstr "Ваша лицензия успешно активирована"
+
+#: libs/factory/templates/includes/ajax-handlers.php:103
+msgid "License key is empty or license key too long (license key is 32 characters long)"
+msgstr "Лицензионный ключ отсутствует или слишком длинный (лицензионный ключ должен состоять из 32 символов)"
+
+#: libs/factory/templates/includes/ajax-handlers.php:92
+msgid "Licensing action not passed or this action is prohibited!"
+msgstr "Активация лицензии не удалась или действие запрещено!"
+
+#: libs/factory/templates/includes/ajax-handlers.php:36
+msgid "You did not send your email address or it is incorrect!"
+msgstr "Вы не отправили свой email-адрес или он неверный!"
+
+#: libs/factory/pages/pages.php:73
+msgid "You are trying to call this earlier than the plugin menu will be registered."
+msgstr "Вы пытаетесь вызвать это раньше, чем будет зарегистрировано меню плагина."
+
+#: libs/factory/forms/controls/pattern.php:117
+msgid "Changing the color may takes a minute or more. Please be patient."
+msgstr "В некоторых случаях изменение цвета может занять около минуты. Пожалуйста, будьте терпеливы."
+
+#: libs/factory/forms/controls/pattern.php:114
+msgid "Select color:"
+msgstr "Выберите цвет:"
+
+#: libs/factory/forms/controls/pattern.php:107
+msgid "re-color"
+msgstr "Перекрасить"
+
+#: libs/factory/forms/controls/pattern.php:105
+msgid "Change color"
+msgstr "Выбрать цвет"
+
+#: libs/factory/forms/controls/paddings-editor.php:70
+msgid "Select a side and move the slider to set up:"
+msgstr "Выберите сторону и переместите ползунок:"
+
+#: libs/factory/forms/controls/multiple-textbox.php:89
+msgid "Add new"
+msgstr "Добавить новый"
+
+#: libs/factory/forms/controls/holders/more-link.php:56
+msgid "hide extra options"
+msgstr "скрыть дополнительные настроки"
+
+#: libs/factory/forms/controls/gradient.php:70
+msgid "horizontal"
+msgstr "горизонтальный"
+
+#: libs/factory/forms/controls/gradient.php:69
+msgid "vertical"
+msgstr "вертикальный"
+
+#: libs/factory/forms/controls/google-font.php:136
+msgid "Unexpected error. The list of Google Fonts are empty."
+msgstr "Непредвиденная ошибка. Список шрифтов Google пуст."
+
+#: libs/factory/forms/controls/google-font.php:126
+msgid "Invalide response from the Google Fonts API."
+msgstr "Неверный ответ от Google Fonts API."
+
+#: libs/factory/forms/controls/google-font.php:118
+msgid "Unable to retrieve the list of Google Fonts."
+msgstr "Не удалось получить список шрифтов Google."
+
+#: libs/factory/forms/controls/google-font.php:68
+msgid "Google Fonts:"
+msgstr "Шрифты Google:"
+
+#: libs/factory/forms/controls/google-font.php:57
+msgid "Standard:"
+msgstr "Стандартные:"
+
+#: libs/factory/forms/controls/font.php:190
+msgid "Monospaced:"
+msgstr "Группа Monospaced:"
+
+#: libs/factory/forms/controls/font.php:134
+msgid "Serif:"
+msgstr "Группа Serif:"
+
+#: libs/factory/forms/controls/font.php:83
+msgid "Sans Serif:"
+msgstr "Группа Sans Serif:"
+
+#: libs/factory/forms/controls/font.php:80
+#: libs/factory/forms/controls/google-font.php:52
+msgid "(use default website font)"
+msgstr "(шрифт сайта по умолчанию)"
+
+#: libs/factory/forms/controls/dropdown.php:271
+#: libs/factory/forms/controls/dropdown.php:352
+msgid "- empty -"
+msgstr "- пусто -"
+
+#: libs/factory/forms/controls/dropdown.php:126
+#: libs/factory/forms/controls/list.php:96
+#: libs/factory/forms/controls/list.php:139
+msgid "The list is empty."
+msgstr "Список пуст."
+
+#: libs/factory/core/includes/updates/class-factory-premium-upgrader.php:815
+msgid ""
+"Congratulations, you have activated a premium license! Please activate premium add-on to use pro features now.\n"
+"        <a href=\"%s\">Activate</a> premium add-on or <a href=\"%s\">cancel</a> license."
+msgstr ""
+"Поздравляем, вы активировали лицензию! Пожалуйста, активируйте премиум-дополнение, чтобы начать использовать новые функции.\n"
+"        <a href=\"%s\">Активировать</a> премиум-дополнение или <a href=\"%s\">отменить</a> лицензию."
+
+#: libs/factory/core/includes/updates/class-factory-premium-upgrader.php:813
+msgid ""
+"Congratulations, you have activated a premium license! Please install premium add-on to use pro features now.\n"
+"        <a href=\"%s\">Install</a> premium add-on or <a href=\"%s\">cancel</a> license."
+msgstr ""
+"Поздравляем, вы активировали премиум лицензию! Пожалуйста, установите премиум-дополнение, чтобы начать использовать новые функции.\n"
+"       <a href=\"%s\">Установить</a> премиум-дополнение или <a href=\"%s\">отменить</a> лицензию."
+
+#: libs/factory/core/includes/updates/class-factory-premium-upgrader.php:812
+msgid "Your license has expired. You can no longer get premium plugin updates, premium support and your access to Webcraftic services has been suspended."
+msgstr "Срок действия вашей лицензии истек. Вы больше не можете получать премиальные обновления плагина и поддержку, а ваш доступ к сервисам Webcraftic был приостановлен."
+
+#: libs/factory/core/includes/updates/class-factory-premium-upgrader.php:811
+msgid "License activation required. A license is required to get premium plugin updates, as well as to get additional services."
+msgstr "Требуется активация лицензии. Лицензия необходима для получения обновлений плагинов премиум-класса, а также для получения дополнительных услуг."
+
+#: libs/factory/core/includes/functions.php:152
+msgid "%1$s is <strong>deprecated</strong> since version %2$s with no alternative available."
+msgstr "Функция %1$s с версии %2$s <strong>считается устаревшей</strong>. Альтернативы не предусмотрено."
+
+#: libs/factory/core/includes/functions.php:150
+msgid "%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
+msgstr "Функция %1$s с версии %2$s <strong>считается устаревшей</strong>! Используйте %3$s."
+
+#: libs/factory/core/includes/components/class-install-component-button.php:435
+#: libs/factory/templates/pages/class-pages-components.php:232
+msgid "Read more"
+msgstr "Читать далее"
+
+#: libs/factory/core/includes/components/class-install-component-button.php:434
+msgid "Preparation..."
+msgstr "Подготовка..."
+
+#: libs/factory/core/includes/components/class-install-component-button.php:433
+msgid "Please wait..."
+msgstr "Пожалуйста, подождите..."
+
+#: libs/factory/core/includes/components/class-install-component-button.php:432
+msgid "Delete"
+msgstr "Удалить"
+
+#: libs/factory/core/includes/components/class-install-component-button.php:431
+msgid "Deactivate"
+msgstr "Деактивировать"
+
+#: libs/factory/core/includes/components/class-install-component-button.php:430
+msgid "Install"
+msgstr "Установить"
+
+#: libs/factory/core/includes/components/class-install-component-button.php:429
+msgid "Activate"
+msgstr "Активировать"
+
+#: libs/factory/core/includes/class-factory-requirements.php:299
+msgid "Plugin %s is already activated, you are trying to activate it again."
+msgstr "Плагин %s уже активирован, вы пытаетесь активировать его снова."
+
+#: libs/factory/core/includes/class-factory-plugin-abstract.php:582
+msgid "You cannot use this feature on the frontend."
+msgstr "Вы не можете использовать эту функцию во внешней части сайта."
+
+#: libs/factory/core/includes/class-factory-migrations.php:525
+msgid "There is no PHP Tokenizer extension installed on your server, you cannot use the token_get_all function."
+msgstr "На вашем сервере не установлено расширение PHP Tokenizer, вы не можете использовать функцию token_get_all."
+
+#: libs/factory/core/includes/class-factory-migrations.php:194
+msgid "migrations DEBUG bar"
+msgstr "панель переноса (ОТЛАДКА)"
+
+#: libs/factory/core/includes/class-factory-migrations.php:187
+msgid "Migrate now"
+msgstr "Мигрировать сейчас"
+
+#: libs/factory/core/includes/class-factory-migrations.php:186
+msgid "Need migration:"
+msgstr "Требуется перенос:"
+
+#: libs/factory/core/includes/class-factory-migrations.php:185
+msgid "Current plugin version:"
+msgstr "Текущая версия плагина:"
+
+#: libs/factory/core/includes/class-factory-migrations.php:184
+msgid "Old plugin version (debug):"
+msgstr "Старая версия плагина (отладка):"
+
+#: libs/factory/core/includes/class-factory-migrations.php:182
+msgid "Plugin activated:"
+msgstr "Плагин активирован:"
+
+#: libs/factory/core/includes/class-factory-migrations.php:150
+msgid "migration error"
+msgstr "ошибка переноса"
+
+#: libs/factory/core/includes/class-factory-migrations.php:143
+msgid "I fixed, confirm migration"
+msgstr "Исправлено, подтвердить перенос"
+
+#: libs/factory/core/includes/class-check-compatibility.php:90
+#: libs/factory/core/includes/class-factory-requirements.php:292
+msgid "You need to update WordPress to %s or higher!"
+msgstr "Вам необходимо обновить WordPress до версии %s или выше!"
+
+#: libs/factory/core/includes/class-check-compatibility.php:85
+#: libs/factory/core/includes/class-factory-requirements.php:285
+msgid "You need to update the PHP version to %s or higher!"
+msgstr "Вам необходимо обновить PHP до версии %s или выше!"
+
+#: libs/factory/core/includes/class-check-compatibility.php:79
+#: libs/factory/core/includes/class-factory-requirements.php:255
+msgid "Possible reasons:"
+msgstr "Возможные причины:"
+
+#: libs/factory/core/includes/class-check-compatibility.php:78
+#: libs/factory/core/includes/class-factory-requirements.php:254
+msgid "The %s plugin has stopped."
+msgstr "Плагин %s остановлен."
+
+#: libs/factory/core/includes/class-check-compatibility.php:76
+#: libs/factory/core/includes/class-factory-requirements.php:252
+msgid "warning"
+msgstr "предупреждение"
+
+#: libs/factory/core/ajax/install-addons.php:199
+msgid "Unable to connect to the filesystem. Please confirm your credentials."
+msgstr "Не удалось подключиться к файловой системе. Пожалуйста, подтвердите свои учетные данные."
+
+#: libs/factory/core/ajax/install-addons.php:154
+msgid "Sorry, you are not allowed to install plugins on this site."
+msgstr "К сожалению, вам не разрешается устанавливать плагины на этом сайте."
+
+#: libs/factory/core/ajax/install-addons.php:144
+msgid "No plugin specified."
+msgstr "Не указан плагин."
+
+#: libs/factory/core/ajax/install-addons.php:116
+msgid "Required attribute [component_name] is empty."
+msgstr "Обязательный атрибут [component_name] пуст."
+
+#: libs/factory/core/ajax/install-addons.php:97
+msgid "An unknown error occurred during the activation of the component."
+msgstr "При активации компонента произошла неизвестная ошибка."
+
+#: libs/factory/core/ajax/install-addons.php:47
+msgid "You are trying to perform an invalid action."
+msgstr "Вы пытаетесь выполнить недопустимое действие."
+
+#: libs/factory/core/ajax/install-addons.php:31
+msgid "Required attributes are not passed or empty."
+msgstr "Обязательные атрибуты не переданы или пусты."
+
+#: libs/factory/core/ajax/install-addons.php:27
+msgid "Something went wrong."
+msgstr "Что-то пошло не так."
+
+#: libs/factory/core/ajax/install-addons.php:27
+#: libs/factory/core/ajax/install-addons.php:112
+msgid "You don't have enough capability to edit this information."
+msgstr "У вас недостаточно прав для редактирования этой информации."
+
+#: admin/pages/class-page-cyrlitera.php:276
+msgid "The rollback of new changes was successful!"
+msgstr "Откат новых изменений прошел успешно!"
+
+#: admin/pages/class-page-cyrlitera.php:258
+msgid "URL of old posts, pages, terms, tags successfully converted into Latin!"
+msgstr "URL старых записей, страниц, терминов и меток успешно преобразованы в латиницу!"
+
+#: admin/pages/class-page-cyrlitera.php:120
+msgid "Converts Cyrillic permalinks for posts, pages, taxonomies, and media files to the Latin alphabet. Supports Russian, Ukrainian, Georgian, and Bulgarian. Example: http://site.dev/последние-новости -> http://site.dev/poslednie-novosti"
+msgstr "Преобразует кириллические постоянные ссылки для записей, страниц, таксономий и медиафайлов в латинский алфавит. Поддерживает русский, украинский, грузинский и болгарский языки. Пример: http://site.dev/последние-новости -> http://site.dev/poslednie-novosti"
+
+#: admin/pages/class-page-cyrlitera.php:82
+msgid "General"
+msgstr "Общие"
+
+#: admin/pages/class-page-cyrlitera.php:82
+msgid "Transliteration"
+msgstr "Транслитерация"
+
+#: admin/pages/class-page-cyrlitera.php:65
+#: libs/factory/core/includes/class-factory-requirements.php:151
+msgid "Cyrlitera"
+msgstr "Cyrlitera"
+
+#: admin/boot.php:56
+msgid "If you do not want to deactivate the plugin %s for some reason, we strongly recommend that you do not use the same plugin functions at the same time!"
+msgstr "Если вы по какой-либо причине не желаете деактивировать плагин %s, мы настоятельно рекомендуем вам не использовать схожие функции плагинов одновременно!"
+
+#: admin/boot.php:55
+msgid "We found that you have the plugin %s installed. The functions of this plugin already exist in %s. Please deactivate plugin %s to avoid conflicts between plugins functions."
+msgstr "Мы обнаружили, что у вас установлен плагин %s, функции этого плагина уже есть в %s. Пожалуйста, деактивируйте плагин %s во избежание конфликтов между функциями плагинов."
+
+#. Author URI of the plugin
+#: cyrlitera.php
+msgid "https://themeisle.com"
+msgstr "https://themeisle.com"
+
+#. Author of the plugin
+#: cyrlitera.php
+msgid "Themeisle"
+msgstr "Themeisle"
+
+#. Description of the plugin
+#: cyrlitera.php
+msgid "The plugin converts Cyrillic, Georgian links, filenames into Latin. It is necessary for correct work of WordPress plugins and improve links readability."
+msgstr "Плагин преобразует кириллические, грузинские ссылки, имена файлов в латинские, это нужно для корректной работы WordPress плагинов и улучшения читаемости ссылок."
+
+#. Plugin URI of the plugin
+#: cyrlitera.php
+msgid "https://wordpress.org/plugins/cyrlitera/"
+msgstr "https://ru.wordpress.org/plugins/cyrlitera/"
+
+#. Plugin Name of the plugin
+#: cyrlitera.php
+msgid "Cyrlitera – transliteration of links and file names"
+msgstr "Cyrlitera – транслитерация ссылок и имен файлов"

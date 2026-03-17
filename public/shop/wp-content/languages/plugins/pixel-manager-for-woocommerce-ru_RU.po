@@ -1,0 +1,1499 @@
+# Translation of Plugins - Pixel Tag Manager for WooCommerce &#8211; Google Analytics 4, Google Ads, and More Pixels - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Pixel Tag Manager for WooCommerce &#8211; Google Analytics 4, Google Ads, and More Pixels - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2026-01-23 21:06:01+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Pixel Tag Manager for WooCommerce &#8211; Google Analytics 4, Google Ads, and More Pixels - Stable (latest release)\n"
+
+#: admin/partials/pages/class-pmw-pixels.php:1478
+msgid "If you select \"Stop GTM Container Loading\" the plugin will stop injecting GTM, and you must load the container outside the plugin. Continue?"
+msgstr "Если вы выберете \"Остановить загрузку контейнера GTM\", плагин перестанет внедрять GTM, и вы должны загрузить контейнер вне плагина. Продолжить?"
+
+#: admin/partials/pages/class-pmw-pixels.php:1477
+msgid "If you select \"Use Own GTM Container\" you should set up all tags, triggers, and variables in your GTM container. Continue?"
+msgstr "Если вы выберете \"Использовать собственный контейнер GTM\", вы должны настроить все теги, триггеры и переменные в вашем контейнере GTM. Продолжить?"
+
+#: admin/partials/pages/class-pmw-pixels.php:1439
+msgid "Email address"
+msgstr "Адрес электронной почты"
+
+#: admin/partials/pages/class-pmw-pixels.php:1285
+msgid "Recent Conversion API Logs"
+msgstr "Последние журналы Conversion API"
+
+#: admin/partials/pages/class-pmw-pixels.php:1278
+msgid "This feature must be enabled to Conversion API logs. Once turned on, you’ll be able to see the API payload in the log section below."
+msgstr "Эта функция должна быть включена для журналов Conversion API. После включения вы сможете увидеть полезную нагрузку API в разделе журналов ниже."
+
+#: admin/partials/pages/class-pmw-pixels.php:1272
+msgid "Add API Payload to Conversion API Logs"
+msgstr "Добавить полезную нагрузку API в журналы Conversion API"
+
+#: admin/partials/pages/class-pmw-pixels.php:1265
+msgid "Activate this feature to enable conversion API log of last 10 events."
+msgstr "Активируйте эту функцию для включения журнала conversion API последних 10 событий."
+
+#: admin/partials/pages/class-pmw-pixels.php:1259
+msgid "Enable Conversion API Logs"
+msgstr "Включить журналы Conversion API"
+
+#: admin/partials/pages/class-pmw-pixels.php:1249
+msgid "Debug Logs"
+msgstr "Журналы отладки"
+
+#: admin/partials/pages/class-pmw-pixels.php:1242
+msgid "Debug Logs Settings"
+msgstr "Настройки журналов отладки"
+
+#: admin/partials/pages/class-pmw-pixels.php:1225
+msgid "<?php do_action('ptm_woocommerce_thankyou', $order_id); ?>"
+msgstr "<?php do_action('ptm_woocommerce_thankyou', $order_id); ?>"
+
+#: admin/partials/pages/class-pmw-pixels.php:1224
+msgid "If you choose the custom hook option, add the ptm_woocommerce_thankyou do action hook inside your Thank You page template."
+msgstr "Если вы выберете опцию пользовательского хука, добавьте хук действия ptm_woocommerce_thankyou внутри вашего шаблона страницы \"Спасибо\"."
+
+#: admin/partials/pages/class-pmw-pixels.php:1214
+msgid "Please select how the purchase event should be triggered. If the URL-based method doesn’t work, use the WooCommerce Thank You hook instead. (If you’re using an Elementor template, then the hook-based method is recommended.)"
+msgstr "Пожалуйста, выберите, как должно быть инициировано событие покупки. Если метод на основе URL не работает, используйте хук WooCommerce Thank You. (Если вы используете шаблон Elementor, рекомендуется метод на основе хуков.)"
+
+#: admin/partials/pages/class-pmw-pixels.php:1210
+msgid "Custom Hook (ptm_woocommerce_thankyou)"
+msgstr "Пользовательский хук (ptm_woocommerce_thankyou)"
+
+#: admin/partials/pages/class-pmw-pixels.php:1209
+msgid "WooCommerce Thank You Hook"
+msgstr "Хук WooCommerce Thank You"
+
+#: admin/partials/pages/class-pmw-pixels.php:1208
+msgid "URL Based"
+msgstr "На основе URL"
+
+#: admin/partials/pages/class-pmw-pixels.php:1203
+msgid "Purchase Event Trigger"
+msgstr "Триггер события покупки"
+
+#: admin/partials/pages/class-pmw-pixels.php:1194
+msgid "Tracking trigger"
+msgstr "Триггер отслеживания"
+
+#: admin/partials/pages/class-pmw-pixels.php:1187
+msgid "Tracking Settings"
+msgstr "Настройки отслеживания"
+
+#: admin/partials/pages/class-pmw-pixels.php:1174
+msgid "Enable this to stop send user data tracking."
+msgstr "Включите это, чтобы остановить отправку отслеживания данных пользователя."
+
+#: admin/partials/pages/class-pmw-pixels.php:1168
+msgid "Stop Send User Data to GTM tracking (Stop Sending Advanced Matching Data)"
+msgstr "Остановить отправку данных пользователя в GTM (Остановить отправку данных расширенного сопоставления)"
+
+#: admin/partials/pages/class-pmw-pixels.php:1161
+msgid "User Data"
+msgstr "Данные пользователя"
+
+#: admin/partials/pages/class-pmw-pixels.php:1078
+msgid "Advanced Settings"
+msgstr "Расширенные настройки"
+
+#: admin/partials/pages/class-pmw-pixels.php:1017
+msgid "Bing Pixel"
+msgstr "Пиксель Bing"
+
+#: admin/partials/pages/class-pmw-pixels.php:950
+msgid "Snapchat Pixel"
+msgstr "Пиксель Snapchat"
+
+#: admin/partials/pages/class-pmw-pixels.php:935
+msgid "Upgrade to the PRO plan to enable support all eCommerce events tracking, and priority support for Twitter Ads."
+msgstr "Перейдите на PRO план, чтобы включить поддержку отслеживания всех событий eCommerce и приоритетную поддержку для Twitter Ads."
+
+#: admin/partials/pages/class-pmw-pixels.php:934
+msgid "Unlock Twitter Ads pixel"
+msgstr "Разблокировать пиксель Twitter Ads"
+
+#: admin/partials/pages/class-pmw-pixels.php:867
+msgid "Twitter Pixel"
+msgstr "Пиксель Twitter"
+
+#: admin/partials/pages/class-pmw-pixels.php:852
+msgid "Upgrade to the PRO plan to track more events, send Conversion API, product metadata, and enhanced tracking capabilities."
+msgstr "Перейдите на PRO план для отслеживания большего количества событий, отправки Conversion API, метаданных продуктов и расширенных возможностей отслеживания."
+
+#: admin/partials/pages/class-pmw-pixels.php:851
+msgid "Power up Pinterest Conversion tracking"
+msgstr "Усилите отслеживание конверсий Pinterest"
+
+#: admin/partials/pages/class-pmw-pixels.php:841
+msgid "1234567890"
+msgstr "1234567890"
+
+#: admin/partials/pages/class-pmw-pixels.php:837
+msgid "Your Pinterest Ad Account ID (e.g., 1234567890) for Conversion API."
+msgstr "Ваш ID рекламного аккаунта Pinterest (например, 1234567890) для Conversion API."
+
+#: admin/partials/pages/class-pmw-pixels.php:836
+msgid "Pinterest Ad Account ID"
+msgstr "ID рекламного аккаунта Pinterest"
+
+#: admin/partials/pages/class-pmw-pixels.php:827
+msgid "How to find Pinterest Conversion API token?"
+msgstr "Как найти токен Pinterest Conversion API?"
+
+#: admin/partials/pages/class-pmw-pixels.php:813
+msgid "Send events directly from your server to Pinterest via the Conversion API."
+msgstr "Отправляйте события напрямую с вашего сервера в Pinterest через Conversion API."
+
+#: admin/partials/pages/class-pmw-pixels.php:812
+#: admin/partials/pages/class-pmw-pixels.php:817
+msgid "Pinterest Conversion API Token"
+msgstr "Токен Pinterest Conversion API"
+
+#: admin/partials/pages/class-pmw-pixels.php:776
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: admin/partials/pages/class-pmw-pixels.php:761
+msgid "Upgrade to the PRO plan to track more events with website pixel and push server-side events, advanced events, and audiences to TikTok."
+msgstr "Перейдите на PRO план для отслеживания большего количества событий с пикселем веб-сайта и отправки серверных событий, расширенных событий и аудиторий в TikTok."
+
+#: admin/partials/pages/class-pmw-pixels.php:760
+msgid "Enable complete TikTok Events tracking"
+msgstr "Включить полное отслеживание событий TikTok"
+
+#: admin/partials/pages/class-pmw-pixels.php:748
+msgid "How to find TikTok Events API token?"
+msgstr "Как найти токен TikTok Events API?"
+
+#: admin/partials/pages/class-pmw-pixels.php:739
+msgid "Events API token"
+msgstr "Токен Events API"
+
+#: admin/partials/pages/class-pmw-pixels.php:735
+msgid "Send events directly from your server to TikTok via the Events API."
+msgstr "Отправляйте события напрямую с вашего сервера в TikTok через Events API."
+
+#: admin/partials/pages/class-pmw-pixels.php:734
+msgid "TikTok Events API token"
+msgstr "Токен TikTok Events API"
+
+#: admin/partials/pages/class-pmw-pixels.php:698
+msgid "TikTok"
+msgstr "TikTok"
+
+#: admin/partials/pages/class-pmw-pixels.php:683
+msgid "Upgrade to the PRO plan to support more events with multiple pixel IDs, Conversion API, and advanced matching support."
+msgstr "Перейдите на PRO план для поддержки большего количества событий с несколькими ID пикселей, Conversion API и поддержки расширенного сопоставления."
+
+#: admin/partials/pages/class-pmw-pixels.php:682
+msgid "Scale Meta (Facebook) tracking"
+msgstr "Масштабируйте отслеживание Meta (Facebook)"
+
+#: admin/partials/pages/class-pmw-pixels.php:672
+msgid "Enter your Test Event Code."
+msgstr "Введите ваш код тестового события."
+
+#: admin/partials/pages/class-pmw-pixels.php:669
+msgid "TEST12345"
+msgstr "TEST12345"
+
+#: admin/partials/pages/class-pmw-pixels.php:665
+msgid "Test Event Code"
+msgstr "Код тестового события"
+
+#: admin/partials/pages/class-pmw-pixels.php:590
+msgid "Upgrade to the PRO plan to unlock to send more data to Google Ads enhanced conversions, and dynamic remarketing."
+msgstr "Перейдите на PRO план, чтобы разблокировать отправку большего количества данных в расширенные конверсии Google Ads и динамический ремаркетинг."
+
+#: admin/partials/pages/class-pmw-pixels.php:589
+msgid "Supercharge Google Ads tracking"
+msgstr "Усилите отслеживание Google Ads"
+
+#: admin/partials/pages/class-pmw-pixels.php:479
+#: admin/partials/pages/class-pmw-pixels.php:571
+msgid "How do I create a Google Ads Conversion ID and Conversion Label?"
+msgstr "Как создать ID конверсии и метку конверсии Google Ads?"
+
+#: admin/partials/pages/class-pmw-pixels.php:408
+msgid "Upgrade to the PRO plan to auto-track checkout steps, eCommerce events, and show enhanced data in GA4 dashboards."
+msgstr "Перейдите на PRO план для автоматического отслеживания этапов оформления заказа, событий eCommerce и отображения расширенных данных в дашбордах GA4."
+
+#: admin/partials/pages/class-pmw-pixels.php:407
+msgid "Unlock Google Analytics 4 eCommerce tracking"
+msgstr "Разблокируйте отслеживание eCommerce Google Analytics 4"
+
+#: admin/partials/pages/class-pmw-pixels.php:397
+msgid "Open GrowInsights360 GA4 dashboard"
+msgstr "Открыть дашборд GrowInsights360 GA4"
+
+#: admin/partials/pages/class-pmw-pixels.php:395
+msgid "Connect to GrowInsights360 to unlock GA4 360 view reports, and product journey reports that complement your GA4 measurement."
+msgstr "Подключитесь к GrowInsights360, чтобы разблокировать отчеты GA4 360 view и отчеты о пути продуктов, дополняющие ваши измерения GA4."
+
+#: admin/partials/pages/class-pmw-pixels.php:394
+msgid "Visualize your GA4 performance without leaving WordPress"
+msgstr "Визуализируйте производительность вашего GA4, не выходя из WordPress"
+
+#: admin/partials/pages/class-pmw-pixels.php:393
+msgid "Included: GrowInsights360 GA4 dashboard"
+msgstr "Включено: дашборд GrowInsights360 GA4"
+
+#: admin/partials/pages/class-pmw-pixels.php:327
+msgid "Select the Google Tag for GA4 or Google Ads or both."
+msgstr "Выберите Google Tag для GA4 или Google Ads или для обоих."
+
+#: admin/partials/pages/class-pmw-pixels.php:321
+msgid "Both"
+msgstr "Оба"
+
+#: admin/partials/pages/class-pmw-pixels.php:311
+msgid "GA4"
+msgstr "GA4"
+
+#: admin/partials/pages/class-pmw-pixels.php:305
+msgid "Use Google Tag for"
+msgstr "Использовать Google Tag для"
+
+#: admin/partials/pages/class-pmw-pixels.php:297
+msgid "Find the Google tag ID"
+msgstr "Найти ID Google tag"
+
+#: admin/partials/pages/class-pmw-pixels.php:296
+msgid "Switch to the new Google Tag that accepts GT- IDs and powers can be used for GA4, Google Ads and both as well with single tag implementation."
+msgstr "Переключитесь на новый Google Tag, который принимает GT- ID и может использоваться для GA4, Google Ads и обоих с единой реализацией тега."
+
+#: admin/partials/pages/class-pmw-pixels.php:286
+msgid "Enter Google Tag ID"
+msgstr "Введите ID Google Tag"
+
+#: admin/partials/pages/class-pmw-pixels.php:282
+msgid "Accepted format: GT-XXXXXXXX. In the Google section below, you should also add the GA4 Measurement ID G-XXXXXXXX for GA4 tracking and Google ads conversion id for Google Ads tracking."
+msgstr "Принятый формат: GT-XXXXXXXX. В разделе Google ниже вы также должны добавить GA4 Measurement ID G-XXXXXXXX для отслеживания GA4 и ID конверсии Google Ads для отслеживания Google Ads."
+
+#: admin/partials/pages/class-pmw-pixels.php:281
+msgid "Google Tag ID"
+msgstr "ID Google Tag"
+
+#: admin/partials/pages/class-pmw-pixels.php:268
+msgid "Google Tag (Optional)"
+msgstr "Google Tag (необязательно)"
+
+#: admin/partials/pages/class-pmw-pixels.php:255
+msgid "Used when 'Use Own' is selected. Leave blank to continue using the default container."
+msgstr "Используется, когда выбрано 'Использовать собственный'. Оставьте пустым, чтобы продолжить использовать контейнер по умолчанию."
+
+#: admin/partials/pages/class-pmw-pixels.php:252
+msgid "GTM-XXXXXXX"
+msgstr "GTM-XXXXXXX"
+
+#: admin/partials/pages/class-pmw-pixels.php:248
+msgid "Provide your GTM container ID (e.g., GTM-XXXXXXX) when using your own container."
+msgstr "Укажите ID вашего контейнера GTM (например, GTM-XXXXXXX) при использовании собственного контейнера."
+
+#: admin/partials/pages/class-pmw-pixels.php:246
+msgid "Custom GTM Container ID"
+msgstr "ID пользовательского контейнера GTM"
+
+#: admin/partials/pages/class-pmw-pixels.php:239
+msgid "Choose the GTM container loading mode that best fits your setup."
+msgstr "Выберите режим загрузки контейнера GTM, который лучше всего подходит для вашей настройки."
+
+#: admin/partials/pages/class-pmw-pixels.php:235
+msgid "Stop GTM Container Loading"
+msgstr "Остановить загрузку контейнера GTM"
+
+#: admin/partials/pages/class-pmw-pixels.php:234
+msgid "Use Own GTM Container"
+msgstr "Использовать собственный контейнер GTM"
+
+#: admin/partials/pages/class-pmw-pixels.php:233
+msgid "Default PTM - GTM-XXXXXXXX"
+msgstr "PTM по умолчанию - GTM-XXXXXXXX"
+
+#: admin/partials/pages/class-pmw-pixels.php:227
+msgid "Load GTM Container"
+msgstr "Загрузить контейнер GTM"
+
+#: admin/partials/pages/class-pmw-pixels.php:220
+msgid "Container ID: "
+msgstr "ID контейнера: "
+
+#: admin/partials/pages/class-pmw-pixels.php:216
+msgid "GTM Container Settings"
+msgstr "Настройки контейнера GTM"
+
+#: admin/partials/pages/class-pmw-pixels.php:209
+msgid "Analytics & Pixel settings"
+msgstr "Настройки аналитики и пикселей"
+
+#: admin/partials/pages/class-pmw-pixels.php:200
+msgid "Access every premium feature including support for all major eCommerce events, conversion api tracking and priority support."
+msgstr "Получите доступ к каждой премиум-функции, включая поддержку всех основных событий eCommerce, отслеживание conversion API и приоритетную поддержку."
+
+#: admin/partials/pages/class-pmw-pixels.php:199
+msgid "Unlock the complete PRO experience"
+msgstr "Разблокируйте полный PRO опыт"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:379
+msgid "Send Advanced Matching data is now sent to Facebook, TikTok, Twitter, Bing, and Pinterest"
+msgstr "Данные расширенного сопоставления теперь отправляются в Facebook, TikTok, Twitter, Bing и Pinterest"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:359
+msgid "Pinterest Conversion API"
+msgstr "Pinterest Conversion API"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:351
+msgid "TikTok Conversion API"
+msgstr "TikTok Conversion API"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:43
+msgid "Claim the Christmas deal"
+msgstr "Получите рождественское предложение"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:41
+msgid "Enjoy an extra 20%-35% Christmas discount—automatically applied to the Business yearly plan."
+msgstr "Наслаждайтесь дополнительной скидкой 20%-35% на Рождество — автоматически применяется к годовому бизнес-плану."
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:40
+msgid "Business yearly plan now $39 (down from $49)."
+msgstr "Годовой бизнес-план теперь стоит $39 (было $49)."
+
+#: admin/partials/common/class-pmw-footer.php:15
+msgid "Happy to use it! Share your experience with this tool."
+msgstr "Рады, что вы пользуетесь! Поделитесь своим опытом с этим инструментом."
+
+#: admin/helper/class-pmw-setting-helper.php:1072
+msgid "No logs available."
+msgstr "Журналы недоступны."
+
+#: admin/helper/class-pmw-setting-helper.php:257
+msgid "Advanced Matching user data sent"
+msgstr "Данные пользователя, отправленные для расширенного сопоставления"
+
+#: admin/helper/class-pmw-setting-helper.php:252
+msgid "Conversion api"
+msgstr "API конверсии"
+
+#: admin/helper/class-pmw-setting-helper.php:152
+msgid "Active"
+msgstr "Активно"
+
+#: admin/helper/class-pmw-setting-helper.php:147
+msgid "New"
+msgstr "Новое"
+
+#: admin/helper/class-pmw-admin-helper.php:626
+msgid "Unlock the savings"
+msgstr "Разблокируйте сбережения"
+
+#: admin/helper/class-pmw-admin-helper.php:624
+msgid "Enjoy an extra 20% - 35% Christmas discount—automatically applied to the Business yearly plan."
+msgstr "Наслаждайтесь дополнительной скидкой 20%-35% на Рождество — автоматически применяется к годовому бизнес-плану."
+
+#: admin/helper/class-pmw-admin-helper.php:619
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:39
+msgid "Christmas Special"
+msgstr "Рождественское предложение"
+
+#: admin/helper/class-pmw-admin-helper.php:574
+msgid "Advanced Matching data is now sent to Facebook, TikTok, Twitter, Bing, and Pinterest"
+msgstr "Данные расширенного сопоставления теперь отправляются в Facebook, TikTok, Twitter, Bing и Pinterest"
+
+#: admin/helper/class-pmw-admin-helper.php:573
+msgid "Conversion API for Facebook, TikTok, Pinterest"
+msgstr "API конверсии для Facebook, TikTok, Pinterest"
+
+#: admin/helper/class-pmw-admin-helper.php:488
+msgid "Open Pixel Manager settings"
+msgstr "Открыть настройки Pixel Manager"
+
+#: admin/helper/class-pmw-admin-helper.php:486
+msgid "We enhanced GTM containers and in-plugin tracking—review the updates and verify your setup. Reach out if you need any help."
+msgstr "Мы улучшили контейнеры GTM и отслеживание внутри плагина — просмотрите обновления и проверьте свою настройку. Свяжитесь с нами, если вам нужна помощь."
+
+#: admin/helper/class-pmw-admin-helper.php:484
+msgid "Here’s what shipped in this release:"
+msgstr "Что было выпущено в этом релизе:"
+
+#: admin/helper/class-pmw-admin-helper.php:483
+msgid "🎉 Mega Release: Pixel Tag Manager 2.1 Highlights"
+msgstr "🎉 Мега-релиз: основные моменты Pixel Tag Manager 2.1"
+
+#: admin/helper/class-pmw-admin-helper.php:468
+msgid "View the latest 10 Conversion API logs directly inside the plugin."
+msgstr "Просмотрите последние 10 журналов API конверсии прямо внутри плагина."
+
+#: admin/helper/class-pmw-admin-helper.php:467
+msgid "Added Control to manage the Thank You page purchase event triggers."
+msgstr "Добавлено управление триггерами событий покупки на странице \"Спасибо\"."
+
+#: admin/helper/class-pmw-admin-helper.php:466
+msgid "Enable and desable Advanced Matching data sent option."
+msgstr "Включить и отключить отправку данных расширенного сопоставления."
+
+#: admin/helper/class-pmw-admin-helper.php:465
+msgid "Advanced Matching data now sent to Facebook, TikTok, Twitter, Bing, and Pinterest."
+msgstr "Данные расширенного сопоставления теперь отправляются в Facebook, TikTok, Twitter, Bing и Pinterest."
+
+#: admin/helper/class-pmw-admin-helper.php:464
+msgid "Added Pinterest Conversion API tracking."
+msgstr "Добавлено отслеживание API конверсии Pinterest."
+
+#: admin/helper/class-pmw-admin-helper.php:463
+msgid "Added TikTok Conversion API tracking."
+msgstr "Добавлено отслеживание API конверсии TikTok."
+
+#: admin/helper/class-pmw-admin-helper.php:462
+msgid "Enhanced Facebook Conversion API tracking."
+msgstr "Улучшено отслеживание API конверсии Facebook."
+
+#: admin/helper/class-pmw-admin-helper.php:461
+msgid "Google Tag: Easily add and manage your Google Tag with choose options to use it for GA4, Google Ads, or both."
+msgstr "Google Tag: легко добавьте и управляйте своим Google Tag с возможностью выбора использования его для GA4, Google Ads или обоих."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:276
+msgid "While using Google Tag ID (GT-), Required to \"Use Google Tag for\"."
+msgstr "При использовании ID Google Tag (GT-) требуется \"Использовать Google Tag для\"."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:274
+msgid "Check your Google Tag ID (GT-)."
+msgstr "Проверьте свой ID Google Tag (GT-)."
+
+#: admin/partials/pages/class-pmw-pixels.php:438
+msgid "Google Ads Conversion"
+msgstr "Конверсия Google Ads"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:291
+msgid "Pixels Tracking"
+msgstr "Отслеживание пикселей"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:283
+msgid "Ecommerce & User Metrics"
+msgstr "Ecommerce и метрики пользователей"
+
+#: admin/helper/class-pmw-setting-helper.php:247
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:264
+msgid "GrowInsights360 GA4 Dashboard"
+msgstr "Дашборд GrowInsights360 GA4"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:287
+msgid "Download CSV & PDF"
+msgstr "Скачать CSV и PDF"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:279
+msgid "Purchase Journey Reports"
+msgstr "Отчеты о пути покупки"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:275
+msgid "Product Performance Reports - with Multi-Dimensional Analysis"
+msgstr "Отчеты о производительности продуктов — с многомерным анализом"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:271
+msgid "General Reports - provides a high-level summary"
+msgstr "Общие отчеты — предоставляют краткий обзор"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:267
+msgid "Google Analytics Dashboard Overview"
+msgstr "Обзор дашборда Google Analytics"
+
+#: admin/helper/class-pmw-admin-helper.php:564
+msgid "GrowInsights360 GA4 Dashboard."
+msgstr "Дашборд GrowInsights360 GA4."
+
+#: admin/class-pixel-manager-for-woocommerce-admin.php:113
+#: admin/partials/common/class-pmw-header.php:89
+#: includes/class-pixel-manager-for-woocommerce.php:142
+msgid "GrowInsights360"
+msgstr "GrowInsights360"
+
+#. Description of the plugin
+#: pixel-manager-for-woocommerce.php
+msgid "Pixel Tag Manager for WooCommerce helps you track key eCommerce events with ease. It supports GA4, Google Ads, Facebook Pixel, TikTok, Pinterest, Snapchat, Bing Ads, and more. With seamless integration, you get accurate data for better targeting and remarketing. Plus, it comes with GrowInsights360 – a built-in GA4 analytics dashboard that gives you clear reports on traffic, conversions, and product performance."
+msgstr "Pixel Tag Manager для WooCommerce помогает вам отслеживать ключевые события eCommerce с легкостью. Он поддерживает GA4, Google Ads, Facebook Pixel, TikTok, Pinterest, Snapchat, Bing Ads и многое другое. Благодаря бесшовной интеграции вы получаете точные данные для лучшего таргетинга и ремаркетинга. Кроме того, он поставляется с GrowInsights360 — встроенным дашбордом аналитики GA4, который дает вам четкие отчеты о трафике, конверсиях и производительности продуктов."
+
+#: admin/partials/pages/class-pmw-pixels.php:1432
+msgid "Only this plugin and store basic info like domain, currency, language, and country to improve functionality."
+msgstr "Только этот плагин и храните базовую информацию, такую как домен, валюта, язык и страна, для улучшения функциональности."
+
+#: admin/partials/pages/class-pmw-pixels.php:1431
+msgid "Allow This Tool Only"
+msgstr "Разрешить только этот инструмент"
+
+#: admin/partials/pages/class-pmw-pixels.php:556
+msgid "Google Ads Form Conversion Selector"
+msgstr "Селектор конверсии формы Google Ads"
+
+#: admin/partials/pages/class-pmw-pixels.php:543
+msgid "Ex. Conversion Form Label: vVf2CN2drc0aEOfx6Z4q"
+msgstr "Например, метка формы конверсии: vVf2CN2drc0aEOfx6Z4q"
+
+#: admin/partials/pages/class-pmw-pixels.php:542
+msgid "Conversion Form Label"
+msgstr "Метка формы конверсии"
+
+#: admin/partials/pages/class-pmw-pixels.php:534
+msgid "Ex. Conversion Form ID: 11338938599"
+msgstr "Например, ID формы конверсии: 11338938599"
+
+#: admin/partials/pages/class-pmw-pixels.php:533
+msgid "Google Ads Form Conversion ID"
+msgstr "ID конверсии формы Google Ads"
+
+#: admin/partials/pages/class-pmw-pixels.php:520
+msgid "Google Ads Form Conversion"
+msgstr "Конверсия формы Google Ads"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:37
+msgid "Upgrad to our Pro Plan, starting at just $9."
+msgstr "Перейдите на наш план Pro, начиная с $9."
+
+#: includes/class-pixel-manager-for-woocommerce.php:141
+msgid "Settings"
+msgstr "Настройки"
+
+#: admin/partials/pages/class-pmw-pixels.php:1453
+msgid "Updates, announcements, marketing, no spam"
+msgstr "Обновления, объявления, маркетинг, без спама"
+
+#: admin/partials/pages/class-pmw-pixels.php:1452
+msgid "Admin Notice"
+msgstr "Уведомление администратора"
+
+#: admin/partials/pages/class-pmw-pixels.php:1446
+msgid "Site URL, country, currency, WP version, PHP info"
+msgstr "URL сайта, страна, валюта, версия WP, информация о PHP"
+
+#: admin/partials/pages/class-pmw-pixels.php:1445
+msgid "Your Site Overview"
+msgstr "Обзор вашего сайта"
+
+#: admin/partials/pages/class-pmw-pixels.php:1438
+msgid "Your Profile Overview"
+msgstr "Обзор вашего профиля"
+
+#: admin/partials/pages/class-pmw-pixels.php:1425
+msgid "What Permissions are being Granted?"
+msgstr "Какие разрешения предоставлены?"
+
+#: admin/partials/pages/class-pmw-pixels.php:1421
+msgid "Allow & Continue"
+msgstr "Разрешить и продолжить"
+
+#: admin/partials/pages/class-pmw-pixels.php:1419
+msgid "Privacy & Terms"
+msgstr "Конфиденциальность и условия"
+
+#: admin/partials/pages/class-pmw-pixels.php:1418
+msgid "Never miss an important update - opt in to our security and feature updates notifications, and non-sensitive diagnostic tracking with"
+msgstr "Не пропустите важные обновления — подпишитесь на уведомления о безопасности, функциях и диагностическом отслеживании (без чувствительных данных)"
+
+#: admin/partials/pages/class-pmw-pixels.php:1367
+msgid "Axeptio setting"
+msgstr "Настройка Axeptio"
+
+#: admin/partials/pages/class-pmw-pixels.php:1360
+msgid "String identifier of the version of Cookie configuration that should be loaded. If this parameter is omitted, then it's the \"pages\" property in the configuration that gets parsed in case of multiple cookies configurations."
+msgstr "Строковый ID версии конфигурации cookie, которая должна быть загружена. Если параметр не указан, используется свойство \"pages\" в конфигурации при наличии нескольких вариантов cookies."
+
+#: admin/partials/pages/class-pmw-pixels.php:1357
+msgid "."
+msgstr "."
+
+#: admin/partials/pages/class-pmw-pixels.php:1350
+msgid "Cookies Version"
+msgstr "Версия cookies"
+
+#: admin/partials/pages/class-pmw-pixels.php:1349
+msgid "Cookies Version(optional)"
+msgstr "Версия cookies (необязательно)"
+
+#: admin/partials/pages/class-pmw-pixels.php:1340
+msgid "How do I create a Axeptio Project ID?"
+msgstr "Как создать ID проекта Axeptio?"
+
+#: admin/partials/pages/class-pmw-pixels.php:1327
+msgid "Enable Google Consent Mode v2 and provide Project ID (Ex.: 65ebb7949d4cb03e6e037a17)."
+msgstr "Включите режим согласия Google v2 и предоставьте ID проекта (Например: 65ebb7949d4cb03e6e037a17)."
+
+#: admin/partials/pages/class-pmw-pixels.php:1325
+#: admin/partials/pages/class-pmw-pixels.php:1331
+msgid "Project ID"
+msgstr "ID проекта"
+
+#: admin/partials/pages/class-pmw-pixels.php:1314
+msgid "Axeptio"
+msgstr "Axeptio"
+
+#: admin/partials/pages/class-pmw-pixels.php:1306
+msgid "Cookies Consents Settings"
+msgstr "Настройки согласия cookie"
+
+#: admin/partials/pages/class-pmw-pixels.php:1154
+msgid "Select user roles to exclude from event tracking."
+msgstr "Выберите роли пользователей, которые следует исключить из отслеживания событий."
+
+#: admin/partials/pages/class-pmw-pixels.php:1147
+msgid "Exclude User Roles from Event Tracking"
+msgstr "Исключить роли пользователей из отслеживания событий"
+
+#: admin/partials/pages/class-pmw-pixels.php:1140
+msgid "Activate this feature to exclude fee from the order total variable."
+msgstr "Активируйте эту функцию, чтобы исключить комиссию из общей суммы заказа."
+
+#: admin/partials/pages/class-pmw-pixels.php:1134
+msgid "Exclude fee from order revenue"
+msgstr "Исключить комиссию из дохода по заказу"
+
+#: admin/partials/pages/class-pmw-pixels.php:1127
+msgid "Activate this feature to exclude shipping from the order total variable."
+msgstr "Активируйте эту функцию, чтобы исключить доставку из общей суммы заказа."
+
+#: admin/partials/pages/class-pmw-pixels.php:1121
+msgid "Exclude shipping from order revenue"
+msgstr "Исключить доставку из дохода по заказу"
+
+#: admin/partials/pages/class-pmw-pixels.php:1114
+msgid "Activate this feature to exclude tax from the order total variable."
+msgstr "Активируйте эту функцию, чтобы исключить налог из общей суммы заказа."
+
+#: admin/partials/pages/class-pmw-pixels.php:1108
+msgid "Exclude tax from order revenue"
+msgstr "Исключить налог из дохода по заказу"
+
+#: admin/partials/pages/class-pmw-pixels.php:1101
+msgid "Activate this feature to send product SKU information for remarketing and eCommerce tracking."
+msgstr "Активируйте эту функцию для отправки информации о SKU продукта для ремаркетинга и отслеживания eCommerce."
+
+#: admin/partials/pages/class-pmw-pixels.php:1095
+msgid "Send Product SKU instead of ID"
+msgstr "Отправить SKU продукта вместо ID"
+
+#: admin/partials/pages/class-pmw-pixels.php:1085
+msgid "Advanced Options"
+msgstr "Расширенные опции"
+
+#: admin/partials/pages/class-pmw-pixels.php:895
+msgid "How do I create a Twitter pixel id?"
+msgstr "Как создать ID пикселя Twitter?"
+
+#: admin/partials/pages/class-pmw-pixels.php:885
+msgid "Twitter Pixel ID"
+msgstr "ID пикселя Twitter"
+
+#: admin/partials/pages/class-pmw-pixels.php:881
+msgid "Ex. Twitter pixel ID: o9e1c"
+msgstr "Напр. ID пикселя Twitter: o9e1c"
+
+#: admin/partials/pages/class-pmw-pixels.php:879
+msgid "Twitter pixel ID"
+msgstr "Twitter pixel ID"
+
+#: admin/partials/pages/class-pmw-pixels.php:978
+msgid "How do I create a Snapchat pixel id?"
+msgstr "Как создать ID пикселя Snapchat?"
+
+#: admin/partials/pages/class-pmw-pixels.php:964
+msgid "Ex. Snapchat pixel ID: 12e1ec0a-91aa-4267-b1a3-182c355710e7"
+msgstr "Напр. ID пикселя Snapchat: 12e1ec0a-91aa-4267-b1a3-182c355710e7"
+
+#: admin/partials/pages/class-pmw-pixels.php:962
+#: admin/partials/pages/class-pmw-pixels.php:968
+msgid "Snapchat Pixel ID"
+msgstr "ID пикселя Snapchat"
+
+#: admin/partials/pages/class-pmw-pixels.php:803
+msgid "How do I create a Pinterest pixel id?"
+msgstr "Как создать ID пикселя Pinterest?"
+
+#: admin/partials/pages/class-pmw-pixels.php:790
+msgid "Ex. Pinterest pixel ID: 2613257208392"
+msgstr "Напр. ID пикселя Pinterest: 2613257208392"
+
+#: admin/partials/pages/class-pmw-pixels.php:788
+#: admin/partials/pages/class-pmw-pixels.php:794
+msgid "Pinterest Pixel ID"
+msgstr "ID пикселя Pinterest"
+
+#: admin/partials/pages/class-pmw-pixels.php:1043
+msgid "How do I create a Bing Ads pixel id (UET tag id)?"
+msgstr "Как создать ID пикселя Bing Ads (ID тега UET)?"
+
+#: admin/partials/pages/class-pmw-pixels.php:1034
+msgid "Bing Ads Pixel ID (UET tag ID)"
+msgstr "ID пикселя Bing Ads (ID тега UET)"
+
+#: admin/partials/pages/class-pmw-pixels.php:1030
+msgid "Ex. Microsoft Ads - The Bing Ads pixel ID (UET tag ID): 136018753"
+msgstr "Напр. Microsoft Ads — ID пикселя Bing Ads (UET): 136018753"
+
+#: admin/partials/pages/class-pmw-pixels.php:1028
+msgid "Bing Ads pixel ID"
+msgstr "ID пикселя Bing Ads"
+
+#: admin/partials/pages/class-pmw-pixels.php:725
+msgid "How do I create a Tiktok pixel id?"
+msgstr "Как создать ID пикселя TikTok?"
+
+#: admin/partials/pages/class-pmw-pixels.php:716
+msgid "Tiktok Pixel ID"
+msgstr "ID пикселя TikTok"
+
+#: admin/partials/pages/class-pmw-pixels.php:712
+msgid "Ex. Tiktok pixel ID: CBEE743C77U5BM7P378G"
+msgstr "Напр. ID пикселя TikTok: CBEE743C77U5BM7P378G"
+
+#: admin/partials/pages/class-pmw-pixels.php:710
+msgid "Tiktok pixel ID"
+msgstr "ID пикселя TikTok"
+
+#: admin/partials/pages/class-pmw-pixels.php:656
+msgid "How to find Meta (Facebook) Conversion API token?"
+msgstr "Как найти токен Meta (Facebook) Conversion API?"
+
+#: admin/partials/pages/class-pmw-pixels.php:646
+msgid "Conversion API token"
+msgstr "Токен Conversion API"
+
+#: admin/partials/pages/class-pmw-pixels.php:642
+msgid "Send events directly from your web server to Facebook through the Conversion API."
+msgstr "Отправляйте события напрямую с вашего сервера в Facebook через Conversion API."
+
+#: admin/partials/pages/class-pmw-pixels.php:640
+msgid "Meta (Facebook) Conversion API token"
+msgstr "Токен Meta (Facebook) Conversion API"
+
+#: admin/partials/pages/class-pmw-pixels.php:631
+msgid "How do I create a Facebook pixel id?"
+msgstr "Как создать ID пикселя Facebook?"
+
+#: admin/partials/pages/class-pmw-pixels.php:622
+msgid "Facebook Pixel ID(s)"
+msgstr "IDы пикселя Facebook"
+
+#: admin/partials/pages/class-pmw-pixels.php:618
+msgid "Ex. Facebook pixel ID(s): 590022289301578,558158472945205"
+msgstr "Напр. IDы пикселя Facebook: 590022289301578,558158472945205"
+
+#: admin/partials/pages/class-pmw-pixels.php:616
+msgid "Facebook pixel ID(s)"
+msgstr "IDы пикселя Facebook"
+
+#: admin/partials/pages/class-pmw-pixels.php:605
+msgid "Facebook"
+msgstr "Facebook"
+
+#: admin/partials/common/class-pmw-header.php:84
+msgid "Pixels Settings"
+msgstr "Настройки пикселей"
+
+#: admin/partials/pages/class-pmw-pixels.php:507
+msgid "Enable Google Ads dynamic remarketing tracking."
+msgstr "Включить отслеживание динамического ремаркетинга в Google Ads."
+
+#: admin/partials/pages/class-pmw-pixels.php:501
+msgid "Enable Google Ads dynamic remarketing tracking"
+msgstr "Включить отслеживание динамического ремаркетинга Google Ads"
+
+#: admin/partials/pages/class-pmw-pixels.php:494
+msgid "Enable Google Ads Enhanced Conversions tracking."
+msgstr "Включить отслеживание расширенных конверсий Google Ads."
+
+#: admin/partials/pages/class-pmw-pixels.php:488
+msgid "Enable Google Ads Enhanced Conversions tracking"
+msgstr "Включить отслеживание расширенных конверсий Google Ads"
+
+#: admin/partials/pages/class-pmw-pixels.php:473
+msgid "Enable Google Ads Conversion tracking"
+msgstr "Включить отслеживание конверсий Google Ads"
+
+#: admin/partials/pages/class-pmw-pixels.php:460
+msgid "Ex. Conversion Label: C3znCNLp84gYEKGh7KAp"
+msgstr "Напр. Метка конверсии: C3znCNLp84gYEKGh7KAp"
+
+#: admin/partials/pages/class-pmw-pixels.php:459
+#: admin/partials/pages/class-pmw-pixels.php:464
+#: admin/partials/pages/class-pmw-pixels.php:547
+msgid "Conversion Label"
+msgstr "Метка конверсии"
+
+#: admin/partials/pages/class-pmw-pixels.php:455
+#: admin/partials/pages/class-pmw-pixels.php:538
+msgid "Conversion ID"
+msgstr "ID конверсии"
+
+#: admin/partials/pages/class-pmw-pixels.php:451
+msgid "Ex. Conversion ID: 11074736289"
+msgstr "Напр. ID конверсии: 11074736289"
+
+#: admin/partials/pages/class-pmw-pixels.php:450
+msgid "Google Ads Conversion ID"
+msgstr "ID конверсии Google Ads"
+
+#: admin/partials/pages/class-pmw-pixels.php:316
+#: admin/partials/pages/class-pmw-pixels.php:423
+msgid "Google Ads"
+msgstr "Google Ads"
+
+#: admin/partials/pages/class-pmw-pixels.php:383
+msgid "Specify the form elements you want to track by entering their IDs or classes. You can track multiple forms by separating their selectors with commas. Ex. .user,#registration,.contact_form"
+msgstr "Укажите элементы формы, которые нужно отслеживать, введя их ID или классы. Для отслеживания нескольких форм разделяйте селекторы запятыми. Пример: .user,#registration,.contact_form"
+
+#: admin/partials/pages/class-pmw-pixels.php:380
+#: admin/partials/pages/class-pmw-pixels.php:562
+msgid ".user,#registration,.contact_form"
+msgstr ".user,#registration,.contact_form"
+
+#: admin/partials/pages/class-pmw-pixels.php:376
+#: admin/partials/pages/class-pmw-pixels.php:558
+msgid "Enter Form IDs or Class - Ex. .user,#registration,.contact_form"
+msgstr "Введите ID или класс формы — напр. .user,#registration,.contact_form"
+
+#: admin/partials/pages/class-pmw-pixels.php:366
+msgid "How do I create a Google Analytics 4 Measurement ID?"
+msgstr "Как создать ID измерения Google Analytics 4?"
+
+#: admin/partials/pages/class-pmw-pixels.php:357
+msgid "Measurement ID"
+msgstr "ID измерения"
+
+#: admin/partials/pages/class-pmw-pixels.php:353
+msgid "Ex. Measurement ID: G-QCX3G9KSPC"
+msgstr "Напр. ID измерения: G-QCX3G9KSPC"
+
+#: admin/partials/pages/class-pmw-pixels.php:351
+msgid "GA4- Measurement ID"
+msgstr "GA4 — ID измерения"
+
+#: admin/partials/pages/class-pmw-pixels.php:340
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: admin/partials/pages/class-pmw-pixels.php:183
+msgid "Comparison between free and pro events tracking"
+msgstr "Сравнение отслеживания событий в бесплатной и профессиональной версии"
+
+#: admin/partials/pages/class-pmw-pixels.php:176
+msgid "Enter your email."
+msgstr "Введите свою электронную почту."
+
+#: admin/partials/pages/class-pmw-pixels.php:173
+msgid "Enter Your Email"
+msgstr "Введите свою электронную почту"
+
+#: admin/partials/pages/class-pmw-pixels.php:169
+msgid "Email ID"
+msgstr "Электронная почта"
+
+#: admin/partials/pages/class-pmw-pixels.php:162
+msgid "Connect Account"
+msgstr "Подключить аккаунт"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:386
+msgid "Priority Support (24*5)"
+msgstr "Приоритетная поддержка (24/5)"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:363
+msgid "Microsoft Ads Pixel Tracking"
+msgstr "Отслеживание пикселя Microsoft Ads"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:347
+msgid "TikTok Ads Pixel Tracking"
+msgstr "Отслеживание пикселя TikTok Ads"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:298
+msgid "Complet eCommerce tracking"
+msgstr "Полное отслеживание электронной коммерции"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:294
+msgid "GTM base tracking"
+msgstr "Базовое отслеживание GTM"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:257
+msgid "Use on website"
+msgstr "Использовать на сайте"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:216
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:231
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:246
+msgid "billed annually"
+msgstr "оплата ежегодно"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:210
+msgid "Popular"
+msgstr "Популярно"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:185
+msgid "Select your plan"
+msgstr "Выберите ваш план"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:175
+msgid "You are fully protected by our 100% No-Risk-Double-Guarantee. If you don’t like over the next 15 days, then we will happily refund 100% of your money. No questions asked."
+msgstr "Вы полностью защищены нашей 100% гарантией без риска. Если вам не понравится в течение следующих 15 дней, мы вернем вам все деньги без вопросов."
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:174
+msgid "15 Days 100% No-Risk Money Back Guarantee!"
+msgstr "15 дней гарантии возврата денег без риска!"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:170
+msgid "Reach out to us for any questions about pricings and support "
+msgstr "Обращайтесь к нам по любым вопросам о ценах и поддержке "
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:157
+msgid "$2/month per website"
+msgstr "$2/месяц за сайт"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:156
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:242
+msgid "$40"
+msgstr "$40"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:141
+msgid "$5/month per website"
+msgstr "$5/месяц за сайт"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:140
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:227
+msgid "$25"
+msgstr "$25"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:125
+msgid "$9/month per website"
+msgstr "$9/месяц за сайт"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:124
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:212
+msgid "$9"
+msgstr "$9"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:111
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:161
+msgid "Use on 20 Sites"
+msgstr "Использовать на 20 сайтах"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:107
+msgid "$1.0/month per website"
+msgstr "$1.0/месяц за сайт"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:106
+msgid "billed annually ($239 per year)"
+msgstr "оплата ежегодно (239 долларов в год)"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:105
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:245
+msgid "$19.9"
+msgstr "$19.9"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:104
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:155
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:248
+msgid "20 active  websites"
+msgstr "20 активных сайтов"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:102
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:154
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:239
+msgid "ENTERPRISE PLUS"
+msgstr "ENTERPRISE PLUS"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:93
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:145
+msgid "Use on 5 Sites"
+msgstr "Использовать на 5 сайтах"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:89
+msgid "$2.5/month per website"
+msgstr "$2.5/месяц за сайт"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:88
+msgid "billed annually ($149 per year)"
+msgstr "оплата ежегодно (149 долларов в год)"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:87
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:230
+msgid "$12.4"
+msgstr "$12.4"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:86
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:139
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:233
+msgid "5 active  websites"
+msgstr "5 активных сайтов"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:83
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:138
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:224
+msgid "ENTERPRISE"
+msgstr "ENTERPRISE"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:77
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:96
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:114
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:132
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:148
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:164
+msgid "See all features…"
+msgstr "Посмотреть все функции…"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:74
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:129
+msgid "Use on 1 Site"
+msgstr "Использовать на 1 сайте"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:72
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:91
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:109
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:127
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:143
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:159
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:204
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:219
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:220
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:234
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:235
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:249
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:250
+msgid "Get Started"
+msgstr "Начать"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:70
+msgid "$4.1/month per website"
+msgstr "$4.1/месяц за сайт"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:69
+msgid "billed annually ($49 per year)"
+msgstr "оплата ежегодно (49 долларов в год)"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:68
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:87
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:105
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:124
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:140
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:156
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:212
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:215
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:227
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:230
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:242
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:245
+msgid "month"
+msgstr "месяц"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:68
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:215
+msgid "$4.1"
+msgstr "$4.1"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:67
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:123
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:203
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:218
+msgid "1 active website"
+msgstr "1 активный сайт"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:64
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:122
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:208
+msgid "BUSINESS"
+msgstr "Бизнес"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:52
+msgid "Yearly"
+msgstr "Ежегодно"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:51
+msgid "Monthly"
+msgstr "Ежемесячно"
+
+#: admin/partials/pages/class-pmw-pixels-account.php:125
+msgid "(Just $9)"
+msgstr "(Всего $9)"
+
+#: admin/partials/pages/class-pmw-pixels-account.php:123
+msgid "License Key"
+msgstr "Лицензионный ключ"
+
+#: admin/partials/pages/class-pmw-pixels-account.php:121
+msgid "Plan"
+msgstr "План"
+
+#: admin/partials/pages/class-pmw-pixels-account.php:114
+msgid "Your plan details"
+msgstr "Детали вашего плана"
+
+#: admin/partials/pages/class-pmw-pixels-account.php:103
+msgid "Acquire our Pro Plan, download the pro plugin, and on the same page, you'll have the option to add the license key."
+msgstr "Приобретите профессиональный план, скачайте профессиональный плагин, и на той же странице вы сможете ввести лицензионный ключ."
+
+#: admin/partials/pages/class-pmw-pixels-account.php:102
+msgid "To activate the License key:"
+msgstr "Чтобы активировать лицензионный ключ:"
+
+#: admin/partials/pages/class-pmw-pixels-account.php:84
+msgid "Activate PRO Account"
+msgstr "Активировать PRO аккаунт"
+
+#: admin/partials/pages/class-pmw-pixels-account.php:72
+msgid "Unlock Enhanced eCommerce tracking and access advanced features by upgrading from the FREE version to the PRO plan, seamlessly integrated using Google Tag Manager."
+msgstr "Разблокируйте расширенное отслеживание электронной коммерции и доступ к продвинутым функциям, обновившись с бесплатной версии до PRO-плана с использованием Google Tag Manager."
+
+#: admin/partials/pages/class-pmw-pixels-account.php:71
+msgid "Upgrade to Pro:"
+msgstr "Обновиться до PRO:"
+
+#: admin/partials/pages/class-pmw-pixels-account.php:67
+msgid "Buy Now"
+msgstr "Купить сейчас"
+
+#: admin/partials/pages/class-pmw-pixels-account.php:64
+msgid "Boost your tracking capabilities by upgrading to our Pro Plan, starting at just $9."
+msgstr "Увеличьте возможности отслеживания, обновившись до нашего Pro-плана, начиная всего с $9."
+
+#: admin/partials/pages/class-pmw-pixels-account.php:61
+msgid "Super savings!!"
+msgstr "Супер экономия!!"
+
+#: admin/partials/common/class-pmw-header.php:156
+msgid "50% OFF"
+msgstr "Скидка 50%"
+
+#: admin/partials/common/class-pmw-header.php:112
+msgid "Free Vs PRO"
+msgstr "Бесплатная версия vs PRO"
+
+#: admin/helper/class-pmw-setting-helper.php:346
+msgid "Google Consent Mode V2 - Default Granted Consent Settings"
+msgstr "Google Consent Mode V2 — настройки согласия по умолчанию"
+
+#: admin/helper/class-pmw-setting-helper.php:344
+msgid "Axeptio more setting"
+msgstr "Дополнительные настройки Axeptio"
+
+#: admin/helper/class-pmw-setting-helper.php:336
+msgid "Granted Consent Types (comma separated)"
+msgstr "Типы согласий (через запятую)"
+
+#: admin/helper/class-pmw-setting-helper.php:333
+msgid "analytics_storage, ad_storage, ad_user_data, ad_personalization"
+msgstr "analytics_storage, ad_storage, ad_user_data, ad_personalization"
+
+#: admin/helper/class-pmw-setting-helper.php:325
+msgid "Granted Consent - Ex. analytics_storage, ad_storage, ad_user_data, ad_personalization"
+msgstr "Предоставленные согласия — напр. analytics_storage, ad_storage, ad_user_data, ad_personalization"
+
+#: admin/helper/class-pmw-setting-helper.php:242
+msgid "Purchases"
+msgstr "Покупки"
+
+#: admin/helper/class-pmw-setting-helper.php:237
+msgid "Checkout Steps"
+msgstr "Шаги оформления заказа"
+
+#: admin/helper/class-pmw-setting-helper.php:232
+msgid "Remove from Cart"
+msgstr "Удалить из корзины"
+
+#: admin/helper/class-pmw-setting-helper.php:227
+msgid "View Cart"
+msgstr "Просмотр корзины"
+
+#: admin/helper/class-pmw-setting-helper.php:222
+msgid "Add to Cart"
+msgstr "Добавить в корзину"
+
+#: admin/helper/class-pmw-setting-helper.php:217
+msgid "Item List Views"
+msgstr "Просмотры списка товаров"
+
+#: admin/helper/class-pmw-setting-helper.php:212
+msgid "Select Item"
+msgstr "Выбрать товар"
+
+#: admin/helper/class-pmw-setting-helper.php:207
+msgid "Item Views"
+msgstr "Просмотры товара"
+
+#: admin/helper/class-pmw-setting-helper.php:202
+msgid "Page Views"
+msgstr "Просмотры страницы"
+
+#: admin/helper/class-pmw-setting-helper.php:197
+msgid "All Pixels"
+msgstr "Все пиксели"
+
+#: admin/helper/class-pmw-setting-helper.php:193
+msgid "PRO"
+msgstr "PRO"
+
+#: admin/helper/class-pmw-setting-helper.php:190
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:194
+msgid "FREE"
+msgstr "Бесплатно"
+
+#: admin/helper/class-pmw-setting-helper.php:180
+msgid "FREE VS PRO comparison"
+msgstr "Сравнение Бесплатно vs PRO"
+
+#: admin/helper/class-pmw-admin-helper.php:633
+msgid "( Need help? Email support@growcommerce.io )"
+msgstr "(Нужна помощь? Напишите на support@growcommerce.io)"
+
+#: admin/helper/class-pmw-admin-helper.php:632
+#: admin/partials/pages/class-pmw-pixels.php:367
+#: admin/partials/pages/class-pmw-pixels.php:480
+#: admin/partials/pages/class-pmw-pixels.php:572
+#: admin/partials/pages/class-pmw-pixels.php:632
+#: admin/partials/pages/class-pmw-pixels.php:657
+#: admin/partials/pages/class-pmw-pixels.php:726
+#: admin/partials/pages/class-pmw-pixels.php:749
+#: admin/partials/pages/class-pmw-pixels.php:804
+#: admin/partials/pages/class-pmw-pixels.php:896
+#: admin/partials/pages/class-pmw-pixels.php:979
+#: admin/partials/pages/class-pmw-pixels.php:1044
+#: admin/partials/pages/class-pmw-pixels.php:1341
+msgid "Installation Manual"
+msgstr "Инструкция по установке"
+
+#: admin/helper/class-pmw-admin-helper.php:612
+msgid "See are plans!"
+msgstr "Посмотрите наши планы!"
+
+#: admin/helper/class-pmw-admin-helper.php:610
+msgid "To unlock complet eCommerce pixels tracking access and enhanced features with using Google Tag Manager"
+msgstr "Чтобы разблокировать полное отслеживание пикселей электронной коммерции и расширенные функции с помощью Google Tag Manager"
+
+#: admin/helper/class-pmw-admin-helper.php:609
+msgid "You're using the FREE plan, no license is needed if use only free features. Enjoy! :)"
+msgstr "Вы используете бесплатный план, лицензия не нужна при использовании только бесплатных функций. Наслаждайтесь! :)"
+
+#: admin/helper/class-pmw-admin-helper.php:604
+msgid "Your plan "
+msgstr "Ваш план "
+
+#: admin/helper/class-pmw-admin-helper.php:581
+#: admin/helper/class-pmw-admin-helper.php:590
+#: admin/helper/class-pmw-admin-helper.php:591
+#: admin/helper/class-pmw-admin-helper.php:592
+#: admin/helper/class-pmw-admin-helper.php:593
+msgid "Limited"
+msgstr "Ограниченный"
+
+#: admin/helper/class-pmw-admin-helper.php:575
+msgid "Premium Support"
+msgstr "Премиум поддержка"
+
+#: admin/helper/class-pmw-admin-helper.php:569
+msgid "TikTok Ads Pixel tracking"
+msgstr "Отслеживание пикселя TikTok Ads"
+
+#: admin/helper/class-pmw-admin-helper.php:572
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:375
+msgid "Twitter Ads Pixel tracking"
+msgstr "Отслеживание пикселя Twitter Ads"
+
+#: admin/helper/class-pmw-admin-helper.php:571
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:371
+msgid "Snapchat Pixel Tracking"
+msgstr "Отслеживание пикселя Snapchat"
+
+#: admin/helper/class-pmw-admin-helper.php:568
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:355
+msgid "Pinterest Pixel Tracking"
+msgstr "Отслеживание пикселя Pinterest"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:343
+msgid "Multiple Facebook Pixel ID(s) Tracking"
+msgstr "Отслеживание нескольких ID Facebook Pixel"
+
+#: admin/helper/class-pmw-admin-helper.php:567
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:335
+msgid "Facebook Pixel Tracking"
+msgstr "Отслеживание пикселя Facebook"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:339
+msgid "Facebook Conversion API"
+msgstr "API конверсий Facebook"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:367
+msgid "Remarketing and Dynamic remarketing tracking for Microsoft Ads"
+msgstr "Отслеживание ремаркетинга и динамического ремаркетинга для Microsoft Ads"
+
+#: admin/helper/class-pmw-admin-helper.php:570
+msgid "Microsoft Ads Pixel (Bing Ads Pixel)"
+msgstr "Пиксель Microsoft Ads (Bing Ads)"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:331
+msgid "Google Ads Dynamic Remarketing Tracking"
+msgstr "Отслеживание динамического ремаркетинга Google Ads"
+
+#: admin/helper/class-pmw-admin-helper.php:566
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:324
+msgid "Google Ads Enhanced Conversion Tracking"
+msgstr "Улучшенное отслеживание конверсий Google Ads"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:320
+msgid "Google Ads Conversion Tracking"
+msgstr "Отслеживание конверсий Google Ads"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:313
+#: admin/partials/pages/class-pmw-pixels.php:375
+msgid "Form Submission Tracking"
+msgstr "Отслеживание отправки формы"
+
+#: admin/helper/class-pmw-admin-helper.php:565
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:309
+msgid "Google Analytics 4 Tracking"
+msgstr "Отслеживание Google Analytics 4"
+
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:305
+msgid "Google Consent Mode v2 with Axeptio Integration"
+msgstr "Режим согласия Google v2 с интеграцией Axeptio"
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:328
+msgid "Enter your license key."
+msgstr "Введите лицензионный ключ."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:301
+msgid "Google Conversion Id Required to Enable Google Ads Dynamic Remarketing Tracking."
+msgstr "Для включения динамического ремаркетинга Google Ads требуется ID конверсии Google."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:299
+msgid "Google Conversion Id and Label Required to Enable Google Ads Enhanced Conversion Tracking."
+msgstr "Для включения улучшенного отслеживания конверсий Google Ads требуются ID и метка конверсии Google."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:297
+msgid "Google Conversion Id and Label Required to Enable Google Ads Conversion Tracking."
+msgstr "Для включения отслеживания конверсий Google Ads требуются ID и метка конверсии Google."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:294
+msgid "Check your Tiktok pixel ID."
+msgstr "Проверьте свой TikTok Pixel ID."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:292
+msgid "Check your Twitter pixel ID."
+msgstr "Проверьте свой Twitter Pixel ID."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:290
+msgid "Check your Bing pixel ID."
+msgstr "Проверьте свой Bing Pixel ID."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:288
+msgid "Check your Snapchat pixel ID."
+msgstr "Проверьте свой Snapchat Pixel ID."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:286
+msgid "Check your Pinterest pixel ID."
+msgstr "Проверьте свой Pinterest Pixel ID."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:284
+msgid "Check your Facebook pixel ID."
+msgstr "Проверьте свой Facebook Pixel ID."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:282
+msgid "Check your Google Conversion label."
+msgstr "Проверьте метку конверсии Google."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:280
+msgid "Check your Google Conversion ID."
+msgstr "Проверьте ID конверсии Google."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:278
+msgid "Check your Google Analytics 4 Measurement ID."
+msgstr "Проверьте ID измерений Google Analytics 4."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:272
+msgid "Check your email ID."
+msgstr "Проверьте адрес электронной почты."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:208
+msgid "Your pixel settings saved."
+msgstr "Ваши настройки пикселя сохранены."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:88
+#: admin/helper/ajax/class-pmw-ajax-helper.php:212
+#: admin/helper/ajax/class-pmw-ajax-helper.php:238
+#: admin/helper/class-pmw-admin-helper.php:389
+msgid "Your admin nonce is not valid."
+msgstr "Ваш nonce администратора недействителен."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:76
+msgid "Your license key is deactivated."
+msgstr "Ваш лицензионный ключ деактивирован."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:73
+msgid "Your license key is activated."
+msgstr "Ваш лицензионный ключ активирован."
+
+#: admin/helper/ajax/class-pmw-ajax-helper.php:49
+msgid "First save your "
+msgstr "Сначала сохраните свои "
+
+#: admin/class-pixel-manager-for-woocommerce-admin.php:119
+msgid "Free Vs Pro"
+msgstr "Бесплатно против PRO"
+
+#: admin/class-pixel-manager-for-woocommerce-admin.php:118
+#: admin/helper/class-pmw-admin-helper.php:611
+#: admin/partials/pages/class-pmw-pixels-account.php:73
+#: admin/partials/pages/class-pmw-pixels-account.php:125
+#: admin/partials/pages/class-pmw-pixels.php:202
+#: admin/partials/pages/class-pmw-pixels.php:410
+#: admin/partials/pages/class-pmw-pixels.php:592
+#: admin/partials/pages/class-pmw-pixels.php:685
+#: admin/partials/pages/class-pmw-pixels.php:763
+#: admin/partials/pages/class-pmw-pixels.php:854
+#: admin/partials/pages/class-pmw-pixels.php:937
+msgid "Upgrade to Pro"
+msgstr "Обновиться до PRO"
+
+#: admin/class-pixel-manager-for-woocommerce-admin.php:116
+#: admin/partials/common/class-pmw-header.php:99
+#: admin/partials/pages/class-pmw-pixels-freevspro.php:383
+msgid "Support"
+msgstr "Поддержка"
+
+#: admin/class-pixel-manager-for-woocommerce-admin.php:115
+#: admin/partials/common/class-pmw-header.php:104
+#: admin/partials/pages/class-pmw-pixels.php:828
+#: includes/class-pixel-manager-for-woocommerce.php:143
+msgid "Documentation"
+msgstr "Документация"
+
+#: admin/class-pixel-manager-for-woocommerce-admin.php:114
+#: admin/partials/common/class-pmw-header.php:94
+msgid "Account"
+msgstr "Аккаунт"
+
+#: admin/class-pixel-manager-for-woocommerce-admin.php:112
+msgid "Pixel Settings"
+msgstr "Настройки пикселей"
+
+#: admin/class-pixel-manager-for-woocommerce-admin.php:111
+msgid "Pixel Tag Manager"
+msgstr "Менеджер пикселей"
+
+#. Author URI of the plugin
+#: pixel-manager-for-woocommerce.php
+msgid "https://growcommerce.io/"
+msgstr "https://growcommerce.io/"
+
+#. Author of the plugin
+#: pixel-manager-for-woocommerce.php
+msgid "GrowCommerce"
+msgstr "GrowCommerce"
+
+#. Plugin URI of the plugin
+#: pixel-manager-for-woocommerce.php
+msgid "https://wordpress.org/plugins/pixel-manager-for-woocommerce/"
+msgstr "https://wordpress.org/plugins/pixel-manager-for-woocommerce/"
+
+#. Plugin Name of the plugin
+#: pixel-manager-for-woocommerce.php
+msgid "Pixel Tag Manager for WooCommerce"
+msgstr "Менеджер пикселей для WooCommerce"
