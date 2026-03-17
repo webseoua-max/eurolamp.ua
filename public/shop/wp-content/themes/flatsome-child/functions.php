@@ -392,3 +392,10 @@ function custom_catalog_ordering_args( $args ) {
   $args['orderby'] = array( 'meta_value' => 'ASC');
   return $args;
 }
+// noindex for add-to-cart URLs
+function add_noindex_for_add_to_cart() {
+  if ( isset( $_GET['add-to-cart'] ) ) {
+    echo '<meta name="robots" content="noindex, follow">' . "\n";
+  }
+}
+add_action( 'wp_head', 'add_noindex_for_add_to_cart' );
