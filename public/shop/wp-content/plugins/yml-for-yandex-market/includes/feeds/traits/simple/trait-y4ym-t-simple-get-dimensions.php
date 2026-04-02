@@ -5,7 +5,7 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    5.0.2 (02-04-2025)
+ * @version    5.3.0 (22-03-2026)
  *
  * @package    Y4YM
  * @subpackage Y4YM/includes/feeds/traits/simple
@@ -42,7 +42,6 @@ trait Y4YM_T_Simple_Get_Dimensions {
 	public function get_dimensions( $tag_name = 'dimensions', $result_xml = '' ) {
 
 		// * к сожалению wc_get_dimension не всегда возвращает float и юзер может передать в размер что-то типа '13-18'
-		// * потому юзаем gettype() === 'double'
 		$length_yml = 0;
 		$width_yml = 0;
 		$height_yml = 0;
@@ -55,7 +54,7 @@ trait Y4YM_T_Simple_Get_Dimensions {
 		if ( empty( $length ) || $length === 'woo_shippings' ) {
 			if ( $this->get_product()->has_dimensions() ) {
 				$length_yml = $this->get_product()->get_length();
-				if ( ! empty( $length_yml ) && gettype( $length_yml ) === 'double' ) {
+				if ( ! empty( $length_yml ) && get_option( 'woocommerce_dimension_unit' ) !== 'cm' ) {
 					$length_yml = round( wc_get_dimension( $length_yml, 'cm' ), 3 );
 				}
 			}
@@ -74,7 +73,7 @@ trait Y4YM_T_Simple_Get_Dimensions {
 		if ( empty( $width ) || $width === 'woo_shippings' ) {
 			if ( $this->get_product()->has_dimensions() ) {
 				$width_yml = $this->get_product()->get_width();
-				if ( ! empty( $width_yml ) && gettype( $width_yml ) === 'double' ) {
+				if ( ! empty( $width_yml ) && get_option( 'woocommerce_dimension_unit' ) !== 'cm' ) {
 					$width_yml = round( wc_get_dimension( $width_yml, 'cm' ), 3 );
 				}
 			}
@@ -93,7 +92,7 @@ trait Y4YM_T_Simple_Get_Dimensions {
 		if ( empty( $height ) || $height === 'woo_shippings' ) {
 			if ( $this->get_product()->has_dimensions() ) {
 				$height_yml = $this->get_product()->get_height();
-				if ( ! empty( $height_yml ) && gettype( $height_yml ) === 'double' ) {
+				if ( ! empty( $height_yml ) && get_option( 'woocommerce_dimension_unit' ) !== 'cm' ) {
 					$height_yml = round( wc_get_dimension( $height_yml, 'cm' ), 3 );
 				}
 			}
@@ -136,7 +135,7 @@ trait Y4YM_T_Simple_Get_Dimensions {
 		$result_xml = apply_filters(
 			'y4ym_f_simple_tag_dimensions',
 			$result_xml,
-			[ 
+			[
 				'product' => $this->get_product()
 			],
 			$this->get_feed_id()

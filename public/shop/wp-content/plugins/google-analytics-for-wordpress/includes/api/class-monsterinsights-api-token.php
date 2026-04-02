@@ -156,6 +156,38 @@ class MonsterInsights_API_Token {
 	}
 
 	/**
+	 * AJAX handler to fetch a fresh API token for the current context.
+	 *
+	 * This mirrors the behavior on full page load, but can be invoked
+	 * from JavaScript via wp.ajax to refresh the Bearer token when it is
+	 * close to expiring without reloading the page.
+	 *
+	 * @since 9.x.x
+	 *
+	 * Expects:
+	 * - $_POST['nonce'] = wp_create_nonce( 'mi-admin-nonce' )
+	 */
+	public static function ajax_get_token() {
+		// Validate nonce.
+		check_ajax_referer( 'mi-admin-nonce', 'nonce' );
+
+		// Get token for current admin context (site or network).
+		$token_data = self::get_token( is_network_admin() );
+
+		if ( is_wp_error( $token_data ) ) {
+			wp_send_json_error(
+				array(
+					'code'    => $token_data->get_error_code(),
+					'message' => $token_data->get_error_message(),
+				),
+				403
+			);
+		}
+
+		wp_send_json_success( $token_data );
+	}
+
+	/**
 	 * Get just the token string (convenience method for wp_localize_script).
 	 *
 	 * @since 9.x.x
@@ -272,3 +304,9 @@ class MonsterInsights_API_Token {
 	}
 
 }
+
+// AJAX action to allow JS to request a fresh Bearer token without full page reload.
+add_action(
+	'wp_ajax_monsterinsights_get_bearer_token',
+	array( 'MonsterInsights_API_Token', 'ajax_get_token' )
+);

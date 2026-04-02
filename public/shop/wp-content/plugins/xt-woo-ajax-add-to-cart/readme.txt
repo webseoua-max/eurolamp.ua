@@ -7,7 +7,7 @@ Author URI: https://www.xplodedthemes.com
 Tags: add to cart, ajax add to cart, woocommerce, woocommerce add to cart, add to cart redirect
 Requires at least: 4.8
 Tested up to: 6.7
-Stable tag: 1.1.6
+Stable tag: 1.1.7
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -47,6 +47,9 @@ The plugin is totally free! It is also included and loaded by our other plugins:
 *Note:* All our plugins are localized / translatable by default. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful.
 
 == Changelog ==
+
+#### V.1.1.7 - 2026-03-27
+- **update**: Maintenance release
 
 #### V.1.1.6 - 10.03.2025
 - **fix**: Minor CSS fixed within the customizer panels

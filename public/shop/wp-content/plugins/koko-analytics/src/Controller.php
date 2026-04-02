@@ -11,9 +11,11 @@ class Controller
 {
     public function hook(): void
     {
-        add_action('init', [$this, 'action_init'], 0, 0);
+        add_action('init', [$this, 'maybe_collect_request'], PHP_INT_MIN, 0);
+        add_action('init', [$this, 'action_init'], 10, 0);
         add_action('wp_loaded', [$this, 'action_wp_loaded'], 10, 0);
         add_action('wp', [$this, 'action_wp'], 10, 0);
+        add_action('widgets_init', [$this, 'action_widgets_init'], 10, 0);
 
         add_filter('cron_schedules', [$this, 'filter_cron_schedules'], 10, 1);
         add_action('rest_api_init', lazy(Rest::class, 'action_rest_api_init'), 10, 0);
@@ -25,36 +27,41 @@ class Controller
         add_action('koko_analytics_update_custom_endpoint', lazy(Endpoint_Installer::class, 'install'), 10, 0);
     }
 
-    public function action_wp_loaded()
+    public function action_wp_loaded(): void
     {
         // Maybe run any pending database migrations
         $migrations = new Migrations('koko_analytics', KOKO_ANALYTICS_VERSION, KOKO_ANALYTICS_PLUGIN_DIR . '/migrations/');
         $migrations->maybe_run();
     }
 
-    public function action_init()
+    public function action_init(): void
     {
-        // listener for ajax collection endpoint (only used in case optimized endpoint is not installed)
-        $this->maybe_collect_request();
-
         // listener for public dashboard
         $this->maybe_show_dashboard();
 
         add_shortcode('koko_analytics_most_viewed_posts', lazy(Shortcode_Most_Viewed_Posts::class, 'content'));
         add_shortcode('koko_analytics_counter', lazy(Shortcode_Site_Counter::class, 'content'));
+    }
+
+    public function action_widgets_init(): void
+    {
         register_widget(Most_Viewed_Posts_Widget::class);
     }
 
+    /**
+     * @param array $schedules
+     * @return array
+     */
     public function filter_cron_schedules($schedules)
     {
         $schedules['koko_analytics_stats_aggregate_interval'] = [
             'interval' => 60, // 60 seconds
-            'display'  => esc_html__('Every minute', 'koko-analytics'),
+            'display'  => did_action('after_setup_theme') ? esc_html__('Every 60 seconds', 'koko-analytics') : 'Every 60 seconds',
         ];
         return $schedules;
     }
 
-    public function action_wp()
+    public function action_wp(): void
     {
         (new Script_Loader())->hook();
         add_action('admin_bar_menu', [$this, 'action_admin_bar_menu'], 40, 1);
@@ -78,16 +85,17 @@ class Controller
         );
     }
 
-    protected function maybe_collect_request()
+    public function maybe_collect_request(): void
     {
-        if (($_GET['action'] ?? '') !== 'koko_analytics_collect') {
+        // TODO: Remove the $_GET check after 2026-04-16
+        if (($_GET['action'] ?? '') !== 'koko_analytics_collect' && ($_POST['action'] ?? '') !== 'koko_analytics_collect') {
             return;
         }
 
         collect_request();
     }
 
-    protected function maybe_show_dashboard()
+    protected function maybe_show_dashboard(): void
     {
         if (! isset($_GET['koko-analytics-dashboard']) && ! str_contains($_SERVER['REQUEST_URI'] ?? '', '/koko-analytics-dashboard/')) {
             return;

@@ -5,10 +5,10 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    5.2.0 (03-02-2026)
+ * @version    5.3.0 (22-03-2026)
  *
  * @package    Y4YM
- * @subpackage Y4YM/includes
+ * @subpackage Y4YM/includes/feeds
  */
 
 /**
@@ -180,22 +180,6 @@ class Y4YM_Generation_XML {
 					$this->get_feed_id(),
 					'y4ym'
 				);
-				common_option_upd(
-					'y4ym_date_sborki_end',
-					sprintf( '%s (%s: %s)',
-						__( 'Not completed', 'yml-for-yandex-market' ),
-						__( 'The version used is from', 'yml-for-yandex-market' ),
-						common_option_get(
-							'y4ym_date_sborki_end',
-							$date_sborki_start,
-							$this->get_feed_id(),
-							'y4ym'
-						)
-					),
-					'no',
-					$this->get_feed_id(),
-					'y4ym'
-				);
 				Y4YM_Error_Log::record( sprintf( 'FEED #%1$s; INFO: `status_sborki` = 1. %2$s (%3$s); %4$s: %5$s; %6$s: %7$s',
 					$this->get_feed_id(),
 					__( 'We started creating a feed', 'yml-for-yandex-market' ),
@@ -237,7 +221,7 @@ class Y4YM_Generation_XML {
 						__( 'Line', 'yml-for-yandex-market' ),
 						__LINE__
 					) );
-					$this->stop();
+					$this->stop( 'creating_temporary_feed_error' );
 					return;
 				}
 
@@ -255,7 +239,7 @@ class Y4YM_Generation_XML {
 						__( 'Line', 'yml-for-yandex-market' ),
 						__LINE__
 					) );
-					$this->stop();
+					$this->stop( 'creating_temporary_feed_error' );
 					return;
 				}
 
@@ -279,7 +263,7 @@ class Y4YM_Generation_XML {
 						__( 'Line', 'yml-for-yandex-market' ),
 						__LINE__
 					) );
-					$this->stop();
+					$this->stop( 'creating_temporary_feed_error' );
 					return;
 				}
 
@@ -540,14 +524,14 @@ class Y4YM_Generation_XML {
 						__( 'Line', 'yml-for-yandex-market' ),
 						__LINE__
 					) );
-					$this->stop();
+					$this->stop( 'creating_temporary_feed_error' );
 					return;
 				}
 				$res_rename = $this->rename_feed_file();
 				if ( true === $res_rename ) {
 					$this->set_status_sborki( 4 );
 				} else {
-					$this->stop();
+					$this->stop( 'rename_error' );
 				}
 
 				break;
@@ -579,12 +563,12 @@ class Y4YM_Generation_XML {
 					$this->get_feed_id(),
 					'y4ym'
 				);
-				$this->stop();
+				$this->stop( 'success' );
 
 				break;
 			default:
 
-				$this->stop();
+				$this->stop( 'success' );
 
 		} // end switch ( $this->get_status_sborki() )
 
@@ -595,7 +579,7 @@ class Y4YM_Generation_XML {
 	 * 
 	 * @return string
 	 */
-	protected function get_feed_header() {
+	public function get_feed_header() {
 
 		$yml_rules = common_option_get(
 			'y4ym_yml_rules',
@@ -612,15 +596,28 @@ class Y4YM_Generation_XML {
 		);
 		switch ( $format_date ) {
 			case 'rfc_short':
-				$catalog_date = (string) current_time( 'Y-m-d\TH:i' ); // 2022-07-17T17:47;
+
+				// 2022-07-17T17:47;
+				$catalog_date = (string) current_time( 'Y-m-d\TH:i' );
+
 				break;
 			case 'rfc':
-				$catalog_date = (string) current_time( 'c' ); // 2022-07-17T17:47:19+03:00
+
+				// 2022-07-17T17:47:19+03:00
+				$catalog_date = (string) current_time( 'c' );
+
 				break;
 			default:
-				$catalog_date = (string) current_time( 'Y-m-d H:i' ); // время в unix формате 2022-03-21 17:47
+
+				// время в unix формате 2022-03-21 17:47
+				$catalog_date = (string) current_time( 'Y-m-d H:i' );
 		}
-		$result_xml .= new Y4YM_Get_Open_Tag( 'yml_catalog', [ 'date' => $catalog_date ] );
+
+		$tag_attributes_arr = [ 'date' => $catalog_date ];
+		if ( $yml_rules === 'zakupki_mos' ) {
+			$tag_attributes_arr['xmlns'] = 'http://market.zakupki.mos.ru/spIntegration/Yml/1.0';
+		}
+		$result_xml .= new Y4YM_Get_Open_Tag( 'yml_catalog', $tag_attributes_arr );
 		$result_xml .= new Y4YM_Get_Open_Tag( 'shop' );
 		$shop_name = stripslashes(
 			common_option_get( 'y4ym_shop_name',
@@ -645,8 +642,11 @@ class Y4YM_Generation_XML {
 		$result_xml .= new Y4YM_Get_Paired_Tag( 'platform', 'WordPress - YML for Yandex Market' );
 		$result_xml .= new Y4YM_Get_Paired_Tag( 'version', get_bloginfo( 'version' ) );
 		$result_xml .= $this->get_currencies();
-		$result_xml .= $this->get_categories();
 		$result_xml .= $this->get_delivery_pickup();
+		if ( $yml_rules === 'zakupki_mos' ) {
+			$result_xml .= new Y4YM_Get_Closed_Tag( 'shop' );
+		}
+		$result_xml .= $this->get_categories();
 		$result_xml = apply_filters(
 			'y4ym_f_before_offers',
 			$result_xml,
@@ -1064,21 +1064,23 @@ class Y4YM_Generation_XML {
 	 * 
 	 * @return string
 	 */
-	protected function get_feed_footer( $tracing = '' ) {
+	public function get_feed_footer( $tracing = '' ) {
 
 		$result_xml = '';
-		$result_xml .= $this->get_feed_body( $result_xml );
-		if ( empty( $result_xml ) ) {
-			Y4YM_Error_Log::record( sprintf( 'FEED #%1$s; ERROR: %2$s (%3$s); %4$s: %5$s; %6$s: %7$s',
-				$this->get_feed_id(),
-				__( 'Data loss when writing a feed file', 'yml-for-yandex-market' ),
-				$tracing,
-				__( 'File', 'yml-for-yandex-market' ),
-				'class-y4ym-generation-xml.php',
-				__( 'Line', 'yml-for-yandex-market' ),
-				__LINE__
-			) );
-			return $result_xml;
+		if ( $tracing !== 'sumulation' ) {
+			$result_xml .= $this->get_feed_body( $result_xml );
+			if ( empty( $result_xml ) ) {
+				Y4YM_Error_Log::record( sprintf( 'FEED #%1$s; ERROR: %2$s (%3$s); %4$s: %5$s; %6$s: %7$s',
+					$this->get_feed_id(),
+					__( 'Data loss when writing a feed file', 'yml-for-yandex-market' ),
+					$tracing,
+					__( 'File', 'yml-for-yandex-market' ),
+					'class-y4ym-generation-xml.php',
+					__( 'Line', 'yml-for-yandex-market' ),
+					__LINE__
+				) );
+				return $result_xml;
+			}
 		}
 		$result_xml .= new Y4YM_Get_Closed_Tag( 'offers' );
 
@@ -1103,7 +1105,9 @@ class Y4YM_Generation_XML {
 			}
 		}
 
-		$result_xml .= new Y4YM_Get_Closed_Tag( 'shop' );
+		if ( $yml_rules !== 'zakupki_mos' ) {
+			$result_xml .= new Y4YM_Get_Closed_Tag( 'shop' );
+		}
 		$result_xml .= new Y4YM_Get_Closed_Tag( 'yml_catalog' );
 		return $result_xml;
 
@@ -1233,19 +1237,32 @@ class Y4YM_Generation_XML {
 	}
 
 	/**
-	 * Stops the creation of the feed
+	 * Stops the creation of the feed.
+	 * 
+	 * @param string $reason_stop
 	 * 
 	 * @return void
 	 */
-	public function stop() {
+	public function stop( $reason_stop = 'success' ) {
 
-		if ( 'once' === common_option_get( 'y4ym_run_cron', 'disabled', $this->get_feed_id(), 'y4ym' ) ) {
+		if ( 'once' === common_option_get(
+			'y4ym_run_cron',
+			'disabled',
+			$this->get_feed_id(),
+			'y4ym'
+		) ) {
 			// если была одноразовая сборка - переводим переключатель в `отключено`
-			common_option_upd( 'y4ym_run_cron', 'disabled', 'no', $this->get_feed_id(), 'y4ym' );
+			common_option_upd(
+				'y4ym_run_cron',
+				'disabled',
+				'no',
+				$this->get_feed_id(),
+				'y4ym'
+			);
 		}
 		$this->set_status_sborki( -1 );
 		wp_clear_scheduled_hook( 'y4ym_cron_sborki', [ $this->get_feed_id() ] );
-		do_action( 'y4ym_after_construct', $this->get_feed_id(), 'full' );
+		do_action( 'y4ym_after_construct', $this->get_feed_id(), $reason_stop );
 
 	}
 

@@ -5,10 +5,10 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    5.2.0 (03-02-2026)
+ * @version    5.3.0 (22-03-2026)
  *
  * @package    Y4YM
- * @subpackage Y4YM/includes
+ * @subpackage Y4YM/includes/core
  */
 
 /**
@@ -26,7 +26,7 @@
  *
  * @since      0.1.0
  * @package    Y4YM
- * @subpackage Y4YM/includes
+ * @subpackage Y4YM/includes/core
  * @author     Maxim Glazunov <icopydoc@gmail.com>
  */
 final class Y4YM_Error_Log {

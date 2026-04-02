@@ -16,18 +16,18 @@
       "_vendor-65891c97.min.js"
     ]
   },
-  "_WelcomeOverlay-09db51b4.min.js": {
+  "_WelcomeOverlay-37f4de9d.min.js": {
     "css": [
       "css/WelcomeOverlay.css"
     ],
-    "file": "js/chunks/WelcomeOverlay-09db51b4.min.js",
+    "file": "js/chunks/WelcomeOverlay-37f4de9d.min.js",
     "imports": [
       "_vendor-65891c97.min.js",
-      "_monsterinsights-helper-plugin-12a5cd66.min.js",
+      "_monsterinsights-helper-plugin-4cb4e554.min.js",
       "_LaunchWizardButton-d437c323.min.js"
     ]
   },
-  "_index-8698871b.min.js": {
+  "_index-fd54ed60.min.js": {
     "assets": [
       "img/logo-MonsterInsights.png",
       "img/logo-MonsterInsights@2x.png",
@@ -57,24 +57,24 @@
     "css": [
       "css/index.css"
     ],
-    "file": "js/chunks/index-8698871b.min.js",
+    "file": "js/chunks/index-fd54ed60.min.js",
     "imports": [
       "_vendor-65891c97.min.js",
-      "_monsterinsights-helper-plugin-12a5cd66.min.js",
+      "_monsterinsights-helper-plugin-4cb4e554.min.js",
       "_LaunchWizardButton-d437c323.min.js"
     ]
   },
-  "_monsterinsights-helper-plugin-12a5cd66.min.js": {
-    "file": "js/chunks/monsterinsights-helper-plugin-12a5cd66.min.js",
+  "_monsterinsights-helper-plugin-4cb4e554.min.js": {
+    "file": "js/chunks/monsterinsights-helper-plugin-4cb4e554.min.js",
     "imports": [
       "_vendor-65891c97.min.js"
     ]
   },
-  "_report-table-helper-39bdd5be.min.js": {
-    "file": "js/chunks/report-table-helper-39bdd5be.min.js",
+  "_report-table-helper-ef7686bc.min.js": {
+    "file": "js/chunks/report-table-helper-ef7686bc.min.js",
     "imports": [
       "_vendor-65891c97.min.js",
-      "_monsterinsights-helper-plugin-12a5cd66.min.js"
+      "_monsterinsights-helper-plugin-4cb4e554.min.js"
     ]
   },
   "_vendor-65891c97.min.js": {
@@ -1032,9 +1032,9 @@
     "file": "js/reports.min.js",
     "imports": [
       "_vendor-65891c97.min.js",
-      "_report-table-helper-39bdd5be.min.js",
-      "_monsterinsights-helper-plugin-12a5cd66.min.js",
-      "_index-8698871b.min.js",
+      "_report-table-helper-ef7686bc.min.js",
+      "_monsterinsights-helper-plugin-4cb4e554.min.js",
+      "_index-fd54ed60.min.js",
       "_LaunchWizardButton-d437c323.min.js"
     ],
     "isEntry": true,
@@ -1061,6 +1061,7 @@
       "img/tools-prettylinks-icons.png",
       "img/badge-light.svg",
       "img/badge-dark.svg",
+      "img/icon-plus.svg",
       "img/about-icon-check.svg",
       "img/about-icon-connect.png",
       "img/about-icon-guide.png",
@@ -1132,7 +1133,6 @@
       "img/star-empty.svg",
       "img/icon-media.svg",
       "img/arrow-down.svg",
-      "img/icon-plus.svg",
       "img/bullet.svg",
       "img/icon-lock.svg",
       "img/bg-publisher@2x.png",
@@ -1193,10 +1193,10 @@
     "file": "js/settings.min.js",
     "imports": [
       "_vendor-65891c97.min.js",
-      "_monsterinsights-helper-plugin-12a5cd66.min.js",
+      "_monsterinsights-helper-plugin-4cb4e554.min.js",
       "_LaunchWizardButton-d437c323.min.js",
-      "_WelcomeOverlay-09db51b4.min.js",
-      "_index-8698871b.min.js"
+      "_WelcomeOverlay-37f4de9d.min.js",
+      "_index-fd54ed60.min.js"
     ],
     "isEntry": true,
     "src": "src/modules/settings/settings.js"
@@ -1278,8 +1278,8 @@
     "file": "js/widget.min.js",
     "imports": [
       "_vendor-65891c97.min.js",
-      "_report-table-helper-39bdd5be.min.js",
-      "_monsterinsights-helper-plugin-12a5cd66.min.js"
+      "_report-table-helper-ef7686bc.min.js",
+      "_monsterinsights-helper-plugin-4cb4e554.min.js"
     ],
     "isEntry": true,
     "src": "src/modules/widget/widget.js"
@@ -1330,8 +1330,8 @@
     "file": "js/wizard.min.js",
     "imports": [
       "_vendor-65891c97.min.js",
-      "_WelcomeOverlay-09db51b4.min.js",
-      "_monsterinsights-helper-plugin-12a5cd66.min.js",
+      "_WelcomeOverlay-37f4de9d.min.js",
+      "_monsterinsights-helper-plugin-4cb4e554.min.js",
       "_LaunchWizardButton-d437c323.min.js"
     ],
     "isEntry": true,

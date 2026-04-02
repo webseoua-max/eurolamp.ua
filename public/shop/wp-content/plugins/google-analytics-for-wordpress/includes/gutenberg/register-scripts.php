@@ -101,7 +101,7 @@ function monsterinsights_gutenberg_editor_assets() {
 			'allowed_post_types'           => apply_filters( 'monsterinsights_headline_analyzer_post_types', array( 'post' ) ),
 			'current_post_type'            => $posttype,
 			'is_headline_analyzer_enabled' => apply_filters( 'monsterinsights_headline_analyzer_enabled', true ) && 'true' !== monsterinsights_get_option( 'disable_headline_analyzer' ),
-			'reports_url'                  => add_query_arg( 'page', 'monsterinsights_reports', admin_url( 'admin.php' ) ),
+			'reports_url'                  => add_query_arg( 'page', 'monsterinsights_overview_report', admin_url( 'admin.php' ) ),
 			'vue_assets_path'              => plugins_url( $version_path . '/assets/vue/', MONSTERINSIGHTS_PLUGIN_FILE ),
 			'is_woocommerce_installed'     => class_exists( 'WooCommerce' ),
 			'license_type'                 => MonsterInsights()->license->get_license_type(),

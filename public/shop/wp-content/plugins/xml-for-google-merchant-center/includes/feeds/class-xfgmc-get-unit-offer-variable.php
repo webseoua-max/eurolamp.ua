@@ -5,7 +5,7 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    4.0.4 (20-06-2025)
+ * @version    4.1.0 (22-03-2026)
  *
  * @package    XFGMC
  * @subpackage XFGMC/includes/feeds
@@ -26,6 +26,7 @@ class XFGMC_Get_Unit_Offer_Variable extends XFGMC_Get_Unit_Offer {
 	use XFGMC_T_Common_Get_CatId;
 	use XFGMC_T_Common_Skips;
 
+	use XFGMC_T_Variable_Get_Ads_Redirect;
 	use XFGMC_T_Variable_Get_Adult;
 	use XFGMC_T_Variable_Get_Age_Group;
 	use XFGMC_T_Variable_Get_Availability_Date;
@@ -109,7 +110,7 @@ class XFGMC_Get_Unit_Offer_Variable extends XFGMC_Get_Unit_Offer {
 		$result_xml = apply_filters(
 			'xfgmc_f_append_variable_offer',
 			$result_xml,
-			[ 
+			[
 				'product' => $this->get_product(),
 				'offer' => $this->get_offer(),
 				'feed_category_id' => $this->get_feed_category_id()
@@ -121,7 +122,7 @@ class XFGMC_Get_Unit_Offer_Variable extends XFGMC_Get_Unit_Offer {
 			$result_xml = apply_filters(
 				'xfgmc_f_after_variable_offer',
 				$result_xml,
-				[ 
+				[
 					'product' => $this->get_product(),
 					'offer' => $this->get_offer(),
 					'feed_category_id' => $this->get_feed_category_id()
@@ -259,7 +260,7 @@ class XFGMC_Get_Unit_Offer_Variable extends XFGMC_Get_Unit_Offer {
 		$tag_value = apply_filters(
 			'xfgmc_f_variable_tag_value_' . $hook_suffix,
 			$tag_value,
-			[ 
+			[
 				'product' => $this->get_product(),
 				'offer' => $this->get_offer(),
 				'feed_category_id' => $this->get_feed_category_id()
@@ -271,7 +272,7 @@ class XFGMC_Get_Unit_Offer_Variable extends XFGMC_Get_Unit_Offer {
 			$tag_name = apply_filters(
 				'xfgmc_f_variable_tag_name_' . $hook_suffix,
 				$tag_name,
-				[ 
+				[
 					'product' => $this->get_product(),
 					'offer' => $this->get_offer(),
 					'feed_category_id' => $this->get_feed_category_id()
@@ -290,7 +291,7 @@ class XFGMC_Get_Unit_Offer_Variable extends XFGMC_Get_Unit_Offer {
 		$result_xml = apply_filters(
 			'xfgmc_f_variable_tag_' . $hook_suffix,
 			$result_xml,
-			[ 
+			[
 				'product' => $this->get_product(),
 				'offer' => $this->get_offer(),
 				'feed_category_id' => $this->get_feed_category_id()

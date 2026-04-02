@@ -5,7 +5,7 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    5.2.0 (03-02-2026)
+ * @version    5.3.0 (22-03-2026)
  *
  * @package    Y4YM
  * @subpackage Y4YM/admin
@@ -401,10 +401,10 @@ class Y4YM_Admin {
 	public function notices() {
 
 		if ( is_multisite() ) {
-			$plugin_notifications = get_blog_option( get_current_blog_id(), 'y4ym_plugin_notifications', [] );
+			$plugin_notifications = get_blog_option( get_current_blog_id(), 'y4ym_plugin_notifications', 'enabled' );
 			$settings_arr = get_blog_option( get_current_blog_id(), 'y4ym_settings_arr', [] );
 		} else {
-			$plugin_notifications = get_option( 'y4ym_plugin_notifications', [] );
+			$plugin_notifications = get_option( 'y4ym_plugin_notifications', 'enabled' );
 			$settings_arr = get_option( 'y4ym_settings_arr', [] );
 		}
 		if ( $plugin_notifications === 'disabled' ) {
@@ -650,7 +650,16 @@ class Y4YM_Admin {
 
 		$checkbox_xml_file_arr = $_GET['checkbox_xml_file'];
 		for ( $i = 0; $i < count( $checkbox_xml_file_arr ); $i++ ) {
-			$feed_id_str = (string) $checkbox_xml_file_arr[ $i ];
+
+			// защита от CVSS 6.8 уязвимостей
+			$raw_feed_id = $checkbox_xml_file_arr[ $i ] ?? '';
+			// Проверяем: только цифры
+			if ( ! ctype_digit( (string) $raw_feed_id ) ) {
+				// Логируем подозрительную попытку
+				Y4YM_Error_Log::record( 'SECURITY: Invalid feed_id detected: ' . $raw_feed_id );
+				continue; // ? возможно стоит делать return, а не шерстить цикл дальше
+			}
+			$feed_id_str = (string) $raw_feed_id;
 
 			y4ym_remove_directory( Y4YM_PLUGIN_UPLOADS_DIR_PATH . '/feed' . $feed_id_str );
 
@@ -1612,6 +1621,100 @@ class Y4YM_Admin {
 					'desc_tip' => 'true',
 					'type' => 'text'
 				] );
+
+				woocommerce_wp_text_input( [
+					'id' => '_yfym_max_quantity',
+					'label' => sprintf(
+						'%s <i>[max-quantity]</i>',
+						__( 'Maximum number of products', 'yml-for-yandex-market' )
+					),
+					'description' => sprintf( '%s.',
+						__( 'Maximum number of products per order', 'yml-for-yandex-market' )
+					),
+					'type' => 'text',
+					'desc_tip' => 'true'
+				] );
+
+				woocommerce_wp_select( [
+					'id' => '_yfym_okei',
+					'label' => sprintf(
+						'%s <i>[okei id="XXX">Упаковка</okei]</i>',
+						__(
+							'Identifier of the unit type',
+							'yml-for-yandex-market'
+						)
+					),
+					'options' => [
+						'default' => __( 'Default', 'yml-for-yandex-market' )
+					] + Y4YM_Registry::to_key_value_pairs( Y4YM_Registry::get_okei_list() ),
+					'description' => sprintf( '%s. "Общероссийскому классификатору единиц измерения"',
+						__( 'Identifier of the unit type according to', 'yml-for-yandex-market' )
+					),
+					'desc_tip' => 'true'
+				] );
+
+				woocommerce_wp_text_input( [
+					'id' => '_yfym_packagetype',
+					'label' => sprintf(
+						'%s <i>[packageType]</i>',
+						__( 'The type of packaging', 'yml-for-yandex-market' )
+					),
+					'description' => sprintf( '%s.',
+						__(
+							'The type of packaging according to the directory on the Supplier Portal',
+							'yml-for-yandex-market'
+						)
+					),
+					'type' => 'text',
+					'desc_tip' => 'true'
+				] );
+
+				woocommerce_wp_select( [
+					'id' => '_yfym_region',
+					'label' => sprintf(
+						'%s <i>[region]</i>',
+						__( 'Region', 'yml-for-yandex-market' )
+					),
+					'options' => [
+						'default' => __( 'Default', 'yml-for-yandex-market' )
+					] + Y4YM_Registry::to_key_value_pairs( Y4YM_Registry::get_regions_list() ),
+					'description' => sprintf( '%s.',
+						__(
+							'Identifier of the region',
+							'yml-for-yandex-market'
+						)
+					),
+					'desc_tip' => 'true'
+				] );
+
+				woocommerce_wp_text_input( [
+					'id' => '_yfym_ppcategory',
+					'label' => sprintf(
+						'%s <i>[ppCategory]</i>',
+						__( 'The product category from the directory on the Supplier Portal', 'yml-for-yandex-market' )
+					),
+					'description' => sprintf( '%s.',
+						__( 'The product category from the directory on the Supplier Portal', 'yml-for-yandex-market' )
+					),
+					'type' => 'text',
+					'desc_tip' => 'true'
+				] );
+
+				woocommerce_wp_text_input( [
+					'id' => '_yfym_ste',
+					'label' => sprintf(
+						'%s <i>[ste]</i>',
+						__( 'The CTE ID', 'yml-for-yandex-market' )
+					),
+					'description' => sprintf( '%s.',
+						__(
+							'The CTE ID on the Supplier Portal',
+							'yml-for-yandex-market'
+						)
+					),
+					'type' => 'text',
+					'desc_tip' => 'true'
+				] );
 				?>
 			</div>
 			<?php do_action( 'y4ym_append_individual_settings_tab', $post ); ?>
@@ -1712,7 +1815,13 @@ class Y4YM_Admin {
 			'_yfym_certificate',
 			'_yfym_comment_validity_days',
 			'_yfym_service_life_days',
-			'_yfym_comment_life_days'
+			'_yfym_comment_life_days',
+			'_yfym_max_quantity',
+			'_yfym_okei',
+			'_yfym_packagetype',
+			'_yfym_region',
+			'_yfym_ppcategory',
+			'_yfym_ste'
 		];
 		$post_meta_arr = apply_filters(
 			'y4ym_f_post_meta_arr',

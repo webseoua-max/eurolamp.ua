@@ -12,4 +12,5 @@
 <g:availability>in_stock</g:availability>
 <g:price>99.00 RUB</g:price>
 <g:condition>no</g:condition>
+<g:adult>default</g:adult>
 </item>

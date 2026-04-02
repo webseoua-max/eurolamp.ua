@@ -8,7 +8,7 @@
  * @version    5.2.0 (03-02-2026)
  *
  * @package    Y4YM
- * @subpackage Y4YM/admin
+ * @subpackage Y4YM/includes/updates
  */
 
 /**
@@ -18,7 +18,7 @@
  *
  * @see        [ 202, 402, 412, 418, 520 ]
  * @package    Y4YM
- * @subpackage Y4YM/admin
+ * @subpackage Y4YM/includes/updates
  * @author     Maxim Glazunov <icopydoc@gmail.com>
  */
 final class Y4YM_Plugin_Upd {
@@ -28,8 +28,8 @@ final class Y4YM_Plugin_Upd {
 	/**
 	 * A list of premium versions of the plugin and discount coupons for license renewal.
 	 *
-	 * @access private
-	 * @var array
+	 * @access   private
+	 * @var      array
 	 */
 	private $list_plugin_names = [
 		'y4ymp' => [ 'name' => 'PRO', 'code' => 'renewlicense20yp' ],
@@ -39,56 +39,56 @@ final class Y4YM_Plugin_Upd {
 
 	/**
 	 * Префикс плагина.
-	 * @var string
+	 * @var      string
 	 */
 	private $pref;
 
 	/**
 	 * Псевдоним плагина (например: oop-wp).
-	 * @var string
+	 * @var      string
 	 */
 	private $slug;
 
 	/**
 	 * Полный псевдоним плагина (папка плагина + имя главного файла, например: oop-wp/oop-wp.php).
-	 * @var string
+	 * @var      string
 	 */
 	private $plugin_slug;
 
 	/**
 	 * Номер версии плагина.
-	 * @var string
+	 * @var      string
 	 */
 	private $premium_version;
 
 	/**
 	 * Лицензионный ключ плагина.
-	 * @var string
+	 * @var      string
 	 */
 	private $license_key;
 
 	/**
 	 * Номер заказа.
-	 * @var string
+	 * @var      string
 	 */
 	private $order_id;
 
 	/**
 	 * Почта заказа.
-	 * @var string
+	 * @var      string
 	 */
 	private $order_email;
 
 	/**
 	 * URL сайта.
-	 * @var string
+	 * @var      string
 	 */
 	private $order_home_url;
 
 	/**
 	 * Plugin Updates.
 	 * 
-	 * @param array $args
+	 * @param    array    $args
 	 */
 	public function __construct( $args = [] ) {
 
@@ -128,9 +128,9 @@ final class Y4YM_Plugin_Upd {
 	/**
 	 * Initialization hooks.
 	 * 
-	 * @uses add_filter()
+	 * @uses     add_filter()
 	 *
-	 * @return void
+	 * @return   void
 	 */
 	private function init_hooks() {
 
@@ -147,12 +147,12 @@ final class Y4YM_Plugin_Upd {
 	}
 
 	/**
-	 * Summary of add_plugin_action_links
+	 * Summary of add_plugin_action_links.
 	 * 
-	 * @param array $actions
-	 * @param string $plugin_file
+	 * @param    array     $actions
+	 * @param    string    $plugin_file
 	 * 
-	 * @return array
+	 * @return   array
 	 */
 	public function add_plugin_action_links( $actions, $plugin_file ) {
 
@@ -209,7 +209,7 @@ final class Y4YM_Plugin_Upd {
 	/**
 	 * Get info.
 	 * 
-	 * @return void
+	 * @return   void
 	 */
 	public function get_info() {
 
@@ -338,12 +338,12 @@ final class Y4YM_Plugin_Upd {
 	 * y4ymp_num_decline($num, 'книга', 'книги', 'книг')
 	 * y4ymp_num_decline($num, 'книга', 'книг')
 	 *
-	 * @param  int|string 		$number  Число после которого будет слово. Можно указать число в HTML тегах.
-	 * @param  string|array		$titles  Варианты склонения или первое слово для кратного 1.
-	 * @param  string			$param2  Второе слово, если не указано в параметре $titles.
-	 * @param  string			$param3  Третье слово, если не указано в параметре $titles.
+	 * @param    int|string      $number    Число после которого будет слово. Можно указать число в HTML тегах.
+	 * @param    string|array    $titles    Варианты склонения или первое слово для кратного 1.
+	 * @param    string          $param2    Второе слово, если не указано в параметре $titles.
+	 * @param    string          $param3    Третье слово, если не указано в параметре $titles.
 	 *
-	 * @return string			1 книга, 2 книги, 10 книг.
+	 * @return   string          1 книга, 2 книги, 10 книг.
 	 *
 	 */
 	private function num_decline( $number, $titles, $param2 = '', $param3 = '' ) {
@@ -366,7 +366,7 @@ final class Y4YM_Plugin_Upd {
 	/**
 	 * Get body request.
 	 * 
-	 * @return array
+	 * @return   array
 	 */
 	private function get_body_request() {
 
@@ -389,7 +389,7 @@ final class Y4YM_Plugin_Upd {
 	/**
 	 * Get prefix.
 	 * 
-	 * @return string
+	 * @return   string
 	 */
 	private function get_pref() {
 		return $this->pref;
@@ -398,7 +398,7 @@ final class Y4YM_Plugin_Upd {
 	/**
 	 * Get slug.
 	 * 
-	 * @return string
+	 * @return   string
 	 */
 	private function get_slug() {
 		return $this->slug;
@@ -407,7 +407,7 @@ final class Y4YM_Plugin_Upd {
 	/**
 	 * Get plugin slug.
 	 * 
-	 * @return string
+	 * @return   string
 	 */
 	private function get_plugin_slug() {
 		return $this->plugin_slug;
@@ -416,7 +416,7 @@ final class Y4YM_Plugin_Upd {
 	/**
 	 * Get premium version.
 	 * 
-	 * @return string
+	 * @return   string
 	 */
 	private function get_premium_version() {
 		return $this->premium_version;
@@ -425,7 +425,7 @@ final class Y4YM_Plugin_Upd {
 	/**
 	 * Get license key.
 	 * 
-	 * @return string
+	 * @return   string
 	 */
 	private function get_license_key() {
 
@@ -437,7 +437,7 @@ final class Y4YM_Plugin_Upd {
 	/**
 	 * Get order ID.
 	 * 
-	 * @return string
+	 * @return   string
 	 */
 	private function get_order_id() {
 
@@ -449,7 +449,7 @@ final class Y4YM_Plugin_Upd {
 	/**
 	 * Get order email.
 	 * 
-	 * @return string
+	 * @return   string
 	 */
 	private function get_order_email() {
 
@@ -461,7 +461,7 @@ final class Y4YM_Plugin_Upd {
 	/**
 	 * Get response to an API request.
 	 * 
-	 * @return WP_Error|array
+	 * @return   WP_Error|array
 	 */
 	private function response_to_api() {
 
@@ -483,9 +483,9 @@ final class Y4YM_Plugin_Upd {
 	/**
 	 * Reserved response to an API request.
 	 * 
-	 * @param array $request_arr
+	 * @param    array             $request_arr
 	 * 
-	 * @return WP_Error|array
+	 * @return   WP_Error|array
 	 */
 	private function response_to_reserved_servers( $request_arr ) {
 
@@ -506,10 +506,10 @@ final class Y4YM_Plugin_Upd {
 	/**
 	 * Save resp.
 	 * 
-	 * @param string|int $v
-	 * @param string $d
+	 * @param    string|int    $v
+	 * @param    string        $d
 	 * 
-	 * @return void
+	 * @return   void
 	 */
 	private function save_resp( $v, $d ) {
 
@@ -527,9 +527,9 @@ final class Y4YM_Plugin_Upd {
 	/**
 	 * Проверка наличия обновлений.
 	 * 
-	 * @param object $transient
+	 * @param    object   $transient
 	 * 
-	 * @return object
+	 * @return   object
 	 */
 	public function check_update( $transient ) {
 
@@ -598,11 +598,11 @@ final class Y4YM_Plugin_Upd {
 	/**
 	 * Проверка информации о плагине (запрос информации об обновлениях).
 	 *
-	 * @param false|object|array $result
-	 * @param string $action
-	 * @param object $args
+	 * @param    false|object|array    $result
+	 * @param    string                $action
+	 * @param    object                $args
 	 * 
-	 * @return false|object|array
+	 * @return   false|object|array
 	 */
 	public function plugin_api_check_info( $result, $action, $args ) {
 
@@ -640,9 +640,9 @@ final class Y4YM_Plugin_Upd {
 	/**
 	 * Обновление плагина. Фильтрует параметры пакета перед запуском обновления.
 	 * 
-	 * @param array $options
+	 * @param    array    $options
 	 * 
-	 * @return array
+	 * @return   array
 	 */
 	public function set_update_package( $options ) {
 
@@ -683,9 +683,9 @@ final class Y4YM_Plugin_Upd {
 	/**
 	 * Get plugin response data.
 	 * 
-	 * @param mixed $resp
+	 * @param    mixed       $resp
 	 * 
-	 * @return stdClass
+	 * @return   stdClass
 	 */
 	private function get_plugin_response_data( $resp ) {
 

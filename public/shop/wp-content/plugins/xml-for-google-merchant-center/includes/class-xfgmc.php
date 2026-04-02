@@ -8,7 +8,7 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    4.0.9 (23-12-2025)
+ * @version    4.1.0 (22-03-2026)
  *
  * @package    XFGMC
  * @subpackage XFGMC/includes
@@ -50,6 +50,15 @@ class XFGMC {
 	protected $plugin_name;
 
 	/**
+	 * Container for core service objects.
+	 *
+	 * @since    4.1.0
+	 * @access   protected
+	 * @var      array    $services    Holds instances of core functionality objects.
+	 */
+	protected $services = [];
+
+	/**
 	 * The current version of the plugin.
 	 *
 	 * @since 0.1.0
@@ -79,7 +88,8 @@ class XFGMC {
 		$this->load_dependencies();
 		$this->set_locale();
 		$this->define_admin_hooks();
-		$this->define_public_hooks();
+		// ! $this->define_public_hooks(); - отключил
+		$this->define_core_hooks();
 
 	}
 
@@ -105,12 +115,28 @@ class XFGMC {
 	private function load_dependencies() {
 
 		/**
+		 * The class responsible for orchestrating the actions and filters of the
+		 * core plugin.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-xfgmc-loader.php';
+
+		/**
+		 * The class responsible for defining internationalization functionality
+		 * of the plugin.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-xfgmc-i18n.php';
+
+		/** ----------------------------------- */
+
+		/**
 		 * These classes are responsible for generating the feed.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/feeds/traits/global/traits-xfgmc-global-variables.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/feeds/class-xfgmc-generation-xml.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/feeds/class-xfgmc-write-file.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/feeds/class-xfgmc-feed-file-meta.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/feeds/class-xfgmc-feed-updater.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/feeds/class-xfgmc-rules-list.php';
 
 		/**
 		 * Adding third-party libraries.
@@ -133,46 +159,27 @@ class XFGMC {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-xfgmc-feedback.php';
 
 		/**
-		 * The class responsible for writes plugin logs.
+		 * The classes are responsible for core the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-xfgmc-error-log.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/core/class-xfgmc-error-log.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/core/class-xfgmc-get-closed-tag.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/core/class-xfgmc-get-open-tag.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/core/class-xfgmc-get-paired-tag.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/core/class-xfgmc-data.php';
 
 		/**
-		 * The class responsible for creates a closing tag.
+		 * This class manages the CRON tasks of generating the YML feed.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-xfgmc-get-closed-tag.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/cron/class-xfgmc-cron-manager.php';
 
-		/**
-		 * The class responsible for creates a opening tag.
-		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-xfgmc-get-open-tag.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/wordpress/class-xfgmc-mime-types.php';
 
-		/**
-		 * The class responsible for creates a paired tag.
-		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-xfgmc-get-paired-tag.php';
+		// Подключение CLI команды
+		if ( defined( 'WP_CLI' ) && WP_CLI ) {
+			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/wp-cli/class-xfgmc-wp-cli-command.php';
+		}
 
-		/**
-		 * The class responsible for set and get the plugin data.
-		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-xfgmc-data.php';
-
-		/**
-		 * The class responsible for orchestrating the actions and filters of the
-		 * core plugin.
-		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-xfgmc-loader.php';
-
-		/**
-		 * The class responsible for defining internationalization functionality
-		 * of the plugin.
-		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-xfgmc-i18n.php';
-
-		/**
-		 * The class responsible for the list of tags.
-		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/feeds/class-xfgmc-rules-list.php';
+		/** ----------------------------------- */
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
@@ -186,6 +193,10 @@ class XFGMC {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-xfgmc-public.php';
 
 		$this->loader = new XFGMC_Loader();
+
+		$this->services['cron_manager'] = new XFGMC_Cron_Manager();
+		$this->services['feed_updater'] = new XFGMC_Feed_Updater();
+		$this->services['mime_types'] = new XFGMC_Mime_Types();
 
 	}
 
@@ -280,18 +291,6 @@ class XFGMC {
 		// дополнительная информация для фидбэка
 		$this->loader->add_action( 'xfgmc_f_feedback_additional_info', $plugin_admin, 'feedback_additional_info', 11 );
 
-		// Разрешим загрузку xml и csv файлов
-		$this->loader->add_action( 'upload_mimes', $plugin_admin, 'add_mime_types' );
-
-		// Add cron intervals to WordPress
-		$this->loader->add_action( 'cron_schedules', $plugin_admin, 'add_cron_intervals' );
-
-		// этот крон срабатывает в момент запуска генерации фида с нуля
-		$this->loader->add_action( 'xfgmc_cron_start_feed_creation', $plugin_admin, 'do_start_feed_creation' );
-
-		// этот крон срабатывает в процессе генерации фида. вызывает кроном xfgmc_cron_start_feed_creation
-		$this->loader->add_action( 'xfgmc_cron_sborki', $plugin_admin, 'do_it_every_minute' );
-
 	}
 
 	/**
@@ -309,6 +308,38 @@ class XFGMC {
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
+
+	}
+
+	/**
+	 * Register hooks that are related to core functionality, but not tied 
+	 * to admin or public-facing logic.
+	 * 
+	 * @since    0.1.0
+	 * @access   private
+	 * 
+	 * @return   void
+	 */
+	private function define_core_hooks() {
+
+		$cron_manager = $this->services['cron_manager'];
+		$feed_updater = $this->services['feed_updater'];
+		$mime_types = $this->services['mime_types'];
+
+		// Add cron intervals to WordPress
+		$this->loader->add_action( 'cron_schedules', $cron_manager, 'add_cron_intervals' );
+
+		// этот крон срабатывает в момент запуска генерации фида с нуля
+		$this->loader->add_action( 'xfgmc_cron_start_feed_creation', $cron_manager, 'do_start_feed_creation' );
+
+		// этот крон срабатывает в процессе генерации фида. вызывает кроном xfgmc_cron_start_feed_creation
+		$this->loader->add_action( 'xfgmc_cron_sborki', $cron_manager, 'do_it_every_minute' );
+
+		// слушаем изменение количества товаров в заказе
+		$this->loader->add_action( 'woocommerce_reduce_order_item_stock', $feed_updater, 'check_update_feed_stock_change', 50, 3 );
+
+		// Разрешим загрузку xml и csv файлов
+		$this->loader->add_action( 'upload_mimes', $mime_types, 'add_mime_types' );
 
 	}
 

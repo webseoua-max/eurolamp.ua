@@ -8,7 +8,7 @@
  * @version    5.0.16 (23-07-2025)
  *
  * @package    Y4YM
- * @subpackage Y4YM/includes
+ * @subpackage Y4YM/includes/updates
  */
 
 /**
@@ -16,7 +16,7 @@
  *
  * @since      0.1.0
  * @package    Y4YM
- * @subpackage Y4YM/includes
+ * @subpackage Y4YM/includes/updates
  * @author     Maxim Glazunov <icopydoc@gmail.com>
  */
 class Y4YM_Plugin_Secrets {

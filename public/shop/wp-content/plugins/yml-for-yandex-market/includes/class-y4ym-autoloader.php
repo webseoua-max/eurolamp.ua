@@ -36,7 +36,7 @@ class Y4YM_Autoloader {
 	 *  
 	 * Example: `/home/p135/www/site.ru/wp-content/plugins/yml-for-yandex-market/classmap.php`.
 	 * 
-	 * @var string
+	 * @var      string
 	 */
 	private $map_file;
 
@@ -52,7 +52,7 @@ class Y4YM_Autoloader {
 	 * 
 	 * Example: `/home/p135/www/site.ru/wp-content/plugins/yml-for-yandex-market/`.
 	 * 
-	 * @var string
+	 * @var      string
 	 */
 	private $plugin_dir_path = Y4YM_PLUGIN_DIR_PATH;
 
@@ -61,7 +61,7 @@ class Y4YM_Autoloader {
 	 * 
 	 * Example: `Y4YM`.
 	 * 
-	 * @var string
+	 * @var      string
 	 */
 	private $prefix = 'Y4YM';
 
@@ -75,8 +75,8 @@ class Y4YM_Autoloader {
 	/**
 	 * Constructor.
 	 * 
-	 * @param string $plugin_dir_path
-	 * @param string $prefix
+	 * @param    string    $plugin_dir_path
+	 * @param    string    $prefix
 	 */
 	public function __construct( $plugin_dir_path = '', $prefix = '' ) {
 
@@ -100,7 +100,7 @@ class Y4YM_Autoloader {
 	/**
 	 * Создаёт/обновляет файл `classmap.php `если он был изменен с последней загрузки.
 	 *                                                        
-	 * @return void
+	 * @return   void
 	 */
 	public function update_cache(): void {
 
@@ -125,9 +125,9 @@ class Y4YM_Autoloader {
 	/**
 	 * Пытается найти класс или трейт и загрзуить его через `require_once`.
 	 * 
-	 * @param string $class
+	 * @param    string    $class
 	 *                                                        
-	 * @return void.
+	 * @return   void
 	 */
 	private function autoload( string $class ): void {
 
@@ -173,11 +173,11 @@ class Y4YM_Autoloader {
 	/**
 	 * Получает пути всех файлов и папок в указанной папке.
 	 *
-	 * @param  string $dir             Путь до папки (на конце со слэшем или без).
-	 * @param  bool   $recursive       Включить вложенные папки или нет?
-	 * @param  bool   $include_folders Включить ли в список пути на папки?
-	 *                                                        
-	 * @return array Вернет массив путей до файлов/папок.
+	 * @param    string    $dir                Путь до папки (на конце со слэшем или без).
+	 * @param    bool      $recursive          Включить вложенные папки или нет?
+	 * @param    bool      $include_folders    Включить ли в список пути на папки?
+	 * 
+	 * @return   array     Вернет массив путей до файлов/папок.
 	 */
 	private function get_dir_files( $dir, $recursive = true, $include_folders = false ): array {
 
@@ -222,7 +222,7 @@ class Y4YM_Autoloader {
 	/**
 	 * Get the plugin dir path.
 	 * 
-	 * @return string Example: `/home/p135/www/site.ru/wp-content/plugins/yml-for-yandex-market/`.
+	 * @return   string    Example: `/home/p135/www/site.ru/wp-content/plugins/yml-for-yandex-market/`.
 	 */
 	private function get_plugin_dir_path() {
 		return $this->plugin_dir_path;
@@ -231,7 +231,7 @@ class Y4YM_Autoloader {
 	/**
 	 * Get the plugin prefix.
 	 * 
-	 * @return string Example: `Y4YM`.
+	 * @return   string    Example: `Y4YM`.
 	 */
 	private function get_prefix() {
 		return $this->prefix;

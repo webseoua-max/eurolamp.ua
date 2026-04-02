@@ -5,7 +5,7 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    5.0.24 (27-11-2025)
+ * @version    5.3.0 (22-03-2026)
  * @see        https://2web-master.ru/wp_list_table-%E2%80%93-poshagovoe-rukovodstvo.html 
  *             https://wp-kama.ru/function/wp_list_table
  *
@@ -248,19 +248,40 @@ class Y4YM_Feeds_List_Table extends WP_List_Table {
 					}
 
 					if ( isset( $settings_arr[ $feed_id_str ]['y4ym_date_sborki_start'] ) ) {
+						$date_sborki_start = $settings_arr[ $feed_id_str ]['y4ym_date_sborki_start'];
 						$text_column_feed_summary .= sprintf(
 							'<strong>%s:</strong> %s<br/>',
 							esc_html__( 'Start of last generation', 'yml-for-yandex-market' ),
-							$settings_arr[ $feed_id_str ]['y4ym_date_sborki_start']
+							esc_html__( $date_sborki_start )
 						);
+					} else {
+						$date_sborki_start = current_time( 'Y-m-d H:i' );
 					}
 
 					if ( isset( $settings_arr[ $feed_id_str ]['y4ym_date_sborki_end'] ) ) {
-						$text_column_feed_summary .= sprintf(
-							'<strong>%s:</strong> %s<br/>',
-							esc_html__( 'End of last generation', 'yml-for-yandex-market' ),
-							$settings_arr[ $feed_id_str ]['y4ym_date_sborki_end']
-						);
+						$date_sborki_end = $settings_arr[ $feed_id_str ]['y4ym_date_sborki_end'];
+						if ( $date_sborki_start <= $date_sborki_end ) {
+							$text_column_feed_summary .= sprintf(
+								'<strong>%s:</strong> %s<br/>',
+								esc_html__( 'End of last generation', 'yml-for-yandex-market' ),
+								$settings_arr[ $feed_id_str ]['y4ym_date_sborki_end']
+							);
+						} else {
+							if ( $date_sborki_end === '-' ) {
+								$text_column_feed_summary .= sprintf(
+									'<strong>%s:</strong> -<br/>',
+									esc_html__( 'End of last generation', 'yml-for-yandex-market' )
+								);
+							} else {
+								$text_column_feed_summary .= sprintf(
+									'<strong>%s:</strong> %s<br/>(%s: %s)<br/>',
+									esc_html__( 'End of last generation', 'yml-for-yandex-market' ),
+									__( 'The last generation is not completed', 'yml-for-yandex-market' ),
+									__( 'The version used is from', 'yml-for-yandex-market' ),
+									$date_sborki_end
+								);
+							}
+						}
 					}
 
 					// ? возможно удалить в перспективе. Пока в комментах
@@ -306,11 +327,14 @@ class Y4YM_Feeds_List_Table extends WP_List_Table {
 		$hidden = [];
 		$sortable = $this->get_sortable_columns(); // вызов сортировки
 		$this->_column_headers = [ $columns, $hidden, $sortable ];
+
+		$table_data = $this->table_data(); // данные для формирования таблицы
+
 		// пагинация 
 		$per_page = 10;
 		$current_page = $this->get_pagenum();
-		$total_items = count( $this->table_data() );
-		$found_data = array_slice( $this->table_data(), ( ( $current_page - 1 ) * $per_page ), $per_page );
+		$total_items = count( $table_data );
+		$found_data = array_slice( $table_data, ( ( $current_page - 1 ) * $per_page ), $per_page );
 		$this->set_pagination_args( [
 			'total_items' => $total_items, // Мы должны вычислить общее количество элементов
 			'per_page' => $per_page // Мы должны определить, сколько элементов отображается на странице

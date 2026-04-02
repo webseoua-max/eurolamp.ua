@@ -8,7 +8,7 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    5.2.0 (03-02-2026)
+ * @version    5.3.0 (22-03-2026)
  *
  * @package    Y4YM
  * @subpackage Y4YM/includes
@@ -34,36 +34,36 @@ class Y4YM {
 	 * The loader that's responsible for maintaining and registering all hooks that power
 	 * the plugin.
 	 *
-	 * @since 0.1.0
-	 * @access protected
-	 * @var Y4YM_Loader $loader Maintains and registers all hooks for the plugin.
+	 * @since    0.1.0
+	 * @access   protected
+	 * @var      Y4YM_Loader    $loader Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
 	/**
 	 * The unique identifier of this plugin.
 	 *
-	 * @since 0.1.0
-	 * @access protected
-	 * @var string $plugin_name The string used to uniquely identify this plugin.
+	 * @since    0.1.0
+	 * @access   protected
+	 * @var      string    $plugin_name    The string used to uniquely identify this plugin.
 	 */
 	protected $plugin_name;
 
 	/**
 	 * Container for core service objects.
 	 *
-	 * @since 5.1.0
-	 * @access protected
-	 * @var array $services Holds instances of core functionality objects.
+	 * @since    5.1.0
+	 * @access   protected
+	 * @var      array    $services    Holds instances of core functionality objects.
 	 */
 	protected $services = [];
 
 	/**
 	 * The current version of the plugin.
 	 *
-	 * @since 0.1.0
-	 * @access protected
-	 * @var string $version The current version of the plugin.
+	 * @since    0.1.0
+	 * @access   protected
+	 * @var      string    $version    The current version of the plugin.
 	 */
 	protected $version;
 
@@ -74,7 +74,7 @@ class Y4YM {
 	 * Load the dependencies, define the locale, and set the hooks for the admin area and
 	 * the public-facing side of the site.
 	 *
-	 * @since 0.1.0
+	 * @since    0.1.0
 	 */
 	public function __construct() {
 
@@ -107,10 +107,10 @@ class Y4YM {
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
 	 *
-	 * @since 0.1.0
-	 * @access private
+	 * @since    0.1.0
+	 * @access   private
 	 * 
-	 * @return void
+	 * @return   void
 	 */
 	private function load_dependencies() {
 
@@ -127,6 +127,8 @@ class Y4YM {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-y4ym-i18n.php';
 
 		/** ----------------------------------- */
+
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'assets/data/y4ym-constants.php';
 
 		/**
 		 * These classes are responsible for generating the feed.
@@ -165,6 +167,7 @@ class Y4YM {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/core/class-y4ym-get-closed-tag.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/core/class-y4ym-get-open-tag.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/core/class-y4ym-get-paired-tag.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/core/class-y4ym-registry.php';
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/core/class-y4ym-data.php';
 
 		/**
@@ -175,6 +178,11 @@ class Y4YM {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/woocommerce/class-y4ym-taxonomy.php';
 
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/wordpress/class-y4ym-mime-types.php';
+
+		// Подключение CLI команды
+		if ( defined( 'WP_CLI' ) && WP_CLI ) {
+			require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/wp-cli/class-y4ym-wp-cli-command.php';
+		}
 
 		/** ----------------------------------- */
 
@@ -204,10 +212,10 @@ class Y4YM {
 	 * Uses the Y4YM_i18n class in order to set the domain and to register the hook
 	 * with WordPress.
 	 *
-	 * @since 0.1.0
-	 * @access private
+	 * @since    0.1.0
+	 * @access   private
 	 * 
-	 * @return void
+	 * @return   void
 	 */
 	private function set_locale() {
 
@@ -221,10 +229,10 @@ class Y4YM {
 	 * Register all of the hooks related to the admin area functionality
 	 * of the plugin.
 	 *
-	 * @since 0.1.0
-	 * @access private
+	 * @since    0.1.0
+	 * @access   private
 	 * 
-	 * @return void
+	 * @return   void
 	 */
 	private function define_admin_hooks() {
 
@@ -289,10 +297,10 @@ class Y4YM {
 	 * Register all of the hooks related to the public-facing functionality
 	 * of the plugin.
 	 *
-	 * @since 0.1.0
-	 * @access private
+	 * @since    0.1.0
+	 * @access   private
 	 * 
-	 * @return void
+	 * @return   void
 	 */
 	private function define_public_hooks() {
 
@@ -307,10 +315,10 @@ class Y4YM {
 	 * Register hooks that are related to core functionality, but not tied 
 	 * to admin or public-facing logic.
 	 * 
-	 * @since 0.1.0
-	 * @access private
+	 * @since    0.1.0
+	 * @access   private
 	 * 
-	 * @return void
+	 * @return   void
 	 */
 	private function define_core_hooks() {
 
@@ -344,11 +352,28 @@ class Y4YM {
 	}
 
 	/**
-	 * Run the loader to execute all of the hooks with WordPress.
+	 * Registers all plugin widgets with WordPress.
+	 *
+	 * This method is called on the 'widgets_init' action hook and registers
+	 * each widget class so it can be used in theme sidebars.
+	 *
+	 * If additional widgets are created in the future, add them here using:
+	 *     register_widget( 'Your_Widget_Class_Name' );
 	 *
 	 * @since 0.1.0
 	 * 
 	 * @return void
+	 */
+	public function register_widgets() {
+
+	}
+
+	/**
+	 * Run the loader to execute all of the hooks with WordPress.
+	 *
+	 * @since    0.1.0
+	 * 
+	 * @return   void
 	 */
 	public function run() {
 		$this->loader->run();
@@ -358,9 +383,9 @@ class Y4YM {
 	 * The name of the plugin used to uniquely identify it within the context of
 	 * WordPress and to define internationalization functionality.
 	 *
-	 * @since 0.1.0
+	 * @since    0.1.0
 	 * 
-	 * @return string The name of the plugin. For example: `yml-for-yandex-market`.
+	 * @return   string     The name of the plugin. For example: `yml-for-yandex-market`.
 	 */
 	public function get_plugin_name() {
 		return $this->plugin_name;
@@ -369,9 +394,9 @@ class Y4YM {
 	/**
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
-	 * @since 0.1.0
+	 * @since    0.1.0
 	 * 
-	 * @return Y4YM_Loader Orchestrates the hooks of the plugin.
+	 * @return   Y4YM_Loader    Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
 		return $this->loader;
@@ -380,9 +405,9 @@ class Y4YM {
 	/**
 	 * Retrieve the version number of the plugin.
 	 *
-	 * @since 0.1.0
+	 * @since    0.1.0
 	 * 
-	 * @return string The version number of the plugin. For example: `0.1.0`.
+	 * @return  string    The version number of the plugin. For example: `0.1.0`.
 	 */
 	public function get_version() {
 		return $this->version;

@@ -24,27 +24,27 @@ function monsterinsights_is_amp() {
 	if ( function_exists( 'is_amp_endpoint' ) && is_amp_endpoint() ) {
 		return true;
 	}
-	
+
 	// Check for AMP theme
 	if ( function_exists( 'amp_is_request' ) && amp_is_request() ) {
 		return true;
 	}
-	
+
 	// Check for AMP query parameter
 	if ( isset( $_GET['amp'] ) && '1' === $_GET['amp'] ) {
 		return true;
 	}
-	
+
 	// Check for AMP in URL path
 	if ( isset( $_SERVER['REQUEST_URI'] ) && false !== strpos( $_SERVER['REQUEST_URI'], '/amp/' ) ) {
 		return true;
 	}
-	
+
 	// Check for AMP in theme
 	if ( function_exists( 'amp_is_canonical' ) && amp_is_canonical() ) {
 		return true;
 	}
-	
+
 	return false;
 }
 
@@ -256,7 +256,7 @@ function monsterinsights_frontend_admin_bar_scripts() {
 
 	// Check if any of the other admin scripts are enqueued, if so, use their object.
 	if ( ! wp_script_is( 'monsterinsights-vue-script' ) && ! wp_script_is( 'monsterinsights-vue-reports' ) && ! wp_script_is( 'monsterinsights-vue-widget' ) && ! wp_script_is( 'monsterinsights-vue3-custom-dashboard' ) ) {
-		$reports_url = is_network_admin() ? add_query_arg( 'page', 'monsterinsights_reports', network_admin_url( 'admin.php' ) ) : add_query_arg( 'page', 'monsterinsights_reports', admin_url( 'admin.php' ) );
+		$reports_url = is_network_admin() ? add_query_arg( 'page', 'monsterinsights_overview_report', network_admin_url( 'admin.php' ) ) : add_query_arg( 'page', 'monsterinsights_reports', admin_url( 'admin.php' ) );
 		wp_localize_script(
 			'monsterinsights-admin-bar',
 			'monsterinsights',

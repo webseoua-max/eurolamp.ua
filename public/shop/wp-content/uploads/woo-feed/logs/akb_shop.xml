@@ -520,3 +520,277 @@ Array
 
 2026-03-16T10:03:00+00:00 DEBUG Validating Product
 
+2026-03-20T10:30:15+00:00 DEBUG Getting Data for akb_shop.xml feed.
+
+2026-03-20T10:30:15+00:00 DEBUG Generating Feed VIA Ajax...
+
+2026-03-20T10:30:15+00:00 INFO Feed Config::
+Array
+(
+    [provider] => custom
+    [feed_country] => UA
+    [filename] => AKB_SHOP
+    [feedType] => xml
+    [ftpenabled] => false
+    [ftporsftp] => ftp
+    [ftphost] => 
+    [ftpport] => 21
+    [ftpuser] => 
+    [ftppassword] => 
+    [ftppath] => 
+    [ftpmode] => active
+    [is_variations] => y
+    [variable_price] => first
+    [variable_quantity] => first
+    [feedLanguage] => 
+    [feedCurrency] => UAH
+    [itemsWrapper] => products
+    [itemWrapper] => product
+    [delimiter] => ,
+    [enclosure] => double
+    [extraHeader] => 
+    [vendors] => Array
+        (
+        )
+
+    [mattributes] => Array
+        (
+            [0] => id
+            [1] => brand
+            [2] => title
+            [3] => description
+            [4] => link
+            [5] => image_link
+            [6] => price
+            [7] => availability
+            [8] => Quantity
+        )
+
+    [prefix] => Array
+        (
+            [0] => 
+            [1] => 
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+        )
+
+    [type] => Array
+        (
+            [0] => attribute
+            [1] => attribute
+            [2] => attribute
+            [3] => attribute
+            [4] => attribute
+            [5] => attribute
+            [6] => attribute
+            [7] => attribute
+            [8] => attribute
+        )
+
+    [attributes] => Array
+        (
+            [0] => id
+            [1] => type
+            [2] => title
+            [3] => description
+            [4] => link
+            [5] => image
+            [6] => price
+            [7] => availability
+            [8] => quantity
+        )
+
+    [default] => Array
+        (
+            [0] => 
+            [1] => 
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+        )
+
+    [suffix] => Array
+        (
+            [0] => 
+            [1] => 
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+        )
+
+    [output_type] => Array
+        (
+            [0] => Array
+                (
+                    [0] => 1
+                )
+
+            [1] => Array
+                (
+                    [0] => 1
+                )
+
+            [2] => Array
+                (
+                    [0] => 11
+                )
+
+            [3] => Array
+                (
+                    [0] => 1
+                )
+
+            [4] => Array
+                (
+                    [0] => 1
+                )
+
+            [5] => Array
+                (
+                    [0] => 1
+                    [1] => 6
+                )
+
+            [6] => Array
+                (
+                    [0] => 1
+                )
+
+            [7] => Array
+                (
+                    [0] => 1
+                )
+
+            [8] => Array
+                (
+                    [0] => 1
+                )
+
+        )
+
+    [limit] => Array
+        (
+            [0] => 
+            [1] => 
+            [2] => 
+            [3] => 
+            [4] => 
+            [5] => 
+            [6] => 
+            [7] => 
+            [8] => 
+        )
+
+    [composite_price] => all_product_price
+    [product_ids] => Array
+        (
+        )
+
+    [categories] => Array
+        (
+        )
+
+    [post_status] => Array
+        (
+            [0] => publish
+        )
+
+    [filter_mode] => Array
+        (
+            [product_ids] => include
+            [categories] => include
+            [post_status] => include
+        )
+
+    [campaign_parameters] => Array
+        (
+            [utm_source] => 
+            [utm_medium] => 
+            [utm_campaign] => 
+            [utm_term] => 
+            [utm_content] => 
+        )
+
+    [is_outOfStock] => 
+    [is_backorder] => 
+    [is_emptyDescription] => 
+    [is_emptyTitle] => 
+    [is_emptyImage] => 
+    [is_emptyPrice] => 
+    [product_visibility] => 
+    [shipping_country] => 
+    [tax_country] => 
+    [outofstock_visibility] => 
+    [ptitle_show] => 
+    [decimal_separator] => 
+    [thousand_separator] => 
+    [decimals] => 
+    [feed_option_name] => 
+    [feed_id] => 
+    [meta-box-order-nonce] => 
+    [str_replace] => Array
+        (
+            [0] => Array
+                (
+                    [subject] => 
+                    [search] => 
+                    [replace] => 
+                )
+
+        )
+
+    [wf_tabs] => true
+    [option_id] => 8804682
+    [option_name] => wf_feed_akb_shop
+)
+
+
+2026-03-20T10:30:15+00:00 DEBUG Total 1486 product found
+
+2026-03-20T10:30:15+00:00 DEBUG Total 1486 batches
+
+2026-03-20T10:30:17+00:00 DEBUG Getting Products Information.
+
+2026-03-20T10:30:17+00:00 DEBUG Validating Product
+
+2026-03-20T10:30:19+00:00 DEBUG Getting Products Information.
+
+2026-03-20T10:30:19+00:00 DEBUG Validating Product
+
+2026-03-20T10:30:21+00:00 DEBUG Getting Products Information.
+
+2026-03-20T10:30:21+00:00 DEBUG Validating Product
+
+2026-03-20T10:30:23+00:00 DEBUG Getting Products Information.
+
+2026-03-20T10:30:23+00:00 DEBUG Validating Product
+
+2026-03-20T10:30:26+00:00 DEBUG Getting Products Information.
+
+2026-03-20T10:30:26+00:00 DEBUG Validating Product
+
+2026-03-20T10:30:28+00:00 DEBUG Getting Products Information.
+
+2026-03-20T10:30:28+00:00 DEBUG Validating Product
+
+2026-03-20T10:30:30+00:00 DEBUG Getting Products Information.
+
+2026-03-20T10:30:30+00:00 DEBUG Validating Product
+
+2026-03-20T10:30:33+00:00 DEBUG Getting Products Information.
+
+2026-03-20T10:30:33+00:00 DEBUG Validating Product
+

@@ -5,7 +5,7 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    5.0.23 (15-11-2025)
+ * @version    5.3.0 (22-03-2026)
  *
  * @package    Y4YM
  * @subpackage Y4YM/includes/feeds
@@ -33,6 +33,7 @@ class Y4YM_Get_Unit_Offer_Simple extends Y4YM_Get_Unit_Offer {
 	use Y4YM_T_Simple_Get_Amount;
 	use Y4YM_T_Simple_Get_Archived;
 	use Y4YM_T_Simple_Get_Barcode;
+	use Y4YM_T_Simple_Get_Begindate;
 	use Y4YM_T_Simple_Get_Cargo_Types;
 	use Y4YM_T_Simple_Get_CategoryId;
 	use Y4YM_T_Simple_Get_Certificate;
@@ -57,37 +58,47 @@ class Y4YM_Get_Unit_Offer_Simple extends Y4YM_Get_Unit_Offer {
 	use Y4YM_T_Simple_Get_Disabled;
 	use Y4YM_T_Simple_Get_Discount_Price;
 	use Y4YM_T_Simple_Get_Downloadable;
+	use Y4YM_T_Simple_Get_Enddate;
 	use Y4YM_T_Simple_Get_Expiry;
 	use Y4YM_T_Simple_Get_Id;
+	use Y4YM_T_Simple_Get_Isavailabletoindividuals;
+	use Y4YM_T_Simple_Get_Isvisibletostatecustomers;
 	use Y4YM_T_Simple_Get_Keywords;
 	use Y4YM_T_Simple_Get_Manufacturer_Warranty;
 	use Y4YM_T_Simple_Get_Manufacturer;
 	use Y4YM_T_Simple_Get_Market_Category;
 	use Y4YM_T_Simple_Get_Market_Category_Id;
 	use Y4YM_T_Simple_Get_Market_Sku;
+	use Y4YM_T_Simple_Get_Max_Quantity;
 	use Y4YM_T_Simple_Get_Min_Price;
 	use Y4YM_T_Simple_Get_Min_Quantity;
 	use Y4YM_T_Simple_Get_Model;
 	use Y4YM_T_Simple_Get_Name;
 	use Y4YM_T_Simple_Get_Offer_Tag;
+	use Y4YM_T_Simple_Get_Okei;
 	use Y4YM_T_Simple_Get_Okpd2;
+	use Y4YM_T_Simple_Get_Oksm;
 	use Y4YM_T_Simple_Get_Oldprice;
 	use Y4YM_T_Simple_Get_Outlets;
+	use Y4YM_T_Simple_Get_Packagetype;
 	use Y4YM_T_Simple_Get_Params;
 	use Y4YM_T_Simple_Get_Period_Of_Validity_Days;
 	use Y4YM_T_Simple_Get_Pickup_Options;
 	use Y4YM_T_Simple_Get_Pickup;
 	use Y4YM_T_Simple_Get_Picture;
+	use Y4YM_T_Simple_Get_Ppcategory;
 	use Y4YM_T_Simple_Get_Price;
 	use Y4YM_T_Simple_Get_Purchase_Price;
 	use Y4YM_T_Simple_Get_Qty;
 	use Y4YM_T_Simple_Get_Quantity;
+	use Y4YM_T_Simple_Get_Region;
 	use Y4YM_T_Simple_Get_Sales_Notes;
 	use Y4YM_T_Simple_Get_Service_Life_Days;
 	use Y4YM_T_Simple_Get_Shipment_Options;
 	use Y4YM_T_Simple_Get_Shop_Sku;
 	use Y4YM_T_Simple_Get_Size;
 	use Y4YM_T_Simple_Get_Sku_Code;
+	use Y4YM_T_Simple_Get_Ste;
 	use Y4YM_T_Simple_Get_Step_Quantity;
 	use Y4YM_T_Simple_Get_Store;
 	use Y4YM_T_Simple_Get_Supplier;
@@ -140,6 +151,9 @@ class Y4YM_Get_Unit_Offer_Simple extends Y4YM_Get_Unit_Offer {
 			case "yandex_products": // Яндекс.Товары
 				$result_xml = $this->yandex_products();
 				break;
+			case "yandex_business": // Яндекс Бизнес
+				$result_xml = $this->yandex_business();
+				break;
 			case "yandex_webmaster": // Яндекс Вебмастер (Товарный фид, Товары и предложения)
 				$result_xml = $this->yandex_webmaster();
 				break;
@@ -166,6 +180,9 @@ class Y4YM_Get_Unit_Offer_Simple extends Y4YM_Get_Unit_Offer {
 				break;
 			case "youla":
 				$result_xml = $this->youla();
+				break;
+			case "zakupki_mos":
+				$result_xml = $this->zakupki_mos();
 				break;
 			default: // Нет правил (Для опытных пользователей)
 				$result_xml = $this->get_tags( $feed_yml_rules, $result_xml );
@@ -378,6 +395,22 @@ class Y4YM_Get_Unit_Offer_Simple extends Y4YM_Get_Unit_Offer {
 	}
 
 	/**
+	 * Портал поставщиков Москвы.
+	 * 
+	 * @see https://zakupki.mos.ru/cms/Media/docs/Инструкция%20по%20формированию%20YML.pdf
+	 * 
+	 * @param string $result_xml
+	 * 
+	 * @return string
+	 */
+	private function zakupki_mos( $result_xml = '' ) {
+
+		$result_xml .= $this->get_tags( 'zakupki_mos', $result_xml );
+		return $result_xml;
+
+	}
+
+	/**
 	 * Нет правил (Для опытных пользователей).
 	 * 
 	 * @see 
@@ -437,6 +470,22 @@ class Y4YM_Get_Unit_Offer_Simple extends Y4YM_Get_Unit_Offer {
 	private function yandex_products( $result_xml = '' ) {
 
 		$result_xml .= $this->get_tags( 'yandex_products', $result_xml );
+		return $result_xml;
+
+	}
+
+	/**
+	 * Яндекс Бизнес.
+	 * 
+	 * @see https://yandex.ru/sprav/templates/price-list-template.xml
+	 * 
+	 * @param string $result_xml
+	 * 
+	 * @return string
+	 */
+	private function yandex_business( $result_xml = '' ) {
+
+		$result_xml .= $this->get_tags( 'yandex_business', $result_xml );
 		return $result_xml;
 
 	}

@@ -5,7 +5,7 @@
  *
  * @link       https://icopydoc.ru
  * @since      4.0.4
- * @version    4.0.4 (20-06-2025)
+ * @version    4.1.0 (22-03-2026)
  *
  * @package    XFGMC
  * @subpackage XFGMC/includes/feeds/traits/simple
@@ -43,7 +43,6 @@ trait XFGMC_T_Simple_Get_Shipping_Dimensions {
 	public function get_shipping_dimensions( $tag_name = 'shipping_dimensions', $result_xml = '' ) {
 
 		// * к сожалению wc_get_dimension не всегда возвращает float и юзер может передать в размер что-то типа '13-18'
-		// * потому юзаем gettype() === 'double'
 		$length_xml = 0;
 		$width_xml = 0;
 		$height_xml = 0;
@@ -57,7 +56,7 @@ trait XFGMC_T_Simple_Get_Shipping_Dimensions {
 		if ( empty( $length ) || $length === 'woo_shippings' ) {
 			if ( $this->get_product()->has_dimensions() ) {
 				$length_xml = $this->get_product()->get_length();
-				if ( ! empty( $length_xml ) && gettype( $length_xml ) === 'double' ) {
+				if ( ! empty( $length_xml ) && get_option( 'woocommerce_dimension_unit' ) !== 'cm' ) {
 					$length_xml = round( wc_get_dimension( $length_xml, 'cm' ), 3 );
 				}
 			}
@@ -76,7 +75,7 @@ trait XFGMC_T_Simple_Get_Shipping_Dimensions {
 		if ( empty( $width ) || $width === 'woo_shippings' ) {
 			if ( $this->get_product()->has_dimensions() ) {
 				$width_xml = $this->get_product()->get_width();
-				if ( ! empty( $width_xml ) && gettype( $width_xml ) === 'double' ) {
+				if ( ! empty( $width_xml ) && get_option( 'woocommerce_dimension_unit' ) !== 'cm' ) {
 					$width_xml = round( wc_get_dimension( $width_xml, 'cm' ), 3 );
 				}
 			}
@@ -95,7 +94,7 @@ trait XFGMC_T_Simple_Get_Shipping_Dimensions {
 		if ( empty( $height ) || $height === 'woo_shippings' ) {
 			if ( $this->get_product()->has_dimensions() ) {
 				$height_xml = $this->get_product()->get_height();
-				if ( ! empty( $height_xml ) && gettype( $height_xml ) === 'double' ) {
+				if ( ! empty( $height_xml ) && get_option( 'woocommerce_dimension_unit' ) !== 'cm' ) {
 					$height_xml = round( wc_get_dimension( $height_xml, 'cm' ), 3 );
 				}
 			}
@@ -113,7 +112,7 @@ trait XFGMC_T_Simple_Get_Shipping_Dimensions {
 		);
 		if ( empty( $shipping_weight ) || $shipping_weight === 'woo_shippings' ) {
 			$shipping_weight_xml = $this->get_product()->get_weight();
-			if ( ! empty( $shipping_weight_xml ) && gettype( $shipping_weight_xml ) === 'double' ) {
+			if ( ! empty( $shipping_weight_xml ) && get_option( 'woocommerce_weight_unit' ) !== 'kg' ) {
 				$shipping_weight_xml = round( wc_get_weight( $shipping_weight_xml, 'kg' ), 3 );
 			}
 		} else {
@@ -138,7 +137,7 @@ trait XFGMC_T_Simple_Get_Shipping_Dimensions {
 		$result_xml = apply_filters(
 			'xfgmc_f_simple_tag_dimensions',
 			$result_xml,
-			[ 
+			[
 				'product' => $this->get_product()
 			],
 			$this->get_feed_id()

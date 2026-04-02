@@ -5,7 +5,7 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    5.0.0 (25-03-2025)
+ * @version    5.3.0 (22-03-2026)
  *
  * @package    Y4YM
  * @subpackage Y4YM/includes/feeds/traits/simple
@@ -52,18 +52,18 @@ trait Y4YM_T_Simple_Get_Custom_Labels {
 				$tag_value = apply_filters(
 					'y4ym_f_simple_tag_value_custom_label',
 					$tag_value,
-					[ 
+					[
 						'product' => $this->get_product(),
 						'i' => $i
 					],
 					$this->get_feed_id()
 				);
 				if ( ! empty( $tag_value ) ) {
-					$tag_name = sprintf( '%s_%s', 'yfym_custom_label_', (string) $i );
+					$tag_name = sprintf( '%s_%s', 'custom_label', (string) $i );
 					$tag_name = apply_filters(
 						'y4ym_f_simple_tag_name_custom_label',
 						$tag_name,
-						[ 
+						[
 							'product' => $this->get_product(),
 							'i' => $i
 						],
@@ -77,7 +77,7 @@ trait Y4YM_T_Simple_Get_Custom_Labels {
 			$result_xml = apply_filters(
 				'y4ym_f_simple_tag_custom_labels',
 				$result_xml,
-				[ 
+				[
 					'product' => $this->get_product()
 				],
 				$this->get_feed_id()

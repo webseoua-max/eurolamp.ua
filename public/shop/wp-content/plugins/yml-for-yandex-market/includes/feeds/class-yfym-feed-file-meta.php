@@ -8,14 +8,14 @@
  * @version    5.0.26 (24-12-2025)
  *
  * @package    Y4YM
- * @subpackage Y4YM/includes
+ * @subpackage Y4YM/includes/feeds
  */
 
 /**
  * Get the feed file meta.
  *
  * @package    Y4YM
- * @subpackage Y4YM/includes
+ * @subpackage Y4YM/includes/feeds
  * @author     Maxim Glazunov <icopydoc@gmail.com>
  * 
  * @depends    classes:    

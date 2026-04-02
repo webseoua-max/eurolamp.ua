@@ -5,10 +5,10 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    4.0.3 (17-06-2025)
+ * @version    4.1.1 (27-03-2025)
  *
  * @package    XFGMC
- * @subpackage XFGMC/admin
+ * @subpackage XFGMC/admin/partials/debug_page
  */
 
 /**
@@ -79,10 +79,19 @@ class XFGMC_Debug_Page {
 			if ( ! empty( $_POST ) && check_admin_referer( 'xfgmc_nonce_action', 'xfgmc_nonce_field' ) ) {
 				$simulated_post_id = sanitize_text_field( $_POST['xfgmc_simulated_post_id'] );
 				$simulated_feed_id = sanitize_text_field( $_POST['xfgmc_feed_id'] );
+				$add_headers_footer = sanitize_text_field( $_POST['xfgmc_add_headers_footer'] );
 				$simulated_unit_obj = new XFGMC_Get_Unit( $simulated_post_id, $simulated_feed_id );
 				$this->simulation_post_id = $simulated_post_id;
 				$this->simulation_feed_id = $simulated_feed_id;
 				$this->simulation_result = $simulated_unit_obj->get_result();
+				if ( $add_headers_footer === 'enabled' ) {
+					$generation = new XFGMC_Generation_XML( $simulated_feed_id );
+					$this->simulation_result = $generation->get_feed_header();
+					$this->simulation_result .= $simulated_unit_obj->get_result();
+					$this->simulation_result .= $generation->get_feed_footer( 'sumulation' );
+				} else {
+					$this->simulation_result = $simulated_unit_obj->get_result();
+				}
 				if ( empty( $simulated_unit_obj->get_skip_reasons_arr() ) ) {
 					$this->simulation_report .= __( 'Everything is normal', 'xml-for-google-merchant-center' );
 				} else {

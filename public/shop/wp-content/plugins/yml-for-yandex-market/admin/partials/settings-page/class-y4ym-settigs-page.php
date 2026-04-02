@@ -5,10 +5,10 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    5.0.0 (25-03-2025)
+ * @version    5.3.0 (22-03-2026)
  *
  * @package    Y4YM
- * @subpackage Y4YM/admin
+ * @subpackage Y4YM/admin/partials/settings-page
  */
 
 /**
@@ -77,7 +77,7 @@ class Y4YM_Settings_Page {
 	 */
 	public function render() {
 
-		$view_arr = [ 
+		$view_arr = [
 			'feed_id' => $this->get_current_feed_id(),
 			'current_display' => $this->get_current_display(),
 			'tab_name' => $this->get_current_tab_name(),
@@ -86,11 +86,13 @@ class Y4YM_Settings_Page {
 
 		switch ( $this->get_current_display() ) {
 			case 'settings_feed':
+
 				// страница редактирования данных о фиде
-				include_once __DIR__ . '/class-y4ym-feeds-list-table.php';
 				include_once __DIR__ . '/views/html-admin-settings-feed.php';
+
 				break;
 			default: // 'list_feeds'
+
 				// страница со списком фидов
 				include_once __DIR__ . '/class-y4ym-feeds-list-table.php';
 				include_once __DIR__ . '/views/html-admin-list-feeds.php';
@@ -134,7 +136,7 @@ class Y4YM_Settings_Page {
 	 */
 	private function get_tabs_arr() {
 
-		$tabs_arr = [ 
+		$tabs_arr = [
 			'main_tab' => sprintf( '%s',
 				__( 'Main settings', 'yml-for-yandex-market' )
 			),

@@ -11,7 +11,7 @@
  * Plugin Name: XT Ajax Add To Cart for WooCommerce
  * Plugin URI:  https://xplodedthemes.com/products/woo-ajax-add-to-cart/
  * Description: Shop / Single Ajax Add To Cart for WooCommerce will allow users to add single products or variable products to the cart without the need to reload the entire site each time.
- * Version:     1.1.6
+ * Version:     1.1.7
  * WC requires at least: 4.0
  * WC tested up to: 9.7
  * Author:      XplodedThemes
@@ -34,7 +34,7 @@ $market = '##XT_MARKET##';
 $market = ( strpos( $market, 'XT_MARKET' ) !== false ) ? 'freemius' : $market;
 
 $xt_wooatc_plugin = array(
-    'version'       => '1.1.6',
+    'version'       => '1.1.7',
     'name'          => esc_html__('Ajax Add To Cart for WooCommerce', 'xt-woo-ajax-add-to-cart'),
     'menu_name'     => esc_html__('Ajax Add To Cart', 'xt-woo-ajax-add-to-cart'),
     'url'           => 'https://xplodedthemes.com/products/woo-ajax-add-to-cart/',

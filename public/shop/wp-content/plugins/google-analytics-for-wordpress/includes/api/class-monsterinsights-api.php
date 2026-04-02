@@ -52,6 +52,15 @@ abstract class MonsterInsights_API_Client {
 	protected $miversion;
 
 	/**
+	 * Request timeout in seconds.
+	 *
+	 * Child classes can override this for longer-running requests.
+	 *
+	 * @var int
+	 */
+	protected $timeout = 3;
+
+	/**
 	 * Constructor.
 	 *
 	 * Initializes the API client by setting up the necessary authentication
@@ -128,6 +137,28 @@ abstract class MonsterInsights_API_Client {
 	}
 
 	/**
+	 * Get the bearer token for relay API authentication.
+	 *
+	 * Uses MonsterInsights_API_Token::generate() so it works in contexts
+	 * without a logged-in user (e.g. WP Cron).
+	 *
+	 * @return string Bearer token string or empty on failure.
+	 */
+	protected function get_bearer_token() {
+		if ( ! class_exists( 'MonsterInsights_API_Token' ) ) {
+			return '';
+		}
+
+		$token_data = MonsterInsights_API_Token::generate( is_network_admin() );
+
+		if ( is_wp_error( $token_data ) ) {
+			return '';
+		}
+
+		return isset( $token_data['token'] ) ? $token_data['token'] : '';
+	}
+
+	/**
 	 * Make an API request.
 	 *
 	 * This method sends a request to the specified API endpoint and handles the response.
@@ -143,27 +174,34 @@ abstract class MonsterInsights_API_Client {
 	protected function request( $endpoint, $params = array(), $method = 'POST' ) {
 		$url = $this->get_base_url() . $endpoint;
 
+		$headers = array(
+			'Content-Type'  => 'application/json',
+			'Accept'        => 'application/json',
+			'MIAPI-Sender'  => 'WordPress',
+			'MIAPI-Referer' => $this->site_url,
+			// X-Relay authentication
+			'X-Relay-Site-Key'  => $this->key,
+			'X-Relay-Token'     => $this->token,
+			'X-Relay-Site-Url'  => $this->site_url,
+			'X-Relay-License'   => $this->license,
+		);
+
+		// Bearer token authentication.
+		$bearer_token = $this->get_bearer_token();
+		if ( ! empty( $bearer_token ) ) {
+			$headers['Authorization'] = 'Bearer ' . $bearer_token;
+		}
+
 		$args = array(
 			'method'      => $method,
-			'timeout'     => 3,
+			'timeout'     => $this->timeout,
 			'redirection' => 5,
 			'httpversion' => '1.1',
 			'blocking'    => true,
-			'headers'     => array(
-				'Content-Type'  => 'application/json',
-				'Accept'        => 'application/json',
-				'MIAPI-Sender'  => 'WordPress',
-				'MIAPI-Referer' => $this->site_url,
-				// Authentication headers
-				'X-Relay-Site-Key'  => $this->key,
-				'X-Relay-Token'     => $this->token,
-				'X-Relay-Site-Url'  => $this->site_url,
-				'X-Relay-License'   => $this->license
-			),
-			
+			'headers'     => $headers,
 			'cookies'     => array(),
 		);
-		
+
 		if ( $method === 'GET' ) {
 			$url = add_query_arg($params, $url);
 		} else {

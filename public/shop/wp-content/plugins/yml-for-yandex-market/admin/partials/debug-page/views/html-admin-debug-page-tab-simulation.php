@@ -2,7 +2,7 @@
 /**
  * Display the Simulation tab.
  * 
- * @version    5.0.0 (25-03-2025)
+ * @version    5.3.0 (22-03-2026)
  * @package    Y4YM
  * @subpackage Y4YM/admin/partials/debug_page/
  * 
@@ -60,6 +60,28 @@ defined( 'ABSPATH' ) || exit; ?>
 						?>
 					</select>
 				</td>
+			</tr>
+			<tr>
+			<th scope="row"><label
+					for="y4ym_add_headers_footer"><?php esc_html_e( 'Create a feed from a single product', 'yml-for-yandex-market' ); ?></label>
+			</th>
+			<td class="overalldesc">
+				<select style="width: 100%" name="y4ym_add_headers_footer" id="y4ym_add_headers_footer">
+					<?php
+					if ( isset( $_POST['y4ym_add_headers_footer'] ) ) {
+						$cur_add_headers = sanitize_text_field( $_POST['y4ym_add_headers_footer'] );
+					} else {
+						$cur_add_headers = 'disabled';
+					}
+					?>
+					<option value="disabled" <?php selected( $cur_add_headers, $cur_add_headers, true ); ?>>
+						<?php esc_html_e( 'Disabled', 'yml-for-yandex-market' ); ?>
+					</option>
+					<option value="enabled" <?php selected( 'enabled', $cur_add_headers, true ); ?>>
+						<?php esc_html_e( 'Enabled', 'yml-for-yandex-market' ); ?>
+					</option>
+				</select>
+			</td>
 			</tr>
 			<tr>
 				<th scope="row" colspan="2">

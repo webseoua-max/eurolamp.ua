@@ -7,15 +7,12 @@ defined('ABSPATH') or exit;
 
 
 /**
- * @var \KokoAnalytics\Dashboard $this
  * @var \DateTimeInterface $date_start
  * @var \DateTimeInterface $date_end
  * @var object $totals
  * @var int $realtime
  * @var string $date_format
  * @var string $dashboard_url
- * @var \KokoAnalytics\Dates $dates
- * @var \KokoAnalytics\Stats $stats
  * @var array $next_dates
  * @var array $prev_dates
  */
@@ -42,7 +39,7 @@ $tab = 'dashboard';
                     <div class="mb-3 bg-dark text-white p-3 rounded-top fw-bold d-flex justify-content-between">
                         <?php // only output pagination for date ranges between reasonable dates... to prevent ever-crawling bots from going wild
                         ?>
-                        <?php if ($date_start >  $total_start_date) { ?>
+                        <?php if ($date_start > $total_start_date) { ?>
                             <a class="js-quicknav-prev text-decoration-none text-white me-2" href="" data-href="<?php echo esc_attr(add_query_arg(['start_date' => $prev_dates[0]->format('Y-m-d'), 'end_date' => $prev_dates[1]->format('Y-m-d')], $dashboard_url)); ?>" rel="nofollow">◂</a>
                         <?php } else { ?>
                             <a class="text-decoration-none text-white me-2">◂</a>
@@ -172,7 +169,7 @@ $tab = 'dashboard';
     <?php /* CHART COMPONENT */ ?>
     <?php if (count($chart_data) > 1) { ?>
         <div class="ka-box mb-3 p-3">
-            <?php new Chart_View($chart_data, $date_start, $date_end); ?>
+            <?php new Chart_View($chart_data, $date_start, $date_end, 280, true, $group_chart_by); ?>
         </div>
     <?php } ?>
 
@@ -274,8 +271,8 @@ $tab = 'dashboard';
             <div class="p-3 rounded" style="background: #fff3cd;">
                 <h2 class="mt-0 mb-2"><?php esc_html_e('Upgrade to Koko Analytics Pro', 'koko-analytics'); ?></h2>
                 <p class="mt-0 mb-2">
-                    <?= esc_html('You are currently using the free version of Koko Analytics.', 'koko-analytics'); ?>
-                    <?= esc_html('With Koko Analytics Pro you can unlock powerful benefits like country stats, device stats, custom event tracking and periodic email reports.', 'koko-analytics'); ?>
+                    <?= esc_html__('You are currently using the free version of Koko Analytics.', 'koko-analytics'); ?>
+                    <?= esc_html__('With Koko Analytics Pro you can unlock powerful benefits like country stats, device stats, custom event tracking and periodic email reports.', 'koko-analytics'); ?>
                 </p>
                 <p class="mt-0 mb-0"><a class="btn btn-sm btn-primary" href="https://www.kokoanalytics.com/pricing/" target="_blank"><?php esc_html_e('Upgrade Now', 'koko-analytics'); ?> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill align-middle ms-2" viewBox="0 0 16 16">
                             <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />

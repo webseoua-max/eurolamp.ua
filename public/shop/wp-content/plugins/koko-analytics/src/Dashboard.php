@@ -129,18 +129,18 @@ class Dashboard
         ];
     }
 
-    private function maybe_show_adblocker_notice(): void
+    protected function maybe_show_adblocker_notice(): void
     {
         ?>
         <div class="ka-alert ka-alert-warning ka-alert-dismissible" role="alert" id="koko-analytics-adblock-notice" style="display: none;">
             <?php echo esc_html__('You appear to be using an ad-blocker that has Koko Analytics on its blocklist. Please whitelist this domain in your ad-blocker setting if your dashboard does not seem to be working correctly.', 'koko-analytics'); ?>
-            <button type="button" class="btn-close" aria-label="<?= esc_attr('Close', 'koko-analytics') ?>" onclick="this.parentElement.remove()"></button>
+            <button type="button" class="btn-close" aria-label="<?= esc_attr__('Close', 'koko-analytics') ?>" onclick="this.parentElement.remove()"></button>
         </div>
         <script src="<?php echo plugins_url('/assets/dist/js/koko-analytics-script-test.js', KOKO_ANALYTICS_PLUGIN_FILE); ?>?v=<?php echo KOKO_ANALYTICS_VERSION; ?>" defer onerror="document.getElementById('koko-analytics-adblock-notice').style.display = '';"></script>
         <?php
     }
 
-    private function maybe_show_pro_notice(): void
+    protected function maybe_show_pro_notice(): void
     {
         if (! current_user_can('manage_koko_analytics')) {
             return;
@@ -208,8 +208,6 @@ class Dashboard
             case 'all_time':
                 return (new Stats())->get_total_date_range();
         }
-
-        throw new \Exception("invalid preset key: {$key}");
     }
 
     public function get_first_day_of_current_week(\DateTimeImmutable $now, int $week_starts_on = 0): \DateTimeImmutable

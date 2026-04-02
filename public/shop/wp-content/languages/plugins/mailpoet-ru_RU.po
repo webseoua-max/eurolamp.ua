@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-03-09 16:15:36+0000\n"
+"PO-Revision-Date: 2026-03-16 14:45:18+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -8,6 +8,10 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: ru\n"
 "Project-Id-Version: MailPoet - MailPoet\n"
+
+#: lib/EmailEditor/Integrations/MailPoet/Patterns/Library/WelcomeEmailPattern.php:40
+msgid "Welcome email image"
+msgstr ""
 
 #: lib/Services/CongratulatoryMssEmailController.php:37
 msgctxt "Subject of an email confirming that the email sending service works"

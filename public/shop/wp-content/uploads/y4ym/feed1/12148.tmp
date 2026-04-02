@@ -1,18 +1,20 @@
 <offer id="12148" available="true">
 <currencyId>UAH</currencyId>
-<price>33950</price>
+<price>33950.00</price>
 <name>Аккумуляторная батарея для Solid State 66000 мАч</name>
 <description><![CDATA[Аккумуляторная Батарея Solid State 66000 мАч для: Непревзойденная Емкость и Надежность
 
 Представляем аккумуляторную батарею Solid State 66000 мАч, специально разработанную. Эта батарея является революционным решением на основе твердотельных (Solid State) элементов, обеспечивающих беспрецедентную плотность энергии, безопасность и надежность.
 
-С емкостью 66000 мАч (или 66 Ач) эта батарея гарантирует значительно более длительное время работы.</p>
-<p>Цена за 1 АКБ.
+
+<p>С емкостью 66000 мАч (или 66 Ач) эта батарея гарантирует значительно более длительное время работы.</p>
+<p>Цена за 1 АКБ.</p>
+
 
 ]]></description>
 <picture>https://eurolamp.ua/shop/wp-content/uploads/14d47058-5a8a-4d01-b3a8-a54406818f47-removebg-preview-1.png</picture>
 <url>https://eurolamp.ua/shop/ru/product/akumuliatorna-batareia-dlia-bpla-vampire-solid-state-66000-ma-hod/</url>
 <store>true</store>
 <delivery>false</delivery>
-<categoryId>7942</categoryId>
+<categoryId>8520</categoryId>
 </offer>

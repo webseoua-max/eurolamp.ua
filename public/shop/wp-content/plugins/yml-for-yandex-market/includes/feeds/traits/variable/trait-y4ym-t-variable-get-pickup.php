@@ -24,7 +24,7 @@
  *             methods:     get_product
  *                          get_offer
  *                          get_feed_id
- *                          get_simple_product_post_meta
+ *                          get_variable_product_post_meta
  *             functions:   common_option_get
  */
 trait Y4YM_T_Variable_Get_Pickup {

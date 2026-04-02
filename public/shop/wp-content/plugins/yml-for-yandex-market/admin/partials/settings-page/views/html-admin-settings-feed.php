@@ -2,7 +2,7 @@
 /**
  * Settings page.
  * 
- * @version    5.0.0 (25-03-2025)
+ * @version    5.3.0 (22-03-2026)
  * @package    Y4YM
  * @subpackage Y4YM/admin/partials/settings_page/
  * 
@@ -50,9 +50,13 @@ defined( 'ABSPATH' ) || exit; ?>
 						switch ( $view_arr['tab_name'] ) {
 							case 'shop_data_tab':
 							case 'offer_data_tab':
-								include_once __DIR__ . '/html-admin-settings-feed-tab-tags.php';
+
+								// выпадающие блоки настроек с тегами
+								include_once __DIR__ . '/html-admin-settings-feed-tab-drop-down-blocks.php';
+
 								break;
 							default:
+
 								$html_template = __DIR__ . '/html-admin-settings-feed-tab-standart.php';
 								$html_template = apply_filters( 'y4ym_f_html_template_tab',
 									$html_template,

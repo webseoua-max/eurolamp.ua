@@ -8,7 +8,7 @@
  * @version    5.2.0 (03-02-2026)
  *
  * @package    Y4YM
- * @subpackage Y4YM/includes
+ * @subpackage Y4YM/includes/feeds
  */
 
 /**
@@ -19,7 +19,7 @@
  * - Running feed update on stock change
  *
  * @package Y4YM
- * @subpackage Y4YM/includes
+ * @subpackage Y4YM/includes/feeds
  */
 class Y4YM_Feed_Updater {
 

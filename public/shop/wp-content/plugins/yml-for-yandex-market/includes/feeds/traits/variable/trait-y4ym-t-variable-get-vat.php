@@ -5,7 +5,7 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    5.1.0 (27-01-2026)
+ * @version    5.3.0 (22-03-2026)
  *
  * @package    Y4YM
  * @subpackage Y4YM/includes/feeds/traits/variable
@@ -55,7 +55,7 @@ trait Y4YM_T_Variable_Get_Vat {
 				$individual_vat = 'global';
 			}
 			if ( $individual_vat === 'global' ) {
-				if ( $tag_value === 'enable' ) { // Enable. No default value
+				if ( $tag_value === 'enabled' ) { // Enabled. No default value
 					$result_yml_vat = '';
 				} else {
 					$result_yml_vat = new Y4YM_Get_Paired_Tag( $tag_name, $tag_value );

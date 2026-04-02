@@ -5,7 +5,7 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    5.0.0 (25-03-2025)
+ * @version    5.3.0 (22-03-2026)
  *
  * @package    Y4YM
  * @subpackage Y4YM/admin
@@ -79,10 +79,18 @@ class Y4YM_Debug_Page {
 			if ( ! empty( $_POST ) && check_admin_referer( 'y4ym_nonce_action', 'y4ym_nonce_field' ) ) {
 				$simulated_post_id = sanitize_text_field( $_POST['y4ym_simulated_post_id'] );
 				$simulated_feed_id = sanitize_text_field( $_POST['y4ym_feed_id'] );
+				$add_headers_footer = sanitize_text_field( $_POST['y4ym_add_headers_footer'] );
 				$simulated_unit_obj = new Y4YM_Get_Unit( $simulated_post_id, $simulated_feed_id );
 				$this->simulation_post_id = $simulated_post_id;
 				$this->simulation_feed_id = $simulated_feed_id;
-				$this->simulation_result = $simulated_unit_obj->get_result();
+				if ( $add_headers_footer === 'enabled' ) {
+					$generation = new Y4YM_Generation_XML( $simulated_feed_id );
+					$this->simulation_result = $generation->get_feed_header();
+					$this->simulation_result .= $simulated_unit_obj->get_result();
+					$this->simulation_result .= $generation->get_feed_footer( 'sumulation' );
+				} else {
+					$this->simulation_result = $simulated_unit_obj->get_result();
+				}
 				if ( empty( $simulated_unit_obj->get_skip_reasons_arr() ) ) {
 					$this->simulation_report .= __( 'Everything is normal', 'yml-for-yandex-market' );
 				} else {
@@ -102,7 +110,7 @@ class Y4YM_Debug_Page {
 	 */
 	public function render() {
 
-		$view_arr = [ 
+		$view_arr = [
 			'tab_name' => $this->get_current_tab_name(),
 			'tabs_arr' => $this->get_tabs_arr(),
 			'simulated_post_id' => $this->get_simulation_post_id(),
@@ -137,7 +145,7 @@ class Y4YM_Debug_Page {
 	 */
 	private function get_tabs_arr() {
 
-		$tabs_arr = [ 
+		$tabs_arr = [
 			'debug_options' => sprintf( '%s',
 				__( 'Debug settings', 'yml-for-yandex-market' )
 			),

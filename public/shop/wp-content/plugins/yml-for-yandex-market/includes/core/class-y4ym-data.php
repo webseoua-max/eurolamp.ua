@@ -5,17 +5,18 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    5.1.0 (27-01-2026)
+ * @version    5.3.0 (22-03-2026)
  *
  * @package    Y4YM
- * @subpackage Y4YM/includes
+ * @subpackage Y4YM/includes/core
  */
 
 /**
  * Set and Get the Plugin Data.
  *
+ * @since      0.1.0
  * @package    Y4YM
- * @subpackage Y4YM/includes
+ * @subpackage Y4YM/includes/core
  * @author     Maxim Glazunov <icopydoc@gmail.com>
  */
 class Y4YM_Data {
@@ -375,6 +376,10 @@ class Y4YM_Data {
 								)
 							],
 							[
+								'value' => 'yandex_business',
+								'text' => __( 'Yandex Business', 'yml-for-yandex-market' )
+							],
+							[
 								'value' => 'yandex_webmaster',
 								'text' => sprintf( '%s (%s, %s)',
 									__( 'Yandex Webmaster', 'yml-for-yandex-market' ),
@@ -399,6 +404,7 @@ class Y4YM_Data {
 								'value' => 'aliexpress',
 								'text' => 'AliExpress'
 							],
+						// TODO: [ 'value' => 'zakupki_mos', 'text' => 'Портал поставщиков Москвы' ],
 							[
 								'value' => 'all_elements',
 								'text' => sprintf( '%s (%s)',
@@ -1229,6 +1235,52 @@ class Y4YM_Data {
 					]
 				],
 				[
+					'opt_name' => 'y4ym_isavailabletoindividuals',
+					'def_val' => 'disabled',
+					'mark' => 'public',
+					'type' => 'select',
+					'tab' => 'offer_data_tab',
+					'data' => [
+						'label' => __( 'Availability for government customers', 'yml-for-yandex-market' ),
+						'desc' => sprintf( '%s. %s',
+							__( 'Product status', 'yml-for-yandex-market' ),
+							__( 'Availability for government customers', 'yml-for-yandex-market' )
+						),
+						'woo_attr' => false,
+						'default_value' => false,
+						'key_value_arr' => [
+							[ 'value' => 'disabled', 'text' => __( 'Disabled', 'yml-for-yandex-market' ) ],
+							[ 'value' => 'alltrue', 'text' => __( 'Add to all', 'yml-for-yandex-market' ) . ' true' ],
+							[ 'value' => 'allfalse', 'text' => __( 'Add to all', 'yml-for-yandex-market' ) . ' false' ]
+						],
+						'tag_name' => 'isavailabletoindividuals',
+						'tag_name_for_desc' => 'isAvailableToIndividuals',
+					]
+				],
+				[
+					'opt_name' => 'y4ym_isvisibletostatecustomers',
+					'def_val' => 'disabled',
+					'mark' => 'public',
+					'type' => 'select',
+					'tab' => 'offer_data_tab',
+					'data' => [
+						'label' => __( 'Availability for non-government customers', 'yml-for-yandex-market' ),
+						'desc' => sprintf( '%s. %s',
+							__( 'Product status', 'yml-for-yandex-market' ),
+							__( 'Availability for non-government customers', 'yml-for-yandex-market' )
+						),
+						'woo_attr' => false,
+						'default_value' => false,
+						'key_value_arr' => [
+							[ 'value' => 'disabled', 'text' => __( 'Disabled', 'yml-for-yandex-market' ) ],
+							[ 'value' => 'alltrue', 'text' => __( 'Add to all', 'yml-for-yandex-market' ) . ' true' ],
+							[ 'value' => 'allfalse', 'text' => __( 'Add to all', 'yml-for-yandex-market' ) . ' false' ]
+						],
+						'tag_name' => 'isvisibletostatecustomers',
+						'tag_name_for_desc' => 'isVisibleToStateCustomers',
+					]
+				],
+				[
 					'opt_name' => 'y4ym_length',
 					'def_val' => 'woo_shippings',
 					'mark' => 'public',
@@ -1586,6 +1638,266 @@ class Y4YM_Data {
 					]
 				],
 				[
+					'opt_name' => 'y4ym_oksm',
+					'def_val' => 'disabled',
+					'mark' => 'public',
+					'type' => 'select',
+					'tab' => 'offer_data_tab',
+					'data' => [
+						'label' => __( 'Country of origin', 'yml-for-yandex-market' ),
+						'desc' => __(
+							'This element indicates the country where the product was manufactured',
+							'yml-for-yandex-market'
+						),
+						'woo_attr' => true,
+						'default_value' => false,
+						'key_value_arr' => [
+							[ 'value' => 'disabled', 'text' => __( 'Disabled', 'yml-for-yandex-market' ) ]
+						],
+						'tag_name' => 'oksm'
+					]
+				],
+				[
+					'opt_name' => 'y4ym_begindate',
+					'def_val' => 'false',
+					'mark' => 'public',
+					'type' => 'select',
+					'tab' => 'offer_data_tab',
+					'data' => [
+						'label' => __( 'The begin date of the offer', 'yml-for-yandex-market' ),
+						'desc' => __(
+							'The start date of the offer will be the date when the feed was created',
+							'yml-for-yandex-market'
+						),
+						'woo_attr' => false,
+						'default_value' => false,
+						'key_value_arr' => [
+							[ 'value' => 'disabled', 'text' => __( 'Disabled', 'yml-for-yandex-market' ) ],
+							[ 'value' => 'enabled', 'text' => __( 'Enabled', 'yml-for-yandex-market' ) ]
+						],
+						'tag_name' => 'begindate',
+						'tag_name_for_desc' => 'beginDate'
+					]
+				],
+				[
+					'opt_name' => 'y4ym_enddate',
+					'def_val' => 'false',
+					'mark' => 'public',
+					'type' => 'select',
+					'tab' => 'offer_data_tab',
+					'data' => [
+						'label' => __( 'The end date of the offer', 'yml-for-yandex-market' ),
+						'desc' => '',
+						'woo_attr' => false,
+						'default_value' => false,
+						'key_value_arr' => [
+							[ 'value' => 'disabled', 'text' => __( 'Disabled', 'yml-for-yandex-market' ) ],
+							[
+								'value' => '+1 day',
+								'text' => sprintf( '%s +1 %s',
+									__( 'Today', 'yml-for-yandex-market' ),
+									__( 'day', 'yml-for-yandex-market' ),
+								)
+							],
+							[
+								'value' => '+1 months',
+								'text' => sprintf( '%s +1 %s',
+									__( 'Today', 'yml-for-yandex-market' ),
+									__( 'month', 'yml-for-yandex-market' )
+								)
+							],
+							[
+								'value' => '+2 months',
+								'text' => sprintf( '%s +2 %s',
+									__( 'Today', 'yml-for-yandex-market' ),
+									__( 'months', 'yml-for-yandex-market' )
+								)
+							],
+							[
+								'value' => '+3 months',
+								'text' => sprintf( '%s +3 %s',
+									__( 'Today', 'yml-for-yandex-market' ),
+									__( 'months', 'yml-for-yandex-market' )
+								)
+							],
+							[
+								'value' => '+6 months',
+								'text' => sprintf( '%s +6 %s',
+									__( 'Today', 'yml-for-yandex-market' ),
+									__( 'months', 'yml-for-yandex-market' )
+								)
+							],
+							[
+								'value' => '+1 years',
+								'text' => sprintf( '%s +1 %s',
+									__( 'Today', 'yml-for-yandex-market' ),
+									__( 'Year', 'yml-for-yandex-market' )
+								),
+							]
+						],
+						'tag_name' => 'enddate',
+						'tag_name_for_desc' => 'endDate'
+					]
+				],
+				[
+					'opt_name' => 'y4ym_okei',
+					'def_val' => 'false',
+					'mark' => 'public',
+					'type' => 'select',
+					'tab' => 'offer_data_tab',
+					'data' => [
+						'has_next' => true,
+						'table_location' => 'th-td',
+						'label' => __( 'Identifier of the unit type', 'yml-for-yandex-market' ),
+						'desc' => sprintf( '%s. "Общероссийскому классификатору единиц измерения"',
+							__( 'Identifier of the unit type according to', 'yml-for-yandex-market' )
+						),
+						'woo_attr' => false,
+						'default_value' => false,
+						'key_value_arr' => [
+							[ 'value' => 'disabled', 'text' => __( 'Disabled', 'yml-for-yandex-market' ) ],
+							[ 'value' => 'enabled', 'text' => __( 'Enabled', 'yml-for-yandex-market' ) ]
+						],
+						'tag_name' => 'okei',
+						'tag_name_for_desc' => 'okei id="XXX">Упаковка</okei'
+					]
+				], 
+				[
+					'opt_name' => 'y4ym_okei_default_value',
+					'def_val' => 'disabled',
+					'mark' => 'public',
+					'type' => 'select',
+					'tab' => 'offer_data_tab',
+					'data' => [
+						'has_next' => false,
+						'table_location' => 'td-td',
+						'label' => __( 'Default value', 'yml-for-yandex-market' ),
+						'desc' => '',
+						'woo_attr' => false,
+						'default_value' => false,
+						'key_value_arr' => array_merge(
+							[
+								[ 'value' => 'disabled', 'text' => __( 'Disabled', 'yml-for-yandex-market' ) ]
+							],
+							Y4YM_Registry::get_okei_list() 
+						),
+						'tag_name' => 'okei',
+						'tag_name_for_desc' => 'okei id="XXX">Упаковка</okei'
+					]
+				],
+				[
+					'opt_name' => 'y4ym_packagetype',
+					'def_val' => 'false',
+					'mark' => 'public',
+					'type' => 'select',
+					'tab' => 'offer_data_tab',
+					'data' => [
+						'label' => __( 'The type of packaging', 'yml-for-yandex-market' ),
+						'desc' =>
+							__(
+								'The type of packaging according to the directory on the Supplier Portal',
+								'yml-for-yandex-market'
+							),
+						'woo_attr' => false,
+						'default_value' => false,
+						'key_value_arr' => [
+							[ 'value' => 'disabled', 'text' => __( 'Disabled', 'yml-for-yandex-market' ) ],
+							[ 'value' => 'enabled', 'text' => __( 'Enabled', 'yml-for-yandex-market' ) ]
+						],
+						'tag_name' => 'packagetype',
+						'tag_name_for_desc' => 'packageType id="XX" /'
+					]
+				],
+				[
+					'opt_name' => 'y4ym_region',
+					'def_val' => 'false',
+					'mark' => 'public',
+					'type' => 'select',
+					'tab' => 'offer_data_tab',
+					'data' => [
+						'has_next' => true,
+						'table_location' => 'th-td',
+						'label' => __( 'Identifier of the region', 'yml-for-yandex-market' ),
+						'desc' => sprintf( '%s',
+							__( 'Identifier of the region', 'yml-for-yandex-market' )
+						),
+						'woo_attr' => false,
+						'default_value' => false,
+						'key_value_arr' => [
+							[ 'value' => 'disabled', 'text' => __( 'Disabled', 'yml-for-yandex-market' ) ],
+							[ 'value' => 'enabled', 'text' => __( 'Enabled', 'yml-for-yandex-market' ) ]
+						],
+						'tag_name' => 'region',
+						'tag_name_for_desc' => 'region id="XXX">Москва</region'
+					]
+				],
+				[
+					'opt_name' => 'y4ym_region_default_value',
+					'def_val' => 'disabled',
+					'mark' => 'public',
+					'type' => 'select',
+					'tab' => 'offer_data_tab',
+					'data' => [
+						'has_next' => false,
+						'table_location' => 'td-td',
+						'label' => __( 'Default value', 'yml-for-yandex-market' ),
+						'desc' => '',
+						'woo_attr' => false,
+						'default_value' => false,
+						'key_value_arr' => array_merge(
+							[
+								[ 'value' => 'disabled', 'text' => __( 'Disabled', 'yml-for-yandex-market' ) ]
+							],
+							Y4YM_Registry::get_regions_list()
+						),
+						'tag_name' => 'region',
+						'tag_name_for_desc' => 'region id="XXX">Москва</region'
+					]
+				],
+				[
+					'opt_name' => 'y4ym_ppcategory',
+					'def_val' => 'false',
+					'mark' => 'public',
+					'type' => 'select',
+					'tab' => 'offer_data_tab',
+					'data' => [
+						'label' => __(
+							'The product category from the directory on the Supplier Portal',
+							'yml-for-yandex-market'
+						),
+						'desc' => __(
+							'The product category from the directory on the Supplier Portal',
+							'yml-for-yandex-market'
+						),
+						'woo_attr' => false,
+						'default_value' => false,
+						'key_value_arr' => [
+							[ 'value' => 'disabled', 'text' => __( 'Disabled', 'yml-for-yandex-market' ) ],
+							[ 'value' => 'enabled', 'text' => __( 'Enabled', 'yml-for-yandex-market' ) ]
+						],
+						'tag_name' => 'ppcategory',
+						'tag_name_for_desc' => 'ppCategory'
+					]
+				],
+				[
+					'opt_name' => 'y4ym_ste',
+					'def_val' => 'false',
+					'mark' => 'public',
+					'type' => 'select',
+					'tab' => 'offer_data_tab',
+					'data' => [
+						'label' => __( 'The CTE ID', 'yml-for-yandex-market' ),
+						'desc' => __( 'The CTE ID on the Supplier Portal', 'yml-for-yandex-market' ),
+						'woo_attr' => false,
+						'default_value' => false,
+						'key_value_arr' => [
+							[ 'value' => 'disabled', 'text' => __( 'Disabled', 'yml-for-yandex-market' ) ],
+							[ 'value' => 'enabled', 'text' => __( 'Enabled', 'yml-for-yandex-market' ) ]
+						],
+						'tag_name' => 'ste'
+					]
+				],
+				[
 					'opt_name' => 'y4ym_cus_skucolor',
 					'def_val' => 'disabled',
 					'mark' => 'public',
@@ -1731,8 +2043,8 @@ class Y4YM_Data {
 						'woo_attr' => false,
 						'default_value' => false,
 						'key_value_arr' => [
-							[ 'value' => 'disabled', 'text' => __( 'Disabled', 'yml-for-yandex-market' ) ],
-							[ 'value' => 'enabled', 'text' => __( 'Enabled', 'yml-for-yandex-market' ) ]
+							[ 'value' => 'enabled', 'text' => __( 'Enabled', 'yml-for-yandex-market' ) ],
+							[ 'value' => 'disabled', 'text' => __( 'Disabled', 'yml-for-yandex-market' ) ]
 						],
 						'tag_name' => 'price'
 					]
@@ -2253,6 +2565,28 @@ class Y4YM_Data {
 						],
 						'tag_name' => 'min_quantity',
 						'tag_name_for_desc' => 'min-quantity'
+					]
+				],
+				[
+					'opt_name' => 'y4ym_max_quantity',
+					'def_val' => 'disabled',
+					'mark' => 'public',
+					'type' => 'select',
+					'tab' => 'offer_data_tab',
+					'data' => [
+						'label' => __( 'Maximum number of products per order', 'yml-for-yandex-market' ),
+						'desc' => __(
+							'The value of this option is set on the product edit page',
+							'yml-for-yandex-market'
+						),
+						'woo_attr' => false,
+						'default_value' => false,
+						'key_value_arr' => [
+							[ 'value' => 'disabled', 'text' => __( 'Disabled', 'yml-for-yandex-market' ) ],
+							[ 'value' => 'enabled', 'text' => __( 'Enabled', 'yml-for-yandex-market' ) ]
+						],
+						'tag_name' => 'max_quantity',
+						'tag_name_for_desc' => 'max-quantity'
 					]
 				],
 				[

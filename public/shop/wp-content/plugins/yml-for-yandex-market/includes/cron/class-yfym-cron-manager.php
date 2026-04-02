@@ -5,10 +5,10 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    5.2.0 (03-02-2026)
+ * @version    5.3.0 (22-03-2026)
  *
  * @package    Y4YM
- * @subpackage Y4YM/admin
+ * @subpackage Y4YM/admin/cron
  */
 
 /**
@@ -134,7 +134,7 @@ class Y4YM_Cron_Manager {
 	 * 
 	 * @param string $feed_id
 	 * 
-	 * @return void
+	 * @return string
 	 */
 	public function do_it_every_minute( $feed_id ) {
 
@@ -147,8 +147,35 @@ class Y4YM_Cron_Manager {
 			__LINE__
 		) );
 
-		$generation = new Y4YM_Generation_XML( $feed_id );
-		$generation->run();
+		$start_time = microtime( true );
+
+		try {
+			$generation = new Y4YM_Generation_XML( $feed_id );
+			$generation->run();
+		} catch (\Throwable $e) { // Ловим всё: Exception + Error
+			Y4YM_Error_Log::record( sprintf(
+				'FEED #%1$s; ERROR in run(): %2$s; File: %3$s; Line: %4$s',
+				$feed_id,
+				$e->getMessage(),
+				$e->getFile(),
+				$e->getLine()
+			) );
+			// ? Можно даже поставить флаг остановки
+			// common_option_upd( 'y4ym_status_sborki', '-1', 'no', $feed_id, 'y4ym' );
+		}
+
+		$execution_time = microtime( true ) - $start_time;
+
+		Y4YM_Error_Log::record( sprintf(
+			'FEED #%1$s; %2$s: %.3f sec; %3$s: %4$s; %5$s: %6$s',
+			$feed_id,
+			__( 'The CRON task completed in', 'yml-for-yandex-market' ),
+			$execution_time,
+			__( 'File', 'yml-for-yandex-market' ),
+			'class-yfym-cron-manager.php',
+			__LINE__
+		) );
+		return $execution_time;
 
 	}
 
@@ -246,6 +273,8 @@ class Y4YM_Cron_Manager {
 				[ $feed_id ]
 			);
 		} else {
+			// TODO: false — это ошибка? Или просто «уже запланировано»?
+			// TODO: Лучше возвращать true, если задача уже есть: return true; // уже запланировано
 			$planning_result = false;
 		}
 

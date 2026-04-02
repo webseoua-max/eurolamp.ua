@@ -8,7 +8,7 @@
  * @version    5.2.0 (03-02-2026)
  *
  * @package    Y4YM
- * @subpackage Y4YM/includes
+ * @subpackage Y4YM/includes/wordpress
  */
 
 /**
@@ -20,21 +20,33 @@
  * or other upload interfaces within WordPress.
  *
  * @package    Y4YM
- * @subpackage Y4YM/includes
+ * @subpackage Y4YM/includes/wordpress
  * @author     Maxim Glazunov <icopydoc@gmail.com>
  */
 class Y4YM_Mime_Types {
 
+	/**
+	 * Initializes the MIME type handler by registering the `upload_mimes` filter.
+	 *
+	 * This method must be called once during plugin bootstrap to enable support
+	 * for uploading `.xml`, `.csv`, and `.yml` files via the WordPress media library.
+	 *
+	 * @since    5.2.0
+	 * 
+	 * @return   void
+	 */
 	public function init() {
 		add_filter( 'upload_mimes', [ $this, 'add_mime_types' ] );
 	}
 
 	/**
-	 * Разрешим загрузку xml и csv файлов. Function for `upload_mimes` action-hook.
+	 * Enable support for uploading `.xml`, `.csv`, and `.yml` files via the WordPress media library.
 	 * 
-	 * @param array $mimes
+	 * Function for `upload_mimes` action-hook.
 	 * 
-	 * @return array
+	 * @param    array    $mimes
+	 * 
+	 * @return   array
 	 */
 	public function add_mime_types( $mimes ) {
 

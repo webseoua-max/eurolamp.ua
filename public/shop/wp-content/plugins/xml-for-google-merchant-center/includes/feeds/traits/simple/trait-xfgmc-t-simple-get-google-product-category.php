@@ -5,7 +5,7 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    4.0.1 (10-05-2025)
+ * @version    4.1.1 (27-03-2025)
  *
  * @package    XFGMC
  * @subpackage XFGMC/includes/feeds/traits/simple
@@ -50,7 +50,7 @@ trait XFGMC_T_Simple_Get_Google_Product_Category {
 			return $result_xml;
 		}
 
-		if ( get_post_meta( $this->get_product()->get_id(), 'xfgmc_google_product_category', true ) == '' ) {
+		if ( get_post_meta( $this->get_product()->get_id(), '_xfgmc_google_product_category', true ) == '' ) {
 			if ( get_term_meta( $this->get_feed_category_id(), 'xfgmc_google_product_category', true ) !== '' ) {
 				$tag_value = get_term_meta( $this->get_feed_category_id(), 'xfgmc_google_product_category', true );
 				$tag_value = htmlspecialchars( $tag_value );
@@ -58,7 +58,7 @@ trait XFGMC_T_Simple_Get_Google_Product_Category {
 				$tag_value = '';
 			}
 		} else {
-			$tag_value = get_post_meta( $this->get_product()->get_id(), 'xfgmc_google_product_category', true );
+			$tag_value = get_post_meta( $this->get_product()->get_id(), '_xfgmc_google_product_category', true );
 			$tag_value = htmlspecialchars( $tag_value );
 		}
 		$result_xml = $this->get_simple_tag( $tag_name, $tag_value );

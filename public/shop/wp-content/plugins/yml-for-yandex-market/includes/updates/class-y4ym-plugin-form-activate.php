@@ -8,7 +8,7 @@
  * @version    5.0.24 (27-11-2025)
  *
  * @package    Y4YM
- * @subpackage Y4YM/admin
+ * @subpackage Y4YM/includes/updates
  */
 
 /**
@@ -18,7 +18,7 @@
  *
  * @see        [ 202, 402, 412, 418, 520 ]
  * @package    Y4YM
- * @subpackage Y4YM/admin
+ * @subpackage Y4YM/includes/updates
  * @author     Maxim Glazunov <icopydoc@gmail.com>
  */
 final class Y4YM_Plugin_Form_Activate {

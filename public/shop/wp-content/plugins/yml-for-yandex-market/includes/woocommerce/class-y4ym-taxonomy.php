@@ -8,7 +8,7 @@
  * @version    5.2.0 (03-02-2026)
  *
  * @package    Y4YM
- * @subpackage Y4YM/includes
+ * @subpackage Y4YM/includes/woocommerce
  */
 
 /**
@@ -21,7 +21,7 @@
 
  *
  * @package    Y4YM
- * @subpackage Y4YM/includes
+ * @subpackage Y4YM/includes/woocommerce
  * @author     Maxim Glazunov <icopydoc@gmail.com>
  */
 class Y4YM_Taxonomy {
@@ -29,7 +29,7 @@ class Y4YM_Taxonomy {
 	/**
 	 * Add new taxonomy.
 	 * 
-	 * @return void
+	 * @return   void
 	 */
 	public function add_new_taxonomies() {
 
@@ -70,10 +70,10 @@ class Y4YM_Taxonomy {
 	 * Позволяет добавить дополнительные поля на страницу создания элементов таксономии (термина).
 	 * Function for `(taxonomy)_add_form_fields` action-hook.
 	 * 
-	 * @param WP_Term $tag Current taxonomy term object.
-	 * @param string $taxonomy Current taxonomy slug.
+	 * @param    WP_Term    $tag        Current taxonomy term object.
+	 * @param    string    $taxonomy    Current taxonomy slug.
 	 *
-	 * @return void
+	 * @return   void
 	 */
 	public function add_meta_product_cat( $term ) {
 
@@ -115,10 +115,10 @@ class Y4YM_Taxonomy {
 	 * Позволяет добавить дополнительные поля на страницу редактирования элементов таксономии (термина).
 	 * Function for `(taxonomy)_edit_form_fields` action-hook.
 	 * 
-	 * @param WP_Term $tag Current taxonomy term object.
-	 * @param string $taxonomy Current taxonomy slug.
+	 * @param    WP_Term    $tag         Current taxonomy term object.
+	 * @param    string     $taxonomy    Current taxonomy slug.
 	 *
-	 * @return void
+	 * @return   void
 	 */
 	public function edit_meta_product_cat( $term ) {
 
@@ -174,9 +174,9 @@ class Y4YM_Taxonomy {
 	/**
 	 * Сохранение данных в БД. Function for `create_(taxonomy)` and `edited_(taxonomy)` action-hooks.
 	 * 
-	 * @param int $term_id
+	 * @param    int    $term_id
 	 * 
-	 * @return void
+	 * @return   void
 	 */
 	public function save_meta_product_cat( $term_id ) {
 

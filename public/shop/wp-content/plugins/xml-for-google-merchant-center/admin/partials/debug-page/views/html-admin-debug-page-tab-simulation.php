@@ -2,7 +2,7 @@
 /**
  * Display the Simulation tab.
  * 
- * @version    4.0.3 (17-06-2025)
+ * @version    4.1.1 (27-03-2025)
  * @package    XFGMC
  * @subpackage XFGMC/admin/partials/debug_page/
  * 
@@ -58,6 +58,29 @@ defined( 'ABSPATH' ) || exit; ?>
 							);
 						}
 						?>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row"><label for="xfgmc_add_headers_footer">
+						<?php esc_html_e( 'Create a feed from a single product', 'xml-for-google-merchant-center' ); ?>
+					</label>
+				</th>
+				<td class="overalldesc">
+					<select style="width: 100%" name="xfgmc_add_headers_footer" id="xfgmc_add_headers_footer">
+						<?php
+						if ( isset( $_POST['xfgmc_add_headers_footer'] ) ) {
+							$cur_add_headers = sanitize_text_field( $_POST['xfgmc_add_headers_footer'] );
+						} else {
+							$cur_add_headers = 'disabled';
+						}
+						?>
+						<option value="disabled" <?php selected( $cur_add_headers, $cur_add_headers, true ); ?>>
+							<?php esc_html_e( 'Disabled', 'xml-for-google-merchant-center' ); ?>
+						</option>
+						<option value="enabled" <?php selected( 'enabled', $cur_add_headers, true ); ?>>
+							<?php esc_html_e( 'Enabled', 'xml-for-google-merchant-center' ); ?>
+						</option>
 					</select>
 				</td>
 			</tr>

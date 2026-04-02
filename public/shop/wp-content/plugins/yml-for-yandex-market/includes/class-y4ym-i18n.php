@@ -28,9 +28,9 @@ class Y4YM_i18n {
 	/**
 	 * Load the plugin text domain for translation.
 	 *
-	 * @since 0.1.0
+	 * @since    0.1.0
 	 * 
-	 * @return void
+	 * @return   void
 	 */
 	public function load_plugin_textdomain() {
 

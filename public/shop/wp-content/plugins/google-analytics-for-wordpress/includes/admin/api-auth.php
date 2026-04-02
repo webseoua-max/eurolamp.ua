@@ -262,7 +262,8 @@ final class MonsterInsights_API_Auth {
 		// Clear cache
 		$where = $this->is_network_admin() ? 'network' : 'site';
 		MonsterInsights()->reporting->delete_aggregate_data( $where );
-		
+		monsterinsights_flag_flush_cache_registry();
+
 		if ( class_exists( 'MonsterInsights_Google_Ads' ) ) {
 			// Clear any Google Ads stored data
 			MonsterInsights_Google_Ads::clear_data();
@@ -430,7 +431,8 @@ final class MonsterInsights_API_Auth {
 		// Clear cache
 		$where = $this->is_network_admin() ? 'network' : 'site';
 		MonsterInsights()->reporting->delete_aggregate_data( $where );
-		
+		monsterinsights_flag_flush_cache_registry();
+
 		if ( class_exists( 'MonsterInsights_Google_Ads' ) ) {
 			// Clear any Google Ads stored data
 			MonsterInsights_Google_Ads::clear_data();

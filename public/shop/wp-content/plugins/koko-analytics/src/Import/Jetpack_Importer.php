@@ -49,6 +49,7 @@ class Jetpack_Importer extends Importer
             }
         } catch (Exception $e) {
             $this->redirect_with_error($this->get_admin_url(), __('Invalid date fields', 'koko-analytics'));
+            exit;
         }
 
         // params are valid; let's go!
@@ -188,7 +189,7 @@ class Jetpack_Importer extends Importer
         // We now have an array of days in the following format:
         // [ [ "date" => "2020-10-31", "postviews" => [ [ "post_id" => 1, "views" => 2 ] ] ] ]
 
-        /** @var wpdb $wpdb */
+        /** @var \wpdb $wpdb */
         global $wpdb;
         foreach ($data as $item) {
             $site_views = 0;
@@ -228,15 +229,14 @@ class Jetpack_Importer extends Importer
 
             $query = $wpdb->prepare("INSERT INTO {$wpdb->prefix}koko_analytics_post_stats(date, path_id, post_id, visitors, pageviews) VALUES {$placeholders} ON DUPLICATE KEY UPDATE visitors = visitors + VALUES(visitors), pageviews = pageviews + VALUES(pageviews)", $values);
             $wpdb->query($query);
-
-            if ($wpdb->last_error !== '') {
+            if ($wpdb->last_error) {
                 throw new Exception(__("A database error occurred: ", 'koko-analytics') . " {$wpdb->last_error}");
             }
 
             // update site stats
             $query = $wpdb->prepare("INSERT INTO {$wpdb->prefix}koko_analytics_site_stats(date, visitors, pageviews) VALUES (%s, %d, %d) ON DUPLICATE KEY UPDATE visitors = visitors + VALUES(visitors), pageviews = pageviews + VALUES(pageviews)", [$item->date, $site_views, $site_views]);
             $wpdb->query($query);
-            if ($wpdb->last_error !== '') {
+            if ($wpdb->last_error) { // @phpstan-ignore-line
                 throw new Exception(__("A database error occurred: ", 'koko-analytics') . " {$wpdb->last_error}");
             }
         }

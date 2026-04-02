@@ -5,10 +5,10 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    5.0.22 (15-10-2025)
+ * @version    5.3.0 (22-03-2026)
  *
  * @package    Y4YM
- * @subpackage Y4YM/includes
+ * @subpackage Y4YM/includes/feeds
  */
 
 /**
@@ -82,6 +82,22 @@ class Y4YM_Rules_List {
 					'pickup_options', 'condition', 'credit_template', 'supplier', 'min_quantity', 'step_quantity',
 					'additional_expenses'
 				],
+				'yandex_products' => [
+					// https://yandex.ru/support/merchants/ru/offers
+					'offer_tag', 'currencyid', 'name', 'vendor', 'vendorcode',
+					'url', 'price', 'oldprice', 'categoryid', 'picture',
+					'delivery', 'delivery_options', 'pickup', 'pickup_options',
+					'description', 'sales_notes', 'adult', 'barcode', 'params',
+					'weight', 'dimensions', 'period_of_validity_days',
+					'certificate', 'comment_validity_days', 'service_life_days', 'comment_life_days',
+					'warranty_days', 'comment_warranty', 'tn_ved_codes', 'condition'
+				],
+				'yandex_business' => [
+					// https://yandex.ru/sprav/templates/price-list-template.xml
+					'offer_tag', 'currencyid', 'name', 'vendor', 'price', 'oldprice',
+					'categoryid', 'picture', 'description', // TODO: 'shortdescription',
+					'url', 'type_prefix', 'model'
+				],
 				'yandex_webmaster' => [
 					// Яндекс Вебмастер, Товарный фид, Товары и предложения
 					// https://yandex.ru/support/webmaster/feed/upload.html
@@ -92,16 +108,6 @@ class Y4YM_Rules_List {
 					'market_sku', 'min_quantity', 'model', 'name', 'params', 'period_of_validity_days',
 					'picture', /*'recommend_stock_data',*/ 'sales_notes', 'shop_sku', 'step_quantity', 'tn_ved_codes',
 					'url', 'cargo_types', 'vendor', 'vendorcode', 'weight'
-				],
-				'yandex_products' => [
-					// https://yandex.ru/support/merchants/ru/offers
-					'offer_tag', 'currencyid', 'name', 'vendor', 'vendorcode',
-					'url', 'price', 'oldprice', 'categoryid', 'picture',
-					'delivery', 'delivery_options', 'pickup', 'pickup_options',
-					'description', 'sales_notes', 'adult', 'barcode', 'params',
-					'weight', 'dimensions', 'period_of_validity_days',
-					'certificate', 'comment_validity_days', 'service_life_days', 'comment_life_days',
-					'warranty_days', 'comment_warranty', 'tn_ved_codes', 'condition'
 				],
 				'vk' => [
 					/**
@@ -143,18 +149,29 @@ class Y4YM_Rules_List {
 					'picture', 'store', 'pickup', 'delivery', 'name', 'vendor', 'vendorcode', 'description',
 					'sales_notes', 'delivery_options', 'pickup_options', 'qty', 'params', 'weight', 'dimensions', 'consists'
 				],
+				'zakupki_mos' => [  // https://zakupki.mos.ru/cms/Media/docs/Инструкция%20по%20формированию%20YML.pdf
+					'offer_tag', 'url', 'currencyid', 'name', 'picture', 'ste',
+					'isvisibletostatecustomers', 'isavailabletoindividuals', 'ppcategory',
+					'categoryid', 'okei', 'min_quantity', 'max_quantity', 'begindate', 'enddate',
+					'packagetype', 'region', 'params', 'price', 'oldprice', 'delivery_options', 'model', 'vendor',
+					'oksm', 'vendorcode', 'vat', 'delivery', 'manufacturer_warranty',
+					'barcode', 'expiry', 'weight', 'dimensions', 'age'
+				],
 				'all_elements' => [
 					'offer_tag', 'currencyid', 'price', 'oldprice', 'cofinance_price', 'purchase_price', 'disabled', 'archived', 'age',
 					'amount', 'barcode', 'categoryid', 'condition', 'count',
 					'country_of_origin', 'credit_template', 'delivery_options', 'delivery', 'description', 'dimensions',
 					'downloadable', 'expiry', /* 'instock', */ 'keywords',
 					'certificate', 'comment_validity_days', 'service_life_days', 'comment_life_days',
-					'manufacturer', 'manufacturer_warranty', 'warranty_days', 'comment_warranty', 'market_sku', 'min_quantity', 'model', 'name', 'outlets', 'params',
+					'manufacturer', 'manufacturer_warranty', 'warranty_days', 'comment_warranty', 'market_sku',
+					'min_quantity', 'max_quantity', 'model', 'name', 'outlets', 'params',
 					'period_of_validity_days', 'pickup_options', 'pickup', 'picture', // 'premium_price',
 					/*'recommend_stock_data',*/ 'sales_notes', 'shop_sku', 'step_quantity', 'store', 'supplier',
 					'tn_ved_codes', 'url', 'vat', 'cargo_types', 'vendor', 'vendorcode', 'video', 'weight', // 'price_rrp',
 					'additional_expenses', 'type_prefix', 'adult',
-					'market_category', 'market_category_id', 'custom_labels', 'custom_score', 'consists'
+					'market_category', 'market_category_id', 'custom_labels', 'custom_score', 'consists',
+					'ste', 'isvisibletostatecustomers', 'isavailabletoindividuals', 'ppcategory',
+					'okei', 'begindate', 'enddate', 'packagetype', 'oksm'
 				]
 			];
 		} else {

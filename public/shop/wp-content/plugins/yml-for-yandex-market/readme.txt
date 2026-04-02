@@ -3,8 +3,8 @@ Contributors: icopydoc
 Donate link: https://pay.cloudtips.ru/p/45d8ff3f
 Tags: yml, yandex, market, export, woocommerce
 Requires at least: 5.0
-Tested up to: 6.9.1
-Stable tag: 5.2.0
+Tested up to: 6.9.4
+Stable tag: 5.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,6 +77,14 @@ After 1-7 minutes (depending on the number of products), the feed will be genera
 1. screenshot-1.png
 
 == Changelog ==
+
+= 5.3.0 =
+*Release Date 22-03-2026*
+
+* Fixed interface bugs.
+* Fixed a security bug.
+* Code refactoring.
+* Added support for WP-CLI.
 
 = 5.2.0 =
 *Release Date 03-02-2026*
@@ -250,10 +258,10 @@ After 1-7 minutes (depending on the number of products), the feed will be genera
 
 == Upgrade Notice ==
 
-= 5.2.0 =
-*Release Date 03-02-2026*
+= 5.3.0 =
+*Release Date 22-03-2026*
 
 * Fixed interface bugs.
-* Improved plugin performance.
-* Added compatibility with the plugin: `ACF`.
+* Fixed a security bug.
 * Code refactoring.
+* Added support for WP-CLI.

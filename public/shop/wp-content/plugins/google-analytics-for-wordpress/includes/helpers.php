@@ -210,21 +210,21 @@ function monsterinsights_generate_uuid() {
 	return sprintf(
 		'%04x%04x-%04x-%04x-%04x-%04x%04x%04x',
 		// 32 bits for "time_low"
-		mt_rand( 0, 0xffff ),
-		mt_rand( 0, 0xffff ),
+		random_int( 0, 0xffff ),
+		random_int( 0, 0xffff ),
 		// 16 bits for "time_mid"
-		mt_rand( 0, 0xffff ),
+		random_int( 0, 0xffff ),
 		// 16 bits for "time_hi_and_version",
 		// four most significant bits holds version number 4
-		mt_rand( 0, 0x0fff ) | 0x4000,
+		random_int( 0, 0x0fff ) | 0x4000,
 		// 16 bits, 8 bits for "clk_seq_hi_res",
 		// 8 bits for "clk_seq_low",
 		// two most significant bits holds zero and one for variant DCE1.1
-		mt_rand( 0, 0x3fff ) | 0x8000,
+		random_int( 0, 0x3fff ) | 0x8000,
 		// 48 bits for "node"
-		mt_rand( 0, 0xffff ),
-		mt_rand( 0, 0xffff ),
-		mt_rand( 0, 0xffff )
+		random_int( 0, 0xffff ),
+		random_int( 0, 0xffff ),
+		random_int( 0, 0xffff )
 	);
 }
 
@@ -1048,6 +1048,16 @@ function monsterinsights_get_onboarding_user_id() {
  */
 function monsterinsights_clear_onboarding_key() {
 	delete_transient( 'monsterinsights_onboarding_key' );
+}
+
+/**
+ * Flag that the Vue 3 localStorage cache registry should be flushed on next page load.
+ *
+ * Sets a transient consumed by admin_scripts() to output an inline script
+ * that removes the 'mi_cache_registry' localStorage key.
+ */
+function monsterinsights_flag_flush_cache_registry() {
+	set_transient( 'monsterinsights_flush_cache_registry', 1, HOUR_IN_SECONDS );
 }
 
 function monsterinsights_get_licensing_url() {

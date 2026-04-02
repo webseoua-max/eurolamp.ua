@@ -12,7 +12,7 @@ Disallow: *.php$
 Disallow: *utm=
 Disallow: /cart/
 Disallow: /checkout/
-Disallow: /*add-to-cart=*
+Allow: /*add-to-cart=*
 Allow: */uploads
 Allow: /*/*.js
 Allow: /*/*.css

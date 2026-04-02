@@ -12,7 +12,7 @@
  */
 
 /**
- * The trait adds `get_product_type` methods.
+ * The trait adds `get_product_type` and `get_breadcrumbs` methods.
  * 
  * This method allows you to return the `product_type` tag.
  *

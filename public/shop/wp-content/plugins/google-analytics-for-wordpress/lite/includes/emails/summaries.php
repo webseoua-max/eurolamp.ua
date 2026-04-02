@@ -564,6 +564,7 @@ class MonsterInsights_Email_Summaries {
 		}
 
 		$summaries_data                   = $summaries_data['data']; // Use only the 'data' part for simplified access
+		$summaries_data                   = $this->maybe_map_new_api_format( $summaries_data );
 		$args['body']['top_pages']        = $this->get_top_pages_from_summary_data( $summaries_data );
 		$args['body']['more_pages_url']   = $this->get_more_pages_report_link( $summaries_data );
 		$args['body']['update_available'] = $this->plugin_has_update_notice();
@@ -838,7 +839,7 @@ class MonsterInsights_Email_Summaries {
 					break;
 				case 'avg_duration':
 					if ( ! empty( $infobox ) && isset( $infobox['duration'] ) ) {
-						$value     = $infobox['duration']['value'];
+						$value     = $this->format_duration( $infobox['duration']['value'] );
 						$new_value = $this->calculate_trend_data( $stat, $value, $infobox['duration']['prev'] );
 					}
 					break;
@@ -1083,5 +1084,127 @@ class MonsterInsights_Email_Summaries {
 		}
 
 		return round($num, 1) . $units[$i];
+	}
+
+	/**
+	 * Map new API response format to the legacy format expected by get_report_stats()
+	 * and get_top_pages_from_summary_data().
+	 *
+	 * The API now returns 'analytics_stats' and 'top_pages' instead of the legacy
+	 * 'infobox' and 'toppages' keys. This method bridges the gap so existing
+	 * template logic continues to work.
+	 *
+	 * @since 9.4.1
+	 * @access private
+	 *
+	 * @param array $data The summaries data array from the API.
+	 * @return array Data array with legacy keys populated when missing.
+	 */
+	private function maybe_map_new_api_format( $data ) {
+		if ( ! is_array( $data ) ) {
+			return $data;
+		}
+
+		// Map analytics_stats → infobox.
+		if ( empty( $data['infobox'] ) && ! empty( $data['analytics_stats'] ) ) {
+			$stats = $data['analytics_stats'];
+
+			$data['infobox'] = array(
+				'sessions'   => array(
+					'value' => isset( $stats['sessions']['value'] ) ? $this->parse_formatted_number( $stats['sessions']['value'] ) : 0,
+					'prev'  => isset( $stats['sessions']['percentage'] ) ? (float) $stats['sessions']['percentage'] : 0,
+				),
+				'pageviews'  => array(
+					'value' => isset( $stats['pageviews']['value'] ) ? $this->parse_formatted_number( $stats['pageviews']['value'] ) : 0,
+					'prev'  => isset( $stats['pageviews']['percentage'] ) ? (float) $stats['pageviews']['percentage'] : 0,
+				),
+				'duration'   => array(
+					'value' => isset( $stats['avg_session_length']['value'] ) ? $stats['avg_session_length']['value'] : 0,
+					'prev'  => isset( $stats['avg_session_length']['percentage'] ) ? (float) $stats['avg_session_length']['percentage'] : 0,
+				),
+				'bounceRate' => array(
+					'value' => isset( $stats['bounce_rate']['value'] ) ? $this->parse_formatted_number( $stats['bounce_rate']['value'] ) : 0,
+					'prev'  => isset( $stats['bounce_rate']['percentage'] ) ? (float) $stats['bounce_rate']['percentage'] : 0,
+				),
+			);
+		}
+
+		// Map top_pages → toppages.
+		if ( empty( $data['toppages'] ) && ! empty( $data['top_pages'] ) ) {
+			$base_url         = get_site_url();
+			$data['toppages'] = array();
+
+			foreach ( $data['top_pages'] as $page ) {
+				$path = isset( $page['page_path'] ) ? '/' . ltrim( $page['page_path'], '/' ) : '';
+
+				$data['toppages'][] = array(
+					'title'    => isset( $page['page_title'] ) ? (string) $page['page_title'] : $path,
+					'hostname' => $base_url,
+					'url'      => $path,
+					'sessions' => isset( $page['page_views'] ) ? (float) $page['page_views'] : 0,
+				);
+			}
+		}
+
+		return $data;
+	}
+
+	/**
+	 * Format a duration in seconds to a human-readable string (e.g. "1m 30s", "45s").
+	 *
+	 * @since 9.4.1
+	 * @access private
+	 *
+	 * @param mixed $seconds Duration in seconds.
+	 * @return string Formatted duration string.
+	 */
+	private function format_duration( $seconds ) {
+		$seconds = (int) round( (float) $seconds );
+		$minutes = (int) floor( $seconds / 60 );
+		$secs    = $seconds % 60;
+
+		if ( $minutes > 0 ) {
+			return $minutes . 'm ' . $secs . 's';
+		}
+
+		return $secs . 's';
+	}
+
+	/**
+	 * Parse a formatted number string (e.g. "4.1K", "1.2M") back to a numeric value.
+	 *
+	 * @since 9.4.1
+	 * @access private
+	 *
+	 * @param mixed $value The value to parse.
+	 * @return float Numeric value.
+	 */
+	private function parse_formatted_number( $value ) {
+		if ( is_numeric( $value ) ) {
+			return (float) $value;
+		}
+
+		if ( ! is_string( $value ) ) {
+			return 0;
+		}
+
+		$value = trim( $value );
+
+		if ( preg_match( '/^([\d.]+)\s*K$/i', $value, $m ) ) {
+			return (float) $m[1] * 1000;
+		}
+
+		if ( preg_match( '/^([\d.]+)\s*M$/i', $value, $m ) ) {
+			return (float) $m[1] * 1000000;
+		}
+
+		if ( preg_match( '/^([\d.]+)\s*B$/i', $value, $m ) ) {
+			return (float) $m[1] * 1000000000;
+		}
+
+		// Strip non-numeric chars (e.g. "%" suffix).
+		$cleaned = preg_replace( '/[^0-9.]/', '', $value );
+
+		return is_numeric( $cleaned ) ? (float) $cleaned : 0;
 	}
 }

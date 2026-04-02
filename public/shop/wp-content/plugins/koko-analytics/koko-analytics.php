@@ -3,7 +3,7 @@
 /*
 Plugin Name: Koko Analytics
 Plugin URI: https://www.kokoanalytics.com/#utm_source=wp-plugin&utm_medium=koko-analytics&utm_campaign=plugins-page
-Version: 2.2.4
+Version: 2.2.6
 Description: Privacy-friendly and efficient statistics for your WordPress site.
 Author: ibericode
 Author URI: https://www.ibericode.com/
@@ -42,7 +42,7 @@ if (PHP_VERSION_ID < 70400 || ! \defined('ABSPATH')) {
     return;
 }
 
-define('KOKO_ANALYTICS_VERSION', '2.2.4');
+define('KOKO_ANALYTICS_VERSION', '2.2.6');
 define('KOKO_ANALYTICS_PLUGIN_FILE', __FILE__);
 define('KOKO_ANALYTICS_PLUGIN_DIR', __DIR__);
 
@@ -58,7 +58,7 @@ require __DIR__ . '/src/Blocks.php';
 (new Blocks())->hook();
 
 // Admin hooks (admin only)
-if (defined('WP_ADMIN') && WP_ADMIN && (false == defined('DOING_AJAX') || false == DOING_AJAX)) {
+if (is_admin()) {
     require __DIR__ . '/src/Admin/Controller.php';
     (new Admin\Controller())->hook();
 }

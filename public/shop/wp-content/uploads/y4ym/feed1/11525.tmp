@@ -1,4 +1,4 @@
-<offer id="11525" available="true">
+<offer id="11525" available="false">
 <currencyId>UAH</currencyId>
 <price>1029.00</price>
 <name>LED Світильник Sun T21 50W-3000K-6500K EUROLAMP</name>
@@ -14,5 +14,5 @@
 <url>https://eurolamp.ua/shop/product/led-svitylnyk-sun-t21-50w-3000k-6500k-eurolamp/</url>
 <store>true</store>
 <delivery>false</delivery>
-<categoryId>10539</categoryId>
+<categoryId>29</categoryId>
 </offer>

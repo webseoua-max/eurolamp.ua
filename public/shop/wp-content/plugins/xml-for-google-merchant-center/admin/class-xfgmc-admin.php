@@ -5,7 +5,7 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    4.0.9 (23-12-2025)
+ * @version    4.1.0 (22-03-2026)
  *
  * @package    XFGMC
  * @subpackage XFGMC/admin
@@ -503,7 +503,7 @@ class XFGMC_Admin {
 		}
 		new ICPD_Set_Admin_Notices( __( 'Updated', 'xml-for-google-merchant-center' ), 'success' );
 
-		$planning_result = self::cron_starting_feed_creation_task_planning( $feed_id );
+		$planning_result = XFGMC_Cron_Manager::cron_starting_feed_creation_task_planning( $feed_id );
 		if ( true === $planning_result ) {
 			new ICPD_Set_Admin_Notices(
 				sprintf( '%s. %s: %s',
@@ -666,7 +666,16 @@ class XFGMC_Admin {
 
 		$checkbox_xml_file_arr = $_GET['checkbox_xml_file'];
 		for ( $i = 0; $i < count( $checkbox_xml_file_arr ); $i++ ) {
-			$feed_id_str = (string) $checkbox_xml_file_arr[ $i ];
+
+			// защита от CVSS 6.8 уязвимостей
+			$raw_feed_id = $checkbox_xml_file_arr[ $i ] ?? '';
+			// Проверяем: только цифры
+			if ( ! ctype_digit( (string) $raw_feed_id ) ) {
+				// Логируем подозрительную попытку
+				XFGMC_Error_Log::record( 'SECURITY: Invalid feed_id detected: ' . $raw_feed_id );
+				continue; // ? возможно стоит делать return, а не шерстить цикл дальше
+			}
+			$feed_id_str = (string) $raw_feed_id;
 
 			xfgmc_remove_directory( XFGMC_PLUGIN_UPLOADS_DIR_PATH . '/feed' . $feed_id_str );
 
@@ -918,245 +927,6 @@ class XFGMC_Admin {
 			}
 		}
 		return $additional_info;
-
-	}
-
-	/**
-	 * Разрешим загрузку xml и csv файлов. Function for `upload_mimes` action-hook.
-	 * 
-	 * @param array $mimes
-	 * 
-	 * @return array
-	 */
-	public function add_mime_types( $mimes ) {
-
-		$mimes['csv'] = 'text/csv';
-		$mimes['xml'] = 'text/xml';
-		$mimes['xml'] = 'text/xml';
-		return $mimes;
-
-	}
-
-	/**
-	 * Add cron intervals to WordPress. Function for `cron_schedules` action-hook.
-	 * 
-	 * @param array $schedules
-	 * 
-	 * @return array
-	 */
-	public function add_cron_intervals( $schedules ) {
-
-		$schedules['every_minute'] = [
-			'interval' => 60,
-			'display' => __( 'Every minute', 'xml-for-google-merchant-center' )
-		];
-		$schedules['three_hours'] = [
-			'interval' => 10800,
-			'display' => __( 'Every three hours', 'xml-for-google-merchant-center' )
-		];
-		$schedules['six_hours'] = [
-			'interval' => 21600,
-			'display' => __( 'Every six hours', 'xml-for-google-merchant-center' )
-		];
-		$schedules['every_two_days'] = [
-			'interval' => 172800,
-			'display' => __( 'Every two days', 'xml-for-google-merchant-center' )
-		];
-		return $schedules;
-
-	}
-
-	/**
-	 * The function responsible for starting the creation of the feed.
-	 * Function for `xfgmc_cron_start_feed_creation` action-hook.
-	 * 
-	 * @param string $feed_id
-	 * 
-	 * @return void
-	 */
-	public function do_start_feed_creation( $feed_id ) {
-
-		new XFGMC_Error_Log( sprintf( 'FEED #%1$s; %2$s; %3$s: %4$s; %5$s: %6$s',
-			$feed_id,
-			__( 'The CRON task for creating a feed has started', 'xml-for-google-merchant-center' ),
-			__( 'File', 'xml-for-google-merchant-center' ),
-			'class-xfgmc-admin.php',
-			__( 'Line', 'xml-for-google-merchant-center' ),
-			__LINE__
-		) );
-
-		// счётчик завершенных товаров в положение 0.
-		univ_option_upd(
-			'xfgmc_last_element_feed_' . $feed_id,
-			'0',
-			'no'
-		);
-
-		// запланируем CRON сборки
-		$planning_result = self::cron_sborki_task_planning( $feed_id );
-
-		if ( false === $planning_result ) {
-			new XFGMC_Error_Log( sprintf(
-				'FEED #%1$s; ERROR: %2$s `xfgmc_cron_sborki`; %3$s: %4$s; %5$s: %6$s',
-				$feed_id,
-				__( 'Failed to schedule a CRON task', 'xml-for-google-merchant-center' ),
-				__( 'File', 'xml-for-google-merchant-center' ),
-				'class-xfgmc-admin.php',
-				__( 'Line', 'xml-for-google-merchant-center' ),
-				__LINE__
-			) );
-		} else {
-			new XFGMC_Error_Log( sprintf(
-				'FEED #%1$s; %2$s `xfgmc_cron_sborki`; %3$s: %4$s; %5$s: %6$s',
-				$feed_id,
-				__( 'Successful CRON task planning', 'xml-for-google-merchant-center' ),
-				__( 'File', 'xml-for-google-merchant-center' ),
-				'class-xfgmc-admin.php',
-				__( 'Line', 'xml-for-google-merchant-center' ),
-				__LINE__
-			) );
-			// сборку начали
-			common_option_upd(
-				'xfgmc_status_sborki',
-				'1',
-				'no',
-				$feed_id,
-				'xfgmc'
-			);
-			// сразу планируем крон-задачу на начало сброки фида в следующий раз в нужный час
-			$run_cron = common_option_get(
-				'xfgmc_run_cron',
-				'disabled',
-				$feed_id,
-				'xfgmc'
-			);
-			if ( in_array( $run_cron, [ 'hourly', 'three_hours', 'six_hours', 'twicedaily', 'daily', 'every_two_days', 'weekly' ] ) ) {
-				$arr = wp_get_schedules();
-				if ( isset( $arr[ $run_cron ]['interval'] ) ) {
-					self::cron_starting_feed_creation_task_planning( $feed_id, $arr[ $run_cron ]['interval'] );
-				}
-			}
-		}
-
-	}
-
-	/**
-	 * The function is called every minute until the feed is created or creation is interrupted.
-	 * Function for `xfgmc_cron_sborki` action-hook.
-	 * 
-	 * @param string $feed_id
-	 * 
-	 * @return void
-	 */
-	public function do_it_every_minute( $feed_id ) {
-
-		new XFGMC_Error_Log( sprintf( 'FEED #%1$s; %2$s `xfgmc_cron_sborki`; %3$s: %4$s; %5$s: %6$s',
-			$feed_id,
-			__( 'The CRON task started', 'xml-for-google-merchant-center' ),
-			__( 'File', 'xml-for-google-merchant-center' ),
-			'class-xfgmc-admin.php',
-			__( 'Line', 'xml-for-google-merchant-center' ),
-			__LINE__
-		) );
-
-		$generation = new XFGMC_Generation_XML( $feed_id );
-		$generation->run();
-
-	}
-
-	/**
-	 * Cron starting the feed creation task planning.
-	 * 
-	 * @param string $feed_id
-	 * @param int $delay_second Scheduling task CRON in N seconds.
-	 * 
-	 * @return bool|WP_Error
-	 */
-	public static function cron_starting_feed_creation_task_planning( $feed_id, $delay_second = 0 ) {
-
-		$planning_result = false;
-		$run_cron = common_option_get(
-			'xfgmc_run_cron',
-			'disabled',
-			$feed_id,
-			'xfgmc'
-		);
-
-		if ( $run_cron === 'disabled' ) {
-			// останавливаем сборку досрочно, если это выбрано в настройках плагина при сохранении
-			wp_clear_scheduled_hook( 'xfgmc_cron_start_feed_creation', [ $feed_id ] );
-			wp_clear_scheduled_hook( 'xfgmc_cron_sborki', [ $feed_id ] );
-			univ_option_upd(
-				'xfgmc_last_element_feed_' . $feed_id,
-				0
-			);
-			common_option_upd(
-				'xfgmc_status_sborki',
-				'-1',
-				'no',
-				$feed_id,
-				'xfgmc'
-			);
-		} else {
-			wp_clear_scheduled_hook( 'xfgmc_cron_start_feed_creation', [ $feed_id ] );
-			if ( ! wp_next_scheduled( 'xfgmc_cron_start_feed_creation', [ $feed_id ] ) ) {
-				$cron_start_time = common_option_get(
-					'xfgmc_cron_start_time',
-					'disabled',
-					$feed_id,
-					'xfgmc'
-				);
-				switch ( $cron_start_time ) {
-					case 'disabled':
-						return false;
-					case 'now':
-						$cron_interval = current_time( 'timestamp', 1 ) + 2; // добавим 2 сек
-						break;
-					default:
-						$gmt_offset = (float) get_option( 'gmt_offset' );
-						$offset_in_seconds = $gmt_offset * 3600;
-						$cron_interval = strtotime( $cron_start_time ) - $offset_in_seconds;
-						if ( $cron_interval < current_time( 'timestamp', 1 ) ) {
-							// если нужный час уже прошел. запланируем на следующие сутки
-							$cron_interval = $cron_interval + 86400;
-						}
-				}
-
-				// планируем крон-задачу на начало сброки фида в нужный час
-				$planning_result = wp_schedule_single_event(
-					$cron_interval + $delay_second,
-					'xfgmc_cron_start_feed_creation',
-					[ $feed_id ]
-				);
-			}
-		}
-
-		return $planning_result;
-
-	}
-
-	/**
-	 * Cron sborki task planning.
-	 * 
-	 * @param string $feed_id
-	 * @param int $delay_second Scheduling task CRON in N seconds.
-	 * 
-	 * @return bool|WP_Error
-	 */
-	public static function cron_sborki_task_planning( $feed_id, $delay_second = 5 ) {
-
-		wp_clear_scheduled_hook( 'xfgmc_cron_sborki', [ $feed_id ] );
-		if ( ! wp_next_scheduled( 'xfgmc_cron_sborki', [ $feed_id ] ) ) {
-			$planning_result = wp_schedule_single_event(
-				current_time( 'timestamp', 1 ) + $delay_second, // добавим 5 секунд
-				'xfgmc_cron_sborki',
-				[ $feed_id ]
-			);
-		} else {
-			$planning_result = false;
-		}
-
-		return $planning_result;
 
 	}
 
@@ -1717,6 +1487,17 @@ class XFGMC_Admin {
 					'desc_tip' => 'true',
 					'type' => 'text'
 				] );
+
+				woocommerce_wp_text_input( [
+					'id' => '_xfgmc_ads_redirect',
+					'label' => sprintf(
+						'%s <i>[ads_redirect]</i>',
+						__( 'Ads redirect', 'xml-for-google-merchant-center' )
+					),
+					'description' => '',
+					'desc_tip' => 'true',
+					'type' => 'text'
+				] );
 				?>
 			</div>
 			<div class="options_group">
@@ -1846,6 +1627,7 @@ class XFGMC_Admin {
 			'_xfgmc_store_code',
 			'_xfgmc_min_handling_time',
 			'_xfgmc_max_handling_time',
+			'_xfgmc_ads_redirect',
 			'_xfgmc_custom_label_0',
 			'_xfgmc_custom_label_1',
 			'_xfgmc_custom_label_2',
@@ -1858,7 +1640,7 @@ class XFGMC_Admin {
 			$post_meta_arr
 		);
 		$this->save_post_meta( $post_meta_arr, $post_id );
-		$this->run_feeds_upd( $post_id );
+		XFGMC_Feed_Updater::run_feeds_upd( $post_id );
 
 	}
 
@@ -1949,102 +1731,6 @@ class XFGMC_Admin {
 		} else {
 			update_post_meta( $post_id, '_xfgmc_barcode', '' );
 		}
-
-	}
-
-	/**
-	 * Проверяет, нужно ли запускать обновление фида при обновлении товара и при необходимости запускает процесс.
-	 * 
-	 * @param int $post_id
-	 * 
-	 * @return void
-	 */
-	public function run_feeds_upd( $post_id ) {
-
-		$settings_arr = univ_option_get( 'xfgmc_settings_arr' );
-		$settings_arr_keys_arr = array_keys( $settings_arr );
-		for ( $i = 0; $i < count( $settings_arr_keys_arr ); $i++ ) {
-
-			$feed_id = (string) $settings_arr_keys_arr[ $i ]; // ! для правильности работы важен тип string
-			$run_cron = common_option_get(
-				'xfgmc_run_cron',
-				'disabled',
-				$feed_id,
-				'xfgmc'
-			);
-			$ufup = common_option_get(
-				'xfgmc_ufup',
-				'disabled',
-				$feed_id,
-				'xfgmc'
-			);
-			if ( $run_cron === 'disabled' || $ufup === 'disabled' ) {
-				new XFGMC_Error_Log( sprintf(
-					'FEED #%1$s; INFO: %2$s ($run_cron = %3$s; $ufup = %4$s); %5$s: %6$s; %7$s: %8$s',
-					$feed_id,
-					__(
-						'Creating a cache file is not required for this type',
-						'xml-for-google-merchant-center'
-					),
-					$run_cron,
-					$ufup,
-					__( 'File', 'xml-for-google-merchant-center' ),
-					'class-xfgmc-admin.php',
-					__( 'Line', 'xml-for-google-merchant-center' ),
-					__LINE__
-				) );
-				continue;
-			}
-
-			$do_cash_file = common_option_get(
-				'xfgmc_do_cash_file',
-				'enabled',
-				$feed_id, 'xfgmc'
-			);
-			if ( $do_cash_file === 'enabled' || $ufup === 'enabled' ) {
-				// если в настройках включено создание кэш-файлов в момент сохранения товара
-				// или нужно запускать обновление фида при перезаписи файла
-				$result_get_unit_obj = new XFGMC_Get_Unit( $post_id, $feed_id );
-				$result_xml = $result_get_unit_obj->get_result();
-				// Remove hex and control characters from PHP string
-				$result_xml = xfgmc_remove_special_characters( $result_xml );
-				new XFGMC_Write_File(
-					$result_xml,
-					sprintf( '%s.tmp', $post_id ),
-					$feed_id
-				);
-			}
-
-			// нужно ли запускать обновление фида при перезаписи файла
-			if ( $ufup === 'enabled' ) {
-				$status_sborki = (int) common_option_get(
-					'xfgmc_status_sborki',
-					-1,
-					$feed_id,
-					'xfgmc'
-				);
-				if ( $status_sborki === -1 ) {
-					new XFGMC_Error_Log( sprintf(
-						'FEED #%1$s; INFO: %2$s ($i = %3$s; $ufup = %4$s); %5$s: %6$s; %7$s: %8$s',
-						$feed_id,
-						__(
-							'Starting a quick feed build',
-							'xml-for-google-merchant-center'
-						),
-						$i,
-						$ufup,
-						__( 'File', 'xml-for-google-merchant-center' ),
-						'class-xfgmc-admin.php',
-						__( 'Line', 'xml-for-google-merchant-center' ),
-						__LINE__
-					) );
-					clearstatcache(); // очищаем кэш дат файлов
-					$generation = new XFGMC_Generation_XML( $feed_id );
-					$generation->quick_generation();
-				}
-			}
-
-		} // end for
 
 	}
 

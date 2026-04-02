@@ -3,6 +3,7 @@
 'XFGMC_Get_Unit_Offer' => '/home/eurolamp/eurolamp.ua/www/public/shop/wp-content/plugins/xml-for-google-merchant-center/includes/feeds/class-xfgmc-get-unit-offer.php',
 'XFGMC_T_Common_Get_CatId' => '/home/eurolamp/eurolamp.ua/www/public/shop/wp-content/plugins/xml-for-google-merchant-center/includes/feeds/traits/common/trait-xfgmc-t-common-get-catid.php',
 'XFGMC_T_Common_Skips' => '/home/eurolamp/eurolamp.ua/www/public/shop/wp-content/plugins/xml-for-google-merchant-center/includes/feeds/traits/common/trait-xfgmc-t-common-skips.php',
+'XFGMC_T_Simple_Get_Ads_Redirect' => '/home/eurolamp/eurolamp.ua/www/public/shop/wp-content/plugins/xml-for-google-merchant-center/includes/feeds/traits/simple/trait-xfgmc-t-simple-get-ads-redirect.php',
 'XFGMC_T_Simple_Get_Adult' => '/home/eurolamp/eurolamp.ua/www/public/shop/wp-content/plugins/xml-for-google-merchant-center/includes/feeds/traits/simple/trait-xfgmc-t-simple-get-adult.php',
 'XFGMC_T_Simple_Get_Age_Group' => '/home/eurolamp/eurolamp.ua/www/public/shop/wp-content/plugins/xml-for-google-merchant-center/includes/feeds/traits/simple/trait-xfgmc-t-simple-get-age-group.php',
 'XFGMC_T_Simple_Get_Availability_Date' => '/home/eurolamp/eurolamp.ua/www/public/shop/wp-content/plugins/xml-for-google-merchant-center/includes/feeds/traits/simple/trait-xfgmc-t-simple-get-availability-date.php',

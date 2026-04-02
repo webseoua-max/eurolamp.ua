@@ -12,9 +12,9 @@
  */
 
 /**
- * The trait adds `get_google_product_category` methods.
+ * The trait adds `get_fb_product_category` methods.
  * 
- * This method allows you to return the `google_product_type` tag.
+ * This method allows you to return the `fb_product_category` tag.
  *
  * @since      0.1.0
  * @package    XFGMC

@@ -31,6 +31,7 @@ class Y4YM_Deactivator {
 	 * @return   void
 	 */
 	public static function deactivate() {
+
 		if ( ! current_user_can( 'activate_plugins' ) ) {
 			return;
 		}

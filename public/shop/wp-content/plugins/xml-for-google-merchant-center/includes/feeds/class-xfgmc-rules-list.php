@@ -5,10 +5,10 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    4.0.4 (20-06-2025)
+ * @version    4.1.0 (22-03-2026)
  *
  * @package    XFGMC
- * @subpackage XFGMC/includes
+ * @subpackage XFGMC/includes/feeds
  */
 
 /**
@@ -36,8 +36,8 @@ class XFGMC_Rules_List {
 	public function __construct( $rules_arr = [] ) {
 
 		if ( empty( $rules_arr ) ) {
-			$this->rules_arr = [ 
-				'merchant_center' => [ 
+			$this->rules_arr = [
+				'merchant_center' => [
 					// Merchant Center
 					// https://yastatic.net/s3/doc-binary/src/support/market/ru/XML_sample_sales_terms.zip
 					// https://support.google.com/merchants/answer/7052112?
@@ -56,8 +56,7 @@ class XFGMC_Rules_List {
 					'size', 'size_type', 'size_system', 'item_group_id',
 					'dimensions', // включает g:product_length, g:product_width, g:product_height, g:product_weight
 					// TODO: 'product_detail', 'product_highlight',
-					// TODO: 'ads_redirect',
-					'custom_label', // TODO: 'promotion_id', 'lifestyle_image_link', 
+					'ads_redirect', 'custom_label', // TODO: 'promotion_id', 'lifestyle_image_link', 
 					// TODO: 'external_seller_id', 'excluded_destination', 'included_destination', 'shopping_ads_excluded_country',
 					// TODO: 'pause',
 					'shipping', // включает g:min_handling_time, g:max_handling_time, g:shipping_label
@@ -65,7 +64,7 @@ class XFGMC_Rules_List {
 					'tax', 'tax_category',
 					'quantity', 'store_code'
 				],
-				'facebook' => [ 
+				'facebook' => [
 					// Facebook
 					// https://www.facebook.com/business/help/120325381656392?id=725943027795860&recommended_by=2041876302542944
 					'open_item_tag', 'id', 'title', 'description', 'availability', 'condition',
@@ -80,7 +79,7 @@ class XFGMC_Rules_List {
 					// TODO 'internal_label',
 					'custom_label', // TODO 'custom_number'
 				],
-				'all_elements' => [ 
+				'all_elements' => [
 					// All elements
 					// https://yastatic.net/s3/doc-binary/src/support/market/ru/XML_sample_sales_terms.zip
 					// https://support.google.com/merchants/answer/7052112?
@@ -99,8 +98,7 @@ class XFGMC_Rules_List {
 					'size', 'size_type', 'size_system', 'item_group_id',
 					'dimensions', // включает g:product_length, g:product_width, g:product_height, g:product_weight
 					// TODO: 'product_detail', 'product_highlight',
-					// TODO: 'ads_redirect',
-					'custom_label', // TODO: 'promotion_id', 'lifestyle_image_link', 
+					'ads_redirect', 'custom_label', // TODO: 'promotion_id', 'lifestyle_image_link', 
 					// TODO: 'external_seller_id', 'excluded_destination', 'included_destination', 'shopping_ads_excluded_country',
 					// TODO: 'pause',
 					'shipping', // включает g:min_handling_time, g:max_handling_time, g:shipping_label
