@@ -8,8 +8,8 @@ Koko Analytics for WordPress
 **[Koko Analytics](https://www.kokoanalytics.com/) is a fast, privacy-friendly, open-source analytics plugin for WordPress — no cookies, no tracking, no external services.**
 
 <figure>
-  <img src="https://raw.githubusercontent.com/ibericode/koko-analytics/main/assets/src/img/screenshot-1-830x447.png" alt="Screenshot of the Koko Analytics dashboard" loading="lazy" width="830" height="447" />
-  <figcaption>Screenshot of the Koko Analytics dashboard. You can <a href="https://www.kokoanalytics.com/?koko-analytics-dashboard">view a live demo here</a>.</figcaption>
+  <img src="https://raw.githubusercontent.com/ibericode/koko-analytics/main/assets/img/screenshot-1-830x447.png" alt="Screenshot of the Koko Analytics dashboard" loading="lazy" width="830" height="447" />
+  <figcaption>Screenshot of the Koko Analytics dashboard. You can <a href="https://www.kokoanalytics.com/koko-analytics-dashboard/">view a live demo here</a>.</figcaption>
 </figure>
 
 ---
@@ -48,7 +48,7 @@ Upgrade for advanced insights while keeping your visitors’ privacy intact:
 
 ### Requirements
 
-- WordPress 6.0+
+- WordPress 6.5+
 - PHP 7.4+ (latest recommended)
 
 ### Install from WordPress.org
@@ -63,8 +63,6 @@ Upgrade for advanced insights while keeping your visitors’ privacy intact:
 git clone git@github.com:ibericode/koko-analytics.git wp-content/plugins/koko-analytics
 cd wp-content/plugins/koko-analytics
 composer install
-npm install
-npm run build
 ```
 
 ---

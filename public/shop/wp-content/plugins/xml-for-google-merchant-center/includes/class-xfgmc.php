@@ -8,7 +8,7 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    4.1.0 (22-03-2026)
+ * @version    4.2.0 (05-04-2026)
  *
  * @package    XFGMC
  * @subpackage XFGMC/includes
@@ -231,65 +231,7 @@ class XFGMC {
 	private function define_admin_hooks() {
 
 		$plugin_admin = new XFGMC_Admin( $this->get_plugin_name(), $this->get_version() );
-
-		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
-		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
-
-		// вызываем служебные классы в админке
-		$this->loader->add_action( 'init', $plugin_admin, 'enqueue_classes' );
-
-		// дополнительные поля на страницу редактирования категорий
-		$this->loader->add_action( 'product_cat_add_form_fields', $plugin_admin, 'add_meta_product_cat' );
-		$this->loader->add_action( 'product_cat_edit_form_fields', $plugin_admin, 'edit_meta_product_cat' );
-		$this->loader->add_action( 'edited_product_cat', $plugin_admin, 'save_meta_product_cat' );
-		$this->loader->add_action( 'create_product_cat', $plugin_admin, 'save_meta_product_cat' );
-
-		// добавляем вкладку на страницу товара вукомерц
-		$this->loader->add_action( 'woocommerce_product_data_tabs', $plugin_admin, 'add_woocommerce_product_data_tab' );
-		$this->loader->add_action( 'admin_footer', $plugin_admin, 'set_product_data_tab_icon' );
-		$this->loader->add_action( 'woocommerce_product_data_panels', $plugin_admin, 'add_fields_to_product_data_tab' );
-		$this->loader->add_action( 'woocommerce_product_options_sku', $plugin_admin, 'add_fields_to_inventory_product_data_tab' );
-		$this->loader->add_action( 'save_post', $plugin_admin, 'save_product_post_meta', 50, 3 );
-		$this->loader->add_action( 'woocommerce_product_after_variable_attributes', $plugin_admin, 'add_fields_to_variable_settings', 10, 3 );
-		$this->loader->add_action( 'woocommerce_save_product_variation', $plugin_admin, 'save_variation_product_post_meta', 10, 2 );
-
-		// печатаем скрипты в футере админки
-		$this->loader->add_action(
-			'admin_footer',
-			$plugin_admin,
-			'print_admin_footer_script',
-			99
-		);
-
-		// Add menu item
-		$this->loader->add_action( 'admin_menu', $plugin_admin, 'add_plugin_admin_menu' );
-
-		// слушаем кнопку сабмита
-		$this->loader->add_action( 'admin_init', $plugin_admin, 'listen_submits' );
-
-		// выводим различные оповещения
-		$this->loader->add_action( 'admin_init', $plugin_admin, 'notices' );
-
-		// Фильтр в перую очередь для того, чтобы работало сохранение настроек если мультиселект пуст.
-		$this->loader->add_filter(
-			'xfgmc_f_flag_save_if_empty',
-			$plugin_admin,
-			'flag_save_if_empty',
-			10,
-			2
-		);
-
-		// select2 - place 1 from 5
-		// https://github.com/woocommerce/selectWoo
-		// https://rudrastyh.com/wordpress/select2-for-metaboxes-with-ajax.html	
-		$this->loader->add_action(
-			'wp_ajax_xfgmc_select2', // wp_ajax_{action}
-			$plugin_admin,
-			'select2_get_posts_ajax_callback'
-		);
-
-		// дополнительная информация для фидбэка
-		$this->loader->add_action( 'xfgmc_f_feedback_additional_info', $plugin_admin, 'feedback_additional_info', 11 );
+		$plugin_admin->init_hooks( $this->loader );
 
 	}
 
@@ -305,9 +247,7 @@ class XFGMC {
 	private function define_public_hooks() {
 
 		$plugin_public = new XFGMC_Public( $this->get_plugin_name(), $this->get_version() );
-
-		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
-		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
+		$plugin_public->init_hooks( $this->loader );
 
 	}
 
@@ -323,17 +263,10 @@ class XFGMC {
 	private function define_core_hooks() {
 
 		$cron_manager = $this->services['cron_manager'];
+		$cron_manager->init_hooks( $this->loader );
+
 		$feed_updater = $this->services['feed_updater'];
 		$mime_types = $this->services['mime_types'];
-
-		// Add cron intervals to WordPress
-		$this->loader->add_action( 'cron_schedules', $cron_manager, 'add_cron_intervals' );
-
-		// этот крон срабатывает в момент запуска генерации фида с нуля
-		$this->loader->add_action( 'xfgmc_cron_start_feed_creation', $cron_manager, 'do_start_feed_creation' );
-
-		// этот крон срабатывает в процессе генерации фида. вызывает кроном xfgmc_cron_start_feed_creation
-		$this->loader->add_action( 'xfgmc_cron_sborki', $cron_manager, 'do_it_every_minute' );
 
 		// слушаем изменение количества товаров в заказе
 		$this->loader->add_action( 'woocommerce_reduce_order_item_stock', $feed_updater, 'check_update_feed_stock_change', 50, 3 );

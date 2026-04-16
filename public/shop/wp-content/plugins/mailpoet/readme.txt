@@ -3,7 +3,7 @@ Contributors: mailpoet, woocommerce, automattic
 Tags: email marketing, post notification, woocommerce emails, email automation, newsletter
 Requires at least: 6.8
 Tested up to: 6.9
-Stable tag: 5.22.2
+Stable tag: 5.23.0
 Requires PHP: 7.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -227,11 +227,7 @@ Check our [Knowledge Base](https://kb.mailpoet.com) or contact us through our [s
 
 == Changelog ==
 
-= 5.22.2 - 2026-03-16 =
-* Added: Add placeholder product images and dynamic product collection blocks to email patterns for stores with no products;
-* Updated: Update email editor packages;
-* Updated: Bump the minimum required WooCommerce version to 10.5 and tested up to version to 10.6;
-* Fixed: Fix automation step name popover not closing when clicking outside;
-* Fixed: Captcha image now uses fixed dimensions for captcha image rendering.
+= 5.23.0 - 2026-04-06 =
+* Added: Automation templates for WooCommerce Bookings.
 
 [See the changelog for all versions.](https://github.com/mailpoet/mailpoet/blob/trunk/mailpoet/changelog.txt)

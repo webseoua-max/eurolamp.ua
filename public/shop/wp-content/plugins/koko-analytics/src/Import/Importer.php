@@ -3,8 +3,7 @@
 namespace KokoAnalytics\Import;
 
 use Exception;
-use KokoAnalytics\Path_Repository;
-use KokoAnalytics\Referrer_Repository;
+use KokoAnalytics\Upserter;
 
 abstract class Importer
 {
@@ -35,9 +34,9 @@ abstract class Importer
             return;
         }
 
-        $path_ids = Path_Repository::upsert(array_map(function ($r) {
-            return $r[1];
-        }, $rows));
+        $paths = array_column($rows, 1);
+        $upserter = new Upserter('paths', 'path');
+        $path_ids = $upserter->upsert($paths);
 
         $values = [];
         foreach ($rows as $r) {
@@ -66,9 +65,9 @@ abstract class Importer
             return;
         }
 
-        $ids = Referrer_Repository::upsert(array_map(function ($r) {
-            return $r[1];
-        }, $rows));
+        $urls = array_column($rows, 1);
+        $upserter = new Upserter('referrer_labels', 'value');
+        $ids = $upserter->upsert($urls);
 
         $values = [];
         foreach ($rows as $r) {

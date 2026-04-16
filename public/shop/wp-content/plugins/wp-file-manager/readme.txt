@@ -2,9 +2,9 @@
 Contributors: mndpsingh287
 Tags: wp-file-manager, elfinder,file manager, ftp, wp-filemanager,file manager, wp-filemanager, Upload Files, WP File Manager, File Manage, Edit Files, Delete Files, FTP, filemanager, wpfilemanager, ftp, file transfer, update, create, delete, view, rename, editor, Cpanel, Control Panel, Admin, Shortcode, explorer, file explorer, filemanager
 Requires at least: 4.0
-Tested up to: 6.8.1
+Tested up to: 6.9.4
 Requires PHP: 5.2.4
-Stable tag: 8.0.2
+Stable tag: 8.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -74,9 +74,9 @@ Key Features in the Free File Manager plugin include:
 * **File system:** Local file system storage drivers.
 * **Edit file:** User can edit text files and images.
 * **Frontend Access:** User can access frontend using shortcode.
-* **Admin Email Notifications.** Admin will get a Notification whenever a file is updated. 
-* **Admin Email Notifications.** Admin will get a Notification whenever a file is Downloaded. 
-* **Admin Email Notifications.** Admin will get a Notification whenever a file is Edited. 
+* **File Upload Email Notifications:** Admin will get a Notification whenever a file is Uploaded.
+* **File Download Notifications:** Admin will get a Notification whenever a file is Downloaded.
+* **File Edit Email Notifications:** Admin will get a Notification whenever a file is Edited.
 * **Google Drive Integration**   drag drop, copy paste all other operations between file manager and google drive.
 * **Dropbox Integration**        drag drop, copy paste all other operations between file manager and dropbox.
 
@@ -139,6 +139,9 @@ Yes, You can archive any files and folders as zip then simple download it. Pleas
 
 
 == Changelog ==
+
+= 8.0.3 (24 Mar, 2026) =
+* Security fixes.
 
 = 8.0.2 (26th May, 2025) =
 * Core libraries updated.

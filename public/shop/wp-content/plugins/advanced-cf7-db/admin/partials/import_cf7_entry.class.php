@@ -25,7 +25,7 @@ if(!current_user_can('upload_files') ){
 
 
 //Verify nonce values
-$nonceEntryCheck = sanitize_text_field($_POST['wp_entry_nonce']);
+$nonceEntryCheck = isset($_POST['wp_entry_nonce']) ? sanitize_text_field(wp_unslash($_POST['wp_entry_nonce'])) : '';
 if(!wp_verify_nonce( $nonceEntryCheck, 'import-cf7-save-entry-nonce')){
 	// This nonce is not valid.
 	$msg = 'Something may be wrong. Please try again.';
@@ -44,7 +44,7 @@ $header = '';
 $fid = '';
 //Get selected form Id value
 if(isset($_POST['import_cf7_id']) && !empty($_POST['import_cf7_id'])){
-	$fid = intval(sanitize_text_field($_POST['import_cf7_id']));
+	$fid = intval(sanitize_text_field(wp_unslash($_POST['import_cf7_id'])));
 }
 else{
 	$vsz_cf7_csv_upload_error->add('fill_form_id','First select any form then import sheet.');
@@ -53,7 +53,7 @@ else{
 $sheet_date_format = '';
 //Get selected form Id value
 if(isset($_POST['sheet_date_format']) && !empty($_POST['sheet_date_format'])){
-	$sheet_date_format = sanitize_text_field($_POST['sheet_date_format']);
+	$sheet_date_format = sanitize_text_field(wp_unslash($_POST['sheet_date_format']));
 }
 
 // Start Importing sheet over here
@@ -70,10 +70,14 @@ if(isset($_POST['submit']) && isset($_FILES['importFormList']) && !empty($_FILES
 	//check file is valid type or not
 	if(in_array($file_ext,$allowed_file_types)){
 		//upload new file in '/csv/' directory
-		$newfilename = "import-cf7-form-list-". date('Ymdhis') . $file_ext;
+		$newfilename = "import-cf7-form-list-". gmdate('Ymdhis') . $file_ext;
 		
 		// 2.0.4 update start
-		$upload = wp_upload_bits($newfilename, null, file_get_contents($_FILES["importFormList"]["tmp_name"])); // phpcs:ignore Generic.PHP.NoSilencedErrors.Discouraged, WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents, WordPress.WP.AlternativeFunctions.file_system_read_file_get_contents
+		if(!isset($_FILES["importFormList"]["tmp_name"]) || empty($_FILES["importFormList"]["tmp_name"])){
+			$vsz_cf7_csv_upload_error->add('file_upload','File upload failed.');
+		} else {
+			$upload = wp_upload_bits($newfilename, null, file_get_contents(sanitize_text_field(wp_unslash($_FILES["importFormList"]["tmp_name"])))); // phpcs:ignore Generic.PHP.NoSilencedErrors.Discouraged, WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents, WordPress.WP.AlternativeFunctions.file_system_read_file_get_contents
+		}
 		
 		require_once(ABSPATH . '/wp-admin/includes/file.php');
 		WP_Filesystem();
@@ -111,7 +115,7 @@ if(isset($_POST['submit']) && isset($_FILES['importFormList']) && !empty($_FILES
 				//Define option field type array
 				$arr_option_type = array('checkbox','radio','select');
 				//Get form id related field key information from option table
-				$arr_form_match_key = array_map( 'sanitize_text_field', $_POST['form_match_key']);
+				$arr_form_match_key = array_map( 'sanitize_text_field', wp_unslash($_POST['form_match_key']));
 
 				//If form exist radio and check boxes value then get option values
 				$obj_form = vsz_cf7_get_the_form_list(intval($fid));
@@ -127,7 +131,7 @@ if(isset($_POST['submit']) && isset($_FILES['importFormList']) && !empty($_FILES
 					}
 				}
 				//Get field type related information
-				$vsz_cf7_field_type = array_map( 'sanitize_text_field', $_POST['vsz_cf7_field_type']);
+				$vsz_cf7_field_type = array_map( 'sanitize_text_field', wp_unslash($_POST['vsz_cf7_field_type']));
 				//check CSV sheet column count and match key count are same or not
 				if(!empty($arrHeader) && !empty($arr_form_match_key)){
 
@@ -210,7 +214,7 @@ if(isset($_POST['submit']) && isset($_FILES['importFormList']) && !empty($_FILES
 								$data_entry_table_name = sanitize_text_field(VSZ_CF7_DATA_ENTRY_TABLE_NAME);
 
 								//Insert current form submission time in database
-								$time = date('Y-m-d H:i:s');
+								$time = gmdate('Y-m-d H:i:s');
 								$wpdb->query($wpdb->prepare("INSERT INTO {$wpdb->prefix}cf7_vdata(`created`) VALUES (%s)", $time));
 								//Get last inserted id
 								$data_id = (int)$wpdb->insert_id;
@@ -289,7 +293,7 @@ if(is_wp_error($vsz_cf7_csv_upload_error)){
 //generate error file if entry not insert in site
 if(count($error_csv) >= 1){
 
-	$error_file_name = "upload_error".date("Y-m-d H:i:s:u").".csv";
+	$error_file_name = "upload_error".gmdate("Y-m-d H:i:s:u").".csv";
 	$myfile = fopen(dirname(dirname(__FILE__))."/csv/".$error_file_name, 'w') or // @codingStandardsIgnoreLine
 		die("<div class='notice error is-dismissible'><p>Unable to open file!</p></div>");
 

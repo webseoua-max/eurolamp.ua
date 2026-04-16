@@ -69,8 +69,8 @@ function monsterinsights_admin_menu()
 			'monsterinsights_overview_report_page'
 		);
 
-		// Register reports page with null parent to keep it accessible but hidden from menu
-		add_submenu_page( null, __( 'General Reports:', 'google-analytics-for-wordpress' ), __( 'Reports', 'google-analytics-for-wordpress' ), 'monsterinsights_view_dashboard', 'monsterinsights_reports', 'monsterinsights_reports_page' );
+		// Register reports page with empty parent to keep it accessible but hidden from menu
+		add_submenu_page( '', __( 'General Reports:', 'google-analytics-for-wordpress' ), __( 'Reports', 'google-analytics-for-wordpress' ), 'monsterinsights_view_dashboard', 'monsterinsights_reports', 'monsterinsights_reports_page' );
 	}
 
 	/**

@@ -9,6 +9,7 @@
 namespace KokoAnalytics;
 
 use DateTimeImmutable;
+use DateTimeInterface;
 
 class Dashboard
 {
@@ -50,10 +51,6 @@ class Dashboard
             $date_end = $date_range[1];
         }
 
-        $posts_offset = isset($_GET['posts']['offset']) ? absint($_GET['posts']['offset']) : 0;
-        $referrers_offset = isset($_GET['referrers']['offset']) ? absint($_GET['referrers']['offset']) : 0;
-        $posts_limit = isset($_GET['posts']['limit']) ? absint($_GET['posts']['limit']) : $items_per_page;
-        $referrers_limit = isset($_GET['referrers']['limit']) ? absint($_GET['referrers']['limit']) : $items_per_page;
 
         [$total_start_date, $total_end_date] = $stats->get_total_date_range();
 
@@ -66,12 +63,6 @@ class Dashboard
 
         $totals = $stats->get_totals($date_start_str, $date_end_str, $page);
         $totals_previous = $stats->get_totals($prev_dates[0]->format('Y-m-d'), $prev_dates[2]->format('Y-m-d'), $page);
-
-        $posts = $stats->get_posts($date_start_str, $date_end_str, $posts_offset, $posts_limit);
-        $posts_count = $stats->count_posts($date_start_str, $date_end_str);
-        $referrers = $stats->get_referrers($date_start_str, $date_end_str, $referrers_offset, $referrers_limit);
-        $referrers_count = $stats->count_referrers($date_start_str, $date_end_str);
-        $referrers_sum = $stats->sum_referrers($date_start_str, $date_end_str);
         $realtime = get_realtime_pageview_count('-1 hour');
 
         if (isset($_GET['group']) && in_array($_GET['group'], ['day', 'week', 'month', 'year'])) {
@@ -129,6 +120,12 @@ class Dashboard
         ];
     }
 
+    public function notices(): void
+    {
+        $this->maybe_show_adblocker_notice();
+        $this->maybe_show_pro_notice();
+    }
+
     protected function maybe_show_adblocker_notice(): void
     {
         ?>
@@ -136,7 +133,7 @@ class Dashboard
             <?php echo esc_html__('You appear to be using an ad-blocker that has Koko Analytics on its blocklist. Please whitelist this domain in your ad-blocker setting if your dashboard does not seem to be working correctly.', 'koko-analytics'); ?>
             <button type="button" class="btn-close" aria-label="<?= esc_attr__('Close', 'koko-analytics') ?>" onclick="this.parentElement.remove()"></button>
         </div>
-        <script src="<?php echo plugins_url('/assets/dist/js/koko-analytics-script-test.js', KOKO_ANALYTICS_PLUGIN_FILE); ?>?v=<?php echo KOKO_ANALYTICS_VERSION; ?>" defer onerror="document.getElementById('koko-analytics-adblock-notice').style.display = '';"></script>
+        <script src="<?php echo plugins_url('/assets/js/koko-analytics-script-test.js', KOKO_ANALYTICS_PLUGIN_FILE); ?>?v=<?php echo KOKO_ANALYTICS_VERSION; ?>" defer onerror="document.getElementById('koko-analytics-adblock-notice').style.display = '';"></script>
         <?php
     }
 
@@ -217,5 +214,143 @@ class Dashboard
         }
 
         return $now->modify("last sunday, +{$week_starts_on} days");
+    }
+
+    public function get_components(): array
+    {
+        $components = apply_filters('koko_analytics_dashboard_components', [
+            'top-pages' => [$this, 'component_pages'],
+            'top-referrers' => [$this, 'component_referrers'],
+        ]);
+
+        // sort components by stored order
+        $settings = get_settings();
+        if (!empty($settings['component_order'])) {
+            $order = $settings['component_order'];
+            uksort($components, function ($a, $b) use ($order) {
+                $pa = array_search($a, $order);
+                $pb = array_search($b, $order);
+                if ($pa === false) {
+                    $pa = PHP_INT_MAX;
+                }
+                if ($pb === false) {
+                    $pb = PHP_INT_MAX;
+                }
+                return $pa - $pb;
+            });
+        }
+
+        return $components;
+    }
+
+    public function pagination(string $key, int $offset, int $limit, int $count): void
+    {
+        if ($offset >= $limit || $offset + $limit < $count) { ?>
+            <div class='ka-pagination'>
+                <?php if ($offset >= $limit) { ?>
+                    <a class='ka-pagination--prev' href="<?php echo esc_attr(add_query_arg(['p' => null, $key => $offset >= $limit * 2 ? ['offset' => $offset - $limit, 'limit' => $limit] : null ])); ?>" rel="nofollow"><?php esc_html_e('Previous', 'koko-analytics'); ?></a>
+                <?php } ?>
+                <?php if ($offset + $limit < $count) { ?>
+                    <a class='ka-pagination--next' href="<?php echo esc_attr(add_query_arg(['p' => null, $key => ['offset' => $offset + $limit, 'limit' => $limit]])); ?>" rel="nofollow"><?php esc_html_e('Next', 'koko-analytics'); ?></a>
+                <?php } ?>
+            </div>
+        <?php }
+    }
+
+    public function component_pages(DateTimeInterface $date_start, DateTimeInterface $date_end): void
+    {
+        $items_per_page = (int) apply_filters('koko_analytics_items_per_page', 20);
+        $offset = isset($_GET['posts']['offset']) ? absint($_GET['posts']['offset']) : 0;
+        $limit = isset($_GET['posts']['limit']) ? absint($_GET['posts']['limit']) : $items_per_page;
+        $page = isset($_GET['p']) ? trim($_GET['p']) : 0;
+
+        $stats = new Stats();
+        $posts = $stats->get_posts($date_start, $date_end, $offset, $limit);
+        if (count($posts) < $limit && $offset === 0) {
+            $count = count($posts);
+            $sum = array_sum(array_column($posts, 'pageviews'));
+        } else {
+            $count = $stats->count_posts($date_start, $date_end);
+            $sum = $stats->sum_posts($date_start, $date_end);
+        }
+        ?>
+        <table class="ka-table">
+            <thead>
+                <tr>
+                    <th style="width: 3ch;" scope="col">#</th>
+                    <th class="w-expand" scope="col"><?php esc_html_e('Pages', 'koko-analytics'); ?></th>
+                    <th title="<?= esc_attr__('A visitor represents the number of sessions during which a page was viewed one or more times.', 'koko-analytics'); ?>" class="text-end d-none d-lg-table-cell w-fit text-truncate" scope="row"><?php esc_html_e('Visitors', 'koko-analytics'); ?></th>
+                    <th title="<?= esc_attr__('A pageview is defined as a view of a page on your site. If a user clicks reload after reaching the page, this is counted as an additional pageview. If a visitor navigates to a different page and then returns to the original page, a second pageview is recorded as well.', 'koko-analytics'); ?>" class="text-end ka-pageviews w-fit text-truncate" scope="col"><?php esc_html_e('Pageviews', 'koko-analytics'); ?></th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($posts as $i => $p) { ?>
+                    <?php $pct = $sum > 0 && $page === 0  ? round(($p->pageviews / $sum) * 100, 0) : 0; ?>
+                    <tr <?= $page == $p->path ? 'class="page-filter-active"' : ''; ?> style="background: linear-gradient(to right, var(--koko-analytics-row-gradient-color) <?= $pct ?>%, transparent <?= $pct ?>%);">
+                        <td class="text-muted"><?=  $offset + $i + 1; ?></td>
+                        <td class="text-truncate">
+                            <a href="<?= esc_attr(add_query_arg(['p' => $p->path])); ?>"><?= esc_html($p->label); ?></a>
+                            <a class="ka-visit-link" href="<?= esc_attr(esc_url($p->post_permalink)); ?>" target="_blank" rel="noopener" title="<?php esc_attr_e('View page', 'koko-analytics'); ?>"><i class="icon icon-sm icon-external-link" aria-hidden="true"></i></a>
+                        </td>
+                        <td class="text-end d-none d-lg-table-cell"><?= number_format_i18n(max(1, $p->visitors)); ?></td>
+                        <td class="text-end"><?= number_format_i18n($p->pageviews); ?></td>
+                    </tr>
+                <?php } ?>
+            </tbody>
+        </table>
+
+        <?php if (empty($posts)) { ?>
+            <p class="ka-empty-state"><?php esc_html_e('There is nothing here. Yet!', 'koko-analytics'); ?></p>
+        <?php } ?>
+
+        <?php $this->pagination('posts', $offset, $limit, $count); ?>
+            
+        <?php
+    }
+
+    public function component_referrers(DateTimeInterface $date_start, DateTimeInterface $date_end): void
+    {
+        $items_per_page = (int) apply_filters('koko_analytics_items_per_page', 20);
+        $offset = isset($_GET['referrers']['offset']) ? absint($_GET['referrers']['offset']) : 0;
+        $limit = isset($_GET['referrers']['limit']) ? absint($_GET['referrers']['limit']) : $items_per_page;
+        $stats = new Stats();
+        $referrers = $stats->get_referrers($date_start, $date_end, $offset, $limit);
+        if (count($referrers) < $limit && $offset === 0) {
+            $count = count($referrers);
+            $sum = array_sum(array_column($referrers, 'pageviews'));
+        } else {
+            $count = $stats->count_referrers($date_start, $date_end);
+            $sum = $stats->sum_referrers($date_start, $date_end);
+        }
+        ?>
+        <table class="ka-table">
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 3ch;">#</th>
+                    <th scope="col"><?php esc_html_e('Referrers', 'koko-analytics'); ?></th>
+                    <th scope="col" title="<?= esc_attr__('A visitor represents the number of sessions during which a page was viewed one or more times.', 'koko-analytics'); ?>" class="text-end d-none d-lg-table-cell w-fit text-truncate" style=""><?php esc_html_e('Visitors', 'koko-analytics'); ?></th>
+                    <th scope="col" title="<?= esc_attr__('A pageview is defined as a view of a page on your site. If a user clicks reload after reaching the page, this is counted as an additional pageview. If a visitor navigates to a different page and then returns to the original page, a second pageview is recorded as well.', 'koko-analytics'); ?>" class="text-end text-truncate w-fit ka-pageviews"><?php esc_html_e('Pageviews', 'koko-analytics'); ?></th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($referrers as $i => $r) { ?>
+                    <?php $pct = $sum > 0 ? round(($r->pageviews / $sum) * 100, 0) : 0; ?>
+                    <tr style="background: linear-gradient(to right, var(--koko-analytics-row-gradient-color) <?= $pct ?>%, transparent <?= $pct ?>%);">
+                        <td class="text-muted"><?= $offset + $i + 1; ?></td>
+                        <td class="text-truncate"><?= Fmt::referrer_url_label(esc_html($r->url)); ?></td>
+                        <td class="text-end d-none d-lg-table-cell"><?= number_format_i18n(max(1, $r->visitors)); ?></td>
+                        <td class="text-end"><?= number_format_i18n($r->pageviews); ?></td>
+                    </tr>
+                <?php } ?>
+            </tbody>
+        </table>
+
+        <?php if (empty($referrers)) { ?>
+            <p class="ka-empty-state"><?php esc_html_e('There is nothing here. Yet!', 'koko-analytics'); ?></p>
+        <?php } ?>
+
+        <?php $this->pagination('referrers', $offset, $limit, $count); ?>
+        
+        <?php
     }
 }

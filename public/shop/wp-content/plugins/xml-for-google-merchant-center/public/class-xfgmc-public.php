@@ -5,7 +5,7 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    0.1.0 (22-10-2024)
+ * @version    4.2.0 (05-04-2026)
  *
  * @package    XFGMC
  * @subpackage XFGMC/public
@@ -52,6 +52,27 @@ class XFGMC_Public {
 
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
+
+	}
+
+	/**
+	 * Registers all frontend-related hooks through the given loader instance.
+	 *
+	 * This method attaches the necessary actions to enqueue styles and scripts 
+	 * on the frontend of the website. It uses the provided loader to properly 
+	 * bind callbacks, ensuring correct execution within the WordPress hook system.
+	 *
+	 * @since   0.1.0
+	 * @access  public
+	 *
+	 * @param XFGMC_Loader $loader The loader object responsible for managing WordPress hooks.
+	 *
+	 * @return void
+	 */
+	public function init_hooks( XFGMC_Loader $loader ) {
+
+		$loader->add_action( 'wp_enqueue_scripts', $this, 'enqueue_styles' );
+		$loader->add_action( 'wp_enqueue_scripts', $this, 'enqueue_scripts' );
 
 	}
 

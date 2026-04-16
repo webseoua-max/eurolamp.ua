@@ -15,3 +15,12 @@ public/wp-content/wc-logs/
 .DS_Store
 Thumbs.db
 public/shop/
+
+# Shop - автогенеровані файли
+public/shop/wp-content/uploads/
+public/shop/wp-content/cache/
+public/shop/wp-content/litespeed/
+public/shop/wp-content/wc-logs/
+public/shop/wp-content/ai1wm-backups/
+public/shop/wp-content/debug.log
+public/shop/wp-content/*.log

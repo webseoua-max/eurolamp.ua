@@ -92,7 +92,6 @@ add_action('init', function () {
 		}
 
 		//  Common Site Health logic
-		require_once MONSTERINSIGHTS_PLUGIN_DIR . 'includes/admin/wp-site-health.php';
 
 		//  Lite-only Site Health logic.
 		require_once MONSTERINSIGHTS_PLUGIN_DIR . 'lite/includes/admin/wp-site-health.php';

@@ -7,6 +7,7 @@ defined('ABSPATH') or exit;
 
 
 /**
+ * @var KokoAnalytics\Dashboard $this
  * @var \DateTimeInterface $date_start
  * @var \DateTimeInterface $date_end
  * @var object $totals
@@ -21,18 +22,14 @@ $tab = 'dashboard';
 
 ?>
 <div class="koko-analytics ka-wrap">
-    <?php $this->maybe_show_pro_notice(); ?>
-    <?php $this->maybe_show_adblocker_notice(); ?>
+    <?php $this->notices(); ?>
 
     <div class="d-lg-flex">
         <div class="d-flex gap-3 mb-3">
             <div class="position-relative">
                 <div class="ka-filter" tabindex="0" role="button" aria-expanded="false" aria-controls="ka-datepicker-dropdown" onclick="var el = document.getElementById('ka-datepicker-dropdown'); el.style.display = el.offsetParent === null ? 'block' : 'none'; this.ariaExpanded =  el.offsetParent === null ? 'false' : 'true';">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3 me-2" style="vertical-align: middle;" viewBox="0 0 16 16">
-                        <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z" />
-                        <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
-                    </svg>
-                    <?php echo wp_date($date_format, $date_start->getTimestamp()); ?> — <?php echo wp_date($date_format, $date_end->getTimestamp()); ?>
+                    <i class="icon icon-calendar me-2"></i>
+                    <?= wp_date($date_format, $date_start->getTimestamp()); ?> — <?= wp_date($date_format, $date_end->getTimestamp()); ?>
                 </div>
 
                 <div id="ka-datepicker-dropdown" class="rounded bg-white shadow" style="display: none; position: absolute; width:360px; z-index: 9992;">
@@ -40,13 +37,13 @@ $tab = 'dashboard';
                         <?php // only output pagination for date ranges between reasonable dates... to prevent ever-crawling bots from going wild
                         ?>
                         <?php if ($date_start > $total_start_date) { ?>
-                            <a class="js-quicknav-prev text-decoration-none text-white me-2" href="" data-href="<?php echo esc_attr(add_query_arg(['start_date' => $prev_dates[0]->format('Y-m-d'), 'end_date' => $prev_dates[1]->format('Y-m-d')], $dashboard_url)); ?>" rel="nofollow">◂</a>
+                            <a class="js-quicknav-prev text-decoration-none text-white me-2" href="" data-href="<?= esc_attr(add_query_arg(['start_date' => $prev_dates[0]->format('Y-m-d'), 'end_date' => $prev_dates[1]->format('Y-m-d')], $dashboard_url)); ?>" rel="nofollow">◂</a>
                         <?php } else { ?>
                             <a class="text-decoration-none text-white me-2">◂</a>
                         <?php } ?>
-                        <span><?php echo wp_date($date_format, $date_start->getTimestamp()); ?> — <?php echo wp_date($date_format, $date_end->getTimestamp()); ?></span>
+                        <span><?= wp_date($date_format, $date_start->getTimestamp()); ?> — <?= wp_date($date_format, $date_end->getTimestamp()); ?></span>
                         <?php if ($date_end < $total_end_date) { ?>
-                            <a class="js-quicknav-next text-decoration-none text-white ms-2" href="" data-href="<?php echo esc_attr(add_query_arg(['start_date' => $next_dates[0]->format('Y-m-d'), 'end_date' => $next_dates[1]->format('Y-m-d')], $dashboard_url)); ?>" rel="nofollow">▸</a>
+                            <a class="js-quicknav-next text-decoration-none text-white ms-2" href="" data-href="<?= esc_attr(add_query_arg(['start_date' => $next_dates[0]->format('Y-m-d'), 'end_date' => $next_dates[1]->format('Y-m-d')], $dashboard_url)); ?>" rel="nofollow">▸</a>
                         <?php } else { ?>
                             <a class="text-decoration-none text-white ms-2">▸</a>
                         <?php } ?>
@@ -61,21 +58,21 @@ $tab = 'dashboard';
                         <div class="mb-3">
                             <label for="ka-date-presets" class="ka-label"><?php esc_html_e('Date range', 'koko-analytics'); ?></label>
                             <select id="ka-date-presets" name="view" class="ka-select">
-                                <option value="custom" <?php echo $range === 'custom' ? 'selected' : ''; ?> disabled><?php esc_html_e('Custom', 'koko-analytics'); ?></option>
+                                <option value="custom" <?= $range === 'custom' ? 'selected' : ''; ?> disabled><?php esc_html_e('Custom', 'koko-analytics'); ?></option>
                                 <?php foreach ($this->get_date_presets() as $key => $label) :
-                                    ?><option value="<?php echo $key; ?>" <?php echo ($key === $range) ? ' selected' : ''; ?>><?php echo esc_html($label); ?></option><?php
+                                    ?><option value="<?= $key; ?>" <?= ($key === $range) ? ' selected' : ''; ?>><?= esc_html($label); ?></option><?php
                                 endforeach; ?>
                             </select>
                         </div>
                         <div class="mb-3">
                             <label for='ka-date-start' class="ka-label"><?php esc_html_e('Start date', 'koko-analytics'); ?></label>
                             <input name="start_date" id='ka-date-start' type="date" size="10" min="2000-01-01" max="2100-01-01"
-                                value="<?php echo $date_start->format('Y-m-d'); ?>" class="ka-input">
+                                value="<?= $date_start->format('Y-m-d'); ?>" class="ka-input">
                         </div>
                         <div class="mb-3">
                             <label for='ka-date-end' class="ka-label"><?php esc_html_e('End date', 'koko-analytics'); ?></label>
                             <input name="end_date" id='ka-date-end' type="date" size="10" min="2000-01-01" max="2100-01-01"
-                                value="<?php echo $date_end->format('Y-m-d'); ?>" class="ka-input">
+                                value="<?= $date_end->format('Y-m-d'); ?>" class="ka-input">
                         </div>
                         <div>
                             <button type="submit" class="btn btn-primary"><?php esc_html_e('Submit', 'koko-analytics'); ?></button>
@@ -84,10 +81,10 @@ $tab = 'dashboard';
                 </div>
             </div>
 
-            <div class="ka-filter" <?php echo $page === 0 ? 'style="display: none;"' : ''; ?>>
+            <div class="ka-filter" <?= $page === 0 ? 'style="display: none;"' : ''; ?>>
                 <?php esc_html_e('Page', 'koko-analytics'); ?> =
-                <a class="" href="<?php echo esc_attr(home_url($page)); ?>"><?php echo esc_html($page); ?></a>
-                <a class="text-decoration-none text-reset ms-2" aria-label="<?php esc_attr_e('Clear page filter', 'koko-analytics'); ?>" title="<?php esc_attr_e('Clear page filter', 'koko-analytics'); ?>" href="<?php echo esc_attr(remove_query_arg('p')); ?>">✕</a>
+                <a class="" href="<?= esc_attr(home_url($page)); ?>"><?= esc_html($page); ?></a>
+                <a class="text-decoration-none text-reset ms-2" aria-label="<?php esc_attr_e('Clear page filter', 'koko-analytics'); ?>" title="<?php esc_attr_e('Clear page filter', 'koko-analytics'); ?>" href="<?= esc_attr(remove_query_arg('p')); ?>">✕</a>
             </div>
 
             <?php do_action('koko_analytics_after_datepicker', $date_start, $date_end); ?>
@@ -97,72 +94,74 @@ $tab = 'dashboard';
     </div>
 
     <?php /* totals component */ ?>
-    <div class="mb-3 ka-box bg-dark p-4">
-        <table class="d-block">
-            <tbody class="d-flex gap-5">
-                <?php
-                /* Total visitors */
-                $diff = $totals->visitors - $totals_previous->visitors;
-                $change = $totals_previous->visitors == 0 ? 0 : ($totals->visitors / $totals_previous->visitors) - 1;
-                ?>
-                <tr>
-                    <th class="d-block text-start mb-1" scope="row"><?php esc_html_e('Total visitors', 'koko-analytics'); ?></th>
-                    <td class="d-block fs-1 lh-1 mb-1">
-                        <span class="" title="<?php echo esc_attr($totals->visitors); ?>"><?php echo number_format_i18n($totals->visitors); ?></span>
-                        <span class="fs-3 align-top <?= ($diff > 0 ? 'text-success' : ($diff < 0 ? 'text-danger' : 'text-white')) ?>">
-                            <?php echo Fmt::percent($change); ?>
-                        </span>
-                    </td>
-                    <td class="text-muted">
-                        <?php
-                        if ($diff != 0) {
-                            echo number_format_i18n(abs($diff));
-                            echo ' ';
-                        }
-                        if ($diff > 0) {
-                            echo esc_html__('more than previous period', 'koko-analytics');
-                        }
-                        if ($diff < 0) {
-                            echo esc_html__('less than previous period', 'koko-analytics');
-                        } ?>
-                    </td>
-                </tr>
-                <?php
-                /* Total pageviews */
-                $diff = $totals->pageviews - $totals_previous->pageviews;
-                $change = $totals_previous->pageviews == 0 ? 0 : ($totals->pageviews / $totals_previous->pageviews) - 1;
-                ?>
-                <tr>
-                    <th class="d-block text-start mb-1" scope="row"><?php esc_html_e('Total pageviews', 'koko-analytics'); ?></th>
-                    <td class="d-block fs-1 lh-1 mb-1">
-                        <span class="" title="<?php echo esc_attr($totals->pageviews); ?>"><?php echo number_format_i18n($totals->pageviews); ?></span>
-                        <span class="fs-3 align-top <?= ($diff > 0 ? 'text-success' : ($diff < 0 ? 'text-danger' : 'text-white')) ?>">
-                            <?php echo Fmt::percent($change); ?>
-                        </span>
-                    </td>
-                    <td class="text-muted">
-                        <?php
-                        if ($diff != 0) {
-                            echo number_format_i18n(abs($diff));
-                            echo ' ';
-                        }
-                        if ($diff > 0) {
-                            echo esc_html__('more than previous period', 'koko-analytics');
-                        }
-                        if ($diff < 0) {
-                            echo esc_html__('less than previous period', 'koko-analytics');
-                        } ?>
-                    </td>
-                </tr>
-                <tr id="ka-realtime">
-                    <th class="d-block text-start mb-1" scope="row"><?php esc_html_e('Realtime pageviews', 'koko-analytics'); ?></th>
-                    <td class="d-block fs-1 lh-1 mb-1"><?php echo number_format_i18n($realtime); ?></td>
-                    <td class="text-muted">
-                        <?php esc_html_e('pageviews in the last hour', 'koko-analytics'); ?>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="ka-row ka-row-cols-1 ka-row-cols-lg-3 g-3 mb-3">
+        <?php
+        /* Total visitors */
+        $diff = $totals->visitors - $totals_previous->visitors;
+        $change = $totals_previous->visitors == 0 ? 0 : ($totals->visitors / $totals_previous->visitors) - 1;
+        ?>
+        <div class="ka-col">
+            <div class="ka-box p-3">
+                <div class="text-muted mb-1"><?php esc_html_e('Total visitors', 'koko-analytics'); ?></div>
+                <div class="ka-totals-number mb-1">
+                    <span title="<?= esc_attr($totals->visitors); ?>"><?= number_format_i18n($totals->visitors); ?></span>
+                    <span class="ka-totals-change <?= ($diff > 0 ? 'text-success' : ($diff < 0 ? 'text-danger' : 'text-muted')) ?>">
+                        <?= Fmt::percent($change); ?>
+                    </span>
+                </div>
+                <div class="text-muted">
+                    <?php
+                    if ($diff != 0) {
+                        echo number_format_i18n(abs($diff));
+                        echo ' ';
+                    }
+                    if ($diff > 0) {
+                        echo esc_html__('more than previous period', 'koko-analytics');
+                    }
+                    if ($diff < 0) {
+                        echo esc_html__('less than previous period', 'koko-analytics');
+                    } ?>
+                </div>
+            </div>
+        </div>
+        <?php
+        /* Total pageviews */
+        $diff = $totals->pageviews - $totals_previous->pageviews;
+        $change = $totals_previous->pageviews == 0 ? 0 : ($totals->pageviews / $totals_previous->pageviews) - 1;
+        ?>
+        <div class="ka-col">
+            <div class="ka-box p-3">
+                <div class="text-muted mb-1"><?php esc_html_e('Total pageviews', 'koko-analytics'); ?></div>
+                <div class="ka-totals-number mb-1">
+                    <span title="<?= esc_attr($totals->pageviews); ?>"><?= number_format_i18n($totals->pageviews); ?></span>
+                    <span class="ka-totals-change <?= ($diff > 0 ? 'text-success' : ($diff < 0 ? 'text-danger' : 'text-muted')) ?>">
+                        <?= Fmt::percent($change); ?>
+                    </span>
+                </div>
+                <div class="text-muted">
+                    <?php
+                    if ($diff != 0) {
+                        echo number_format_i18n(abs($diff));
+                        echo ' ';
+                    }
+                    if ($diff > 0) {
+                        echo esc_html__('more than previous period', 'koko-analytics');
+                    }
+                    if ($diff < 0) {
+                        echo esc_html__('less than previous period', 'koko-analytics');
+                    } ?>
+                </div>
+            </div>
+        </div>
+        <div class="ka-col">
+            <div class="ka-box p-3" id="ka-realtime">
+                <div class="text-muted mb-1"><span class="ka-realtime-dot"></span><?php esc_html_e('Realtime pageviews', 'koko-analytics'); ?></div>
+                <div class="ka-totals-number mb-1"><?= number_format_i18n($realtime); ?></div>
+                <div class="text-muted">
+                    <?php esc_html_e('pageviews in the last hour', 'koko-analytics'); ?>
+                </div>
+            </div>
+        </div>
     </div>
     <?php /* end totals component */ ?>
 
@@ -173,94 +172,18 @@ $tab = 'dashboard';
         </div>
     <?php } ?>
 
-    <div class="ka-row ka-row-cols-1 ka-row-cols-xl-2 g-3 mb-3 <?php echo $page !== 0 ? 'page-filter-active' : ''; ?>">
-        <?php /* TOP PAGES */ ?>
-        <div id="top-pages" class="ka-col">
-            <div class="ka-box">
-                <table class="ka-table">
-                    <thead>
-                        <tr>
-                            <th style="width: 3ch;" scope="col">#</th>
-                            <th scope="col"><?php esc_html_e('Pages', 'koko-analytics'); ?></th>
-                            <th title="<?php echo esc_attr__('A visitor represents the number of sessions during which a page was viewed one or more times.', 'koko-analytics'); ?>" class="text-end  d-none d-lg-table-cell w-fit" scope="row"><?php esc_html_e('Visitors', 'koko-analytics'); ?></th>
-                            <th title="<?php echo esc_attr__('A pageview is defined as a view of a page on your site. If a user clicks reload after reaching the page, this is counted as an additional pageview. If a visitor navigates to a different page and then returns to the original page, a second pageview is recorded as well.', 'koko-analytics'); ?>" class="text-end ka-pageviews w-fit text-truncate" scope="col"><?php esc_html_e('Pageviews', 'koko-analytics'); ?></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach ($posts as $i => $p) { ?>
-                            <?php $pct = $totals->pageviews > 0 && $page === 0  ? round(($p->pageviews / $totals->pageviews) * 100, 0) : 0; ?>
-                            <tr <?php echo $page == $p->path ? 'class="page-filter-active"' : ''; ?> style="background: linear-gradient(to right, var(--koko-analytics-row-gradient-color) <?= $pct ?>%, transparent <?= $pct ?>%);">
-                                <td class="text-muted"><?php echo  $posts_offset + $i + 1; ?></td>
-                                <td class="text-truncate"><a href="<?php echo esc_attr(add_query_arg(['p' => $p->path])); ?>"><?php echo esc_html($p->label); ?></a></td>
-                                <td class="text-end d-none d-lg-table-cell"><?php echo number_format_i18n(max(1, $p->visitors)); ?></td>
-                                <td class="text-end"><?php echo number_format_i18n($p->pageviews); ?></td>
-                            </tr>
-                        <?php } ?>
-                    </tbody>
-                </table>
-
-                <?php if (empty($posts)) { ?>
-                    <p style="margin: 0; padding: 0.4rem 0.6rem;"><?php esc_html_e('There is nothing here. Yet!', 'koko-analytics'); ?></p>
-                <?php } ?>
-
-                <?php if ($posts_offset >= $posts_limit || $posts_offset + $posts_limit < $posts_count) { ?>
-                    <div class='ka-pagination'>
-                        <?php if ($posts_offset >= $posts_limit) { ?>
-                            <a class='ka-pagination--prev' href="<?php echo esc_attr(add_query_arg(['posts' => ['offset' => $posts_offset - $posts_limit, 'limit' => $posts_limit]])); ?>" rel="nofollow"><?php esc_html_e('Previous', 'koko-analytics'); ?></a>
-                        <?php } ?>
-                        <?php if ($posts_offset + $posts_limit < $posts_count) { ?>
-                            <a class='ka-pagination--next' href="<?php echo esc_attr(add_query_arg(['posts' => ['offset' => $posts_offset + $posts_limit, 'limit' => $posts_limit]])); ?>" rel="nofollow"><?php esc_html_e('Next', 'koko-analytics'); ?></a>
-                        <?php } ?>
-                    </div>
-                <?php } ?>
+    <?php $can_sort = current_user_can('manage_koko_analytics'); ?>
+    <div id="ka-components" class="ka-row ka-row-cols-1 ka-row-cols-xl-2 g-3 mb-3 <?= $page !== 0 ? 'page-filter-active' : ''; ?>" <?= $can_sort ? 'data-nonce="' . esc_attr(wp_create_nonce('koko_analytics_save_component_order')) . '"' : ''; ?>>
+        <?php foreach ($this->get_components() as $id => $callback) : ?>
+            <div id="<?= esc_attr($id) ?>" class="ka-col" <?= $can_sort ? 'draggable="true"' : ''; ?>>
+                <div class="ka-box">
+                    <?php $callback($date_start, $date_end); ?>
+                </div>
             </div>
-        </div>
-
-        <?php /* TOP REFERRERS */ ?>
-        <div id="top-referrers" class="ka-col">
-            <div class="ka-box">
-                <table class="ka-table">
-                    <thead>
-                        <tr>
-                            <th scope="col" style="width: 3ch;">#</th>
-                            <th scope="col"><?php esc_html_e('Referrers', 'koko-analytics'); ?></th>
-                            <th scope="col" title="<?php echo esc_attr__('A visitor represents the number of sessions during which a page was viewed one or more times.', 'koko-analytics'); ?>" class="text-end d-none d-lg-table-cell w-fit" style=""><?php esc_html_e('Visitors', 'koko-analytics'); ?></th>
-                            <th scope="col" title="<?php echo esc_attr__('A pageview is defined as a view of a page on your site. If a user clicks reload after reaching the page, this is counted as an additional pageview. If a visitor navigates to a different page and then returns to the original page, a second pageview is recorded as well.', 'koko-analytics'); ?>" class="text-end text-truncate w-fit ka-pageviews"><?php esc_html_e('Pageviews', 'koko-analytics'); ?></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach ($referrers as $i => $r) { ?>
-                            <?php $pct = $referrers_sum > 0 ? round(($r->pageviews / $referrers_sum) * 100, 0) : 0; ?>
-                            <tr style="background: linear-gradient(to right, var(--koko-analytics-row-gradient-color) <?= $pct ?>%, transparent <?= $pct ?>%);">
-                                <td class="text-muted"><?php echo $referrers_offset + $i + 1; ?></td>
-                                <td class="text-truncate"><?php echo Fmt::referrer_url_label(esc_html($r->url)); ?></td>
-                                <td class="text-end d-none d-lg-table-cell"><?php echo number_format_i18n(max(1, $r->visitors)); ?></td>
-                                <td class="text-end"><?php echo number_format_i18n($r->pageviews); ?></td>
-                            </tr>
-                        <?php } ?>
-                    </tbody>
-                </table>
-
-                <?php if (empty($referrers)) { ?>
-                    <p style="margin: 0; padding: 0.4rem 0.6rem;"><?php esc_html_e('There is nothing here. Yet!', 'koko-analytics'); ?></p>
-                <?php } ?>
-
-                <?php if ($referrers_offset >= $referrers_limit || $referrers_offset + $referrers_limit < $referrers_count) { ?>
-                    <div class='ka-pagination'>
-                        <?php if ($referrers_offset >= $referrers_limit) { ?>
-                            <a class='ka-pagination--prev' href="<?php echo esc_attr(add_query_arg(['p' => null, 'referrers' => ['offset' => $referrers_offset - $referrers_limit, 'limit' => $referrers_limit]])); ?>" rel="nofollow"><?php esc_html_e('Previous', 'koko-analytics'); ?></a>
-                        <?php } ?>
-                        <?php if ($referrers_offset + $referrers_limit < $referrers_count) { ?>
-                            <a class='ka-pagination--next' href="<?php echo esc_attr(add_query_arg(['p' => null, 'referrers' => ['offset' => $referrers_offset + $referrers_limit, 'limit' => $referrers_limit]])); ?>" rel="nofollow"><?php esc_html_e('Next', 'koko-analytics'); ?></a>
-                        <?php } ?>
-                    </div>
-                <?php } ?>
-            </div>
-        </div><?php // end div.col
-        ?>
+        <?php endforeach; ?>
 
         <?php do_action_deprecated('koko_analytics_show_dashboard_components', [], '1.4', 'koko_analytics_after_dashboard_components'); ?>
-        <?php do_action('koko_analytics_after_dashboard_components', $date_start, $date_end); ?>
+        <?php do_action_deprecated('koko_analytics_after_dashboard_components', [$date_start, $date_end], '2.3', 'koko_analytics_dashboard_components'); ?>
     </div><?php // end div.ka-row
     ?>
 
@@ -285,20 +208,3 @@ $tab = 'dashboard';
         <?php endif; ?>
     <?php endif; ?>
 </div>
-
-<script>
-    // save scroll position when navigating away
-    function storeScrollPosition() {
-        sessionStorage.setItem("scrollX", window.pageXOffset);
-        sessionStorage.setItem("scrollY", window.pageYOffset);
-    }
-    document.addEventListener('click', storeScrollPosition);
-    window.addEventListener('beforeunload', storeScrollPosition);
-
-    // restore scroll position on page load
-    var scrollX = parseInt(sessionStorage.getItem("scrollX") ?? 0);
-    var scrollY = parseInt(sessionStorage.getItem("scrollY") ?? 0);
-    if (scrollX != 0 || scrollY != 0) {
-        window.scroll(scrollX, scrollY);
-    }
-</script>

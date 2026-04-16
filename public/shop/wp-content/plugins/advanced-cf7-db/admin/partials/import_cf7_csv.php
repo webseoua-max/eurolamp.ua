@@ -43,7 +43,7 @@ else{
 	//Get selected form Id value
 	if(isset($_GET['import_cf7_id']) && !empty($_GET['import_cf7_id'])){
 
-		$fid = intval(sanitize_text_field($_GET['import_cf7_id']));
+		$fid = intval(sanitize_text_field(wp_unslash($_GET['import_cf7_id'])));
 		if (!cf7_check_capability('cf7_db_form_view'.$fid) && !cf7_check_capability('cf7_db_form_edit_'.$fid)){
 			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			wp_die( __('You do not have sufficient permissions to access this page.') );

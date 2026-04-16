@@ -50,7 +50,7 @@ function vsz_cf7_before_send_email($contact_form){
 	$data_entry_table_name = sanitize_text_field(VSZ_CF7_DATA_ENTRY_TABLE_NAME);
 
 	//Insert current form submission time in database
-	$time = date('Y-m-d H:i:s');
+	$time = gmdate('Y-m-d H:i:s');
     $wpdb->query($wpdb->prepare("INSERT INTO {$wpdb->prefix}cf7_vdata(`created`) VALUES (%s)", $time));
     //Get last inserted id
 	$data_id = $wpdb->insert_id;
@@ -118,10 +118,10 @@ function vsz_cf7_add_extra_fields($cf7){
 
 	if(!defined('vsz_cf7_display_ip')){
 		//Get submitted ip address
-		$ip_address = (isset($_SERVER['X_FORWARDED_FOR']) && !empty(rest_is_ip_address(sanitize_text_field($_SERVER['X_FORWARDED_FOR'])))) ?  sanitize_text_field($_SERVER['X_FORWARDED_FOR']) : "";
+		$ip_address = (isset($_SERVER['X_FORWARDED_FOR']) && !empty(rest_is_ip_address(sanitize_text_field(wp_unslash($_SERVER['X_FORWARDED_FOR']))))) ?  sanitize_text_field(wp_unslash($_SERVER['X_FORWARDED_FOR'])) : "";
 
 		if(empty($ip_address)){
-			$ip_address = (isset($_SERVER['REMOTE_ADDR']) && !empty(rest_is_ip_address(sanitize_text_field($_SERVER['REMOTE_ADDR'])))) ?  sanitize_text_field($_SERVER['REMOTE_ADDR']) : "";
+			$ip_address = (isset($_SERVER['REMOTE_ADDR']) && !empty(rest_is_ip_address(sanitize_text_field(wp_unslash($_SERVER['REMOTE_ADDR']))))) ?  sanitize_text_field(wp_unslash($_SERVER['REMOTE_ADDR'])) : "";
 		}
 
 		if(!empty($ip_address)){
@@ -161,7 +161,7 @@ if (!function_exists('vsz_cf7_modify_form_before_insert_in_cf7_vdata_entry')) {
 	    			// $file = basename($val);
 					$file = pathinfo($val, PATHINFO_FILENAME);
 					$ext = pathinfo($val, PATHINFO_EXTENSION);
-					$file_name = $file . date("Ymdh") . '.' . $ext;
+					$file_name = $file . gmdate("Ymdh") . '.' . $ext;
 					
 					//Create unique file name
 	    			$file_name = wp_unique_filename($dir_upload, $file_name);
@@ -323,7 +323,8 @@ function vsz_cf7_current_action(){
 	
 	//Verify nonce value
 	if (isset($_POST['vsz_cf7_form_list_nonce']) && !empty($_POST['vsz_cf7_form_list_nonce'])) {
-		if(!wp_verify_nonce($_POST['vsz_cf7_form_list_nonce'], 'vsz-cf7-form-list-nonce')) {
+		$nonce = sanitize_text_field(wp_unslash($_POST['vsz_cf7_form_list_nonce']));
+		if(!wp_verify_nonce($nonce, 'vsz-cf7-form-list-nonce')) {
 			die('Security check');
 		}
 	}
@@ -331,12 +332,12 @@ function vsz_cf7_current_action(){
 	$current_action = false;
 	
 	if (isset($_POST['action']) && -1 != $_POST['action'] && isset($_POST['btn_apply'])) {
-        $current_action = sanitize_text_field($_POST['action']);
+        $current_action = sanitize_text_field(wp_unslash($_POST['action']));
         return (string) apply_filters('vsz_cf7_get_current_action', $current_action);
     }
 
     if (isset($_POST['action2']) && -1 != $_POST['action2'] && isset($_POST['btn_apply2'])) {
-        $current_action = sanitize_text_field($_POST['action2']);
+        $current_action = sanitize_text_field(wp_unslash($_POST['action2']));
         return (string) apply_filters('vsz_cf7_get_current_action', $current_action);
     }
     $current_action = (string) apply_filters('vsz_cf7_get_current_action', $current_action);
@@ -510,14 +511,14 @@ function vsz_display_field_type_value($type,$arr_field_type,$k,$v){
 //Define sheet related date formates
 function vsz_cf7_import_date_format_callback(){
 
-	$arr_dates = array('Y-m-d H:i:s P' => date('Y-m-d H:i:s P'),
-						'Y-m-d H:i:s' => date('Y-m-d H:i:s'),
-						'Y-m-d' => date('Y-m-d'),
-						'Y/m/d' => date('Y/m/d'),
-						'jS F, Y' => date('jS F, Y'),
-						'F j, Y' => date('F j, Y'),
-						'd/m/Y' => date('d/m/Y'),
-						'd-m-Y' => date('d-m-Y')
+	$arr_dates = array('Y-m-d H:i:s P' => gmdate('Y-m-d H:i:s P'),
+						'Y-m-d H:i:s' => gmdate('Y-m-d H:i:s'),
+						'Y-m-d' => gmdate('Y-m-d'),
+						'Y/m/d' => gmdate('Y/m/d'),
+						'jS F, Y' => gmdate('jS F, Y'),
+						'F j, Y' => gmdate('F j, Y'),
+						'd/m/Y' => gmdate('d/m/Y'),
+						'd-m-Y' => gmdate('d-m-Y')
 					);
 
 	return $arr_dates;

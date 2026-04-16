@@ -1,5 +1,8 @@
 == Changelog ==
 
+= 6.5.5 (2026-04-02) =
+* `[Fixed]` Fatal error when source image is not a valid image file
+
 = 6.5.4 (2026-02-26) =
 * `[Fixed]` Displaying notification about Cloudflare cache
 

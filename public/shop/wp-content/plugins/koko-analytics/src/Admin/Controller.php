@@ -99,8 +99,8 @@ class Controller
             return;
         }
 
-        wp_enqueue_style('koko-analytics-dashboard', plugins_url('assets/dist/css/dashboard-2.css', KOKO_ANALYTICS_PLUGIN_FILE), [], KOKO_ANALYTICS_VERSION);
-        wp_enqueue_script('koko-analytics-dashboard', plugins_url('assets/dist/js/dashboard.js', KOKO_ANALYTICS_PLUGIN_FILE), [], KOKO_ANALYTICS_VERSION, ['strategy' => 'defer']);
+        wp_enqueue_style('koko-analytics-dashboard', plugins_url('assets/css/dashboard.css', KOKO_ANALYTICS_PLUGIN_FILE), [], KOKO_ANALYTICS_VERSION);
+        wp_enqueue_script('koko-analytics-dashboard', plugins_url('assets/js/dashboard.js', KOKO_ANALYTICS_PLUGIN_FILE), [], KOKO_ANALYTICS_VERSION, ['strategy' => 'defer']);
     }
 
     public function action_admin_notices(): void
@@ -128,24 +128,6 @@ class Controller
                 </form>
                 <p class="help description text-muted"><?php esc_html_e('We recommend making a back-up of your Koko Analytics database tables before running the migration.', 'koko-analytics'); ?></p>
                 <p class="help description text-muted"><?php esc_html_e('You can also run the migration using WP CLI: ', 'koko-analytics'); ?> <code>wp koko-analytics migrate_post_stats_to_v2</code></p>
-            </div>
-            <?php
-        }
-
-        // Test for unmigrated referrer records
-        $results = $wpdb->get_var("SELECT COUNT(*) FROM {$wpdb->prefix}koko_analytics_referrer_urls WHERE url LIKE 'http://%' OR url LIKE 'https://%'");
-        if ($results > 0 && !get_option('koko_analytics_referrers_v2')) {
-            ?>
-            <div class="notice notice-warning">
-                <p>
-                    <?php esc_html_e('Koko Analytics needs to migrate your referrer stats to a new storage format.', 'koko-analytics'); ?>
-                    <?php esc_html_e('Click the button below to proceed with the database migration, this can take some time if you have a large site.', 'koko-analytics'); ?>
-                </p>
-                <form action="" method="post">
-                    <input type="hidden" name="koko_analytics_action" value="migrate_referrer_stats_to_v2">
-                    <p><button type="submit" class="button button-primary"><?php esc_html_e('Migrate', 'koko-analytics'); ?></button></p>
-                </form>
-                <p class="help description text-muted"><?php esc_html_e('We recommend making a back-up of your Koko Analytics database tables before running the migration.', 'koko-analytics'); ?></p>
             </div>
             <?php
         }

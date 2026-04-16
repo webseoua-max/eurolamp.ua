@@ -52,12 +52,12 @@ class Command
     }
 
     /**
-     * Migrates referrer stats to the new v2 format.
+     * @subcommand migrate
      */
-    public function migrate_referrer_stats_to_v2($args, $assoc_args)
+    public function run_database_migrations(): void
     {
-        WP_CLI::line('Migrating referrer stats...');
-        (new Actions())->migrate_referrer_stats_to_v2();
-        WP_CLI::success('Referrer stats migrated');
+        $c = new Controller();
+        $c->run_pending_database_migrations();
+        WP_CLI::success('Database fully migrated');
     }
 }

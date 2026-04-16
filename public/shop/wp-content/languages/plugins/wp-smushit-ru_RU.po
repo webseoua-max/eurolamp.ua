@@ -1,15 +1,15 @@
-# Translation of Plugins - Smush Image Optimization – Optimize Images | Compress &amp; Lazy Load Images | Convert WebP &amp; AVIF | Image CDN - Stable (latest release) in Russian
-# This file is distributed under the same license as the Plugins - Smush Image Optimization – Optimize Images | Compress &amp; Lazy Load Images | Convert WebP &amp; AVIF | Image CDN - Stable (latest release) package.
+# Translation of Plugins - Smush – Image Optimization, Compression, Lazy Load, WebP &amp; CDN - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Smush – Image Optimization, Compression, Lazy Load, WebP &amp; CDN - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-12-08 15:27:01+0000\n"
+"PO-Revision-Date: 2026-04-01 20:05:02+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
 "X-Generator: GlotPress/4.0.3\n"
 "Language: ru\n"
-"Project-Id-Version: Plugins - Smush Image Optimization – Optimize Images | Compress &amp; Lazy Load Images | Convert WebP &amp; AVIF | Image CDN - Stable (latest release)\n"
+"Project-Id-Version: Plugins - Smush – Image Optimization, Compression, Lazy Load, WebP &amp; CDN - Stable (latest release)\n"
 
 #: core/external/hub-connector/inc/class-api.php:175
 #: core/external/hub-connector/inc/class-api.php:314
@@ -41,10 +41,27 @@ msgstr "Забыл пароль?"
 msgid "Dismiss this notice"
 msgstr "Отклонить это уведомление"
 
+#: core/class-configs.php:758 core/class-settings.php:373
+msgid "Add Missing Image Dimensions"
+msgstr "Задайте отсутствующие размеры изображения"
+
 #: app/views/lazyload/meta-box.php:380
 #: core/smush/class-smush-settings-ui-controller.php:487
 msgid "Advanced Settings"
 msgstr "Расширенные настройки"
+
+#: app/views/lazyload/meta-box.php:366
+msgid "Add missing dimensions"
+msgstr "Добавить отсутствующие размеры"
+
+#. translators: %s: media types
+#: app/views/lazyload/meta-box.php:104
+msgid "All media types: %s"
+msgstr "Все типы медиафайлов: %s"
+
+#: app/views/dashboard/bulk/connect-free.php:18
+msgid "A free WPMU DEV connection is required to use Bulk Smush. Takes seconds to set up — no credit card needed."
+msgstr "Для использования Bulk Smush требуется бесплатная учетная запись WPMU DEV. Настройка занимает всего несколько секунд — кредитная карта не требуется."
 
 #: app/views/bulk/list-errors.php:11
 msgid "Actions"
@@ -55,9 +72,21 @@ msgstr "Действия"
 msgid "File Name"
 msgstr "Имя файла"
 
+#: app/modals/updated.php:70
+msgid "Add Missing Dimensions"
+msgstr "Добавить отсутствующие размеры"
+
 #: app/modals/updated.php:57
 msgid "What's New?"
 msgstr "Что нового?"
+
+#: app/modals/onboarding-free.php:67
+msgid "5x image compression for faster-loading pages."
+msgstr "5-кратное сжатие изображений для более быстрой загрузки страниц."
+
+#: app/modals/onboarding-free.php:65
+msgid "5x Compression with Ultra"
+msgstr "5-кратное сжатие с технологией Ultra"
 
 #: app/modals/hub-connection-success.php:64
 msgid "Congratulations!"
@@ -71,6 +100,15 @@ msgstr "Отключить сайт"
 #: app/modals/disconnect-site.php:29
 msgid "Disconnect Site?"
 msgstr "Отключить сайт?"
+
+#. translators: %1$d: restored count, %2$d: total count
+#: app/class-media-library.php:251
+msgid "All selected images were restored successfully (%1$d/%2$d)."
+msgstr "Все выбранные изображения были успешно восстановлены (%1$d из %2$d)."
+
+#: app/class-admin.php:988
+msgid "100% of your images are now optimized! 🎉"
+msgstr "Все ваши изображения теперь оптимизированы! 🎉"
 
 #: core/lazy-load/class-lazy-load-video-embed.php:326
 msgid "Play video"
@@ -111,9 +149,7 @@ msgstr "Плагин не найден."
 msgid "%s Savings"
 msgstr "%s Экономия"
 
-#: core/avif/class-avif-configuration.php:27
-#: core/avif/class-avif-optimization.php:75 core/class-configs.php:633
-#: core/class-settings.php:1406
+#: core/class-configs.php:633 core/class-settings.php:1429
 msgid "AVIF"
 msgstr "AVIF"
 
@@ -167,18 +203,34 @@ msgstr "У вашего сайта, кажется, есть проблема с
 msgid "We did not find any images that need smushing."
 msgstr "Мы не нашли никаких изображений, которые необходимо удалить."
 
+#: core/cli/class-cli-optimizer.php:139
+msgid "All of your images failed to restore. Find out why and how to resolve the issue(s) below."
+msgstr "Восстановить все ваши изображения не удалось. Ниже вы узнаете, в чем причина и как решить эту проблему."
+
 #: core/cli/class-cli-optimizer.php:59 core/cli/class-cli-optimizer.php:160
 #: core/cli/class-cli.php:251
 msgid "Progress:"
 msgstr "Выполнения:"
 
+#: app/views/lazyload/meta-box.php:961
+msgid "Add a fallback mechanism for lazy-loading in browsers that do not support JavaScript."
+msgstr "Добавьте резервный механизм отложенной загрузки для браузеров, не поддерживающих JavaScript."
+
 #: app/modals/onboarding.php:212 app/modals/onboarding.php:220
 msgid "Complete Setup"
 msgstr "Завершить настройку"
 
+#: app/modals/onboarding.php:50
+msgid "1-click WebP and AVIF Conversion for superior performance."
+msgstr "Конвертация в форматы WebP и AVIF одним щелчком мыши для обеспечения максимальной производительности."
+
 #: app/modals/onboarding.php:45
 msgid "Automatic Image Resizing"
 msgstr "Автоматическое изменение размера изображения"
+
+#: app/modals/onboarding.php:34
+msgid "5x higher compression for snappier site loads."
+msgstr "В 5 раз более высокая степень сжатия для более быстрой загрузки сайта."
 
 #: app/modals/deactivation-survey.php:177
 msgid "Submit & Deactivate"
@@ -216,7 +268,7 @@ msgstr "Какую проблему вы отлаживаете? (необяза
 msgid "Need Help?"
 msgstr "Нужна помощь?"
 
-#: app/class-admin.php:313
+#: app/class-admin.php:326
 msgid "Rate our plugin"
 msgstr "Оценить наш плагин"
 
@@ -298,25 +350,7 @@ msgstr "Пожалуйста, попробуйте метод %1$sПрямой �
 msgid "Activate the Next-Gen Formats feature with a single click; no server configuration required."
 msgstr "Активируйте функцию Next-Gen Formats одним щелчком мыши; настройка сервера не требуется."
 
-#: core/webp/class-webp-server-configuration.php:255
-msgid "Automatic updation of .htaccess rules failed. Please ensure the file permissions on your .htaccess file are set to 644, or switch to manual mode to add the rules yourself."
-msgstr "Автоматическое обновление правил в файле .htaccess не удалось. Пожалуйста, убедитесь, что у вашего файла .htaccess установлены разрешения 644, или переключитесь в ручной режим, чтобы добавить правила самостоятельно."
-
-#. translators: path that couldn't be written
-#: core/webp/class-webp-server-configuration.php:201
-msgid "We couldn't create the WebP directory \"%s\". This is probably due to your current folder permissions. You can also try to create this directory manually and try again."
-msgstr "Мы не смогли создать директорию для файлов WebP \"%s\". Возможно, это из-за ваших текущих настроек разрешений у папки. Вы также можете попытаться создать каталог вручную и попробовать ещё раз."
-
-#: core/webp/class-webp-server-configuration.php:126
-#: core/webp/class-webp-server-configuration.php:256
-msgid "The rules have been applied, but the images are still not being served in WebP format. We recommend that you contact your hosting provider to learn more about the cause of this problem."
-msgstr "Правила были применены, но изображения по-прежнему не отображаются в формате WebP. Мы рекомендуем связаться с вашим хостинг-провайдером, чтобы узнать больше о причинах данной проблемы."
-
-#: core/webp/class-webp-server-configuration.php:122
-msgid "The images are served in WebP format."
-msgstr "Изображения отображаются в форме WebP."
-
-#: core/class-settings.php:340
+#: core/class-settings.php:347
 msgid "Optimize original images"
 msgstr "Оптимизировать оригиналы изображений"
 
@@ -324,21 +358,7 @@ msgstr "Оптимизировать оригиналы изображений"
 msgid "CDN status has changed.<br/>If you have a page caching plugin or server caching, please clear it to ensure everything works as expected."
 msgstr "Статус CDN изменился.<br/>Если у вас установлен плагин кэширования страниц или серверного кэширования, пожалуйста, очистите его, чтобы убедиться, что все работает как надо."
 
-#. translators: 1: Opening a link, 2: Closing a link
-#: core/next-gen/class-next-gen-settings-ui-controller.php:215
-msgid "Enable this option to serve original files to unsupported browsers. %1$sCheck Browser Compatibility%2$s."
-msgstr "Включите эту настройку, чтобы отдавать исходные файлы в неподдерживаемые браузеры. %1$sПроверьте совместимость браузера%2$s."
-
-#: core/next-gen/class-next-gen-settings-ui-controller.php:209
-msgid "Enable JavaScript Fallback"
-msgstr "Включить JavaScript Fallback"
-
-#: core/next-gen/class-next-gen-settings-ui-controller.php:60
-msgid "Use JavaScript to serve original image files to unsupported browsers."
-msgstr "Использовать JavaScript для отображения оригинальных изображений в неподдерживаемых браузерах."
-
 #: core/class-configs.php:646
-#: core/next-gen/class-next-gen-settings-ui-controller.php:59
 msgid "Legacy Browser Support"
 msgstr "Поддержка устаревших браузеров"
 
@@ -352,9 +372,12 @@ msgid "Direct Conversion"
 msgstr "Прямая конверсия"
 
 #: core/class-configs.php:635
-#: core/next-gen/class-next-gen-settings-ui-controller.php:319
 msgid "Server Configuration"
 msgstr "Конфигурация сервера"
+
+#: app/views/cdn/meta-box.php:115 app/views/lazyload/meta-box.php:582
+msgid "Add keywords, one per line"
+msgstr "Введите ключевые слова, по одному в каждой строке"
 
 #: app/views/cdn/meta-box.php:100 app/views/lazyload/meta-box.php:572
 msgid "Keywords"
@@ -364,12 +387,16 @@ msgstr "Ключевые слова"
 msgid "View Full Report"
 msgstr "Посмотреть полный отчёт"
 
+#: app/views/summary/lossy-level.php:36
+msgid "5x your compression with Ultra"
+msgstr "Увеличьте степень сжатия в 5 раз с помощью Ultra"
+
 #. translators: 1: Opening <strong> 2: Closing </strong>
-#: core/class-settings.php:314
+#: core/class-settings.php:321
 msgid "Choose the level of compression that suits your needs. We recommend %1$sUltra%2$s for faster sites and impressive image quality."
 msgstr "Выберите уровень сжатия, который подходит вам. Мы рекомендуем %1$sУльтра%2$s для быстрых сайтов и впечатляющего качества изображений."
 
-#: core/class-settings.php:310
+#: core/class-settings.php:317
 msgid "Choose Compression Level"
 msgstr "Выберите уровень сжатия"
 
@@ -381,7 +408,7 @@ msgstr "Улучшите скорость загрузки страниц с п�
 msgid "Choose the level of compression that suits your needs."
 msgstr "Выберите уровень сжатия, который подходит вам."
 
-#: app/views/summary/lossy-level.php:26 core/class-settings.php:311
+#: app/views/summary/lossy-level.php:26 core/class-settings.php:318
 msgid "Smush Mode"
 msgstr "Режим сжатия Smush"
 
@@ -425,15 +452,15 @@ msgstr "%1$sSuper:%2$s используйте возможности сжати�
 msgid "%1$sBasic:%2$s Achieve flawless, lossless compression for pixel-perfect images. Minimal file size reduction, negligible impact on speed."
 msgstr "%1$sBasic:%2$s безупречное сжатие без потерь для получения пиксельно идеальных изображений. Минимальное уменьшение размера файла, незначительное влияние на скорость работы."
 
-#: app/views/bulk/lossy-level.php:19 core/class-settings.php:1496
+#: app/views/bulk/lossy-level.php:19 core/class-settings.php:1519
 msgid "Ultra"
 msgstr "Ультра"
 
-#: app/views/bulk/lossy-level.php:18 core/class-settings.php:1495
+#: app/views/bulk/lossy-level.php:18 core/class-settings.php:1518
 msgid "Super"
 msgstr "Супер"
 
-#: app/views/bulk/lossy-level.php:17 core/class-settings.php:1494
+#: app/views/bulk/lossy-level.php:17 core/class-settings.php:1517
 msgid "Basic"
 msgstr "Базовая"
 
@@ -503,23 +530,6 @@ msgstr "Невозможно изменить размер изображени�
 msgid "Could not find a suitable source image for resizing media item [%d]."
 msgstr "Не удалось найти подходящее исходное изображение для изменения размера медиаэлемента [%d]."
 
-#. translators: %s: Error message.
-#: core/png2jpg/class-png2jpg-optimization.php:480
-msgid "The image editor was unable to save the image: %s"
-msgstr "Редактор изображений не смог сохранить изображение: %s"
-
-#. translators: 1: Image path, 2: Image id, 3: Error message.
-#: core/png2jpg/class-png2jpg-optimization.php:464
-msgid "Image Editor cannot load file [%1$s(%2$d)]: %3$s."
-msgstr "Редактор изображений не может загрузить файл [%1$s(%2$d)]: %3$s."
-
-#. translators: 1: Converted path, 2: Converted file size, 3: Original path, 4:
-#. Original file size
-#: core/png2jpg/class-png2jpg-optimization.php:415
-msgid "The new file [%1$s](%2$s) is larger than the original file [%3$s](%4$s)."
-msgstr "Новый файл [%1$s](%2$s) больше по размеру, чем оригинальный файл [%3$s](%4$s)."
-
-#: core/png2jpg/class-png2jpg-optimization.php:409
 #: core/resize/class-resize-optimization.php:242
 msgid "Skipped: Smushed file is larger than the original file."
 msgstr "Пропущено: сжатый файл больше исходного файла."
@@ -535,21 +545,21 @@ msgid "Image not restored. %s"
 msgstr "Изображение не восстановлено. %s"
 
 #. translators: %s: Smush image filter
-#: core/media/class-media-item.php:819
+#: core/media/class-media-item.php:847
 msgid "Skipped with %s filter."
 msgstr "Пропущено с помощью фильтра %s."
 
 #. translators: 1: Exceeded size limit file name, 2: Image size limit
-#: core/media/class-media-item.php:811
+#: core/media/class-media-item.php:839
 msgid "Skipped (%1$s), file size limit of %2$s exceeded"
 msgstr "Пропущено (%1$s), превышен предельный размер файла %2$s"
 
 #. translators: %s: Image mime type
-#: core/media/class-media-item.php:778
+#: core/media/class-media-item.php:806
 msgid "The mime type %s is not supported by Smush."
 msgstr "Mime-тип %s не поддерживается Smush."
 
-#: core/media/class-media-item.php:770
+#: core/media/class-media-item.php:798
 msgid "Attachment is not an image so it can't be smushed."
 msgstr "Вложение не является изображением, поэтому его нельзя сжать."
 
@@ -578,20 +588,6 @@ msgstr "Мы рекомендуем использовать функцию во
 msgid "Background scan is already in processing."
 msgstr "Фоновая проверка уже идет."
 
-#. Translators: %1$s: opening strong tag, %2$s: closing strong tag, %s:
-#. settings link, %3$s: opening a and strong tags, %4$s: closing a and strong
-#. tags
-#: core/integrations/class-s3.php:328
-msgid "We can see you have WP Offload Media installed. If you want to optimize your S3 images you'll need to %3$supgrade to Smush Pro%4$s"
-msgstr "Мы видим, что у вас установлен WP Offload Media. Если вы хотите оптимизировать ваши изображения S3, вам нужно %3$sобновиться до Smush Pro%4$s"
-
-#. Translators: %1$s: opening strong tag, %2$s: closing strong tag, %s:
-#. settings link, %3$s: opening a and strong tags, %4$s: closing a and strong
-#. tags
-#: core/integrations/class-s3.php:313
-msgid "We can see you have WP Offload Media installed. If you want to optimize your S3 images, you’ll need to enable the %3$sAmazon S3 Support%4$s feature in Smush’s Integrations."
-msgstr "Мы видим, что у вас установлен WP Offload Media. Если вы хотите оптимизировать изображения S3, вам нужно включить функцию %3$sAmazon S3 Support%4$s в Smush интеграции."
-
 #: app/views/bulk/auto-bulk-smush-notification.php:18
 msgid "Once Smush completes the recheck process it will begin the Smush, it is recommended to keep this page open to initiate bulk image compression."
 msgstr "После завершения процесса повторной проверки Smush начнет процесс сжатия, рекомендуется оставить эту страницу открытой для начала массовой компрессии изображений."
@@ -613,7 +609,7 @@ msgid "Close this dialog."
 msgstr "Закройте это диалоговое окно."
 
 #: app/common/scan-progress-bar.php:38 _src/js/common/progressbar.js:156
-#: app/assets/js/smush-admin.min.js:15701
+#: app/assets/js/smush-admin.min.js:672
 msgid "Cancel Scan"
 msgstr "Отмена сканирования"
 
@@ -645,9 +641,15 @@ msgid "Some images might need to be rechecked to ensure statistical data is accu
 msgstr "Некоторые изображения могут потребовать перепроверки для обеспечения точности статистических данных."
 
 #. translators: %s Email address
-#: core/class-settings.php:290
+#: core/class-settings.php:297
 msgid "Be notified via email about the bulk smush status when the process has completed. You'll receive an email at %s."
 msgstr "Получите уведомление по электронной почте о состоянии bulk smush по завершении процесса. Вы получите электронное письмо по адресу %s."
+
+#. translators: 1 - Number of CDN PoP locations, 2 - opening a tag, 3 - closing
+#. a tag
+#: core/class-core.php:354
+msgid "Activate CDN to bulk smush and serve animated GIF’s via %1$d worldwide locations. %2$sActivate CDN%3$s"
+msgstr "Включите CDN для массовой оптимизации и доставки анимированных GIF-файлов через %1$d точек по всему миру. %2$sВключить CDN%3$s"
 
 #: app/views/smush-upgrade-page.php:228
 msgid "Includes a 30-day money-back guarantee"
@@ -804,15 +806,15 @@ msgstr "Включить уведомление по электронной по
 msgid "Every %d Minutes"
 msgstr "Каждые %d минут"
 
-#: core/class-settings.php:286
+#: core/class-settings.php:293
 msgid "Be notified via email about the bulk smush status when the process has completed."
 msgstr "Получите уведомление по электронной почте о завершении процесса пакетного сжатия."
 
-#: core/class-settings.php:297
+#: core/class-settings.php:304
 msgid "Email Notification"
 msgstr "Уведомления на email"
 
-#: core/class-settings.php:296
+#: core/class-settings.php:303
 msgid "Enable email notification"
 msgstr "Включить уведомление по электронной почте"
 
@@ -823,8 +825,8 @@ msgstr "Игнорировать."
 
 #. translators: %s: File path
 #. translators: %s: The missing file name
-#: core/class-error-handler.php:272 core/media/class-media-item.php:797
-#: core/media/class-media-item.php:803
+#: core/class-error-handler.php:272 core/media/class-media-item.php:825
+#: core/media/class-media-item.php:831
 msgid "Skipped (%s), File not found."
 msgstr "Пропущено (%s), файл не найден."
 
@@ -925,21 +927,21 @@ msgstr "Вернуться к предыдущему состоянию"
 msgid "Smush: Failed Processing"
 msgstr "Smush: сбой обработки"
 
-#: app/class-admin.php:777
+#: app/class-admin.php:790
 msgid "Smush images in the background"
 msgstr "Сжимайте изображения в фоновом режиме"
 
 #. translators: 1: Current MYSQL version, 2: Required MYSQL version
-#: app/class-admin.php:767
+#: app/class-admin.php:780
 msgid "Smush was unable to activate background processing on your site as your web hosting provider is using an old version of MySQL on your server (version %1$s). We highly recommend contacting your hosting provider to upgrade MySQL to version %2$s or higher to optimize images in the background."
 msgstr "Smush не смог активировать фоновую обработку на вашем сайте, так как ваш хостинг-провайдер использует старую версию MySQL на сервере (версия %1$s). Мы настоятельно рекомендуем обратиться к вашему хостинг-провайдеру для обновления MySQL до версии %2$s или выше для оптимизации изображений в фоновом режиме."
 
-#: app/class-admin.php:733
+#: app/class-admin.php:746
 msgid "Smush images faster with parallel image optimization"
 msgstr "Увеличивайте скорость изображений с помощью параллельной оптимизации изображений"
 
 #. translators: %s: <strong>curl_multi_exec()</strong>
-#: app/class-admin.php:723
+#: app/class-admin.php:736
 msgid "Smush was unable to activate parallel processing on your site as your web hosting provider has disabled the %s function on your server. We highly recommend contacting your hosting provider to enable that function to optimize images on your site faster."
 msgstr "Smush не удалось активировать параллельную обработку на вашем сайте, так как ваш хостинг-провайдер отключил функцию %s на вашем сервере. Мы настоятельно рекомендуем обратиться к вашему хостинг-провайдеру, чтобы включить эту функцию для более быстрой оптимизации изображений на вашем сайте."
 
@@ -947,7 +949,7 @@ msgstr "Smush не удалось активировать параллельн�
 msgid "Note: the wp-admin and wp-includes directories contain core WordPress files and are not selectable. Similarly, the auto-generated media directories in wp-content/uploads are not selectable here as they are processed by Bulk Smush."
 msgstr "Примечание: каталоги wp-admin и wp-includes содержат основные файлы WordPress и не могут быть выбраны. Точно так же автоматически сгенерированные каталоги мультимедиа в wp-content/uploads здесь нельзя выбрать, поскольку они обрабатываются Bulk Smush."
 
-#: core/class-settings.php:346
+#: core/class-settings.php:353
 msgid "Backup Original Images"
 msgstr "Резервное копирование исходных изображений"
 
@@ -961,7 +963,7 @@ msgstr "Выполняется обработка файлов."
 msgid "attachment ID: %d"
 msgstr "ID вложения: %d"
 
-#: core/class-configs.php:103 core/class-installer.php:290
+#: core/class-configs.php:103 core/class-installer.php:293
 msgid "Default config"
 msgstr "Конфигурация по умолчанию"
 
@@ -979,31 +981,27 @@ msgstr "Изображения, оптимизированные в медиат
 msgid "%3$d images reduced by %1$s (%2$s)"
 msgstr "%3$d изображений, уменьшенных на %1$s (%2$s)"
 
-#: core/integrations/class-gravity-forms.php:98
+#: core/integrations/class-gravity-forms.php:79
 msgid "To use this feature you need be using Gravity Forms."
 msgstr "Чтобы использовать эту функцию, вам нужно использовать Gravity Forms."
 
-#: core/integrations/class-gravity-forms.php:77
+#: core/class-settings.php:396
 msgid "Allow compressing images uploaded with Gravity Forms."
 msgstr "Разрешить сжатие изображений, загруженных с помощью Gravity Forms."
 
-#: core/integrations/class-gravity-forms.php:76
+#: core/class-settings.php:395
 msgid "Gravity Forms"
 msgstr "Gravity Forms"
 
-#: core/integrations/class-gravity-forms.php:75
+#: core/class-settings.php:394
 msgid "Enable Gravity Forms integration"
 msgstr "Включить интеграцию с Gravity Forms"
 
-#: core/lcp/class-lcp-controller.php:178
-msgid "Nonce verification failed."
-msgstr "Не удалось выполнить проверку одноразового номера."
-
-#: app/class-ajax.php:397 core/webp/class-webp-controller.php:169
+#: app/class-ajax.php:397
 msgid "Nonce verification failed"
 msgstr "Сбой разовой проверки"
 
-#: core/class-error-handler.php:263 core/modules/class-webp.php:587
+#: core/class-error-handler.php:263
 msgid "Webp no response was received."
 msgstr "Webp не получил ответа."
 
@@ -1056,11 +1054,11 @@ msgstr "Изображение не восстановлено, проверка
 msgid "Error in processing restore action, fields empty."
 msgstr "Ошибка при обработке действия восстановления, поля пусты."
 
-#: core/class-settings.php:331
+#: core/class-settings.php:338
 msgid "Disable Scaled Images"
 msgstr "Отключить масштабирование изображений"
 
-#: core/class-settings.php:330
+#: core/class-settings.php:337
 msgid "Disable scaled images"
 msgstr "Отключить масштабирование изображений"
 
@@ -1234,10 +1232,6 @@ msgstr "Эта блокировка может быть вызвана акти�
 msgid "Smush has encountered a %s error while attempting to compress the selected images."
 msgstr "Smush столкнулся с ошибкой %s при попытке сжать выбранные изображения."
 
-#: core/webp/class-webp-controller.php:217
-msgid "Either the nonce expired or you can't modify options. Please reload the page and try again."
-msgstr "Либо истек срок действия nonce, либо вы не можете изменить параметры. Перезагрузите страницу и повторите попытку."
-
 #. translators: %s {pluginName}
 #: _src/react/modules/configs.jsx:83
 #: app/assets/js/smush-react-configs.min.js:6664
@@ -1410,22 +1404,15 @@ msgstr "Hub."
 msgid "You can easily apply configs to multiple sites at once via "
 msgstr "Вы можете легко применить конфигурации сразу к нескольким сайтам через "
 
-#. translators: path that couldn't be written
-#: core/modules/class-webp.php:153
-#: core/webp/class-webp-server-configuration.php:166
-#: core/webp/class-webp-server-configuration.php:194
-msgid "We couldn't create the WebP test files. This is probably due to your current folder permissions. Please adjust the permissions for \"%s\" to 755 and try again."
-msgstr "Мы не смогли создать тестовые файлы WebP. Возможно, это связано с текущими разрешениями папки. Пожалуйста, измените разрешения для \"%s\" на 755 и повторите попытку."
-
-#: core/class-settings.php:983
+#: core/class-settings.php:1006
 msgid "The tab these settings belong to is missing."
 msgstr "Вкладка, которой принадлежат эти настройки, отсутствует."
 
-#: core/class-settings.php:914
+#: core/class-settings.php:937
 msgid "The page these settings belong to is missing."
 msgstr "Страница, к которой относятся эти настройки, отсутствует."
 
-#: core/class-settings.php:360
+#: core/class-settings.php:367
 msgid "Allow usage tracking"
 msgstr "Разрешить отслеживание использования"
 
@@ -1664,12 +1651,6 @@ msgstr "Основные"
 msgid "Missing config ID"
 msgstr "Отсутствующий ID конфигурации"
 
-#. translators: 1. opening 'a' tag to docs, 2. opening 'a' tag to premium
-#. support, 3. closing 'a' tag.
-#: core/modules/class-webp.php:874
-msgid "We tried different rules but your server still isn't serving WebP images. Please contact your hosting provider for further assistance. You can also see our %1$stroubleshooting guide%3$s or %2$scontact support%3$s for help."
-msgstr "Мы пробовали разные правила, но ваш сервер по-прежнему не обслуживает изображения WebP. Пожалуйста, свяжитесь с вашим хостинг-провайдером для получения дополнительной помощи. Вы также можете обратиться за помощью к нашему %1$s руководству по устранению неполадок %3$s или %2$s в службу поддержки%3$s."
-
 #: app/views/tabs.php:29
 msgid "Navigate"
 msgstr "Навигация"
@@ -1689,40 +1670,13 @@ msgstr "Если вам не удается заставить работать 
 msgid "Local WebP"
 msgstr "Локальный WebP"
 
-#: core/modules/class-webp.php:114
-msgid "The server rules have been applied but the server doesn't seem to be serving your images as WebP. We recommend contacting your hosting provider to learn more about the cause of this issue."
-msgstr "Правила сервера были применены, но сервер, похоже, не обслуживает ваши изображения как WebP. Мы рекомендуем связаться с вашим хостинг-провайдером, чтобы узнать больше о причине этой проблемы."
-
-#. translators: 1. error code, 2. error message.
-#: core/modules/class-webp.php:192
-#: core/webp/class-webp-server-configuration.php:116
-msgid "We couldn't check the WebP server rules status because there was an error with the test request. Please contact support for assistance. Code %1$s: %2$s."
-msgstr "Мы не смогли проверить статус правил сервера WebP, потому что при тестовом запросе произошла ошибка. Обратитесь в службу поддержки за помощью. Код %1$s: %2$s."
-
-#: core/modules/class-webp.php:957 core/webp/class-webp-apache.php:194
-msgid "We were unable to automatically remove the rules. We recommend trying to remove the rules manually. If you don’t have access to the .htaccess file to remove it manually, please consult with your hosting provider to change the configuration on the server."
-msgstr "Нам не удалось автоматически удалить правила. Рекомендуем попробовать удалить правила вручную. Если у вас нет доступа к файлу .htaccess, чтобы удалить его вручную, проконсультируйтесь со своим хостинг-провайдером, чтобы изменить конфигурацию на сервере."
-
-#: core/modules/class-webp.php:943 core/webp/class-webp-apache.php:180
-msgid "The .htaccess file doesn't contain the WebP rules from Smush."
-msgstr "Файл .htaccess не содержит правил WebP из Smush."
-
-#. translators: 1. opening 'a' tag to premium support, 2. closing 'a' tag.
-#: core/modules/class-webp.php:867
-msgid "We tried to apply the .htaccess rules automatically but we were unable to complete this action. Make sure the file permissions on your .htaccess file are set to 644, or switch to manual mode and apply the rules yourself. If you need further assistance, you can %1$scontact support%2$s for help."
-msgstr "Мы попытались применить правила .htaccess автоматически, но не смогли выполнить это действие. Убедитесь, что права доступа к файлу .htaccess установлены на 644, или переключитесь в ручной режим и примените правила самостоятельно. Если вам нужна дополнительная помощь, вы можете %1$s обратиться за помощью в службу поддержки%2$s."
-
-#: app/pages/class-next-gen.php:230 core/modules/class-webp.php:732
+#: app/pages/class-next-gen.php:230
 msgid "WebP files were deleted successfully."
 msgstr "Файлы WebP успешно удалены."
 
 #: core/class-core.php:335
 msgid "Something went wrong with the request. Please reload the page and try again."
 msgstr "Что-то пошло не так с запросом. Перезагрузите страницу и повторите попытку."
-
-#: core/modules/class-webp.php:117
-msgid "Server configurations haven't been applied yet. Make configurations to start serving images in WebP format."
-msgstr "Конфигурации сервера еще не применены. Создание конфигураций для начала обслуживания изображений в формате WebP."
 
 #: app/views/next-gen/meta-box-header.php:21
 msgid "Join WPMU DEV to use this feature"
@@ -1808,23 +1762,12 @@ msgstr "Тип сервера"
 msgid "Re-check status"
 msgstr "Повторная проверка статуса"
 
-#: core/class-configs.php:633 core/class-settings.php:1405
-#: core/webp/class-webp-configuration.php:54
-#: core/webp/class-webp-optimization.php:79
+#: core/class-configs.php:633 core/class-settings.php:1428
 msgid "WebP"
 msgstr "WebP"
 
-#: core/webp/class-webp-controller.php:258
-msgid "This user can not delete all WebP images."
-msgstr "Этот пользователь не может удалить все изображения WebP."
-
-#: app/class-ajax.php:474 app/class-ajax.php:526
-#: core/avif/class-avif-controller.php:180 core/class-settings.php:900
-#: core/integrations/class-nextgen.php:553
-#: core/integrations/class-nextgen.php:676
-#: core/integrations/nextgen/class-admin.php:542
+#: app/class-ajax.php:474 app/class-ajax.php:526 core/class-settings.php:923
 #: core/media/class-media-item-controller.php:80
-#: core/webp/class-webp-controller.php:196
 msgid "You don't have permission to do this."
 msgstr "У вас нет прав, чтобы сделать это."
 
@@ -1840,19 +1783,19 @@ msgstr "Закрыть это диалоговое окно"
 msgid "Fix Google PageSpeed image recommendations"
 msgstr "Исправьте рекомендации Google PageSpeed по изображениям"
 
-#: app/class-admin.php:586
+#: app/class-admin.php:599
 msgid " and "
 msgstr " и "
 
 #. translators: 1. username, 2. unsmushed images message, 3. 'and' text for
 #. when having both unsmushed and re-smush images, 4. re-smush images message.
-#: app/class-admin.php:583
+#: app/class-admin.php:596
 msgid "%1$s, you have %2$s%3$s%4$s! %5$s"
 msgstr "%1$s, у вас есть %2$s%3$s%4$s! %5$s"
 
 #. translators: 1. opening strong tag, 2: re-smush images count,3. closing
 #. strong tag.
-#: app/class-admin.php:572
+#: app/class-admin.php:585
 msgid "%1$s%2$d attachment%3$s that needs re-smushing"
 msgid_plural "%1$s%2$d attachments%3$s that need re-smushing"
 msgstr[0] "%1$s%2$d вложение%3$s, которое нуждается в повторной обработке"
@@ -1861,7 +1804,7 @@ msgstr[2] "%1$s%2$d вложений%3$s, которое нуждается в �
 
 #. translators: 1. opening strong tag, 2: unsmushed images count,3. closing
 #. strong tag.
-#: app/class-admin.php:561
+#: app/class-admin.php:574
 msgid "%1$s%2$d attachment%3$s that needs smushing"
 msgid_plural "%1$s%2$d attachments%3$s that need smushing"
 msgstr[0] "%1$s%2$d вложение%3$s, которое нужно обработать"
@@ -1931,23 +1874,6 @@ msgstr "Встроенная отложенная загрузка"
 #: app/modals/onboarding.php:22
 msgid "Enable Super Smush"
 msgstr "Включить Super Smush"
-
-#. translators: %1$s - Open a link <a>, %2$s - closing link tag
-#: core/cdn/class-cdn-settings-ui-controller.php:103
-msgid "Note: Smush will use the %1$srest_pre_echo_response%2$s hook to filter images in REST API responses."
-msgstr "Примечание: Smush будет использовать хук %1$srest_pre_echo_response%2$s для фильтрации изображений в ответах REST API."
-
-#: core/cdn/class-cdn-settings-ui-controller.php:56
-msgid "Smush can automatically replace image URLs when fetched via REST API endpoints."
-msgstr "Smush может автоматически заменять URL-адреса изображений при их получении через конечные точки REST API."
-
-#: core/cdn/class-cdn-settings-ui-controller.php:55
-msgid "REST API"
-msgstr "REST API"
-
-#: core/cdn/class-cdn-settings-ui-controller.php:54
-msgid "Enable REST API support"
-msgstr "Включить поддержку REST API"
 
 #: core/modules/class-resize-detection.php:136
 msgid "All images are properly sized"
@@ -2030,36 +1956,36 @@ msgstr "Уменьшено на %1$s (%2$s)"
 msgid "Smush: Not processed"
 msgstr "Обработка: не обработано"
 
-#: app/class-admin.php:534
+#: app/class-admin.php:547
 msgid "Manage Plugins"
 msgstr "Управление плагинами"
 
-#: app/class-admin.php:528
+#: app/class-admin.php:541
 msgid "You have multiple WordPress image optimization plugins installed. This may cause unpredictable behavior while optimizing your images, inaccurate reporting, or images to not display. For best results use only one image optimizer plugin at a time. These plugins may cause issues with Smush:"
 msgstr "У вас установлено несколько плагинов оптимизации изображений WordPress. Это может привести к непредсказуемому поведению при оптимизации изображений, неточным отчетам или к тому, что изображения не будут отображаться. Для достижения наилучших результатов используйте только один плагин оптимизации изображений одновременно. Эти плагины могут вызывать проблемы с Smush:"
 
-#: app/class-admin.php:302
+#: app/class-admin.php:315
 msgid "Premium Support"
 msgstr "Премиум поддержка"
 
-#: app/class-admin.php:298
+#: app/class-admin.php:311
 msgid "View details"
 msgstr "Посмотреть детали"
 
-#: app/class-admin.php:292 app/class-admin.php:946 app/class-admin.php:989
-#: app/class-admin.php:1022
+#: app/class-admin.php:305 app/class-admin.php:959 app/class-admin.php:1002
+#: app/class-admin.php:1035
 msgid "Rate Smush"
 msgstr "Оцените Smush"
 
-#: app/class-admin.php:265
+#: app/class-admin.php:278
 msgid "Go to Smush Dashboard"
 msgstr "Перейти в панель управления Smush"
 
-#: app/class-admin.php:261
+#: app/class-admin.php:274
 msgid "View Smush Documentation"
 msgstr "Посмотреть документацию Smush"
 
-#: app/class-admin.php:247 app/class-admin.php:248
+#: app/class-admin.php:260 app/class-admin.php:261
 msgid "Renew Membership"
 msgstr "Обновить членство"
 
@@ -2088,11 +2014,7 @@ msgstr "Восстановление изображений..."
 msgid "images smushed"
 msgstr "изображений обработано"
 
-#: core/integrations/class-nextgen.php:273
-msgid "To use this feature you need to be using NextGen Gallery."
-msgstr "Чтобы воспользоваться этой функцией, необходимо использовать NextGen Gallery."
-
-#: core/integrations/class-composer.php:92
+#: core/integrations/class-composer.php:73
 msgid "To use this feature you need be using WPBakery Page Builder."
 msgstr "Для использования этой функции вам необходимо использовать WPBakery Page Builder."
 
@@ -2138,14 +2060,9 @@ msgstr "пользователей"
 msgid "5.0 rating from"
 msgstr "Рейтинг 5.0 от"
 
-#: app/class-admin.php:265 app/class-admin.php:330
+#: app/class-admin.php:278 app/class-admin.php:343
 msgid "Dashboard"
 msgstr "Панель управления"
-
-#. translators: %1$s - opening link tag, %2$s - Close the link </a>
-#: core/integrations/nextgen/class-admin.php:218
-msgid "{{smushed}}/{{total}} images were successfully compressed, {{errors}} encountered issues. Are you hitting the 5MB \"size limit exceeded\" warning? %1$sUpgrade to Smush Pro%2$s to optimize unlimited image files."
-msgstr "Изображения {{smushed}}/{{total}} были успешно сжаты, {{errors}} столкнулись с проблемами. Вы получаете предупреждение \"превышен лимит размера 5 МБ\"? %1$sПерейдите на Smush Pro БЕСПЛАТНО%2$s для оптимизации неограниченного количества файлов изображений."
 
 #: app/views/settings/permissions-meta-box.php:26
 msgid "By default, subsites will inherit your network settings. Choose which modules you want to allow subsite admins to override."
@@ -2156,33 +2073,6 @@ msgstr "По умолчанию, дочерние сайты будут насл
 #: app/assets/js/smush-react-configs.min.js:6734
 msgid "Subsite Controls"
 msgstr "Управление дочерних сайтов"
-
-#: core/cdn/class-cdn-controller.php:113
-#: core/cdn/class-cdn-srcset-controller.php:526
-msgid "Too many requests, please try again in a moment."
-msgstr "Слишком много запросов, пожалуйста повторите попытку через минуту."
-
-#. translators: %1$s - Open the link <a>, %2$s - closing link tag
-#: core/cdn/class-cdn-settings-ui-controller.php:95
-msgid "For any non-media library uploads, you can still use the %1$sDirectory Smush%2$s feature to compress them, they just won’t be served from the CDN."
-msgstr "Для любых загрузок, не относящихся к медиабиблиотеке, вы все равно можете использовать функцию %1$sОбработка каталога%2$s, чтобы сжать их, они просто не будут обслуживаться из CDN."
-
-#. translators: %1$s - Open the link <a>, %2$s - Closing link tag
-#: core/cdn/class-cdn-settings-ui-controller.php:88
-msgid "Note: For this feature to work your theme’s background images must be declared correctly using the default %1$swp_attachment%2$s functions."
-msgstr "Примечание: Для правильной работы этой функции, фоновые изображения вашей темы должны быть правильно объявлены с использованием стандартной функции %1$swp_attachment%2$s."
-
-#: core/cdn/class-cdn-settings-ui-controller.php:41
-msgid "Where possible we will serve background images declared with CSS directly from the CDN."
-msgstr "Мы будем подавать фоновые изображения добавленные с помощью с помощью CSS прямо с CDN где это возможно."
-
-#: core/cdn/class-cdn-settings-ui-controller.php:40
-msgid "Background Images"
-msgstr "Фоновые изображения"
-
-#: core/cdn/class-cdn-settings-ui-controller.php:39
-msgid "Serve background images from the CDN"
-msgstr "Обслуживание фоновых изображений из CDN"
 
 #: app/views/settings/permissions-meta-box.php:79
 msgid "Choose which modules settings subsite admins have access to."
@@ -2311,15 +2201,15 @@ msgstr "Включить отложенную загрузку"
 msgid "Error detecting language"
 msgstr "Ошибка определения языка"
 
-#: core/integrations/class-composer.php:71
+#: core/class-settings.php:401
 msgid "Allow smushing images resized in WPBakery Page Builder editor."
 msgstr "Позволяет изменять размер изображений в редакторе WPBakery Page Builder."
 
-#: core/integrations/class-composer.php:70
+#: core/class-settings.php:400
 msgid "WPBakery Page Builder"
 msgstr "WPBakery Page Builder"
 
-#: core/integrations/class-composer.php:69
+#: core/class-settings.php:399
 msgid "Enable WPBakery Page Builder integration"
 msgstr "Включить интеграцию с WPBakery Page Builder"
 
@@ -2331,24 +2221,24 @@ msgstr "Если у вас возникли проблемы с включени
 msgid "API Status"
 msgstr "Статус API"
 
-#: core/class-settings.php:337
+#: core/class-settings.php:344
 msgid "This will add functionality to your website that highlights images that are either too large or too small for their containers."
 msgstr "Это добавит функциональность на ваш сайт, которая выделит изображения, которые либо слишком большие, либо слишком маленькие для своих контейнеров."
 
-#: app/views/dashboard/tools-meta-box.php:33 core/class-settings.php:336
+#: app/views/dashboard/tools-meta-box.php:33 core/class-settings.php:343
 msgid "Image Resize Detection"
 msgstr "Обнаружение изменения размера изображений"
 
-#: core/class-settings.php:306
+#: core/class-settings.php:313
 msgid "Automatic compression"
 msgstr "Автоматическое сжатие"
 
-#: core/class-settings.php:301
+#: core/class-settings.php:308
 msgid "Image Sizes"
 msgstr "Размеры изображений"
 
 #: app/class-abstract-summary-page.php:129
-#: app/class-abstract-summary-page.php:179
+#: app/class-abstract-summary-page.php:183
 #: app/views/dashboard/integrations-meta-box.php:51
 #: app/views/dashboard/lazy-load-meta-box.php:38
 #: app/views/dashboard/lazy-load-meta-box.php:50
@@ -2356,30 +2246,30 @@ msgstr "Размеры изображений"
 #: app/views/dashboard/summary-meta-box.php:151
 #: app/views/dashboard/tools-meta-box.php:37 core/class-configs.php:647
 #: core/class-configs.php:718
-#: core/external/plugins-cross-sell-page/assets/js/crosssellpage.js:2343
-#: core/external/plugins-cross-sell-page/assets/js/crosssellpage.js:1571
+#: core/external/plugins-cross-sell-page/assets/js/crosssellpage.js:2117
+#: core/external/plugins-cross-sell-page/assets/js/crosssellpage.js:1426
 msgid "Active"
 msgstr "Активна"
 
-#: app/class-abstract-summary-page.php:174
+#: app/class-abstract-summary-page.php:178
 msgid "Activating"
 msgstr "Активация"
 
-#: app/class-abstract-summary-page.php:171
+#: app/class-abstract-summary-page.php:175
 #: app/views/dashboard/summary-meta-box.php:101
 msgid "Needs upgrade"
 msgstr "Требуется улучшение плана"
 
-#: app/class-abstract-summary-page.php:154
+#: app/class-abstract-summary-page.php:158
 msgid "You're almost through your CDN bandwidth limit. Please contact your administrator to upgrade your Smush CDN plan to ensure you don't lose this service"
 msgstr "Вы почти достигли предела пропускной способности CDN. Обратитесь к администратору, чтобы обновить план Smush CDN и чтобы услуга не была отключена"
 
-#: app/class-abstract-summary-page.php:166
+#: app/class-abstract-summary-page.php:170
 #: app/views/dashboard/summary-meta-box.php:96
 msgid "Overcap"
 msgstr "Исчерпано"
 
-#: app/class-abstract-summary-page.php:153
+#: app/class-abstract-summary-page.php:157
 msgid "You've gone through your CDN bandwidth limit, so we’ve stopped serving your images via the CDN. Contact your administrator to upgrade your Smush CDN plan to reactivate this service"
 msgstr "Вы достигли ограничения пропускной способности CDN, поэтому мы прекратили подавать ваши файлы с CDN. Свяжитесь с администратором чтобы обновить свой план Smush CDN и восстановить работу услуги"
 
@@ -2413,7 +2303,7 @@ msgstr "Вы превысили лимит пропускной способно
 msgid "You're almost through your CDN bandwidth limit. Please contact your administrator to upgrade your Smush CDN plan to ensure you don't lose this service. %1$sUpgrade plan%2$s"
 msgstr "Вы почти исчерпали лимит пропускной способности CDN. Обратитесь к администратору, чтобы обновить тарифный план Smush CDN и не потерять доступ к этой услуге. %1$sОбновить план%2$s"
 
-#: app/class-abstract-summary-page.php:155 app/pages/class-cdn.php:84
+#: app/class-abstract-summary-page.php:159 app/pages/class-cdn.php:84
 msgid "Your media is currently being served from the WPMU DEV CDN. Bulk and Directory smush features are treated separately and will continue to run independently."
 msgstr "В данный момент, ваши медиа файлы подаются с CDN от WPMU DEV. Функции массовой обработки и оптимизации каталогов обрабатываются отдельно и будут продолжать работать независимо."
 
@@ -2482,7 +2372,7 @@ msgstr "Удаления"
 msgid "Undersized"
 msgstr "Маломерные"
 
-#: core/class-error-handler.php:260 core/media/class-media-item.php:783
+#: core/class-error-handler.php:260 core/media/class-media-item.php:811
 msgid "No file data found in image meta"
 msgstr "Данные файла не найдены в мета изображения"
 
@@ -2609,7 +2499,7 @@ msgstr "Длительность"
 
 #: app/views/lazyload/meta-box.php:631
 #: app/views/settings/permissions-meta-box.php:48 core/class-configs.php:861
-#: core/class-settings.php:1404
+#: core/class-settings.php:1427
 msgid "None"
 msgstr "Нет"
 
@@ -2694,23 +2584,23 @@ msgstr "Что вы хотите делать с настройками при �
 msgid "Saving changes..."
 msgstr "Сохранение изменений..."
 
-#: core/class-settings.php:362
+#: core/class-settings.php:369
 msgid "Help make Smush better by letting our designers learn how you’re using the plugin."
 msgstr "Помогите нам сделать Smush лучше, позволяя нашим дизайнерам узнать как вы используете плагин."
 
-#: core/class-settings.php:361
+#: core/class-settings.php:368
 msgid "Usage Tracking"
 msgstr "Отслеживание использования"
 
-#: core/class-settings.php:357
+#: core/class-settings.php:364
 msgid "Increase the visibility and accessibility of elements and components to meet WCAG AAA requirements."
 msgstr "Увеличьте видимость и доступность элементов и компонентов, чтобы соответствовать требованиям WCAG AAA."
 
-#: core/class-settings.php:356
+#: core/class-settings.php:363
 msgid "Color Accessibility"
 msgstr "Цветовая доступность"
 
-#: core/class-settings.php:355
+#: core/class-settings.php:362
 msgid "Enable high contrast mode"
 msgstr "Включить режим высокой контрастности"
 
@@ -2745,7 +2635,7 @@ msgstr[2] ""
 msgid "Upgrade"
 msgstr "Обновить"
 
-#: app/class-admin.php:244 app/modals/onboarding.php:95
+#: app/class-admin.php:257 app/modals/onboarding.php:95
 #: app/modals/onboarding.php:282 app/views/smush-upgrade-page.php:27
 msgid "Upgrade to Smush Pro"
 msgstr "Обновление до Smush Pro"
@@ -2813,8 +2703,7 @@ msgstr "Примечание: Отслеживание использовани�
 msgid "Select an image to view Smush stats."
 msgstr "Выберите изображение, чтобы просмотреть статистику обработки."
 
-#: app/class-ajax.php:668 core/cdn/class-cdn-controller.php:160
-#: core/webp/class-webp-controller.php:177
+#: app/class-ajax.php:668
 msgid "User can not modify options"
 msgstr "Пользователь не может изменять параметры"
 
@@ -2850,17 +2739,17 @@ msgstr "Бесплатные плагины"
 msgid "Community"
 msgstr "Сообщество"
 
-#: app/class-admin.php:261 app/common/footer-links.php:70
+#: app/class-admin.php:274 app/common/footer-links.php:70
 #: app/common/footer-links.php:101
 msgid "Docs"
 msgstr "Документация"
 
-#: app/class-admin.php:293 app/common/footer-links.php:67
+#: app/class-admin.php:306 app/common/footer-links.php:67
 #: app/common/footer-links.php:98
 msgid "Support"
 msgstr "Поддержка"
 
-#: app/class-admin.php:311 app/common/footer-links.php:64
+#: app/class-admin.php:324 app/common/footer-links.php:64
 #: app/common/footer-links.php:95
 msgid "Roadmap"
 msgstr "Дорожная карта"
@@ -2914,8 +2803,6 @@ msgstr "Если у вас больше нет необходимости раз
 
 #: app/views/cdn/meta-box.php:133 app/views/cdn/meta-box.php:148
 #: app/views/lazyload/meta-box.php:1004 app/views/lazyload/meta-box.php:1019
-#: core/next-gen/class-next-gen-settings-ui-controller.php:99
-#: core/next-gen/class-next-gen-settings-ui-controller.php:119
 msgid "Deactivate"
 msgstr "Деактивировать"
 
@@ -2932,12 +2819,10 @@ msgid "gif"
 msgstr "gif"
 
 #: app/views/cdn/meta-box.php:55
-#: core/next-gen/class-next-gen-settings-ui-controller.php:171
 msgid "png"
 msgstr "png"
 
 #: app/views/cdn/meta-box.php:52
-#: core/next-gen/class-next-gen-settings-ui-controller.php:168
 msgid "jpg"
 msgstr "jpg"
 
@@ -2946,7 +2831,6 @@ msgid "Here’s a list of the media types we serve from the CDN."
 msgstr "Вот список типов медиа файлов, которые мы можем подавать с нашей CDN."
 
 #: app/views/cdn/meta-box.php:42
-#: core/next-gen/class-next-gen-settings-ui-controller.php:73
 msgid "Supported Media Types"
 msgstr "Поддерживаемые типы медиа"
 
@@ -2972,7 +2856,6 @@ msgstr "Smush CDN"
 #: app/views/dashboard/upsell/meta-box-header.php:19
 #: app/views/next-gen/meta-box-header.php:22
 #: app/views/preload/meta-box-header.php:16
-#: core/integrations/class-nextgen.php:718 core/integrations/class-s3.php:427
 #: _src/react/views/webp/steps-bar.jsx:52
 #: app/assets/js/smush-react-webp.min.js:1947
 msgid "Pro"
@@ -3035,15 +2918,7 @@ msgstr "Обработка: все изображения"
 msgid "Skipped with wp_smush_image filter"
 msgstr "Пропущены с помощью фильтра wp_smush_image"
 
-#: core/integrations/class-nextgen.php:188
-msgid "No attachment ID was received"
-msgstr "Не было получено ID вложения"
-
-#: core/integrations/nextgen/class-admin.php:214
-msgid "{{smushed}}/{{total}} images were successfully compressed, {{errors}} encountered issues."
-msgstr "{{smushed}}/{{total}} изображения успешно сжаты, {{errors}} проблем возникло."
-
-#: core/class-settings.php:341
+#: core/class-settings.php:348
 msgid "Original Images"
 msgstr "Оригинальные изображения"
 
@@ -3076,24 +2951,24 @@ msgstr[0] "%d изображение было успешно оптимизир�
 msgstr[1] "%d изображения было успешно оптимизировано"
 msgstr[2] "%d изображений было успешно оптимизировано"
 
-#: core/integrations/class-gutenberg.php:103
+#: core/integrations/class-gutenberg.php:81
 msgid "To use this feature you need to install and activate the Gutenberg plugin."
 msgstr "Для использование этой функции, вам понадобиться установить и активировать плагин Gutenberg."
 
-#: core/integrations/class-gutenberg.php:71
+#: core/class-settings.php:406
 msgid "Add statistics and the manual smush button to Gutenberg blocks that display images."
 msgstr "Добавляет статистику и кнопку ручной оптимизации к блокам Gutenberg, в который отображаются изображения."
 
-#: core/integrations/class-gutenberg.php:70
+#: core/class-settings.php:405
 msgid "Gutenberg Support"
 msgstr "Поддержка Gutenberg"
 
-#: core/integrations/class-gutenberg.php:69
+#: core/class-settings.php:404
 msgid "Show Smush stats in Gutenberg blocks"
 msgstr "Отображать статистику обработки в блоках Gutenberg"
 
 #. translators: %1$s - opening <a>, %2$s - closing </a>
-#: app/class-admin.php:385
+#: app/class-admin.php:398
 msgid "Smush uses the Stackpath Content Delivery Network (CDN). Stackpath may store web log information of site visitors, including IPs, UA, referrer, Location and ISP info of site visitors for 7 days. Files and images served by the CDN may be stored and served from countries other than your own. Stackpath's privacy policy can be found %1$shere%2$s."
 msgstr "Smush использует сеть доставки контента (CDN) Stackpath. Stackpath может хранить веб-журнал с информацией о посетителях сайта на протяжении 7 дней, который включает IP, User Agent, ссылку-реферера, местонахождения и информацию о интернет-провайдере посетителей. Файлы и изображения предоставляющиеся CDN, могут храниться и подаваться с серверов которые находятся вне вашей страны. Вы можете ознакомиться с политикой конфиденциальности Stackpath %1$sздесь%2$s."
 
@@ -3115,7 +2990,7 @@ msgstr "Во время получения выбранных директори
 #: app/class-ajax.php:369 app/class-ajax.php:499 app/class-ajax.php:619
 #: app/class-ajax.php:700 app/class-ajax.php:828 app/class-ajax.php:843
 #: core/cache/class-cache-controller.php:45 core/class-hub-connector.php:558
-#: core/class-settings.php:804 core/integrations/class-nextgen.php:181
+#: core/class-settings.php:827
 #: core/membership/class-membership-controller.php:23
 #: core/modules/bulk/class-background-bulk-smush.php:141
 #: core/modules/class-backup.php:728 core/modules/class-backup.php:747
@@ -3146,13 +3021,11 @@ msgstr "Отключено"
 msgid "Status"
 msgstr "Статус"
 
-#: core/integrations/nextgen/class-admin.php:838
 #: core/media-library/class-media-library-row.php:753
 msgid "Resmush"
 msgstr "reSmush"
 
 #: app/modals/restore-images.php:66
-#: core/integrations/nextgen/class-admin.php:863
 msgid "Restore"
 msgstr "Восстановить"
 
@@ -3201,7 +3074,7 @@ msgstr "Изображений обработано"
 msgid "Total Savings"
 msgstr "Всего сэкономлено"
 
-#: app/class-admin.php:350 app/pages/class-dashboard.php:76
+#: app/class-admin.php:363 app/pages/class-dashboard.php:76
 #: app/pages/class-integrations.php:38
 #: app/views/settings/permissions-meta-box.php:116
 #: _src/react/modules/configs.jsx:147
@@ -3209,7 +3082,7 @@ msgstr "Всего сэкономлено"
 msgid "Integrations"
 msgstr "Интеграции"
 
-#: app/class-admin.php:333 app/modals/disconnect-site.php:42
+#: app/class-admin.php:346 app/modals/disconnect-site.php:42
 #: app/pages/class-bulk.php:203 app/pages/class-dashboard.php:65
 #: app/pages/class-dashboard.php:362 app/pages/class-nextgen.php:57
 #: app/pages/class-nextgen.php:111
@@ -3221,10 +3094,6 @@ msgstr "Интеграции"
 msgid "Bulk Smush"
 msgstr "Массовая обработка"
 
-#: core/integrations/class-s3.php:371
-msgid "To use this feature you need to install WP Offload Media and have an Amazon S3 account setup."
-msgstr "Для использования этой функции, вам нужно установить плагин WP Offload Media и настроить учётную запись Amazon S3."
-
 #: core/class-rest.php:76
 msgid "Smushing in progress"
 msgstr "Обработка в процессе"
@@ -3234,8 +3103,8 @@ msgid "Smush data."
 msgstr "Данные обработки."
 
 #: core/media-library/class-media-library-row.php:331
-#: core/external/plugins-cross-sell-page/assets/js/crosssellpage.js:1336
-#: core/external/plugins-cross-sell-page/assets/js/crosssellpage.js:739
+#: core/external/plugins-cross-sell-page/assets/js/crosssellpage.js:774
+#: core/external/plugins-cross-sell-page/assets/js/crosssellpage.js:436
 msgid "Learn more"
 msgstr "Узнать больше"
 
@@ -3263,7 +3132,7 @@ msgstr "Удалить"
 msgid "Directory Smush"
 msgstr "Обработка каталогов"
 
-#: app/class-abstract-summary-page.php:159 app/class-admin.php:342
+#: app/class-abstract-summary-page.php:163 app/class-admin.php:355
 #: app/pages/class-cdn.php:32 app/pages/class-cdn.php:41
 #: app/pages/class-cdn.php:51 app/pages/class-dashboard.php:87
 #: app/pages/class-dashboard.php:352 app/views/cdn/meta-box-header.php:17
@@ -3286,15 +3155,15 @@ msgstr "Это изображение слишком большое для св�
 
 #. translators: %1$d - number of images, %2$s - opening a tag, %3$s - closing a
 #. tag
-#: app/class-admin.php:632 core/integrations/nextgen/class-admin.php:561
+#: app/class-admin.php:645
 msgid "Image check complete, you have %1$d images that need smushing. %2$sBulk smush now!%3$s"
 msgstr "Проверка изображений завершено, у вас есть %1$d изображений, которые нужно обработать. %2$sМассовая обработка прямо сейчас!%3$s"
 
-#: core/class-settings.php:335
+#: core/class-settings.php:342
 msgid "Detect and show incorrectly sized images"
 msgstr "Обнаруживать и отображать изображение неправильных размеров"
 
-#: core/class-settings.php:321
+#: core/class-settings.php:328
 msgid "Metadata"
 msgstr "Метаданные"
 
@@ -3311,38 +3180,33 @@ msgid "Directory smushing requires custom tables and it seems there was an error
 msgstr "Для обработки каталогов, требует создания дополнительных таблиц и, похоже, возникла ошибка во время создания таблиц. Обратитесь за помощью к команде поддержки на нашем форуме."
 
 #. Plugin Name of the plugin
-#: wp-smush.php app/class-admin.php:326 app/class-media-library.php:563
+#: wp-smush.php app/class-admin.php:339 app/class-media-library.php:563
 #: app/modals/deactivation-survey.php:30
-#: core/external/plugins-cross-sell-page/core/plugins-list.php:24
-#: core/integrations/nextgen/class-admin.php:135
-#: core/integrations/nextgen/class-admin.php:137
-#: core/integrations/nextgen/class-admin.php:275
+#: core/external/plugins-cross-sell-page/core/plugins-list.php:25
 #: core/media-library/class-media-library-row.php:719
 #: core/modules/bulk/class-mail.php:65
-#: core/smush/class-smush-optimization.php:77 wp-smush.php:508
+#: core/smush/class-smush-optimization.php:85 wp-smush.php:521
 msgid "Smush"
 msgstr "Smush"
 
-#: app/class-admin.php:326 app/pages/class-dashboard.php:101
-#: app/pages/class-dashboard.php:305
-#: core/external/plugins-cross-sell-page/core/plugins-list.php:191
-#: core/modules/bulk/class-mail.php:65
+#: app/class-admin.php:339 app/pages/class-dashboard.php:101
+#: app/pages/class-dashboard.php:305 core/modules/bulk/class-mail.php:65
 msgid "Smush Pro"
 msgstr "Smush Pro"
 
-#: app/class-admin.php:393
+#: app/class-admin.php:406
 msgid "Smush uses a third-party email service (Drip) to send informational emails to the site administrator. The administrator's email address is sent to Drip and a cookie is set by the service. Only administrator information is collected by Drip."
 msgstr "Smush использует стороннюю службу отправки электронной почты (Drip) для отправки информационных писем администратору сайта. E-mail администратора отправляется в Drip и этот сервис устанавливает cookie. Drip собирает данные только администратора."
 
-#: app/class-admin.php:382
+#: app/class-admin.php:395
 msgid "Smush sends images to the WPMU DEV servers to optimize them for web use. This includes the transfer of EXIF data. The EXIF data will either be stripped or returned as it is. It is not stored on the WPMU DEV servers."
 msgstr "Smush отправляет изображения на сервера WPMU DEV, чтобы оптимизировать их для использования на сайте. Это включает передачу EXIF данных. Данные EXIF будут либо удалены либо переданы назад в том де виде. Они не сохраняются на серверах WPMU DEV."
 
-#: app/class-admin.php:380
+#: app/class-admin.php:393
 msgid "Note: Smush does not interact with end users on your website. The only input option Smush has is to a newsletter subscription for site admins only. If you would like to notify your users of this in your privacy policy, you can use the information below."
 msgstr "Примечание: Smush не взаимодействует с пользователями вашего сайта. Единственная функция ввода которая есть в Smush - это подписка на новости для администраторов сайта. Если вы хотите проинформировать своих пользователей об этом в политике конфиденциальности, вы можете использовать информацию приведенную ниже."
 
-#: app/class-admin.php:378
+#: app/class-admin.php:391
 msgid "Plugin: Smush"
 msgstr "Плагин: Smush"
 
@@ -3354,8 +3218,8 @@ msgstr "Нажмите для массовой обработки изображ
 msgid "GET STARTED"
 msgstr "НАЧАТЬ"
 
-#: app/class-abstract-summary-page.php:205
-#: app/class-abstract-summary-page.php:218
+#: app/class-abstract-summary-page.php:209
+#: app/class-abstract-summary-page.php:222
 msgid "Select a directory you'd like to Smush."
 msgstr "Выберите директорию, которую Вы хотите обработать."
 
@@ -3367,7 +3231,7 @@ msgstr "Статистика обработки"
 msgid "Give us a moment while we sync the stats."
 msgstr "Дайте нам минутку чтобы синхронизировать показатели."
 
-#: core/modules/class-smush.php:533 core/smush/class-smusher.php:465
+#: core/modules/class-smush.php:533 core/smush/class-smusher.php:468
 msgid "Skipped due to a timeout error. You can increase the request timeout to make sure Smush has enough time to process larger files. define('WP_SMUSH_TIMEOUT', 150);"
 msgstr "Пропущен из-за ошибки таймаута. Вы можете увеличить таймаут запроса, чтобы убедиться, что у Smush достаточно времени для обработки больших файлов. define('WP_SMUSH_TIMEOUT', 150);"
 
@@ -3404,49 +3268,45 @@ msgstr "Изображений обработано"
 msgid "Get started"
 msgstr "Приступая к работе"
 
-#: core/integrations/class-s3.php:397
-msgid "Amazon S3 support is active."
-msgstr "Поддержка Amazon S3 активирована."
-
 #. translators: %1$s - <a>, %2$s - </a>
-#: core/integrations/class-s3.php:199
+#: core/class-settings.php:385
 msgid "Storing your image on S3 buckets using %1$sWP Offload Media%2$s? Smush can detect and smush those assets for you, including when you're removing files from your host server."
 msgstr "Храните изображения в корзинах S3 используя  %1$sWP Offload Media%2$s? Smush может обнаружить и оптимизировать эти изображения для вас, в том числе при удалении файлов с вашего хостинг-сервера."
 
-#: core/class-configs.php:672 core/integrations/class-s3.php:197
+#: core/class-configs.php:672 core/class-settings.php:383
 msgid "Amazon S3"
 msgstr "Amazon S3"
 
-#: core/integrations/class-s3.php:196
+#: core/class-settings.php:382
 msgid "Enable Amazon S3 support"
 msgstr "Включить поддержку Amazon S3"
 
-#: core/class-configs.php:673 core/integrations/class-nextgen.php:127
+#: core/class-configs.php:673 core/class-settings.php:378
 msgid "NextGen Gallery"
 msgstr "NextGen Gallery"
 
-#: app/class-abstract-summary-page.php:206
-#: app/class-abstract-summary-page.php:219 app/modals/directory-list.php:56
+#: app/class-abstract-summary-page.php:210
+#: app/class-abstract-summary-page.php:223 app/modals/directory-list.php:56
 msgid "Choose directory"
 msgstr "Выбрать папку"
 
-#: app/class-abstract-summary-page.php:202
+#: app/class-abstract-summary-page.php:206
 msgid "Smush images that aren't located in your uploads folder."
 msgstr "Обрабатывайте изображения, которые не находятся в вашей папке uploads."
 
-#: app/class-abstract-summary-page.php:199
+#: app/class-abstract-summary-page.php:203
 msgid "Directory Smush Savings"
 msgstr "Экономия благодаря обработки каталога"
 
-#: core/class-settings.php:352
+#: core/class-settings.php:359
 msgid "When you compress a PNG, Smush will check if converting it to JPEG could further reduce its size."
 msgstr "При сжатии PNG-файла, Smush проверяет, может ли конвертация в формат JPEG уменьшить его размер."
 
-#: core/class-settings.php:351
+#: core/class-settings.php:358
 msgid "PNG to JPEG Conversion"
 msgstr "Конвертация PNG в JPEG"
 
-#: app/views/smush-upgrade-page.php:175 core/class-settings.php:350
+#: app/views/smush-upgrade-page.php:175 core/class-settings.php:357
 msgid "Auto-convert PNGs to JPEGs (lossy)"
 msgstr "Авто-конвертация PNG в JPEG (с уменьшением)"
 
@@ -3459,7 +3319,7 @@ msgstr "Полноразмерные изображения"
 msgid "Super Smush"
 msgstr "Супер-обработка"
 
-#: core/class-settings.php:307
+#: core/class-settings.php:314
 msgid "When you upload images to your site, we will automatically optimize and compress them for you."
 msgstr "Когда вы загружаете изображения на свой сайт, мы автоматически оптимизируем и сжимаем их для вас."
 
@@ -3477,16 +3337,6 @@ msgstr "Максимальная высота"
 msgid "Max width"
 msgstr "Максимальная ширина"
 
-#. translators: %1$s: opening a tag, %2$s: closing a tag
-#: core/integrations/class-s3.php:387
-msgid "It seems you haven’t finished setting up WP Offload Media yet. %1$sConfigure it now%2$s to enable Amazon S3 support."
-msgstr "Похоже, вы еще не закончили настройку WP Offload Media. %1$sНастройте его сейчас%2$s для включения поддержки Amazon S3."
-
-#. translators: %1$s: opening a tag, %2$s: closing a tag
-#: core/integrations/class-s3.php:376
-msgid "We are having trouble interacting with WP Offload Media, make sure the plugin is activated. Or you can %1$sreport a bug%2$s."
-msgstr "У нас возникли проблемы с взаимодействием с WP Offload Media, убедитесь, что плагин активирован. Или вы можете %1$sсообщить об ошибке%2$s."
-
 #: core/modules/class-dir.php:329
 msgid "Image couldn't be optimized"
 msgstr "Изображение не может быть оптимизировано"
@@ -3499,8 +3349,8 @@ msgstr "Неверный ID изображения"
 msgid "We could not find any images in the selected directory."
 msgstr "Мы не смогли найти какие-либо изображения в выбранной папке."
 
-#: app/class-abstract-summary-page.php:161
-#: app/class-abstract-summary-page.php:212
+#: app/class-abstract-summary-page.php:165
+#: app/class-abstract-summary-page.php:216
 msgid "Updating Stats"
 msgstr "Обновление статистики"
 
@@ -3524,15 +3374,6 @@ msgstr "Отсутствует путь к файлу."
 msgid "Smush Free was deactivated. You have Smush Pro active!"
 msgstr "Smush Free отключен. Теперь включен Smush Pro!"
 
-#. translators: %1$s: reduced by bytes, %2$s: size format
-#: core/integrations/nextgen/class-admin.php:681
-msgid "Reduced by %1$s (%2$01.1f%%)"
-msgstr "Уменьшено на %1$s (%2$01.1f%%)"
-
-#: core/integrations/class-nextgen.php:204
-msgid "Smush request timed out. You can try setting a higher value ( > 60 ) for `WP_SMUSH_TIMEOUT`."
-msgstr "Истекло время ожидания Smush-запроса. Вы можете попробовать установить более высокое значение (> 60) для WP_SMUSH_TIMEOUT."
-
 #: app/views/nextgen/meta-box-header.php:26
 msgid "Manage Galleries"
 msgstr "Управление галереями"
@@ -3547,12 +3388,10 @@ msgstr "Обрабатывайте отдельные изображения ч�
 msgid "We haven't found any images in your %1$sgallery%2$s yet, so there's no smushing to be done! Once you upload images, reload this page and start playing!"
 msgstr "Мы еще не нашли ни одного изображения в вашей %1$sгалерее%2$s, поэтому не нужно ничего обрабатывать! Как только вы загрузите изображения, перезагрузите эту страницу и начинайте играть!"
 
-#: core/integrations/nextgen/class-admin.php:834
 #: core/media-library/class-media-library-row.php:750
 msgid "Smush image including original file"
 msgstr "Обработать изображение, включая исходный файл"
 
-#: core/integrations/nextgen/class-admin.php:859
 #: core/media-library/class-media-library-row.php:822
 msgid "Restore original image"
 msgstr "Восстановить исходное изображение"
@@ -3572,11 +3411,11 @@ msgstr "Подробная статистика для всех размеров
 
 #. translators: $1$s: recheck link, $2$s: closing a tag, %3$s; contact link,
 #. %4$s: closing a tag
-#: app/class-admin.php:420
+#: app/class-admin.php:433
 msgid "It looks like Smush couldn’t verify your WPMU DEV membership so Pro features have been disabled for now. If you think this is an error, run a %1$sre-check%2$s or get in touch with our %3$ssupport team%4$s."
 msgstr "Похоже, что Smush не смог проверить ваше членство в WPMU DEV, поэтому функции Pro пока отключены. Если вы считаете, что это ошибка, запустите %1$sперепроверить%2$s или свяжитесь с нашей %3$sкоманда поддержки%4$s."
 
-#: app/class-admin.php:415
+#: app/class-admin.php:428
 msgid "Validating..."
 msgstr "Проверка..."
 
@@ -3619,40 +3458,17 @@ msgstr "Библиотека файлов"
 msgid "Smush individual images via your %1$sMedia Library%2$s"
 msgstr "Обрабатывайте отдельные изображения через вашу %1$sМедиа библиотеку%2$s"
 
-#. translators: %s: error message
-#: core/integrations/class-nextgen.php:697
-msgid "Unable to smush image, %s"
-msgstr "Невозможно обработать изображение, %s"
-
-#: core/integrations/class-nextgen.php:657
-msgid "We couldn't process the image, fields empty."
-msgstr "Мы не смогли обработать изображение, поля пустые."
-
-#: core/integrations/class-nextgen.php:355
-#: core/integrations/class-nextgen.php:356
-msgid "We couldn't find the metadata for the image, possibly the image has been deleted."
-msgstr "Мы не смогли найти метаданные изображения, возможно, изображение было удалено."
-
 #: core/backups/class-backups-controller.php:77
-#: core/integrations/class-nextgen.php:644 core/modules/class-backup.php:597
+#: core/modules/class-backup.php:597
 msgid "Unable to restore image"
 msgstr "Невозможно восстановить изображение"
-
-#: core/integrations/class-nextgen.php:543
-msgid "Image not restored, Nonce verification failed."
-msgstr "Изображение не восстановлено, проверка Nonce завершилась неудачно."
-
-#: core/integrations/class-nextgen.php:533
-msgid "Error in processing restore action, Fields empty."
-msgstr "Ошибка при обработке действия восстановления, Поля пусты."
 
 #. translators: %1$s - <a>, %2$s - </a>
 #: app/class-abstract-page.php:825
 msgid "You have images that need smushing. %1$sBulk smush now!%2$s"
 msgstr "У вас есть изображения, которые нуждаются в обработке. %1$sОбработайте их сейчас!%2$s"
 
-#: app/class-admin.php:626 core/cli/class-cli.php:315
-#: core/integrations/nextgen/class-admin.php:567
+#: app/class-admin.php:639 core/cli/class-cli.php:315
 msgid "Yay! All images are optimized as per your current settings."
 msgstr "Ура! Все изображения оптимизированы в соответствии с текущими настройками."
 
@@ -3660,7 +3476,7 @@ msgstr "Ура! Все изображения оптимизированы в с
 msgid "We haven’t found any images in your media library yet so there’s no smushing to be done!"
 msgstr "Мы не нашли ни одного изображения в вашей медиа библиотеке, обработка не может быть проведена!"
 
-#: app/class-ajax.php:443 core/integrations/class-nextgen.php:666
+#: app/class-ajax.php:443
 msgid "Image couldn't be smushed as the nonce verification failed, try reloading the page."
 msgstr "Изображение не может быть оптимизировано по мере того, как проверка не выполнялась, попробуйте перезагрузить страницу."
 
@@ -3681,40 +3497,35 @@ msgstr "Ваш аккаунт не может быть подтвержден."
 msgid "We successfully verified your membership, all the Pro features should work completely. "
 msgstr "Мы успешно подтвердили ваше членство, все Pro должны работать в полном объеме. "
 
-#: core/integrations/nextgen/class-admin.php:231
-msgid "Smushing image..."
-msgstr "Обработка изображения..."
-
-#: core/class-core.php:322 core/integrations/nextgen/class-admin.php:230
+#: core/class-core.php:322
 msgid "Restoring image..."
 msgstr "Восстановление изображения..."
 
-#: core/class-core.php:314 core/integrations/nextgen/class-admin.php:229
+#: core/class-core.php:314
 msgid "All images are fully optimized."
 msgstr "Все изображения полностью оптимизированы."
 
-#: core/integrations/class-nextgen.php:128
+#: core/class-settings.php:379
 msgid "Allow smushing images directly through NextGen Gallery settings."
 msgstr "Разрешить обработку изображений непосредственно через настройки галереи NextGen."
 
-#: core/integrations/class-nextgen.php:126
+#: core/class-settings.php:377
 msgid "Enable NextGen Gallery integration"
 msgstr "Включить интеграцию NextGen Gallery"
 
-#: core/class-settings.php:305
+#: core/class-settings.php:312
 msgid "Automatically compress my images on upload"
 msgstr "Автоматическое сжатие изображений при загрузке"
 
 #: app/modals/onboarding.php:91 app/views/lazyload/meta-box.php:177
-#: core/next-gen/class-next-gen-settings-ui-controller.php:229
 msgid "New"
 msgstr "Новое(ый)"
 
 #: app/views/dashboard/cdn/meta-box.php:51
 #: app/views/dashboard/next-gen/meta-box.php:57
 #: app/views/lazyload/disabled-meta-box.php:26
-#: core/external/plugins-cross-sell-page/assets/js/crosssellpage.js:2332
-#: core/external/plugins-cross-sell-page/assets/js/crosssellpage.js:1563
+#: core/external/plugins-cross-sell-page/assets/js/crosssellpage.js:2106
+#: core/external/plugins-cross-sell-page/assets/js/crosssellpage.js:1418
 msgid "Activate"
 msgstr "Активировать"
 
@@ -3722,21 +3533,20 @@ msgstr "Активировать"
 msgid "Install Plugin"
 msgstr "Установить плагин"
 
-#: app/class-abstract-page.php:778 app/class-admin.php:540
-#: app/class-admin.php:740 app/class-admin.php:784
+#: app/class-abstract-page.php:778 app/class-admin.php:553
+#: app/class-admin.php:753 app/class-admin.php:797
 #: app/views/bulk-settings/meta-box.php:71
 #: core/cache/class-cache-controller.php:67 core/class-core.php:348
 #: core/directory/class-directory-ui-controller.php:266
 #: core/directory/class-directory-ui-controller.php:267
 #: core/external/plugin-notice/notice.php:485
-#: core/external/wpmudev-black-friday/includes/class-banner.php:397
 msgid "Dismiss"
 msgstr "Отклонить"
 
 #. Author of the plugin
 #: wp-smush.php
-#: core/external/plugins-cross-sell-page/assets/js/crosssellpage.js:1382
-#: core/external/plugins-cross-sell-page/assets/js/crosssellpage.js:762
+#: core/external/plugins-cross-sell-page/assets/js/crosssellpage.js:801
+#: core/external/plugins-cross-sell-page/assets/js/crosssellpage.js:452
 msgid "WPMU DEV"
 msgstr "WPMU DEV"
 
@@ -3746,12 +3556,10 @@ msgid "Reduce image file sizes, improve performance and boost your SEO using the
 msgstr "Уменьшайте размеры файлов изображений, повышайте производительность и улучшайте SEO с помощью бесплатного <a href=\"https://wpmudev.com/\">WPMU DEV</a> WordPress Smush API."
 
 #: app/class-media-library.php:572
-#: core/integrations/nextgen/class-admin.php:762
 msgid "Savings"
 msgstr "Экономия"
 
 #: app/class-media-library.php:571
-#: core/integrations/nextgen/class-admin.php:761
 #: core/media-library/class-media-library-row.php:660
 msgid "Image size"
 msgstr "Размер изображения"
@@ -3762,40 +3570,34 @@ msgstr "Обработать сейчас!"
 
 #: app/class-media-library.php:733 core/class-core.php:346
 #: core/class-error-handler.php:264 core/class-rest.php:82
-#: core/integrations/nextgen/class-admin.php:269
 #: core/media-library/class-media-library-row.php:95
 #: core/media-library/class-media-library-row.php:370
 msgid "Not processed"
 msgstr "Не обработано"
 
-#: core/integrations/nextgen/class-admin.php:713
-msgid "Smush stats"
-msgstr "Статистика обработки"
-
-#: core/class-core.php:333 core/integrations/nextgen/class-admin.php:667
-#: core/integrations/nextgen/class-admin.php:670
+#: core/class-core.php:333
 msgid "Already Optimized"
 msgstr "Уже оптимизированы"
 
-#: core/modules/class-smush.php:559 core/smush/class-smusher.php:528
+#: core/modules/class-smush.php:559 core/smush/class-smusher.php:531
 msgid "Image couldn't be smushed"
 msgstr "Изображение не может быть оптимизировано"
 
-#: core/modules/class-smush.php:576 core/smush/class-smusher.php:564
+#: core/modules/class-smush.php:576 core/smush/class-smusher.php:567
 msgid "Smush data corrupted, try again."
 msgstr "Данные Smush повреждены, попробуйте еще раз."
 
 #. translators: 1: Error code, 2: Error message.
-#: core/modules/class-smush.php:547 core/smush/class-smusher.php:510
+#: core/modules/class-smush.php:547 core/smush/class-smusher.php:513
 msgid "Error posting to API: %1$s %2$s"
 msgstr "Ошибка отправки в API: %1$s %2$s"
 
 #. translators: %s: Error message.
-#: core/modules/class-smush.php:539 core/smush/class-smusher.php:477
+#: core/modules/class-smush.php:539 core/smush/class-smusher.php:480
 msgid "Error posting to API: %s"
 msgstr "Ошибка отправки в API: %s"
 
-#: core/modules/class-smush.php:565 core/smush/class-smusher.php:540
+#: core/modules/class-smush.php:565 core/smush/class-smusher.php:543
 msgid "Unknown API error"
 msgstr "Неизвестная ошибка API"
 
@@ -3808,13 +3610,12 @@ msgstr "%s не доступен для записи"
 msgid "File path is empty"
 msgstr "Путь к файлу пуст"
 
-#: app/class-ajax.php:413 core/integrations/class-nextgen.php:428
+#: app/class-ajax.php:413
 msgid "No attachment ID was provided."
 msgstr "ID вложенияи не был предоставлен."
 
 #: app/class-ajax.php:405 app/class-ajax.php:451
 #: core/backups/class-backups-controller.php:58
-#: core/integrations/class-nextgen.php:420
 #: core/media/class-media-item-controller.php:29
 #: core/media/class-media-item-controller.php:56
 #: core/modules/class-backup.php:408
@@ -3825,13 +3626,13 @@ msgstr "У вас нет разрешения для работы с загру�
 msgid "Save changes"
 msgstr "Сохранить изменения"
 
-#: app/class-admin.php:354 app/pages/class-bulk.php:217
+#: app/class-admin.php:367 app/pages/class-bulk.php:217
 #: _src/react/modules/configs.jsx:152
 #: app/assets/js/smush-react-configs.min.js:6733
 msgid "Settings"
 msgstr "Настройки"
 
-#: core/class-settings.php:345
+#: core/class-settings.php:352
 msgid "Backup original images"
 msgstr "Резервное копирование исходных изображений"
 
@@ -3839,11 +3640,11 @@ msgstr "Резервное копирование исходных изобра�
 msgid "Super-Smushed images"
 msgstr "Супер-обработка изображения"
 
-#: core/class-core.php:311 core/integrations/nextgen/class-admin.php:227
+#: core/class-core.php:311
 msgid "Smush Now"
 msgstr "Обработать сейчас"
 
-#: core/class-core.php:310 core/integrations/nextgen/class-admin.php:226
+#: core/class-core.php:310
 msgid "Super-Smush"
 msgstr "Супер-обработка"
 
@@ -3862,6 +3663,6 @@ msgstr "Обработка в процессе.."
 msgid "Bulk Smush Now"
 msgstr "Оптимизировать все изображения!"
 
-#: app/class-admin.php:397
+#: app/class-admin.php:410
 msgid "WP Smush"
 msgstr "WP Smush"

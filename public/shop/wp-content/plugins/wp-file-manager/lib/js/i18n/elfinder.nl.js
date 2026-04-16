@@ -173,6 +173,7 @@
 			'btnCancel'            : 'Annuleren',
 			'btnNo'                : 'Nee',
 			'btnYes'               : 'Ja',
+			'btnDiscard'           : 'Wijzigingen weggooien',
 			'btnMount'             : 'Mount',  // added 18.04.2012
 			'btnApprove'           : 'Ga naar $1 & keur goed', // from v2.1 added 26.04.2012
 			'btnUnmount'           : 'Unmount', // from v2.1 added 30.04.2012
@@ -518,6 +519,12 @@
 			'kindTTF'              : 'True Type font',
 			'kindOTF'              : 'Open Type font',
 			'kindRPM'              : 'RPM package',
+			/********************************** fonts **********************************/
+			'kindFont'             : 'Lettertype bestand',
+			'kindSFNT'             : 'SFNT font',
+			'kindEOT'              : 'Embedded Open Type font',
+			'kindWOFF'             : 'Web Open Font Format',
+			'kindWOFF2'            : 'Web Open Font Format 2',
 			
 			/********************************** texts **********************************/
 			'kindText'             : 'Tekst bestand',

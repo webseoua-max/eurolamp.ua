@@ -3,7 +3,7 @@ Contributors: AntiCaptcha
 Tags: antispam, captcha, security, woocommerce, contact-form-7, formidable-forms
 Requires at least: 4.0
 Tested up to: 6.8.3
-Stable tag: 2.1.9
+Stable tag: 2.1.9.1
 License: MIT License
 License URI: https://opensource.org/licenses/MIT
 
@@ -62,6 +62,9 @@ Yes! You can hide the CAPTCHA for logged-in users, specific IPs, or trusted coun
 Check out our [Support Forum]() for answers to common questions or to ask your own. We're here to help!
 
 == Changelog ==
+
+= 2.1.9.1 =
+* Security update by the WordPress.org Plugins Team removing an obfuscated file and their generated files.
 
 = 2.1.6 =
 * Added Formidable Forms integration for both Lite and Pro versions, protecting forms with math-based CAPTCHA.

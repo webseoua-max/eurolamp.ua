@@ -5,7 +5,7 @@
  *
  * @link       https://icopydoc.ru
  * @since      0.1.0
- * @version    4.1.0 (22-03-2026)
+ * @version    4.2.0 (05-04-2026)
  *
  * @package    XFGMC
  * @subpackage XFGMC/includes/feeds/traits/variable
@@ -121,7 +121,7 @@ trait XFGMC_T_Variable_Get_Dimensions {
 		);
 
 		if ( empty( $product_weight ) || $product_weight === 'woo_shippings' ) {
-			$product_weight_xml = $this->get_offer()->get_height();
+			$product_weight_xml = $this->get_offer()->get_weight();
 			if ( ! empty( $product_weight_xml ) && get_option( 'woocommerce_weight_unit' ) !== 'kg' ) {
 				$product_weight_xml = round( wc_get_weight( $product_weight_xml, 'kg' ), 3 );
 			}

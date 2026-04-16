@@ -33,6 +33,7 @@ function get_settings(): array
         'prune_data_after_months' => 5 * 12,
         'default_view' => 'last_28_days',
         'is_dashboard_public' => 0,
+        'component_order' => [],
     ];
     $settings         = (array) get_option('koko_analytics_settings', []);
     $settings         = array_merge($default_settings, $settings);
@@ -84,9 +85,7 @@ function get_most_viewed_post_ids(array $args)
             LIMIT %d, %d", $sql_params);
 
         $results                = $wpdb->get_results($sql);
-        $post_ids = array_map(function ($r) {
-            return $r->id;
-        }, $results);
+        $post_ids = array_column($results, 'id');
         wp_cache_set($cache_key, $post_ids, 'koko-analytics', 3600);
     }
 

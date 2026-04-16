@@ -49,7 +49,7 @@ else{
 	if(isset($_GET['cf7_id']) && !empty($_GET['cf7_id'])){
 		$edit = false;
 		$entry_actions = array();
-		$fid = intval(sanitize_text_field($_GET['cf7_id']));
+		$fid = intval(sanitize_text_field(wp_unslash($_GET['cf7_id'])));
 		if (!cf7_check_capability('cf7_db_form_view'.$fid) && !cf7_check_capability('cf7_db_form_edit_'.$fid)){
             // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			wp_die( __('You do not have sufficient permissions to access this page.') );
@@ -68,7 +68,7 @@ else{
 	//Get search related value
 	$search =  '';
 	if(isset($_POST['search_cf7_value']) && !empty($_POST['search_cf7_value'])){
-		$search = addslashes(addslashes(htmlspecialchars(sanitize_text_field($_POST['search_cf7_value']))));
+		$search = addslashes(addslashes(htmlspecialchars(sanitize_text_field(wp_unslash($_POST['search_cf7_value'])))));
 	}
 
 	//Get all form names which entry store in DB
@@ -164,15 +164,15 @@ else{
 		//Add post per page filter here , Any user call this filter and customize post per page count
 		$items_per_page = (int)apply_filters('vsz_cf7_entry_per_page', (!empty($posts_per_page) ? $posts_per_page : 10));
 		//Get current page information from  query
-		$page = isset($_POST['cpage']) && !empty($_POST['cpage']) ? abs((int)sanitize_text_field($_POST['cpage'])) : 1;
+		$page = isset($_POST['cpage']) && !empty($_POST['cpage']) ? abs((int)sanitize_text_field(wp_unslash($_POST['cpage']))) : 1;
 		//Setup offset related value here
 		$offset = (int)( $page * $items_per_page ) - $items_per_page;
 		//Customize parameter wise listing screen query
 
 		//Check start and end date is valid or not
 		if(isset($_POST['start_date']) && isset($_POST['end_date']) && !empty($_POST['start_date']) && !empty($_POST['end_date'])){
-			$s_date = date_create_from_format("d/m/Y",sanitize_text_field($_POST['start_date']));
-			$e_date = date_create_from_format("d/m/Y",sanitize_text_field($_POST['end_date']));
+			$s_date = date_create_from_format("d/m/Y",sanitize_text_field(wp_unslash($_POST['start_date'])));
+			$e_date = date_create_from_format("d/m/Y",sanitize_text_field(wp_unslash($_POST['end_date'])));
 		}
 		else{
 			$s_date = false;
@@ -238,10 +238,10 @@ else{
 		}
 		//Call when any filter not active on Listing screen
 		else{
-			if(isset($_GET["orderby"]) && isset($_GET["order"]) && !empty($_GET["orderby"]) && !empty($_GET["order"]) && (strtolower($_GET["order"]) == 'asc' || strtolower($_GET["order"]) == 'desc')){
+			if(isset($_GET["orderby"]) && isset($_GET["order"]) && !empty($_GET["orderby"]) && !empty($_GET["order"]) && (strtolower(sanitize_text_field(wp_unslash($_GET["order"]))) == 'asc' || strtolower(sanitize_text_field(wp_unslash($_GET["order"]))) == 'desc')){
 				
-				$order = esc_sql(sanitize_text_field($_GET['order']));
-				$orderby = esc_sql(sanitize_text_field($_GET['orderby']));
+				$order = esc_sql(sanitize_text_field(wp_unslash($_GET['order'])));
+				$orderby = esc_sql(sanitize_text_field(wp_unslash($_GET['orderby'])));
 
 				$qry = $wpdb->get_results($wpdb->prepare("SELECT `data_id` FROM {$wpdb->prefix}cf7_vdata_entry WHERE `cf7_id` = %d AND `name` = %s AND data_id IN( SELECT * FROM ( SELECT data_id FROM {$wpdb->prefix}cf7_vdata_entry WHERE 1 = 1 AND `cf7_id` = %d GROUP BY `data_id` ORDER BY {$cf7d_entry_order_by} LIMIT %d,%d ) temp_table) ORDER BY `value` {$order}, {$cf7d_entry_order_by}", $fid, $orderby, $fid, $offset, $items_per_page));
 				$idVals =  $qry;
@@ -303,8 +303,8 @@ else{
 				?><div class="span12">
 					<div class="date-filter from-to" style="display:block;">
 						<div class="from-to-date-search">
-							<input type="text" name="start_date" id="start_date" placeholder="From" value="<?php print isset($_POST['start_date']) ? esc_attr(sanitize_text_field($_POST['start_date'])) : '';?>" class="input-cf-date">
-							<input type="text" name="end_date" id="end_date" placeholder="To" value="<?php print isset($_POST['end_date']) ? esc_attr(sanitize_text_field($_POST['end_date'])) : '';?>" class="input-cf-date" >
+					<input type="text" name="start_date" id="start_date" placeholder="From" value="<?php print isset($_POST['start_date']) ? esc_attr(sanitize_text_field(wp_unslash($_POST['start_date']))) : '';?>" class="input-cf-date">
+					<input type="text" name="end_date" id="end_date" placeholder="To" value="<?php print isset($_POST['end_date']) ? esc_attr(sanitize_text_field(wp_unslash($_POST['end_date']))) : '';?>" class="input-cf-date" >
 							<input type="button" name="search_date" id="search_date" value="<?php esc_html_e('Search By Date',VSZ_CF7_TEXT_DOMAIN);  ?>" title="<?php esc_html_e('Search By Date',VSZ_CF7_TEXT_DOMAIN);  ?>" class="button action" >
 						</div>
 						<div class="type-something"><?php

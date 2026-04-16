@@ -8,14 +8,14 @@
 
 namespace KokoAnalytics;
 
-use KokoAnalytics\Normalizers\Normalizer;
+use KokoAnalytics\Normalizers\Path;
 
 class Script_Loader
 {
     // WARNING: is used in Koko Analytics Pro (in its static form)
     public static function get_request_path(): string
     {
-        return Normalizer::path(trim($_SERVER["REQUEST_URI"] ?? ''));
+        return Path::normalize($_SERVER["REQUEST_URI"] ?? '');
     }
 
     public function hook(): void
@@ -36,8 +36,10 @@ class Script_Loader
             return;
         }
 
-        echo PHP_EOL . '<!-- Koko Analytics v' . KOKO_ANALYTICS_VERSION . ' - https://www.kokoanalytics.com/ -->' . PHP_EOL;
-        wp_print_inline_script_tag(file_get_contents(KOKO_ANALYTICS_PLUGIN_DIR . '/assets/dist/js/script.js'));
+        if (apply_filters('koko_analytics_print_html_comments', true)) {
+            echo PHP_EOL . '<!-- Koko Analytics v' . KOKO_ANALYTICS_VERSION . ' - https://www.kokoanalytics.com/ -->' . PHP_EOL;
+        }
+        wp_print_inline_script_tag(file_get_contents(KOKO_ANALYTICS_PLUGIN_DIR . '/assets/js/script.js'));
         echo PHP_EOL;
     }
 
